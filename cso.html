@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>MEPs</title>
+<title>MEPs declaration of disinterest</title>
 <link rel="stylesheet" type="text/css" href="build/css/all.css"/>
 <script type="text/javascript" src="build/js/all.min.js"></script>
 </head>
@@ -17,6 +17,19 @@ var tpl = _.template("<h2 title='MEP from <%= country %> in <%= eugroup %>'> <%=
 var graphs=[];
 var ndx=null;
 var SymbolGender= {"M":"\u2642","F":"\u2640","":"?"};
+var incomelevel=
+{ "-1":"unpaid",
+	0:"0->499 €/month",
+	1:"500->999 €/month",
+	2:"1000->4999 €/month",
+        3:"more than 10'000 €/month"
+}
+/*
+   1. de 500   1000 EUR brut par mois;
+   2. de 1001   5000 EUR brut par mois;
+   3. de 5001   10 000 EUR brut par mois;
+   4. plus de 10 000 EUR brut par mois.
+   */
 var eu_groups = {
 	"GUE/NGL":"#800c00",
 	"S&D":"#c21200",
@@ -148,9 +161,10 @@ function grid (selector,data) {
     .elasticY(true)
     .yAxisLabel("#MEPs")
     .dimension(country)
-    .group(countryGroup);
-
-  bar_country.on("postRender", function(c) {rotateBarChartLabels();} );
+    .group(countryGroup)
+    .on("renderlet.label", function(c) {
+	  console.log("post");
+	  rotateBarChartLabels();} );
 
 
   function rotateBarChartLabels() {
@@ -210,21 +224,16 @@ function grid (selector,data) {
 				+'</div>';
 		  },
                   function (d) {
-                      return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/"+d.epid+"/_home.html'>"+d.first_name + " " + d.last_name +"</a>";
-                  },
-                  function (d) {
-                    var t=d.committee; 
-                    if (d.substitute) t += "&nbsp;<span class='small' title='substitute'>"+d.substitute+"</span>"; 
-                    return t;
+                      return "<a target='_blank' href='http://www.integritywatch.eu/ep.html#mep"+d.epid+"'>"+d.first_name + " " + d.last_name +"</a>";
                   },
                   function (d) {
                       return d.country;
                   },
                   function (d) {
-                      return d.party;
+                      return d.organisation;
                   },
                   function (d) {
-                      return moment(d.since, "YYYY-MM-DD").fromNow();
+                      return incomelevel[d.activity];
                   },
                   function (d) {
                       return d.email;
@@ -247,7 +256,7 @@ function grid (selector,data) {
 
 function drawTextSearch (dom,$,val) {
 
-  var dim = ndx.dimension(function(d) { return d.first_name.toLowerCase()+ " "+d.last_name.toLowerCase() + " "+d.party.toLowerCase() + " " +d.committee.toLowerCase() });
+  var dim = ndx.dimension(function(d) { return d.first_name.toLowerCase()+ " "+d.last_name.toLowerCase() + " "+d.organisation.toLowerCase() + " " +d.country.toLowerCase() + " " +d.eugroup.toLowerCase() });
 
   var throttleTimer;
 
@@ -313,7 +322,7 @@ function excelise() { //UI
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#" id="excel"><span class="glyphicon glyphicon-download"></span>Excel</a></li>
-              <li><a href="data/meps.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
+              <li><a href="data/meps-cso-votes.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
                 <ul class="dropdown-menu" id="dropdown-committee">
@@ -343,7 +352,7 @@ function excelise() { //UI
 <form class="navbar-form navbar-right">
       <div class="input-group">
 <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
- <input type="text" id="input-filter" class="form-control" placeholder="name, party, committee...">
+ <input type="text" id="input-filter" class="form-control" placeholder="name, party, organisation...">
       </div>
 </form>
             <ul class="nav navbar-nav navbar-right">
@@ -362,8 +371,8 @@ function excelise() { //UI
 <div id="ep2014list" class="row">
 <div class="group col-md-2"></div>
 <div class="country col-md-5"></div>
-<div class="gender col-md-2"></div>
-<div class="age col-md-3">
+<div class="hidden gender col-md-2"></div>
+<div class="hidden age col-md-3">
 	<div class="graph"></div>
 	<div id="avg_age"></div>
 </div>
@@ -374,12 +383,11 @@ function excelise() { //UI
       <table class="table table-striped" id="table">
         <thead>
           <tr>
+            <th></th>
             <th>Name</th>
-            <th>Committee</th>
             <th>Country</th>
-            <th>Gender</th>
-            <th>Phone</th>
-            <th>Party</th>
+            <th>Organisation victim</th>
+            <th>Money</th>
           </tr>
         </thead>
       </table>
@@ -409,7 +417,7 @@ href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
  });
 
 $(function() {
-    d3.csv("data/meps.csv", function(d) {return d;}
+    d3.csv("data/meps-cso-votes.csv", function(d) {return d;}
       ,function(error, rows) {
       data=rows;	      
       grid ("#ep2014list",rows);
