@@ -11,12 +11,13 @@
 
 
 <script>
-
+//var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
 var tpl = _.template("<h2 title='MEP from <%= country %> in <%= eugroup %>'> <%= first_name %> <%= last_name %></h2><img class='lazy-load' src='blank.gif' daata-src='mepphoto/<%= epid %>.jpg' data-src='http://www.europarl.europa.eu/mepphoto/<%= epid %>.jpg' alt='<%= last_name %>, <%= first_name %> member of <%= eugroup %>' title='MEP from <%= country %> in <%= eugroup %>' width=170 height=216 />");
 
 var graphs=[];
 var ndx=null;
-var SymbolGender= {"M":"\u2642","F":"\u2640","":"?"};
+//var SymbolGender= {"M":"\u2642","F":"\u2640","":"?"};
+var SymbolGender= {"M":"👨","F":"👩","":"?"};
 var eu_groups = {
 	"GUE/NGL":"#800c00",
 	"S&D":"#c21200",
@@ -101,6 +102,39 @@ function grid (selector,data) {
       });
   var countryGroup   = country.group().reduceSum(function(d) { return 1; });
 
+
+   function drawNumbers (graphs){	  
+     var formatPercent =d3.format(".2%");
+     var format = d3.format (".3s");
+
+       var dim = ndx.dimension(function(d) { return true; });
+
+       var reducer = reductio();
+       reducer.value("nb").count(true);
+       reducer.value("woman").count(true).filter(function(d){return d.gender=="F"});
+		 
+       var group=dim.group();
+        reducer(group);
+
+        graphs.nb=dc.numberDisplay(".nbmep") 
+	.group(group)
+        .valueAccessor(function(d){ return d.value.nb.count})
+        .html({some:"%number"})
+//        .formatNumber(format)
+//        .on("renderlet",function(chart) {
+//            var d= chart.group().all()[0];
+//            d3.selectAll(chart.anchor()).attr("data-original-title", 
+//              "from fundraisers:" + d.value.donation_fundraiser.sum + 
+//              "\nfrom petitions:" + d.value.donation_petition.sum 
+//              );
+//        })
+
+        graphs.nb=dc.numberDisplay("#percent_women i") 
+	.group(group)
+        .valueAccessor(function(d){ return d.value.woman.count})
+        .html({some:"%number"})
+
+   }
 
   function drawGender(dom) {
   var NameGender= {"M":"Male","F":"Female","":"missing data"};
@@ -191,6 +225,12 @@ function grid (selector,data) {
 	  $("#input-filter").val($(this).text()).keyup();
 	});
         $("#excel").click(function(){excelise()});
+        $( "table" ).on( "click", ".text-filter", function() {
+          var text=$(this).text();
+	  if ($("#input-filter").val() == text)
+            text="";
+	  $("#input-filter").val(text).keyup();
+        });
       });
 
   
@@ -204,27 +244,33 @@ function grid (selector,data) {
               .group(function (d) {return null;})
               .columns([
 	          function (d) {
-			  return '<div class="btn-group btn-group-sm"><a type="button" class="btn btn-default" title="'+d.phone+'" href="tel:'+d.phone+'"><span class="glyphicon glyphicon-earphone"></span></a>'
-				  +'<a title="'+d.email+'" href="mailto:'+d.email+'" class="btn btn-default btn-email">@</a>'
-				  +'<span class="btn btn-default disabled btn-gender">'+SymbolGender[d.gender]+'</span>'
+			  return '<div class="btn-group btn-group-xs"><a type="button" class="btn btn-default" title="'+d.phone+'" href="tel:'+d.phone+'"><i class="glyphicon glyphicon-earphone"></i></a>'
+				  +'<a title="'+d.email+'" href="mailto:'+d.email+'" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>'
 				+'</div>';
 		  },
                   function (d) {
                       return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/"+d.epid+"/_home.html'>"+d.first_name + " " + d.last_name +"</a>";
                   },
                   function (d) {
-                    var t=d.committee; 
-                    if (d.substitute) t += "&nbsp;<span class='small' title='substitute'>"+d.substitute+"</span>"; 
+	            var t="";
+		    d.committee.trim().split(' ').forEach(function(c){
+		      t += "<span class='text-filter' title='Member'>"+c+"</span>&nbsp;";
+		    });
+		    if (d.substitute) {
+		      d.substitute.trim().split(' ').forEach(function(s){
+		        t += "<i class='text-filter small' title='Substitute'>"+s+"</i>&nbsp;";
+		      });
+		    }
                     return t;
                   },
                   function (d) {
-                      return d.country;
+			  return "<span class='text-filter'>"+ d.country + "</span>";
                   },
                   function (d) {
-                      return d.party;
+			  return "<span class='text-filter'>"+d.party + "</span>";
                   },
                   function (d) {
-                      return moment(d.since, "YYYY-MM-DD").fromNow();
+                      return moment(d.since, "YYYY-MM-DD").fromNow().replace(" ago","");
                   },
                   function (d) {
                       return d.email;
@@ -238,6 +284,7 @@ function grid (selector,data) {
     }
 
 //  graphs.grid=drawGrid(".dc-data-grid");
+  drawNumbers(graphs);
   graphs.table=drawTable("#table");
   graphs.gender=drawGender(".gender");
   graphs.gender.on("postRedraw", function(){setUrl()});
@@ -247,7 +294,7 @@ function grid (selector,data) {
 
 function drawTextSearch (dom,$,val) {
 
-  var dim = ndx.dimension(function(d) { return d.first_name.toLowerCase()+ " "+d.last_name.toLowerCase() + " "+d.party.toLowerCase() + " " +d.committee.toLowerCase() });
+  var dim = ndx.dimension(function(d) { return d.first_name.toLowerCase()+ " "+d.last_name.toLowerCase() + " "+d.party.toLowerCase() + " " +d.committee.toLowerCase() + " " +d.country.toLowerCase() });
 
   var throttleTimer;
 
@@ -305,15 +352,11 @@ function excelise() { //UI
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MEPs</a>
+      <a class="navbar-brand" href="#"><img src="img/ep.svg" alt="MEPs" title="Members of the European parliament"/></a>
       </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#" id="excel"><span class="glyphicon glyphicon-download"></span>Excel</a></li>
-              <li><a href="data/meps.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
                 <ul class="dropdown-menu" id="dropdown-committee">
@@ -339,6 +382,8 @@ function excelise() { //UI
 			<li><a href='#'>TRAN</a></li>
                 </ul>
               </li>
+              <li><a href="#" id="excel"><span class="glyphicon glyphicon-download"></span>Excel</a></li>
+              <li><a href="data/meps.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
             </ul>
 <form class="navbar-form navbar-right">
       <div class="input-group">
@@ -347,18 +392,24 @@ function excelise() { //UI
       </div>
 </form>
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li>
-</li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+		    <li class="active"><a><span class="nbmep badge"></span> MEPs</a></li>
+              <li id="nb_meps" title="numbers of MEPs"><a>?</a></li>
+	      <li id="percent_women" title="percentage of women"><a><i>?</i>% 👩</a></li>
+              <li id="avg_age_" title="average age"><a>? years old</a></li>
+              <li id="avg_duration" title="how long in office"><a>since ?</a></li>
             </ul>
           </div><!--/.nav-collapse -->
     </div>
 </nav>
 
 <div class="container">
-<h1 class="page-header">Members of the European parliament</h1>
-<p><b>Click on the graphs to filter the Members of the European parliament by country or party</b></p>
+<h1 class="page-header hidden">Members of the European parliament</h1>
+<div class="alert alert-info">
+	<button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+	<div class="glyphicon glyphicon-info-sign"></div>
+<div>
+	Click on the graphs to filter the Members of the European parliament by country or party</div>
+							                    </div>
 <div id="ep2014list" class="row">
 <div class="group col-md-2"></div>
 <div class="country col-md-5"></div>
@@ -379,7 +430,7 @@ function excelise() { //UI
             <th>Committee</th>
             <th>Country</th>
             <th>Party</th>
-            <th>MEP since</th>
+            <th class='since' title="Since how long in the Parliament?">since</th>
           </tr>
         </thead>
       </table>
@@ -429,10 +480,33 @@ $(function() {
 </script>
 
 <style>
+th.since {min-width:60px}
 
+.text-filter {
+  cursor:pointer;
+}
+.text-filter:hover {
+  text-decoration: dotted;
+  background:lightgrey;
+}
+
+.alert .glyphicon{
+    display:table-cell;
+    }
+
+    .alert div,
+    .alert span{
+        padding-left: 5px;
+	    display:table-cell;
+	    }
+body {padding-top:60px;}
 #ep2014list table, .dc-data-grid {clear:both;}
 .dc-table-label {background: #F5F5F5; font-weight:bold; }
 .x line {stroke:none;}
+
+.navbar-brand {padding: 0px;}
+
+.navbar-brand>img {height: 100%;padding: 15px;width: auto;}
 
 body {font-family: arial, helvetica, sans-serif;}
 
@@ -455,6 +529,8 @@ border: 1px solid #E3E3E3;
 padding: 10px;
 }
 
+td .btn-group {min-width:50px}
+
 .dc-grid-item {
 float:left;
 margin:0 10px 10px 0;
@@ -470,7 +546,7 @@ width:200px;
 .dc-grid-item img {width:170px;height:215px;position:absolute;top:1em;left:1em;z-index:1}
 .dc-grid-top h1 {font-size:22px;}
 .dc-grid-top h2 {font-size:14px;position:relative;z-index:2;background:white;opacity:0.8}
-.gender.dc-chart .pie-slice {font-size:40px;font-weight:bold;}
+.gender.dc-chart .pie-slice {font-size:25px;font-weight:bold;}
 </style>
 </div>
 

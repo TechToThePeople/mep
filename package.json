@@ -12,13 +12,13 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "reducio": "^4.0.0",
-    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "gulp-concat": "^2.6.1",
     "gulp-sourcemaps": "^2.6.1",
     "jquery": "^3.2.1",
-    "jquery-lazyload": "^1.9.7"
+    "jquery-lazyload": "^1.9.7",
+    "reductio": "^0.6.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

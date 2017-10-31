@@ -15,7 +15,7 @@ var paths = {
 'node_modules/lodash/lodash.js',
 'node_modules/d3/d3.js',
 'node_modules/crossfilter2/crossfilter.js',
-'js/reducio.js',
+'node_modules/reductio/reductio.js',
 'node_modules/dc/dc.js',
 'node_modules/bootstrap/dist/js/bootstrap.js',
 'node_modules/jquery-lazyload/jquery.lazyload.js',
@@ -35,7 +35,7 @@ gulp.task('scripts', function() {
   // with sourcemaps all the way down 
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
-//      .pipe(uglify())
+      .pipe(uglify())
       .pipe(concat('all.min.js'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
