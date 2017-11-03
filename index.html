@@ -1,558 +1,728 @@
 <html lang="en" dir="ltr">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>MEPs</title>
-<link rel="stylesheet" type="text/css" href="build/css/all.css"/>
-<script type="text/javascript" src="build/js/all.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>MEPs</title>
+  <link rel="stylesheet" type="text/css" href="build/css/all.css" />
+  <script type="text/javascript" src="build/js/all.min.js"></script>
 </head>
+
 <body>
 
 
-<script>
-//var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
-var tpl = _.template("<h2 title='MEP from <%= country %> in <%= eugroup %>'> <%= first_name %> <%= last_name %></h2><img class='lazy-load' src='blank.gif' daata-src='mepphoto/<%= epid %>.jpg' data-src='http://www.europarl.europa.eu/mepphoto/<%= epid %>.jpg' alt='<%= last_name %>, <%= first_name %> member of <%= eugroup %>' title='MEP from <%= country %> in <%= eugroup %>' width=170 height=216 />");
+  <script>
+    'use strict';
+    //var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
+    var tpl = _.template("<h2 title='MEP from <%= country %> in <%= eugroup %>'> <%= first_name %> <%= last_name %></h2><img class='lazy-load' src='blank.gif' daata-src='mepphoto/<%= epid %>.jpg' data-src='http://www.europarl.europa.eu/mepphoto/<%= epid %>.jpg' alt='<%= last_name %>, <%= first_name %> member of <%= eugroup %>' title='MEP from <%= country %> in <%= eugroup %>' width=170 height=216 />");
 
-var graphs=[];
-var ndx=null;
-//var SymbolGender= {"M":"\u2642","F":"\u2640","":"?"};
-var SymbolGender= {"M":"👨","F":"👩","":"?"};
-var eu_groups = {
-	"GUE/NGL":"#800c00",
-	"S&D":"#c21200",
-	"Verts/ALE":"#05a61e",
-	"Greens/EFA":"#05a61e",
-	"ALDE":"#ffc200",
-	"EFDD":"#5eced6",
-	"PPE":"#0a3e63",
-	"EPP":"#0a3e63",
-	"ECR":"#3086c2",
-	"NA/NI":"#cccccc",
-	"ENF":"#A1480D",
-	"Array":"pink"
-};
+    var graphs = [];
+    var summary = {};
+    var ndx = null;
+    //var SymbolGender= {"M":"\u2642","F":"\u2640","":"?"};
+    var SymbolGender = {
+      "M": "👨",
+      "F": "👩",
+      "": "?"
+    };
+    var eu_groups = {
+      "GUE/NGL": "#800c00",
+      "S&D": "#c21200",
+      "Verts/ALE": "#05a61e",
+      "Greens/EFA": "#05a61e",
+      "ALDE": "#ffc200",
+      "EFDD": "#5eced6",
+      "PPE": "#0a3e63",
+      "EPP": "#0a3e63",
+      "ECR": "#3086c2",
+      "NA/NI": "#cccccc",
+      "ENF": "#A1480D",
+      "Array": "pink"
+    };
 
-var data=null;
-function grid (selector,data) {
-  ndx = crossfilter(data),
-      all = ndx.groupAll();
+    var data = null;
 
+    function reset() {
+      dc.filterAll();
+      $("#input-filter").val("").keyup();
+      //dc.renderAll()
+    };
 
-  function adjust (data) {
-    var dateFormat = d3.time.format("%Y-%m-%d");
-    var now = Date.now();
-    var birthdate=null;
+    function drawAge(dom) {
+      //var graph = dc.barChart(dom);
+      var graph = dc.lineChart(dom);
 
-    data.forEach(function (e) {
-      if (!e.birthdate) return;
-      birthdate = dateFormat.parse(e.birthdate);
-      e.age= ~~((now - birthdate) / (31557600000));// 24 * 3600 * 365.25 * 1000
-    });
-  }
-
-  adjust (data);
-
-  var pie_group = dc.pieChart(selector +  " .group").innerRadius(20).radius(70);
-  var group = ndx.dimension(function(d) {
-      if (typeof d.eugroup == "undefined") return "";
-      return d.eugroup;
-      });
-  var groupGroup   = group.group().reduceSum(function(d) {   return 1; });
-
-  //var chart_age = dc.barChart(selector + " .age");
-  var chart_age = dc.lineChart(selector + " .age .graph");
-
-  var age = ndx.dimension(function(d) {
-      if (typeof d.age == "undefined") return "";
-      return d.age;
+      var dim = ndx.dimension(function(d) {
+        if (typeof d.age == "undefined") return "";
+        return d.age;
       });
 
-  var ageGroup   = age.group().reduceSum(function(d) {   return 1; });
-    //.x(d3.scale.ordinal())
-  chart_age
-    .width(0)
-    .height(200)
-    .margins({top: 0, right: 0, bottom: 95, left: 30})
-    .x(d3.scale.linear().domain([20,90]))
-    .brushOn(true)
-    .renderArea(true)
-    .elasticY(true)
-    .yAxisLabel("#MEPs")
-    .dimension(age)
-    .group(ageGroup)
-    .on('renderlet', function (chart) {
-      if (!console || !console.log) return;
-      var d = chart.dimension().top(Number.POSITIVE_INFINITY);
-      var total = nb = 0;
-      d.forEach (function (a) {
-        ++nb;
-        total += a.age;
-      }); 
-      var avg= total/nb;
-      $("#avg_age").text(Math.round(avg));
-    });
-
-  var pie_gender = dc.pieChart(selector +  " .gender").radius(70);
-
-  var bar_country = dc.barChart(selector + " .country");
-  var country = ndx.dimension(function(d) {
-      if (typeof d.country == "undefined") return "";
-      return d.country;
+      var group = dim.group().reduceSum(function(d) {
+        return 1;
       });
-  var countryGroup   = country.group().reduceSum(function(d) { return 1; });
-
-
-   function drawNumbers (graphs){	  
-     var formatPercent =d3.format(".2%");
-     var format = d3.format (".3s");
-
-       var dim = ndx.dimension(function(d) { return true; });
-
-       var reducer = reductio();
-       reducer.value("nb").count(true);
-       reducer.value("woman").count(true).filter(function(d){return d.gender=="F"});
-		 
-       var group=dim.group();
-        reducer(group);
-
-        graphs.nb=dc.numberDisplay(".nbmep") 
-	.group(group)
-        .valueAccessor(function(d){ return d.value.nb.count})
-        .html({some:"%number"})
-//        .formatNumber(format)
-//        .on("renderlet",function(chart) {
-//            var d= chart.group().all()[0];
-//            d3.selectAll(chart.anchor()).attr("data-original-title", 
-//              "from fundraisers:" + d.value.donation_fundraiser.sum + 
-//              "\nfrom petitions:" + d.value.donation_petition.sum 
-//              );
-//        })
-
-        graphs.nb=dc.numberDisplay("#percent_women i") 
-	.group(group)
-        .valueAccessor(function(d){ return d.value.woman.count})
-        .html({some:"%number"})
-
-   }
-
-  function drawGender(dom) {
-  var NameGender= {"M":"Male","F":"Female","":"missing data"};
-  var gender = ndx.dimension(function(d) {
-      if (typeof d.gender == "undefined") return "";
-      return d.gender;
-      });
-
-  var groupGender   = gender.group().reduceSum(function(d) {   return 1; });
-
-  return pie_gender
-    .width(0)
-    .height(200)
-    .dimension(gender)
-    .label(function (d){
-       return SymbolGender[d.key];
-    })
-    .title(function (d){
-       return NameGender[d.key] +": "+d.value;
-    })
-    .group(groupGender);
-  };
-
-  pie_group
-    .width(0)
-    .height(200)
-    .colorCalculator(function(d, i) {
-	return eu_groups[d.key];
-	//return color(d.value.score/d.value.count);
-    })
-    .dimension(group)
-    .group(groupGroup)
-    .on('renderlet', function (chart) {
+      //.x(d3.scale.ordinal())
+      graph
+        .width(0)
+        .height(200)
+        .margins({
+          top: 0,
+          right: 0,
+          bottom: 95,
+          left: 30
+        })
+        .x(d3.scale.linear().domain([20, 90]))
+        .brushOn(true)
+        .renderArea(true)
+        .elasticY(true)
+        .yAxisLabel("#MEPs")
+        .dimension(dim)
+        .group(group)
+        .on('renderlet', function(chart) {
+          if (!console || !console.log) return;
+          var d = chart.dimension().top(Number.POSITIVE_INFINITY);
+          var total = 0,
+            nb = 0;
+          d.forEach(function(a) {
+            ++nb;
+            total += a.age;
+          });
+          var avg = total / nb;
+          $("#avg_age").text(Math.round(avg));
         });
+      return graph;
+    }
 
-  bar_country
-    .width(0)
-    .height(200)
-    .outerPadding(0)
-    .gap(1)
-    .margins({top: 0, right: 0, bottom: 95, left: 30})
-    .x(d3.scale.ordinal())
-    .xUnits(dc.units.ordinal)
-    .brushOn(false)
-    .elasticY(true)
-    .yAxisLabel("#MEPs")
-    .dimension(country)
-    .group(countryGroup);
+    function drawGroup(dom) {
+      var graph = dc.pieChart(dom).innerRadius(20).radius(70);
+      var dim = ndx.dimension(function(d) {
+        if (typeof d.eugroup == "undefined") return "";
+        return d.eugroup;
+      });
+      var group = dim.group().reduceSum(function(d) {
+        return 1;
+      });
+      graph
+        .width(0)
+        .height(200)
+        .colorCalculator(function(d, i) {
+          return eu_groups[d.key];
+          //return color(d.value.score/d.value.count);
+        })
+        .dimension(dim)
+        .group(group)
+        .on('renderlet', function(chart) {});
 
-  bar_country.on("postRender", function(c) {rotateBarChartLabels();} );
+    }
 
-
-  function rotateBarChartLabels() {
-    d3.selectAll(selector+ ' .country .axis.x text')
-      .style("text-anchor", "end" )
-      .attr("transform", function(d) { return "rotate(-90, -4, 9) "; });
-  }
-
-  dc.dataCount(".dc-data-count")
-    .dimension(ndx)
-    .group(all);
-
-  function drawGrid(dom) {
-    return dc.dataGrid(dom)
-    .dimension(country)
-    .group(function (d) {
+    function drawCountry(dom) {
+      var graph = dc.barChart(dom);
+      var dim = ndx.dimension(function(d) {
+        if (typeof d.country == "undefined") return "";
         return d.country;
+      });
+      var group = dim.group().reduceSum(function(d) {
+        return 1;
+      });
+      graph
+        .width(0)
+        .height(200)
+        .outerPadding(0)
+        .gap(1)
+        .margins({
+          top: 0,
+          right: 0,
+          bottom: 95,
+          left: 30
         })
-    .size(1000)
-    .html (function(d) { return tpl(d);})
-    .sortBy(function (d) {
-        return d.last_name;
-        })
-    .order(d3.ascending)
-    .on('renderlet', function (grid) {
-       $("img.lazy-load").lazyload ({
-         effect : "fadeIn"
-         })
-        .removeClass("alazy-load");
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .brushOn(false)
+        .elasticY(true)
+        .yAxisLabel("#MEPs")
+        .dimension(dim)
+        .group(group)
+        .on("postRender", function(c) {
+          rotateBarChartLabels();
         });
-  };
+      return graph;
 
-     jQuery (function($) {
-        graphs.search = drawTextSearch('#input-filter',jQuery);
-//        $(".summary_total").text(formatNumber(summary.total));
-        $("#input-filter").val($.urlParam("q")).keyup();//if channel param, filter
-	$("#dropdown-committee a").click(function(){
-	  $("#input-filter").val($(this).text()).keyup();
-	});
-        $("#excel").click(function(){excelise()});
-        $( "table" ).on( "click", ".text-filter", function() {
-          var text=$(this).text();
-	  if ($("#input-filter").val() == text)
-            text="";
-	  $("#input-filter").val(text).keyup();
-        });
+      function rotateBarChartLabels() {
+        d3.selectAll(dom + ' .axis.x text')
+          .style("text-anchor", "end")
+          .attr("transform", function(d) {
+            return "rotate(-90, -4, 9) ";
+          });
+      }
+    }
+
+    function drawNumbers(graphs) {
+      var formatPercent = d3.format(".0%");
+      var format = d3.format(".3s");
+
+      var dim = ndx.dimension(function(d) {
+        return true;
       });
 
-  
-  function drawTable(dom) {
-        var dim  = ndx.dimension(function(d) {return null});
-        var chart= dc.dataTable(dom)
-              .dimension(dim)
-              .size(1000)
-              .sortBy(function (d){return d.last_name;})
-              .showGroups(false)
-              .group(function (d) {return null;})
-              .columns([
-	          function (d) {
-			  return '<div class="btn-group btn-group-xs"><a type="button" class="btn btn-default" title="'+d.phone+'" href="tel:'+d.phone+'"><i class="glyphicon glyphicon-earphone"></i></a>'
-				  +'<a title="'+d.email+'" href="mailto:'+d.email+'" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>'
-				+'</div>';
-		  },
-                  function (d) {
-                      return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/"+d.epid+"/_home.html'>"+d.first_name + " " + d.last_name +"</a>";
-                  },
-                  function (d) {
-	            var t="";
-		    d.committee.trim().split(' ').forEach(function(c){
-		      t += "<span class='text-filter' title='Member'>"+c+"</span>&nbsp;";
-		    });
-		    if (d.substitute) {
-		      d.substitute.trim().split(' ').forEach(function(s){
-		        t += "<i class='text-filter small' title='Substitute'>"+s+"</i>&nbsp;";
-		      });
-		    }
-                    return t;
-                  },
-                  function (d) {
-			  return "<span class='text-filter'>"+ d.country + "</span>";
-                  },
-                  function (d) {
-			  return "<span class='text-filter'>"+d.party + "</span>";
-                  },
-                  function (d) {
-                      return moment(d.since, "YYYY-MM-DD").fromNow().replace(" ago","");
-                  },
-                  function (d) {
-                      return d.email;
-                  }
-              ])
-              .on("renderlet.hide",function(){
-                 $(dom).find("tbody > tr > td:last-child").addClass('hidden email');
-              })
-        return chart;
+      var reducer = reductio();
+      reducer.value("nb").count(true);
+      reducer.value("woman").count(true).filter(function(d) {
+        return d.gender == "F"
+      });
+
+      var group = dim.group();
+      reducer(group);
+
+      graphs.total = dc.numberDisplay(".nbmep")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.nb.count
+        })
+        .html({
+          some: "%number"
+        })
+      //        .formatNumber(format)
+      //        .on("renderlet",function(chart) {
+      //            var d= chart.group().all()[0];
+      //            d3.selectAll(chart.anchor()).attr("data-original-title", 
+      //              "from fundraisers:" + d.value.donation_fundraiser.sum + 
+      //              "\nfrom petitions:" + d.value.donation_petition.sum 
+      //              );
+      //        })
+
+      graphs.nbwomen = dc.numberDisplay("#percent_women i")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.woman.count / graphs.total.data();
+        })
+        //.formatNumber(formatPercent)
+        .html({
+          some: "%number"
+        })
+      graphs.nbwomen = dc.numberDisplay("#percent_women i")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.woman.count / graphs.total.data();
+        })
+        .formatNumber(formatPercent)
+        .html({
+          some: "%number"
+        })
 
     }
 
-//  graphs.grid=drawGrid(".dc-data-grid");
-  drawNumbers(graphs);
-  graphs.table=drawTable("#table");
-  graphs.gender=drawGender(".gender");
-  graphs.gender.on("postRedraw", function(){setUrl()});
+    function drawGender(dom) {
+      var pie_gender = dc.pieChart(dom).radius(70);
+      var NameGender = {
+        "M": "Male",
+        "F": "Female",
+        "": "missing data"
+      };
+      var gender = ndx.dimension(function(d) {
+        if (typeof d.gender == "undefined") return "";
+        return d.gender;
+      });
 
-  dc.renderAll();
-}
+      var groupGender = gender.group().reduceSum(function(d) {
+        return 1;
+      });
 
-function drawTextSearch (dom,$,val) {
+      return pie_gender
+        .width(0)
+        .height(200)
+        .dimension(gender)
+        .label(function(d) {
+          return SymbolGender[d.key];
+        })
+        .title(function(d) {
+          return NameGender[d.key] + ": " + d.value;
+        })
+        .group(groupGender);
+    };
 
-  var dim = ndx.dimension(function(d) { return d.first_name.toLowerCase()+ " "+d.last_name.toLowerCase() + " "+d.party.toLowerCase() + " " +d.committee.toLowerCase() + " " +d.country.toLowerCase() });
 
-  var throttleTimer;
+    //  dc.dataCount(".dc-data-count")
+    //    .dimension(ndx)
+    //    .group(all);
 
-  $(dom).keyup (function () {
+    function drawGrid(dom) {
+      return dc.dataGrid(dom)
+        .dimension(country)
+        .group(function(d) {
+          return d.country;
+        })
+        .size(1000)
+        .html(function(d) {
+          return tpl(d);
+        })
+        .sortBy(function(d) {
+          return d.last_name;
+        })
+        .order(d3.ascending)
+        .on('renderlet', function(grid) {
+          $("img.lazy-load").lazyload({
+              effect: "fadeIn"
+            })
+            .removeClass("alazy-load");
+        });
+    };
 
-    var s = jQuery(this ).val().toLowerCase();
-    $(".resetall").attr("disabled",false);
-    throttle();
+    jQuery(function($) {
+      $(".resetall").click(reset);
+      //        $(".summary_total").text(formatNumber(summary.total));
+      $("#input-filter").val($.urlParam("q")).keyup(); //if channel param, filter
+      $("#dropdown-committee a").click(function() {
+        $("#input-filter").val($(this).text()).keyup();
+      });
+      $("#excel").click(function() {
+        excelise()
+      });
+      $("table").on("click", ".text-filter", function() {
+        var text = $(this).text();
+        if ($("#input-filter").val() == text)
+          text = "";
+        $("#input-filter").val(text).keyup();
+      });
+    });
 
-    function throttle() {
-      window.clearTimeout(throttleTimer);
-      throttleTimer = window.setTimeout(function() {
-        dim.filterAll();
-        dim.filterFunction(function (d) { return d.indexOf (s) !== -1;} );
-        dc.redrawAll();
-      }, 250);
+
+    function drawTable(dom) {
+      var dim = ndx.dimension(function(d) {
+        return null
+      });
+      var chart = dc.dataTable(dom)
+        .dimension(dim)
+        .size(1000)
+        .sortBy(function(d) {
+          return d.last_name;
+        })
+        .showGroups(false)
+        .group(function(d) {
+          return null;
+        })
+        .columns([
+          function(d) {
+            return '<div class="btn-group btn-group-xs"><a type="button" class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
+              '<a title="' + d.email + '" href="mailto:' + d.email + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>' +
+              '</div>';
+          },
+          function(d) {
+            return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
+          },
+          function(d) {
+            var t = "";
+            d.committee.trim().split(' ').forEach(function(c) {
+              t += "<span class='text-filter' title='Member'>" + c + "</span>&nbsp;";
+            });
+            if (d.substitute) {
+              d.substitute.trim().split(' ').forEach(function(s) {
+                t += "<i class='text-filter small' title='Substitute'>" + s + "</i>&nbsp;";
+              });
+            }
+            return t;
+          },
+          function(d) {
+            return "<span class='text-filter'>" + d.country + "</span>";
+          },
+          function(d) {
+            return "<span class='text-filter'>" + d.party + "</span>";
+          },
+          function(d) {
+            return moment(d.since, "YYYY-MM-DD").fromNow().replace(" ago", "");
+          },
+          function(d) {
+            return d.email;
+          }
+        ])
+        .on("renderlet.hide", function() {
+          $(dom).find("tbody > tr > td:last-child").addClass('hidden email');
+        })
+      return chart;
+
     }
-  });
 
-  return dim;
+    function draw(data) {
+      ndx = crossfilter(data);
 
-}
 
- function setUrl(search){
-   //var country=graphs.country.filters();
-   search= search || $("#input-filter").val();
-   var url="?";
-   if (search) url +="q="+search+"&";
-   window.history.pushState(null, search, url);
+      function adjust(data) {
+        var dateFormat = d3.time.format("%Y-%m-%d");
+        var now = Date.now();
+        var birthdate = null;
 
-  };
+        data.forEach(function(e) {
+          if (!e.birthdate) return;
+          birthdate = dateFormat.parse(e.birthdate);
+          e.age = ~~((now - birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
+        });
+      }
 
-function excelise() { //UI
-  var uri = 'data:application/vnd.ms-excel;base64,'
-    , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><?xml version="1.0" encoding="UTF-8" standalone="yes"?><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
-    , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
-    , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
-    var toExcel = $('#table').html();
-    var ctx = {
+      adjust(data);
+
+      //  graphs.grid=drawGrid(".dc-data-grid");
+      drawNumbers(graphs);
+      graphs.country = drawCountry(".country");
+      graphs.age = drawAge(".age");
+      graphs.group = drawGroup(".group");
+      graphs.table = drawTable("#table");
+      graphs.gender = drawGender(".gender");
+      graphs.search = drawTextSearch('#input-filter', jQuery);
+      graphs.total.on("postRedraw", function() {
+        setUrl()
+      });
+      summary.total = graphs.total.data();
+
+      dc.renderAll();
+    }
+
+    function drawTextSearch(dom, $, val) {
+
+      var dim = ndx.dimension(function(d) {
+        return d.first_name.toLowerCase() + " " + d.last_name.toLowerCase() + " " + d.party.toLowerCase() + " " + d.committee.toLowerCase() + " " + d.country.toLowerCase()
+      });
+
+      var throttleTimer;
+
+      $(dom).keyup(function() {
+
+        var s = jQuery(this).val().toLowerCase();
+        $(".resetall").attr("disabled", false);
+        throttle();
+
+        function throttle() {
+          window.clearTimeout(throttleTimer);
+          throttleTimer = window.setTimeout(function() {
+            dim.filterAll();
+            dim.filterFunction(function(d) {
+              return d.indexOf(s) !== -1;
+            });
+            dc.redrawAll();
+          }, 250);
+        }
+      });
+
+      return dim;
+
+    }
+
+    function setUrl(search) {
+      //var country=graphs.country.filters();
+      search = search || $("#input-filter").val();
+      var url = "?";
+      if (search) url += "q=" + search + "&";
+      window.history.pushState(null, search, url);
+
+    };
+
+    function excelise() { //UI
+      var uri = 'data:application/vnd.ms-excel;base64,',
+        template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><?xml version="1.0" encoding="UTF-8" standalone="yes"?><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+        base64 = function(s) {
+          return window.btoa(unescape(encodeURIComponent(s)))
+        },
+        format = function(s, c) {
+          return s.replace(/{(\w+)}/g, function(m, p) {
+            return c[p];
+          })
+        }
+      var toExcel = $('#table').html();
+      var ctx = {
         worksheet: name || 'meps_tttp',
         table: toExcel
-    };
-    window.open(uri + base64(format(template, ctx)));
-}
-</script>
+      };
+      window.open(uri + base64(format(template, ctx)));
+    }
+  </script>
 
 
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="img/ep.svg" alt="MEPs" title="Members of the European parliament"/></a>
+        <a class="navbar-brand resetall" href="#"><img src="img/ep.svg" alt="MEPs" title="Members of the European parliament"/></a>
       </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">About</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
-                <ul class="dropdown-menu" id="dropdown-committee">
-			<li><a href='#'>AFCO</a></li>
-			<li><a href='#'>AFET</a></li>
-			<li><a href='#'>AGRI</a></li>
-			<li><a href='#'>BUDG</a></li>
-			<li><a href='#'>CONT</a></li>
-			<li><a href='#'>CULT</a></li>
-			<li><a href='#'>DEVE</a></li>
-			<li><a href='#'>ECON</a></li>
-			<li><a href='#'>EMPL</a></li>
-			<li><a href='#'>ENVI</a></li>
-			<li><a href='#'>FEMM</a></li>
-			<li><a href='#'>IMCO</a></li>
-			<li><a href='#'>INTA</a></li>
-			<li><a href='#'>ITRE</a></li>
-			<li><a href='#'>JURI</a></li>
-			<li><a href='#'>LIBE</a></li>
-			<li><a href='#'>PECH</a></li>
-			<li><a href='#'>PETI</a></li>
-			<li><a href='#'>REGI</a></li>
-			<li><a href='#'>TRAN</a></li>
-                </ul>
-              </li>
-              <li><a href="#" id="excel"><span class="glyphicon glyphicon-download"></span>Excel</a></li>
-              <li><a href="data/meps.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
+            <ul class="dropdown-menu" id="dropdown-committee">
+              <li><a href='#'>AFCO</a></li>
+              <li><a href='#'>AFET</a></li>
+              <li><a href='#'>AGRI</a></li>
+              <li><a href='#'>BUDG</a></li>
+              <li><a href='#'>CONT</a></li>
+              <li><a href='#'>CULT</a></li>
+              <li><a href='#'>DEVE</a></li>
+              <li><a href='#'>ECON</a></li>
+              <li><a href='#'>EMPL</a></li>
+              <li><a href='#'>ENVI</a></li>
+              <li><a href='#'>FEMM</a></li>
+              <li><a href='#'>IMCO</a></li>
+              <li><a href='#'>INTA</a></li>
+              <li><a href='#'>ITRE</a></li>
+              <li><a href='#'>JURI</a></li>
+              <li><a href='#'>LIBE</a></li>
+              <li><a href='#'>PECH</a></li>
+              <li><a href='#'>PETI</a></li>
+              <li><a href='#'>REGI</a></li>
+              <li><a href='#'>TRAN</a></li>
             </ul>
-<form class="navbar-form navbar-right">
-      <div class="input-group">
-<span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
- <input type="text" id="input-filter" class="form-control" placeholder="name, party, committee...">
+          </li>
+          <li><a href="#" id="excel"><span class="glyphicon glyphicon-download"></span>Excel</a></li>
+          <li><a href="data/meps.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+            <input type="text" id="input-filter" class="form-control" placeholder="name, party, committee...">
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a><span class="nbmep badge"></span> MEPs</a></li>
+          <li id="nb_meps" title="numbers of MEPs"><a>?</a></li>
+          <li id="percent_women" title="percentage of women"><a><i></i>👩</a></li>
+          <li id="avg_age_" title="average age"><a>? years old</a></li>
+          <li id="avg_duration" title="how long in office"><a>since ?</a></li>
+        </ul>
       </div>
-</form>
-            <ul class="nav navbar-nav navbar-right">
-		    <li class="active"><a><span class="nbmep badge"></span> MEPs</a></li>
-              <li id="nb_meps" title="numbers of MEPs"><a>?</a></li>
-	      <li id="percent_women" title="percentage of women"><a><i>?</i>% 👩</a></li>
-              <li id="avg_age_" title="average age"><a>? years old</a></li>
-              <li id="avg_duration" title="how long in office"><a>since ?</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+      <!--/.nav-collapse -->
     </div>
-</nav>
+  </nav>
 
-<div class="container">
-<h1 class="page-header hidden">Members of the European parliament</h1>
-<div class="alert alert-info">
-	<button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
-	<div class="glyphicon glyphicon-info-sign"></div>
-<div>
-	Click on the graphs to filter the Members of the European parliament by country or party</div>
-							                    </div>
-<div id="ep2014list" class="row">
-<div class="group col-md-2"></div>
-<div class="country col-md-5"></div>
-<div class="gender col-md-2"></div>
-<div class="age col-md-3">
-	<div class="graph"></div>
-	<div id="avg_age"></div>
-</div>
-</div>
-
-   <div class="row">
-      <div class="col-md-12">
-      <table class="table table-striped" id="table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Committee</th>
-            <th>Country</th>
-            <th>Party</th>
-            <th class='since' title="Since how long in the Parliament?">since</th>
-          </tr>
-        </thead>
-      </table>
+  <div class="container">
+    <h1 class="page-header hidden">Members of the European parliament</h1>
+    <div class="alert alert-info">
+      <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+      <div class="glyphicon glyphicon-info-sign"></div>
+      <div>
+        Click on the graphs to filter the Members of the European parliament by country or party</div>
+    </div>
+    <div id="ep2014list" class="row">
+      <div class="group col-md-2"></div>
+      <div class="country col-md-5"></div>
+      <div class="gender col-md-2"></div>
+      <div class="age col-md-3">
+        <div class="graph"></div>
+        <div id="avg_age"></div>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped" id="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Committee</th>
+              <th>Country</th>
+              <th>Party</th>
+              <th class='since' title="Since how long in the Parliament?">since</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="list col-md-12"></div>
+      <div class="dc-data-count">
+        <span class="filter-count"></span> selected of <span class="total-count"></span> MEPs | <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+      </div>
+    </div>
+    <div class="dc-data-grid">
+    </div>
+  </div>
+  </div>
   </div>
 
-<div class="row">
-<div class="list col-md-12"></div>
-<div class="dc-data-count">
-<span class="filter-count"></span> selected out of <span class="total-count"></span> MEPs | <a
-href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
-</div>
-</div>
-<div class="dc-data-grid">
-</div>
-</div>
-</div>
-</div>
+  <script>
+    d3.select(window).on('resize.updatedc', function() {
+      dc.events.trigger(function() {
+        return;
+        var graph = graphs.country;
+        graph.width(d3.select(graph.anchor()).node().parentNode.getBoundingClientRect().width - graph.margins().right).rescale().redraw();
+      }, 500);
+    });
 
-<script>
- d3.select(window).on('resize.updatedc', function() {
-	   dc.events.trigger(function() {
-		   return;
-		       var graph = graphs.country;
-		           graph.width(d3.select(graph.anchor()).node().parentNode.getBoundingClientRect().width-graph.margins().right).rescale().redraw();
-			     },500);
- });
+    $(function() {
+      d3.csv("data/meps.csv", function(d) {
+        return d;
+      }, function(error, rows) {
+        data = rows;
+        draw(rows);
+      });
+    });
 
-$(function() {
-    d3.csv("data/meps.csv", function(d) {return d;}
-      ,function(error, rows) {
-      data=rows;	      
-      grid ("#ep2014list",rows);
-      });      
-    });      
+    jQuery.urlParam = function(name) {
+      var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+      if (results == null) {
+        return null;
+      } else {
+        return decodeURI(results[1]) || 0;
+      }
+    };
+  </script>
 
-  jQuery.urlParam = function(name){
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    if (results==null){
-       return null;
+  <style>
+    th.since {
+      min-width: 60px
     }
-    else{
-       return decodeURI(results[1]) || 0;
+
+    .text-filter {
+      cursor: pointer;
     }
-};
 
-</script>
+    .text-filter:hover {
+      text-decoration: dotted;
+      background: lightgrey;
+    }
 
-<style>
-th.since {min-width:60px}
-
-.text-filter {
-  cursor:pointer;
-}
-.text-filter:hover {
-  text-decoration: dotted;
-  background:lightgrey;
-}
-
-.alert .glyphicon{
-    display:table-cell;
+    .alert .glyphicon {
+      display: table-cell;
     }
 
     .alert div,
-    .alert span{
-        padding-left: 5px;
-	    display:table-cell;
-	    }
-body {padding-top:60px;}
-#ep2014list table, .dc-data-grid {clear:both;}
-.dc-table-label {background: #F5F5F5; font-weight:bold; }
-.x line {stroke:none;}
+    .alert span {
+      padding-left: 5px;
+      display: table-cell;
+    }
 
-.navbar-brand {padding: 0px;}
+    body {
+      padding-top: 60px;
+    }
 
-.navbar-brand>img {height: 100%;padding: 15px;width: auto;}
+    #ep2014list table,
+    .dc-data-grid {
+      clear: both;
+    }
 
-body {font-family: arial, helvetica, sans-serif;}
+    .dc-table-label {
+      background: #F5F5F5;
+      font-weight: bold;
+    }
 
-.btn-gender {font-size:1.2em;}
-.btn-email {font-size:0.8em}
+    .x line {
+      stroke: none;
+    }
 
-.age .graph {float:none;}
-.age {position:relative;}
-#avg_age {position:absolute;top:20px;left:100px;font-size:50px;}
-.dc-data-grid, .dc-grid-group {clear:both}
-.dc-data-count {clear:both;}
-.dc-grid-group {
-  background-color: #F5F5F5;
-border: 1px solid #E3E3E3;
-        border-radius: 4px;
+    .navbar-brand {
+      padding: 0px;
+    }
 
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-        margin-bottom: 20px;
-        min-height: 20px;
-padding: 10px;
-}
+    .navbar-brand>img {
+      height: 100%;
+      padding: 15px;
+      width: auto;
+    }
 
-td .btn-group {min-width:50px}
+    body {
+      font-family: arial, helvetica, sans-serif;
+    }
 
-.dc-grid-item {
-float:left;
-margin:0 10px 10px 0;
-padding:5px;
-width:200px;
+    .btn-gender {
+      font-size: 1.2em;
+    }
+
+    .btn-email {
+      font-size: 0.8em
+    }
+
+    .age .graph {
+      float: none;
+    }
+
+    .age {
+      position: relative;
+    }
+
+    #avg_age {
+      position: absolute;
+      top: 20px;
+      left: 100px;
+      font-size: 50px;
+    }
+
+    .dc-data-grid,
+    .dc-grid-group {
+      clear: both
+    }
+
+    .dc-data-count {
+      clear: both;
+    }
+
+    .dc-grid-group {
+      background-color: #F5F5F5;
+      border: 1px solid #E3E3E3;
+      border-radius: 4px;
+
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+      margin-bottom: 20px;
+      min-height: 20px;
+      padding: 10px;
+    }
+
+    td .btn-group {
+      min-width: 50px
+    }
+
+    .dc-grid-item {
+      float: left;
+      margin: 0 10px 10px 0;
+      padding: 5px;
+      width: 200px;
       background-color: #F8F8F8;
       border-color: #E7E7E7;
       border-radius: 4px;
-      text-align:center;
+      text-align: center;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-}
-.dc-grid-item {position:relative;height:250px;}
-.dc-grid-item img {width:170px;height:215px;position:absolute;top:1em;left:1em;z-index:1}
-.dc-grid-top h1 {font-size:22px;}
-.dc-grid-top h2 {font-size:14px;position:relative;z-index:2;background:white;opacity:0.8}
-.gender.dc-chart .pie-slice {font-size:25px;font-weight:bold;}
-</style>
-</div>
+    }
+
+    .dc-grid-item {
+      position: relative;
+      height: 250px;
+    }
+
+    .dc-grid-item img {
+      width: 170px;
+      height: 215px;
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      z-index: 1
+    }
+
+    .dc-grid-top h1 {
+      font-size: 22px;
+    }
+
+    .dc-grid-top h2 {
+      font-size: 14px;
+      position: relative;
+      z-index: 2;
+      background: white;
+      opacity: 0.8
+    }
+
+    .gender.dc-chart .pie-slice {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  </style>
+  </div>
 
 
-</div>
-</div>
+  </div>
+  </div>
 
 </body>
+
 </html>
