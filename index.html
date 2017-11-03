@@ -165,6 +165,16 @@
       });
 
       var reducer = reductio();
+      reducer.value("since").count(true).filter(function(d) {
+        return d.since;
+      }).avg(function(d) {
+        return d.since.getTime()
+      });
+      reducer.value("birthdate").count(true).filter(function(d) {
+        return d.birthdate;
+      }).avg(function(d) {
+        return +d.birthdate.getTime()
+      });
       reducer.value("nb").count(true);
       reducer.value("woman").count(true).filter(function(d) {
         return d.gender == "F"
@@ -178,6 +188,7 @@
         .valueAccessor(function(d) {
           return d.value.nb.count
         })
+        .formatNumber(d3.format("d"))
         .html({
           some: "%number"
         })
@@ -190,15 +201,30 @@
       //              );
       //        })
 
-      graphs.nbwomen = dc.numberDisplay("#percent_women i")
+      graphs.avg_since = dc.numberDisplay("#avg_since a")
         .group(group)
         .valueAccessor(function(d) {
-          return d.value.woman.count / graphs.total.data();
+          return d.value.since.avg;
         })
-        //.formatNumber(formatPercent)
+        .formatNumber(function(n) {
+          return moment(n).fromNow().replace(" ago", "");
+        })
         .html({
-          some: "%number"
+          some: "since %number"
         })
+
+      graphs.avg_age = dc.numberDisplay("#avg_age_ a")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.birthdate.avg;
+        })
+        .formatNumber(function(n) {
+          return moment(n).fromNow().replace(" ago", "");
+        })
+        .html({
+          some: "%number old"
+        })
+
       graphs.nbwomen = dc.numberDisplay("#percent_women i")
         .group(group)
         .valueAccessor(function(d) {
@@ -240,10 +266,6 @@
         .group(groupGender);
     };
 
-
-    //  dc.dataCount(".dc-data-count")
-    //    .dimension(ndx)
-    //    .group(all);
 
     function drawGrid(dom) {
       return dc.dataGrid(dom)
@@ -328,7 +350,7 @@
             return "<span class='text-filter'>" + d.party + "</span>";
           },
           function(d) {
-            return moment(d.since, "YYYY-MM-DD").fromNow().replace(" ago", "");
+            return moment(d.since).fromNow().replace(" ago", "");
           },
           function(d) {
             return d.email;
@@ -351,9 +373,10 @@
         var birthdate = null;
 
         data.forEach(function(e) {
+          e.since = dateFormat.parse(e.since);
           if (!e.birthdate) return;
-          birthdate = dateFormat.parse(e.birthdate);
-          e.age = ~~((now - birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
+          e.birthdate = dateFormat.parse(e.birthdate);
+          e.age = ~~((now - e.birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
         });
       }
 
@@ -362,7 +385,7 @@
       //  graphs.grid=drawGrid(".dc-data-grid");
       drawNumbers(graphs);
       graphs.country = drawCountry(".country");
-      graphs.age = drawAge(".age");
+      //      graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group");
       graphs.table = drawTable("#table");
       graphs.gender = drawGender(".gender");
@@ -486,10 +509,10 @@
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a><span class="nbmep badge"></span> MEPs</a></li>
-          <li id="nb_meps" title="numbers of MEPs"><a>?</a></li>
+          <li class="hidden" id="nb_meps" title="numbers of MEPs"><a>?</a></li>
           <li id="percent_women" title="percentage of women"><a><i></i>👩</a></li>
-          <li id="avg_age_" title="average age"><a>? years old</a></li>
-          <li id="avg_duration" title="how long in office"><a>since ?</a></li>
+          <li id="avg_age_" title="average age"><a></a></li>
+          <li id="avg_since" title="how long in office"><a></a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
