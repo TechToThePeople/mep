@@ -20,8 +20,6 @@
   <script>
     'use strict';
     //var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
-    var tpl = _.template("<h2 title='MEP from <%= country %> in <%= eugroup %>'> <%= first_name %> <%= last_name %></h2><img class='lazy-load' src='blank.gif' daata-src='mepphoto/<%= epid %>.jpg' data-src='http://www.europarl.europa.eu/mepphoto/<%= epid %>.jpg' alt='<%= last_name %>, <%= first_name %> member of <%= eugroup %>' title='MEP from <%= country %> in <%= eugroup %>' width=170 height=216 />");
-
     var graphs = [];
     var summary = {};
     var ndx = null;
@@ -31,6 +29,7 @@
       "F": "👩",
       "": "?"
     };
+    var formatDate = d3.time.format("%d/%m/%Y");
     var committee_color = "#DE5F2C";
     var eu_groups = {
       "GUE/NGL": "#800c00",
@@ -54,6 +53,12 @@
       $("#input-filter").val("").keyup();
       //dc.renderAll()
     };
+
+    function modal (d) {
+      $("#detail").html(tmpl("tmpl-detail", d)).modal();
+      //console.log(tmpl("tmpl-detail", d));
+      //$.getJson("https://api.rss2json.com/v1/api.json?rss_url=http://www.europarl.europa.eu/rss/mep/xavier.dutoit/en.xml",...
+    }
 
     function drawAge(dom) {
       //var graph = dc.barChart(dom);
@@ -330,12 +335,14 @@
         })
         .columns([
           function(d) {
-            return '<div class="btn-group btn-group-xs"><a type="button" class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
+            return '<div class="btn-group btn-group-sm"><a type="button" class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
               '<a title="' + d.email + '" href="mailto:' + d.email + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>' +
+	      '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>'
               '</div>';
           },
           function(d) {
-            return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
+            //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
+            return d.first_name + " " + d.last_name;
           },
           function(d) {
             var t = "";
@@ -352,10 +359,10 @@
             return t;
           },
           function(d) {
-            return "<span title='" + d.country + "' class='text-filter country-flag " + d.country.replace(" ", "-").toLowerCase() + "'>" + d.country + "</span>";
+            return "<span title='" + d.country + "' class='img-rounded text-filter country-flag " + d.country.replace(" ", "-").toLowerCase() + "'>" + d.country + "</span>";
           },
           function(d) {
-            return "<span title='" + d.eugroup + "' class='group-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
+            return "<span title='" + d.eugroup + "' class='img-rounded text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
           },
           function(d) {
             return "<span class='text-filter'>" + d.party + "</span>";
@@ -367,6 +374,16 @@
             return d.email;
           }
         ])
+        .on("renderlet.detail", function(g) {
+          g.selectAll(".btn-detail")
+		  .on("click",function(d) {
+			  modal(d3.select(this).datum());
+		  });
+          g.selectAll("td")
+		  .on("click",function(d) {
+			  modal(d3.select(this).datum());
+		  });
+        })
         .on("renderlet.hide", function() {
           $(dom).find("tbody > tr > td:last-child").addClass('hidden email');
         })
@@ -633,6 +650,23 @@
   </script>
 
   <style>
+@media (min-width: 768px) {
+	.dl-horizontal dt {
+           width:100px;
+				            aawhite-space: normal;
+	margin-bottom: 5px;
+								        }
+	        .dl-horizontal dd {
+			        margin-left:120px;
+					    }
+}
+
+.btn-img {height:20px}
+.dc-table-column._3
+,.dc-table-column._4 {
+  padding: auto 2px;
+}
+
     .eugroup,
     .country-flag {
       display: inline-block;
@@ -796,6 +830,9 @@
       min-width: 60px
     }
 
+    td {
+      cursor: pointer;
+    }
     .text-filter {
       cursor: pointer;
     }
@@ -891,8 +928,9 @@
     }
 
     td .btn-group {
-      min-width: 50px
+      min-width: 70px
     }
+    td .btn-group > .btn { padding: 5px;}
 
     .dc-grid-item {
       float: left;
@@ -942,7 +980,45 @@
 
   </div>
   </div>
+<div id="detail" class="modal fade" role="dialog">
+</div>
+<style type="text/x-tmpl" id="tmpl-detail">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	<h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
+	<span title='{%=o.country%}' class='img-rounded pull-left text-filter country-flag {%=o.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
+	<span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
+	</h4>
+      </div>
+      <div class="modal-body"><div class="row">
+      <div class="col-md-3">
+      <img src="http://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
+      </div>
+      <div class="col-md-9">
+	<dl class="dl-horizontal">
+  <dt>Since</dt><dd>{%=formatDate(o.since)%}</dd>
+  <dt>Country</dt><dd>{%=o.country%}</dd>
+  <dt>Group</dt><dd>{%=o.eugroup%}</dd>
+  <dt>Party</dt><dd>{%=o.party%}</dd>
+  <dt>Email</dt><dd>{%=o.email%}</dd>
+  <dt>Phone</dt><dd>{%=o.phone%}</dd>
+  <dt>Twitter</dt><dd>{%=o.twitter%}</dd>
+  <dt>Birthdate</dt><dd>{%=formatDate(o.birthdate)%}</dd>
+  </dl>
+      </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+	      <a href="tel:{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
+	      <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
+      <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/_home.html" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+  </div>
 
+</style>
 </body>
 
 </html>
