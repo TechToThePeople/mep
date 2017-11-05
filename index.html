@@ -29,7 +29,9 @@
       "F": "👩",
       "": "?"
     };
-    var formatDate = d3.time.format("%d/%m/%Y");
+    var formatDate = function(d) {
+      return d ? d3.time.format("%d/%m/%Y")(d) : ""
+    };
     var committee_color = "#DE5F2C";
     var eu_groups = {
       "GUE/NGL": "#800c00",
@@ -54,9 +56,11 @@
       //dc.renderAll()
     };
 
-    function modal (d) {
+    function modal(d) {
+	    console.log("modal");
       $("#detail").html(tmpl("tmpl-detail", d)).modal();
       //console.log(tmpl("tmpl-detail", d));
+      //d3.event.stopPropagation();
       //$.getJson("https://api.rss2json.com/v1/api.json?rss_url=http://www.europarl.europa.eu/rss/mep/xavier.dutoit/en.xml",...
     }
 
@@ -105,7 +109,7 @@
     }
 
     function drawGroup(dom) {
-      var graph = dc.pieChart(dom).innerRadius(20).radius(70);
+      var graph = dc.pieChart(dom).innerRadius(20) //.radius(70);
       var dim = ndx.dimension(function(d) {
         if (typeof d.eugroup == "undefined") return "";
         return d.eugroup;
@@ -115,7 +119,7 @@
       });
       graph
         .width(0)
-        .height(200)
+        .height(0)
         .colorCalculator(function(d, i) {
           return eu_groups[d.key];
           //return color(d.value.score/d.value.count);
@@ -142,8 +146,8 @@
         .gap(1)
         .margins({
           top: 0,
-          right: 0,
-          bottom: 95,
+          right: 10,
+          bottom: 20,
           left: 30
         })
         .x(d3.scale.ordinal())
@@ -160,7 +164,7 @@
 
       function rotateBarChartLabels() {
         d3.selectAll(dom + ' .axis.x text')
-          .style("text-anchor", "end")
+          .style("text-anchor", "start")
           .attr("transform", function(d) {
             return "rotate(-90, -4, 9) ";
           });
@@ -249,7 +253,7 @@
     }
 
     function drawGender(dom) {
-      var pie_gender = dc.pieChart(dom).radius(70);
+      var pie_gender = dc.pieChart(dom)//.radius(70);
       var NameGender = {
         "M": "Male",
         "F": "Female",
@@ -266,7 +270,7 @@
 
       return pie_gender
         .width(0)
-        .height(200)
+        .height(0)
         .dimension(gender)
         .label(function(d) {
           return SymbolGender[d.key];
@@ -301,6 +305,7 @@
     };
 
     jQuery(function($) {
+	    $(".btn-toggle").click(function(){$(this).toggleClass("active")});
       $(".resetall").click(reset);
       //        $(".summary_total").text(formatNumber(summary.total));
       $("#input-filter").val($.urlParam("q")).keyup(); //if channel param, filter
@@ -310,7 +315,12 @@
       $("#excel").click(function() {
         excelise()
       });
-      $("table").on("click", ".text-filter", function() {
+      $("table").on("click", ".btn", function(e) {
+	e.stopPropagation();
+      });
+      $("table").on("click", ".text-filter", function(e) {
+        //d3.event.stopPropagation();
+	e.stopPropagation();
         var text = $(this).text();
         if ($("#input-filter").val() == text)
           text = "";
@@ -335,10 +345,10 @@
         })
         .columns([
           function(d) {
-            return '<div class="btn-group btn-group-sm"><a type="button" class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
+            return '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
               '<a title="' + d.email + '" href="mailto:' + d.email + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>' +
-	      '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>'
-              '</div>';
+              '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>'
+             +'</div>';
           },
           function(d) {
             //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
@@ -370,22 +380,19 @@
           function(d) {
             return moment(d.since).fromNow().replace(" ago", "");
           },
-          function(d) {
-            return d.email;
-          }
+//          function(d) {            return d.email;}
         ])
         .on("renderlet.detail", function(g) {
-          g.selectAll(".btn-detail")
-		  .on("click",function(d) {
-			  modal(d3.select(this).datum());
-		  });
+          // don't need it, taken care of by the tr one
+	       //	g.selectAll(".btn-detail").on("click", function(d) {modal(d3.select(this).datum());});
           g.selectAll("td")
-		  .on("click",function(d) {
-			  modal(d3.select(this).datum());
-		  });
+            .on("click", function(d) {
+              modal(d3.select(this).datum());
+            });
         })
-        .on("renderlet.hide", function() {
-          $(dom).find("tbody > tr > td:last-child").addClass('hidden email');
+        .on("renderlet.hide", function(g) {
+          g.selectAll("tbody").attr("class","collapse in");
+          //$(dom).find("tbody > tr > td:last-child").addClass('hidden email');
         })
       return chart;
 
@@ -417,12 +424,12 @@
       });
       //  graphs.grid=drawGrid(".dc-data-grid");
       drawNumbers(graphs);
-      graphs.country = drawCountry(".country");
+      graphs.country = drawCountry(".country .panel-body");
       graphs.committee = drawCommittee(".committee .graph");
       //      graphs.age = drawAge(".age");
-      graphs.group = drawGroup(".group");
+      graphs.group = drawGroup(".group .panel-body");
+      graphs.gender = drawGender(".gender .panel-body");
       graphs.table = drawTable("#table");
-      graphs.gender = drawGender(".gender");
       graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {
         setUrl()
@@ -513,7 +520,7 @@
   </script>
 
 
-  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top resetall">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -527,7 +534,14 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#">About</a></li>
+          <li class="active">
+            <p class="navbar-btn"><a data-toggle="collapse" data-target="#stat .panel-body" 
+		               href="#stat" class="btn-toggle active btn btn-default"><i class="glyphicon glyphicon-stats"></i></a></p>
+          </li>
+          <li class="active">
+            <p class="navbar-btn"><a class="btn-toggle active btn btn-default" data-toggle="collapse" data-target="#table tbody"><i class="glyphicon glyphicon-list-alt"></i></a></p>
+          </li>
+          <li><a href="#" title="Contact and help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
             <ul class="dropdown-menu" id="dropdown-committee">
@@ -574,25 +588,49 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="page-header hidden">Members of the European parliament</h1>
-    <div class="alert alert-info">
-      <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
-      <div class="glyphicon glyphicon-info-sign"></div>
-      <div>
-        Click on the graphs to filter the Members of the European parliament by country or party</div>
-    </div>
-    <div id="ep2014list" class="row">
-      <div class="group col-md-2"></div>
-      <div class="country col-md-5"></div>
-      <div class="gender col-md-2"></div>
+    <div id="stat" class="row collapse in">
+      <div class="alert alert-info">
+        <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+        <div class="glyphicon glyphicon-info-sign"></div>
+        <div>
+          Click on the graphs to filter the Members of the European parliament by country or party</div>
+      </div>
+      <div class="group col-md-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+		  <h3 class="panel-title"><a data-toggle="collapse" data-target=".group .panel-body" 
+				            href="#" >Groups</a></h3></div>
+          <div class="panel-body collapse in"></div>
+        </div>
+
+      </div>
+      <div class="country col-md-5">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+		  <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".country .panel-body">Countries</a></h3></div>
+          <div class="panel-body collapse in"></div>
+        </div>
+      </div>
+      <div class="gender col-md-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+		  <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".gender .panel-body">Gender</a></h3></div>
+          <div class="panel-body collapse in"></div>
+        </div>
+      </div>
       <div class="committee col-md-3">
-        <div class="graph"></div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+		  <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".committee .panel-body">Committees</a></h3></div>
+          <div class="panel-body graph collapse in"></div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-12">
+    <div id="list" class="row">
+      <div class="col-md-12 card">
         <table class="table table-striped" id="table">
           <thead>
             <tr>
@@ -611,9 +649,6 @@
 
     <div class="row">
       <div class="list col-md-12"></div>
-      <div class="dc-data-count">
-        <span class="filter-count"></span> selected of <span class="total-count"></span> MEPs | <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
-      </div>
     </div>
     <div class="dc-data-grid">
     </div>
@@ -624,7 +659,6 @@
   <script>
     d3.select(window).on('resize.updatedc', function() {
       dc.events.trigger(function() {
-        return;
         var graph = graphs.country;
         graph.width(d3.select(graph.anchor()).node().parentNode.getBoundingClientRect().width - graph.margins().right).rescale().redraw();
       }, 500);
@@ -650,22 +684,41 @@
   </script>
 
   <style>
-@media (min-width: 768px) {
-	.dl-horizontal dt {
-           width:100px;
-				            aawhite-space: normal;
-	margin-bottom: 5px;
-								        }
-	        .dl-horizontal dd {
-			        margin-left:120px;
-					    }
-}
+.country .x line {opacity:0}
 
-.btn-img {height:20px}
-.dc-table-column._3
-,.dc-table-column._4 {
-  padding: auto 2px;
+.input-group-addon {color:white;}
+.navbar-btn {margin:4px 0;}
+.navbar-btn .btn {padding:8px;}
+
+.panel-heading a:after {
+	    font-family:'Glyphicons Halflings';
+		        content:"\e114";
+				    float: right;
+					        color: grey;
 }
+      .panel-heading a.collapsed:after {
+	          content:"\e080";
+      }
+
+@media (min-width: 768px) {
+      .dl-horizontal dt {
+        width: 100px;
+        aawhite-space: normal;
+        margin-bottom: 5px;
+      }
+      .dl-horizontal dd {
+        margin-left: 120px;
+      }
+    }
+
+    .btn-img {
+      height: 20px
+    }
+
+    .dc-table-column._3,
+    .dc-table-column._4 {
+      padding: auto 2px;
+    }
 
     .eugroup,
     .country-flag {
@@ -833,13 +886,14 @@
     td {
       cursor: pointer;
     }
+
     .text-filter {
       cursor: pointer;
     }
 
     .text-filter:hover {
       text-decoration: dotted;
-      background: #DE5F2C;
+      background-color: #DE5F2C;
     }
 
     .alert .glyphicon {
@@ -853,8 +907,10 @@
     }
 
     body {
-      padding-top: 60px;
+    padding-top: 50px;
     }
+
+    #stat {margin-top:10px;}
 
     #ep2014list table,
     .dc-data-grid {
@@ -870,14 +926,16 @@
       stroke: none;
     }
 
+    .nav li a {padding:0 7px;}
+
     .navbar-brand {
-      padding: 0px;
+//      padding: 0px;
     }
 
     .navbar-brand>img {
       height: 100%;
-      padding: 15px;
-      width: auto;
+//      padding: 15px;
+//      width: auto;
     }
 
     body {
@@ -898,13 +956,6 @@
 
     .age {
       position: relative;
-    }
-
-    #avg_age {
-      position: absolute;
-      top: 20px;
-      left: 100px;
-      font-size: 50px;
     }
 
     .dc-data-grid,
@@ -930,7 +981,10 @@
     td .btn-group {
       min-width: 70px
     }
-    td .btn-group > .btn { padding: 5px;}
+
+    td .btn-group>.btn {
+      padding: 5px;
+    }
 
     .dc-grid-item {
       float: left;
@@ -974,51 +1028,54 @@
       font-size: 25px;
       font-weight: bold;
     }
+    
+    div.dc-chart {float:none;padding:10px 0}
+
   </style>
   </div>
 
 
   </div>
   </div>
-<div id="detail" class="modal fade" role="dialog">
-</div>
-<style type="text/x-tmpl" id="tmpl-detail">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	<h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
-	<span title='{%=o.country%}' class='img-rounded pull-left text-filter country-flag {%=o.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
-	<span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
-	</h4>
-      </div>
-      <div class="modal-body"><div class="row">
-      <div class="col-md-3">
-      <img src="http://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
-      </div>
-      <div class="col-md-9">
-	<dl class="dl-horizontal">
-  <dt>Since</dt><dd>{%=formatDate(o.since)%}</dd>
-  <dt>Country</dt><dd>{%=o.country%}</dd>
-  <dt>Group</dt><dd>{%=o.eugroup%}</dd>
-  <dt>Party</dt><dd>{%=o.party%}</dd>
-  <dt>Email</dt><dd>{%=o.email%}</dd>
-  <dt>Phone</dt><dd>{%=o.phone%}</dd>
-  <dt>Twitter</dt><dd>{%=o.twitter%}</dd>
-  <dt>Birthdate</dt><dd>{%=formatDate(o.birthdate)%}</dd>
-  </dl>
-      </div>
-      </div>
-      </div>
-      <div class="modal-footer">
-	      <a href="tel:{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
-	      <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
-      <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/_home.html" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+  <div id="detail" class="modal fade" role="dialog">
   </div>
+  <style type="text/x-tmpl" id="dtd">
+    {% if (o.dd) { %}
+    <dt>{%=o.dt%}</dt>
+    <dd>{%=o.dd%}</dd>
+    {% } %}
+  </style>
+  <style type="text/x-tmpl" id="tmpl-detail">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
+            <span title='{%=o.country%}' class='img-rounded pull-left text-filter country-flag {%=o.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
+            <span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="http://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="col-md-9">
+              <dl class="dl-horizontal">
+                {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="tel:{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
+          <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
+          <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/_home.html" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
 
-</style>
+  </style>
 </body>
 
 </html>
