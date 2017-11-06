@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var minify = require('gulp-minify-css');
+var minify = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var download = require("gulp-download");
 var xz = require("xz");
@@ -43,9 +43,13 @@ gulp.task('decompress', function() {
 
 gulp.task('stylesheets', function() {
   return gulp.src(paths.css)
-    .pipe(minify())
-    .pipe(concat('all.css'))
-    .pipe(gulp.dest('build/css'));
+    .pipe(sourcemaps.init())
+    .pipe(minify({rebase: false,level: {
+	        1: {specialComments: 0}}}))
+
+.pipe(concat('all.css'))
+    .pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('build/css'));
 });
 
 gulp.task('scripts', function() {
