@@ -56,7 +56,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/js')) 
     .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/js'));
 });
 
