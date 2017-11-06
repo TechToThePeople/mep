@@ -32,7 +32,9 @@
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
     };
-    var committee_color = "#DE5F2C";
+    var committee_color = "#e57373";
+    var country_color= "#80cbc4";
+    var gender_color= ["#b3e5fc","#f8bbd0","#9575cd"];
     var eu_groups = {
       "GUE/NGL": "#800c00",
       "S&D": "#c21200",
@@ -143,6 +145,7 @@
         .width(0)
         .height(200)
         .outerPadding(0)
+        .ordinalColors([country_color])
         .gap(1)
         .margins({
           top: 0,
@@ -157,7 +160,7 @@
         .yAxisLabel("#MEPs")
         .dimension(dim)
         .group(group)
-        .on("postRender", function(c) {
+        .on("renderlet", function(c) {
           rotateBarChartLabels();
         });
       return graph;
@@ -166,7 +169,7 @@
         d3.selectAll(dom + ' .axis.x text')
           .style("text-anchor", "start")
           .attr("transform", function(d) {
-            return "rotate(-90, -4, 9) ";
+            return "rotate(-90, -4, 9), translate(10,0) ";
           });
       }
     }
@@ -272,6 +275,7 @@
         .width(0)
         .height(0)
         .dimension(gender)
+        .ordinalColors(gender_color)
         .label(function(d) {
           return SymbolGender[d.key];
         })
@@ -305,7 +309,13 @@
     };
 
     jQuery(function($) {
-	    $(".btn-toggle").click(function(){$(this).toggleClass("active")});
+	    $(".btn-toggle").click(function(e) {
+console.log("click");
+              $(this).toggleClass("active");
+              $($(this).data("target")).collapse("toggle");//toggleClass("in");//collapse("toggle")
+//              $($(this).data("target")).toggle();
+	e.stopPropagation();
+      });
       $(".resetall").click(reset);
       //        $(".summary_total").text(formatNumber(summary.total));
       $("#input-filter").val($.urlParam("q")).keyup(); //if channel param, filter
@@ -391,6 +401,8 @@
             });
         })
         .on("renderlet.hide", function(g) {
+console.log("render");
+          
           g.selectAll("tbody").attr("class","collapse in");
           //$(dom).find("tbody > tr > td:last-child").addClass('hidden email');
         })
@@ -535,11 +547,11 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active">
-            <p class="navbar-btn"><a data-toggle="collapse" data-target="#stat .panel-body" 
+            <p class="navbar-btn"><a data-toggle="cccollapse" data-target="#stat .panel-body" 
 		               href="#stat" class="btn-toggle active btn btn-default"><i class="glyphicon glyphicon-stats"></i></a></p>
           </li>
           <li class="active">
-            <p class="navbar-btn"><a class="btn-toggle active btn btn-default" data-toggle="collapse" data-target="#table tbody"><i class="glyphicon glyphicon-list-alt"></i></a></p>
+            <p class="navbar-btn"><a class="btn-toggle active btn btn-default" data-toggle="cccollapse" data-target="#table tbody"><i class="glyphicon glyphicon-list-alt"></i></a></p>
           </li>
           <li><a href="#" title="Contact and help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
           <li class="dropdown">
@@ -657,11 +669,18 @@
   </div>
 
   <script>
-    d3.select(window).on('resize.updatedc', function() {
-      dc.events.trigger(function() {
-        var graph = graphs.country;
-        graph.width(d3.select(graph.anchor()).node().parentNode.getBoundingClientRect().width - graph.margins().right).rescale().redraw();
-      }, 500);
+d3.select(window).on('resize.updatedc', function() {
+  dc.events.trigger(function() {
+    dc.chartRegistry.list().forEach(function(chart) {
+            var container = chart.root().node();
+            if (!container) return; // some graphs don't have a node (?!)
+            container=container.parentNode.getBoundingClientRect();
+            chart.width(container.width);
+            chart.rescale && chart.rescale(); // some graphs don't have a rescale
+      });
+
+      dc.redrawAll(); 
+  },500);
     });
 
     $(function() {
@@ -1024,9 +1043,9 @@
       opacity: 0.8
     }
 
-    .gender.dc-chart .pie-slice {
+    .gender .dc-chart .pie-slice {
       font-size: 25px;
-      font-weight: bold;
+      fill:black;
     }
     
     div.dc-chart {float:none;padding:10px 0}
@@ -1037,7 +1056,7 @@
 
   </div>
   </div>
-  <div id="detail" class="modal fade" role="dialog">
+  <div id="detail" class="modal nofade" role="dialog">
   </div>
   <style type="text/x-tmpl" id="dtd">
     {% if (o.dd) { %}

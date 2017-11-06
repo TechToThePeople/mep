@@ -12,7 +12,8 @@ var paths = {
   css: [
     'node_modules/dc/dc.css',
     'node_modules/bootstrap/dist/css/bootstrap.css',
-    'node_modules/bootstrap/dist/css/bootstrap-theme.css'
+//    'node_modules/bootstrap/dist/css/bootstrap-theme.css'
+'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css'
   ],
   scripts: [
     'node_modules/jquery/dist/jquery.js',
@@ -41,7 +42,6 @@ gulp.task('decompress', function() {
 });
 
 gulp.task('stylesheets', function() {
-  // with sourcemaps all the way down 
   return gulp.src(paths.css)
     .pipe(minify())
     .pipe(concat('all.css'))
@@ -52,8 +52,10 @@ gulp.task('scripts', function() {
   // with sourcemaps all the way down 
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('build/js')) 
     .pipe(uglify())
-    .pipe(concat('all.min.js'))
+    .pipe(rename({ extname: '.min.js' }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
 });
