@@ -146,7 +146,7 @@
         .height(200)
         .outerPadding(0)
         .ordinalColors([country_color])
-        .gap(1)
+        .gap(0)
         .margins({
           top: 0,
           right: 10,
@@ -521,7 +521,24 @@ console.log("render");
             return c[p];
           })
         }
-      var toExcel = $('#table').html();
+      var toExcel="<thead>";
+      graphs.table.dimension().top(1).forEach(function(d){
+	      toExcel +="<tr>";
+	      for (var c in d) {
+		      toExcel+="<th>"+c+"</th>";
+	      };
+	      toExcel +="</tr>";
+      });
+      toExcel+="</thead><tbody>\n";
+      graphs.table.dimension().top(Number.POSITIVE_INFINITY).forEach(function(d){
+	      toExcel +="<tr>";
+	      for (var c in d) {
+		      toExcel+="<td>"+d[c]+"</td>";
+	      };
+	      toExcel +="</tr>\n";
+      });
+      toExcel+="</tbody>";
+      //var toExcel = $('#table').html();
       var ctx = {
         worksheet: name || 'meps_tttp',
         table: toExcel
@@ -617,7 +634,13 @@ console.log("render");
       <div class="country col-md-5">
         <div class="panel panel-default">
           <div class="panel-heading">
-		  <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".country .panel-body">Countries</a></h3></div>
+      <div class="btn-group pull-right hidden">
+	      <button class="btn btn-default"><i class="glyphicon glyphicon-sort-by-alphabet">A-Z</i></button> 
+	      <button class="btn btn-default"><i class="glyphicon glyphicon-sort-by-attributes-alt">size</i></button> 
+      </div>
+		  <h3 class="panel-title">
+			  <a href="#" class="" data-toggle="collapse" data-target=".country .panel-body">Countries</a>
+		  </h3></div>
           <div class="panel-body collapse in"></div>
         </div>
       </div>
