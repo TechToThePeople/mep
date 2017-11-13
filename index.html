@@ -634,14 +634,27 @@ console.log("render");
       <div class="country col-md-5">
         <div class="panel panel-default">
           <div class="panel-heading">
-      <div class="btn-group pull-right hidden">
-	      <button class="btn btn-default"><i class="glyphicon glyphicon-sort-by-alphabet">A-Z</i></button> 
-	      <button class="btn btn-default"><i class="glyphicon glyphicon-sort-by-attributes-alt">size</i></button> 
-      </div>
-		  <h3 class="panel-title">
-			  <a href="#" class="" data-toggle="collapse" data-target=".country .panel-body">Countries</a>
-		  </h3></div>
-          <div class="panel-body collapse in"></div>
+	 <h3 class="panel-title" data-toggle="collapse" data-target=".country .panel-body">Countries</h3>
+ <ul class="nav nav-tabs pull-right" role="tablist" >
+    <li role="presentation" class="active hidden"><a href="#map" aria-controls="map" role="tab" data-toggle="tab">Map</a></li>
+    <li role="presentation"><a href="#pie" aria-controls="pie" role="tab" data-toggle="tab">
+	    
+	      <i class="glyphicon glyphicon-sort-by-alphabet">A-Z</i>
+	    
+	    </a></li>
+    <li role="presentation"><a href="#list" aria-controls="list" role="tab" data-toggle="tab">
+	      <i class="glyphicon glyphicon-sort-by-attributes-alt">size</i>
+	    
+	    </a></li>
+  </ul>
+
+	  </div>
+          <div class="panel-body collapse in">
+    <div role="tabpanel" class="graph tab-pane active fade in" id="map"></div>
+    <div role="tabpanel" class="tab-pane pie fade in" id="pie"></div>
+    <div role="tabpanel" class="tab-pane list fade in" id="list"></div>
+	  
+	  </div>
         </div>
       </div>
       <div class="gender col-md-2">
@@ -728,7 +741,7 @@ d3.select(window).on('resize.updatedc', function() {
 .navbar-btn {margin:4px 0;}
 .navbar-btn .btn {padding:8px;}
 
-.panel-heading a:after {
+.panel-heading h3> a:after {
 	    font-family:'Glyphicons Halflings';
 		        content:"\e114";
 				    float: right;
