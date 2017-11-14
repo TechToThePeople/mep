@@ -13,6 +13,8 @@
     "reducio": "^4.0.0"
   },
   "devDependencies": {
+    "cached-request": "^1.1.2",
+    "cheerio": "^1.0.0-rc.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
