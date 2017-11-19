@@ -9,7 +9,6 @@ var groups = {};
 var head = ['epid', 'country', 'first_name', 'last_name', 'email', 'birthdate', 'gender', 'eugroup', 'party', 'phone', 'office', 'committee', 'substitute', 'delegation', 'twitter', 'tttpid', 'since'];
 
 var delegations = require('../data/delegations.json');
-var mepid= require('../data/mepid.json'); // direct from EP site, for QA
 delegations.DLAT = "Euro-Latin American Parliamentary Assembly";
 delegations.DCAS = "EU-Kazakhstan";
 delegations.ASEAN = "ASEAN";
@@ -25,6 +24,10 @@ const path = require('path');
 const through2 = require('through2')
 const JSONStream = require('JSONStream');
 const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
+
+var mepid= require('../data/mepid.json'); // direct from EP site, for QA
+var csvparse=require('csv-parse/lib/sync.js');
+var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true}); // fixing manually the missing genders
 
 function isActive (id) {return mepid.find(o => o.id === id);}
 
@@ -67,6 +70,10 @@ var abbr = {
 };
 
 function transform(d) {
+  function fixGender (id) {
+    var g=nogender.find(o => o.epid === id);
+    return g? g.gender: '';
+  }
   function activeOnly(attr) {
     var r = [];
     if (!d[attr]) return;
@@ -103,6 +110,7 @@ function transform(d) {
   d.first_name = d.Name.sur;
   d.last_name = d.Name.family;
   d.epid = d.UserID;
+  if (!d.Gender) d.Gender=fixGender(d.epid);
   delete d.UserID;
   delete d.Name;
   delete d.Addresses.Postal;
