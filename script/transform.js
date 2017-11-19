@@ -71,10 +71,10 @@ function transform(d) {
     var r = [];
     if (!d[attr]) return;
     d[attr].forEach(function(item) {
+      if (item.start < d.since) d.since = item.start;
       if (item.end !== '9999-12-31T00:00:00') return;
       delete item.end;
       item.start = item.start.replace("T00:00:00", "");
-      if (item.start < d.since) d.since = item.start;
       if (item.abbr == null) {
         delete item.abbr;
         item.name = abbr[item.Organization];
@@ -131,6 +131,7 @@ function transform(d) {
   if (Array.isArray(d.groups))
     delete d.groups[0].Organization;
   activeOnly("Staff");
+  d.since = d.since.replace("T00:00:00", "");
   return d;
 }
 
@@ -206,9 +207,9 @@ stream.output.on("end", function() {
 
 
 function write(options = {
-  from: "../data/ep_meps_current.json",
-  csv: "../data/meps.tmp",
-  json: '../data/meps.json'
+  from: "data/ep_meps_current.json",
+  csv: "data/meps.tmp",
+  json: 'data/meps.json'
 }, callback) {
   fs.createReadStream(options.from).pipe(stream.input)
   var writer = fs.createWriteStream(options.json);

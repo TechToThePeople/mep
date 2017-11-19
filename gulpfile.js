@@ -7,7 +7,11 @@ var sourcemaps = require('gulp-sourcemaps');
 var download = require("gulp-download-stream");
 var fs = require("fs");
 var xz = require("xz");
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 var rename = require("gulp-rename");
+const tf = require('gulp-transform');
+const through2 = require("through2");
 var transform = require("./script/transform.js");
 const resolve = require('path').resolve;
 
@@ -41,6 +45,36 @@ gulp.task('download', function() {
     .pipe(gulp.dest('data'));
 });
 
+gulp.task('genderify', function() {
+  var gender = function (content) {
+    var meps=JSON.parse(content);
+    var nogender="epid,gender,first_name,last_name\n";
+    meps.forEach(function(d){
+      if (!d.Gender) nogender+=[d.epid,"",d.first_name,d.last_name].join(",") +"\n";
+    });
+    return nogender;
+  }
+
+  var fname = "data/meps.json";
+  return gulp.src(fname)
+    .pipe(through2.obj(function(file, enc, cb) {
+      file.contents=new Buffer(gender(file.contents.toString(enc)));
+      cb(null,file);
+    }))
+    .pipe(rename({
+      extname: '.nogender.csv'
+    }))
+    .pipe(through2.obj(function(file, enc, cb) {
+      console.log("add the missing genders to " +file.path);
+      ("http://www.europarl.europa.eu/meps/en/incoming-outgoing.html");
+      cb(null,file);
+    }))
+    .pipe(gulp.dest('data'));
+//    .pipe(process.stdout);
+//    .pipe(tf('utf-8',gender))
+  ;
+  
+});
 gulp.task('decompress', function() {
   var fname = "data/ep_meps_current.json";
   var inFile = fs.createReadStream(fname + ".xz");
