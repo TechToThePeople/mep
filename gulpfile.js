@@ -19,10 +19,10 @@ var decompression = new xz.Decompressor();
 
 var paths = {
   css: [
-    'node_modules/dc/dc.css',
-    'node_modules/bootstrap/dist/css/bootstrap.css',
-    //    'node_modules/bootstrap/dist/css/bootstrap-theme.css'
-    'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css'
+    'node_modules/dc/dc.css'
+   ,'node_modules/bootstrap/dist/css/bootstrap.css',
+//        'node_modules/bootstrap/dist/css/bootstrap-theme.css'
+   ,'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css'
   ],
   scripts: [
     'node_modules/jquery/dist/jquery.js',
@@ -98,24 +98,22 @@ gulp.task('update', function (callback) {
   runSequence('fetch','decompress', 'transform',callback);
   });
 
-gulp.task('stylesheets', function() {
+gulp.task('css', function() {
   return gulp.src(paths.css)
     .pipe(sourcemaps.init())
+    .pipe(concat('all.css'))
     .pipe(minify({
-      rebase: false,
       level: {
         1: {
           specialComments: 0
         }
       }
     }))
-
-    .pipe(concat('all.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('scripts', function() {
+gulp.task('js', function() {
   // with sourcemaps all the way down 
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
@@ -129,4 +127,4 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('default', ['scripts', 'stylesheets']);
+gulp.task('default', ['css', 'js']);
