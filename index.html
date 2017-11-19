@@ -61,7 +61,6 @@
     function modal(d) {
 	    console.log("modal");
       $("#detail").html(tmpl("tmpl-detail", d)).modal();
-      //console.log(tmpl("tmpl-detail", d));
       //d3.event.stopPropagation();
       //$.getJson("https://api.rss2json.com/v1/api.json?rss_url=http://www.europarl.europa.eu/rss/mep/xavier.dutoit/en.xml",...
     }
@@ -96,7 +95,6 @@
         .dimension(dim)
         .group(group)
         .on('renderlet', function(chart) {
-          if (!console || !console.log) return;
           var d = chart.dimension().top(Number.POSITIVE_INFINITY);
           var total = 0,
             nb = 0;
@@ -400,7 +398,6 @@
             });
         })
         .on("renderlet.hide", function(g) {
-console.log("render");
           
           g.selectAll("tbody").attr("class","collapse in");
           //$(dom).find("tbody > tr > td:last-child").addClass('hidden email');
@@ -412,7 +409,6 @@ console.log("render");
     function draw(data) {
       ndx = crossfilter(data);
 
-
       function adjust(data) {
         var dateFormat = d3.time.format("%Y-%m-%d");
         var now = Date.now();
@@ -423,15 +419,17 @@ console.log("render");
           if (!e.birthdate) return;
           e.birthdate = dateFormat.parse(e.birthdate);
           e.age = ~~((now - e.birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
-          e.committee = e.committee.trim().replace(/ +(?= )/g, '').split(' ');
-          e.substitute = e.substitute.trim().replace(/ +(?= )/g, '').split(' ');
+          e.committee = e.committee.trim().replace(/ +(?= )/g, '').split('|');
+          e.substitute = e.substitute.trim().replace(/ +(?= )/g, '').split('|');
         });
       }
 
       adjust(data);
       data.forEach(function(e) { // no idea why it needs to be done there
-        if (typeof e.committee === 'string') e.committee = [e.committee.trim()];
-        if (typeof e.substitute === 'string') e.substitute = [e.substitute.trim()];
+        if (typeof e.committee === 'string'){
+         e.committee = e.committee.trim().split("|");
+        }
+        if (typeof e.substitute === 'string') e.substitute = e.substitute.trim().split("|");
       });
       //  graphs.grid=drawGrid(".dc-data-grid");
       drawNumbers(graphs);

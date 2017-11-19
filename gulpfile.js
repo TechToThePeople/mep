@@ -1,55 +1,84 @@
 var gulp = require('gulp');
+var runSequence = require('run-sequence');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var minify = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
-var download = require("gulp-download");
+var download = require("gulp-download-stream");
+var fs = require("fs");
 var xz = require("xz");
 var rename = require("gulp-rename");
+var transform = require("./script/transform.js");
+const resolve = require('path').resolve;
+
 var decompression = new xz.Decompressor();
 
 var paths = {
   css: [
     'node_modules/dc/dc.css',
     'node_modules/bootstrap/dist/css/bootstrap.css',
-//    'node_modules/bootstrap/dist/css/bootstrap-theme.css'
-'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css'
+    //    'node_modules/bootstrap/dist/css/bootstrap-theme.css'
+    'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css'
   ],
   scripts: [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/blueimp-tmpl/js/tmpl.js',
-//	  'node_modules/lodash/lodash.js',
+    //	  'node_modules/lodash/lodash.js',
     'node_modules/d3/d3.js',
     'node_modules/crossfilter2/crossfilter.js',
     'node_modules/reductio/reductio.js',
     'node_modules/dc/dc.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
-//    'node_modules/jquery-lazyload/jquery.lazyload.js',
+    //    'node_modules/jquery-lazyload/jquery.lazyload.js',
     'node_modules/moment/moment.js'
   ]
 
 };
-gulp.task('fetch', function() {
-  download("http://parltrack.euwiki.org/dumps/ep_meps_current.json.xz")
+gulp.task('download', function() {
+  var files = [{file: "mepid.json",url:"http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term="},
+    {file:"ep_meps_current.json.xz",url:"http://parltrack.euwiki.org/dumps/ep_meps_current.json.xz"}];
+  return download(files)
     .pipe(gulp.dest('data'));
 });
 
 gulp.task('decompress', function() {
-  var fname="data/ep_meps_current.json";
+  var fname = "data/ep_meps_current.json";
   var inFile = fs.createReadStream(fname + ".xz");
   var outFile = fs.createWriteStream(fname);
-  inFile.pipe(decompression).pipe(outFile);
+  return inFile.pipe(decompression).pipe(outFile);
 });
+
+gulp.task("transform", function(done) {
+  var cb = function() {
+    console.log("finished " + transform.processed);
+    done();
+  };
+  transform.write({
+    from: resolve("./data/ep_meps_current.json"),
+    json: "./data/meps.json",
+    csv: "./data/meps.csv"
+  }, cb);
+});
+
+gulp.task('update', function (callback) {
+  runSequence('fetch','decompress', 'transform',callback);
+  });
 
 gulp.task('stylesheets', function() {
   return gulp.src(paths.css)
     .pipe(sourcemaps.init())
-    .pipe(minify({rebase: false,level: {
-	        1: {specialComments: 0}}}))
+    .pipe(minify({
+      rebase: false,
+      level: {
+        1: {
+          specialComments: 0
+        }
+      }
+    }))
 
-.pipe(concat('all.css'))
+    .pipe(concat('all.css'))
     .pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/css'));
 });
 
 gulp.task('scripts', function() {
@@ -57,9 +86,11 @@ gulp.task('scripts', function() {
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('build/js')) 
+    .pipe(gulp.dest('build/js'))
     .pipe(uglify())
-    .pipe(rename({ extname: '.min.js' }))
+    .pipe(rename({
+      extname: '.min.js'
+    }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/js'));
 });
