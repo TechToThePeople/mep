@@ -32,7 +32,7 @@
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
     };
-    var committee_color = "#e57373";
+    var committee_color = "#80cbc4";//"#e57373";
     var country_color = "#80cbc4";
     var gender_color = ["#b3e5fc", "#f8bbd0", "#9575cd"];
     var eu_groups = {
@@ -46,6 +46,7 @@
       "EPP": "#0a3e63",
       "ECR": "#3086c2",
       "NA/NI": "#cccccc",
+      "NA,NI": "#cccccc",
       "ENF": "#A1480D",
       "Array": "pink"
     };
@@ -59,10 +60,15 @@
     };
 
     function modal(d) {
+      var html=tmpl("tmpl-detail", d);
       console.log("modal");
-      $("#detail").html(tmpl("tmpl-detail", d)).modal();
+
+      $("#detail").html(html).modal();
       //d3.event.stopPropagation();
-      //$.getJson("https://api.rss2json.com/v1/api.json?rss_url=http://www.europarl.europa.eu/rss/mep/xavier.dutoit/en.xml",...
+//      $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=http://www.europarl.europa.eu/rss/mep/xavier.dutoit/en.xml")
+//        .done(function(d){
+//          console.log(d);
+//        });
     }
 
     function drawAge(dom) {
@@ -126,7 +132,9 @@
         })
         .dimension(dim)
         .group(group)
-        .on('renderlet', function(chart) {});
+        .externalLabels(-26)
+        .minAngleForLabel(0.2);
+//        .legend(dc.legend().horizontal(true).autoItemWidth(true).y(200));
       return graph;
     }
 
@@ -410,6 +418,10 @@
         .on("renderlet.detail", function(g) {
           // don't need it, taken care of by the tr one
           //	g.selectAll(".btn-detail").on("click", function(d) {modal(d3.select(this).datum());});
+          g.selectAll(".text-filter")
+            .on("click", function(d) {
+               d3.event.stopPropagation();
+            });
           g.selectAll("td")
             .on("click", function(d) {
               modal(d3.select(this).datum());
@@ -597,7 +609,7 @@
             <span class="navbar-btn"><a href="#table" class="btn-toggle active btn btn-default" data-toggle="collapse" data-target="#table tbody"><i class="glyphicon glyphicon-list-alt"></i></a></span>
             <span class="navbar-btn"><a href="#" title="Contact and help"><i class="glyphicon glyphicon-question-sign"></i></a></span>
           </li>
-          <li class="dropdown hidden-sm">
+          <li class="dropdown hidden">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
             <ul class="dropdown-menu" id="dropdown-committee">
               <li><a href='#'>AFCO</a></li>
@@ -754,6 +766,7 @@
   </script>
 
   <style>
+.dc-chart .pie-slice.external {fill:#fff}
     .panel-heading .btn-group-xs .btn.btn-fab {
       height: 20px;
       width: 20px;
@@ -1126,6 +1139,7 @@
       font-size: 25px;
       fill: black;
     }
+    div.committee g.row text {fill:black;font-size:11px;}
 
     div.dc-chart {
       float: none;
@@ -1145,6 +1159,14 @@
     <dd>{%=o.dd%}</dd>
     {% } %}
   </style>
+  <style type="text/x-tmpl" id="tmpl-feed">
+<ul>
+{% for (var i=0; i<o.item.length; i++) { %}
+  <li title="{%=o.item[i].category%}"><a href="{%=o.item[i].link%}">{%=o.item[i].title%}</a></li>
+  {% } %}
+</ul>
+  </style>
+
   <style type="text/x-tmpl" id="tmpl-detail">
     <div class="modal-dialog">
       <div class="modal-content">
