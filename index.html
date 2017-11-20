@@ -593,7 +593,7 @@
       </button>
         <a class="navbar-brand resetall" href="#"><img src="img/ep.svg" alt="MEPs" title="Members of the European parliament"/></a>
         <ul class="nav navbar-nav">
-          <li class="active"><a><span class="nbmep badge"></span> MEPs</a></li>
+          <li class="active"><a class="resetall"><span class="nbmep badge"></span> MEPs</a></li>
           <li id="percent_women" title="percentage of women"><a><i></i>👩</a></li>
           <li id="avg_age_" title="average age"><a></a></li>
           <li id="avg_since" title="how long in office"><a></a></li>
@@ -710,7 +710,7 @@
 
     <div id="list" class="row">
       <div class="col-md-12 card">
-        <table class="table table-striped" id="table">
+        <table class="table table-striped  table-hover" id="table">
           <thead>
             <tr>
               <th></th>
@@ -770,6 +770,15 @@
   </script>
 
   <style>
+
+.table-hover tbody td {
+    transition: background-color 1s;
+}
+
+.table-hover tbody tr:hover td {
+      background: #03a9f4;
+}
+
 .dc-chart .pie-slice.external {fill:#fff}
     .panel-heading .btn-group-xs .btn.btn-fab {
       height: 20px;
