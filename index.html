@@ -351,7 +351,7 @@
       $("table").on("click", ".btn", function(e) {
         e.stopPropagation();
       });
-      $("table").on("click", ".text-filter", function(e) {
+      $("table").on("disableclick", ".text-filter", function(e) {
         //d3.event.stopPropagation();
         e.stopPropagation();
         var text = $(this).text();
@@ -420,6 +420,10 @@
           //	g.selectAll(".btn-detail").on("click", function(d) {modal(d3.select(this).datum());});
           g.selectAll(".text-filter")
             .on("click", function(d) {
+        var text = $(this).text();
+        if ($("#input-filter").val() == text)
+          text = "";
+        $("#input-filter").val(text).keyup();
                d3.event.stopPropagation();
             });
           g.selectAll("td")
