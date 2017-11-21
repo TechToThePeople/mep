@@ -61,14 +61,17 @@
 
     function modal(d) {
       var html=tmpl("tmpl-detail", d);
-      console.log("modal");
 
       $("#detail").html(html).modal();
       //d3.event.stopPropagation();
-//      $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=http://www.europarl.europa.eu/rss/mep/xavier.dutoit/en.xml")
-//        .done(function(d){
-//          console.log(d);
-//        });
+      $.getJSON("https://api.rss2json.com/v1/api.json?api_key=zzofxeix1yyi1ukwkevu3axziufzd2lyxufvs7rj&rss_url=http://www.europarl.europa.eu/rss/mep/"+d.first_name.replace(/ /g,'').toLowerCase()+"."+d.last_name.replace(/ /g,'').toLowerCase()+"/en.xml")
+        .done(function(d){
+          console.log(d);
+          if (d.status != "ok") return;
+          $("#detail .modal-dialog").addClass("modal-lg");
+          $("#detail .main").removeClass("col-md-9").addClass("col-md-5");
+          $("#detail .feed").removeClass("hidden").html(tmpl("tmpl-rss",d));
+        });
     }
 
     function drawAge(dom) {
@@ -771,6 +774,14 @@
 
   <style>
 
+.feed {
+  max-height:300px;
+  overflow-x:auto;
+  padding-right:0;
+}
+
+.list-group .list-group-item {border-bottom:1px solid lightgray; margin-bottom:3px;padding-right:5px;font-size:0.8em}
+
 .table-hover tbody td {
     transition: background-color 1s;
 }
@@ -822,12 +833,12 @@
 
     @media (min-width: 768px) {
       .dl-horizontal dt {
-        width: 100px;
+        width: 70px;
         aawhite-space: normal;
         margin-bottom: 5px;
       }
       .dl-horizontal dd {
-        margin-left: 120px;
+        margin-left: 90px;
       }
     }
 
@@ -1172,12 +1183,12 @@
     <dd>{%=o.dd%}</dd>
     {% } %}
   </style>
-  <style type="text/x-tmpl" id="tmpl-feed">
-<ul>
-{% for (var i=0; i<o.item.length; i++) { %}
-  <li title="{%=o.item[i].category%}"><a href="{%=o.item[i].link%}">{%=o.item[i].title%}</a></li>
+  <style type="text/x-tmpl" id="tmpl-rss">
+<div class="list-group">
+{% for (var i=0; i<o.items.length; i++) { %}
+  <a class="list-group-item" title="{%=o.items[i].category%}" href="{%#o.items[i].link%}">{%=o.items[i].title%}</a>
   {% } %}
-</ul>
+</div>
   </style>
 
   <style type="text/x-tmpl" id="tmpl-detail">
@@ -1195,10 +1206,12 @@
             <div class="col-md-3">
               <img src="http://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 main">
               <dl class="dl-horizontal">
                 {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
               </dl>
+            </div>
+            <div class="col-md-4 hidden feed">
             </div>
           </div>
         </div>
