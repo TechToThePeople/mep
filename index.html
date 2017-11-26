@@ -162,7 +162,7 @@ var activitymap={"CRE" : "Speeches",
 
       graph
         .width(0)
-        .height(200)
+        .height(186)
         .outerPadding(0)
         .ordinalColors([country_color])
         .gap(0)
@@ -528,7 +528,7 @@ var activitymap={"CRE" : "Speeches",
       function slideChartLabels() {
         d3.selectAll(dom + ' .row text')
           .attr("transform", function(d) {
-            return "rotate(-90, translate(10,0) ";
+            return "rotate(translate(10,0) ";
           });
       }
       return graph;
