@@ -29,12 +29,14 @@ var paths = {
     'node_modules/blueimp-tmpl/js/tmpl.js',
     //	  'node_modules/lodash/lodash.js',
     'node_modules/d3/d3.js',
+    'node_modules/d3-tip/index.js',
     'node_modules/crossfilter2/crossfilter.js',
     'node_modules/reductio/reductio.js',
     'node_modules/dc/dc.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
     //    'node_modules/jquery-lazyload/jquery.lazyload.js',
     'node_modules/moment/moment.js'
+
   ]
 
 };

@@ -22,6 +22,8 @@
     //var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
     var graphs = [];
     var summary = {};
+    var abbreviations = {};
+    var bar={};
     var ndx = null;
     //var SymbolGender= {"M":"\u2642","F":"\u2640","":"?"};
     var SymbolGender = {
@@ -32,6 +34,11 @@
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
     };
+
+    var abbr = function (d) {
+      return abbreviations[d] || d;
+    };
+
     var committee_color = "#80cbc4";//"#e57373";
     var country_color = "#80cbc4";
     var gender_color = ["#b3e5fc", "#f8bbd0", "#9575cd"];
@@ -515,6 +522,9 @@ var activitymap={"CRE" : "Speeches",
           bottom: 20,
           left: 0
         })
+        .title(function(d) {
+          return abbr([d.key]) + ": " + d.value + " MEPs";
+        })
         .ordinalColors([committee_color])
         .gap(0)
         .elasticX(true)
@@ -793,6 +803,9 @@ var activitymap={"CRE" : "Speeches",
       d3.json("data/meps.json", function(json) {
         data = json;
         draw(data);
+      });
+      d3.json("data/abbreviations.json", function(json) {
+        abbreviations = json;
       });
     });
 
