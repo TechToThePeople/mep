@@ -75,7 +75,6 @@ var activitymap={"CRE" : "Speeches",
       //d3.event.stopPropagation();
       $.getJSON("https://api.rss2json.com/v1/api.json?api_key=zzofxeix1yyi1ukwkevu3axziufzd2lyxufvs7rj&rss_url=http://www.europarl.europa.eu/rss/mep/"+d.first_name.replace(/ /g,'').toLowerCase()+"."+d.last_name.replace(/ /g,'').toLowerCase()+"/en.xml")
         .done(function(d){
-          console.log(d);
           if (d.status != "ok") return;
           $("#detail .modal-dialog").addClass("modal-lg");
           $("#detail .main").removeClass("col-md-9").addClass("col-md-5");
@@ -154,12 +153,10 @@ var activitymap={"CRE" : "Speeches",
     function drawCountry(dom) {
       var graph = dc.barChart(dom);
       var dim = ndx.dimension(function(d) {
-        if (typeof d.country == "undefined") return "";
-        return d.country;
+        if (!d.constituency || !d.constituency.country) return "";
+        return d.constituency.country;
       });
-      var group = dim.group().reduceSum(function(d) {
-        return 1;
-      });
+      var group = dim.group().reduceSum(function(d) {return 1;});
 
 //      d3.select(dom).datum("alphabet");
 
@@ -217,7 +214,7 @@ var activitymap={"CRE" : "Speeches",
       });
       reducer.value("nb").count(true);
       reducer.value("woman").count(true).filter(function(d) {
-        return d.gender == "F"
+        return d.Gender == "F"
       });
 
       var group = dim.group();
@@ -285,8 +282,8 @@ var activitymap={"CRE" : "Speeches",
         "": "missing data"
       };
       var gender = ndx.dimension(function(d) {
-        if (typeof d.gender == "undefined") return "";
-        return d.gender;
+        if (typeof d.Gender == "undefined") return "";
+        return d.Gender;
       });
 
       var groupGender = gender.group().reduceSum(function(d) {
@@ -401,26 +398,21 @@ var activitymap={"CRE" : "Speeches",
           },
           function(d) {
             var t = "";
-            if (d.committee) {
-              d.committee.forEach(function(c) {
-                t += "<span class='text-filter' title='Member'>" + c + "</span>&nbsp;";
-              });
-            }
-            if (d.substitute) {
-              d.substitute.forEach(function(s) {
-                t += "<i class='text-filter small' title='Substitute'>" + s + "</i>&nbsp;";
-              });
-            }
+            if (!d.committees) return "";
+            d.committees.forEach(function(e){
+              var textfilter = e.role !="Substitute" ? "text-filter " : "";
+              t += "<span class='"+textfilter+ e.role.toLowerCase() +"' title='"+e.role + " since " + e.start +"'>" + e.name + "</span>&nbsp;";
+            });
             return t;
           },
           function(d) {
-            return "<span title='" + d.country + "' class='img-rounded text-filter country-flag " + d.country.replace(" ", "-").toLowerCase() + "'>" + d.country + "</span>";
+            return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
           },
           function(d) {
             return "<span title='" + d.eugroup + "' class='img-rounded text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
           },
           function(d) {
-            return "<span class='text-filter'>" + d.party + "</span>";
+            return "<span class='text-filter'>" + d.constituency.party + "</span>";
           },
           function(d) {
             return moment(d.since).fromNow().replace(" ago", "");
@@ -453,42 +445,45 @@ var activitymap={"CRE" : "Speeches",
     }
 
     function draw(data) {
-      ndx = crossfilter(data);
+
+      function pluck(d) {
+        var r=[];
+        if (!d) 
+          return r;
+        d.forEach(function(e){
+          if (e.role!="Substitute"){
+            r.push(e.name);
+          }
+        });
+        return r;
+      }
 
       function adjust(data) {
         var dateFormat = d3.time.format("%Y-%m-%d");
         var now = Date.now();
-        var birthdate = null;
 
         data.forEach(function(e) {
           e.since = dateFormat.parse(e.since);
-          if (!e.birthdate) return;
-          e.birthdate = dateFormat.parse(e.birthdate);
-          e.age = ~~((now - e.birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
-          e.committee = e.committee.trim().replace(/ +(?= )/g, '').split('|');
-          e.substitute = e.substitute.trim().replace(/ +(?= )/g, '').split('|');
+          if (e.Birth.date){
+            e.birthdate = dateFormat.parse(e.Birth.date);
+            e.age = ~~((now - e.birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
+          }
+          e.committee=pluck(e.committees);
         });
       }
 
       adjust(data);
-      data.forEach(function(e) { // no idea why it needs to be done there
-        if (typeof e.committee === 'string') {
-          e.committee = e.committee.trim().split("|");
-        }
-        if (typeof e.substitute === 'string') e.substitute = e.substitute.trim().split("|");
-      });
-      //  graphs.grid=drawGrid(".dc-data-grid");
+      ndx = crossfilter(data);
+
       drawNumbers(graphs);
       graphs.country = drawCountry(".country .panel-body");
       graphs.committee = drawCommittee(".committee .graph");
-      //      graphs.age = drawAge(".age");
+     //      graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
       graphs.table = drawTable("#table");
       graphs.search = drawTextSearch('#input-filter', jQuery);
-      graphs.total.on("postRedraw", function() {
-        setUrl()
-      });
+      graphs.total.on("postRedraw", function() {setUrl()});
       summary.total = graphs.total.data();
 
       dc.renderAll();
@@ -519,7 +514,7 @@ var activitymap={"CRE" : "Speeches",
     function drawTextSearch(dom, $, val) {
 
       var dim = ndx.dimension(function(d) {
-        return d.first_name.toLowerCase() + " " + d.last_name.toLowerCase() + " " + d.party.toLowerCase() + " " + d.committee.join(" ").toLowerCase() + " " + d.country.toLowerCase()
+        return d.first_name.toLowerCase() + " " + d.last_name.toLowerCase() + " " + d.constituency.party.toLowerCase() + " " + d.committee.join(" ").toLowerCase() + " " + d.constituency.country.toLowerCase()
       });
 
       var throttleTimer;
@@ -763,11 +758,9 @@ var activitymap={"CRE" : "Speeches",
     });
 
     $(function() {
-      d3.csv("data/meps.csv", function(d) {
-        return d;
-      }, function(error, rows) {
-        data = rows;
-        draw(rows);
+      d3.json("data/meps.json", function(json) {
+        data = json;
+        draw(data);
       });
     });
 
@@ -782,6 +775,9 @@ var activitymap={"CRE" : "Speeches",
   </script>
 
   <style>
+
+.chair, .vice-chair {font-weight:bold;}
+.substitute {color:grey;font-size:85%;}
 
 .feed {
   max-height:300px;
@@ -1206,7 +1202,7 @@ var activitymap={"CRE" : "Speeches",
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
-            <span title='{%=o.country%}' class='img-rounded pull-left text-filter country-flag {%=o.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
+            <span title='{%=o.constituency.country%}' class='img-rounded pull-left text-filter country-flag {%=o.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
             <span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
           </h4>
         </div>
@@ -1217,7 +1213,7 @@ var activitymap={"CRE" : "Speeches",
             </div>
             <div class="col-md-9 main">
               <dl class="dl-horizontal">
-                {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
+                {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.constituency.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.constituency.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
               </dl>
             </div>
             <div class="col-md-4 hidden feed">

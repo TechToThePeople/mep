@@ -74,7 +74,7 @@ function transform(d) {
     var g=nogender.find(o => o.epid === id);
     return g? g.gender: '';
   }
-  function activeOnly(attr) {
+  function activeOnly(attr,options={"single":false,"name":attr.toLowerCase()}) {
     var r = [];
     if (!d[attr]) return;
     d[attr].forEach(function(item) {
@@ -98,21 +98,12 @@ function transform(d) {
       r.push(item);
     });
     delete d[attr];
-    d[attr.toLowerCase()] = r;
+    if (options.single && r) {
+      d[options.name]=r[0];
+    } else {
+      d[options.name] = r;
+    }
   }
-
-/*
-  'REPORT-SHADOW': 
-   { '8': 
-      [ { term: '8',
-          title: 'REPORT on Parliament’s estimates of revenue and expenditure for the financial year 2018',
-          dossier: [ '2017/2022(BUD)', [ '8.70.58 2018 budget' ] ],
-          committeeList: [ { code: 'BUDG', title: 'Budgets' } ],
-          language: 'en',
-          date: '04-04-2017',
-          type: 'REPORT-SHADOW',
-          referenceList: [ 'A8-0156/2017' ] } ] } }
-*/
 
   function countActivities(a) {
     //console.log(util.inspect(d.activities, {showHidden: false, depth: null}))
@@ -156,15 +147,19 @@ function transform(d) {
   if (d.Birth) {
     d.Birth.date = d.Birth.date.replace("T00:00:00", "");
   } else {
-    d.Birth = {};
+    d.Birth = {};//{date:null,place:null};
   }
+  d.mail=d.Mail[0];
+  delete d.Mail;
   //delete d.Delegations;
   activeOnly("Delegations");
   activeOnly("Committees");
-  activeOnly("Constituencies");
-  activeOnly("Groups");
-  if (Array.isArray(d.groups))
-    delete d.groups[0].Organization;
+  activeOnly("Constituencies",{"single":true,"name":"constituency"});
+  activeOnly("Groups",{"single":true,"name":"eugroup"});
+  d.eugroup=d.eugroup.groupid;
+  if (Array.isArray(d.eugroup)){
+    d.eugroup = d.eugroup.join("/");
+  }
   activeOnly("Staff");
   d.since = d.since.replace("T00:00:00", "");
   return d;
@@ -184,17 +179,17 @@ var csvrow = function(d) {
     return r;
   };
 
-  if (!typeof d === 'object' || !d.hasOwnProperty("constituencies")) return {};
+  if (!typeof d === 'object' || !d.hasOwnProperty("constituency")) return {};
   var e = [
     d.epid,
-    d.constituencies[0].country,
+    d.constituency.country,
     d.first_name,
     d.last_name,
-    d.Mail[0],
+    d.mail, //Mail[0],
     d.Birth.date,
     d.Gender,
-    d.groups[0].groupid,
-    d.constituencies[0].party,
+    d.eugroup,
+    d.constituency.party,
     d.Addresses.Brussels.Phone,
     d.Addresses.Brussels.Office,
     roles(d.committees, ["Chair", "Vice-Chair", "Member"]).join("|"),
