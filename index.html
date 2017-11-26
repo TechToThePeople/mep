@@ -31,6 +31,8 @@
       "F": "👩",
       "": "?"
     };
+    var formatPercent = d3.format(".0%");
+
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
     };
@@ -165,8 +167,6 @@ var activitymap={"CRE" : "Speeches",
       });
       var group = dim.group().reduceSum(function(d) {return 1;});
 
-//      d3.select(dom).datum("alphabet");
-
       graph
         .width(0)
         .height(186)
@@ -202,7 +202,6 @@ var activitymap={"CRE" : "Speeches",
     }
 
     function drawNumbers(graphs) {
-      var formatPercent = d3.format(".0%");
       var format = d3.format(".3s");
 
       var dim = ndx.dimension(function(d) {
@@ -503,6 +502,14 @@ var activitymap={"CRE" : "Speeches",
     }
 
     function drawRow(dom,attr) {
+      var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([0, 10])
+        .direction("e")
+        .html(function(d) {
+          return abbr(d.key) + "<br><b>" + d.value + " MEPs</b>&nbsp;<i>" + formatPercent(d.value/summary.total) +"</i>";
+        });
+
       var dim = ndx.dimension(function(d) {
         return d[attr];
       }, true);
@@ -522,25 +529,27 @@ var activitymap={"CRE" : "Speeches",
           bottom: 20,
           left: 0
         })
-        .title(function(d) {
-          return abbr([d.key]) + ": " + d.value + " MEPs";
-        })
         .ordinalColors([committee_color])
         .gap(0)
         .elasticX(true)
         .dimension(dim)
         .group(group)
         .on("renderlet", function(c) {
-          slideChartLabels();
+            c.selectAll("g.row")
+              .call(tip)
+              .on("mouseover.tip", tip.show)
+              .on("mouseout.tip", tip.hide);
+//          slideChartLabels(c);
         });
       graph.xAxis().ticks(3);
 
-      function slideChartLabels() {
-        d3.selectAll(dom + ' .row text')
+      function slideChartLabels(c) {
+        c.selectAll('.row text')
           .attr("transform", function(d) {
             return "rotate(translate(10,0) ";
           });
       }
+
       return graph;
     }
 
@@ -820,6 +829,8 @@ var activitymap={"CRE" : "Speeches",
   </script>
 
   <style>
+
+.d3-tip {font-weight:normal;}
 
 .chair, .vice-chair {font-weight:bold;}
 .substitute {color:grey;font-size:85%;}

@@ -20,7 +20,8 @@ var decompression = new xz.Decompressor();
 var paths = {
   css: [
     'node_modules/dc/dc.css'
-   ,'node_modules/bootstrap/dist/css/bootstrap.css',
+   ,'node_modules/bootstrap/dist/css/bootstrap.css'
+   ,'node_modules/d3-tip/examples/example-styles.css'
 //        'node_modules/bootstrap/dist/css/bootstrap-theme.css'
    ,'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css'
   ],
