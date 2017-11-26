@@ -101,6 +101,32 @@ function transform(d) {
     d[attr.toLowerCase()] = r;
   }
 
+/*
+  'REPORT-SHADOW': 
+   { '8': 
+      [ { term: '8',
+          title: 'REPORT on Parliament’s estimates of revenue and expenditure for the financial year 2018',
+          dossier: [ '2017/2022(BUD)', [ '8.70.58 2018 budget' ] ],
+          committeeList: [ { code: 'BUDG', title: 'Budgets' } ],
+          language: 'en',
+          date: '04-04-2017',
+          type: 'REPORT-SHADOW',
+          referenceList: [ 'A8-0156/2017' ] } ] } }
+*/
+
+  function countActivities(a) {
+    //console.log(util.inspect(d.activities, {showHidden: false, depth: null}))
+    var r={}
+    for (var type in a) { //REPORT-SHADOW, REPORT...
+      var i=0;
+      r[type]=0;
+      for (var term in a[type]) { //
+        r[type] +=a[type][term].length;
+      }
+    }
+    return r;
+  }
+
   if (!d || !typeof d === 'object' || !d.hasOwnProperty("Name")) return {};
   d.since = "9999-99-99";
   delete d.changes;
@@ -119,7 +145,8 @@ function transform(d) {
   delete d.Addresses.Brussels.Address;
   delete d.Addresses.Brussels.Fax;
   delete d.Photo; //"http://www.europarl.europa.eu/mepphoto/{{d.epid }}.jpg
-  delete d.activities; // stuff might be to be kept there
+  d.activities=countActivities(d.activities);
+  //delete d.activities; // stuff might be to be kept there
   delete d["Declarations of Participation"];
   delete d["Financial Declarations"];
 
