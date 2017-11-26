@@ -182,6 +182,7 @@ var activitymap={"CRE" : "Speeches",
         .on("renderlet", function(c) {
           rotateBarChartLabels();
         });
+      graph.xAxis().ticks(3);
       return graph;
 
       function rotateBarChartLabels() {
@@ -469,6 +470,8 @@ var activitymap={"CRE" : "Speeches",
             e.age = ~~((now - e.birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
           }
           e.committee=pluck(e.committees);
+          e.delegation=pluck(e.delegations);
+          e.role=pluck(e.staff);
         });
       }
 
@@ -477,7 +480,10 @@ var activitymap={"CRE" : "Speeches",
 
       drawNumbers(graphs);
       graphs.country = drawCountry(".country .panel-body");
-      graphs.committee = drawCommittee(".committee .graph");
+      graphs.committee = drawRow(".committee .graph","committee");
+      graphs.delegation = drawRow(".delegation .graph","delegation");
+      graphs.role = drawRow(".role .graph","role");
+      graphs.role.height(100);
      //      graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
@@ -489,25 +495,42 @@ var activitymap={"CRE" : "Speeches",
       dc.renderAll();
     }
 
-    function drawCommittee(dom) {
+    function drawRow(dom,attr) {
       var dim = ndx.dimension(function(d) {
-        return d.committee;
+        return d[attr];
       }, true);
       var group = dim.group().reduceSum(function(d) {
         return 1;
       });
       var graph = dc.rowChart(dom)
         .width(0)
-        .height(380)
+        .height(464)
         //      .rowsCap(18)
         .ordering(function(d) {
           return -d.key
+        })
+        .margins({
+          top: 0,
+          right: 0,
+          bottom: 20,
+          left: 0
         })
         .ordinalColors([committee_color])
         .gap(0)
         .elasticX(true)
         .dimension(dim)
         .group(group)
+        .on("renderlet", function(c) {
+          slideChartLabels();
+        });
+      graph.xAxis().ticks(3);
+
+      function slideChartLabels() {
+        d3.selectAll(dom + ' .row text')
+          .attr("transform", function(d) {
+            return "rotate(-90, translate(10,0) ";
+          });
+      }
       return graph;
     }
 
@@ -620,31 +643,6 @@ var activitymap={"CRE" : "Speeches",
             <span class="navbar-btn"><a href="#table" class="btn-toggle active btn btn-default" data-toggle="collapse" data-target="#table tbody"><i class="glyphicon glyphicon-list-alt"></i></a></span>
             <span class="navbar-btn"><a href="#" title="Contact and help"><i class="glyphicon glyphicon-question-sign"></i></a></span>
           </li>
-          <li class="dropdown hidden">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee<span class="caret"></span></a>
-            <ul class="dropdown-menu" id="dropdown-committee">
-              <li><a href='#'>AFCO</a></li>
-              <li><a href='#'>AFET</a></li>
-              <li><a href='#'>AGRI</a></li>
-              <li><a href='#'>BUDG</a></li>
-              <li><a href='#'>CONT</a></li>
-              <li><a href='#'>CULT</a></li>
-              <li><a href='#'>DEVE</a></li>
-              <li><a href='#'>ECON</a></li>
-              <li><a href='#'>EMPL</a></li>
-              <li><a href='#'>ENVI</a></li>
-              <li><a href='#'>FEMM</a></li>
-              <li><a href='#'>IMCO</a></li>
-              <li><a href='#'>INTA</a></li>
-              <li><a href='#'>ITRE</a></li>
-              <li><a href='#'>JURI</a></li>
-              <li><a href='#'>LIBE</a></li>
-              <li><a href='#'>PECH</a></li>
-              <li><a href='#'>PETI</a></li>
-              <li><a href='#'>REGI</a></li>
-              <li><a href='#'>TRAN</a></li>
-            </ul>
-          </li>
           <li class="navbar-btngroup"><a href="#" id="excel"><span class="glyphicon glyphicon-download"></span>Excel</a></li>
           <li><a class="hidden-sm" href="data/meps.csv" id="csv"><span class="glyphicon glyphicon-download"></span>CSV</a></li>
         </ul>
@@ -662,17 +660,25 @@ var activitymap={"CRE" : "Speeches",
         <div>
           Click on the graphs to filter the Members of the European parliament by country or party</div>
       </div>
-      <div class="group col-md-2">
-        <div class="panel panel-default">
+      <div class="col-md-2">
+        <div class="panel panel-default role">
           <div class="panel-heading">
-            <h3 class="panel-title"><a data-toggle="collapse" data-target=".group .panel-body" href="#">Groups</a></h3>
+            <div class="btn-group-xs pull-right btn-toggle-group" data-target="role">
+              <a href="#" class="btn active btn-fab btn-success" data-sort="alphabet">
+                <i class="material-icon glyphicon glyphicon-sort-by-alphabet"></i>
+              </a>
+              <a href="#" class="btn btn-fab" data-sort="size">
+                <i class="material-icon glyphicon glyphicon-sort-by-attributes-alt"></i>
+              </a>
+            </div>
+            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".committee .panel-body">Role</a></h3>
           </div>
-          <div class="panel-body collapse in"></div>
+          <div class="panel-body graph collapse in"></div>
         </div>
 
       </div>
-      <div class="country col-md-5">
-        <div class="panel panel-default">
+      <div class="col-md-5">
+        <div class="country panel panel-default">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group hidden" data-target="country">
               <a href="#" class="btn active btn-fab btn-success" data-sort="alphabet">
@@ -688,16 +694,23 @@ var activitymap={"CRE" : "Speeches",
             <div class="graph"></div>
           </div>
         </div>
-      </div>
-      <div class="gender col-md-2">
-        <div class="panel panel-default">
+        <div class="row">
+
+          <div class="col-xs-6"><div class="group panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><a data-toggle="collapse" data-target=".group .panel-body" href="#">Groups</a></h3>
+          </div>
+          <div class="panel-body collapse in"></div>
+            </div></div>
+            <div class="col-xs-6"><div class="gender panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".gender .panel-body">Gender</a></h3>
           </div>
           <div class="panel-body collapse in"></div>
-        </div>
+              </div></div>
       </div>
-      <div class="committee col-md-3">
+      </div>
+      <div class="committee col-md-2">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group" data-target="committee">
@@ -713,6 +726,25 @@ var activitymap={"CRE" : "Speeches",
           <div class="panel-body graph collapse in"></div>
         </div>
       </div>
+      <div class="delegation col-md-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="btn-group-xs pull-right btn-toggle-group" data-target="delegation">
+              <a href="#" class="btn active btn-fab btn-success" data-sort="alphabet">
+                <i class="material-icon glyphicon glyphicon-sort-by-alphabet"></i>
+              </a>
+              <a href="#" class="btn btn-fab" data-sort="size">
+                <i class="material-icon glyphicon glyphicon-sort-by-attributes-alt"></i>
+              </a>
+            </div>
+            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".committee .panel-body">Delegations</a></h3>
+          </div>
+          <div class="panel-body graph collapse in"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
     </div>
 
     <div id="list" class="row">
@@ -1169,6 +1201,8 @@ var activitymap={"CRE" : "Speeches",
       fill: black;
     }
     div.committee g.row text {fill:black;font-size:11px;}
+    div.delegation g.row text {fill:black;font-size:11px;}
+    div.role g.row text {fill:black;font-size:11px;}
 
     div.dc-chart {
       float: none;
@@ -1202,7 +1236,7 @@ var activitymap={"CRE" : "Speeches",
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
-            <span title='{%=o.constituency.country%}' class='img-rounded pull-left text-filter country-flag {%=o.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
+            <span title='{%=o.constituency.country%}' class='img-rounded pull-left text-filter country-flag {%=o.constituency.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
             <span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
           </h4>
         </div>

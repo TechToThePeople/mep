@@ -1,4 +1,5 @@
 'use strict';
+const   file = require("fs");
 
 var finished = function(n) {
   console.log("Processed " + n)
@@ -8,6 +9,7 @@ var committees = {};
 var groups = {};
 var head = ['epid', 'country', 'first_name', 'last_name', 'email', 'birthdate', 'gender', 'eugroup', 'party', 'phone', 'office', 'committee', 'substitute', 'delegation', 'twitter', 'tttpid', 'since'];
 
+var abbreviations={};
 var delegations = require('../data/delegations.json');
 delegations.DLAT = "Euro-Latin American Parliamentary Assembly";
 delegations.DCAS = "EU-Kazakhstan";
@@ -17,6 +19,13 @@ delegations.DSEE = "Bosnia";
 delegations.DANZ = "Australia";
 delegations["D-MZ"] = "Macedonia";
 delegations.DSCA = "Armenia";
+//I know, it's not a delegation, but... ;)
+delegations.CPCO = "Committee Chairs";
+delegations.CPDO ="Delegation Chairs";
+delegations.BURO ="Parliament's Bureau";
+delegations.BCPR="Conference of Presidents";
+delegations.PE="European Parliament";
+delegations.QUE="Quaestors";
 
 const fs = require('fs');
 const util = require('util');
@@ -74,35 +83,48 @@ function transform(d) {
     var g=nogender.find(o => o.epid === id);
     return g? g.gender: '';
   }
-  function activeOnly(attr,options={"single":false,"name":attr.toLowerCase()}) {
+  function activeOnly(attr,custom={}) {
+    let defaults = {
+      single : false,name:attr.toLowerCase(),long:"Organization", abbr:"abbr"
+    };
+    let options = Object.assign({}, defaults, custom);
+    if (typeof options.abbr == "string") {
+      var k=options.abbr;
+      options.abbr = function(d){
+        return d[k] || abbr[d.Organization];
+      };
+    } else {
+      if (options.abbr) {
+        var f=options.abbr;
+        options.abbr = function (i){return f(i.Organization);};
+      }
+    }
+
     var r = [];
     if (!d[attr]) return;
     d[attr].forEach(function(item) {
       if (item.start < d.since) d.since = item.start;
       if (item.end !== '9999-12-31T00:00:00') return;
-      delete item.end;
-      item.start = item.start.replace("T00:00:00", "");
-      if (item.abbr == null) {
-        delete item.abbr;
-        item.name = abbr[item.Organization];
-        if (!item.name) {
-          item.name = getDelegation(item.Organization) || item.Organization;
+      if (options.abbr) {
+        abbreviations[options.abbr(item)]= item[options.long];
+        var i = {
+          start:item.start.replace("T00:00:00", ""),
+          role:item.role,
+          name:options.abbr(item)
         }
-        delete item.Organization;
-      } else {
-        item.name = item.abbr;
-        delete item.abbr;
-        delete item.Organization;
+        r.push(i);
+        return;
       }
-      if (item.committee_id) delete item.committee_id;
+      delete item.end;
       r.push(item);
+      return;
     });
     delete d[attr];
-    if (options.single && r) {
-      d[options.name]=r[0];
-    } else {
-      d[options.name] = r;
-    }
+    if (options.single && r.length >0) {
+      d[options.name] = r[0];
+      return;
+    } 
+    d[options.name] = r;
   }
 
   function countActivities(a) {
@@ -152,15 +174,15 @@ function transform(d) {
   d.mail=d.Mail[0];
   delete d.Mail;
   //delete d.Delegations;
-  activeOnly("Delegations");
-  activeOnly("Committees");
-  activeOnly("Constituencies",{"single":true,"name":"constituency"});
-  activeOnly("Groups",{"single":true,"name":"eugroup"});
-  d.eugroup=d.eugroup.groupid;
+  activeOnly("Delegations",{abbr:getDelegation});
+  activeOnly("Committees",{abbr:"committee_id"});
+  activeOnly("Constituencies",{"single":true,"name":"constituency",abbr:null});
+  activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
+  d.eugroup=d.eugroup.name;
   if (Array.isArray(d.eugroup)){
     d.eugroup = d.eugroup.join("/");
   }
-  activeOnly("Staff");
+  activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
   return d;
 }
@@ -227,6 +249,7 @@ var simp = through2({
 });
 
 simp.on('end', () => {
+  file.writeFileSync("./data/abbreviations.json", JSON.stringify(abbreviations));
   finished(total);
 });
 
