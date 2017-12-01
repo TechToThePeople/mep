@@ -339,7 +339,7 @@
         .group(function(d) {
           return d.country;
         })
-        .size(1000)
+        .size(100)
         .html(function(d) {
           return tpl(d);
         })
@@ -399,22 +399,41 @@
     });
 
 
+
     function drawTable(dom) {
+      function sortRaw (data,order){
+      }
+
       var dim = ndx.dimension(function(d) {
-        return null
+        return 1
       });
+
+      var th = [{}
+        ,{attr:"last_name"}
+        ,{}
+        ,{attr:function(d){return d.constituency.country}}
+        ,{attr:"eugroup"}
+        ,{attr:function(d){return d.constituency.party}}
+          ,{attr:"since"}];
+      d3.selectAll("th")
+        .data(th)
+        .attr("class",function(d) {if (d.attr) return "sortable";})
+        .attr("id",function(d){ if (d.attr && typeof d.attr != "function") return d.attr});
+
+
       var chart = dc.dataTable(dom)
         .dimension(dim)
         .size(1000)
         .sortBy(function(d) {
-          return d.last_name;
+          return d.since;
         })
+        .order (d3.descending)
         .showGroups(false)
         .group(function(d) {
           return null;
         })
         .columns([
-          function(d) {
+            function(d) {
             return '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
               '<a title="' + d.email + '" href="mailto:' + d.email + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>' +
               '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>' +
@@ -464,11 +483,91 @@
             });
         })
         .on("renderlet.hide", function(g) {
-
           g.selectAll("tbody").attr("class", "collapse in");
-          //$(dom).find("tbody > tr > td:last-child").addClass('hidden email');
         })
+
+      drawPagination();
+      sortable();
+
       return chart;
+
+      function sortable(){
+       d3.selectAll("th.sortable")
+        .on("click", function(d) {
+          var icon=d3.select(this).select("i.glyphicon");
+          var up=icon.classed("glyphicon-arrow-up");
+          d3.selectAll("th.sortable .glyphicon").attr("class","glyphicon glyphicon-sort");
+          if (!up) {
+            icon.attr("class","glyphicon glyphicon-arrow-up");
+            chart.order (d3.ascending);
+          } else {
+            icon.attr("class","glyphicon glyphicon-arrow-down");
+            chart.order (d3.descending);
+          }
+          if (typeof d.attr == "function") {
+            chart.sortBy(d.attr);
+          } else {
+            chart.sortBy(function (e){return e[d.attr];});
+          }
+          chart.redraw();
+        })
+       .append("i").attr('class','glyphicon glyphicon-sort');
+
+      d3.select("th#since i").attr("class","glyphicon glyphicon-arrow-up");
+    }
+
+  function drawPagination(){
+
+  // use odd page size to show the effect better
+  var ofs = 0, pag = 10;
+  chart.on('postRedraw.pagination', update);
+
+  function display() {
+      d3.select('#begin')
+          .text(1+ofs);
+      d3.select('#end')
+          .text(ofs+pag);
+      d3.selectAll('#next,#last')
+          .attr('disabled', ofs+pag>=graphs.total.data() ? 'true' : null);
+      d3.selectAll('#first,#prev')
+          .attr('disabled', ofs==0 ? 'true' : null);
+      d3.select('#size').text(graphs.total.data());
+  }
+
+  function update() {
+      chart.beginSlice(ofs);
+      chart.endSlice(ofs+pag);
+      display();
+  }
+  function next() {
+      ofs += pag;
+      chart.redraw();
+  }
+  function prev() {
+      ofs -= pag;
+      if (ofs <=0) {
+        d3.selectAll("#prev,#first").attr("disabled",true);
+        ofs=0;
+      }
+      chart.redraw();
+  }
+
+  d3.selectAll("#pagination")
+    .html (`
+        Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span><span class="btn-group">
+        <button id="first" disabled="disabled" class="btn btn-primary"><i class="glyphicon glyphicon-fast-backward"></i>First</button>
+        <button id="prev" disabled="disabled" class="btn btn-primary"><i class="glyphicon glyphicon-step-backward"></i>Prev</button>
+        <button id="next" class="btn btn-primary">Next<i class="glyphicon glyphicon-step-forward"></i></button>
+        <button id="last" class="btn btn-primary">Last<i class="glyphicon glyphicon-fast-forward"></i></button>
+        </span>
+    `);
+  d3.select("#first").on("click",function(){ofs=0;chart.redraw()});
+  d3.select("#last").on("click",function(){ofs=graphs.total.data()-pag;chart.redraw()});
+  d3.select("#prev").on("click",prev);
+  d3.select("#next").on("click",next);
+
+  update();
+}
 
     }
 
@@ -696,6 +795,8 @@
           Click on the graphs to filter the Members of the European parliament by country or party</div>
       </div>
       <div class="col-md-2">
+      <div class="row">
+        <div class="col-md-12 col-xs-6">
         <div class="panel overview">
           <ul class="list-group">
             <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
@@ -710,6 +811,8 @@
             <li class="list-group-item nbspeech"><span class="nb"></span> Speeches</li>
           </ul>
         </div>
+        </div>
+        <div class="col-md-12 col-xs-6">
         <div class="panel panel-default role">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group" data-target="role">
@@ -724,7 +827,9 @@
           </div>
           <div class="panel-body graph collapse in"></div>
         </div>
+        </div>
 
+      </div>
       </div>
       <div class="col-md-5">
         <div class="country panel panel-default">
@@ -759,7 +864,7 @@
               </div></div>
       </div>
       </div>
-      <div class="committee col-md-2">
+      <div class="committee col-md-2 col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group" data-target="committee">
@@ -775,7 +880,7 @@
           <div class="panel-body graph collapse in"></div>
         </div>
       </div>
-      <div class="delegation col-md-2">
+      <div class="delegation col-md-2 col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group" data-target="delegation">
@@ -796,7 +901,10 @@
     </div>
     </div>
 
+      <div class="container-fluid"><div class="row"><div id="pagination" class="col-md-12"></div></div></div>
     <div id="list" class="row">
+      
+
       <div class="col-md-12 card">
         <table class="table table-striped  table-hover" id="table">
           <thead>
