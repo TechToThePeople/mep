@@ -1411,6 +1411,9 @@
               <dl class="dl-horizontal">
                 {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.constituency.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.constituency.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
               </dl>
+              <dl class="dl-horizontal">
+              {% include('dtd', {dt: "Rapporteur of", dd:o.activities.REPORT}); %} {% include('dtd', {dt: "Motions", dd:o.activities.MOTION}); %} {% include('dtd', {dt: "Shadow rapporteur", dd:o.activities['REPORT-SHADOW']}); %} {% include('dtd', {dt: "Opinions", dd:o.activities.COMPARL}); %} {% include('dtd', {dt: "Opinion shadow", dd:o.activities['OPINION-SHADOW']}); %} {% include('dtd', {dt: "Declarations", dd:o.activities.WECL}); %} {% include('dtd', {dt: "Questions", dd:o.activities.QP}); %} {% include('dtd', {dt: "Speeches", dd:o.activities.CRE}); %}
+              </dl>
             </div>
             <div class="col-md-4 hidden feed">
             </div>
