@@ -518,9 +518,8 @@
 
   function drawPagination(){
 
-  // use odd page size to show the effect better
   var ofs = 0, pag = 10;
-  chart.on('postRedraw.pagination', update);
+  chart.on('preRedraw.pagination', display);
 
   function display() {
       d3.select('#begin')
@@ -530,18 +529,18 @@
       d3.selectAll('#next,#last')
           .attr('disabled', ofs+pag>=graphs.total.data() ? 'true' : null);
       d3.selectAll('#first,#prev')
-          .attr('disabled', ofs==0 ? 'true' : null);
+          .attr('disabled', ofs<=0 ? 'true' : null);
       d3.select('#size').text(graphs.total.data());
   }
 
   function update() {
       chart.beginSlice(ofs);
       chart.endSlice(ofs+pag);
-      display();
-  }
-  function next() {
-      ofs += pag;
       chart.redraw();
+  }
+
+  function next() {
+      ofs += pag;update();
   }
   function prev() {
       ofs -= pag;
@@ -549,7 +548,7 @@
         d3.selectAll("#prev,#first").attr("disabled",true);
         ofs=0;
       }
-      chart.redraw();
+      update();
   }
 
   d3.selectAll("#pagination")
@@ -561,10 +560,10 @@
         <button id="last" class="btn btn-primary">Last<i class="glyphicon glyphicon-fast-forward"></i></button>
         </span>
     `);
-  d3.select("#first").on("click",function(){ofs=0;chart.redraw()});
-  d3.select("#last").on("click",function(){ofs=graphs.total.data()-pag;chart.redraw()});
+  d3.select("#first").on("click",function(){ofs=0;update()});
+  d3.select("#last").on("click",function(){ofs=graphs.total.data()-pag;update()});
   d3.select("#prev").on("click",prev);
-  d3.select("#next").on("click",next);
+  d3.select("#next").on("click",function(){ofs +=pag;update()});
 
   update();
 }
