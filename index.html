@@ -60,14 +60,6 @@
       "Array": "pink"
     };
 
-var activitymap={"CRE" : "Speeches",
-             "REPORT" : "Reports",
-             "REPORT-SHADOW" : "Shadow reports",
-             "MOTION" : "Motions for resolution",
-             "COMPARL" : "Opinion",
-             "COMPARL-SHADOW" : "Opinion shadow",
-             "WDECL" : "Written declarations",
-"QP" : "Parlamentiary questions"};
 
     var data = null;
 
@@ -203,6 +195,14 @@ var activitymap={"CRE" : "Speeches",
 
     function drawNumbers(graphs) {
       var format = d3.format(".3s");
+      var activitymap={"CRE" : "speech",
+             "REPORT" : "report",
+             "REPORT-SHADOW" : "report_shadow",
+             "MOTION" : "motion",
+             "COMPARL" : "opinion",
+             "COMPARL-SHADOW" : "opinion_shadow",
+             "WDECL" : "declaration",
+      "QP" : "question"};
 
       var dim = ndx.dimension(function(d) {
         return true;
@@ -214,20 +214,28 @@ var activitymap={"CRE" : "Speeches",
       }).avg(function(d) {
         return d.since.getTime()
       });
+
       reducer.value("birthdate").count(true).filter(function(d) {
         return d.birthdate;
       }).avg(function(d) {
         return +d.birthdate.getTime()
       });
+
       reducer.value("nb").count(true);
       reducer.value("woman").count(true).filter(function(d) {
         return d.Gender == "F"
       });
 
+      reducer.value("nb").count(true);
+
+      for (var a in activitymap) {(function(a,n) {
+          reducer.value(n).sum(function(d){return d.activities[a] || 0;});
+       })(a,activitymap[a])};
+
       var group = dim.group();
       reducer(group);
 
-      graphs.total = dc.numberDisplay(".nbmep")
+      graphs.total = dc.numberDisplay(".nbmep .nb")
         .group(group)
         .valueAccessor(function(d) {
           return d.value.nb.count
@@ -245,7 +253,7 @@ var activitymap={"CRE" : "Speeches",
       //              );
       //        })
 
-      graphs.avg_since = dc.numberDisplay("#avg_since a")
+      graphs.avg_since = dc.numberDisplay(".avg_since span")
         .group(group)
         .valueAccessor(function(d) {
           return d.value.since.avg;
@@ -257,7 +265,7 @@ var activitymap={"CRE" : "Speeches",
           some: "since %number"
         })
 
-      graphs.avg_age = dc.numberDisplay("#avg_age_ a")
+      graphs.avg_age = dc.numberDisplay(".avg_age span")
         .group(group)
         .valueAccessor(function(d) {
           return d.value.birthdate.avg;
@@ -269,7 +277,13 @@ var activitymap={"CRE" : "Speeches",
           some: "%number old"
         })
 
-      graphs.nbwomen = dc.numberDisplay("#percent_women i")
+      graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.woman.count;
+        });
+
+      graphs.percentwomen = dc.numberDisplay(".nbwomen .percent")
         .group(group)
         .valueAccessor(function(d) {
           return d.value.woman.count / graphs.total.data();
@@ -279,6 +293,13 @@ var activitymap={"CRE" : "Speeches",
           some: "%number"
         })
 
+      for (var a in activitymap) {
+        (function(a,n) {
+        graphs["nb" + n] = dc.numberDisplay(".nb" +n+ " .nb")
+        .group(group)
+        .valueAccessor(function(d){ return d.value[n].sum });
+        })(a,activitymap[a]);
+      };
     }
 
     function drawGender(dom) {
@@ -642,12 +663,6 @@ var activitymap={"CRE" : "Speeches",
         <span class="icon-bar"></span>
       </button>
         <a class="navbar-brand resetall" href="#"><img src="img/ep.svg" alt="MEPs" title="Members of the European parliament"/></a>
-        <ul class="nav navbar-nav">
-          <li class="active"><a class="resetall"><span class="nbmep badge"></span> MEPs</a></li>
-          <li id="percent_women" title="percentage of women"><a><i></i>👩</a></li>
-          <li id="avg_age_" title="average age"><a></a></li>
-          <li id="avg_since" title="how long in office"><a></a></li>
-        </ul>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right">
@@ -681,6 +696,20 @@ var activitymap={"CRE" : "Speeches",
           Click on the graphs to filter the Members of the European parliament by country or party</div>
       </div>
       <div class="col-md-2">
+        <div class="panel overview">
+          <ul class="list-group">
+            <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
+            <li class="list-group-item nbwomen" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women</li>
+          <li class="list-group-item avg_age" title="average age"><span></span></li>
+          <li class="list-group-item avg_since" title="how long in office"><span></span></li>
+            <li class="list-group-item nbopinion"><span class="nb"></span> Opinions</li>
+            <li class="list-group-item nbreport" title="Number of rapporteurs, all terms. Each MEP can be rapporteur several time"><span class="nb"></span> Rapporteurs</li>
+            <li class="list-group-item nbreport_shadow" title="Shadow rapporteurs, all terms." ><span class="nb"></span> Shadow</li>
+            <li class="list-group-item nbmotion"><span class="nb"></span> Motions</li>
+            <li class="list-group-item nbquestion"><span class="nb"></span> Questions</li>
+            <li class="list-group-item nbspeech"><span class="nb"></span> Speeches</li>
+          </ul>
+        </div>
         <div class="panel panel-default role">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group" data-target="role">
@@ -842,7 +871,8 @@ var activitymap={"CRE" : "Speeches",
   padding-right:0;
 }
 
-.list-group .list-group-item {border-bottom:1px solid lightgray; margin-bottom:3px;padding-right:5px;font-size:0.8em}
+.list-group .list-group-item {border-bottom:1px solid lightgray;padding:8px 10px;} 
+/*margin-bottom:3px;padding-right:5px;font-size:0.8em}*/
 
 .table-hover tbody td {
     transition: background-color 1s;
