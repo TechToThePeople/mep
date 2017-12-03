@@ -127,7 +127,7 @@
     }
 
     function drawGroup(dom) {
-      var graph = dc.pieChart(dom).innerRadius(20) //.radius(70);
+      var graph = dc.pieChart(dom).innerRadius(40) //.radius(70);
       var dim = ndx.dimension(function(d) {
         if (typeof d.eugroup == "undefined") return "";
         return d.eugroup;
