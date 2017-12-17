@@ -130,4 +130,6 @@ gulp.task('js', function() {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('default', ['css', 'js']);
+
+gulp.task('build', ['css', 'js']);
+gulp.task('default', ['update','css', 'js']);
