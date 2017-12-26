@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
+var replace = require('gulp-replace');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var minify = require('gulp-clean-css');
@@ -100,6 +101,14 @@ gulp.task("transform", function(done) {
 gulp.task('update', function (callback) {
   runSequence('download','decompress', 'transform',callback);
   });
+
+gulp.task('html', function(){
+  return gulp.src(['src/index.html'])
+    .pipe(replace("$UPDATE_DATE",new Date().toISOString().slice(0, 10)))
+    .pipe(replace("../data/",'data/'))
+    .pipe(replace("../build/",'build/'))
+    .pipe(gulp.dest("."))
+});
 
 gulp.task('css', function() {
   return gulp.src(paths.css)
