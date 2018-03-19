@@ -141,4 +141,4 @@ gulp.task('js', function() {
 
 
 gulp.task('build', ['css', 'js']);
-gulp.task('default', ['update','css', 'js']);
+gulp.task('default', ['update','html']);

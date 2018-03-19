@@ -75,6 +75,8 @@ var stream = StreamFilteredArray.make({
 var abbr = {
   "Subcommittee on Security and Defence": "SEDE",
   "Special Committee on Terrorism": "TERR",
+  "Special committee on financial crimes, tax evasion and tax avoidance": "TAX3",
+  "Special Committee on the Union’s authorisation procedure for pesticides": "PEST",
   "Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA"
 };
 
@@ -91,7 +93,7 @@ function transform(d) {
     if (typeof options.abbr == "string") {
       var k=options.abbr;
       options.abbr = function(d){
-        return d[k] || abbr[d.Organization];
+        return d[k] || abbr[d.Organization] || "??";
       };
     } else {
       if (options.abbr) {
@@ -184,6 +186,8 @@ function transform(d) {
   }
   activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
+  if (d.constituency && d.constituency.start)
+    d.constituency.start=d.constituency.start.replace("T00:00:00", "");
   return d;
 }
 
@@ -261,7 +265,7 @@ stream.output.on("end", function() {
 
 function write(options = {
   from: "data/ep_meps_current.json",
-  csv: "data/meps.tmp",
+  csv: "data/meps.csv",
   json: 'data/meps.json'
 }, callback) {
   fs.createReadStream(options.from).pipe(stream.input)
