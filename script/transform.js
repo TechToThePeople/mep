@@ -173,7 +173,7 @@ function transform(d) {
   } else {
     d.Birth = {};//{date:null,place:null};
   }
-  d.mail=d.Mail[0];
+  d.mail= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail;
   delete d.Mail;
   //delete d.Delegations;
   activeOnly("Delegations",{abbr:getDelegation});
