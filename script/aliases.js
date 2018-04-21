@@ -6,7 +6,7 @@ var finished = function(n) {
 };
 var total = 0;
 const head = ['epid', 'alias','active'];
-const headall = ['epid','firstname','lastname','active','start','end','birthdate','country','gender'];
+const headall = ['epid','firstname','lastname','active','start','end','birthdate','country','gender','eugroup'];
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
@@ -58,6 +58,10 @@ function transform(d) {
   t.firstname=d.Name.sur;
   t.lastname=d.Name.family;
   t.epid=d.UserID;
+  t.eugroup=d.Groups ? d.Groups[0].groupid : "";
+  if (Array.isArray(t.eugroup)){
+    t.eugroup = t.eugroup.join("/");
+  }
   getFromTo();
   t.start=t.start.replace("T00:00:00", "");
   t.end= t.active ? "" : t.end.replace("T00:00:00", "");
@@ -72,8 +76,8 @@ var csv = through2({
   objectMode: true
 }, function(mep, enc, callback) {
   mep.aliases.forEach(function(d){
-    csv.push([d,mep.epid,mep.active]);
-
+    if (d == d.toLowerCase())
+      csv.push([mep.epid,d,mep.active]);
   });
   callback();
 });
@@ -83,7 +87,7 @@ csv.on('end', () => {});
 var csvall = through2({
   objectMode: true
 }, function(mep, enc, callback) {
-  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.end,mep.birthdate,mep.country,mep.gender]);
+  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup]);
   callback();
 });
 

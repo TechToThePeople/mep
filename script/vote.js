@@ -1,3 +1,8 @@
+//q "select v.result, m.* from data/vote/89202.csv v left join data/meps-aliases.csv a on v.name=a.alias join data/meps.all.csv m on m.epid=a.epid and m.start <= '2018-03-14' and (m.end >='2018-03-14' or m.end='')" -d, -H -O > data/vote/89202.full.csv
+
+//find non matching aliases
+//q "select v.* from data/vote/89202.csv v left join data/meps-aliases.csv a on v.name=a.alias where a.epid is null" -d, -H -O
+
 'use strict';
 var fs = require('fs');
 var path = require('path');
@@ -49,7 +54,8 @@ fs.readFile( xmlfile, function(err, data) {
         var g=group["PoliticalGroup.Member.Name"];
         if (!Array.isArray(g)) g=[g];//if only one mep
         g.forEach(function(mep){
-          writerRoll.write({vote_id:v.id,mep_id:mep.MepId,eugroup:group.Identifier,result:convertType[type],name:mep.$t});
+          var n = mep.$t.replace("ß","ss"); //For some reason, the alias is using ss instead"
+          writerRoll.write({vote_id:v.id,mep_id:mep.MepId,eugroup:group.Identifier,result:convertType[type],name:n.toLowerCase()});
         });
       });
     };
