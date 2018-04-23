@@ -424,9 +424,9 @@
         .dimension(dim)
         .size(1000)
         .sortBy(function(d) {
-          return d.since;
+          return d.lastname;
         })
-        .order (d3.descending)
+        .order (d3.ascending)
         .showGroups(false)
         .group(function(d) {
           return null;
@@ -598,7 +598,7 @@
       graphs.gender = drawGender(".gender .panel-body");
       graphs.vote = drawVote(".vote .panel-body");
       graphs.table = drawTable("#table");
-//      graphs.search = drawTextSearch('#input-filter', jQuery);
+      graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {setUrl()});
       summary.total = graphs.total.data();
       dc.renderAll()
@@ -751,7 +751,7 @@
         <form class="navbar-form navbar-right">
           <div class="input-group">
             <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-            <input type="text" id="input-filter" class="form-control" placeholder="name, party, committee...">
+            <input type="text" id="input-filter" class="form-control" placeholder="name...">
           </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
