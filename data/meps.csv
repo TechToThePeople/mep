@@ -1,8 +1,6 @@
 epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,office,committee,substitute,delegation,twitter,tttpid,since
-190774,France,Geoffroy,DIDIER,geoffroy.didier@europarl.europa.eu,1976-04-12,M,PPE,Les Républicains,+322 28 45120,13E115,EMPL,JURI|TAX3,D-CN,https://twitter.com/geoffroydidier?lang=en,tttp_190774,2017-12-01
-191695,Latvia,Miroslavs,MITROFANOVS,Miroslavs.Mitrofanovs@europarl.europa.eu,1966-12-18,M,Verts/ALE,Latvijas Krievu savienība,+322 28 45912,04F265,PETI|EMPL,,DCAS,,tttp_191695,2018-03-05
-96872,Germany,Nadja,HIRSCH,nadja.hirsch@europarl.europa.eu,1978-07-13,F,ALDE,Freie Demokratische Partei,+322 28 45572,08G265,INTA,AFET,D-TR,http://twitter.com/nadjahirsch,tttp_96872,2009-07-14
-191693,Finland,Elsi,KATAINEN,elsi.katainen@europarl.europa.eu,1966-12-17,F,ALDE,Suomen Keskusta,+322 28 45361,08H341,INTA,AGRI|REGI,D-US,,tttp_191693,2018-03-01
+191695,Latvia,Miroslavs,MITROFANOVS,Miroslavs.Mitrofanovs@europarl.europa.eu,1966-12-18,M,Verts/ALE,Latvijas Krievu savienība,+322 28 45912,04F265,EMPL|PETI,,DCAS,,tttp_191695,2018-03-05
+192298,Poland,Dobromir,SOŚNIERZ,dobromir.sosnierz@europarl.europa.eu,1976-10-18,M,NA/NI,Wolność,+322 28 45575,06E240,AFET,ITRE,D-CN,https://twitter.com/d_sosnierz,tttp_192298,2018-03-22
 188623,United Kingdom,John,FLACK,john.flack@europarl.europa.eu,1957-01-03,M,ECR,Conservative Party,+322 28 45672,04M083,REGI,PECH,D-CN,,tttp_188623,2017-06-28
 28244,Germany,Wolf,KLINZ,wolf.klinz@europarl.europa.eu,1941-09-13,M,ALDE,Freie Demokratische Partei,+322 28 45118,08G169,ECON|CONT|TAX3,,DEEA,,tttp_28244,2004-07-20
 39713,Romania,Renate,WEBER,renate.weber@europarl.europa.eu,1955-08-03,F,ALDE,Independent,+322 28 45849,08H149,EMPL,DROI,D-CL|DLAT,http://twitter.com/renateweber,tttp_39713,2007-12-10
@@ -14,7 +12,6 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124857,Bulgaria,Peter,KOUROUMBASHEV,peter.kouroumbashev@europarl.europa.eu,1968-01-28,M,S&D,-,+322 28 45708,11G152,ITRE,TRAN|PETI|TERR,D-ME,,tttp_124857,2017-01-17
 135540,Poland,Czesław,HOC,czeslaw.hoc@europarl.europa.eu,1954-02-22,M,ECR,Prawo i Sprawiedliwość,+322 28 45864,05M105,EMPL,PECH,D-CN,,tttp_135540,2015-11-27
 190519,Netherlands,Caroline,NAGTEGAAL,caroline.nagtegaal@europarl.europa.eu,1980-06-01,F,ALDE,Volkspartij voor Vrijheid en Democratie,+322 28 45221,08G209,ECON,ITRE|TAX3,D-IN,,tttp_190519,2017-11-14
-97025,Estonia,Ivari,PADAR,ivari.padar@europarl.europa.eu,1965-03-12,M,S&D,Sotsiaaldemokraatlik Erakond,+322 28 45474,12G101,LIBE,EMPL|AGRI,D-UA,,tttp_97025,2009-07-14
 124940,United Kingdom,Patrick,O'FLYNN,patrick.oflynn@europarl.europa.eu,1965-08-29,M,EFDD,United Kingdom Independence Party,+322 28 45337,03F163,,CULT,, https://twitter.com/oflynnmep,tttp_124940,2014-07-01
 1849,Germany,Sylvia-Yvonne,KAUFMANN,sylvia-yvonne.kaufmann@europarl.europa.eu,1955-01-23,F,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45788,12G217,JURI,LIBE|AFCO,D-JP,https://twitter.com/KaufmannSylvia,tttp_1849,1991-01-20
 124839,Germany,Arne,LIETZ,arne.lietz@europarl.europa.eu,1976-07-23,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45296,12G146,AFET|DEVE,SEDE,D-IL|DKOR,https://twitter.com/ArneLietz,tttp_124839,2014-07-01
@@ -22,17 +19,18 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 99650,United Kingdom,Tim,AKER,tim.aker@europarl.europa.eu,1985-05-23,M,EFDD,United Kingdom Independence Party,+322 28 45109,03F258,EMPL,LIBE,, https://twitter.com/Tim_Aker,tttp_99650,2014-07-01
 124945,United Kingdom,Margot,PARKER,margot.parker@europarl.europa.eu,1943-07-24,F,EFDD,United Kingdom Independence Party,+322 28 45182,03F265,FEMM,LIBE,, https://twitter.com/MargotLJParker,tttp_124945,2014-07-01
 188624,United Kingdom,Wajid,KHAN,wajid.khan@europarl.europa.eu,1979-10-15,M,S&D,Labour Party,+322 28 45437,13G342,DROI|AFET,BUDG|SEDE,DARP,https://twitter @wajid4europe ,tttp_188624,2017-06-29
-191510,France,Jacques,COLOMBIER,jacques.colombier@europarl.europa.eu,1952-02-17,M,ENF,Front national,+322 28 45806,01H359,AGRI,INTA,D-TR,,tttp_191510,2018-02-02
+191693,Finland,Elsi,KATAINEN,elsi.katainen@europarl.europa.eu,1966-12-17,F,ALDE,Suomen Keskusta,+322 28 45361,08H341,INTA,AGRI|REGI,D-US,,tttp_191693,2018-03-01
+188622,United Kingdom,Rupert,MATTHEWS,rupert.matthews@europarl.europa.eu,1961-12-05,M,ECR,Conservative Party,+322 28 45598,04M089,CULT,ITRE|ENVI,DEEA,,tttp_188622,2017-06-29
 125030,Netherlands,Annie,SCHREIJER-PIERIK,annie.schreijer-pierik@europarl.europa.eu,1953-02-17,F,PPE,Christen Democratisch Appèl,+322 28 45538,08E253,ENVI|PECH,AGRI,DACP,https://twitter.com/AnnieSchreijer,tttp_125030,2014-07-01
 96839,Germany,Kerstin,WESTPHAL,kerstin.westphal@europarl.europa.eu,1962-09-11,F,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45534,12G355,REGI,IMCO,DEEA,https://twitter.com/WestphalKerstin/media,tttp_96839,2009-07-14
-4267,Germany,Udo,BULLMANN,udo.bullmann@europarl.europa.eu,1956-06-08,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45342,05K002,ECON,,DMER|D-BR|DLAT,https://twitter.com/UdoBullmann,tttp_4267,1999-07-20
+4267,Germany,Udo,BULLMANN,udo.bullmann@europarl.europa.eu,1956-06-08,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45342,05K002,,,D-BR|DLAT|DMER,https://twitter.com/UdoBullmann,tttp_4267,1999-07-20
 124874,Poland,Bolesław,G. PIECHA,boleslaw.piecha@europarl.europa.eu,1954-09-19,M,ECR,Prawo i Sprawiedliwość,+322 28 45366,05M037,PEST|ENVI,INTA|TRAN,DCAR,,tttp_124874,2014-07-01
 96805,United Kingdom,Paul,NUTTALL,paul.nuttall@europarl.europa.eu,1976-11-30,M,EFDD,United Kingdom Independence Party,+322 28 45740,03F254,REGI,CONT|BUDG,, https://twitter.com/paulnuttallukip,tttp_96805,2009-07-14
 28341,Poland,Mirosław,PIOTROWSKI,miroslaw.piotrowski@europarl.europa.eu,1966-01-09,M,ECR,Niezależny,+322 28 45588,04M105,REGI,AFET,ASEAN,,tttp_28341,2004-07-20
 4289,Germany,Angelika,NIEBLER,angelika.niebler@europarl.europa.eu,1963-02-18,F,PPE,Christlich-Soziale Union in Bayern e.V.,+322 28 45390,15E206,ITRE|FEMM,JURI,DARP,https://twitter.com/ANiebler,tttp_4289,1999-07-20
-39726,Hungary,László,TŐKÉS,laszlo.tokes@europarl.europa.eu,1952-04-01,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45801,09E210,DROI|AFET,PETI,DSEE,,tttp_39726,2007-12-10
+39726,Hungary,László,TŐKÉS,laszlo.tokes@europarl.europa.eu,1952-04-01,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45801,09E210,DROI|AFET,PETI,DSEE,,tttp_39726,2007-12-10
 124695,Czech Republic,Jan,KELLER,jan.keller@europarl.europa.eu,1955-01-23,M,S&D,Česká strana sociálně demokratická,+322 28 45425,10G317,EMPL,ECON,DEPA|D-CA,,tttp_124695,2014-07-01
-96765,Spain,Verónica,LOPE FONTAGNÉ,veronica.lopefontagne@europarl.europa.eu,1952-02-01,F,PPE,Partido Popular,+322 28 45223,11E258,EMPL,PECH|ECON,DLAT|D-MX,,tttp_96765,2009-07-14
+96765,Spain,Verónica,LOPE FONTAGNÉ,veronica.lopefontagne@europarl.europa.eu,1952-02-01,F,PPE,Partido Popular,+322 28 45223,11E258,EMPL,ECON|PECH|BUDG,D-MX|DLAT,,tttp_96765,2009-07-14
 124745,Latvia,Iveta,GRIGULE-PĒTERSE,iveta.grigule@europarl.europa.eu,1964-09-30,F,ALDE,Zaļo un Zemnieku savienība,+322 28 45276,08G346,SEDE|AFET,,DCAS|D-US|D-BY|DARP|D-IL|DEPA,https://twitter.com/ivetagrigule,tttp_124745,2014-07-01
 38398,Netherlands,Esther,de LANGE,esther.delange@europarl.europa.eu,1975-02-19,F,PPE,Christen Democratisch Appèl,+322 28 45954,08E201,TAX3|ECON,ITRE,D-RU,http://twitter.com/Esther_de_Lange,tttp_38398,2007-04-12
 124954,United Kingdom,Paul,BRANNEN,paul.brannen@europarl.europa.eu,1962-09-13,M,S&D,Labour Party,+322 28 45795,13G209,ENVI,AGRI,D-CA,https://twitter.com/PaulBrannenNE,tttp_124954,2014-07-01
@@ -46,8 +44,8 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 132925,Poland,Edward,CZESAK,edward.czesak@europarl.europa.eu,1951-02-22,M,ECR,Prawo i Sprawiedliwość,+322 28 45210,05M021,ITRE|TERR,IMCO,DACP,,tttp_132925,2015-06-11
 96709,Denmark,Morten,LØKKEGAARD,morten.lokkegaard@europarl.europa.eu,1964-12-20,M,ALDE,"Venstre, Danmarks Liberale Parti",+322 28 45766,08H254,IMCO,CULT|ITRE,ASEAN,http://twitter.com/loekkegaard_mep,tttp_96709,2009-07-14
 188718,France,Christelle,LECHEVALIER,christelle.lechevalier@europarl.europa.eu,1968-09-27,F,ENF,Front national,+322 28 45709,01H352,ITRE,EMPL,D-CN,,tttp_188718,2017-06-19
-188445,Netherlands,André,ELISSEN,andre.elissen@europarl.europa.eu,1960-02-12,M,ENF,Partij voor de Vrijheid,+322 28 45814,07M101,BUDG|FEMM,TRAN,D-AF,,tttp_188445,2017-06-13
-28141,Hungary,Lívia,JÁRÓKA,livia.jaroka@europarl.europa.eu,1974-10-06,F,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45544,09E130,,ECON|FEMM|LIBE,,,tttp_28141,2004-07-20
+188445,Netherlands,André,ELISSEN,andre.elissen@europarl.europa.eu,1960-02-12,M,ENF,Partij voor de Vrijheid,+322 28 45814,07M101,BUDG|FEMM,TRAN,D-AF|DCAR,,tttp_188445,2017-06-13
+188945,Germany,Dennis,RADTKE,dennis.radtke@europarl.europa.eu,1979-04-29,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45650,15E218,EMPL,ITRE,DKOR,https://twitter.com/RadtkeMdEP,tttp_188945,2017-07-24
 124837,Germany,Joachim,SCHUSTER,joachim.schuster@europarl.europa.eu,1962-10-28,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45413,12G317,INTA,EMPL,DANZ|DLAT,,tttp_124837,2014-07-01
 1928,Germany,Werner,LANGEN,werner.langen@europarl.europa.eu,1949-11-27,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45385,15E108,ECON|TAX3,ITRE,ASEAN,https://twitter.com/langen_werner,tttp_1928,1994-07-19
 4246,Austria,Othmar,KARAS,othmar.karas@europarl.europa.eu,1957-12-24,M,PPE,Österreichische Volkspartei,+322 28 45627,08F143,ECON|TAX3,IMCO|SEDE|AFET|AGRI,D-RU,https://twitter.com/othmar_karas,tttp_4246,1999-07-20
@@ -67,7 +65,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 28481,United Kingdom,Sajjad,KARIM,sajjad.karim@europarl.europa.eu,1970-07-11,M,ECR,Conservative Party,+322 28 45640,07M081,JURI,INTA,DSCA|DEPA,http://twitter.com/SajjadKarimMEP,tttp_28481,2004-07-20
 124788,Italy,Luigi,MORGANO,luigi.morgano@europarl.europa.eu,1951-03-15,M,S&D,Partito Democratico,+322 28 45645,15G210,CULT,ECON,DANZ,,tttp_124788,2014-07-01
 124849,Italy,Massimo,PAOLUCCI,massimo.paolucci@europarl.europa.eu,1959-12-13,M,S&D,Articolo UNO – Movimento Democratico e Progressista,+322 28 45311,15G318,ENVI,AGRI|PEST,D-CN,https://twitter.com/MassimoPaolucc6,tttp_124849,2014-07-01
-23821,Hungary,József,SZÁJER,jozsef.szajer@europarl.europa.eu,1961-09-07,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45871,09E116,JURI,INTA,D-US,,tttp_23821,2003-04-18
+23821,Hungary,József,SZÁJER,jozsef.szajer@europarl.europa.eu,1961-09-07,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45871,09E116,JURI,INTA,D-US,,tttp_23821,2003-04-18
 125104,Slovenia,Romana,TOMC,romana.tomc@europarl.europa.eu,1965-11-02,F,PPE,Slovenska demokratska stranka,+322 28 45665,09E158,EMPL,ECON,D-JP,https://twitter.com/RomanaTomc,tttp_125104,2014-07-01
 124855,Bulgaria,Georgi,PIRINSKI,georgi.pirinski@europarl.europa.eu,1948-09-10,M,S&D,Bulgarian Socialist Party,+322 28 45254,11G158,EMPL|CONT,REGI,DEPA|DSCA,,tttp_124855,2014-07-01
 128717,Belgium,Sander,LOONES,sander.loones@europarl.europa.eu,1979-01-26,M,ECR,Nieuw-Vlaamse Alliantie,+322 28 45718,04M065,ECON,INTA|LIBE,ASEAN,,tttp_128717,2014-10-14
@@ -80,7 +78,6 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 1922,Germany,Thomas,MANN,thomas.mann@europarl.europa.eu,1946-01-28,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45318,15E115,EMPL,ECON|TAX3,D-MX|DLAT|DSAS,https://twitter.com/ThomasMannEP,tttp_1922,1994-07-19
 124827,Germany,Joachim,STARBATTY,joachim.starbatty@europarl.europa.eu,1940-05-09,M,ECR,Liberal-Conservative Refomists,+322 28 45354,06M039,INTA,ECON,,https://twitter.com/jstarbatty?lang=de,tttp_124827,2014-07-01
 130100,Belgium,Hilde,VAUTMANS,hilde.vautmans@europarl.europa.eu,1972-05-02,F,ALDE,Open Vlaamse Liberalen en Democraten,+322 28 45661,09G165,SEDE|AFET,AGRI|PEST,DNAT,https://twitter.com/hildevautmans,tttp_130100,2015-01-01
-188945,Germany,Dennis,RADTKE,dennis.radtke@europarl.europa.eu,1979-04-29,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45650,15E218,EMPL,ITRE,DKOR,https://twitter.com/RadtkeMdEP,tttp_188945,2017-07-24
 135491,Spain,María Teresa,GIMÉNEZ BARBAT,teresa.gimenezbarbat@europarl.europa.eu,1955-06-04,F,ALDE,-,+322 28 45592,08G157,CULT,AFET|SEDE,DMAG|DMED,https://twitter.com/gimenezbarbat,tttp_135491,2015-11-25
 124809,Germany,Sven,SCHULZE,sven.schulze@europarl.europa.eu,1979-07-31,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45207,15E217,ITRE,PETI|EMPL,DMED|DMAS,https://twitter.com/schulzeeuropa,tttp_124809,2014-07-01
 135490,Spain,Xabier,BENITO ZILUAGA,xabier.benitoziluaga@europarl.europa.eu,1988-05-23,M,GUE/NGL,PODEMOS,+322 28 45281,03M107,ITRE,BUDG,DMER,https://twitter.com/xabierbenito?lang=es,tttp_135490,2015-11-25
@@ -96,10 +93,12 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 117491,Belgium,Anneleen,VAN BOSSUYT,anneleen.vanbossuyt@europarl.europa.eu,1980-01-10,F,ECR,Nieuw-Vlaamse Alliantie,+322 28 45108,04M069,IMCO,ITRE,,,tttp_117491,2015-01-08
 190517,Germany,Martin,SCHIRDEWAN,martin.schirdewan@europarl.europa.eu,1975-07-12,M,GUE/NGL,DIE LINKE.,+322 28 45667,03M031,ECON,TAX3,,,tttp_190517,2017-11-08
 2002,Spain,José Ignacio,SALAFRANCA SÁNCHEZ-NEYRA,joseignacio.salafranca@europarl.europa.eu,1955-05-31,M,PPE,Partido Popular,+322 28 45307,11E254,CONT|TAX3,AFET|INTA,,,tttp_2002,1994-07-19
-186884,Germany,Arndt,KOHN,arndt.kohn@europarl.europa.eu,1980-09-03,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45869,12G253,CONT,IMCO|REGI|TAX3,D-AL,,tttp_186884,2017-02-24
-24942,Spain,Ana,MIRANDA,ana.miranda@europarl.europa.eu,1971-05-02,F,Verts/ALE,Bloque Nacionalista Galego,+322 28 45628,04F146,PETI,JURI|PECH|ECON,D-US,https://twitter.com/anamirandapaz,tttp_24942,2012-01-01
-192465,Sweden,Aleksander,GABELIC,,,,S&D,Arbetarepartiet- Socialdemokraterna,+322 28 45827,14G317,,,,,tttp_192465,2018-04-04
-192298,Poland,Dobromir,SOŚNIERZ,dobromir.sosnierz@europarl.europa.eu,1976-10-18,M,NA/NI,Wolność,+322 28 45575,06E240,,ITRE,,https://twitter.com/d_sosnierz,tttp_192298,2018-03-22
+28141,Hungary,Lívia,JÁRÓKA,livia.jaroka@europarl.europa.eu,1974-10-06,F,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45544,09E130,,ECON|FEMM|LIBE,,,tttp_28141,2004-07-20
+192465,Sweden,Aleksander,GABELIC,aleksander.gabelic@europarl.europa.eu,1965-09-17,,S&D,Arbetarepartiet- Socialdemokraterna,+322 28 45827,14G317,REGI,INTA,D-BY,,tttp_192465,2018-04-04
+191510,France,Jacques,COLOMBIER,jacques.colombier@europarl.europa.eu,1952-02-17,M,ENF,Front national,+322 28 45806,01H359,AGRI,INTA,D-TR,,tttp_191510,2018-02-02
+189065,France,France,JAMET,france.jamet@europarl.europa.eu,1961-02-05,F,ENF,Front national,+322 28 45166,01H267,INTA,PECH|REGI,DEEA,,tttp_189065,2017-07-21
+97025,Estonia,Ivari,PADAR,ivari.padar@europarl.europa.eu,1965-03-12,M,S&D,Sotsiaaldemokraatlik Erakond,+322 28 45474,12G101,LIBE,EMPL|AGRI,D-UA,,tttp_97025,2009-07-14
+190464,Austria,Thomas,WAITZ,thomas.waitz@ep.europa.eu,1973-05-16,M,Verts/ALE,Die Grünen - Die Grüne Alternative,+322 28 45395,05E264,,AGRI|PETI|PEST,DSEE,,tttp_190464,2017-11-10
 124697,Estonia,Kaja,KALLAS,kaja.kallas@europarl.europa.eu,1977-06-18,F,ALDE,Eesti Reformierakond,+322 28 45479,08G154,ITRE,IMCO,D-UA|DEPA,https://twitter.com/kajakallas,tttp_124697,2014-07-01
 96837,Germany,Petra,KAMMEREVERT,petra.kammerevert@europarl.europa.eu,1966-06-01,F,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45554,12G165,CULT,DROI,D-ME,https://twitter.com/SPDEuropa ,tttp_96837,2009-07-14
 96730,Germany,Sven,GIEGOLD,sven.giegold@europarl.europa.eu,1969-11-17,M,Verts/ALE,Bündnis 90/Die Grünen,+322 28 45369,05F163,ECON|TAX3,BUDG|AFCO,,https://twitter.com/sven_giegold,tttp_96730,2009-07-14
@@ -136,8 +135,8 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96919,United Kingdom,Emma,McCLARKIN,emma.mcclarkin@europarl.europa.eu,1978-10-09,F,ECR,Conservative Party,+322 28 45684,04M009,INTA,IMCO|CULT,D-US,http://twitter.com/EmmaMcClarkin,tttp_96919,2009-07-14
 4432,Luxembourg,Claude,TURMES,claude.turmes@europarl.europa.eu,1960-11-26,M,Verts/ALE,Déi Gréng - Les Verts,+322 28 45246,04F255,ITRE,ENVI,D-IN,https://twitter.com/ClaudeTurmes,tttp_4432,1999-07-20
 124953,United Kingdom,Jude,KIRTON-DARLING,jude.kirton-darling@europarl.europa.eu,1977-06-02,F,S&D,Labour Party,+322 28 45105,13G210,PETI|INTA,ITRE,D-RU,https://twitter.com/Jude_KD,tttp_124953,2014-07-01
-96835,Romania,Traian,UNGUREANU,traian.ungureanu@europarl.europa.eu,1958-03-01,M,PPE,Partidul Naţional Liberal,+322 28 45785,07F259,LIBE,AFET,DEPA|DSCA,https://twitter.com/TraianUngureanu,tttp_96835,2009-07-14
-124802,Romania,Siegfried,MUREŞAN,siegfried.muresan@europarl.europa.eu,1981-09-20,M,PPE,Partidul Mișcarea Populară,+322 28 45154,07F158,BUDG|TAX3,ECON,D-MD|DEPA,https://twitter.com/SMuresan,tttp_124802,2014-07-01
+96835,Romania,Traian,UNGUREANU,traian.ungureanu@europarl.europa.eu,1958-03-01,M,PPE,Partidul Naţional Liberal,+322 28 45785,07F259,LIBE,AFET,DEPA,https://twitter.com/TraianUngureanu,tttp_96835,2009-07-14
+124802,Romania,Siegfried,MUREŞAN,siegfried.muresan@europarl.europa.eu,1981-09-20,M,PPE,Partidul Naţional Liberal,+322 28 45154,07F158,BUDG|TAX3,ECON,D-MD|DEPA,https://twitter.com/SMuresan,tttp_124802,2014-07-01
 124897,Poland,Stanisław,OŻÓG,stanislaw.ozog@europarl.europa.eu,1953-05-27,M,ECR,Prawo i Sprawiedliwość,+322 28 45653,04M025,ECON|TAX3,BUDG,D-RS,,tttp_124897,2014-07-01
 124956,United Kingdom,Amjad,BASHIR,amjad.bashir@europarl.europa.eu,1952-09-17,M,ECR,Conservative Party,+322 28 45319,06M119,DROI|AFET,ITRE|EMPL,D-AF|DMAS,https://twitter.com/AmjadBashirMEP,tttp_124956,2014-07-01
 28615,Latvia,Roberts,ZĪLE,roberts.zile@europarl.europa.eu,1958-06-20,M,ECR,"Nacionālā apvienība ""Visu Latvijai!""-""Tēvzemei un Brīvībai/LNNK""",+322 28 45224,04M091,TAX3|TRAN,ECON,D-JP,http://twitter.com/robertszile,tttp_28615,2004-07-20
@@ -156,12 +155,12 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96784,Poland,Janusz,ZEMKE,janusz.zemke@europarl.europa.eu,1949-02-24,M,S&D,Sojusz Lewicy Demokratycznej - Unia Pracy,+322 28 45426,13G246,TRAN|SEDE,AFET,D-US,,tttp_96784,2009-07-14
 1204,France,Alain,LAMASSOURE,alain.lamassoure@europarl.europa.eu,1944-02-10,M,PPE,Indépendant,+322 28 45706,13E210,AFCO,BUDG|ECON|TAX3,DSAS,https://twitter.com/ALamassoure,tttp_1204,1989-07-25
 96729,Spain,Santiago,FISAS AYXELÀ,santiago.fisasayxela@europarl.europa.eu,1948-08-29,M,PPE,Partido Popular,+322 28 45169,11E246,INTA,CULT,DMED|DMAG,http://twitter.com/SantiagoFisas,tttp_96729,2009-07-14
-124792,Romania,Laurenţiu,REBEGA,laurentiu.rebega@europarl.europa.eu,1976-02-20,M,ECR,Independent,+322 28 45469,06G358,PETI|AGRI,,D-TR,,tttp_124792,2014-07-01
+124792,Romania,Laurenţiu,REBEGA,laurentiu.rebega@europarl.europa.eu,1976-02-20,M,ECR,Independent,+322 28 45469,06G358,PETI|AGRI,REGI,D-TR,,tttp_124792,2014-07-01
 1023,France,Jean-Marie,LE PEN,jean-marie.lepen@europarl.europa.eu,1928-06-20,M,NA/NI,Front national,+322 28 45720,01H247,,,DCAS,,tttp_1023,1984-07-24
 23768,Poland,Bogusław,LIBERADZKI,boguslaw.liberadzki@europarl.europa.eu,1948-09-12,M,S&D,Sojusz Lewicy Demokratycznej,+322 28 45423,13G130,CONT|TRAN,TERR,D-UA,https://twitter.com/BLiberadzki,tttp_23768,2003-04-23
 1179,France,Michèle,ALLIOT-MARIE,michele.alliot-marie@europarl.europa.eu,1946-09-10,F,PPE,Les Républicains,+322 28 45282,13E206,AFET,ITRE,DARP,https://twitter.com/malliotmarie,tttp_1179,1989-07-25
 96918,United Kingdom,Derek,VAUGHAN,derek.vaughan@europarl.europa.eu,1961-05-02,M,S&D,Labour Party,+322 28 45419,13G257,CONT|REGI,BUDG,DANZ,https://twitter.com/derekvaughan,tttp_96918,2009-07-14
-28135,Hungary,György,SCHÖPFLIN,gyorgy.schopflin@europarl.europa.eu,1939-11-24,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45884,09E157,AFCO,AFET|CULT|SEDE,DCAS,https://twitter.com/schopflinMEP,tttp_28135,2004-07-20
+28135,Hungary,György,SCHÖPFLIN,gyorgy.schopflin@europarl.europa.eu,1939-11-24,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45884,09E157,AFCO,AFET|CULT|SEDE,DCAS,https://twitter.com/schopflinMEP,tttp_28135,2004-07-20
 28617,Latvia,Inese,VAIDERE,inese.vaidere@europarl.europa.eu,1952-09-03,F,PPE,"Partija ""VIENOTĪBA""",+322 28 45424,14E214,BUDG,IMCO,DACP,https://twitter.com/inesevaidere,tttp_28617,2004-07-20
 129164,Belgium,Tom,VANDENKENDELAERE,tom.vandenkendelaere@europarl.europa.eu,1984-09-02,M,PPE,Christen-Democratisch & Vlaams,+322 28 45918,08F362,ECON|TAX3,AGRI|EMPL,DANZ,https://twitter.com/tomvdkendelaere,tttp_129164,2014-11-06
 96710,Denmark,Jens,ROHDE,jens.rohde@europarl.europa.eu,1970-04-18,M,ALDE,Det Radikale Venstre,+322 28 45569,08H247,AGRI,TRAN|JURI,,https://twitter.com/rohde_jens,tttp_96710,2009-07-14
@@ -204,6 +203,9 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 183338,Sweden,Jakop,DALUNDE,jakop.dalunde@europarl.europa.eu ,1984-02-02,M,Verts/ALE,Miljöpartiet de gröna,+322 28 45752,04E202,ITRE,TRAN|AFET,DMED,,tttp_183338,2016-06-07
 133326,Italy,Stefano,MAULLU,stefano.maullu@europarl.europa.eu,1962-03-15,M,PPE,Forza Italia,+322 28 45219,10E169,CULT,ENVI|JURI,D-RU,https://twitter.com/stefanomaullu,tttp_133326,2015-07-13
 190713,Austria,Lukas,MANDL,lukas.mandl@europarl.europa.eu,1979-07-12,M,PPE,Österreichische Volkspartei,+322 28 45211,08F154,PETI|ENVI,,DSEE|DEPA|DSCA,https://twitter.com/lukasmandl,tttp_190713,2017-11-30
+190774,France,Geoffroy,DIDIER,geoffroy.didier@europarl.europa.eu,1976-04-12,M,PPE,Les Républicains,+322 28 45120,13E115,EMPL,JURI|TAX3,D-CN,https://twitter.com/geoffroydidier?lang=en,tttp_190774,2017-12-01
+24942,Spain,Ana,MIRANDA,ana.miranda@europarl.europa.eu,1971-05-02,F,Verts/ALE,Bloque Nacionalista Galego,+322 28 45628,04F146,PETI,PECH|ECON|JURI|LIBE,D-US,https://twitter.com/anamirandapaz,tttp_24942,2012-01-01
+189525,Bulgaria,Asim,ADEMOV,asim.ademov@europarl.europa.eu,1968-12-03,M,PPE,Citizens for European Development of Bulgaria,+322 28 45248,08F255,LIBE,AFET|DROI,DACP,https://twitter.com/ademovasim,tttp_189525,2017-09-14
 124851,Italy,Nicola,CAPUTO,nicola.caputo@europarl.europa.eu,1966-03-04,M,S&D,Partito Democratico,+322 28 45763,15G158,AGRI,ENVI|PECH|BUDG|TRAN,D-CN,https://twitter.com/NicolaCaputo,tttp_124851,2014-07-01
 125069,Greece,Notis,MARIAS,notis.marias@europarl.europa.eu,1957-04-05,M,ECR,Greece-The Alternative Road,+322 28 45151,07M071,CONT|PETI|ECON,ITRE,DMAS|DMED,,tttp_125069,2014-07-01
 96752,Germany,Martin,HÄUSLING,martin.haeusling@europarl.europa.eu,1961-03-26,M,Verts/ALE,Bündnis 90/Die Grünen,+322 28 45820,05F167,AGRI,ENVI,DLAT|D-CL,https://twitter.com/MartinHaeusling,tttp_96752,2009-07-14
@@ -211,7 +213,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96892,Italy,Roberto,GUALTIERI,roberto.gualtieri@europarl.europa.eu,1966-07-19,M,S&D,Partito Democratico,+322 28 45523,15G206,ECON|TAX3,AFCO,D-AF,http://twitter.com/gualtierieurope,tttp_96892,2009-07-14
 125023,Netherlands,Anja,HAZEKAMP,anja.hazekamp@europarl.europa.eu,1968-01-21,F,GUE/NGL,Partij voor de Dieren,+322 28 45629,02M039,AGRI|PEST,ENVI|PECH,D-JP,https://twitter.com/anjahazekamp,tttp_125023,2014-07-01
 96806,Spain,Teresa,JIMÉNEZ-BECERRIL BARRIO,teresa.jimenez-becerril@europarl.europa.eu,1961-07-24,F,PPE,Partido Popular,+322 28 45198,11E115,DROI|DEVE|FEMM,LIBE|TERR,D-MX|DLAT,https://twitter.com/teresajbecerril,tttp_96806,2009-07-14
-111014,Austria,Josef,WEIDENHOLZER,josef.weidenholzer@europarl.europa.eu,1950-03-06,M,S&D,Sozialdemokratische Partei Österreichs,+322 28 45473,13G202,LIBE|DROI,IMCO|FEMM,D-IR,https://twitter.com/Weidenholzer,tttp_111014,2011-12-01
+111014,Austria,Josef,WEIDENHOLZER,josef.weidenholzer@europarl.europa.eu,1950-03-06,M,S&D,Sozialdemokratische Partei Österreichs,+322 28 45473,13G202,LIBE|DROI,FEMM|IMCO,D-IR,https://twitter.com/Weidenholzer,tttp_111014,2011-12-01
 114279,France,Isabelle,THOMAS,isabelle.thomas@europarl.europa.eu,1961-11-26,F,S&D,"Génération.s, le mouvement",+322 28 45432,14G111,PECH|BUDG,,DACP,https://twitter.com/Isabel_thomasEU,tttp_114279,2012-05-16
 23894,Slovakia,Anna,ZÁBORSKÁ,anna.zaborska@europarl.europa.eu,1948-06-07,F,PPE,Kresťanskodemokratické hnutie,+322 28 45923,06F247,FEMM|DEVE|ITRE,,DCAR|DACP,,tttp_23894,2003-04-30
 124877,Poland,Jadwiga,WIŚNIEWSKA,jadwiga.wisniewska@europarl.europa.eu,1963-07-02,F,ECR,Prawo i Sprawiedliwość,+322 28 45471,05M113,FEMM|ENVI,CULT,DACP,,tttp_124877,2014-07-01
@@ -237,9 +239,9 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124835,Italy,Rosa,D'AMATO,rosa.damato@europarl.europa.eu,1969-03-30,F,EFDD,Movimento 5 Stelle,+322 28 45593,07H254,REGI,AGRI|TRAN|EMPL|PECH|IMCO,DPAL,,tttp_124835,2014-07-01
 4525,United Kingdom,Nigel,FARAGE,nigel.farage@europarl.europa.eu,1964-04-03,M,EFDD,United Kingdom Independence Party,+322 28 45855,07F367,,,,,tttp_4525,1999-07-20
 124808,Germany,Norbert,LINS,norbert.lins@europarl.europa.eu,1977-12-22,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45819,15E261,AGRI|PEST,ENVI,DEEA,,tttp_124808,2014-07-01
-28297,Poland,Jacek,SARYUSZ-WOLSKI,jacek.saryusz-wolski@europarl.europa.eu,1948-09-19,M,NA/NI,Platforma Obywatelska,+322 28 45371,12E218,PETI,,DEPA|D-UA,https://twitter.com/JSaryuszWolski,tttp_28297,2004-07-20
+28297,Poland,Jacek,SARYUSZ-WOLSKI,jacek.saryusz-wolski@europarl.europa.eu,1948-09-19,M,NA/NI,Bezpartyjny,+322 28 45371,12E218,PETI,,D-UA|DEPA,https://twitter.com/JSaryuszWolski,tttp_28297,2004-07-20
 96934,Latvia,Sandra,KALNIETE,sandra.kalniete@europarl.europa.eu,1952-12-22,F,PPE,"Partija ""VIENOTĪBA""",+322 28 45204,14E261,AFET,AGRI,ASEAN,https://twitter.com/kalniete,tttp_96934,2009-07-14
-96829,Hungary,Ádám,KÓSA,adam.kosa@europarl.europa.eu,1975-07-01,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45208,09E115,EMPL,DEVE|DROI,D-JP,http://twitter.com/adamkosamep,tttp_96829,2009-07-14
+96829,Hungary,Ádám,KÓSA,adam.kosa@europarl.europa.eu,1975-07-01,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45208,09E115,EMPL,DEVE|DROI,D-JP,http://twitter.com/adamkosamep,tttp_96829,2009-07-14
 96852,Germany,Cornelia,ERNST,cornelia.ernst@europarl.europa.eu,1956-11-30,F,GUE/NGL,DIE LINKE.,+322 28 45660,03M021,LIBE|TERR,ITRE,D-IR|DSEE,https://twitter.com/ErnstCornelia,tttp_96852,2009-07-14
 124791,Italy,Daniele,VIOTTI,daniele.viotti@europarl.europa.eu,1974-03-08,M,S&D,Partito Democratico,+322 28 45652,15G217,BUDG,LIBE|TAX3,DSEE,https://twitter.com/danieleviotti,tttp_124791,2014-07-01
 96748,Netherlands,Dennis,de JONG,dennis.dejong@europarl.europa.eu,1955-05-22,M,GUE/NGL,Socialistische Partij,+322 28 45664,02M071,IMCO|CONT,LIBE,,https://twitter.com/DdJong,tttp_96748,2009-07-14
@@ -290,8 +292,8 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 23693,Slovenia,Alojz,PETERLE,alojz.peterle@europarl.europa.eu,1948-07-05,M,PPE,Nova Slovenija – Krščanski demokrati,+322 28 45638,09E146,AFET|PEST,ENVI,D-MZ,https://twitter.com/lojzepeterle,tttp_23693,2003-04-18
 124966,United Kingdom,Steven,WOOLFE,steven.woolfe@europarl.europa.eu,1967-10-06,M,NA/NI,Independent,+322 28 45115,03F243,ECON|IMCO,,, https://twitter.com/Steven_Woolfe ,tttp_124966,2014-07-01
 96747,France,Arnaud,DANJEAN,arnaud.danjean@europarl.europa.eu,1971-02-11,M,PPE,Les Républicains,+322 28 45852,13E157,SEDE|AFET|TERR,BUDG,DNAT|D-US,https://twitter.com/ArnaudDanjean,tttp_96747,2009-07-14
-23791,Poland,Kazimierz Michał,UJAZDOWSKI,kazimierzmichal.ujazdowski@europarl.europa.eu,1964-07-28,M,ECR,Independent,+322 28 45247,05M011,AFCO,LIBE,DEPA|D-BY,,tttp_23791,2003-04-23
-39717,Romania,Ramona Nicole,MĂNESCU,ramonanicole.manescu@europarl.europa.eu,1972-12-06,F,PPE,Partidul Naţional Liberal,+322 28 45439,07F154,AFET,DROI|TRAN|INTA,DMAS,https://twitter.com/RamonaManescu,tttp_39717,2007-12-10
+23791,Poland,Kazimierz Michał,UJAZDOWSKI,kazimierzmichal.ujazdowski@europarl.europa.eu,1964-07-28,M,NA/NI,Independent,+322 28 45247,05M011,AFCO,,D-BY|DEPA,,tttp_23791,2003-04-23
+39717,Romania,Ramona Nicole,MĂNESCU,ramonanicole.manescu@europarl.europa.eu,1972-12-06,F,PPE,-,+322 28 45439,07F154,AFET,TRAN|DROI|INTA,DMAS|DSCA,https://twitter.com/RamonaManescu,tttp_39717,2007-12-10
 96864,Italy,David-Maria,SASSOLI,david.sassoli@europarl.europa.eu,1956-05-30,M,S&D,Partito Democratico,+322 28 45530,15G102,TRAN,PECH,D-RS,https://twitter.com/DavidSassoli,tttp_96864,2009-07-14
 124942,United Kingdom,Molly,SCOTT CATO,molly.scottcato@europarl.europa.eu,1963-05-21,F,Verts/ALE,Green Party,+322 28 45737,04F146,ECON|TAX3,AGRI,DMER|DLAT,https://twitter.com/MollyMEP,tttp_124942,2014-07-01
 96933,Slovenia,Milan,ZVER,milan.zver@europarl.europa.eu,1962-05-25,M,PPE,Slovenska demokratska stranka,+322 28 45315,09E154,CULT|TERR,REGI,D-US,https://twitter.com/MilanZver,tttp_96933,2009-07-14
@@ -326,7 +328,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124805,Romania,Mircea,DIACONU,mircea.diaconu@europarl.europa.eu,1949-12-24,M,ALDE,Independent,+322 28 45823,08H354,CULT,EMPL,DARP,https://twitter.com/m_diaconumep,tttp_124805,2014-07-01
 1852,Germany,Dieter-Lebrecht,KOCH,dieter-lebrecht.koch@europarl.europa.eu,1953-01-07,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45761,15E169,TRAN,EMPL,D-JP,,tttp_1852,1991-03-11
 96836,Germany,Peter,SIMON,peter.simon@europarl.europa.eu,1967-04-04,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45558,12G108,ECON|TAX3,REGI,DPAL,https://twitter.com/PeterSimonMEP,tttp_96836,2009-07-14
-96672,Sweden,Marita,ULVSKOG,marita.ulvskog@europarl.europa.eu,1951-09-04,F,S&D,Arbetarepartiet- Socialdemokraterna,+322 28 45443,14G351,EMPL,INTA,DPAL,https://twitter.com/maritaulvskog,tttp_96672,2009-07-14
+96672,Sweden,Marita,ULVSKOG,marita.ulvskog@europarl.europa.eu,1951-09-04,F,S&D,Arbetarepartiet- Socialdemokraterna,+322 28 45443,14G351,EMPL|TRAN,,DPAL,https://twitter.com/maritaulvskog,tttp_96672,2009-07-14
 124726,Finland,Henna,VIRKKUNEN,henna.virkkunen@europarl.europa.eu,1972-06-04,F,PPE,Kansallinen Kokoomus,+322 28 45226,11E209,ITRE,TRAN,D-ZA,https://twitter.com/HennaVirkkunen,tttp_124726,2014-07-01
 2109,Ireland,Brian,CROWLEY,brian.crowley@europarl.europa.eu,1964-03-04,M,ECR,Fianna Fáil Party,+322 28 45751,04F365,JURI,ITRE,DPAL,,tttp_2109,1994-07-19
 28124,Sweden,Gunnar,HÖKMARK,gunnar.hokmark@europarl.europa.eu,1952-09-19,M,PPE,Moderaterna,+322 28 45822,07F155,ECON,ITRE|TAX3,D-RS,https://twitter.com/ghokmark,tttp_28124,2004-07-20
@@ -338,7 +340,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124884,Poland,Kosma,ZŁOTOWSKI,kosma.zlotowski@europarl.europa.eu,1964-01-14,M,ECR,Prawo i Sprawiedliwość,+322 28 45775,06M075,TRAN,JURI|EMPL,DEPA|DSCA,https://twitter.com/KosmaZlotowski,tttp_124884,2014-07-01
 124758,France,Mylène,TROSZCZYNSKI,mylene.troszczynski@europarl.europa.eu,1972-05-16,F,ENF,Front national,+322 28 45589,01H162,IMCO,FEMM|DEVE,D-CL,,tttp_124758,2014-07-01
 124892,Poland,Marek,JUREK,marek.jurek@europarl.europa.eu,1960-06-28,M,ECR,Prawica Rzeczypospolitej,+322 28 45239,05M091,SEDE,AFET|LIBE,DPAP,,tttp_124892,2014-07-01
-124971,United Kingdom,James,CARVER,james.carver@europarl.europa.eu,1969-08-15,M,EFDD,United Kingdom Independence Party,+322 28 45744,03F158,AFET|SEDE,,, https://twitter.com/JamesJimCarver,tttp_124971,2014-07-01
+124971,United Kingdom,James,CARVER,james.carver@europarl.europa.eu,1969-08-15,M,NA/NI,Independent,+322 28 45744,03F158,AFET|DROI,,, https://twitter.com/JamesJimCarver,tttp_124971,2014-07-01
 124829,Germany,Ulrike,TREBESIUS,ulrike.trebesius@europarl.europa.eu,1970-04-17,F,ECR,Liberal-Conservative Refomists,+322 28 45498,06M037,EMPL,IMCO,,https://twitter.com/trebesiusmdep?lang=de,tttp_124829,2014-07-01
 5729,Belgium,Kathleen,VAN BREMPT,kathleen.vanbrempt@europarl.europa.eu,1969-11-18,F,S&D,Socialistische Partij.Anders,+322 28 45447,11G107,ITRE,DEVE|PEST,D-CA,https://twitter.com/kvanbrempt,tttp_5729,2000-01-13
 124741,Portugal,Ricardo,SERRÃO SANTOS,ricardo.serraosantos@europarl.europa.eu,1954-10-11,M,S&D,Partido Socialista,+322 28 45655,14G342,PECH|AGRI,,D-CA,,tttp_124741,2014-07-01
@@ -356,7 +358,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 130833,Greece,Stelios,KOULOGLOU,stelios.kouloglou@europarl.europa.eu,1953-02-27,M,GUE/NGL,Coalition of the Radical Left,+322 28 45535,03M053,DEVE|AFET,INTA,D-AL,https://twitter.com/SteliosKoul,tttp_130833,2015-01-27
 124994,Sweden,Max,ANDERSSON,max.andersson@europarl.europa.eu,1973-10-26,M,Verts/ALE,Miljöpartiet de gröna,+322 28 45457,04E250,JURI,AFCO|TAX3,,https://twitter.com/MaxAndersson,tttp_124994,2014-07-01
 96674,Sweden,Anna Maria,CORAZZA BILDT,annamaria.corazzabildt@europarl.europa.eu,1963-03-10,F,PPE,Moderaterna,+322 28 45128,07F151,IMCO|FEMM|TERR,LIBE,D-UA|DEPA,http://twitter.com/AnnaMariaCB,tttp_96674,2009-07-14
-125101,Portugal,José Inácio,FARIA,joseinacio.faria@europarl.europa.eu,1962-03-13,M,PPE,Partido da Terra,+322 28 45454,07F265,ENVI,PEST,DLAT|DCAM,https://twitter.com/JoseFariaMEP,tttp_125101,2014-07-01
+125101,Portugal,José Inácio,FARIA,joseinacio.faria@europarl.europa.eu,1962-03-13,M,PPE,Partido da Terra,+322 28 45454,07F265,ENVI,PEST|FEMM,DLAT|DCAM,https://twitter.com/JoseFariaMEP,tttp_125101,2014-07-01
 35135,United Kingdom,Daniel,DALTON,daniel.dalton@europarl.europa.eu,1974-01-31,M,ECR,Conservative Party,+322 28 45897,05M075,IMCO|LIBE,TRAN|PEST,DLAT|D-MX|D-US,,tttp_35135,2015-01-08
 96787,Italy,Herbert,DORFMANN,herbert.dorfmann@europarl.europa.eu,1969-03-04,M,PPE,Südtiroler Volkspartei,+322 28 45158,10E242,AGRI|PEST,ENVI|ECON,DCAS,https://twitter.com/HerbertDorfmann,tttp_96787,2009-07-14
 125026,Austria,Angelika,MLINAR,angelika.mlinar@europarl.europa.eu,1970-06-29,F,ALDE,NEOS – Das Neue Österreich,+322 28 45851,08G257,ITRE|FEMM,LIBE,DMAS|D-CN,https://twitter.com/angelikamlinar,tttp_125026,2014-07-01
@@ -370,19 +372,17 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96940,Netherlands,Gerben-Jan,GERBRANDY,gerben-jan.gerbrandy@europarl.europa.eu,1967-06-28,M,ALDE,Democraten 66,+322 28 45616,08G218,ENVI|PEST,CONT|ITRE,D-RU,http://twitter.com/Gerbrandy,tttp_96940,2009-07-14
 125022,Netherlands,Matthijs,van MILTENBURG,matthijs.vanmiltenburg@europarl.europa.eu,1972-04-02,M,ALDE,Democraten 66,+322 28 45724,08G217,REGI,TRAN|IMCO,DLAT,https://twitter.com/matthijsvmilt,tttp_125022,2014-07-01
 124815,Germany,Arne,GERICKE,arne.gericke@europarl.europa.eu,1964-11-19,M,ECR,Freie Wähler,+322 28 45167,06M015,FEMM|EMPL|ENVI|PEST,,DACP,,tttp_124815,2014-07-01
-188622,United Kingdom,Rupert,MATTHEWS,rupert.matthews@europarl.europa.eu,1961-12-05,M,ECR,Conservative Party,+322 28 45598,04M089,CULT,ITRE|ENVI,DEEA,,tttp_188622,2017-06-29
-189065,France,France,JAMET,france.jamet@europarl.europa.eu,1961-02-05,F,ENF,Front national,+322 28 45166,01H267,INTA,PECH|REGI,DEEA,,tttp_189065,2017-07-21
 134243,Sweden,Jasenko,SELIMOVIC,jasenko.selimovic@europarl.europa.eu,1968-04-17,M,ALDE,Liberalerna,+322 28 45621,08G158,IMCO,EMPL|AFCO,DEEA,https://twitter.com/jasenkos,tttp_134243,2015-09-30
 190099,United Kingdom,Rory,PALMER,rory.palmer@europarl.europa.eu,1981-11-19,M,S&D,Labour Party,+322 28 45459,13G218,ENVI,EMPL,D-US,,tttp_190099,2017-10-03
 124902,Poland,Stanisław,ŻÓŁTEK,stanislawjozef.zoltek@europarl.europa.eu,1956-05-07,M,ENF,Kongres Nowej Prawicy,+322 28 45603,06E252,BUDG,JURI,,,tttp_124902,2014-07-01
 135541,Poland,Sławomir,KŁOSOWSKI,slawomir.klosowski@europarl.europa.eu,1964-02-21,M,ECR,Prawo i Sprawiedliwość,+322 28 45357,06M077,REGI,,D-MD|DEPA,,tttp_135541,2015-11-27
 185637,United Kingdom,Alex,MAYER,alex.mayer@europarl.europa.eu,1981-06-02,F,S&D,Labour Party,+322 28 45477,13G317,ECON,EMPL,D-US,https://twitter.com/alexlmayer,tttp_185637,2016-11-15
-190518,Germany,Jörg,MEUTHEN,joerg.meuthen@europarl.europa.eu,1961-06-29,M,EFDD,Alternative für Deutschland,+322 28 45836,03F151,FEMM|LIBE,ECON,D-CL,,tttp_190518,2017-11-08
 4338,France,Thierry,CORNILLET,Thierry.Cornillet@europarl.europa.eu,1951-07-23,M,ALDE,Mouvement Radical,+322 28 45450,09G158,ECON,DEVE|TAX3,DACP,,tttp_4338,1999-07-20
 189490,Romania,Răzvan,POPA,razvan.popa@europarl.europa.eu,1978-01-20,M,S&D,Partidul Social Democrat,+322 28 45679,10G217,BUDG,JURI|ITRE|TAX3,DACP,,tttp_189490,2017-09-13
-190464,Austria,Thomas,WAITZ,thomas.waitz@ep.europa.eu,1973-05-16,M,Verts/ALE,Die Grünen - Die Grüne Alternative,+322 28 45395,05F364,,AGRI|PETI|PEST,DSEE,,tttp_190464,2017-11-10
+189507,Czech Republic,Jiří,PAYNE,jiri.payne@europarl.europa.eu,1956-07-07,M,EFDD,Strana svobodných občanů,+322 28 45501,03F255,,AFET|DROI,,,tttp_189507,2017-09-05
+96872,Germany,Nadja,HIRSCH,nadja.hirsch@europarl.europa.eu,1978-07-13,F,ALDE,Freie Demokratische Partei,+322 28 45572,08G265,INTA,AFET,D-TR,http://twitter.com/nadjahirsch,tttp_96872,2009-07-14
 190799,Germany,Michael,DETJEN,michael.detjen@europarl.europa.eu,1958-04-28,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45563,12G158,EMPL,TRAN,,,tttp_190799,2018-01-01
-189507,Czech Republic,Jiří,PAYNE,jiri.payne@europarl.europa.eu,1956-07-07,M,EFDD,Strana svobodných občanů,+322 28 45501,03F255,,AFET,,,tttp_189507,2017-09-05
+191377,Romania,Maria Gabriela,ZOANĂ,mariagabriela.zoana@europarl.europa.eu,1979-06-15,F,S&D,Partidul Social Democrat,+322 28 45808,10G107,AGRI|FEMM,REGI,DARP,,tttp_191377,2018-01-30
 124856,Italy,Ignazio,CORRAO,ignazio.corrao@europarl.europa.eu,1984-01-14,M,EFDD,Movimento 5 Stelle,+322 28 45610,07H158,DROI|DEVE,LIBE|AGRI|TAX3,DAND|DKOR|DLAT|DACP|DCAR|D-IQ|D-MZ|DPAP,,tttp_124856,2014-07-01
 124731,France,Jérôme,LAVRILLEUX,jerome.lavrilleux@europarl.europa.eu,1969-09-19,M,PPE,-,+322 28 45455,13E246,EMPL,AFCO|FEMM,D-CA,https://twitter.com/jlavrilleux,tttp_124731,2014-07-01
 96956,United Kingdom,Julie,GIRLING,julie.girling@europarl.europa.eu,1956-12-21,F,PPE,Conservative Party,+322 28 45678,06M089,ENVI,FEMM|AGRI,ASEAN,http://twitter.com/juliegirling,tttp_96956,2009-07-14
@@ -427,12 +427,12 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124823,Germany,Hans-Olaf,HENKEL,hans-olaf.henkel@europarl.europa.eu,1940-03-14,M,ECR,Liberal-Conservative Refomists,+322 28 45132,06M025,ITRE|DROI,,,https://twitter.com/HansOlafHenkel,tttp_124823,2014-07-01
 2187,Italy,Antonio,TAJANI,antonio.tajani@europarl.europa.eu,1953-08-04,M,PPE,Forza Italia,+322 28 45750,09B011,,,DMED,https://twitter.com/Antonio_Tajani,tttp_2187,1994-07-19
 124951,United Kingdom,Bill,ETHERIDGE,bill.etheridge@europarl.europa.eu,1970-03-18,M,EFDD,United Kingdom Independence Party,+322 28 45453,03F142,,,, https://twitter.com/BillDudleyNorth,tttp_124951,2014-07-01
-23816,Hungary,András,GYÜRK,andras.gyurk@europarl.europa.eu,1972-12-02,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45727,09E102,ITRE,IMCO,DARP,,tttp_23816,2003-04-18
+23816,Hungary,András,GYÜRK,andras.gyurk@europarl.europa.eu,1972-12-02,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45727,09E102,ITRE,IMCO,DARP,,tttp_23816,2003-04-18
 5565,France,Brice,HORTEFEUX,brice.hortefeux@europarl.europa.eu,1958-05-11,M,PPE,Les Républicains,+322 28 45286,13E146,LIBE,AFCO,DMAG|DMED,https://twitter.com/BriceHortefeux,tttp_5565,1999-09-15
 96694,Lithuania,Rolandas,PAKSAS,rolandas.paksas@europarl.europa.eu,1956-06-10,M,EFDD,Partija Tvarka ir teisingumas,+322 28 45671,07H349,ITRE,PECH|TRAN,DEPA|DSCA|DEEA,,tttp_96694,2009-07-14
 28161,Denmark,Margrete,AUKEN,margrete.auken@europarl.europa.eu,1945-01-06,F,Verts/ALE,Socialistisk Folkeparti,+322 28 45327,04F358,PETI|ENVI,,DPAL|DMED,https://twitter.com/MargreteAuken,tttp_28161,2004-07-20
 28377,Poland,Lidia Joanna,GERINGER de OEDENBERG,lidiajoanna.geringerdeoedenberg@europarl.europa.eu,1957-09-12,F,S&D,Bezpartyjna,+322 28 45809,13G140,JURI|PETI,IMCO,DMED|DACP,https://twitter.com/lidiageringer,tttp_28377,2004-07-20
-30482,France,Younous,OMARJEE,younous.omarjee@europarl.europa.eu,1969-09-30,M,GUE/NGL,L'union pour les Outremer,+322 28 45643,07M033,REGI|BUDG,ENVI|CONT,D-IN|DACP,https://twitter.com/younousomarjee,tttp_30482,2012-01-04
+30482,France,Younous,OMARJEE,younous.omarjee@europarl.europa.eu,1969-09-30,M,GUE/NGL,L'union pour les Outremer,+322 28 45643,07M033,REGI|BUDG,ENVI|CONT|PEST,D-IN|DACP,https://twitter.com/younousomarjee,tttp_30482,2012-01-04
 28372,Poland,Ryszard,CZARNECKI,ryszard.czarnecki@europarl.europa.eu,1963-01-25,M,ECR,Prawo i Sprawiedliwość,+322 28 45441,04M003,CONT,AFET,DEPA|D-UA,https://twitter.com/r_czarnecki,tttp_28372,2004-07-20
 125107,Belgium,Claude,ROLIN,claude.rolin@europarl.europa.eu,1957-05-26,M,PPE,Centre Démocrate Humaniste,+322 28 45116,08E266,EMPL,REGI,DACP|DPAP,https://twitter.com/clauderolin,tttp_125107,2014-07-01
 24922,Belgium,Pascal,ARIMONT,pascal.arimont@europarl.europa.eu,1974-09-25,M,PPE,Christlich Soziale Partei,+322 28 45778,08F343,REGI|IMCO,PEST,DLAT|DCAM,https://twitter.com/pascal_arimont,tttp_24922,2014-07-01
@@ -451,10 +451,10 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124895,Poland,Krzysztof,HETMAN,krzysztof.hetman@europarl.europa.eu,1974-06-27,M,PPE,Polskie Stronnictwo Ludowe,+322 28 45767,12E246,REGI,ENVI|EMPL,DACP,https://twitter.com/hetman_k,tttp_124895,2014-07-01
 38511,Austria,Georg,MAYER,georg.mayer@europarl.europa.eu,1973-10-12,M,ENF,Freiheitliche Partei Österreichs,+322 28 45277,07M115,TRAN,INTA|AFCO|PEST,DLAT|DSAS,,tttp_38511,2014-07-01
 96937,Netherlands,Johannes Cornelis,van BAALEN,hans.vanbaalen@europarl.europa.eu,1960-06-17,M,ALDE,Volkspartij voor Vrijheid en Democratie,+322 28 45615,08G206,SEDE|AFET,INTA|TERR,D-ZA,https://twitter.com/hansvanbaalen,tttp_96937,2009-07-14
-39711,Romania,Victor,BOŞTINARU,victor.bostinaru@europarl.europa.eu,1952-05-17,M,S&D,Partidul Social Democrat,+322 28 45832,10G205,REGI|AFET,SEDE|INTA,D-CN,,tttp_39711,2007-12-10
+39711,Romania,Victor,BOŞTINARU,victor.bostinaru@europarl.europa.eu,1952-05-17,M,S&D,Partidul Social Democrat,+322 28 45832,10G205,REGI|AFET,INTA|SEDE,D-CN,,tttp_39711,2007-12-10
 124722,Hungary,Csaba,MOLNÁR,csaba.molnar@europarl.europa.eu,1975-12-04,M,S&D,Demokratikus Koalíció,+322 28 45571,10G158,ITRE,REGI,ASEAN,,tttp_124722,2014-07-01
 124957,United Kingdom,Mike,HOOKEM,mike.hookem@europarl.europa.eu,1953-10-09,M,EFDD,United Kingdom Independence Party,+322 28 45561,03E240,PECH,,, https://twitter.com/Mike_Hookem,tttp_124957,2014-07-01
-28508,United Kingdom,Alyn,SMITH,alyn.smith@europarl.europa.eu,1973-09-15,M,Verts/ALE,Scottish National Party,+322 28 45187,04F343,AFET,LIBE,DARP|D-IQ,https://twitter.com/AlynSmithMEP,tttp_28508,2004-07-20
+28508,United Kingdom,Alyn,SMITH,alyn.smith@europarl.europa.eu,1973-09-15,M,Verts/ALE,Scottish National Party,+322 28 45187,04F343,AFET,,D-IQ|DARP,https://twitter.com/AlynSmithMEP,tttp_28508,2004-07-20
 1263,Germany,Elmar,BROK,elmar.brok@europarl.europa.eu,1946-05-14,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45323,05E240,AFET|AFCO,EMPL,D-IN,https://twitter.com/ElmarBrok_MEP,tttp_1263,1980-06-17
 34249,Bulgaria,Filiz,HYUSMENOVA,filizhakaeva.hyusmenova@europarl.europa.eu,1966-06-10,F,ALDE,Movement for Rights and Freedoms,+322 28 45903,08G351,FEMM|LIBE,IMCO,D-JP,,tttp_34249,2005-09-26
 96728,Germany,Barbara,LOCHBIHLER,barbara.lochbihler@europarl.europa.eu,1959-05-20,F,Verts/ALE,Bündnis 90/Die Grünen,+322 28 45392,05F157,DROI|AFET,,ASEAN,https://twitter.com/blochbihler,tttp_96728,2009-07-14
@@ -471,9 +471,9 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96734,Germany,Ska,KELLER,franziska.keller@europarl.europa.eu,1981-11-22,F,Verts/ALE,Bündnis 90/Die Grünen,+322 28 45379,05F247,,LIBE,D-TR|DCAR,https://twitter.com/SkaKeller,tttp_96734,2009-07-14
 124941,United Kingdom,Raymond,FINCH,raymond.finch@europarl.europa.eu,1963-06-02,M,EFDD,United Kingdom Independence Party,+322 28 45594,03F266,LIBE|REGI|BUDG|TAX3,INTA|AFET,, https://twitter.com/raymondfinch,tttp_124941,2014-07-01
 124992,Sweden,Malin,BJÖRK,malin.bjork@europarl.europa.eu,1972-05-22,F,GUE/NGL,Vänsterpartiet,+322 28 45374,02M089,LIBE|FEMM,AFET,D-IN,https://twitter.com/MalinBjork_EU,tttp_124992,2014-07-01
-4519,United Kingdom,Claude,MORAES,claude.moraes@europarl.europa.eu,,M,S&D,Labour Party,+322 28 45553,13G205,LIBE,BUDG|TERR,DSAS,https://twitter.com/ClaudeMoraesMEP,tttp_4519,1999-07-20
+4519,United Kingdom,Claude,MORAES,claude.moraes@europarl.europa.eu,,M,S&D,Labour Party,+322 28 45553,13G205,LIBE,BUDG|TERR,DSAS,https://twitter.com/claude_moraes,tttp_4519,1999-07-20
 124989,Sweden,Fredrick,FEDERLEY,fredrick.federley@europarl.europa.eu,1978-05-06,M,ALDE,Centerpartiet,+322 28 45867,08H161,ITRE,AGRI|ENVI,DPAP,https://twitter.com/federley,tttp_124989,2014-07-01
-4334,Spain,Elena,VALENCIANO,elena.valenciano@europarl.europa.eu,1960-09-18,F,S&D,Partido Socialista Obrero Español,+322 28 45846,11G354,TERR|AFET|DROI,INTA,DCAM,https://twitter.com/ElenaValenciano,tttp_4334,1999-07-20
+4334,Spain,Elena,VALENCIANO,elena.valenciano@europarl.europa.eu,1960-09-18,F,S&D,Partido Socialista Obrero Español,+322 28 45846,11G354,TERR|DROI|AFET,INTA,DCAM,https://twitter.com/ElenaValenciano,tttp_4334,1999-07-20
 124287,France,Christine,REVAULT D'ALLONNES BONNEFOY,christine.revaultdallonnesBONNEFOY@europarl.europa.eu,1971-11-10,F,S&D,Parti socialiste,+322 28 45853,14G265,TRAN,LIBE,D-ZA,https://twitter.com/cdallonnes,tttp_124287,2014-04-09
 119436,Croatia,Ivana,MALETIĆ,ivana.maletic@europarl.europa.eu,1973-10-12,F,PPE,Hrvatska demokratska zajednica,+322 28 45734,14E165,ECON,BUDG|REGI,D-MZ,https://twitter.com/MaleticIvana,tttp_119436,2013-07-01
 125049,Spain,Maria Lidia,SENRA RODRÍGUEZ,lidia.senra@europarl.europa.eu,1958-06-14,F,GUE/NGL,Alternativa galega de esquerda en Europa,+322 28 45414,02M025,AGRI,PECH,DACP,https://twitter.com/LidiaSenra,tttp_125049,2014-07-01
@@ -507,7 +507,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 129407,Spain,Enrique,CALVET CHAMBON,enrique.calvetchambon@europarl.europa.eu,1950-10-28,M,ALDE,Independiente,+322 28 45794,08G242,EMPL,ECON|TAX3,DMED|DPAL,https://twitter.com/enriquecalvet,tttp_129407,2014-11-20
 28346,Italy,Mercedes,BRESSO,mercedes.bresso@europarl.europa.eu,1944-07-12,F,S&D,Partito Democratico,+322 28 45148,15G165,REGI|AFCO,BUDG,DEEA,https://twitter.com/mercedesbresso,tttp_28346,2004-07-20
 103488,Spain,Sergio,GUTIÉRREZ PRIETO,sergio.gutierrezprieto@europarl.europa.eu,1982-07-11,M,S&D,Partido Socialista Obrero Español,+322 28 45331,11G257,IMCO,EMPL,DPAL,https://twitter.com/sergio_gp ,tttp_103488,2010-07-19
-124751,France,Dominique,MARTIN,dominique.martin@europarl.europa.eu,1961-10-01,M,ENF,Front national,+322 28 45402,01G359,EMPL|TERR,IMCO,D-MD,,tttp_124751,2014-07-01
+124751,France,Dominique,MARTIN,dominique.martin@europarl.europa.eu,1961-10-01,M,ENF,Front national,+322 28 45402,01G359,EMPL|TERR,IMCO|AFET,D-MD,,tttp_124751,2014-07-01
 28178,Slovakia,Miroslav,MIKOLÁŠIK,miroslav.mikolasik@europarl.europa.eu,1952-09-11,M,PPE,Kresťanskodemokratické hnutie,+322 28 45289,06F167,ENVI|DROI|PEST,REGI,DLAT|DCAM,https://twitter.com/miromikolasik,tttp_28178,2004-07-20
 124776,Luxembourg,Mady,DELVAUX,mady.delvaux-stehres@europarl.europa.eu,1950-10-11,F,S&D,Parti ouvrier socialiste luxembourgeois,+322 28 45136,15G115,JURI|TAX3,ECON,DCAS,,tttp_124776,2014-07-01
 124817,Italy,Enrico,GASBARRA,enrico.gasbarra@europarl.europa.eu,1962-08-12,M,S&D,Partito Democratico,+322 28 45421,15G254,JURI,TRAN,D-CL|DLAT,https://twitter.com/enricogasbarra,tttp_124817,2014-07-01
@@ -520,8 +520,8 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 183022,Belgium,Lieve,WIERINCK,lieve.wierinck@europarl.europa.eu,1957-07-03,F,ALDE,Open Vlaamse Liberalen en Democraten,+322 28 45111,09G218,ITRE,ECON,D-CN,https://twitter.com/lievewierinck,tttp_183022,2016-05-04
 183793,Italy,Angelo,CIOCCA,angelo.ciocca@europarl.europa.eu,1975-06-28,M,ENF,Lega Nord,+322 28 45847,08H154,ITRE,AGRI,DACP,,tttp_183793,2016-07-07
 28334,Poland,Urszula,KRUPA,urszula.krupa@europarl.europa.eu,1949-10-20,F,ECR,Independent,+322 28 45802,05M121,ENVI,FEMM|PETI,DCAS,,tttp_28334,2004-07-20
-189525,Bulgaria,Asim,ADEMOV,asim.ademov@europarl.europa.eu,1968-12-03,M,PPE,Citizens for European Development of Bulgaria,+322 28 45248,08F255,LIBE,AFET|DROI,DACP,https://twitter.com/ademovasim,tttp_189525,2017-09-14
-191377,Romania,Maria Gabriela,ZOANĂ,mariagabriela.zoana@europarl.europa.eu,1979-06-15,F,S&D,Partidul Social Democrat,+322 28 45808,10G107,AGRI|FEMM,REGI,DARP,,tttp_191377,2018-01-30
+190518,Germany,Jörg,MEUTHEN,joerg.meuthen@europarl.europa.eu,1961-06-29,M,EFDD,Alternative für Deutschland,+322 28 45836,03F151,FEMM|LIBE,ECON,D-CL,,tttp_190518,2017-11-08
+186884,Germany,Arndt,KOHN,arndt.kohn@europarl.europa.eu,1980-09-03,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45869,12G253,CONT,IMCO|REGI|TAX3,D-AL,,tttp_186884,2017-02-24
 125047,Spain,Paloma,LÓPEZ BERMEJO,paloma.lopez@europarl.europa.eu,1962-02-20,F,GUE/NGL,Izquierda Unida,+322 28 45495,02M013,ITRE,ECON|EMPL|TAX3,DMAS,https://twitter.com/palomalopezB,tttp_125047,2014-07-01
 125100,Portugal,Miguel,VIEGAS,miguel.viegas@europarl.europa.eu,1969-06-27,M,GUE/NGL,Partido Comunista Português,+322 28 45344,02M051,ECON,AGRI|CONT|TAX3,DMED,https://twitter.com/MiguelViegasPCP,tttp_125100,2014-07-01
 96668,Ireland,Seán,KELLY,sean.kelly@europarl.europa.eu,1952-04-26,M,PPE,Fine Gael Party,+322 28 45206,08F349,ITRE,PECH|INTA|PEST,D-IR,https://twitter.com/SeanKellyMEP,tttp_96668,2009-07-14
@@ -548,7 +548,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96718,Czech Republic,Olga,SEHNALOVÁ,olga.sehnalova@europarl.europa.eu,1968-10-25,F,S&D,Česká strana sociálně demokratická,+322 28 45417,10G355,IMCO,TRAN,D-IL,https://twitter.com/OlgaSehnalova,tttp_96718,2009-07-14
 124692,Cyprus,Demetris,PAPADAKIS,demetris.papadakis@europarl.europa.eu,1966-08-22,M,S&D,Movement for Social Democracy EDEK,+322 28 45604,09G309,AFET|TERR,PETI|REGI,D-RU,https://twitter.com/DemPapadakis,tttp_124692,2014-07-01
 96951,United Kingdom,Diane,DODDS,diane.dodds@europarl.europa.eu,1958-08-16,F,NA/NI,Democratic Unionist Party,+322 28 45770,11G206,AGRI|PECH,AFCO,D-CA,,tttp_96951,2009-07-14
-96915,Italy,Sergio Gaetano,COFFERATI,sergio.cofferati@europarl.europa.eu,1948-01-30,M,S&D,-,+322 28 45513,15G317,IMCO,JURI,DPAL,http://twitter.com/Cofferati,tttp_96915,2009-07-14
+96915,Italy,Sergio Gaetano,COFFERATI,sergio.cofferati@europarl.europa.eu,1948-01-30,M,S&D,Sinistra Italiana,+322 28 45513,15G317,IMCO,JURI,DPAL,http://twitter.com/Cofferati,tttp_96915,2009-07-14
 124996,Sweden,Peter,LUNDGREN,peter.lundgren@europarl.europa.eu,1963-02-02,M,EFDD,Sverigedemokraterna,+322 28 45673,07H353,TRAN,AGRI,D-CA|D-US,,tttp_124996,2014-07-01
 124891,Poland,Zdzisław,KRASNODĘBSKI,zdzislaw.krasnodebski-office@europarl.europa.eu,1953-04-11,M,ECR,Bezpartyjny,+322 28 45510,05M041,ITRE,SEDE|CULT|EMPL,D-US,,tttp_124891,2014-07-01
 28340,Italy,Patrizia,TOIA,patrizia.toia@europarl.europa.eu,1950-03-17,F,S&D,Partito Democratico,+322 28 45127,15G263,ITRE,DEVE,DEPA|D-BY,https://twitter.com/toiapatrizia,tttp_28340,2004-07-20
@@ -560,15 +560,15 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 125113,Greece,Miltiadis,KYRKOS,miltiadis.kyrkos@europarl.europa.eu,1959-04-01,M,S&D,The River,+322 28 45489,10G354,TRAN,LIBE|PETI,D-TR,,tttp_125113,2014-07-01
 96670,Belgium,Louis,MICHEL,louis.michel@europarl.europa.eu,1947-09-02,M,ALDE,Mouvement Réformateur,+322 28 45532,09G206,LIBE|TAX3,BUDG|DEVE|DROI,DACP,https://twitter.com/LouisMichel,tttp_96670,2009-07-14
 2025,France,Françoise,GROSSETÊTE,francoise.grossetete@europarl.europa.eu,1946-05-17,F,PPE,Les Républicains,+322 28 45952,13E154,ENVI,ITRE,D-RU,https://twitter.com/GrosseteteF,tttp_2025,1994-07-19
-125072,Greece,Eleftherios,SYNADINOS,eleftherios.synadinos@europarl.europa.eu,1955-07-06,M,NA/NI,Popular Association – Golden Dawn,+322 28 45515,02G351,DEVE|BUDG,LIBE|CULT,D-ME,https://twitter.com/Synadinos_Eleft,tttp_125072,2014-07-01
-4555,United Kingdom,Daniel,HANNAN,daniel.hannan@europarl.europa.eu,1971-09-01,M,ECR,Conservative Party,+322 28 45137,04M045,PETI,AFCO,DACP,http://twitter.com/DanHannanMEP,tttp_4555,1999-07-20
-125193,Italy,Eleonora,FORENZA,eleonora.forenza@europarl.europa.eu,1976-11-10,F,GUE/NGL,Lista Tsipras-L'Altra Europa,+322 28 45715,03M097,INTA,ENVI|FEMM,D-CL|DLAT,https://twitter.com/eleonoraforenza,tttp_125193,2014-07-01
+125072,Greece,Eleftherios,SYNADINOS,eleftherios.synadinos@europarl.europa.eu,1955-07-06,M,NA/NI,Independent,+322 28 45515,02G351,BUDG|DEVE,LIBE|CULT,D-ME,https://twitter.com/Synadinos_Eleft,tttp_125072,2014-07-01
+4555,United Kingdom,Daniel,HANNAN,daniel.hannan@europarl.europa.eu,1971-09-01,M,ECR,Conservative Party,+322 28 45137,04M045,PETI,,DACP,http://twitter.com/DanHannanMEP,tttp_4555,1999-07-20
+125193,Italy,Eleonora,FORENZA,eleonora.forenza@europarl.europa.eu,1976-11-10,F,GUE/NGL,Lista Tsipras-L'Altra Europa,+322 28 45715,03M097,INTA,ENVI|FEMM|PEST,D-CL|DLAT,https://twitter.com/eleonoraforenza,tttp_125193,2014-07-01
 96815,Netherlands,Judith,SARGENTINI,judith.sargentini@europarl.europa.eu,1974-03-13,F,Verts/ALE,GroenLinks,+322 28 45881,05F265,TERR|LIBE,DEVE|DROI,D-ZA|DACP,https://twitter.com/judithineuropa,tttp_96815,2009-07-14
 28229,Germany,Manfred,WEBER,manfred.weber@europarl.europa.eu,1972-07-14,M,PPE,Christlich-Soziale Union in Bayern e.V.,+322 28 45890,05H359,,,,https://twitter.com/ManfredWeber,tttp_28229,2004-07-20
 112744,Croatia,Tonino,PICULA,tonino.picula@europarl.europa.eu,1961-08-31,M,S&D,Socijaldemokratska partija Hrvatske,+322 28 45948,09G265,SEDE|AFET,REGI,DSEE|DEPA,https://twitter.com/TPicula,tttp_112744,2012-04-01
 110977,France,Florian,PHILIPPOT,florian.philippot@europarl.europa.eu,1981-10-24,M,EFDD,Les Patriotes,+322 28 45758,03E264,PETI,DEVE,,,tttp_110977,2014-07-01
 1164,France,Bruno,GOLLNISCH,bruno.gollnisch@europarl.europa.eu,1950-01-28,M,NA/NI,Front national,+322 28 45265,06F158,TRAN,,D-JP,http://twitter.com/brunogollnisch,tttp_1164,1989-07-25
-125041,Spain,Soledad,CABEZÓN RUIZ,soledad.cabezonruiz@europarl.europa.eu,1973-09-01,F,S&D,Partido Socialista Obrero Español,+322 28 45596,11G265,ENVI|PETI,ITRE,D-CL,https://twitter.com/SoledadCabezon ,tttp_125041,2014-07-01
+125041,Spain,Soledad,CABEZÓN RUIZ,soledad.cabezonruiz@europarl.europa.eu,1973-09-01,F,S&D,Partido Socialista Obrero Español,+322 28 45596,11G265,ENVI|PETI,ITRE,D-CL,https://twitter.com/SoledadCabezon,tttp_125041,2014-07-01
 124730,Portugal,Fernando,RUAS,fernando.ruas@europarl.europa.eu,1949-01-15,M,PPE,Partido Social Democrata,+322 28 45262,08E116,REGI,INTA,D-BR|DLAT|DMER,https://www.twitter.com/FernandoRuaspe,tttp_124730,2014-07-01
 96858,France,Marie-Christine,VERGIAT,marie-christine.vergiat@europarl.europa.eu,1956-09-23,F,GUE/NGL,Front de Gauche,+322 28 45831,07M043,LIBE|DROI,AFET|TERR,DPAP,http://twitter.com/MCVergiat,tttp_96858,2009-07-14
 124763,Lithuania,Antanas,GUOGA,antanas.guoga@europarl.europa.eu,1973-12-17,M,PPE,Independent,+322 28 45522,08H243,FEMM,JURI|IMCO,DSCA|DEPA,https://twitter.com/TonyGuoga,tttp_124763,2014-07-01
@@ -577,7 +577,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 96948,France,Gilles,PARGNEAUX,gilles.pargneaux@europarl.europa.eu,1957-03-24,M,S&D,Parti socialiste,+322 28 45440,14G202,ENVI|SEDE|CONT,AFET,DMAS|DMED,https://twitter.com/gillespargneaux,tttp_96948,2009-07-14
 124883,Poland,Krystyna,ŁYBACKA,krystyna.lybacka@europarl.europa.eu,1946-02-10,F,S&D,Sojusz Lewicy Demokratycznej,+322 28 45150,13G240,CULT,ITRE,D-RU,https://twitter.com/KrystynaLybacka,tttp_124883,2014-07-01
 124987,Ireland,Liadh,NÍ RIADA,liadh.niriada@europarl.europa.eu,1966-11-28,F,GUE/NGL,Sinn Féin,+322 28 45322,02M115,PECH|BUDG,CULT,D-CN,https://twitter.com/LiadhNiRiadaMEP,tttp_124987,2014-07-01
-124761,France,Bernard,MONOT,bernard.monot@europarl.europa.eu,1962-07-03,M,ENF,Front national,+322 28 45220,01H341,ECON,BUDG|TAX3,ASEAN,,tttp_124761,2014-07-01
+124761,France,Bernard,MONOT,bernard.monot@europarl.europa.eu,1962-07-03,M,EFDD,Front national,+322 28 45220,01H341,ECON,,ASEAN,,tttp_124761,2014-07-01
 28399,Spain,Antonio,LÓPEZ-ISTÚRIZ WHITE,antonio.lopezisturiz@europarl.europa.eu,1970-04-01,M,PPE,Partido Popular,+322 28 45713,11E158,IMCO,SEDE|AFET,,https://twitter.com/TonoEPP,tttp_28399,2004-07-20
 23704,Czech Republic,Jiří,MAŠTÁLKA,jiri.mastalka@europarl.europa.eu,1956-01-03,M,GUE/NGL,Komunistická strana Čech a Moravy,+322 28 45905,07M013,IMCO|ENVI,JURI,D-RU|DEPA|D-ME,,tttp_23704,2003-04-23
 4507,Netherlands,Bas,BELDER,bastiaan.belder@europarl.europa.eu,1946-10-25,M,ECR,Staatkundig Gereformeerde Partij,+322 28 45270,04M115,AFET,AGRI|BUDG,D-IL|D-IR,https://twitter.com/BasBelderMEP,tttp_4507,1999-07-20
@@ -607,13 +607,13 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 118658,Ireland,Brian,HAYES,brian.hayes@europarl.europa.eu,1969-08-23,M,PPE,Fine Gael Party,+322 28 45275,08F359,ECON,DEVE|CONT|TAX3,D-IQ,https://twitter.com/brianhayesMEP,tttp_118658,2014-07-01
 124755,France,Jean-Luc,SCHAFFHAUSER,jean-luc.schaffhauser@europarl.europa.eu,1955-12-17,M,ENF,Rassemblement bleu Marine,+322 28 45726,01H258,SEDE|AFET|DEVE,,DACP,,tttp_124755,2014-07-01
 124949,United Kingdom,Lucy,ANDERSON,lucy.anderson@europarl.europa.eu,,F,S&D,Labour Party,+322 28 45496,01G201,TRAN,IMCO,D-RS,https://twitter.com/LucyAndersonMEP,tttp_124949,2014-07-01
-124887,Poland,Karol,KARSKI,karol.karski@europarl.europa.eu,1966-05-13,M,ECR,Prawo i Sprawiedliwość,+322 28 45663,08G102,DROI|AFET,ENVI,DACP,,tttp_124887,2014-07-01
+124887,Poland,Karol,KARSKI,karol.karski@europarl.europa.eu,1966-05-13,M,ECR,Prawo i Sprawiedliwość,+322 28 45663,08G102,AFET|DROI,ENVI|LIBE,DACP,,tttp_124887,2014-07-01
 124973,Belgium,Gerolf,ANNEMANS,gerolf.annemans@europarl.europa.eu,1958-11-08,M,ENF,Vlaams Belang,+322 28 45700,07M055,ECON|AFCO,,D-US,,tttp_124973,2014-07-01
 125064,Greece,Maria,SPYRAKI,maria.spyraki@europarl.europa.eu,1965-09-11,F,PPE,Nea Demokratia,+322 28 45176,08E210,REGI,ITRE,D-MZ,https://twitter.com/MariaSpyraki,tttp_125064,2014-07-01
 96780,Germany,Monika,HOHLMEIER,monika.hohlmeier@europarl.europa.eu,1962-07-02,F,PPE,Christlich-Soziale Union in Bayern e.V.,+322 28 45191,15E157,BUDG|LIBE|TERR,CONT,D-CN,https://twitter.com/MHohlmeier,tttp_96780,2009-07-14
 96811,Spain,Rosa,ESTARÀS FERRAGUT,rosa.estaras@europarl.europa.eu,1965-10-21,F,PPE,Partido Popular,+322 28 45163,11E157,PETI|JURI,FEMM|EMPL|TRAN,DACP,,tttp_96811,2009-07-14
 1985,France,Pervenche,BERÈS,pervenche.beres@europarl.europa.eu,1957-03-10,F,S&D,Parti socialiste,+322 28 45777,14G101,ECON,ITRE|AFCO|TAX3,D-US,https://twitter.com/PervencheBeres,tttp_1985,1994-07-19
-96661,Hungary,Krisztina,MORVAI,krisztina.morvai@europarl.europa.eu,1963-06-22,F,NA/NI,Jobbik Magyarországért Mozgalom,+322 28 45786,04G352,FEMM,,DKOR,,tttp_96661,2009-07-14
+96661,Hungary,Krisztina,MORVAI,krisztina.morvai@europarl.europa.eu,1963-06-22,F,NA/NI,-,+322 28 45786,04G352,FEMM,,DKOR,,tttp_96661,2009-07-14
 4751,Belgium,Bart,STAES,bart.staes@europarl.europa.eu,1958-08-07,M,Verts/ALE,Groen,+322 28 45642,05F258,CONT|PEST,ENVI,D-US,https://twitter.com/BartStaes,tttp_4751,1999-07-20
 124846,Italy,Pina,PICIERNO,giuseppina.picierno@europarl.europa.eu,1981-05-10,F,S&D,Partito Democratico,+322 28 45229,15G310,FEMM|BUDG,IMCO|TERR,D-MX,https://twitter.com/pinapic,tttp_124846,2014-07-01
 124742,Portugal,António,MARINHO E PINTO,antonio.marinhoepinto@europarl.europa.eu,1950-09-10,M,ALDE,Partido Democrático Republicano,+322 28 45403,08G116,PECH|JURI,EMPL,D-BR,,tttp_124742,2014-07-01
@@ -674,15 +674,15 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 113892,France,Eric,ANDRIEU,eric.andrieu@europarl.europa.eu,1960-04-14,M,S&D,Parti socialiste,+322 28 45170,14G154,PEST|AGRI,INTA,DPAP,https://twitter.com/Eric_Andrieu,tttp_113892,2012-05-16
 125004,Slovenia,Franc,BOGOVIČ,franc.bogovic@europarl.europa.eu,1963-02-02,M,PPE,Slovenska ljudska stranka,+322 28 45583,09E246,REGI,AGRI|PEST,D-RS,https://twitter.com/Franc_Bogovic,tttp_125004,2014-07-01
 128588,Sweden,Linnéa,ENGSTRÖM,linnea.engstrom@europarl.europa.eu,1981-04-02,F,Verts/ALE,Miljöpartiet de gröna,+322 28 45394,04E203,PECH,FEMM|ENVI,DACP,https://twitter.com/LinneaEngstrom,tttp_128588,2014-10-08
-124967,United Kingdom,David,COBURN,david.coburn@europarl.europa.eu,1959-02-11,M,EFDD,United Kingdom Independence Party,+322 28 45481,03F167,PECH|PETI|ECON|TAX3,INTA|ITRE,,https://twitter.com/DavidCoburnUKip,tttp_124967,2014-07-01
+124967,United Kingdom,David,COBURN,david.coburn@europarl.europa.eu,1959-02-11,M,EFDD,United Kingdom Independence Party,+322 28 45481,03F167,PECH|PETI|ECON|TAX3,INTA|AFET,,https://twitter.com/DavidCoburnUKip,tttp_124967,2014-07-01
 125061,Greece,Kostas,CHRYSOGONOS,kostas.chrysogonos@europarl.europa.eu,1961-06-27,M,GUE/NGL,Coalition of the Radical Left,+322 28 45405,03M041,JURI,AFCO|LIBE,D-TR|D-MZ,https://twitter.com/Chrysogonos_K,tttp_125061,2014-07-01
-96826,Hungary,Tamás,DEUTSCH,tamas.deutsch@europarl.europa.eu,1966-07-27,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45156,09E169,CONT|REGI,BUDG|ITRE,DMED|D-IL,https://twitter.com/dajcstomi,tttp_96826,2009-07-14
-28150,Hungary,Kinga,GÁL,kinga.gal@europarl.europa.eu,1970-09-06,F,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45599,09E165,LIBE|DROI,,DACP,,tttp_28150,2004-07-20
+96826,Hungary,Tamás,DEUTSCH,tamas.deutsch@europarl.europa.eu,1966-07-27,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45156,09E169,CONT|REGI,BUDG|ITRE,DMED|D-IL,https://twitter.com/dajcstomi,tttp_96826,2009-07-14
+28150,Hungary,Kinga,GÁL,kinga.gal@europarl.europa.eu,1970-09-06,F,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45599,09E165,LIBE|DROI,,DACP,,tttp_28150,2004-07-20
 124708,Czech Republic,Dita,CHARANZOVÁ,dita.charanzova@europarl.europa.eu,1975-04-30,F,ALDE,ANO 2011,+322 28 45506,08G101,IMCO,INTA,DMER|DCAR|DLAT,https://twitter.com/charanzova,tttp_124708,2014-07-01
 28206,France,Jean-Marie,CAVADA,jean-marie.cavada@europarl.europa.eu,1940-02-24,M,ALDE,Génération Citoyens,+322 28 45367,09G103,JURI,EMPL,,https://twitter.com/JeanMarieCAVADA,tttp_28206,2004-07-20
-124712,Hungary,Andrea,BOCSKOR,andrea.bocskor@europarl.europa.eu,1978-08-11,F,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45829,09E253,CULT,AFET,DEPA|D-UA,,tttp_124712,2014-07-01
+124712,Hungary,Andrea,BOCSKOR,andrea.bocskor@europarl.europa.eu,1978-08-11,F,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45829,09E253,CULT,AFET,DEPA|D-UA,,tttp_124712,2014-07-01
 124961,United Kingdom,Theresa,GRIFFIN,theresa.griffin@europarl.europa.eu,1962-12-11,F,S&D,Labour Party,+322 28 45271,13G310,ITRE,TRAN,DAND|DLAT,https://twitter.com/TheresaG_EU,tttp_124961,2014-07-01
-124752,France,Aymeric,CHAUPRADE,aymeric.chauprade@europarl.europa.eu,1969-01-13,M,NA/NI,Les Français Libres,+322 28 45568,07H341,AFET|DROI,,D-RU|DACP,,tttp_124752,2014-07-01
+124752,France,Aymeric,CHAUPRADE,aymeric.chauprade@europarl.europa.eu,1969-01-13,M,EFDD,Les Français Libres,+322 28 45568,07H341,AFET|SEDE,ITRE,D-RU,,tttp_124752,2014-07-01
 124938,United Kingdom,Janice,ATKINSON,janice.atkinson@europarl.europa.eu,1962-08-31,F,ENF,-,+322 28 45537,06G351,,LIBE,D-US, https://twitter.com/JaniceUKIP,tttp_124938,2014-07-01
 124693,France,Pascal,DURAND,pascal.durand@europarl.europa.eu,1960-10-03,M,Verts/ALE,Europe Écologie,+322 28 45161,06E202,AFCO|IMCO,JURI,D-BR,https://twitter.com/PDurandOfficiel,tttp_124693,2014-07-01
 124964,United Kingdom,Louise,BOURS,louise.bours@europarl.europa.eu,1968-12-23,F,EFDD,United Kingdom Independence Party,+322 28 45552,03F247,,FEMM|EMPL,,,tttp_124964,2014-07-01
@@ -694,7 +694,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124738,France,Gilles,LEBRETON,gilles.lebreton@europarl.europa.eu,1958-10-11,M,ENF,Front national,+322 28 45817,01H246,JURI,LIBE,DMAG,,tttp_124738,2014-07-01
 94282,France,Jean-Paul,DENANOT,jean-paul.denanot@europarl.europa.eu,1944-04-24,M,S&D,Parti socialiste,+322 28 45213,14G169,AGRI,BUDG,D-TR,https://twitter.com/jpdenanot,tttp_94282,2008-10-06
 97019,Slovenia,Ivo,VAJGL,ivo.vajgl@europarl.europa.eu,1943-03-03,M,ALDE,DeSUS - Demokratična Stranka Upokojencev Slovenije,+322 28 45620,09G154,AFET,EMPL,D-RS,https://twitter.com/ivajgl,tttp_97019,2009-07-14
-125032,Spain,Ramón Luis,VALCÁRCEL SISO,ramonluis.valcarcel@europarl.europa.eu,1954-11-16,M,PPE,Partido Popular,+322 28 45815,11E130,REGI,AGRI,DMED|DMAS,https://twitter.com/RL_Valcarcel,tttp_125032,2014-07-01
+125032,Spain,Ramón Luis,VALCÁRCEL SISO,ramonluis.valcarcel@europarl.europa.eu,1954-11-16,M,PPE,Partido Popular,+322 28 45815,11E130,REGI,AGRI,DMAS|DMED,https://twitter.com/RL_Valcarcel,tttp_125032,2014-07-01
 96899,Portugal,José Manuel,FERNANDES,josemanuel.fernandes@europarl.europa.eu,1967-07-26,M,PPE,Partido Social Democrata,+322 28 45165,08E146,BUDG|TAX3,ECON,DMED|DMAG,https://twitter.com/JMFernandesEU,tttp_96899,2009-07-14
 28276,Lithuania,Laima Liucija,ANDRIKIENĖ,laimaliucija.andrikiene@europarl.europa.eu,1958-01-01,F,PPE,Tėvynės sąjunga-Lietuvos krikščionys demokratai,+322 28 45550,09E205,SEDE|INTA|PEST,AFET,DCAS,http://twitter.com/andrikiene,tttp_28276,2004-07-20
 185619,Germany,Tiemo,WÖLKEN,tiemo.woelken@europarl.europa.eu,1985-12-05,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45431,12G318,BUDG,ENVI|JURI,D-MX|DLAT,,tttp_185619,2016-11-14
@@ -709,17 +709,17 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124847,Italy,Elena,GENTILE,elena.gentile@europarl.europa.eu,1953-11-02,F,S&D,Partito Democratico,+322 28 45250,15G146,EMPL,CULT|ENVI|REGI,D-ME,https://twitter.com/elena_gentile,tttp_124847,2014-07-01
 125110,Greece,Nikos,ANDROULAKIS,nikos.androulakis@europarl.europa.eu,1979-02-07,M,S&D,Panhellenic Socialist Movement - Olive Tree,+322 28 45340,10G310,AFET,DROI|ENVI|AGRI|SEDE,D-CN,https://twitter.com/androulakisnick,tttp_125110,2014-07-01
 124779,Italy,Eleonora,EVI,eleonora.evi@europarl.europa.eu,1983-11-20,F,EFDD,Movimento 5 Stelle,+322 28 45290,07H242,PETI,ENVI|PEST,D-CN,,tttp_124779,2014-07-01
-124711,Hungary,Norbert,ERDŐS,norbert.erdos@europarl.europa.eu,1972-10-25,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45716,09E206,AGRI,CULT|PECH,ASEAN,,tttp_124711,2014-07-01
+124711,Hungary,Norbert,ERDŐS,norbert.erdos@europarl.europa.eu,1972-10-25,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45716,09E206,AGRI,CULT|PECH,ASEAN,,tttp_124711,2014-07-01
 124986,Ireland,Matt,CARTHY,matt.carthy@europarl.europa.eu,1977-07-19,M,GUE/NGL,Sinn Féin,+322 28 45838,02M107,AGRI|TAX3,TRAN|ECON,D-US,https://twitter.com/mattcarthy,tttp_124986,2014-07-01
 124854,Italy,Salvatore,CICU,salvatore.cicu@europarl.europa.eu,1957-09-03,M,PPE,Forza Italia,+322 28 45675,10E165,INTA,REGI,DARP,https://twitter.com/SalvoCicu,tttp_124854,2014-07-01
 96680,Lithuania,Zigmantas,BALČYTIS,zigmantas.balcytis@europarl.europa.eu,1953-11-16,M,S&D,Lietuvos socialdemokratų partija,+322 28 45427,14G309,CONT|ITRE,AFET,DEPA|D-CN,http://twitter.com/balcytis,tttp_96680,2009-07-14
 96681,Lithuania,Vilija,BLINKEVIČIŪTĖ,vilija.blinkeviciute@europarl.europa.eu,1960-03-03,F,S&D,Lietuvos socialdemokratų partija,+322 28 45428,14G305,FEMM|EMPL,LIBE,DEPA,,tttp_96681,2009-07-14
 28238,Germany,Michael,CRAMER,michael.cramer@europarl.europa.eu,1949-06-16,M,Verts/ALE,Bündnis 90/Die Grünen,+322 28 45779,06E213,TRAN,,D-MZ,https://twitter.com/MepMCramer,tttp_28238,2004-07-20
-124714,Hungary,Andor,DELI,andor.deli@europarl.europa.eu,1977-05-02,M,PPE,Fidesz-Magyar Polgári Szövetség-Keresztény Demokrata Néppárt,+322 28 45360,09E101,TRAN,REGI,D-RS,https://twitter.com/andordeli,tttp_124714,2014-07-01
+124714,Hungary,Andor,DELI,andor.deli@europarl.europa.eu,1977-05-02,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,+322 28 45360,09E101,TRAN,REGI,D-RS,https://twitter.com/andordeli,tttp_124714,2014-07-01
 125040,Spain,Beatriz,BECERRA BASTERRECHEA,beatriz.becerra@europarl.europa.eu,1966-11-14,F,ALDE,Independiente,+322 28 45312,08G309,DROI|DEVE|FEMM|PETI,,D-MX|DLAT,https://twitter.com/beatrizbecerrab,tttp_125040,2014-07-01
 125045,Spain,Clara Eugenia,AGUILERA GARCÍA,claraeugenia.aguileragarcia@europarl.europa.eu,1964-01-03,F,S&D,Partido Socialista Obrero Español,+322 28 45783,11G310,AGRI|PECH|PEST,PETI,DMER,https://twitter.com/ClaraAguilera7,tttp_125045,2014-07-01
 125002,Belgium,Hugues,BAYET,hugues.bayet@europarl.europa.eu,1975-04-12,M,S&D,Parti Socialiste,+322 28 45791,11G116,ECON|TAX3,TRAN,D-TR|DMAG,https://twitter.com/huguesbayet ,tttp_125002,2014-07-01
-124771,France,Dominique,BILDE,dominique.bilde@europarl.europa.eu,1953-08-01,F,ENF,Front national,+322 28 45742,01H353,CULT,ITRE,DSEE,https://twitter.com/dominiquebilde,tttp_124771,2014-07-01
+124771,France,Dominique,BILDE,dominique.bilde@europarl.europa.eu,1953-08-01,F,ENF,Front national,+322 28 45742,01H353,CULT,ITRE|ENVI,DSEE,https://twitter.com/dominiquebilde,tttp_124771,2014-07-01
 125071,Greece,Georgios,EPITIDEIOS,georgios.epitideios@europarl.europa.eu,1953-03-02,M,NA/NI,Popular Association – Golden Dawn,+322 28 45641,04G346,AFET,AGRI,D-TR,,tttp_125071,2014-07-01
 124757,France,Steeve,BRIOIS,steeve.briois@europarl.europa.eu,1972-11-28,M,ENF,Front national,+322 28 45850,01H340,REGI,EMPL,D-CA,https://twitter.com/steevebriois,tttp_124757,2014-07-01
 125048,Spain,Marina,ALBIOL GUZMÁN,marina.albiol@europarl.europa.eu,1982-12-15,F,GUE/NGL,Izquierda Unida,+322 28 45998,02M015,PETI,DEVE|LIBE,DLAT,https://twitter.com/MarinaAlbiol,tttp_125048,2014-07-01
@@ -732,7 +732,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 26837,Cyprus,Lefteris,CHRISTOFOROU,lefteris.christoforou@europarl.europa.eu,1963-08-31,M,PPE,Democratic Rally,+322 28 45876,08F167,BUDG,ITRE|TAX3,D-US,https://twitter.com/LefChristoforou,tttp_26837,2004-04-13
 124930,Slovakia,Pál,CSÁKY,pal.csaky@europarl.europa.eu,1956-03-21,M,PPE,Strana mad'arskej komunity- Magyar Közösség Pártja,+322 28 45601,09E258,PETI,LIBE,D-IN,https://twitter.com/csakypal,tttp_124930,2014-07-01
 97296,France,Michel,DANTIN,michel.dantin@europarl.europa.eu,1960-01-15,M,PPE,Les Républicains,+322 28 45533,13E116,AGRI,ENVI,DEEA,https://twitter.com/MichelDANTIN,tttp_97296,2009-07-14
-124750,France,Mireille,D'ORNANO,mireille.dornano@europarl.europa.eu,1951-06-29,F,EFDD,Les Patriotes,+322 28 45241,06F154,DEVE|PEST,ENVI,DLAT|DCAM|DMER,,tttp_124750,2014-07-01
+124750,France,Mireille,D'ORNANO,mireille.dornano@europarl.europa.eu,1951-06-29,F,EFDD,Les Patriotes,+322 28 45241,06F154,DEVE|PEST,ENVI,DLAT|DCAM|DMER|DACP,,tttp_124750,2014-07-01
 96725,Netherlands,Bas,EICKHOUT,bas.eickhout@europarl.europa.eu,1976-10-08,M,Verts/ALE,GroenLinks,+322 28 45365,05F266,ENVI,ECON|TRAN,D-US,https://twitter.com/BasEickhout,tttp_96725,2009-07-14
 124807,Germany,Jens,GIESEKE,jens.gieseke@europarl.europa.eu,1971-05-18,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45556,15E210,ENVI,PECH|AGRI,D-IN,,tttp_124807,2014-07-01
 127330,Spain,Tania,GONZÁLEZ PEÑAS,tania.gonzalezpenas@europarl.europa.eu,1982-10-18,F,GUE/NGL,PODEMOS,+322 28 45141,03M113,TRAN,EMPL,DAND,https://twitter.com/TaniaGonzalezPs,tttp_127330,2014-09-11

@@ -156,13 +156,45 @@
       var dim = ndx.dimension(function(d) {
         return d.country || "";
       });
-      var group = dim.group().reduceSum(function(d) {return 1;});
+      var group = dim.group().reduce(
+        function (p, v) {
+          p[v.result]++;
+					return p;
+			  },
+        function (p, v) {
+          p[v.result]--;
+					return p;
+			  },
+        function () { return {for:0,against:0,abstention:0}}
+      );
+
+  function stack(i) {
+    return function(d) {
+      return d.value[i];
+    };
+  }
+
+  function stacks (ref, type) {
+    if (ref) {
+      var s=stackRelative;
+      graph.yAxis().tickFormat(d3.format('.0%'));
+    } else {
+      var s=stack;
+      graph.yAxis().tickFormat(d3.format('.2s'));
+ 
+    }
+    var s= ref? null: stack;
+    graph.group(group, "for", s('for',ref));
+    graph.stack(group, 'against', s('against',ref));
+    graph.stack(group, 'abstention', s('abstention',ref));
+    return graph;
+  }
+
 
       graph
         .width(0)
         .height(186)
         .outerPadding(0)
-        .ordinalColors([country_color])
         .gap(0)
         .margins({
           top: 0,
@@ -174,12 +206,15 @@
         .xUnits(dc.units.ordinal)
         .brushOn(false)
         .elasticY(true)
+        .renderLabel(true)
         .yAxisLabel("#MEPs")
         .dimension(dim)
-        .group(group)
         .on("renderlet", function(c) {
           rotateBarChartLabels();
         });
+      stacks();
+      graph.stacks=stacks;
+
       graph.xAxis().ticks(3);
       return graph;
 
