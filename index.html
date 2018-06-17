@@ -279,7 +279,6 @@
 
       graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
         .group(group)
-        .formatNumber(d3.format("d"))
         .valueAccessor(function(d) {
           return d.value.woman.count;
         });
@@ -714,42 +713,6 @@
     };
 
     function excelise() { //UI
-      var head=["epid","country","first_name","last_name","email","birthdate","gender","eugroup","party","phone","office","committee","substitute","delegation","twitter","tttpid","since"];
-
-      var csvrow = function(d) {
-        var roles = function(d, roles) {
-          if (!Array.isArray(roles)) roles = [roles];
-          var r = [];
-          if (!d) return r;
-          d.forEach(function(d) {
-            roles.forEach(function(role) {
-              if (d.role == role) r.push(d.name);
-            });
-          });
-          return r;
-        };
-        var e = [
-          d.epid,
-          d.constituency.country,
-          d.first_name,
-          d.last_name,
-          d.mail, //Mail[0],
-          d.Birth.date,
-          d.Gender,
-          d.eugroup,
-          d.constituency.party,
-          d.Addresses.Brussels.Phone,
-          d.Addresses.Brussels.Office,
-          roles(d.committees, ["Chair", "Vice-Chair", "Member"]).join("|"),
-          roles(d.committees, "Substitute").join("|"),
-          roles(d.delegations, ["Chair", "Vice-Chair", "Member"]).join("|"),
-          d.Twitter,
-          "tttp_" + d.epid,
-          d.since.toISOString().slice(0,10)
-        ];
-        return e;
-      }
-
       var uri = 'data:application/vnd.ms-excel;base64,',
         template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><?xml version="1.0" encoding="UTF-8" standalone="yes"?><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
         base64 = function(s) {
@@ -760,17 +723,20 @@
             return c[p];
           })
         }
-      var toExcel = "<thead><tr>";
-        head.forEach(function(c){
+      var toExcel = "<thead>";
+      graphs.table.dimension().top(1).forEach(function(d) {
+        toExcel += "<tr>";
+        for (var c in d) {
           toExcel += "<th>" + c + "</th>";
-        });
-      toExcel += "</tr></thead><tbody>\n";
+        };
+        toExcel += "</tr>";
+      });
+      toExcel += "</thead><tbody>\n";
       graphs.table.dimension().top(Number.POSITIVE_INFINITY).forEach(function(d) {
         toExcel += "<tr>";
-        var csv=csvrow(d);
-        csv.forEach(function(c){
-          toExcel += "<td>" + c + "</td>";
-        });
+        for (var c in d) {
+          toExcel += "<td>" + d[c] + "</td>";
+        };
         toExcel += "</tr>\n";
       });
       toExcel += "</tbody>";
@@ -954,7 +920,7 @@
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2018-06-04</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2018-06-16</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
