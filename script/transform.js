@@ -190,8 +190,8 @@ function transform(d) {
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
   if (d.Twitter && d.Twitter.indexOf(".com/") !== -1) {
     d.Twitter=d.Twitter.substring(d.Twitter.indexOf(".com/")+5);
-    var param=d.Twitter.indexOf("?lang=") !== -1;
-    if (param) d.Twitter=d.Twitter.substring(0,param);
+    var param=d.Twitter.indexOf("?lang=");
+    if (param !== -1) d.Twitter=d.Twitter.substring(0,param);
   }
   return d;
 }
