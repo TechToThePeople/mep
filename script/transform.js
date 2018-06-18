@@ -188,6 +188,9 @@ function transform(d) {
   d.since = d.since.replace("T00:00:00", "");
   if (d.constituency && d.constituency.start)
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
+  if (d.Twitter && d.Twitter.indexOf(".com/")) {
+    d.Twitter=d.Twitter.substring(d.Twitter.indexOf(".com/")+5);
+  }
   return d;
 }
 
