@@ -188,8 +188,10 @@ function transform(d) {
   d.since = d.since.replace("T00:00:00", "");
   if (d.constituency && d.constituency.start)
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
-  if (d.Twitter && d.Twitter.indexOf(".com/")) {
+  if (d.Twitter && d.Twitter.indexOf(".com/") !== -1) {
     d.Twitter=d.Twitter.substring(d.Twitter.indexOf(".com/")+5);
+    var param=d.Twitter.indexOf("?lang=") !== -1;
+    if (param) d.Twitter=d.Twitter.substring(0,param);
   }
   return d;
 }
