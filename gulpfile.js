@@ -99,7 +99,7 @@ gulp.task("transform", function(done) {
 });
 
 gulp.task('update', function (callback) {
-  runSequence('download','decompress', 'transform',callback);
+  runSequence('download','decompress', 'transform','html',callback);
   });
 
 gulp.task('html', function(){
@@ -141,4 +141,4 @@ gulp.task('js', function() {
 
 
 gulp.task('build', ['css', 'js']);
-gulp.task('default', ['update','html']);
+gulp.task('default', ['update']);
