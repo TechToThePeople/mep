@@ -411,12 +411,15 @@
       });
       $(".resetall").click(reset);
       //        $(".summary_total").text(formatNumber(summary.total));
-      $("#input-filter").val($.urlParam("q")).keyup(); //if channel param, filter
       $("#dropdown-committee a").click(function() {
         $("#input-filter").val($(this).text()).keyup();
       });
       $("#excel").click(function() {
-        excelise()
+        download_excel()
+      });
+      $("#csv").click(function(e) {
+        download_csv();
+        e.stopPropagation();
       });
       $("table").on("click", ".btn", function(e) {
         e.stopPropagation();
@@ -467,7 +470,6 @@
         })
         .columns([
             function(d) {
-              console.log(d);
               var t= '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
               '<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
 
@@ -502,7 +504,7 @@
           function(d) {
             return moment(d.since).fromNow().replace(" ago", "");
           },
-          //          function(d) {            return d.email;}
+          //          function(d) {            return d.mail;}
         ])
         .on("renderlet.detail", function(g) {
           // don't need it, taken care of by the tr one
@@ -628,6 +630,8 @@
           e.committee=pluck(e.committees);
           e.delegation=pluck(e.delegations);
           e.role=pluck(e.staff);
+          e.phone = e.Addresses.Brussels.Phone;
+          if (typeof e.Facebook == "object") e.Facebook = e.Facebook[0];
         });
       }
 
@@ -663,6 +667,7 @@
       graphs.total.on("postRedraw", function() {setUrl()});
       summary.total = graphs.total.data();
       dc.renderAll();
+      $("#input-filter").val($.urlParam("q")).keyup();
     }
 
     function drawRow(dom,attr) {
@@ -757,40 +762,49 @@
 
     };
 
-    function excelise() { //UI
-      var uri = 'data:application/vnd.ms-excel;base64,',
-        template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><?xml version="1.0" encoding="UTF-8" standalone="yes"?><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
-        base64 = function(s) {
-          return window.btoa(unescape(encodeURIComponent(s)))
-        },
-        format = function(s, c) {
-          return s.replace(/{(\w+)}/g, function(m, p) {
-            return c[p];
-          })
-        }
-      var toExcel = "<thead>";
-      graphs.table.dimension().top(1).forEach(function(d) {
-        toExcel += "<tr>";
-        for (var c in d) {
-          toExcel += "<th>" + c + "</th>";
-        };
-        toExcel += "</tr>";
-      });
-      toExcel += "</thead><tbody>\n";
+    function prepareData(row,head) {
+      var col =  "first_name,last_name,country,eugroup,twitter,facebook,gender,phone,email,committee,id,external_reference".split(",");
+      head(col);
       graphs.table.dimension().top(Number.POSITIVE_INFINITY).forEach(function(d) {
-        toExcel += "<tr>";
-        for (var c in d) {
-          toExcel += "<td>" + d[c] + "</td>";
-        };
-        toExcel += "</tr>\n";
+        console.log([
+          d.first_name
+          ,d.last_name,
+          ,d.constituency.country
+          ,d.eugroup 
+          ,d.Twitter ? d.Twitter: ""
+          ,d.Facebook ? d.Facebook:""
+          ,d.Gender
+          ,d.phone ? d.phone:""
+          ,d.mail ? d.mail:""
+          ,d.committee.join("|")
+          ,d.epid
+          ,"tttp_"+d.epid
+        ]);
+
+        row([
+          d.first_name
+          ,d.last_name,
+          ,d.constituency.country
+          ,d.eugroup
+          ,d.Twitter ? d.Twitter: ""
+          ,d.Facebook ? d.Facebook:""
+          ,d.Gender
+          ,d.phone ? d.phone:""
+          ,d.mail ? d.mail:""
+          ,d.committee.join("|")
+          ,d.epid
+          ,"tttp_"+d.epid
+        ]);
       });
-      toExcel += "</tbody>";
-      //var toExcel = $('#table').html();
-      var ctx = {
-        worksheet: name || 'meps_tttp',
-        table: toExcel
+    }
+
+    function download_csv() {
+      var csv="";
+      var line = function (d){
+          csv += d.join(',') + "\n";
       };
-      window.open(uri + base64(format(template, ctx)));
+      prepareData(line,line);
+      window.open('data:application/csv; charset=utf-8,' + encodeURI(csv));
     }
 
     function tweet(d){
@@ -805,6 +819,47 @@
         var win=window.open(url,'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
       };
     };
+
+function download_excel() {
+
+  var uri = 'data:application/vnd.ms-excel;base64,',
+  template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><?xml version="1.0" encoding="UTF-8" standalone="yes"?><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+  base64 = function(s) {
+    return window.btoa(unescape(encodeURIComponent(s)))
+  },
+  format = function(s, c) {
+    return s.replace(/{(\w+)}/g, function(m, p) {
+      return c[p];
+    })
+  }
+
+ var toExcel = "<thead><tr>";
+  var head= function(d){
+    for (var c in d) {
+      toExcel += "<th>" + d[c] + "</th>";
+    };
+    toExcel += "</tr>";
+    toExcel += "</thead><tbody>\n";
+  };
+
+  var row= function(d){
+    toExcel += "<tr>";
+    for (var c in d) {
+      toExcel += "<td>" + d[c] + "</td>";
+    };
+    toExcel += "</tr>\n";
+  };
+
+  prepareData(row,head);
+  toExcel+="</tbody>";
+
+  var ctx = {
+    worksheet: name || 'person',
+    table: toExcel
+  };
+  window.open(uri + base64(format(template, ctx)));
+
+}
 
   </script>
 
@@ -1479,7 +1534,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-md-3">
-              <img src="http://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
+              <img src="https://s3.eu-central-1.amazonaws.com/newshubv2/mep/{%=o.epid%}.jpg" class="img-circle img-responsive">
             </div>
             <div class="col-md-9 main">
               <dl class="dl-horizontal">
@@ -1494,7 +1549,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a href="tel:{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
+        <a href="tel:{%=o.phone.replace(/ /g,'')%}" title="{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
           <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
           <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/_home.html" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
