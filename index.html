@@ -389,8 +389,8 @@
         download_excel()
       });
       $("#csv").click(function(e) {
+        e.preventDefault();
         download_csv();
-        e.stopPropagation();
       });
       $("table").on("click", ".btn", function(e) {
         e.stopPropagation();
@@ -725,35 +725,22 @@
       var col =  "first_name,last_name,country,eugroup,twitter,facebook,gender,phone,email,committee,id,external_reference".split(",");
       head(col);
       graphs.table.dimension().top(Number.POSITIVE_INFINITY).forEach(function(d) {
-        console.log([
-          d.first_name
-          ,d.last_name,
-          ,d.constituency.country
-          ,d.eugroup 
-          ,d.Twitter ? d.Twitter: ""
-          ,d.Facebook ? d.Facebook:""
-          ,d.Gender
-          ,d.phone ? d.phone:""
-          ,d.mail ? d.mail:""
-          ,d.committee.join("|")
-          ,d.epid
-          ,"tttp_"+d.epid
-        ]);
-
+        //console.log([
         row([
-          d.first_name
-          ,d.last_name,
-          ,d.constituency.country
-          ,d.eugroup
+          ""+d.first_name
+          ,""+d.last_name
+          ,""+d.constituency.country
+          ,""+d.eugroup 
           ,d.Twitter ? d.Twitter: ""
           ,d.Facebook ? d.Facebook:""
           ,d.Gender
           ,d.phone ? d.phone:""
           ,d.mail ? d.mail:""
-          ,d.committee.join("|")
+          ,""+d.committee.join("|")
           ,d.epid
           ,"tttp_"+d.epid
-        ]);
+          ]);
+
       });
     }
 
