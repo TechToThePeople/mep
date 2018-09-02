@@ -42,6 +42,10 @@ var paths = {
   ]
 
 };
+
+gulp.task('download-img", function(){
+});
+
 gulp.task('download', function() {
   var files = [{file: "mepid.json",url:"http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term="},
     {file:"ep_meps_current.json.xz",url:"http://parltrack.euwiki.org/dumps/ep_meps_current.json.xz"}];
