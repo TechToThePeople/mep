@@ -1,12 +1,12 @@
 'use strict';
 const   file = require("fs");
-
+const countries = JSON.parse(file.readFileSync("./data/name2iso.json"));
 var finished = function(n) {
   console.log("Processed " + n)
 };
 var total = 0;
 const head = ['epid', 'alias','active'];
-const headall = ['epid','firstname','lastname','active','start','end','birthdate','country','gender','eugroup','party'];
+const headall = ['epid','firstname','lastname','active','start','end','birthdate','country','gender','eugroup','party','email','twitter'];
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
@@ -41,7 +41,10 @@ function transform(d) {
     console.log(d);
     return;
   }
-  var t={start:d.Constituencies[0].start,end:d.Constituencies[0].end,country:d.Constituencies[0].country,party:d.Constituencies[0].party};
+  var t={start:d.Constituencies[0].start,end:d.Constituencies[0].end,country:countries[d.Constituencies[0].country],party:d.Constituencies[0].party};
+  if (!t.country) {
+    console.log("missing country "+d.Constituencies[0].country);
+  }
   var getFromTo= function(){
     d.Constituencies.forEach(function(c){
       if (!c) return;// deal with incomplete
@@ -64,6 +67,24 @@ function transform(d) {
   getFromTo();
   t.start=t.start.replace("T00:00:00", "");
   t.end= t.active ? "" : t.end.replace("T00:00:00", "");
+  t.twitter= "";
+  if (d.Twitter && d.Twitter[0].indexOf(".com/") !== -1) {
+    t.twitter=d.Twitter[0].substring(d.Twitter[0].indexOf(".com/")+5);
+    var param=t.twitter.indexOf("?lang=");
+    if (param !== -1) t.twitter=t.twitter.substring(0,param);
+  } else {
+    if (d.Twitter){
+      if (d.Twitter[0]){
+        t.twitter=d.Twitter[0].substring(d.Twitter[0].indexOf("@")+1);
+console.log(t.twitter);
+      } else {
+        console.log(d.Twitter);
+      }
+    }
+  }
+  t.email= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail || "";
+  t.email=t.email.toLowerCase();
+  t.twitter=t.twitter.toLowerCase();
   return t;
 }
 
@@ -86,7 +107,7 @@ csv.on('end', () => {});
 var csvall = through2({
   objectMode: true
 }, function(mep, enc, callback) {
-  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party]);
+  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter]);
   callback();
 });
 
