@@ -17930,6 +17930,16 @@ epid,alias,active
 192298,dobromirsośnierz,true
 192298,sośnierz,true
 192298,sosnierz dobromir,true
+193879,gräzin igor,true
+193879,igor gräzin,true
+193879,gräzinigor,true
+193879,igor grazin,true
+193879,igorgräzin,true
+193879,grazinigor,true
+193879,grazin igor,true
+193879,igorgrazin,true
+193879,grazin,true
+193879,gräzin,true
 124940,patrickoflynn,true
 124940,o'flynn patrick,true
 124940,patrick oflynn,true
@@ -18530,16 +18540,6 @@ epid,alias,active
 190517,schirdewan martin,true
 190517,schirdewanmartin,true
 190517,martin schirdewan,true
-193706,miccichè giovanni,true
-193706,giovannimicciche,true
-193706,giovannimiccichè,true
-193706,miccichègiovanni,true
-193706,micciche,true
-193706,micciche giovanni,true
-193706,miccichè,true
-193706,miccichegiovanni,true
-193706,giovanni micciche,true
-193706,giovanni miccichè,true
 193292,tilly metz,true
 193292,metztilly,true
 193292,tillymetz,true
@@ -18550,6 +18550,21 @@ epid,alias,active
 192635,danilooscarlancini,true
 192635,lancinidanilooscar,true
 192635,lancini,true
+193419,hansen christophe,true
+193419,hansenchristophe,true
+193419,christophe hansen,true
+193419,hansen,true
+193419,christophehansen,true
+193706,miccichè giovanni,false
+193706,giovannimicciche,false
+193706,giovannimiccichè,false
+193706,miccichègiovanni,false
+193706,micciche,false
+193706,micciche giovanni,false
+193706,miccichè,false
+193706,miccichegiovanni,false
+193706,giovanni micciche,false
+193706,giovanni miccichè,false
 125062,katrougkalosgeorgios,false
 125062,georgios katrougkalos,false
 125062,georgioskatrougkalos,false
@@ -20017,11 +20032,11 @@ epid,alias,active
 1913,gebhardt evelyne,true
 1913,gebhardtevelyne,true
 1913,evelynegebhardt,true
-96997,balzburkhard,true
-96997,balz,true
-96997,balz burkhard,true
-96997,burkhardbalz,true
-96997,burkhard balz,true
+96997,balzburkhard,false
+96997,balz,false
+96997,balz burkhard,false
+96997,burkhardbalz,false
+96997,burkhard balz,false
 124720,tamásmeszerics,true
 124720,meszericstamás,true
 124720,meszerics tamás,true

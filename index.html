@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>MEPs</title>
@@ -10,10 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
-  
-  <link rel="prefetch" href="data/meps.json" as="fetch"/>
-  <link rel="prefetch" href="data/abbreviations.json" as="fetch"/>
-  <link rel="prefetch" href="data/abbreviations.json" as="fetch"/>
+
 
 </head>
 
@@ -47,8 +44,6 @@
     var committee_color = "#E1F5FE";//"#80cbc4";//"#e57373";
     var country_color = "#80cbc4";
     var gender_color = ["#9575CD", "#FDD835", "#9575cd"];
-    var countries = { "Belgium": "be", "Bulgaria": "bg", "Czech Republic": "cz", "Denmark": "dk", "Germany": "de", "Estonia": "ee", "Ireland": "ie", "Greece": "gr", "Spain": "es", "France": "fr", "Croatia": "hr", "Italy": "it", "Cyprus": "cy", "Latvia": "lv", "Lithuania": "lt", "Luxembourg": "lu", "Hungary": "hu", "Malta": "mt", "Netherlands": "nl", "Austria": "at", "Poland": "pl", "Portugal": "pt", "Romania": "ro", "Slovenia": "si", "Slovakia": "sk", "Finland": "fi", "Sweden": "se", "United Kingdom": "gb","Europe": "eu"};
-
     var eu_groups = {
       "GUE/NGL": "#800c00",
       "S&D": "#c21200",
@@ -458,7 +453,7 @@
             return t;
           },
           function(d) {
-            return "<svg class='icon'><use href='#flag-"+countries[d.constituency.country] +"' /></svg>";
+            return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
           },
           function(d) {
             return "<span title='" + d.eugroup + "' class='img-rounded text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
@@ -925,7 +920,7 @@
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2018-08-25</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2018-10-09</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -958,10 +953,6 @@
       });
       d3.json("data/abbreviations.json", function(json) {
         abbreviations = json;
-      });
-      d3.svg("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
-        if (error) throw error;
-        document.body.appendChild(xml.documentElement);
       });
     });
 
@@ -1061,8 +1052,7 @@
     }
 
     .eugroup,
-    .country-flag,
-    .icon {
+    .country-flag {
       display: inline-block;
       width: 25px;
       height: 20px;
@@ -1072,41 +1062,153 @@
       background-size: cover;
     }
 
-  .ppe {
-    background-image: url("img/group/EPP.png");
-  }
+    .ppe {
+      background-image: url("img/group/EPP.png");
+    }
 
-  .s-d {
-    background-image: url("img/group/S-D.png");
-  }
+    .s-d {
+      background-image: url("img/group/S-D.png");
+    }
 
-  .alde {
-    background-image: url("img/group/ALDE.png");
-  }
+    .alde {
+      background-image: url("img/group/ALDE.png");
+    }
 
-  .verts-ale {
-    background-image: url("img/group/VERT.png");
-  }
+    .verts-ale {
+      background-image: url("img/group/VERT.png");
+    }
 
-  .efdd {
-    background-image: url("img/group/EFDD.png");
-  }
+    .efdd {
+      background-image: url("img/group/EFDD.png");
+    }
 
-  .gue-ngl {
-    background-image: url("img/group/GUE.png");
-  }
+    .gue-ngl {
+      background-image: url("img/group/GUE.png");
+    }
 
-  .enf {
-    background-image: url("img/group/ENF.png");
-  }
+    .enf {
+      background-image: url("img/group/ENF.png");
+    }
 
-  .ecr {
-    background-image: url("img/group/ECR.png");
-  }
+    .ecr {
+      background-image: url("img/group/ECR.png");
+    }
 
-  .na-ni {
-    background-image: url("img/group/NA.png");
-  }
+    .na-ni {
+      background-image: url("img/group/NA.png");
+    }
+
+    .austria {
+      background-image: url("img/country/at.svg");
+    }
+
+    .belgium {
+      background-image: url("img/country/be.svg");
+    }
+
+    .bulgaria {
+      background-image: url("img/country/bg.svg");
+    }
+
+    .croatia {
+      background-image: url("img/country/hr.svg");
+    }
+
+    .cyprus {
+      background-image: url("img/country/cy.svg");
+    }
+
+    .czech-republic {
+      background-image: url("img/country/cz.svg");
+    }
+
+    .denmark {
+      background-image: url("img/country/dk.svg");
+    }
+
+    .estonia {
+      background-image: url("img/country/ee.svg");
+    }
+
+    .finland {
+      background-image: url("img/country/fi.svg");
+    }
+
+    .france {
+      background-image: url("img/country/fr.svg");
+    }
+
+    .germany {
+      background-image: url("img/country/de.svg");
+    }
+
+    .greece {
+      background-image: url("img/country/el.svg");
+    }
+
+    .hungary {
+      background-image: url("img/country/hu.svg");
+    }
+
+    .ireland {
+      background-image: url("img/country/ie.svg");
+    }
+
+    .italy {
+      background-image: url("img/country/it.svg");
+    }
+
+    .latvia {
+      background-image: url("img/country/lv.svg");
+    }
+
+    .lithuania {
+      background-image: url("img/country/lt.svg");
+    }
+
+    .luxembourg {
+      background-image: url("img/country/lu.svg");
+    }
+
+    .malta {
+      background-image: url("img/country/mt.svg");
+    }
+
+    .netherlands {
+      background-image: url("img/country/nl.svg");
+    }
+
+    .poland {
+      background-image: url("img/country/pl.svg");
+    }
+
+    .portugal {
+      background-image: url("img/country/pt.svg");
+    }
+
+    .romania {
+      background-image: url("img/country/ro.svg");
+    }
+
+    .slovakia {
+      background-image: url("img/country/sk.svg");
+    }
+
+    .slovenia {
+      background-image: url("img/country/si.svg");
+    }
+
+    .spain {
+      background-image: url("img/country/es.svg");
+    }
+
+    .sweden {
+      background-image: url("img/country/se.svg");
+    }
+
+    .united-kingdom {
+      background-image: url("img/country/gb.svg");
+    }
 
     th.since {
       min-width: 60px
@@ -1297,7 +1399,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
-          <svg class="icon pull-left"><use href='#flag-{%=countries[o.constituency.country]%}'/></svg>
+            <span title='{%=o.constituency.country%}' class='img-rounded pull-left text-filter country-flag {%=o.constituency.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
             <span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
           </h4>
         </div>

@@ -1966,7 +1966,7 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 799,Jean,A.F. LECANUET,false,1979-07-17,1988-10-09,1920-03-04,fr,M,PPE,Union pour la démocratie française,,
 792,Silvio,LEGA,false,1979-07-17,1984-07-23,1945-02-04,it,M,PPE,Democrazia cristiana,,
 270,Silvio,LEONARDI,false,1969-01-21,1984-07-23,1914-07-16,it,M,COM,Partito comunista italiano,,
-72754,Innocenzo,LEONTINI,false,2008-06-23,2008-07-23,1959-05-25,it,M,PPE-DE,Forza Italia,,
+72754,Innocenzo,LEONTINI,true,2008-06-23,,1959-05-25,it,M,PPE,Forza Italia,,
 23794,Andrzej Zbigniew,LEPPER,false,2004-05-01,2004-07-19,1954-06-13,pl,M,NA/NI,Samoobrona RP,,
 312,Pietro,LEZZI,false,1976-10-15,1984-07-23,1922-12-15,it,M,SOC,Partito socialista italiano,,
 23852,Liene,LIEPIŅA,false,2004-05-01,2009-07-13,1957-07-26,lv,F,PPE-DE,Jaunais laiks,,
@@ -2845,6 +2845,7 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 190519,Caroline,NAGTEGAAL,true,2017-11-14,,1980-06-01,nl,F,ALDE,Volkspartij voor Vrijheid en Democratie,caroline.nagtegaal@europarl.europa.eu,
 192634,Giuseppe,FERRANDINO,true,2018-04-17,,1963-03-21,it,,S&D,Partito Democratico,,
 192298,Dobromir,SOŚNIERZ,true,2018-03-22,,1976-10-18,pl,M,NA/NI,Wolność,dobromir.sosnierz@europarl.europa.eu,d_sosnierz
+193879,Igor,GRÄZIN,true,2018-09-05,,1952-06-27,ee,,ALDE,Eesti Reformierakond,,
 124940,Patrick,O'FLYNN,true,2014-07-01,,1965-08-29,gb,M,EFDD,United Kingdom Independence Party,patrick.oflynn@europarl.europa.eu,oflynnmep
 125108,Louis,IDE,false,2014-07-01,2014-12-18,1973-07-03,be,,ECR,Nieuw-Vlaamse Alliantie,,
 1849,Sylvia-Yvonne,KAUFMANN,true,1999-07-20,,1955-01-23,de,F,S&D,Sozialdemokratische Partei Deutschlands,sylvia-yvonne.kaufmann@europarl.europa.eu,kaufmannsylvia
@@ -2942,9 +2943,10 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 189525,Asim,ADEMOV,true,2017-09-14,,1968-12-03,bg,M,PPE,Citizens for European Development of Bulgaria,asim.ademov@europarl.europa.eu,ademovasim
 190464,Thomas,WAITZ,true,2017-11-10,,1973-05-16,at,M,Verts/ALE,Die Grünen - Die Grüne Alternative,thomas.waitz@ep.europa.eu,
 190517,Martin,SCHIRDEWAN,true,2017-11-08,,1975-07-12,de,M,GUE/NGL,DIE LINKE.,martin.schirdewan@europarl.europa.eu,schirdewan
-193706,Giovanni,MICCICHÈ,true,2018-07-19,,1954-04-01,it,,PPE,Forza Italia,,
 193292,Tilly,METZ,true,2018-06-20,,1967-05-26,lu,,Verts/ALE,Déi Gréng - Les Verts,tilly.metz@europarl.europa.eu,
 192635,Danilo Oscar,LANCINI,true,2018-04-17,,1965-10-15,it,,ENF,Lega Nord,,
+193419,Christophe,HANSEN,true,2018-09-02,,1982-02-21,lu,,PPE,Parti chrétien social luxembourgeois,,
+193706,Giovanni,MICCICHÈ,false,2018-07-19,2018-08-19,1954-04-01,it,,PPE,Forza Italia,,
 125062,Georgios,KATROUGKALOS,false,2014-07-01,2015-01-26,1963-03-27,gr,,GUE/NGL,Coalition of the Radical Left, ,
 125036,Pablo,ECHENIQUE,false,2014-07-01,2015-03-14,1978-08-28,es,M,GUE/NGL,PODEMOS,,
 37448,Eduard-Raul,HELLVIG,false,2007-01-01,2015-03-01,1974-10-27,ro,M,PPE,Partidul Naţional Liberal,,
@@ -2971,7 +2973,7 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 1909,Bernd,LANGE,true,1994-07-19,,1955-11-14,de,M,S&D,Sozialdemokratische Partei Deutschlands,bernd.lange@europarl.europa.eu,berndlange
 111011,Anthea,McINTYRE,true,2011-12-01,,1954-06-29,gb,F,ECR,Conservative Party,anthea.mcintyre@europarl.europa.eu,
 124816,Julia,REDA,true,2014-07-01,,1986-11-30,de,F,Verts/ALE,Piratenpartei Deutschland,julia.reda@europarl.europa.eu,senficon
-1185,Viviane,REDING,false,1989-07-25,2018-09-01,1951-04-27,lu,F,PPE,Parti chrétien social luxembourgeois,viviane.reding@europarl.europa.eu,vivianeredingeu
+1185,Viviane,REDING,false,1989-07-25,2018-09-01,1951-04-27,lu,F,PPE,Parti chrétien social luxembourgeois,,
 96920,Kay,SWINBURNE,true,2009-07-14,,1967-06-08,gb,F,ECR,Conservative Party,kay.swinburne@europarl.europa.eu,
 96931,Maurice,PONGA,true,2009-07-14,,1947-06-05,fr,M,PPE,Les Républicains,maurice.ponga@europarl.europa.eu,mauriceponga
 125025,Marcel,de GRAAFF,true,2014-07-01,,1962-04-07,nl,M,ENF,Partij voor de Vrijheid,marcel.degraaff@europarl.europa.eu,
@@ -3171,7 +3173,7 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 125027,Esteban,GONZÁLEZ PONS,true,2014-07-01,,1964-08-21,es,M,PPE,Partido Popular,esteban.gonzalezpons@europarl.europa.eu,gonzalezpons
 124830,Marcus,PRETZELL,true,2014-07-01,,1973-07-16,de,M,ENF,Die blaue Partei,marcus.pretzell@europarl.europa.eu,
 1913,Evelyne,GEBHARDT,true,1994-07-19,,1954-01-19,de,F,S&D,Sozialdemokratische Partei Deutschlands,evelyne.gebhardt@europarl.europa.eu,
-96997,Burkhard,BALZ,true,2009-07-14,,1969-07-24,de,M,PPE,Christlich Demokratische Union Deutschlands,burkhard.balz@europarl.europa.eu,burkhardbalz
+96997,Burkhard,BALZ,false,2009-07-14,2018-08-31,1969-07-24,de,M,PPE,Christlich Demokratische Union Deutschlands,,
 124720,Tamás,MESZERICS,true,2014-07-01,,1964-12-04,hu,M,Verts/ALE,Lehet Más A Politika,tamas.meszerics@europarl.europa.eu,meszericst
 97022,Robert,ROCHEFORT,true,2009-07-14,,1955-09-19,fr,M,ALDE,Mouvement Démocrate,robert.rochefort@europarl.europa.eu,robertrochefort
 37312,Christel,SCHALDEMOSE,true,2006-10-15,,1967-08-04,dk,F,S&D,Socialdemokratiet,christel.schaldemose@europarl.europa.eu,schaldemosemep
