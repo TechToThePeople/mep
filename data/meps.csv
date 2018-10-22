@@ -13,7 +13,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 190519,Netherlands,Caroline,NAGTEGAAL,caroline.nagtegaal@europarl.europa.eu,1980-06-01,F,ALDE,Volkspartij voor Vrijheid en Democratie,+322 28 45221,08G209,ECON,ITRE|TAX3,D-IN,,tttp_190519,2017-11-14
 124902,Poland,Stanisław,ŻÓŁTEK,stanislawjozef.zoltek@europarl.europa.eu,1956-05-07,M,ENF,Kongres Nowej Prawicy,+322 28 45603,06E252,BUDG,JURI,,,tttp_124902,2014-07-01
 72754,Italy,Innocenzo,LEONTINI,innocenzo.leontini@europarl.europa.eu,1959-05-25,M,PPE,Forza Italia,+322 28 45188,10E254,TRAN,LIBE,DACP|DMER|DLAT,,tttp_72754,2008-06-23
-194658,Sweden,Anders,SELLSTRÖM,,1964-03-19,,PPE,Kristdemokraterna,+322 28 45155,07F136,DROI|AFET,TRAN,D-AF,,tttp_194658,2018-10-03
+194658,Sweden,Anders,SELLSTRÖM,,1964-03-19,M,PPE,Kristdemokraterna,+322 28 45155,07F136,DROI|AFET,TRAN,D-AF,,tttp_194658,2018-10-03
 124940,United Kingdom,Patrick,O'FLYNN,patrick.oflynn@europarl.europa.eu,1965-08-29,M,EFDD,United Kingdom Independence Party,+322 28 45337,03F163,,CULT,,oflynnmep,tttp_124940,2014-07-01
 1849,Germany,Sylvia-Yvonne,KAUFMANN,sylvia-yvonne.kaufmann@europarl.europa.eu,1955-01-23,F,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45788,12G217,JURI,LIBE|AFCO,D-JP,KaufmannSylvia,tttp_1849,1991-01-20
 124839,Germany,Arne,LIETZ,arne.lietz@europarl.europa.eu,1976-07-23,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45296,12G146,AFET|DEVE,SEDE,D-IL|DKOR,ArneLietz,tttp_124839,2014-07-01
@@ -22,7 +22,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 124945,United Kingdom,Margot,PARKER,margot.parker@europarl.europa.eu,1943-07-24,F,EFDD,United Kingdom Independence Party,+322 28 45182,03F265,FEMM,LIBE,,MargotLJParker,tttp_124945,2014-07-01
 188624,United Kingdom,Wajid,KHAN,wajid.khan@europarl.europa.eu,1979-10-15,M,S&D,Labour Party,+322 28 45437,13G342,DROI|AFET,BUDG|SEDE,DARP,https://twitter @wajid4europe ,tttp_188624,2017-06-29
 193269,Finland,Mirja,VEHKAPERÄ,mirja.vehkapera@europarl.europa.eu,1976-04-06,F,ALDE,Suomen Keskusta,+322 28 45133,08H349,DEVE,AFET,D-RU,,tttp_193269,2018-06-12
-193879,Estonia,Igor,GRÄZIN,igor.grazin@europarl.europa.eu,1952-06-27,,ALDE,Eesti Reformierakond,+322 28 45479,08G153,ITRE,AFET,,,tttp_193879,2018-09-05
+193879,Estonia,Igor,GRÄZIN,igor.grazin@europarl.europa.eu,1952-06-27,M,ALDE,Eesti Reformierakond,+322 28 45479,08G153,ITRE,AFET,,,tttp_193879,2018-09-05
 125030,Netherlands,Annie,SCHREIJER-PIERIK,annie.schreijer-pierik@europarl.europa.eu,1953-02-17,F,PPE,Christen Democratisch Appèl,+322 28 45538,08E253,PECH|ENVI,AGRI,DACP,AnnieSchreijer,tttp_125030,2014-07-01
 96839,Germany,Kerstin,WESTPHAL,kerstin.westphal@europarl.europa.eu,1962-09-11,F,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45534,12G355,REGI,IMCO,DEEA,WestphalKerstin/media,tttp_96839,2009-07-14
 4267,Germany,Udo,BULLMANN,udo.bullmann@europarl.europa.eu,1956-06-08,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45342,05K002,,,D-BR|DLAT|DMER,UdoBullmann,tttp_4267,1999-07-20
@@ -526,8 +526,8 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 186884,Germany,Arndt,KOHN,arndt.kohn@europarl.europa.eu,1980-09-03,M,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45869,12G253,CONT,IMCO|REGI|TAX3,D-AL,,tttp_186884,2017-02-24
 183338,Sweden,Jakop,DALUNDE,jakop.dalunde@europarl.europa.eu ,1984-02-02,M,Verts/ALE,Miljöpartiet de gröna,+322 28 45752,04E202,ITRE,TRAN|AFET,DMED,,tttp_183338,2016-06-07
 188445,Netherlands,André,ELISSEN,andre.elissen@europarl.europa.eu,1960-02-12,M,ENF,Partij voor de Vrijheid,+322 28 45814,07M101,BUDG|FEMM,TRAN,D-AF|DCAR,,tttp_188445,2017-06-13
-193419,Luxembourg,Christophe,HANSEN,christophe.hansen@europarl.europa.eu,1982-02-21,,PPE,Parti chrétien social luxembourgeois,+322 28 45460,11E210,INTA,ENVI,DCAR,CHansenEU,tttp_193419,2018-09-02
-194391,Germany,Stefan,GEHROLD,stefan.gehrold@europarl.europa.eu,1965-11-14,,PPE,Christlich Demokratische Union Deutschlands,+322 28 45119,15E140,ECON,TRAN|DEVE,ASEAN,,tttp_194391,2018-09-20
+193419,Luxembourg,Christophe,HANSEN,christophe.hansen@europarl.europa.eu,1982-02-21,M,PPE,Parti chrétien social luxembourgeois,+322 28 45460,11E210,INTA,ENVI,DCAR,CHansenEU,tttp_193419,2018-09-02
+194391,Germany,Stefan,GEHROLD,stefan.gehrold@europarl.europa.eu,1965-11-14,M,PPE,Christlich Demokratische Union Deutschlands,+322 28 45119,15E140,ECON,TRAN|DEVE,ASEAN,,tttp_194391,2018-09-20
 125047,Spain,Paloma,LÓPEZ BERMEJO,paloma.lopez@europarl.europa.eu,1962-02-20,F,GUE/NGL,Izquierda Unida,+322 28 45495,02M013,ITRE,ECON|EMPL|TAX3,DMAS,palomalopezB,tttp_125047,2014-07-01
 125100,Portugal,Miguel,VIEGAS,miguel.viegas@europarl.europa.eu,1969-06-27,M,GUE/NGL,Partido Comunista Português,+322 28 45344,02M051,ECON,AGRI|CONT|TAX3,DMED,MiguelViegasPCP,tttp_125100,2014-07-01
 96668,Ireland,Seán,KELLY,sean.kelly@europarl.europa.eu,1952-04-26,M,PPE,Fine Gael Party,+322 28 45206,08F349,ITRE,INTA|PECH|PEST,D-IR,SeanKellyMEP,tttp_96668,2009-07-14
