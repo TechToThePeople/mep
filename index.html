@@ -61,7 +61,7 @@
     };
 
 
-    var data = null;
+    var data = null, candidates= [];
 
     function reset() {
       dc.filterAll();
@@ -226,6 +226,11 @@
         return d.Gender == "F"
       });
 
+      reducer.value("candidate").count(true).filter(function(d) {
+        return d.candidate;
+      });
+
+
       reducer.value("nb").count(true);
 
       for (var a in activitymap) {(function(a,n) {
@@ -283,6 +288,11 @@
           return d.value.woman.count;
         });
 
+      graphs.nbcandidates = dc.numberDisplay(".nbcandidates .nb")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.candidate.count;
+        });
       graphs.percentwomen = dc.numberDisplay(".nbwomen .percent")
         .group(group)
         .valueAccessor(function(d) {
@@ -301,6 +311,26 @@
         })(a,activitymap[a]);
       };
     }
+
+    function drawCandidate(dom) {
+      var graph = dc.pieChart(dom) //.radius(70);
+      var dim = ndx.dimension(function(d) {
+        return d.candidate ? d.candidate : false;
+      });
+
+      var group = dim.group().reduceSum(function(d) {return 1;});
+
+      d3.selectAll(".nbcandidates button").on("click",function(){
+        graph.filter(true);
+        dc.redrawAll();
+      });
+      return graph
+        .width(10)
+        .height(10)
+        .dimension(dim)
+        .group(group);
+    };
+
 
     function drawGender(dom) {
       var pie_gender = dc.pieChart(dom) //.radius(70);
@@ -441,7 +471,7 @@
           },
           function(d) {
             //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
-            return d.first_name + " " + d.last_name;
+            return d.candidate ? "<span title='Candidate 2019'>" + d.first_name + " <b>" + d.last_name +"</b></span>": d.first_name + " " + d.last_name;
           },
           function(d) {
             var t = "";
@@ -589,6 +619,9 @@
         var now = Date.now();
 
         data.forEach(function(e) {
+          if (candidates.indexOf(e.epid) !== -1) {
+            e.candidate = true;
+          }
           e.since = dateFormat.parse(e.since);
           if (e.Birth.date){
             e.birthdate = dateFormat.parse(e.Birth.date);
@@ -612,11 +645,11 @@
      //      graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
+      graphs.candidate = drawCandidate(".nbcandidates .hidden");
       graphs.table = drawTable("#table");
       graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {setUrl()});
       summary.total = graphs.total.data();
-
       dc.renderAll();
     }
 
@@ -800,6 +833,7 @@
           <ul class="list-group">
             <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
             <li class="list-group-item nbwomen" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women</li>
+            <li class="list-group-item nbcandidates" title="candidates in the EP2019 elections"><span class="percent badge"></span><button class="btn-xs btn-primary"><span class="nb"></span> Candidates</button></li>
           <li class="list-group-item avg_age" title="average age"><span></span></li>
           <li class="list-group-item avg_since" title="how long in office"><span></span></li>
             <li class="list-group-item nbopinion"><span class="nb"></span> Opinions</li>
@@ -920,7 +954,7 @@
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2018-10-21</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2018-10-22</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -947,6 +981,14 @@
     });
 
     $(function() {
+      d3.csv("data/candidates.csv",function(csv){
+        csv.forEach(function(d){
+          candidates.push(+d.id);
+        });
+        if (data) {
+          console.log("update data from candidates, shouldn't happen");
+        }
+      });
       d3.json("data/meps.json", function(json) {
         data = json;
         draw(data);
