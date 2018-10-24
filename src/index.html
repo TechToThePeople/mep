@@ -600,20 +600,6 @@
 
     }
 
-    function draw(data) {
-
-      function pluck(d) {
-        var r=[];
-        if (!d) 
-          return r;
-        d.forEach(function(e){
-          if (e.role!="Substitute"){
-            r.push(e.name);
-          }
-        });
-        return r;
-      }
-
       function adjust(data) {
         var dateFormat = d3.time.format("%Y-%m-%d");
         var now = Date.now();
@@ -631,6 +617,20 @@
           e.delegation=pluck(e.delegations);
           e.role=pluck(e.staff);
         });
+      }
+
+    function draw(data) {
+
+      function pluck(d) {
+        var r=[];
+        if (!d) 
+          return r;
+        d.forEach(function(e){
+          if (e.role!="Substitute"){
+            r.push(e.name);
+          }
+        });
+        return r;
       }
 
       adjust(data);
@@ -986,6 +986,7 @@
           candidates.push(+d.id);
         });
         if (data) {
+          adjust(data);
           console.log("update data from candidates, shouldn't happen");
         }
       });
