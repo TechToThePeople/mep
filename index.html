@@ -619,8 +619,6 @@
         });
       }
 
-    function draw(data) {
-
       function pluck(d) {
         var r=[];
         if (!d) 
@@ -632,6 +630,8 @@
         });
         return r;
       }
+
+    function draw(data) {
 
       adjust(data);
       ndx = crossfilter(data);
