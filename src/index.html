@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>MEPs</title>
-  <link rel="stylesheet" type="text/css" href="../build/css/all.css" />
-  <script type="text/javascript" src="../build/js/all.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="build/css/all.css" />
+  <script type="text/javascript" src="build/js/all.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
@@ -386,6 +386,9 @@
     };
 
     jQuery(function($) {
+      var t=$.urlParam("tweet");
+      if (t)
+        d3.select("#twitter-tpl").property("value",t);
       $(".btn-toggle-group .btn").click(function(e){
         $(this).addClass("btn-success disabled").removeClass("active");
         var g=graphs[$(this).parent().data("target")];
@@ -464,10 +467,15 @@
         })
         .columns([
             function(d) {
-            return '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
-              '<a title="' + d.email + '" href="mailto:' + d.email + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>' +
-              '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>' +
-              '</div>';
+              console.log(d);
+              var t= '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
+              '<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
+
+              if (d.Twitter)
+                t += '<button class="btn btn-default btn-twitter" title="Tweet"><svg class="icon"><use href="#icon-twitter"></use></svg></button>';
+
+              t += '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>';
+              return t+'</div>';
           },
           function(d) {
             //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
@@ -498,7 +506,10 @@
         ])
         .on("renderlet.detail", function(g) {
           // don't need it, taken care of by the tr one
-          //	g.selectAll(".btn-detail").on("click", function(d) {modal(d3.select(this).datum());});
+          g.selectAll(".btn-detail").on("click", function(d) {modal(d3.select(this.parentNode.parentNode).datum());});
+          g.selectAll(".btn-twitter").on("click", function(d) {
+            console.log(this.parentNode.parentNode);
+            tweet(d3.select(this.parentNode.parentNode).datum());});
           g.selectAll(".text-filter")
             .on("click", function(d) {
         var text = $(this).text();
@@ -507,10 +518,11 @@
         $("#input-filter").val(text).keyup();
                d3.event.stopPropagation();
             });
-          g.selectAll("td")
+/*          g.selectAll("td")
             .on("click", function(d) {
               modal(d3.select(this).datum());
             });
+          */
         })
         .on("renderlet.hide", function(g) {
           g.selectAll("tbody").attr("class", "collapse in");
@@ -780,6 +792,20 @@
       };
       window.open(uri + base64(format(template, ctx)));
     }
+
+    function tweet(d){
+      var t=d3.select("#twitter-tpl").property("value");
+      if (t.indexOf("{mep}") !== -1)
+        t=t.replace("{mep}","@"+d.Twitter);
+      else 
+        t = ".@"+d.Twitter+" "+t;
+      if (d.Twitter) {
+        var url="https://twitter.com/intent/tweet?text="+encodeURIComponent(t);
+//        url = url.replace(/#/g, '%23');
+        var win=window.open(url,'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+      };
+    };
+
   </script>
 
 
@@ -819,6 +845,9 @@
 
   <div class="container-fluid">
     <h1 class="page-header hidden">Members of the European parliament</h1>
+      <div class="row"><div class="col-xs-12">
+        <input id="twitter-tpl" value=".{mep}, do the right thing">
+      </div></div>
     <div id="stat" class="row collapse in">
       <div class="alert alert-info">
         <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
@@ -954,7 +983,7 @@
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on $UPDATE_DATE</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2018-10-25</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -981,7 +1010,7 @@
     });
 
     $(function() {
-      d3.csv("../data/candidates.csv",function(csv){
+      d3.csv("data/candidates.csv",function(csv){
         csv.forEach(function(d){
           candidates.push(+d.id);
         });
@@ -990,11 +1019,11 @@
           console.log("update data from candidates, shouldn't happen");
         }
       });
-      d3.json("../data/meps.json", function(json) {
+      d3.json("data/meps.json", function(json) {
         data = json;
         draw(data);
       });
-      d3.json("../data/abbreviations.json", function(json) {
+      d3.json("data/abbreviations.json", function(json) {
         abbreviations = json;
       });
     });
@@ -1011,6 +1040,7 @@
 
   <style>
 
+.icon {width:16px;height:16px;}
 .d3-tip {font-weight:normal;}
 
 .chair, .vice-chair {font-weight:bold;}
@@ -1453,7 +1483,7 @@
             </div>
             <div class="col-md-9 main">
               <dl class="dl-horizontal">
-                {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.constituency.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.constituency.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
+                {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.constituency.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.constituency.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.Twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
               </dl>
               <dl class="dl-horizontal">
               {% include('dtd', {dt: "Rapporteur of", dd:o.activities.REPORT}); %} {% include('dtd', {dt: "Motions", dd:o.activities.MOTION}); %} {% include('dtd', {dt: "Shadow rapporteur", dd:o.activities['REPORT-SHADOW']}); %} {% include('dtd', {dt: "Opinions", dd:o.activities.COMPARL}); %} {% include('dtd', {dt: "Opinion shadow", dd:o.activities['OPINION-SHADOW']}); %} {% include('dtd', {dt: "Declarations", dd:o.activities.WECL}); %} {% include('dtd', {dt: "Questions", dd:o.activities.QP}); %} {% include('dtd', {dt: "Speeches", dd:o.activities.CRE}); %}
@@ -1472,6 +1502,10 @@
       </div>
 
   </style>
+<svg class="d-none" id="icons">
+<symbol id="icon-twitter" viewBox="0 0 24 24">
+<path fill="#1DA1F2" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+</symbol>
+</svg>
 </body>
-
-</html>
+T</html>
