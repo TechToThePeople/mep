@@ -2931,7 +2931,6 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 185628,John,PROCTER,true,2016-11-17,,,gb,M,ECR,Conservative Party,john.procter@europarl.europa.eu,
 90110,Carolina,PUNSET,true,2016-02-03,,1971-01-05,es,F,ALDE,Ciudadanos – Partido de la Ciudadanía,carolina.punset@europarl.europa.eu,carolinapunset
 28331,Jaromír,KOHLÍČEK,true,2004-07-20,,1953-02-23,cz,M,GUE/NGL,Komunistická strana Čech a Moravy,jaromir.kohlicek@ep.europa.eu,
-188721,Marie-Pierre,VIEU,true,2017-06-19,,1967-02-01,fr,F,GUE/NGL,Front de Gauche,marie-pierre.vieu@europarl.europa.eu,
 185340,Ivica,TOLIĆ,true,2016-10-24,,1968-09-01,hr,M,PPE,Hrvatska demokratska zajednica,ivica.tolic@europarl.europa.eu,
 133316,Karoline,GRASWANDER-HAINZ,true,2015-07-09,,1974-02-02,at,F,S&D,Sozialdemokratische Partei Österreichs,karoline.graswander-hainz@europarl.europa.eu ,
 124963,Julie,WARD,true,2014-07-01,,1957-03-07,gb,F,S&D,Labour Party,julie.ward@europarl.europa.eu,julie4nw
@@ -3263,6 +3262,7 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 193273,Romeo,FRANZ,true,2018-07-03,,1966-10-28,de,,Verts/ALE,Bündnis 90/Die Grünen,romeo.franz@europarl.europa.eu,
 192634,Giuseppe,FERRANDINO,true,2018-04-17,,1963-03-21,it,,S&D,Partito Democratico,giuseppe.ferrandino@europarl.europa.eu,
 4338,Thierry,CORNILLET,true,1999-07-20,,1951-07-23,fr,M,ALDE,Mouvement Radical,thierry.cornillet@europarl.europa.eu,
+188721,Marie-Pierre,VIEU,true,2017-06-19,,1967-02-01,fr,F,GUE/NGL,Front de Gauche,marie-pierre.vieu@europarl.europa.eu,
 124856,Ignazio,CORRAO,true,2014-07-01,,1984-01-14,it,M,EFDD,Movimento 5 Stelle,ignazio.corrao@europarl.europa.eu,
 124731,Jérôme,LAVRILLEUX,true,2014-07-01,,1969-09-19,fr,M,PPE,-,jerome.lavrilleux@europarl.europa.eu,jlavrilleux
 96956,Julie,GIRLING,true,2009-07-14,,1956-12-21,gb,F,PPE,Conservative Party,julie.girling@europarl.europa.eu,juliegirling
@@ -3395,7 +3395,7 @@ epid,firstname,lastname,active,start,end,birthdate,country,gender,eugroup,party,
 96825,Norica,NICOLAI,true,2009-07-14,,1958-01-27,ro,F,ALDE,ALDE Romania,norica.nicolai@europarl.europa.eu,norica_nicolai
 124740,Joëlle,BERGERON,true,2014-07-01,,1949-06-28,fr,F,EFDD,Sans étiquette,joelle.bergeron@europarl.europa.eu,
 124773,Jean,ARTHUIS,true,2014-07-01,,1944-10-07,fr,M,ALDE,Union des Démocrates et Indépendants,jean.arthuis@europarl.europa.eu,jeanarthuis 
-21331,Sylvie,GODDYN,true,2014-07-01,,1964-06-24,fr,F,ENF,Rassemblement national,sylvie.goddyn@europarl.europa.eu,
+21331,Sylvie,GODDYN,true,2014-07-01,,1964-06-24,fr,F,EFDD,Rassemblement national,sylvie.goddyn@europarl.europa.eu,
 96857,Cătălin Sorin,IVAN,true,2009-07-14,,1978-12-23,ro,M,NA/NI,Independent,catalin-sorin.ivan@europarl.europa.eu,catalin_ivan
 28226,Christian,EHLER,true,2004-07-20,,1963-08-17,de,M,PPE,Christlich Demokratische Union Deutschlands,christian.ehler@europarl.europa.eu,
 129407,Enrique,CALVET CHAMBON,true,2014-11-20,,1950-10-28,es,M,ALDE,Independiente,enrique.calvetchambon@europarl.europa.eu,enriquecalvet
