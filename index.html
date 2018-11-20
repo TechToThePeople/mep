@@ -411,7 +411,6 @@
       });
       $(".resetall").click(reset);
       //        $(".summary_total").text(formatNumber(summary.total));
-      $("#input-filter").val($.urlParam("q")).keyup(); //if channel param, filter
       $("#dropdown-committee a").click(function() {
         $("#input-filter").val($(this).text()).keyup();
       });
@@ -467,7 +466,6 @@
         })
         .columns([
             function(d) {
-              console.log(d);
               var t= '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
               '<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
 
@@ -663,6 +661,7 @@
       graphs.total.on("postRedraw", function() {setUrl()});
       summary.total = graphs.total.data();
       dc.renderAll();
+      $("#input-filter").val($.urlParam("q")).keyup();
     }
 
     function drawRow(dom,attr) {
