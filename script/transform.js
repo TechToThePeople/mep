@@ -11,6 +11,7 @@ var head = ['epid', 'country', 'first_name', 'last_name', 'email', 'birthdate', 
 
 var abbreviations={};
 var delegations = require('../data/delegations.json');
+var country2iso= require('../data/country2iso.json');
 delegations.DLAT = "Euro-Latin American Parliamentary Assembly";
 delegations.DCAS = "EU-Kazakhstan";
 delegations.ASEAN = "ASEAN";
@@ -186,6 +187,7 @@ function transform(d) {
   }
   activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
+  d.constituency.country = country2iso[d.constituency.country];
   if (d.constituency && d.constituency.start)
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
   if (d.Twitter && d.Twitter.indexOf(".com/") !== -1) {
