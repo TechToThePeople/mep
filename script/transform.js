@@ -45,7 +45,7 @@ function indexepnews (epnews){
   epnews.items.map(function(d){
     var sm={}
     if (d.socialMediaSources.twitter){
-      sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*twitter.com\/[|\#\!\/]/g,"");
+      sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*\/(.*)\//g,"");
     console.log(d.socialMediaSources.twitter.feedUrl,sm.twitter);
     }
       // todo: regex ".*twitter.com/"
