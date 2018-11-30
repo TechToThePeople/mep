@@ -36,8 +36,26 @@ const JSONStream = require('JSONStream');
 const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
 
 var mepid= require('../data/mepid.json'); // direct from EP site, for QA
+var epnews= require('../data/epnewshub.json'); // direct from EP site, for QA
 var csvparse=require('csv-parse/lib/sync.js');
 var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true}); // fixing manually the missing genders
+
+function indexepnews (epnews){
+  var meps={};
+  epnews.items.map(function(d){
+    var sm={}
+    if (d.socialMediaSources.twitter){
+      sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*twitter.com\/[|\#\!\/]/g,"");
+    console.log(d.socialMediaSources.twitter.feedUrl,sm.twitter);
+    }
+      // todo: regex ".*twitter.com/"
+    if (d.socialMediaSources.facebook)
+      sm.facebook=d.socialMediaSources.facebook.feedUrl;
+    if (sm.twitter || sm.facebook)
+      meps[d.codictId]=sm;
+  });
+  return meps;
+}
 
 function isActive (id) {return mepid.find(o => o.id === id);}
 
@@ -169,6 +187,12 @@ function transform(d) {
   if (Array.isArray(d.Twitter)) {
     d.Twitter = d.Twitter[0]
   };
+  if (d.Twitter)
+    d.Twitter=d.Twitter.replace(/.*twitter.com\//ig,"");
+  if (epnews[d.epid] && epnews[d.epid].twitter) {
+    console.log(epnews[d.epid].twitter,d.Twitter);
+    d.Twitter=epnews[d.epid].twitter;
+  };
   if (d.Birth) {
     d.Birth.date = d.Birth.date.replace("T00:00:00", "");
   } else {
@@ -190,11 +214,6 @@ function transform(d) {
   d.constituency.country = country2iso[d.constituency.country];
   if (d.constituency && d.constituency.start)
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
-  if (d.Twitter && d.Twitter.indexOf(".com/") !== -1) {
-    d.Twitter=d.Twitter.substring(d.Twitter.indexOf(".com/")+5);
-    var param=d.Twitter.indexOf("?lang=");
-    if (param !== -1) d.Twitter=d.Twitter.substring(0,param);
-  }
   return d;
 }
 
@@ -291,6 +310,7 @@ function write(options = {
 }
 
 if (require.main === module) {
+  epnews = indexepnews (epnews);
   write();
 } else {
   exports.write = write;

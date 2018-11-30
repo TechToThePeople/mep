@@ -45,7 +45,9 @@ var paths = {
 
 gulp.task('download', function() {
   var files = [{file: "mepid.json",url:"http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term="},
-    {file:"ep_meps_current.json.xz",url:"http://parltrack.euwiki.org/dumps/ep_meps_current.json.xz"}];
+    {file:"ep_meps_current.json.xz",url:"http://parltrack.euwiki.org/dumps/ep_meps_current.json.xz"},
+    {file:"epnewshub.json",url:"http://www.epnewshub.eu/newshub/rest/contributors/find?limit=900&cType=mep"}
+  ];
   return download(files)
     .pipe(gulp.dest('data'));
 });
