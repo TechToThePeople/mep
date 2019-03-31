@@ -1,6 +1,6 @@
 'use strict';
 const   file = require("fs");
-const countries = JSON.parse(file.readFileSync("./data/name2iso.json"));
+const countries = JSON.parse(file.readFileSync("./data/country2iso.json"));
 var finished = function(n) {
   console.log("Processed " + n)
 };
@@ -14,7 +14,7 @@ const through2 = require('through2')
 const JSONStream = require('JSONStream');
 const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
 
-var mepid= require('../data/mepid.json'); // direct from EP site, for QA
+var mepid= require('../data/mepid.json'); // direct from EP site, for QA, needs to run scripts/st_mep.json
 var csvparse=require('csv-parse/lib/sync.js');
 
 function isActive (id) {return mepid.find(o => o.id === id);}
@@ -46,6 +46,7 @@ function transform(d) {
     console.log("missing country "+d.Constituencies[0].country);
   }
   var getFromTo= function(){
+  console.log(d.Constituencies);
     d.Constituencies.forEach(function(c){
       if (!c) return;// deal with incomplete
       if (c.start < t.start) t.start = c.start;

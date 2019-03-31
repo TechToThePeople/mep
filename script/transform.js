@@ -46,7 +46,6 @@ function indexepnews (epnews){
     var sm={}
     if (d.socialMediaSources.twitter){
       sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*\/(.*)\//g,"");
-    console.log(d.socialMediaSources.twitter.feedUrl,sm.twitter);
     }
       // todo: regex ".*twitter.com/"
     if (d.socialMediaSources.facebook)
@@ -190,7 +189,6 @@ function transform(d) {
   if (d.Twitter)
     d.Twitter=d.Twitter.replace(/.*twitter.com\//ig,"");
   if (epnews[d.epid] && epnews[d.epid].twitter) {
-    console.log(epnews[d.epid].twitter,d.Twitter);
     d.Twitter=epnews[d.epid].twitter;
   };
   if (d.Birth) {
@@ -212,6 +210,8 @@ function transform(d) {
   activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
   d.constituency.country = country2iso[d.constituency.country];
+  if (!d.constituency.country) 
+    console.log(d);
   if (d.constituency && d.constituency.start)
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
   return d;
