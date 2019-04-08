@@ -111,7 +111,7 @@ function transform(d) {
     if (typeof options.abbr == "string") {
       var k=options.abbr;
       options.abbr = function(d){
-        return d[k] || abbr[d.Organization] || "??";
+        return d.abbr || d[k] || abbr[d.Organization] || "??";
       };
     } else {
       if (options.abbr) {
@@ -127,6 +127,8 @@ function transform(d) {
       if (item.end !== '9999-12-31T00:00:00') return;
       if (options.abbr) {
         abbreviations[options.abbr(item)]= item[options.long];
+        if (options.abbr(item) =="??")
+          console.log(item);
         var i = {
           start:item.start.replace("T00:00:00", ""),
           role:item.role,
