@@ -1,0 +1,4 @@
+parser: parse5
+overrides:
+- files: "*.html"
+  parser: parse4

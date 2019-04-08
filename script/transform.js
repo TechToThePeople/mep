@@ -297,7 +297,7 @@ function write(options = {
   fs.createReadStream(options.from).pipe(stream.input)
   var writer = fs.createWriteStream(options.json);
   const csvwriter = require('csv-write-stream')({headers: head});
-//  csvwriter.pipe(fs.createWriteStream(options.csv));
+  csvwriter.pipe(fs.createWriteStream(options.csv));
   stream.output.pipe(simp);
   simp.pipe(csv).pipe(csvwriter).pipe(fs.createWriteStream(options.csv));
   simp.pipe(JSONStream.stringify()).pipe(writer);

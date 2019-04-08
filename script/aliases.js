@@ -41,17 +41,23 @@ function transform(d) {
     console.log(d);
     return;
   }
-  var t={start:d.Constituencies[0].start,end:d.Constituencies[0].end,country:countries[d.Constituencies[0].country],party:d.Constituencies[0].party};
+  //we start with the first constituency, it will be adjusted later if needed
+  var t={start:Date(),end:d.Constituencies[0].end,country:countries[d.Constituencies[0].country],party:d.Constituencies[0].party};
   if (!t.country) {
-    console.log("missing country "+d.Constituencies[0].country);
+    console.log("missing country "+d.Constituencies[0]);
   }
-  var getFromTo= function(){
-  console.log(d.Constituencies);
+  var setFromTo= function(){
     d.Constituencies.forEach(function(c){
       if (!c) return;// deal with incomplete
       if (c.start < t.start) t.start = c.start;
-      if (c.end > t.end) t.end = d.end;
+      if (c.end > t.end) t.end = c.end;
     });
+    t.start=t.start.replace("T00:00:00", "");
+    if (!t.end) {
+      console.log(t);
+      process.exit(1);
+    }
+    t.end= t.active ? "" : t.end.replace("T00:00:00", "");
   }
 
   t.birthdate=d.Birth ? d.Birth.date.replace("T00:00:00", "") : null;
@@ -65,9 +71,7 @@ function transform(d) {
   if (Array.isArray(t.eugroup)){
     t.eugroup = t.eugroup.join("/");
   }
-  getFromTo();
-  t.start=t.start.replace("T00:00:00", "");
-  t.end= t.active ? "" : t.end.replace("T00:00:00", "");
+  setFromTo();
   t.twitter= "";
   if (d.Twitter && d.Twitter[0].indexOf(".com/") !== -1) {
     t.twitter=d.Twitter[0].substring(d.Twitter[0].indexOf(".com/")+5);

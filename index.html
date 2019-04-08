@@ -1074,10 +1074,8 @@ function download_excel() {
           console.log("update data from candidates, shouldn't happen");
         }
       });
-      d3.json("data/meps.json", function(data) {
-        data.forEach(function(d){
-          if (!d.constituency.country) console.log(d);
-        });
+      d3.json("data/meps.json", function(json) {
+        data = json;
         draw(data);
       });
       d3.json("data/abbreviations.json", function(json) {

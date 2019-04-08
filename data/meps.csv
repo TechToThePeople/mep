@@ -746,6 +746,6 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 112748,hr,Biljana,BORZAN,biljana.borzan@europarl.europa.eu,1971-11-29,F,S&D,Socijaldemokratska partija Hrvatske,+322 28 45932,09G318,??,??|??,D-MZ,BiljanaBorzan,tttp_112748,2012-04-01
 96673,se,Olle,LUDVIGSSON,olle.ludvigsson@europarl.europa.eu,1948-10-28,M,S&D,Arbetarepartiet- Socialdemokraterna,+322 28 45442,14G257,??,??|TAX3,D-RS,olleludvigsson,tttp_96673,2009-07-14
 188254,fr,Patricia,LALONDE,Patricia.Lalonde@europarl.europa.eu,1952-08-28,F,ALDE,Union des Démocrates et Indépendants,+322 28 45297,09G116,??,??,D-US|DMAS|DMED,patricialalond2,tttp_188254,2017-05-18
-196042,lv,Aleksejs,LOSKUTOVS,,1962-08-22,,PPE,"Partija ""VIENOTĪBA""",+322 28 45205,14E206,??|TAX3,??,D-US,loskutovs,tttp_196042,2019-01-24
-195454,be,Ralph,PACKET,,1990-07-17,,ECR,Nieuw-Vlaamse Alliantie,+322 28 45718,04M065,??,??|??,ASEAN,,tttp_195454,2018-11-22
-195912,de,Babette,WINTER,babette.winter@europarl.europa.eu,1964-06-06,,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45267,12G346,??,??|??,D-IN,babettewintereu,tttp_195912,2019-01-10
+196042,lv,Aleksejs,LOSKUTOVS,,1962-08-22,M,PPE,"Partija ""VIENOTĪBA""",+322 28 45205,14E206,??|TAX3,??,D-US,loskutovs,tttp_196042,2019-01-24
+195454,be,Ralph,PACKET,,1990-07-17,M,ECR,Nieuw-Vlaamse Alliantie,+322 28 45718,04M065,??,??|??,ASEAN,,tttp_195454,2018-11-22
+195912,de,Babette,WINTER,babette.winter@europarl.europa.eu,1964-06-06,F,S&D,Sozialdemokratische Partei Deutschlands,+322 28 45267,12G346,??,??|??,D-IN,babettewintereu,tttp_195912,2019-01-10

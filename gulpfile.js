@@ -95,6 +95,21 @@ gulp.task('decompress', function() {
   return inFile.pipe(decompression).pipe(outFile);
 });
 
+gulp.task("alias", function(done) {
+  var aliases = require("./script/aliases.js");
+  var cb = function() {
+    console.log("finished " + transform.processed);
+    done();
+  };
+  aliases.write({
+  from: "data/ep_meps_current.json",
+  csvaliases: "data/meps-aliases.csv",
+  csvall: "data/meps.all.csv",
+  json: 'data/meps-aliases.json'
+}, cb);
+});
+
+
 gulp.task("transform", function(done) {
   var cb = function() {
     console.log("finished " + transform.processed);
