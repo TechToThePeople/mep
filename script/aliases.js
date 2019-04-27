@@ -6,7 +6,7 @@ var finished = function(n) {
 };
 var total = 0;
 const head = ['epid', 'alias','active'];
-const headall = ['epid','firstname','lastname','active','start','end','birthdate','country','gender','eugroup','party','email','twitter','term'];
+const headall = ['epid','firstname','lastname','active','start','start8','end','birthdate','country','gender','eugroup','party','email','twitter','term'];
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
@@ -16,6 +16,12 @@ const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
 
 var mepid= require('../data/mepid.json'); // direct from EP site, for QA, needs to run scripts/st_mep.json
 var csvparse=require('csv-parse/lib/sync.js');
+var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true});
+  function fixGender (id) {
+    var g=nogender.find(o => o.epid === id);
+    return g? g.gender: '';
+  }
+
 
 function isActive (id) {return mepid.find(o => o.id === id);}
 
@@ -60,6 +66,10 @@ function transform(d) {
     var last = 0;
     d.Constituencies.forEach(function(c,i){
       if (!c) return;// deal with incomplete
+      if (c.term==8) {
+        if (!t.start8 || c.start < t.start8)
+          t.start8 = c.start.replace("T00:00:00", "");
+      }
       if (c.start < t.start) t.start = c.start;
       if (c.end > t.end) {
         t.end = c.end;
@@ -71,13 +81,16 @@ function transform(d) {
       console.log(t);
       process.exit(1);
     }
-    t.end= d.active ? "" : t.end.replace("T00:00:00", "");
+    //t.end= d.active ? "" : t.end.replace("T00:00:00", "");
+    t.end= t.end == "9999-12-31T00:00:00"? "": t.end.replace("T00:00:00", "");
     t.party=d.Constituencies[last].party;
     t.country=countries[d.Constituencies[last].country];
     t.term=d.Constituencies[last].term;
   }
 
   t.birthdate=d.Birth ? d.Birth.date.replace("T00:00:00", "") : null;
+  if (!d.Gender) d.Gender=fixGender(d.UserID);
+
   t.gender=d.Gender;
   t.active=d.active;
   t.aliases=d.Name.aliases;
@@ -109,6 +122,7 @@ function transform(d) {
   if (!t.country) {
     console.log("missing country "+d.Constituencies[0]);
   }
+//  if (t.epid==97025) console.log(d);
   return t;
 }
 
@@ -131,7 +145,7 @@ csv.on('end', () => {});
 var csvall = through2({
   objectMode: true
 }, function(mep, enc, callback) {
-  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter,mep.term]);
+  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.start8,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter,mep.term]);
   callback();
 });
 

@@ -1,14 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
-Rory PALMER,GB,190099,8,2017-10-03,,incoming,S&D,Labour Party
-Baroness Nosheena MOBARIK,GB,189391,8,2017-09-08,,incoming,ECR,Conservative Party
-Jonathan BULLOCK,GB,188733,8,2017-08-01,,incoming,EFDD,The Brexit Party
-John HOWARTH,GB,188636,8,2017-06-30,,incoming,S&D,Labour Party
-Wajid KHAN,GB,188624,8,2017-06-29,,incoming,S&D,Labour Party
-Rupert MATTHEWS,GB,188622,8,2017-06-29,,incoming,ECR,Conservative Party
-John FLACK,GB,188623,8,2017-06-28,,incoming,ECR,Conservative Party
-John PROCTER,GB,185628,8,2016-11-17,,incoming,ECR,Conservative Party
-Alex MAYER,GB,185637,8,2016-11-15,,incoming,S&D,Labour Party
-Daniel DALTON,GB,35135,8,2015-01-08,,incoming,ECR,Conservative Party
+Hannes HANSO,EE,197131,8,2019-04-04,,incoming,S&D,Sotsiaaldemokraatlik Erakond
 Aleksejs LOSKUTOVS,LV,196042,8,2019-01-24,,incoming,EPP,"Partija ""VIENOTĪBA"""
 Babette WINTER,DE,195912,8,2019-01-10,,incoming,S&D,Sozialdemokratische Partei Deutschlands
 Kārlis ŠADURSKIS,LV,111033,8,2018-11-28,,incoming,EPP,"Partija ""VIENOTĪBA"""
@@ -42,13 +33,19 @@ Nadja HIRSCH,DE,96872,8,2017-11-08,,incoming,ALDE,Freie Demokratische Partei
 Jörg MEUTHEN,DE,190518,8,2017-11-08,,incoming,EFDD,Alternative für Deutschland
 Martin SCHIRDEWAN,DE,190517,8,2017-11-08,,incoming,GUE/NGL,DIE LINKE.
 Wolf KLINZ,DE,28244,8,2017-11-06,,incoming,ALDE,Freie Demokratische Partei
-Ivari PADAR,EE,97025,8,2017-11-06,,incoming,S&D,Sotsiaaldemokraatlik Erakond
+Rory PALMER,GB,190099,8,2017-10-03,,incoming,S&D,Labour Party
 Lívia JÁRÓKA,HU,28141,8,2017-09-15,,incoming,EPP,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
 Asim ADEMOV,BG,189525,8,2017-09-14,,incoming,EPP,Citizens for European Development of Bulgaria
 Răzvan POPA,RO,189490,8,2017-09-13,,incoming,S&D,Partidul Social Democrat
+Baroness Nosheena MOBARIK,GB,189391,8,2017-09-08,,incoming,ECR,Conservative Party
 Jiří PAYNE,CZ,189507,8,2017-09-05,,incoming,EFDD,Strana svobodných občanů
+Jonathan BULLOCK,GB,188733,8,2017-08-01,,incoming,EFDD,The Brexit Party
 Dennis RADTKE,DE,188945,8,2017-07-24,,incoming,EPP,Christlich Demokratische Union Deutschlands
 France JAMET,FR,189065,8,2017-07-21,,incoming,ENF,Rassemblement national
+John HOWARTH,GB,188636,8,2017-06-30,,incoming,S&D,Labour Party
+Wajid KHAN,GB,188624,8,2017-06-29,,incoming,S&D,Labour Party
+Rupert MATTHEWS,GB,188622,8,2017-06-29,,incoming,ECR,Conservative Party
+John FLACK,GB,188623,8,2017-06-28,,incoming,ECR,Conservative Party
 Francis ZAMMIT DIMECH,MT,188906,8,2017-06-24,,incoming,EPP,Partit Nazzjonalista
 Christelle LECHEVALIER,FR,188718,8,2017-06-19,,incoming,ENF,Rassemblement national
 Marie-Pierre VIEU,FR,188721,8,2017-06-19,,incoming,GUE/NGL,Front de Gauche
@@ -59,6 +56,8 @@ Arndt KOHN,DE,186884,8,2017-02-24,,incoming,S&D,Sozialdemokratische Partei Deuts
 Peter KOUROUMBASHEV,BG,124857,8,2017-01-17,,incoming,S&D,-
 José Ignacio SALAFRANCA SÁNCHEZ-NEYRA,ES,2002,8,2017-01-03,,incoming,EPP,Partido Popular
 Jordi SOLÉ,ES,185974,8,2017-01-03,,incoming,Greens/EFA,Esquerra Republicana de Catalunya
+John PROCTER,GB,185628,8,2016-11-17,,incoming,ECR,Conservative Party
+Alex MAYER,GB,185637,8,2016-11-15,,incoming,S&D,Labour Party
 Tiemo WÖLKEN,DE,185619,8,2016-11-14,,incoming,S&D,Sozialdemokratische Partei Deutschlands
 Ivica TOLIĆ,HR,185340,8,2016-10-24,,incoming,EPP,Hrvatska demokratska zajednica
 Željana ZOVKO,HR,185341,8,2016-10-24,,incoming,EPP,Hrvatska demokratska zajednica
@@ -89,6 +88,7 @@ Miguel URBÁN CRESPO,ES,131507,8,2015-03-05,,incoming,GUE/NGL,PODEMOS
 Mihai ŢURCANU,RO,131750,8,2015-03-02,,incoming,EPP,Partidul Naţional Liberal
 Damiano ZOFFOLI,IT,131051,8,2015-02-18,,incoming,S&D,Partito Democratico
 Stelios KOULOGLOU,GR,130833,8,2015-01-27,,incoming,GUE/NGL,Coalition of the Radical Left
+Daniel DALTON,GB,35135,8,2015-01-08,,incoming,ECR,Conservative Party
 Anneleen VAN BOSSUYT,BE,117491,8,2015-01-08,,incoming,ECR,Nieuw-Vlaamse Alliantie
 Hilde VAUTMANS,BE,130100,8,2015-01-01,,incoming,ALDE,Open Vlaamse Liberalen en Democraten
 Andrey NOVAKOV,BG,107212,8,2014-11-24,,incoming,EPP,Citizens for European Development of Bulgaria
@@ -102,10 +102,12 @@ Inese VAIDERE,LV,28617,8,2014-11-01,,incoming,EPP,"Partija ""VIENOTĪBA"""
 Linnéa ENGSTRÖM,SE,128588,8,2014-10-08,,incoming,Greens/EFA,Miljöpartiet de gröna
 Tania GONZÁLEZ PEÑAS,ES,127330,8,2014-09-11,,incoming,GUE/NGL,PODEMOS
 Javier COUSO PERMUY,ES,125997,8,2014-07-15,,incoming,GUE/NGL,Independiente
+Ivari PADAR,EE,97025,8,2017-11-06,2019-04-03,incoming,S&D,Sotsiaaldemokraatlik Erakond
 Sander LOONES,BE,128717,8,2014-10-14,2018-11-11,incoming,ECR,Nieuw-Vlaamse Alliantie
 Giovanni MICCICHÈ,IT,193706,8,2018-07-19,2018-08-19,incoming,EPP,Forza Italia
 Lorenzo FONTANA,IT,96993,8,2014-07-11,2018-03-22,incoming,ENF,Lega Nord
 Hannu TAKKULA,FI,28316,8,2015-04-27,2018-02-28,incoming,ALDE,Suomen Keskusta
+Ivari PADAR,EE,97025,8,2017-11-06,2019-04-03,outgoing,S&D,Sotsiaaldemokraatlik Erakond
 Catherine STIHLER,GB,4545,8,2014-07-01,2019-01-31,outgoing,S&D,Labour Party
 Krišjānis KARIŅŠ,LV,96901,8,2014-07-01,2019-01-22,outgoing,EPP,"Partija ""VIENOTĪBA"""
 Jakob von WEIZSÄCKER,DE,124840,8,2014-07-01,2019-01-06,outgoing,S&D,Sozialdemokratische Partei Deutschlands
