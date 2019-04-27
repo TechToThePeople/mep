@@ -2940,7 +2940,7 @@ epid,firstname,lastname,active,start,start8,end,birthdate,country,gender,eugroup
 189525,Asim,ADEMOV,true,2017-09-14,2017-09-14,,1968-12-03,bg,M,PPE,Citizens for European Development of Bulgaria,asim.ademov@europarl.europa.eu,ademovasim,8
 190464,Thomas,WAITZ,true,2017-11-10,2017-11-10,,1973-05-16,at,M,Verts/ALE,Die Grünen - Die Grüne Alternative,thomas.waitz@ep.europa.eu,,8
 190517,Martin,SCHIRDEWAN,true,2017-11-08,2017-11-08,,1975-07-12,de,M,GUE/NGL,DIE LINKE.,martin.schirdewan@europarl.europa.eu,schirdewan,8
-193706,Giovanni,MICCICHÈ,false,2018-07-19,2018-07-19,2018-08-19,1954-04-01,it,,PPE,Forza Italia,,,8
+193706,Giovanni,MICCICHÈ,false,2018-07-19,2018-07-19,2018-08-19,1954-04-01,it,M,PPE,Forza Italia,,,8
 193080,Karine,GLOANEC MAURIN,true,2018-06-11,2018-06-11,,1958-01-11,fr,F,S&D,Parti socialiste,karine.gloanecmaurin@europarl.europa.eu,,8
 190799,Michael,DETJEN,true,2018-01-01,2018-01-01,,1958-04-28,de,M,S&D,Sozialdemokratische Partei Deutschlands,michael.detjen@europarl.europa.eu,,8
 191693,Elsi,KATAINEN,true,2018-03-01,2018-03-01,,1966-12-17,fi,F,ALDE,Suomen Keskusta,elsi.katainen@europarl.europa.eu,,8
@@ -3105,7 +3105,7 @@ epid,firstname,lastname,active,start,start8,end,birthdate,country,gender,eugroup
 33984,Ioan Mircea,PAŞCU,true,2005-09-26,2014-07-01,,1949-02-17,ro,M,S&D,Partidul Social Democrat,ioanmircea.pascu@europarl.europa.eu,ioanmirceapascu,8
 112611,Petri,SARVAMAA,true,2012-03-01,2014-07-01,,1960-09-15,fi,M,PPE,Kansallinen Kokoomus,petri.sarvamaa@europarl.europa.eu,petrisarvamaa,8
 124800,Flavio,ZANONATO,true,2014-07-01,2014-07-01,,1950-07-24,it,M,S&D,Articolo UNO – Movimento Democratico e Progressista,flavio.zanonato@europarl.europa.eu,flaviozanonato,8
-2327,Linda,McAVAN,true,1998-05-12,2014-07-01,,1962-12-02,gb,F,S&D,Labour Party,linda.mcavan@europarl.europa.eu,lindamcavanmep,8
+2327,Linda,McAVAN,true,1998-05-12,2014-07-01,2019-04-18,1962-12-02,gb,F,S&D,Labour Party,linda.mcavan@europarl.europa.eu,lindamcavanmep,8
 23699,Kateřina,KONEČNÁ,true,2003-04-23,2014-07-01,,1981-01-20,cz,F,GUE/NGL,Komunistická strana Čech a Moravy,katerina.konecna@europarl.europa.eu,,8
 96781,Danuta,JAZŁOWIECKA,true,2009-07-14,2014-07-01,,1957-05-19,pl,F,PPE,Platforma Obywatelska,danuta.jazlowiecka@europarl.europa.eu,djazlowiecka,8
 97017,Ulrike,LUNACEK,false,2009-07-14,2014-07-01,2017-11-08,1957-05-26,at,F,Verts/ALE,Die Grünen - Die Grüne Alternative,,,8
