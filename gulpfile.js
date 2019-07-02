@@ -50,7 +50,7 @@ gulp.task('download', function() {
     { file:"incoming.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml"},
     {file:"outgoing.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml"},
 
-//    {file:"ep_meps_current.json.xz",url:"http://parltrack.euwiki.org/dumps/ep_meps_current.json.xz"},
+    {file:"ep_meps_current.json.xz",url:"https://parltrack.org/dumps/ep_meps.json.xz"},
     {file:"epnewshub.json",url:"http://www.epnewshub.eu/newshub/rest/contributors/find?limit=900&cType=mep"}
   ];
   //run script to convert meps_str

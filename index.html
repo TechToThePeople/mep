@@ -43,23 +43,42 @@
 
     var committee_color = "#E1F5FE";//"#80cbc4";//"#e57373";
     var country_color = "#80cbc4";
-    var gender_color = ["#9575CD", "#FDD835", "#9575cd"];
+    var gender_color = ["gray", "#FDD835", "#9575CD"];
     var eu_groups = {
       "GUE/NGL": "#800c00",
       "S&D": "#c21200",
       "Verts/ALE": "#05a61e",
       "Greens/EFA": "#05a61e",
       "ALDE": "#ffc200",
+      "RE": "#ffc200",
       "EFDD": "#5eced6",
       "PPE": "#0a3e63",
       "EPP": "#0a3e63",
       "ECR": "#3086c2",
       "NA/NI": "#cccccc",
       "NA,NI": "#cccccc",
+      "NA": "#cccccc",
       "ENF": "#A1480D",
+      "ID": "#A1480D",
       "Array": "pink"
     };
 
+
+
+var iconify = function(name, prefix) {
+  prefix = prefix || "icon";
+  return (
+    '<svg class="icon" class="' +
+    name +
+    '"><title>' +
+    name +
+    '</title><use href="#' +
+    prefix +
+    "-" +
+    name +
+    '" /></svg>'
+  );
+};
 
     var data = null, candidates= [];
 
@@ -470,8 +489,12 @@
         })
         .columns([
             function(d) {
-              var t= '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
-              '<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
+              var t= '<div class="btn-group btn-group-sm">';
+              
+              if (d.phone)
+                t+= '<a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>';
+              if (d.mail)
+                t+='<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
 
               if (d.Twitter)
                 t += '<button class="btn btn-default btn-twitter" title="Tweet"><svg class="icon"><use href="#icon-twitter"></use></svg></button>';
@@ -493,6 +516,7 @@
             return t;
           },
           function(d) {
+            return iconify(d.constituency.country,"flag");
             return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
           },
           function(d) {
@@ -654,14 +678,14 @@
 
       drawNumbers(graphs);
       graphs.country = drawCountry(".country .panel-body");
-      graphs.committee = drawRow(".committee .graph","committee");
-      graphs.delegation = drawRow(".delegation .graph","delegation");
-      graphs.role = drawRow(".role .graph","role");
-      graphs.role.height(100);
-     //      graphs.age = drawAge(".age");
+//      graphs.committee = drawRow(".committee .graph","committee");
+//      graphs.delegation = drawRow(".delegation .graph","delegation");
+//      graphs.role = drawRow(".role .graph","role");
+//      graphs.role.height(100);
+//           graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
-      graphs.candidate = drawCandidate(".nbcandidates .hidden");
+//      graphs.candidate = drawCandidate(".nbcandidates .hidden");
       graphs.table = drawTable("#table");
       graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {setUrl()});
@@ -900,7 +924,7 @@ function download_excel() {
 
   <div class="container-fluid">
     <h1 class="page-header hidden">Members of the European parliament</h1>
-      <div class="row"><div class="col-xs-12">
+      <div class="row hidden"><div class="col-xs-12">
         <input id="twitter-tpl" value=".{mep}, do the right thing">
       </div></div>
     <div id="stat" class="row collapse in">
@@ -917,7 +941,7 @@ function download_excel() {
           <ul class="list-group">
             <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
             <li class="list-group-item nbwomen" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women</li>
-            <li class="list-group-item nbcandidates" title="candidates in the EP2019 elections"><span class="percent badge"></span><button class="btn-xs btn-primary"><span class="nb"></span> Candidates</button></li>
+            <li class="list-group-item newbies" title="percentage of new members"><span class="percent badge"></span><span class="nb"></span> Newbies</li>
           <li class="list-group-item avg_age" title="average age"><span></span></li>
           <li class="list-group-item avg_since" title="how long in office"><span></span></li>
             <li class="list-group-item nbopinion"><span class="nb"></span> Opinions</li>
@@ -1083,6 +1107,14 @@ function download_excel() {
       });
     });
 
+d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
+  if (error) throw error;
+  d3.select("body").append("svg").attr("id","flags").html(xml).classed("d-none",true);
+  d3.selectAll("#flags symbol").attr("fill","#000");
+  //document.body.appendChild(xml.documentElement);
+});
+
+
     jQuery.urlParam = function(name) {
       var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
       if (results == null) {
@@ -1198,7 +1230,7 @@ function download_excel() {
       background-image: url("img/group/S-D.png");
     }
 
-    .alde {
+    .alde,.re {
       background-image: url("img/group/ALDE.png");
     }
 
@@ -1206,7 +1238,7 @@ function download_excel() {
       background-image: url("img/group/VERT.png");
     }
 
-    .efdd {
+    .id, .efdd {
       background-image: url("img/group/EFDD.png");
     }
 
@@ -1563,4 +1595,4 @@ function download_excel() {
 </symbol>
 </svg>
 </body>
-T</html>
+</html>

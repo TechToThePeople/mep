@@ -174,11 +174,17 @@ function transform(d) {
   if (!d.Gender) d.Gender=fixGender(d.epid);
   delete d.UserID;
   delete d.Name;
-  delete d.Addresses.Postal;
-  delete d.Addresses.Strasbourg;
-  d.Addresses.Brussels.Office = d.Addresses.Brussels.Address.Office;
-  delete d.Addresses.Brussels.Address;
-  delete d.Addresses.Brussels.Fax;
+  try {
+    delete d.Addresses.Postal;
+    delete d.Addresses.Strasbourg;
+    d.Addresses.Brussels.Office = d.Addresses.Brussels.Address.Office;
+    delete d.Addresses.Brussels.Address;
+    delete d.Addresses.Brussels.Fax;
+  } catch (error){
+    console.error(error.message +":"+d.first_name +" "+d.last_name +" ["+d.epid);
+    d.Addresses={Brussels:{Phone:"",Office:""}};
+//    console.log(d);
+  }
   delete d.Photo; //"http://www.europarl.europa.eu/mepphoto/{{d.epid }}.jpg
   d.activities=countActivities(d.activities);
   //delete d.activities; // stuff might be to be kept there
