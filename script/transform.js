@@ -205,6 +205,9 @@ function transform(d) {
     d.Birth = {};//{date:null,place:null};
   }
   d.mail= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail;
+  if (!d.mail && !d.first_name.includes(" ") && !d.last_name.includes(" "))
+    d.mail = d.first_name.toLowerCase() + "." + d.last_name.toLowerCase() + "@ep.europa.eu";
+
   delete d.Mail;
   //delete d.Delegations;
   activeOnly("Delegations",{abbr:getDelegation});
