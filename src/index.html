@@ -43,7 +43,7 @@
 
     var committee_color = "#E1F5FE";//"#80cbc4";//"#e57373";
     var country_color = "#80cbc4";
-    var gender_color = ["gray", "#FDD835", "#9575CD"];
+    var gender_color = ["#FDD835", "#9575CD","gray"];
     var eu_groups = {
       "GUE/NGL": "#800c00",
       "S&D": "#c21200",
@@ -157,6 +157,7 @@ var iconify = function(name, prefix) {
       graph
         .width(0)
         .height(0)
+        .ordering(function(d){return d.key;})
         .colorCalculator(function(d, i) {
           return eu_groups[d.key];
           //return color(d.value.score/d.value.count);
@@ -363,14 +364,14 @@ var iconify = function(name, prefix) {
         return d.Gender;
       });
 
-      var groupGender = gender.group().reduceSum(function(d) {
-        return 1;
-      });
+      var groupGender = gender.group().reduceCount();
 
       return pie_gender
         .width(0)
         .height(0)
         .dimension(gender)
+        .ordering(function(d){return d.key;})
+        .colorAccessor(function(d){return d.key;})
         .ordinalColors(gender_color)
         .label(function(d) {
           return SymbolGender[d.key];
