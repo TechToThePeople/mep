@@ -183,12 +183,12 @@ function transform(d) {
   } catch (error){
     console.error(error.message +":"+d.first_name +" "+d.last_name +" ["+d.epid);
     d.Addresses={Brussels:{Phone:"",Office:""}};
-//    console.log(d);
   }
   delete d.Photo; //"http://www.europarl.europa.eu/mepphoto/{{d.epid }}.jpg
   d.activities=countActivities(d.activities);
   //delete d.activities; // stuff might be to be kept there
   delete d["Declarations of Participation"];
+  delete d["Declaration of good conduct"];
   delete d["Financial Declarations"];
 
   if (Array.isArray(d.Twitter)) {
