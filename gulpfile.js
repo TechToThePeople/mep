@@ -7,17 +7,18 @@ var minify = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var download = require("gulp-download-stream");
 var fs = require("fs");
-var xz = require("xz");
+//var xz = require("xz");
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var rename = require("gulp-rename");
 const tf = require('gulp-transform');
 const through2 = require("through2");
 var transform = require("./script/transform.js");
+var mepid = require("./script/meps_str.js");
+
 const resolve = require('path').resolve;
 
-var decompression = new xz.Decompressor();
-
+//var decompression = new xz.Decompressor();
 var paths = {
   css: [
     'node_modules/dc/dc.css'
@@ -45,12 +46,12 @@ var paths = {
 
 gulp.task('download', function() {
   var files = [
-    {file: "meps_str.js",url:"http://www.europarl.europa.eu/hemicycle/js/meps_str.js"},
+    {file: "meps_str.js",url:"http://www.europarl.europa.eu/hemicycle/js/meps_str.js"}, //used by mepid task to generate mepid.json
 //    {file: "mepid.json",url:"http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term="},
     { file:"incoming.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml"},
     {file:"outgoing.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml"},
 
-    {file:"ep_meps_current.json.xz",url:"https://parltrack.org/dumps/ep_meps.json.xz"},
+    {file:"ep_meps_current.json.lz",url:"https://parltrack.org/dumps/ep_meps.json.lz"},
     {file:"epnewshub.json",url:"http://www.epnewshub.eu/newshub/rest/contributors/find?limit=900&cType=mep"}
   ];
   //run script to convert meps_str
@@ -90,9 +91,8 @@ gulp.task('genderify', function() {
 });
 gulp.task('decompress', function() {
   var fname = "data/ep_meps_current.json";
-  var inFile = fs.createReadStream(fname + ".xz");
-  var outFile = fs.createWriteStream(fname);
-  return inFile.pipe(decompression).pipe(outFile);
+  var exec = require('child_process').exec;
+  exec("lunzip data/"+fname+".lz -f");
 });
 
 gulp.task("alias", function(done) {
@@ -109,6 +109,9 @@ gulp.task("alias", function(done) {
 }, cb);
 });
 
+gulp.task("mepid", (done) => {
+  mepid(()=>done);
+})
 
 gulp.task("transform", function(done) {
   var cb = function() {
@@ -123,7 +126,7 @@ gulp.task("transform", function(done) {
 });
 
 gulp.task('update', function (callback) {
-  runSequence('download','decompress', 'transform','html',callback);
+  runSequence('download','decompress', 'mepid','transform','html',callback);
   });
 
 gulp.task('html', function(){

@@ -31,7 +31,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 1854,
-  id_siege: 541,
+  id_siege: 542,
   id_group: 5154
 }
 ,
@@ -108,7 +108,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'it',
   id_mep: 2187,
-  id_siege: 672,
+  id_siege: 673,
   id_group: 5153
 }
 ,
@@ -130,7 +130,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'de',
   id_mep: 2323,
-  id_siege: 749,
+  id_siege: 752,
   id_group: 5153
 }
 ,
@@ -328,7 +328,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'be',
   id_mep: 5729,
-  id_siege: 792,
+  id_siege: 793,
   id_group: 5154
 }
 ,
@@ -416,7 +416,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'hu',
   id_mep: 23821,
-  id_siege: 671,
+  id_siege: 672,
   id_group: 5153
 }
 ,
@@ -482,7 +482,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'hu',
   id_mep: 27714,
-  id_siege: 677,
+  id_siege: 679,
   id_group: 5153
 }
 ,
@@ -669,7 +669,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 28340,
-  id_siege: 789,
+  id_siege: 790,
   id_group: 5154
 }
 ,
@@ -680,7 +680,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 28347,
-  id_siege: 626,
+  id_siege: 627,
   id_group: 5154
 }
 ,
@@ -790,7 +790,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'lv',
   id_mep: 28617,
-  id_siege: 833,
+  id_siege: 682,
   id_group: 5153
 }
 ,
@@ -812,7 +812,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'be',
   id_mep: 29579,
-  id_siege: 718,
+  id_siege: 719,
   id_group: 5154
 }
 ,
@@ -922,7 +922,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'ro',
   id_mep: 37324,
-  id_siege: 679,
+  id_siege: 681,
   id_group: 5153
 }
 ,
@@ -988,7 +988,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'ro',
   id_mep: 39725,
-  id_siege: 751,
+  id_siege: 754,
   id_group: 5153
 }
 ,
@@ -1296,7 +1296,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'de',
   id_mep: 96756,
-  id_siege: 680,
+  id_siege: 683,
   id_group: 5153
 }
 ,
@@ -1307,7 +1307,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'de',
   id_mep: 96761,
-  id_siege: 683,
+  id_siege: 746,
   id_group: 5153
 }
 ,
@@ -1340,7 +1340,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'pl',
   id_mep: 96776,
-  id_siege: 828,
+  id_siege: 675,
   id_group: 5153
 }
 ,
@@ -1461,7 +1461,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 96812,
-  id_siege: 547,
+  id_siege: 548,
   id_group: 5154
 }
 ,
@@ -1549,7 +1549,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 96844,
-  id_siege: 628,
+  id_siege: 629,
   id_group: 5154
 }
 ,
@@ -1692,7 +1692,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 96932,
-  id_siege: 714,
+  id_siege: 715,
   id_group: 5154
 }
 ,
@@ -1703,7 +1703,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'si',
   id_mep: 96933,
-  id_siege: 760,
+  id_siege: 763,
   id_group: 5153
 }
 ,
@@ -1780,7 +1780,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'at',
   id_mep: 96998,
-  id_siege: 636,
+  id_siege: 637,
   id_group: 5154
 }
 ,
@@ -1835,7 +1835,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'bg',
   id_mep: 97968,
-  id_siege: 416,
+  id_siege: 38,
   id_group: 5153
 }
 ,
@@ -1857,7 +1857,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'ro',
   id_mep: 98582,
-  id_siege: 681,
+  id_siege: 684,
   id_group: 5153
 }
 ,
@@ -2000,7 +2000,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'hr',
   id_mep: 112744,
-  id_siege: 633,
+  id_siege: 634,
   id_group: 5154
 }
 ,
@@ -2220,7 +2220,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'hu',
   id_mep: 124705,
-  id_siege: 791,
+  id_siege: 792,
   id_group: 5154
 }
 ,
@@ -2275,7 +2275,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'cz',
   id_mep: 124713,
-  id_siege: 757,
+  id_siege: 760,
   id_group: 5153
 }
 ,
@@ -2319,7 +2319,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'fi',
   id_mep: 124726,
-  id_siege: 682,
+  id_siege: 745,
   id_group: 5153
 }
 ,
@@ -2341,7 +2341,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'fi',
   id_mep: 124735,
-  id_siege: 542,
+  id_siege: 543,
   id_group: 5154
 }
 ,
@@ -2374,7 +2374,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pt',
   id_mep: 124747,
-  id_siege: 713,
+  id_siege: 714,
   id_group: 5154
 }
 ,
@@ -2473,7 +2473,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'mt',
   id_mep: 124781,
-  id_siege: 709,
+  id_siege: 710,
   id_group: 5154
 }
 ,
@@ -2506,7 +2506,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 124799,
-  id_siege: 627,
+  id_siege: 628,
   id_group: 5154
 }
 ,
@@ -2605,7 +2605,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 124822,
-  id_siege: 540,
+  id_siege: 541,
   id_group: 5154
 }
 ,
@@ -2671,7 +2671,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 124836,
-  id_siege: 629,
+  id_siege: 630,
   id_group: 5154
 }
 ,
@@ -2682,7 +2682,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 124837,
-  id_siege: 711,
+  id_siege: 712,
   id_group: 5154
 }
 ,
@@ -2704,7 +2704,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 124846,
-  id_siege: 632,
+  id_siege: 633,
   id_group: 5154
 }
 ,
@@ -2726,7 +2726,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'bg',
   id_mep: 124852,
-  id_siege: 717,
+  id_siege: 718,
   id_group: 5154
 }
 ,
@@ -2786,9 +2786,9 @@ meps_str = [
 }
 ,
 {
-  value: 'MORTEN HELVEG PETERSENMorten Helveg Petersen',
+  value: 'MORTEN PETERSENMorten Petersen',
   nom: 'Petersen',
-  prenom: 'Morten Helveg',
+  prenom: 'Morten',
   group_code: 'Renew',
   country_code: 'dk',
   id_mep: 124872,
@@ -2869,7 +2869,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'sk',
   id_mep: 124929,
-  id_siege: 670,
+  id_siege: 671,
   id_group: 5153
 }
 ,
@@ -2946,7 +2946,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'gb',
   id_mep: 124963,
-  id_siege: 794,
+  id_siege: 795,
   id_group: 5154
 }
 ,
@@ -3177,7 +3177,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 125042,
-  id_siege: 546,
+  id_siege: 547,
   id_group: 5154
 }
 ,
@@ -3188,7 +3188,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 125043,
-  id_siege: 638,
+  id_siege: 706,
   id_group: 5154
 }
 ,
@@ -3232,7 +3232,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'gr',
   id_mep: 125064,
-  id_siege: 768,
+  id_siege: 670,
   id_group: 5153
 }
 ,
@@ -3243,7 +3243,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'gr',
   id_mep: 125065,
-  id_siege: 684,
+  id_siege: 747,
   id_group: 5153
 }
 ,
@@ -3254,7 +3254,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'gr',
   id_mep: 125067,
-  id_siege: 754,
+  id_siege: 758,
   id_group: 5153
 }
 ,
@@ -3270,9 +3270,9 @@ meps_str = [
 }
 ,
 {
-  value: 'KONSTANTINOS PAPADAKISKonstantinos Papadakis',
+  value: 'KOSTAS PAPADAKISKostas Papadakis',
   nom: 'Papadakis',
-  prenom: 'Konstantinos',
+  prenom: 'Kostas',
   group_code: 'NI',
   country_code: 'gr',
   id_mep: 125093,
@@ -3287,7 +3287,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'si',
   id_mep: 125104,
-  id_siege: 676,
+  id_siege: 678,
   id_group: 5153
 }
 ,
@@ -3397,7 +3397,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 127096,
-  id_siege: 707,
+  id_siege: 708,
   id_group: 5154
 }
 ,
@@ -3421,17 +3421,6 @@ meps_str = [
   id_mep: 129073,
   id_siege: 738,
   id_group: 5704
-}
-,
-{
-  value: 'FRANS TIMMERMANSFrans Timmermans',
-  nom: 'Timmermans',
-  prenom: 'Frans',
-  group_code: 'S&D',
-  country_code: 'nl',
-  id_mep: 129141,
-  id_siege: 721,
-  id_group: 5154
 }
 ,
 {
@@ -3562,7 +3551,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'hr',
   id_mep: 185341,
-  id_siege: 759,
+  id_siege: 762,
   id_group: 5153
 }
 ,
@@ -3573,7 +3562,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'de',
   id_mep: 185619,
-  id_siege: 795,
+  id_siege: 796,
   id_group: 5154
 }
 ,
@@ -3672,7 +3661,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'gb',
   id_mep: 190099,
-  id_siege: 630,
+  id_siege: 631,
   id_group: 5154
 }
 ,
@@ -3925,7 +3914,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'se',
   id_mep: 197402,
-  id_siege: 674,
+  id_siege: 676,
   id_group: 5153
 }
 ,
@@ -3958,7 +3947,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'se',
   id_mep: 197405,
-  id_siege: 747,
+  id_siege: 750,
   id_group: 5153
 }
 ,
@@ -4101,7 +4090,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'lu',
   id_mep: 197421,
-  id_siege: 753,
+  id_siege: 757,
   id_group: 5153
 }
 ,
@@ -4178,7 +4167,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'de',
   id_mep: 197429,
-  id_siege: 746,
+  id_siege: 749,
   id_group: 5153
 }
 ,
@@ -4310,7 +4299,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'hr',
   id_mep: 197441,
-  id_siege: 623,
+  id_siege: 624,
   id_group: 5154
 }
 ,
@@ -4794,7 +4783,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'ee',
   id_mep: 197497,
-  id_siege: 624,
+  id_siege: 625,
   id_group: 5154
 }
 ,
@@ -4981,7 +4970,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'dk',
   id_mep: 197515,
-  id_siege: 748,
+  id_siege: 751,
   id_group: 5153
 }
 ,
@@ -5069,7 +5058,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pl',
   id_mep: 197523,
-  id_siege: 539,
+  id_siege: 540,
   id_group: 5154
 }
 ,
@@ -5245,7 +5234,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pl',
   id_mep: 197540,
-  id_siege: 625,
+  id_siege: 626,
   id_group: 5154
 }
 ,
@@ -5355,7 +5344,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pl',
   id_mep: 197550,
-  id_siege: 716,
+  id_siege: 717,
   id_group: 5154
 }
 ,
@@ -5641,7 +5630,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'hu',
   id_mep: 197584,
-  id_siege: 706,
+  id_siege: 707,
   id_group: 5154
 }
 ,
@@ -5707,7 +5696,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 197590,
-  id_siege: 634,
+  id_siege: 635,
   id_group: 5154
 }
 ,
@@ -5718,7 +5707,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 197591,
-  id_siege: 722,
+  id_siege: 789,
   id_group: 5154
 }
 ,
@@ -5729,7 +5718,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 197592,
-  id_siege: 550,
+  id_siege: 551,
   id_group: 5154
 }
 ,
@@ -5861,7 +5850,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'es',
   id_mep: 197606,
-  id_siege: 755,
+  id_siege: 759,
   id_group: 5153
 }
 ,
@@ -6015,7 +6004,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'es',
   id_mep: 197621,
-  id_siege: 758,
+  id_siege: 761,
   id_group: 5153
 }
 ,
@@ -6125,7 +6114,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pt',
   id_mep: 197634,
-  id_siege: 554,
+  id_siege: 623,
   id_group: 5154
 }
 ,
@@ -6136,7 +6125,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pt',
   id_mep: 197635,
-  id_siege: 545,
+  id_siege: 546,
   id_group: 5154
 }
 ,
@@ -6169,7 +6158,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pt',
   id_mep: 197638,
-  id_siege: 553,
+  id_siege: 554,
   id_group: 5154
 }
 ,
@@ -6290,7 +6279,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pt',
   id_mep: 197650,
-  id_siege: 710,
+  id_siege: 711,
   id_group: 5154
 }
 ,
@@ -6312,7 +6301,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'at',
   id_mep: 197652,
-  id_siege: 752,
+  id_siege: 755,
   id_group: 5153
 }
 ,
@@ -6323,7 +6312,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'ro',
   id_mep: 197653,
-  id_siege: 552,
+  id_siege: 553,
   id_group: 5154
 }
 ,
@@ -6345,7 +6334,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'ro',
   id_mep: 197655,
-  id_siege: 720,
+  id_siege: 721,
   id_group: 5154
 }
 ,
@@ -6444,7 +6433,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'at',
   id_mep: 197667,
-  id_siege: 673,
+  id_siege: 674,
   id_group: 5153
 }
 ,
@@ -6488,7 +6477,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'ro',
   id_mep: 197672,
-  id_siege: 675,
+  id_siege: 677,
   id_group: 5153
 }
 ,
@@ -6510,7 +6499,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'at',
   id_mep: 197677,
-  id_siege: 712,
+  id_siege: 713,
   id_group: 5154
 }
 ,
@@ -6521,7 +6510,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'at',
   id_mep: 197678,
-  id_siege: 793,
+  id_siege: 794,
   id_group: 5154
 }
 ,
@@ -6697,7 +6686,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'fr',
   id_mep: 197697,
-  id_siege: 543,
+  id_siege: 544,
   id_group: 5154
 }
 ,
@@ -6708,7 +6697,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'fr',
   id_mep: 197698,
-  id_siege: 544,
+  id_siege: 545,
   id_group: 5154
 }
 ,
@@ -6906,7 +6895,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 197719,
-  id_siege: 549,
+  id_siege: 550,
   id_group: 5154
 }
 ,
@@ -6928,7 +6917,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 197721,
-  id_siege: 548,
+  id_siege: 549,
   id_group: 5154
 }
 ,
@@ -6939,7 +6928,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 197722,
-  id_siege: 708,
+  id_siege: 709,
   id_group: 5154
 }
 ,
@@ -6983,7 +6972,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'pt',
   id_mep: 197732,
-  id_siege: 635,
+  id_siege: 636,
   id_group: 5154
 }
 ,
@@ -7016,7 +7005,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'es',
   id_mep: 197735,
-  id_siege: 551,
+  id_siege: 552,
   id_group: 5154
 }
 ,
@@ -7192,7 +7181,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'nl',
   id_mep: 197756,
-  id_siege: 719,
+  id_siege: 720,
   id_group: 5154
 }
 ,
@@ -7313,7 +7302,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'sk',
   id_mep: 197769,
-  id_siege: 750,
+  id_siege: 753,
   id_group: 5153
 }
 ,
@@ -7522,7 +7511,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 197791,
-  id_siege: 715,
+  id_siege: 716,
   id_group: 5154
 }
 ,
@@ -7621,7 +7610,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'it',
   id_mep: 197801,
-  id_siege: 637,
+  id_siege: 638,
   id_group: 5154
 }
 ,
@@ -7973,7 +7962,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'lt',
   id_mep: 197838,
-  id_siege: 797,
+  id_siege: 798,
   id_group: 5154
 }
 ,
@@ -8017,7 +8006,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'bg',
   id_mep: 197842,
-  id_siege: 796,
+  id_siege: 797,
   id_group: 5154
 }
 ,
@@ -8050,7 +8039,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'bg',
   id_mep: 197845,
-  id_siege: 631,
+  id_siege: 632,
   id_group: 5154
 }
 ,
@@ -8094,7 +8083,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'ie',
   id_mep: 197863,
-  id_siege: 745,
+  id_siege: 748,
   id_group: 5153
 }
 ,
@@ -8149,7 +8138,7 @@ meps_str = [
   group_code: 'PPE',
   country_code: 'hu',
   id_mep: 197894,
-  id_siege: 678,
+  id_siege: 680,
   id_group: 5153
 }
 ,
@@ -8204,7 +8193,7 @@ meps_str = [
   group_code: 'S&D',
   country_code: 'ro',
   id_mep: 198183,
-  id_siege: 790,
+  id_siege: 791,
   id_group: 5154
 }
 ,

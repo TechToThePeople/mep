@@ -509,6 +509,7 @@ var iconify = function(name, prefix) {
           },
           function(d) {
             var t = "";
+            console.log(d.committees);
             if (!d.committees) return "";
             d.committees.forEach(function(e){
               var textfilter = e.role !="Substitute" ? "text-filter " : "";
@@ -679,10 +680,10 @@ var iconify = function(name, prefix) {
 
       drawNumbers(graphs);
       graphs.country = drawCountry(".country .panel-body");
-//      graphs.committee = drawRow(".committee .graph","committee");
-//      graphs.delegation = drawRow(".delegation .graph","delegation");
-//      graphs.role = drawRow(".role .graph","role");
-//      graphs.role.height(100);
+      graphs.committee = drawRow(".committee .graph","committee");
+      graphs.delegation = drawRow(".delegation .graph","delegation");
+      graphs.role = drawRow(".role .graph","role");
+      graphs.role.height(100);
 //           graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
@@ -730,8 +731,9 @@ var iconify = function(name, prefix) {
         .dimension(dim)
         .group(group)
         .on("renderlet", function(c) {
-            c.selectAll("g.row")
-              .call(tip)
+            var a = c.selectAll("g.row");
+            if (!a) return;
+            a.call(tip)
               .on("mouseover.tip", tip.show)
               .on("mouseout.tip", tip.hide);
 //          slideChartLabels(c);
