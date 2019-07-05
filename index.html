@@ -515,7 +515,8 @@ var iconify = function(name, prefix) {
           },
           function(d) {
             //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
-            return d.candidate ? "<span title='Candidate 2019'>" + d.first_name + " <b>" + d.last_name +"</b></span>": d.first_name + " " + d.last_name;
+            if (d.role.length) return d.first_name + " <b>" + d.last_name +"</b>";
+            return d.first_name + " " + d.last_name;
           },
           function(d) {
             var t = "";
@@ -1230,7 +1231,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/S-D.png");
     }
 
-    .alde {
+    .re,.alde {
       background-image: url("img/group/ALDE.png");
     }
 
@@ -1246,7 +1247,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/GUE.png");
     }
 
-    .enf {
+    .id,.enf {
       background-image: url("img/group/ENF.png");
     }
 
