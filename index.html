@@ -32,10 +32,6 @@
       "": "?"
     };
     var formatPercent = d3.format(".0%");
-  
-    var formatNumber = function customFormat(value) {
-      return value > 999 && value < 100000 ? d3.format('.0s')(value) : value >= 100000 ? d3.format('.3s')(value) : value;
-    }
 
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
@@ -84,7 +80,7 @@ var iconify = function(name, prefix) {
   );
 };
 
-    var data = null;
+    var data = null, candidates= [];
 
     function reset() {
       dc.filterAll();
@@ -228,8 +224,6 @@ var iconify = function(name, prefix) {
              "WDECL" : "declaration",
       "QP" : "question"};
 
-      var start9 = new Date('2019-07-02');
-
       var dim = ndx.dimension(function(d) {
         return true;
       });
@@ -239,10 +233,6 @@ var iconify = function(name, prefix) {
         return d.since;
       }).avg(function(d) {
         return d.since.getTime()
-      });
-
-      reducer.value("newbie").count(true).filter(function(d) {
-        return d.since >= start9;
       });
 
       reducer.value("birthdate").count(true).filter(function(d) {
@@ -256,6 +246,9 @@ var iconify = function(name, prefix) {
         return d.Gender == "F"
       });
 
+      reducer.value("candidate").count(true).filter(function(d) {
+        return d.candidate;
+      });
 
 
       reducer.value("nb").count(true);
@@ -272,7 +265,7 @@ var iconify = function(name, prefix) {
         .valueAccessor(function(d) {
           return d.value.nb.count
         })
-        .formatNumber(formatNumber)
+        .formatNumber(d3.format("d"))
         .html({
           some: "%number"
         })
@@ -311,16 +304,14 @@ var iconify = function(name, prefix) {
 
       graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
         .group(group)
-        .formatNumber(formatNumber)
         .valueAccessor(function(d) {
           return d.value.woman.count;
         });
 
-      graphs.nbnewbies = dc.numberDisplay(".nbnewbies .nb")
+      graphs.nbcandidates = dc.numberDisplay(".nbcandidates .nb")
         .group(group)
-        .formatNumber(formatNumber)
         .valueAccessor(function(d) {
-          return d.value.newbie.count;
+          return d.value.candidate.count;
         });
       graphs.percentwomen = dc.numberDisplay(".nbwomen .percent")
         .group(group)
@@ -336,13 +327,12 @@ var iconify = function(name, prefix) {
         (function(a,n) {
         graphs["nb" + n] = dc.numberDisplay(".nb" +n+ " .nb")
         .group(group)
-        .formatNumber(formatNumber)
         .valueAccessor(function(d){ return d.value[n].sum });
         })(a,activitymap[a]);
       };
     }
 
-    function drawNewbie(dom) {
+    function drawCandidate(dom) {
       var graph = dc.pieChart(dom) //.radius(70);
       var dim = ndx.dimension(function(d) {
         return d.candidate ? d.candidate : false;
@@ -350,7 +340,7 @@ var iconify = function(name, prefix) {
 
       var group = dim.group().reduceSum(function(d) {return 1;});
 
-      d3.selectAll(".newbie button").on("click",function(){
+      d3.selectAll(".nbcandidates button").on("click",function(){
         graph.filter(true);
         dc.redrawAll();
       });
@@ -515,8 +505,7 @@ var iconify = function(name, prefix) {
           },
           function(d) {
             //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
-            if (d.role.length) return d.first_name + " <b>" + d.last_name +"</b>";
-            return d.first_name + " " + d.last_name;
+            return d.candidate ? "<span title='Candidate 2019'>" + d.first_name + " <b>" + d.last_name +"</b></span>": d.first_name + " " + d.last_name;
           },
           function(d) {
             var t = "";
@@ -655,6 +644,9 @@ var iconify = function(name, prefix) {
         var now = Date.now();
 
         data.forEach(function(e) {
+          if (candidates.indexOf(e.epid) !== -1) {
+            e.candidate = true;
+          }
           e.since = dateFormat.parse(e.since);
           if (e.Birth.date){
             e.birthdate = dateFormat.parse(e.Birth.date);
@@ -690,7 +682,7 @@ var iconify = function(name, prefix) {
       graphs.committee = drawRow(".committee .graph","committee");
       graphs.delegation = drawRow(".delegation .graph","delegation");
       graphs.role = drawRow(".role .graph","role");
-      graphs.role.height(100);
+//      graphs.role.height(100);
 //           graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
@@ -738,9 +730,8 @@ var iconify = function(name, prefix) {
         .dimension(dim)
         .group(group)
         .on("renderlet", function(c) {
-            var a = c.selectAll("g.row");
-            if (!a[0].length) return;
-            a.call(tip)
+            c.selectAll("g.row")
+              .call(tip)
               .on("mouseover.tip", tip.show)
               .on("mouseout.tip", tip.hide);
 //          slideChartLabels(c);
@@ -1099,6 +1090,15 @@ function download_excel() {
     });
 
     $(function() {
+      d3.csv("data/candidates.csv",function(csv){
+        csv.forEach(function(d){
+          candidates.push(+d.id);
+        });
+        if (data) {
+          adjust(data);
+          console.log("update data from candidates, shouldn't happen");
+        }
+      });
       d3.json("data/meps.json", function(json) {
         data = json;
         draw(data);
@@ -1231,7 +1231,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/S-D.png");
     }
 
-    .re,.alde {
+    .alde {
       background-image: url("img/group/ALDE.png");
     }
 
@@ -1247,7 +1247,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/GUE.png");
     }
 
-    .id,.enf {
+    .enf {
       background-image: url("img/group/ENF.png");
     }
 
@@ -1567,7 +1567,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
         <div class="modal-body">
           <div class="row">
             <div class="col-md-3">
-              <img src="https://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
+              <img src="https://s3.eu-central-1.amazonaws.com/newshubv2/mep/{%=o.epid%}.jpg" class="img-circle img-responsive">
             </div>
             <div class="col-md-9 main">
               <dl class="dl-horizontal">
