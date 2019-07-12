@@ -682,7 +682,7 @@ var iconify = function(name, prefix) {
       graphs.committee = drawRow(".committee .graph","committee");
       graphs.delegation = drawRow(".delegation .graph","delegation");
       graphs.role = drawRow(".role .graph","role");
-//      graphs.role.height(100);
+      graphs.role.height(100);
 //           graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
@@ -1231,7 +1231,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/S-D.png");
     }
 
-    .alde {
+    .alde, .re {
       background-image: url("img/group/ALDE.png");
     }
 
@@ -1239,7 +1239,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/VERT.png");
     }
 
-    .efdd {
+    .efdd, .id {
       background-image: url("img/group/EFDD.png");
     }
 
