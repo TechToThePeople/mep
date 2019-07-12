@@ -5,12 +5,12 @@ var finished = function(n) {
   console.log("Processed " + n)
 };
 var total = 0;
-var committees = {};
 var groups = {};
-var head = ['epid', 'country', 'first_name', 'last_name', 'email', 'birthdate', 'gender', 'eugroup', 'party', 'phone', 'office', 'committee', 'substitute', 'delegation', 'twitter', 'tttpid', 'since'];
 
 var abbreviations={};
 var delegations = require('../data/delegations.json');
+var committees = Object.keys(require('../data/committees.json')).sort();
+var head = ['epid', 'country', 'first_name', 'last_name', 'email', 'birthdate', 'gender', 'eugroup', 'party', 'phone', 'office', 'committee', 'substitute', 'delegation', 'twitter', 'tttpid', 'since'].concat(committees);
 var country2iso= require('../data/country2iso.json');
 delegations.DLAT = "Euro-Latin American Parliamentary Assembly";
 delegations.DCAS = "EU-Kazakhstan";
@@ -241,6 +241,19 @@ var csvrow = function(d) {
     });
     return r;
   };
+  
+  var getCommitteesRows = (d) => {
+    console.log(d);
+    const rows=Array.from(committees, x=> "");
+    d.forEach((c)=>{
+      var i = committees.indexOf(c.name);
+      if (i === -1)
+        console.log("ERROR: can't find committee "+c.name);
+      rows[i] = c.role[0];
+
+    });
+    return rows;
+  }
 
   if (!typeof d === 'object' || !d.hasOwnProperty("constituency")) return {};
   var e = [
@@ -263,7 +276,8 @@ var csvrow = function(d) {
     d.since
 
   ];
-  return e;
+
+  return e.concat(getCommitteesRows(d.committees));
 }
 
 
