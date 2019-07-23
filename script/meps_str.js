@@ -36,6 +36,7 @@ function main (callback) {
   };
 
   fs.writeFileSync('./data/mepid.json', JSON.stringify(extract_ids()));
+  console.log(typeof callback);
   if (typeof callback == "function") {
     callback();
   }

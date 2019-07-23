@@ -76,7 +76,7 @@ gulp.task('genderify', function() {
       cb(null,file);
     }))
     .pipe(rename({
-      extname: '.nogender.csv'
+      extname: '.new.nogender.csv'
     }))
     .pipe(through2.obj(function(file, enc, cb) {
       console.log("add the missing genders to " +file.path);
@@ -90,7 +90,7 @@ gulp.task('genderify', function() {
   
 });
 gulp.task('decompress', function() {
-  var fname = "data/ep_meps_current.json";
+  var fname = "ep_meps_current.json";
   var exec = require('child_process').exec;
   exec("lunzip data/"+fname+".lz -f");
 });
@@ -110,7 +110,7 @@ gulp.task("alias", function(done) {
 });
 
 gulp.task("mepid", (done) => {
-  mepid(()=>done);
+  mepid(done);
 })
 
 gulp.task("transform", function(done) {

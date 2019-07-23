@@ -243,7 +243,7 @@ var csvrow = function(d) {
   };
   
   var getCommitteesRows = (d) => {
-    console.log(d);
+    if (!d) return [];
     const rows=Array.from(committees, x=> "");
     d.forEach((c)=>{
       var i = committees.indexOf(c.name);

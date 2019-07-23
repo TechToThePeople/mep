@@ -504,8 +504,8 @@ var iconify = function(name, prefix) {
               return t+'</div>';
           },
           function(d) {
-            //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
-            return d.candidate ? "<span title='Candidate 2019'>" + d.first_name + " <b>" + d.last_name +"</b></span>": d.first_name + " " + d.last_name;
+//            return "<a target='_blank' href='https://www.europarl.europa.eu/meps/en/" + d.epid + "/name/home'>" + d.first_name + " " + d.last_name + "</a>";
+            return d.first_name + " <span class='"+(d.role.length ? d.role[0] : 'member')+"'>" + d.last_name +"</span>";
           },
           function(d) {
             var t = "";
@@ -1063,7 +1063,7 @@ function download_excel() {
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2018-10-25</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on $UPDATE_DATE</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -1131,7 +1131,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
 .icon {width:16px;height:16px;}
 .d3-tip {font-weight:normal;}
 
-.chair, .vice-chair {font-weight:bold;}
+.chair, .vice-chair,.BCPR,.BURO,.CPCO,.PE,.QUE {font-weight:bold;}
 .substitute {color:grey;font-size:85%;}
 
 .feed {
@@ -1584,7 +1584,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
         <div class="modal-footer">
         <a href="tel:{%=o.phone.replace(/ /g,'')%}" title="{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
           <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
-          <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/_home.html" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
+          <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/name/home" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
