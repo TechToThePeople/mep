@@ -432,7 +432,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 197614,it,Marco,DREOSTO,marco.dreosto@europarl.europa.eu,1969-03-18,M,ID,Lega,0032 2 28 45434,06F357,ENVI,ITRE,D-ME,,tttp_197614,2019-07-02,,,,,,,,,,,M,,,,S,,,,,,,
 197510,pl,Jarosław,DUDA,jaroslaw.duda@europarl.europa.eu,1964-04-29,M,PPE,Platforma Obywatelska,0032 2 28 45313,08E113,EMPL,PETI,DEPA,jaroslawduda,tttp_197510,2019-07-02,,,,,,,,,,M,,,,,,,,,S,,,
 99945,de,Lena,DÜPONT,lena.duepont@europarl.europa.eu,1986-04-30,F,PPE,Christlich Demokratische Union Deutschlands,0032 2 28 45319,03F270,LIBE,AGRI|REGI|FEMM,D-ME,,tttp_99945,2019-07-02,,,S,,,,,,,,,S,,,,,M,,,S,,
-198329,es,Estrella,DURA FERRANDIS,estrella.dura@europarl.europa.eu,1963-09-22,,S&D,Partido Socialista Obrero Español,0032 2 28 45331,08H241,EMPL,AGRI,DACP,,tttp_198329,2019-07-02,,,S,,,,,,,M,,,,,,,,,,,,
+198329,es,Estrella,DURA FERRANDIS,estrella.dura@europarl.europa.eu,1963-09-22,F,S&D,Partido Socialista Obrero Español,0032 2 28 45331,08H241,EMPL,AGRI,DACP,,tttp_198329,2019-07-02,,,S,,,,,,,M,,,,,,,,,,,,
 197766,sk,Lucia,ĎURIŠ NICHOLSONOVÁ,lucia.durisnicholsonova@europarl.europa.eu,1976-11-28,F,ECR,Sloboda a Solidarita,0032 2 28 45381,02M017,EMPL,LIBE,DACP,,tttp_197766,2019-07-02,,,,,,,,,,C,,,,,,,S,,,,,
 197643,at,Karoline,EDTSTADLER,karoline.edtstadler@europarl.europa.eu,,F,PPE,Österreichische Volkspartei,0032 2 28 45733,07U046,LIBE|DROI,JURI|AFET,DKOR,,tttp_197643,2019-07-02,,S,,,,,,V,,,,,,,,S,M,,,,,
 197803,uk,Andrew,ENGLAND KERR,andrew.kerr@europarl.europa.eu,1958-09-23,M,NA,The Brexit Party,0032 2 28 45828,07H353,ITRE,SEDE,DCAS,,tttp_197803,2019-07-02,,,,,,,,,,,,,,,M,,,,,,S,
@@ -743,5 +743,5 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 34578,sk,Robert,HAJŠEL,robert.hajsel@europarl.europa.eu,1967-03-28,M,S&D,Independent,0032 2 28 45470,08G306,ITRE,AFET,DSCA|D-ME|DEPA,RobertHajsel,tttp_34578,2019-07-02,,S,,,,,,,,,,,,,M,,,,,,,
 118949,cz,Ondřej,KOVAŘÍK,ondrej.kovarik@europarl.europa.eu,1980-08-21,M,RE,ANO 2011,0032 2 28 45923,03U006,ECON,LIBE|TRAN,D-CA,,tttp_118949,2019-07-02,,,,,,,,,M,,,,,,,,S,,,,,S
 197599,uk,Richard,TICE,richard.tice@europarl.europa.eu,1964-09-13,M,NA,The Brexit Party,0032 2 28 45353,07H159,ECON,,D-CA,TiceRichard,tttp_197599,2019-07-02,,,,,,,,,M,,,,,,,,,,,,,
-5392,nl,Lara,WOLTERS,lara.wolters@europarl.europa.eu,1986-04-12,,S&D,Partij van de Arbeid,0032 2 28 45265,08G340,CONT|JURI,CULT,D-CN,wolters_lara,tttp_5392,2019-07-02,,,,,M,S,,,,,,,,,,M,,,,,,
-198490,gr,Emmanouil,FRAGKOS,emmanouilfragkos@gmail.com,1993-06-27,,ECR,Elliniki Lusi-Greek Solution,0032 2 28 45870,02M043,,,DCAR,,tttp_198490,2019-07-02,,,,,,,,,,,,,,,,,,,,,,
+5392,nl,Lara,WOLTERS,lara.wolters@europarl.europa.eu,1986-04-12,F,S&D,Partij van de Arbeid,0032 2 28 45265,08G340,CONT|JURI,CULT,D-CN,wolters_lara,tttp_5392,2019-07-02,,,,,M,S,,,,,,,,,,M,,,,,,
+198490,gr,Emmanouil,FRAGKOS,emmanouilfragkos@gmail.com,1993-06-27,M,ECR,Elliniki Lusi-Greek Solution,0032 2 28 45870,02M043,,,DCAR,,tttp_198490,2019-07-02,,,,,,,,,,,,,,,,,,,,,,
