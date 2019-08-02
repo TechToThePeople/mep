@@ -33,6 +33,10 @@
     };
     var formatPercent = d3.format(".0%");
 
+    var formatNumber = function (value) {
+       return value > 999 && value < 100000 ? d3.format('.0s')(value) : value >= 100000 ? d3.format('.3s')(value) : value;
+    }
+
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
     };
@@ -214,7 +218,8 @@ var iconify = function(name, prefix) {
     }
 
     function drawNumbers(graphs) {
-      var format = d3.format(".3s");
+      var format = formatNumber;
+
       var activitymap={"CRE" : "speech",
              "REPORT" : "report",
              "REPORT-SHADOW" : "report_shadow",
@@ -265,7 +270,7 @@ var iconify = function(name, prefix) {
         .valueAccessor(function(d) {
           return d.value.nb.count
         })
-        .formatNumber(d3.format("d"))
+        .formatNumber(formatNumber)
         .html({
           some: "%number"
         })
@@ -304,6 +309,7 @@ var iconify = function(name, prefix) {
 
       graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
         .group(group)
+        .formatNumber(formatNumber)
         .valueAccessor(function(d) {
           return d.value.woman.count;
         });
@@ -1063,7 +1069,7 @@ function download_excel() {
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2019-07-23</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2019-08-02</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
