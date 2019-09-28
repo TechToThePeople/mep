@@ -6,7 +6,7 @@ var finished = function(n) {
 };
 var total = 0;
 const head = ['epid', 'alias','active'];
-const headall = ['epid','firstname','lastname','active','start','start9','end','birthdate','country','gender','eugroup','party','email','twitter','term'];
+const headall = ['epid','firstname','lastname','active','start','start9','end','birthdate','country','gender','eugroup','party','email','twitter','term','start8'];
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
@@ -66,6 +66,10 @@ function transform(d) {
     var last = 0;
     d.Constituencies.forEach(function(c,i){
       if (!c) return;// deal with incomplete
+      if (c.term==8) {
+        if (!t.start8 || c.start < t.start8)
+          t.start8 = c.start.replace("T00:00:00", "");
+      }
       if (c.term==9) {
         if (!t.start9 || c.start < t.start9)
           t.start9 = c.start.replace("T00:00:00", "");
@@ -145,7 +149,7 @@ csv.on('end', () => {});
 var csvall = through2({
   objectMode: true
 }, function(mep, enc, callback) {
-  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.start9,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter,mep.term]);
+  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.start9,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter,mep.term,mep.start8]);
   callback();
 });
 

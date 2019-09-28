@@ -15,6 +15,7 @@ const tf = require('gulp-transform');
 const through2 = require("through2");
 var transform = require("./script/transform.js");
 var mepid = require("./script/meps_str.js");
+var inout = require("./script/inout.js");
 
 const resolve = require('path').resolve;
 
@@ -113,6 +114,10 @@ gulp.task("mepid", (done) => {
   mepid(done);
 })
 
+gulp.task("inout", (done) => {
+  inout(done);
+})
+
 gulp.task("transform", function(done) {
   var cb = function() {
     console.log("finished " + transform.processed);
@@ -126,7 +131,7 @@ gulp.task("transform", function(done) {
 });
 
 gulp.task('update', function (callback) {
-  runSequence('download','decompress', 'mepid','transform','html',callback);
+  runSequence('download','decompress', 'mepid','inout','transform','alias','html',callback);
   });
 
 gulp.task('html', function(){

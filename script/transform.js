@@ -36,6 +36,7 @@ const JSONStream = require('JSONStream');
 const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
 
 var mepid= require('../data/mepid.json'); // direct from EP site, for QA
+var inout= require('../data/inout.json'); // direct from EP site, for QA
 var epnews= require('../data/epnewshub.json'); // direct from EP site, for QA
 var csvparse=require('csv-parse/lib/sync.js');
 var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true}); // fixing manually the missing genders
@@ -56,7 +57,10 @@ function indexepnews (epnews){
   return meps;
 }
 
-function isActive (id) {return mepid.find(o => o.id === id);}
+function isIn (id) {
+  return ( id in inout);
+};
+function isActive (id) {return mepid.find(o => o.id === id) || isIn(id);}
 
 function f(assembler) {
   if (assembler.stack.length == 2 && assembler.key === null) {
