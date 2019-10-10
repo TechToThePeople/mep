@@ -1,0 +1,976 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>MEPs</title>
+  <link rel="stylesheet" type="text/css" href="build/css/all.css" />
+  <script type="text/javascript" src="build/js/all.min.js"></script>
+  <script type="text/javascript" src="node_modules/dot/doT.min.js"></script>
+  <script type="text/javascript" src="node_modules/lozad/dist/lozad.min.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+
+
+</head>
+
+<body>
+
+
+  <script>
+    'use strict';
+    //var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
+    var graphs = [];
+    var summary = {};
+    var abbreviations = {};
+    var bar={};
+    var ndx = null;
+
+var countries = {
+  be: "Belgium",
+  bg: "Bulgaria",
+  cz: "Czech Republic",
+  dk: "Denmark",
+  de: "Germany",
+  ee: "Estonia",
+  ie: "Ireland",
+  gr: "Greece",
+  es: "Spain",
+  fr: "France",
+  hr: "Croatia",
+  it: "Italy",
+  cy: "Cyprus",
+  lv: "Latvia",
+  lt: "Lithuania",
+  lu: "Luxembourg",
+  hu: "Hungary",
+  mt: "Malta",
+  nl: "Netherlands",
+  at: "Austria",
+  pl: "Poland",
+  pt: "Portugal",
+  ro: "Romania",
+  si: "Slovenia",
+  sk: "Slovakia",
+  fi: "Finland",
+  se: "Sweden",
+  gb: "United Kingdom"
+};
+
+  var formatPercent = d3.format(".0%");
+
+    var formatNumber = function (value) {
+       return value > 999 && value < 100000 ? d3.format('.0s')(value) : value >= 100000 ? d3.format('.3s')(value) : value;
+    }
+
+    var formatDate = function(d) {
+      return d ? d3.time.format("%d/%m/%Y")(d) : ""
+    };
+
+    var abbr = function (d) {
+      return abbreviations[d] || d;
+    };
+
+    var country_color = "#80cbc4";
+    var eu_groups = {
+      "GUE/NGL": "#800c00",
+      "S&D": "#c21200",
+      "Verts/ALE": "#05a61e",
+      "Greens/EFA": "#05a61e",
+      "ALDE": "#ffc200",
+      "RE": "#ffc200",
+      "EFDD": "#5eced6",
+      "PPE": "#0a3e63",
+      "EPP": "#0a3e63",
+      "ECR": "#3086c2",
+      "NA/NI": "#cccccc",
+      "NA,NI": "#cccccc",
+      "NA": "#cccccc",
+      "ENF": "#A1480D",
+      "ID": "#A1480D",
+      "Array": "pink"
+    };
+
+
+var iconify = function(name, prefix) {
+  prefix = prefix || "icon";
+  return (
+    '<svg class="icon" class="' +
+    name +
+    '"><title>' +
+    name +
+    '</title><use href="#' +
+    prefix +
+    "-" +
+    name +
+    '" /></svg>'
+  );
+};
+
+    var data = null, candidates= [];
+
+    function reset() {
+      dc.filterAll();
+      $("#input-filter").val("").keyup();
+      //dc.renderAll()
+    };
+
+
+    function drawGroup(dom) {
+      var graph = dc.pieChart(dom).innerRadius(40) //.radius(70);
+      var dim = ndx.dimension(function(d) {
+        if (typeof d.eugroup == "undefined") return "";
+        return d.eugroup;
+      });
+      var group = dim.group().reduceSum(function(d) {
+        return 1;
+      });
+      graph
+        .width(0)
+        .height(0)
+        .ordering(function(d){return d.key;})
+        .colorCalculator(function(d, i) {
+          return eu_groups[d.key];
+          //return color(d.value.score/d.value.count);
+        })
+        .dimension(dim)
+        .group(group)
+        .externalLabels(-26)
+        .minAngleForLabel(0.2);
+//        .legend(dc.legend().horizontal(true).autoItemWidth(true).y(200));
+      return graph;
+    }
+
+    function drawSelectCountry(dom) {
+      var graph = dc.selectMenu(dom);
+      var dim = ndx.dimension(function(d) {
+        if (!d.constituency || !d.constituency.country) return "";
+        return d.constituency.country;
+      });
+      var group = dim.group().reduceSum(function(d) {return 1;});
+      
+      graph
+        .dimension(dim)
+        .group(group)
+        .title (function(d){
+          return countries[d.key] +" (" +d.value + " meps)";
+        })
+        .on('renderlet', function(chart){chart.selectAll('select').classed('form-control input-lg',true);});
+
+      return graph;
+
+    }
+
+
+    function drawNumbers(graphs) {
+      var format = formatNumber;
+
+      var dim = ndx.dimension(function(d) {
+        return true;
+      });
+
+      var reducer = reductio();
+
+      reducer.value("nb").count(true);
+
+
+      var group = dim.group();
+      reducer(group);
+
+      graphs.total = dc.numberDisplay(".nbmep .nb")
+        .group(group)
+        .valueAccessor(function(d) {
+          return d.value.nb.count
+        })
+        .formatNumber(formatNumber)
+    }
+
+
+
+    jQuery(function($) {
+      var t=$.urlParam("tweet");
+      if (t)
+        d3.select("#twitter-tpl").property("value",t);
+      $(".btn-toggle-group .btn").click(function(e){
+        $(this).addClass("btn-success disabled").removeClass("active");
+        var g=graphs[$(this).parent().data("target")];
+        g.root().datum($(this).data("sort"));
+        if ($(this).data("sort") == "size"){
+            g.ordering(function (d) {console.log("by size");return String.fromCharCode(d.value) + d.key});
+          } else {
+            g.ordering(function (d) {console.log("by az");return d.key});
+          }
+        g.render();
+        $(this).siblings(".btn").removeClass("disabled btn-success").addClass("active");
+//        g.redraw();
+      });
+
+      $(".btn-toggle").click(function(e) {
+        $(this).toggleClass("active");
+        $($(this).data("target")).collapse("toggle");
+        e.preventDefault();
+        e.stopPropagation();
+      });
+      $(".resetall").click(reset);
+      //        $(".summary_total").text(formatNumber(summary.total));
+    });
+
+
+function drawGrid(dom) {
+      var dim = ndx.dimension(function(d) {
+        return 1
+      });
+
+  return dc.dataGrid(dom)
+    .dimension(dim)
+    .group(function(d){return d.constituency.country})
+  .size(1000)
+    .html (function(d) { return tpl(d);})
+//  .htmlGroup (function (d) { return '<h2>' + d.key + 'with ' + d.values.length +' items</h2>';})
+   .htmlGroup (function(d){return "<div class='dc-grid-group'><h3>"+countries[d.key]+"<span class='nbmep badge pull-right'>"+d.values.length+" MEPs</span></h3><div>"})
+    .sortBy(function (d) {
+        return d.last_name;
+        })
+  .order(d3.ascending)
+  .on('renderlet', function (grid) {
+    observer.observe();
+    grid.selectAll(".twitter").on("click",function(){
+        tweet(d3.select(this.parentNode.parentNode.parentNode).datum());
+        });
+  });
+}
+
+    function tweet(d){
+      var t=d3.select("#twitter-tpl").property("value");
+      if (t.indexOf("{mep}") !== -1)
+        t=t.replace("{mep}","@"+d.Twitter);
+      else
+        t = ".@"+d.Twitter+" "+t;
+      if (d.Twitter) {
+        var url="https://twitter.com/intent/tweet?text="+encodeURIComponent(t);
+//        url = url.replace(/#/g, '%23');
+        var win=window.open(url,'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+      };
+    };
+
+      function adjust(data) {
+        var dateFormat = d3.time.format("%Y-%m-%d");
+        var now = Date.now();
+
+        data.forEach(function(e) {
+          e.committee=pluck(e.committees);
+          e.delegation=pluck(e.delegations);
+          e.role=pluck(e.staff);
+          e.phone = e.Addresses.Brussels.Phone;
+          if (typeof e.Facebook == "object") e.Facebook = e.Facebook[0];
+        });
+      }
+
+      function pluck(d) {
+        var r=[];
+        if (!d) 
+          return r;
+        d.forEach(function(e){
+          if (e.role!="Substitute"){
+            r.push(e.name);
+          }
+        });
+        return r;
+      }
+
+    function draw(data) {
+
+      adjust(data);
+      ndx = crossfilter(data);
+
+      drawNumbers(graphs);
+//      graphs.country = drawCountry(".country .panel-body");
+      graphs.country = drawSelectCountry(".select-country");
+      graphs.group = drawGroup(".group .panel-body");
+      graphs.wall = drawGrid("#wall");
+      graphs.search = drawTextSearch('#input-filter', jQuery);
+      graphs.total.on("postRedraw", function() {setUrl()});
+      summary.total = graphs.total.data();
+      dc.renderAll();
+      $("#input-filter").val($.urlParam("q")).keyup();
+    }
+
+    function drawTextSearch(dom, $, val) {
+
+      var dim = ndx.dimension(function(d) {
+        return d.first_name.toLowerCase() + " " + d.last_name.toLowerCase() + " " + d.constituency.party.toLowerCase() + " " + d.committee.join(" ").toLowerCase() + " " + d.constituency.country.toLowerCase()
+      });
+
+      var throttleTimer;
+
+      $(dom).keyup(function() {
+
+        var s = jQuery(this).val().toLowerCase();
+        $(".resetall").attr("disabled", false);
+        throttle();
+
+        function throttle() {
+          window.clearTimeout(throttleTimer);
+          throttleTimer = window.setTimeout(function() {
+            dim.filterAll();
+            dim.filterFunction(function(d) {
+              return d.indexOf(s) !== -1;
+            });
+            dc.redrawAll();
+          }, 250);
+        }
+      });
+
+      return dim;
+
+    }
+
+    function setUrl(search) {
+      //var country=graphs.country.filters();
+      search = search || $("#input-filter").val();
+      var url = "?";
+      if (search) url += "q=" + search + "&";
+      window.history.pushState(null, search, url);
+
+    };
+
+  </script>
+
+
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top resetall">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand resetall" href="#"><img src="img/ep.svg" alt="MEPs" title="Members of the European parliament"/></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+            <input type="text" id="input-filter" class="form-control" placeholder="name, party, committee...">
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbar-btngroup">
+            <span class="navbar-btn"><a data-toggle="collapse" data-target="#stat .panel-body" 
+		               href="#stat" class="btn-toggle active btn btn-default"><i class="glyphicon glyphicon-stats"></i></a></span>
+            <span class="navbar-btn"><a href="#table" class="btn-toggle active btn btn-default" data-toggle="collapse" data-target="#table tbody"><i class="glyphicon glyphicon-list-alt"></i></a></span>
+            <span class="navbar-btn"><a href="#" title="Contact and help"><i class="glyphicon glyphicon-question-sign"></i></a></span>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <h1 class="page-header hidden">Members of the European parliament</h1>
+      <div class="row"><div class="col-xs-12">
+          <div class="form-group"><label>Country</label>
+        <input id="twitter-tpl" class="form-control" value=".{mep}, do the right thing">
+          </div>
+      </div></div>
+    <div id="stat" class="row collapse in">
+      <div class="col-md-5">
+        <div class="well">
+          <label>Country</label>
+        <div class="select-country"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="country panel panel-default">
+          <div class="panel-heading">
+            <div class="btn-group-xs pull-right btn-toggle-group hidden" data-target="country">
+              <a href="#" class="btn active btn-fab btn-success" data-sort="alphabet">
+                <i class="material-icon glyphicon glyphicon-sort-by-alphabet"></i>
+              </a>
+              <a href="#" class="btn btn-fab" data-sort="size">
+                <i class="material-icon glyphicon glyphicon-sort-by-attributes-alt"></i>
+              </a>
+            </div>
+            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".country .panel-body">Countries</a></h3>
+          </div>
+          <div class="panel-body collapse in" data-sort="alphabet">
+            <div class="graph"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container-fluid"><div class="row"><div id="pagination" class="col-md-12"></div></div></div>
+      
+
+      <div class="col-md-12 card" id="wall">
+        
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <script>
+    d3.select(window).on('resize.updatedc', function() {
+      dc.events.trigger(function() {
+        dc.chartRegistry.list().forEach(function(chart) {
+          var container = chart.root().node();
+          if (!container) return; // some graphs don't have a node (?!)
+          container = container.parentNode.getBoundingClientRect();
+          chart.width(container.width);
+          chart.rescale && chart.rescale(); // some graphs don't have a rescale
+        });
+
+        dc.redrawAll();
+      }, 500);
+    });
+
+    $(function() {
+      d3.json("data/meps.json", function(json) {
+        data = json;
+        draw(data);
+      });
+      d3.json("data/abbreviations.json", function(json) {
+        abbreviations = json;
+      });
+    });
+
+d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
+  if (error) throw error;
+  d3.select("body").append("svg").attr("id","flags").html(xml).classed("d-none",true);
+  d3.selectAll("#flags symbol").attr("fill","#000");
+  //document.body.appendChild(xml.documentElement);
+});
+
+
+    jQuery.urlParam = function(name) {
+      var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+      if (results == null) {
+        return null;
+      } else {
+        return decodeURI(results[1]) || 0;
+      }
+    };
+  </script>
+
+  <style>
+
+.icon {width:16px;height:16px;}
+.d3-tip {font-weight:normal;}
+
+.chair, .vice-chair,.BCPR,.BURO,.CPCO,.PE,.QUE {font-weight:bold;}
+.substitute {color:grey;font-size:85%;}
+
+.feed {
+  max-height:300px;
+  overflow-x:auto;
+  padding-right:0;
+}
+
+.list-group .list-group-item {border-bottom:1px solid lightgray;padding:8px 10px;} 
+/*margin-bottom:3px;padding-right:5px;font-size:0.8em}*/
+
+.table-hover tbody td {
+    transition: background-color 1s;
+}
+
+.table-hover tbody tr:hover td {
+      background: #03a9f4;
+}
+
+.dc-chart .pie-slice.external {fill:#fff}
+    .panel-heading .btn-group-xs .btn.btn-fab {
+      height: 20px;
+      width: 20px;
+      padding-left: 5px;
+      min-width: 20px;
+    }
+
+    .country .x line {
+      opacity: 0
+    }
+
+    .input-group-addon {
+      color: white;
+    }
+
+    .navbar-btn {
+      margin: 4px 0;
+    }
+
+    .navbar-btn .btn {
+      padding: 8px;
+    }
+
+    .panel-heading h3>a:after {
+      font-family: 'Glyphicons Halflings';
+      content: "\e114";
+      float: right;
+      color: grey;
+    }
+
+    .panel-heading a.collapsed:after {
+      content: "\e080";
+    }
+
+    @media (max-width: 767px) {
+      .nav>li {
+        display: inline-block
+      }
+    }
+
+    @media (min-width: 768px) {
+      .dl-horizontal dt {
+        width: 70px;
+        aawhite-space: normal;
+        margin-bottom: 5px;
+      }
+      .dl-horizontal dd {
+        margin-left: 90px;
+      }
+    }
+
+    .btn-img {
+      height: 20px
+    }
+
+    .dc-table-column._3,
+    .dc-table-column._4 {
+      padding: auto 2px;
+    }
+
+    .eugroup,
+    .country-flag {
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-size: cover;
+    }
+
+    .ppe {
+      background-image: url("img/group/EPP.png");
+    }
+
+    .s-d {
+      background-image: url("img/group/S-D.png");
+    }
+
+    .alde, .re {
+      background-image: url("img/group/ALDE.png");
+    }
+
+    .verts-ale {
+      background-image: url("img/group/VERT.png");
+    }
+
+    .efdd, .id {
+      background-image: url("img/group/EFDD.png");
+    }
+
+    .gue-ngl {
+      background-image: url("img/group/GUE.png");
+    }
+
+    .enf {
+      background-image: url("img/group/ENF.png");
+    }
+
+    .ecr {
+      background-image: url("img/group/ECR.png");
+    }
+
+    .na-ni {
+      background-image: url("img/group/NA.png");
+    }
+
+    .austria {
+      background-image: url("img/country/at.svg");
+    }
+
+    .belgium {
+      background-image: url("img/country/be.svg");
+    }
+
+    .bulgaria {
+      background-image: url("img/country/bg.svg");
+    }
+
+    .croatia {
+      background-image: url("img/country/hr.svg");
+    }
+
+    .cyprus {
+      background-image: url("img/country/cy.svg");
+    }
+
+    .czech-republic {
+      background-image: url("img/country/cz.svg");
+    }
+
+    .denmark {
+      background-image: url("img/country/dk.svg");
+    }
+
+    .estonia {
+      background-image: url("img/country/ee.svg");
+    }
+
+    .finland {
+      background-image: url("img/country/fi.svg");
+    }
+
+    .france {
+      background-image: url("img/country/fr.svg");
+    }
+
+    .germany {
+      background-image: url("img/country/de.svg");
+    }
+
+    .greece {
+      background-image: url("img/country/el.svg");
+    }
+
+    .hungary {
+      background-image: url("img/country/hu.svg");
+    }
+
+    .ireland {
+      background-image: url("img/country/ie.svg");
+    }
+
+    .italy {
+      background-image: url("img/country/it.svg");
+    }
+
+    .latvia {
+      background-image: url("img/country/lv.svg");
+    }
+
+    .lithuania {
+      background-image: url("img/country/lt.svg");
+    }
+
+    .luxembourg {
+      background-image: url("img/country/lu.svg");
+    }
+
+    .malta {
+      background-image: url("img/country/mt.svg");
+    }
+
+    .netherlands {
+      background-image: url("img/country/nl.svg");
+    }
+
+    .poland {
+      background-image: url("img/country/pl.svg");
+    }
+
+    .portugal {
+      background-image: url("img/country/pt.svg");
+    }
+
+    .romania {
+      background-image: url("img/country/ro.svg");
+    }
+
+    .slovakia {
+      background-image: url("img/country/sk.svg");
+    }
+
+    .slovenia {
+      background-image: url("img/country/si.svg");
+    }
+
+    .spain {
+      background-image: url("img/country/es.svg");
+    }
+
+    .sweden {
+      background-image: url("img/country/se.svg");
+    }
+
+    .united-kingdom {
+      background-image: url("img/country/gb.svg");
+    }
+
+    th.since {
+      min-width: 60px
+    }
+
+    td {
+      cursor: pointer;
+    }
+
+    .text-filter {
+      cursor: pointer;
+    }
+
+    .text-filter:hover {
+      text-decoration: dotted;
+      background-color: #DE5F2C;
+    }
+
+    .alert .glyphicon {
+      display: table-cell;
+    }
+
+    .alert div,
+    .alert span {
+      padding-left: 5px;
+      display: table-cell;
+    }
+
+    body {
+      padding-top: 50px;
+    }
+
+    #stat {
+      margin-top: 10px;
+    }
+
+    #ep2014list table,
+    .dc-data-grid {
+      clear: both;
+    }
+
+    .dc-table-label {
+      background: #F5F5F5;
+      font-weight: bold;
+    }
+
+    .x line {
+      stroke: none;
+    }
+
+    .nav li a {
+      padding: 0 7px;
+    }
+
+    .navbar-brand {
+      //      padding: 0px;
+    }
+
+    .navbar-brand>img {
+      height: 100%;
+      //      padding: 15px;
+      //      width: auto;
+    }
+
+    body {
+      font-family: arial, helvetica, sans-serif;
+    }
+
+    .btn-gender {
+      font-size: 1.2em;
+    }
+
+    .btn-email {
+      font-size: 0.8em
+    }
+
+    .age .graph {
+      float: none;
+    }
+
+    .age {
+      position: relative;
+    }
+
+    .dc-data-grid,
+    .dc-grid-group {
+      clear: both
+    }
+
+    .dc-data-count {
+      clear: both;
+    }
+
+    .dc-grid-group {
+      background-color: #F5F5F5;
+      border: 1px solid #E3E3E3;
+      border-radius: 4px;
+
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+      margin-bottom: 20px;
+      min-height: 20px;
+      padding: 10px;
+    }
+
+    td .btn-group {
+      min-width: 70px
+    }
+
+    td .btn-group>.btn {
+      padding: 5px;
+    }
+
+    .person {
+      float: left;
+      margin: 0 10px 10px 0;
+      padding: 5px;
+      width: 200px;
+      background-color: #F8F8F8;
+      background-position:center top;
+      background-size:cover;
+      background-repeat:no-repeat;
+      border-color: #E7E7E7;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+      filter:grayscale(1) blur(0px);
+    }
+    .person:hover{filter:grayscale(.6) blur(0px);}
+    .person:hover div * {background:rgba(255,255,255,0.4);color:grey}
+    .person div * {background:rgba(255,255,255,0.8);border-radius:3px;}
+
+    .person {
+      position: relative;
+      display:flex;
+      height: 250px;
+    }
+    .person>div {
+      display:inline-block;
+      align-self:flex-end;
+    }
+    .person h3 {margin:0}
+    .person .twitter, .person .mail {
+      position:absolute;
+      top: -9px;
+    }
+    .person .mail { left:0;}
+    .person .twitter { right:0;}
+
+    .dc-grid-item img {
+      width: 170px;
+      height: 215px;
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      z-index: 1
+    }
+
+    .dc-grid-top h1 {
+      font-size: 22px;
+    }
+
+    .dc-grid-top h2 {
+      font-size: 14px;
+      position: relative;
+      z-index: 2;
+      background: white;
+      opacity: 0.8
+    }
+
+    .gender .dc-chart .pie-slice {
+      font-size: 25px;
+      fill: black;
+    }
+    div.committee g.row text {fill:black;font-size:11px;}
+    div.delegation g.row text {fill:black;font-size:11px;}
+    div.role g.row text {fill:black;font-size:11px;}
+
+    div.dc-chart {
+      float: none;
+      padding: 10px 0
+    }
+  </style>
+  </div>
+
+
+  </div>
+  </div>
+  <div id="detail" class="modal fade" role="dialog">
+  </div>
+  <style type="text/x-tmpl" id="dtd">
+    {% if (o.dd) { %}
+    <dt>{%=o.dt%}</dt>
+    <dd>{%=o.dd%}</dd>
+    {% } %}
+  </style>
+  <style type="text/x-tmpl" id="tmpl-rss">
+<div class="list-group">
+{% for (var i=0; i<o.items.length; i++) { %}
+  <a class="list-group-item" title="{%=o.items[i].category%}" href="{%#o.items[i].link%}">{%=o.items[i].title%}</a>
+  {% } %}
+</div>
+  </style>
+
+  <style type="text/x-tmpl" id="tmpl-detail">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{%=o.first_name%} {%=o.last_name%}
+            <span title='{%=o.constituency.country%}' class='img-rounded pull-left text-filter country-flag {%=o.constituency.country.replace(" ", "-").toLowerCase()%}'>{%=o.country%}</span>
+            <span title='{%=o.eugroup%}' class='img-rounded pull-left text-filter eugroup {%=o.eugroup.replace(/&|\/|car/g, "-").toLowerCase()%}'>{%=o.country%}</span>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="https://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="col-md-9 main">
+              <dl class="dl-horizontal">
+                {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.constituency.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.constituency.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.Twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
+              </dl>
+              <dl class="dl-horizontal">
+              {% include('dtd', {dt: "Rapporteur of", dd:o.activities.REPORT}); %} {% include('dtd', {dt: "Motions", dd:o.activities.MOTION}); %} {% include('dtd', {dt: "Shadow rapporteur", dd:o.activities['REPORT-SHADOW']}); %} {% include('dtd', {dt: "Opinions", dd:o.activities.COMPARL}); %} {% include('dtd', {dt: "Opinion shadow", dd:o.activities['OPINION-SHADOW']}); %} {% include('dtd', {dt: "Declarations", dd:o.activities.WECL}); %} {% include('dtd', {dt: "Questions", dd:o.activities.QP}); %} {% include('dtd', {dt: "Speeches", dd:o.activities.CRE}); %}
+              </dl>
+            </div>
+            <div class="col-md-4 hidden feed">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        <a href="tel:{%=o.phone.replace(/ /g,'')%}" title="{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
+          <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
+          <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/name/home" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+  </style>
+<svg class="d-none" id="icons">
+<symbol id="icon-twitter" viewBox="0 0 24 24">
+<path fill="#1DA1F2" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+</symbol>
+</svg>
+<script id="tpl" type="template">
+<div class="person lozad" data-background-image="https://www.europarl.europa.eu/mepphoto/{{=d.epid}}.jpg">
+<div>
+{{? d.Twitter }}
+<div class="twitter btn btn-primary">{{=iconify("twitter")}}</div>
+{{?}}
+<div class="mail btn btn-primary"><i class="glyphicon glyphicon-envelope"></i></div>
+<h3>{{=d.first_name}} {{=d.last_name}}</h3>
+<div class="party">{{=d.constituency.party}}</div>
+</div>
+</div>
+</script>
+  <script>
+doT.templateSettings.varname="d";
+var tpl=doT.template(d3.select("#tpl").html());
+var observer = lozad();
+
+  </script>
+<svg class="d-none" id="icons">
+
+  <symbol id="icon-twitter" viewBox="0 0 24 24">
+<path fill="#1DA1F2" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+</symbol>
+</svg>
+
+</body>
+</html>
