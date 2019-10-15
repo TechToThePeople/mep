@@ -1,0 +1,415 @@
+
+.icon {width:16px;height:16px;}
+.d3-tip {font-weight:normal;}
+
+.list-group .list-group-item {border-bottom:1px solid lightgray;padding:8px 10px;} 
+/*margin-bottom:3px;padding-right:5px;font-size:0.8em}*/
+
+.table-hover tbody td {
+    transition: background-color 1s;
+}
+
+.table-hover tbody tr:hover td {
+      background: #03a9f4;
+}
+
+.dc-chart .pie-slice.external {fill:#fff}
+    .panel-heading .btn-group-xs .btn.btn-fab {
+      height: 20px;
+      width: 20px;
+      padding-left: 5px;
+      min-width: 20px;
+    }
+
+    .country .x line {
+      opacity: 0
+    }
+
+    .input-group-addon {
+      color: white;
+    }
+
+    .navbar-btn {
+      margin: 4px 0;
+    }
+
+    .navbar-btn .btn {
+      padding: 8px;
+    }
+
+    .panel-heading h3>a:after {
+      font-family: 'Glyphicons Halflings';
+      content: "\e114";
+      float: right;
+      color: grey;
+    }
+
+    .panel-heading a.collapsed:after {
+      content: "\e080";
+    }
+
+    @media (max-width: 767px) {
+      .nav>li {
+        display: inline-block
+      }
+    }
+
+    @media (min-width: 768px) {
+      .dl-horizontal dt {
+        width: 70px;
+        aawhite-space: normal;
+        margin-bottom: 5px;
+      }
+      .dl-horizontal dd {
+        margin-left: 90px;
+      }
+    }
+
+    .btn-img {
+      height: 20px
+    }
+
+    .dc-table-column._3,
+    .dc-table-column._4 {
+      padding: auto 2px;
+    }
+
+    .eugroup,
+    .country-flag {
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-size: cover;
+    }
+
+    .ppe {
+      background-image: url("img/group/EPP.png");
+    }
+
+    .s-d {
+      background-image: url("img/group/S-D.png");
+    }
+
+    .alde, .re {
+      background-image: url("img/group/ALDE.png");
+    }
+
+    .verts-ale {
+      background-image: url("img/group/VERT.png");
+    }
+
+    .efdd, .id {
+      background-image: url("img/group/EFDD.png");
+    }
+
+    .gue-ngl {
+      background-image: url("img/group/GUE.png");
+    }
+
+    .enf {
+      background-image: url("img/group/ENF.png");
+    }
+
+    .ecr {
+      background-image: url("img/group/ECR.png");
+    }
+
+    .na-ni {
+      background-image: url("img/group/NA.png");
+    }
+
+    .austria {
+      background-image: url("img/country/at.svg");
+    }
+
+    .belgium {
+      background-image: url("img/country/be.svg");
+    }
+
+    .bulgaria {
+      background-image: url("img/country/bg.svg");
+    }
+
+    .croatia {
+      background-image: url("img/country/hr.svg");
+    }
+
+    .cyprus {
+      background-image: url("img/country/cy.svg");
+    }
+
+    .czech-republic {
+      background-image: url("img/country/cz.svg");
+    }
+
+    .denmark {
+      background-image: url("img/country/dk.svg");
+    }
+
+    .estonia {
+      background-image: url("img/country/ee.svg");
+    }
+
+    .finland {
+      background-image: url("img/country/fi.svg");
+    }
+
+    .france {
+      background-image: url("img/country/fr.svg");
+    }
+
+    .germany {
+      background-image: url("img/country/de.svg");
+    }
+
+    .greece {
+      background-image: url("img/country/el.svg");
+    }
+
+    .hungary {
+      background-image: url("img/country/hu.svg");
+    }
+
+    .ireland {
+      background-image: url("img/country/ie.svg");
+    }
+
+    .italy {
+      background-image: url("img/country/it.svg");
+    }
+
+    .latvia {
+      background-image: url("img/country/lv.svg");
+    }
+
+    .lithuania {
+      background-image: url("img/country/lt.svg");
+    }
+
+    .luxembourg {
+      background-image: url("img/country/lu.svg");
+    }
+
+    .malta {
+      background-image: url("img/country/mt.svg");
+    }
+
+    .netherlands {
+      background-image: url("img/country/nl.svg");
+    }
+
+    .poland {
+      background-image: url("img/country/pl.svg");
+    }
+
+    .portugal {
+      background-image: url("img/country/pt.svg");
+    }
+
+    .romania {
+      background-image: url("img/country/ro.svg");
+    }
+
+    .slovakia {
+      background-image: url("img/country/sk.svg");
+    }
+
+    .slovenia {
+      background-image: url("img/country/si.svg");
+    }
+
+    .spain {
+      background-image: url("img/country/es.svg");
+    }
+
+    .sweden {
+      background-image: url("img/country/se.svg");
+    }
+
+    .united-kingdom {
+      background-image: url("img/country/gb.svg");
+    }
+
+    th.since {
+      min-width: 60px
+    }
+
+    td {
+      cursor: pointer;
+    }
+
+    .text-filter {
+      cursor: pointer;
+    }
+
+    .text-filter:hover {
+      text-decoration: dotted;
+      background-color: #DE5F2C;
+    }
+
+    .alert .glyphicon {
+      display: table-cell;
+    }
+
+    .alert div,
+    .alert span {
+      padding-left: 5px;
+      display: table-cell;
+    }
+
+    body {
+      padding-top: 50px;
+    }
+
+    #stat {
+      margin-top: 10px;
+    }
+
+    #ep2014list table,
+    .dc-data-grid {
+      clear: both;
+    }
+
+    .dc-table-label {
+      background: #F5F5F5;
+      font-weight: bold;
+    }
+
+    .x line {
+      stroke: none;
+    }
+
+    .nav li a {
+      padding: 0 7px;
+    }
+
+    .navbar-brand {
+      //      padding: 0px;
+    }
+
+    .navbar-brand>img {
+      height: 100%;
+      //      padding: 15px;
+      //      width: auto;
+    }
+
+    body {
+      font-family: arial, helvetica, sans-serif;
+    }
+
+    .btn-gender {
+      font-size: 1.2em;
+    }
+
+    .btn-email {
+      font-size: 0.8em
+    }
+
+    .age .graph {
+      float: none;
+    }
+
+    .age {
+      position: relative;
+    }
+
+    .dc-data-grid,
+    .dc-grid-group {
+      clear: both
+    }
+
+    .dc-data-count {
+      clear: both;
+    }
+
+    .dc-grid-group {
+      background-color: #F5F5F5;
+      border: 1px solid #E3E3E3;
+      border-radius: 4px;
+
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+      margin-bottom: 20px;
+      min-height: 20px;
+      padding: 10px;
+    }
+
+    td .btn-group {
+      min-width: 70px
+    }
+
+    td .btn-group>.btn {
+      padding: 5px;
+    }
+
+    .person {
+      float: left;
+      margin: 0 10px 10px 0;
+      padding: 5px;
+      width: 200px;
+      background-color: #F8F8F8;
+      background-position:center top;
+      background-size:cover;
+      background-repeat:no-repeat;
+      border-color: #E7E7E7;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+      filter:grayscale(1) blur(0px);
+    }
+    .person:hover{filter:grayscale(.6) blur(0px);}
+    .person:hover div * {background:rgba(255,255,255,0.4);color:grey}
+    .person div * {background:rgba(255,255,255,0.8);border-radius:3px;}
+
+    .person {
+      position: relative;
+      display:flex;
+      height: 250px;
+    }
+    .person>div {
+      display:inline-block;
+      align-self:flex-end;
+    }
+    .person h3 {margin:0}
+    .person .twitter, .person .mail {
+      position:absolute;
+      top: -9px;
+    }
+    .person .mail { left:0;}
+    .person .twitter { right:0;}
+
+    .dc-grid-item img {
+      width: 170px;
+      height: 215px;
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      z-index: 1
+    }
+
+    .dc-grid-top h1 {
+      font-size: 22px;
+    }
+
+    .dc-grid-top h2 {
+      font-size: 14px;
+      position: relative;
+      z-index: 2;
+      background: white;
+      opacity: 0.8
+    }
+
+    .gender .dc-chart .pie-slice {
+      font-size: 25px;
+      fill: black;
+    }
+    div.committee g.row text {fill:black;font-size:11px;}
+    div.delegation g.row text {fill:black;font-size:11px;}
+    div.role g.row text {fill:black;font-size:11px;}
+
+    div.dc-chart {
+      float: none;
+      padding: 10px 0
+    }
