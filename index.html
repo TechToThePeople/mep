@@ -32,6 +32,10 @@
       "": "?"
     };
     var formatPercent = d3.format(".0%");
+  
+    var formatNumber = function customFormat(value) {
+      return value > 999 && value < 100000 ? d3.format('.0s')(value) : value >= 100000 ? d3.format('.3s')(value) : value;
+    }
 
     var formatDate = function(d) {
       return d ? d3.time.format("%d/%m/%Y")(d) : ""
@@ -43,25 +47,44 @@
 
     var committee_color = "#E1F5FE";//"#80cbc4";//"#e57373";
     var country_color = "#80cbc4";
-    var gender_color = ["#9575CD", "#FDD835", "#9575cd"];
+    var gender_color = ["#FDD835", "#9575CD","gray"];
     var eu_groups = {
       "GUE/NGL": "#800c00",
       "S&D": "#c21200",
       "Verts/ALE": "#05a61e",
       "Greens/EFA": "#05a61e",
       "ALDE": "#ffc200",
+      "RE": "#ffc200",
       "EFDD": "#5eced6",
       "PPE": "#0a3e63",
       "EPP": "#0a3e63",
       "ECR": "#3086c2",
       "NA/NI": "#cccccc",
       "NA,NI": "#cccccc",
+      "NA": "#cccccc",
       "ENF": "#A1480D",
+      "ID": "#A1480D",
       "Array": "pink"
     };
 
 
-    var data = null, candidates= [];
+
+var iconify = function(name, prefix) {
+  prefix = prefix || "icon";
+  return (
+    '<svg class="icon" class="' +
+    name +
+    '"><title>' +
+    name +
+    '</title><use href="#' +
+    prefix +
+    "-" +
+    name +
+    '" /></svg>'
+  );
+};
+
+    var data = null;
 
     function reset() {
       dc.filterAll();
@@ -138,6 +161,7 @@
       graph
         .width(0)
         .height(0)
+        .ordering(function(d){return d.key;})
         .colorCalculator(function(d, i) {
           return eu_groups[d.key];
           //return color(d.value.score/d.value.count);
@@ -204,6 +228,8 @@
              "WDECL" : "declaration",
       "QP" : "question"};
 
+      var start9 = new Date('2019-07-02');
+
       var dim = ndx.dimension(function(d) {
         return true;
       });
@@ -213,6 +239,10 @@
         return d.since;
       }).avg(function(d) {
         return d.since.getTime()
+      });
+
+      reducer.value("newbie").count(true).filter(function(d) {
+        return d.since >= start9;
       });
 
       reducer.value("birthdate").count(true).filter(function(d) {
@@ -226,9 +256,6 @@
         return d.Gender == "F"
       });
 
-      reducer.value("candidate").count(true).filter(function(d) {
-        return d.candidate;
-      });
 
 
       reducer.value("nb").count(true);
@@ -245,7 +272,7 @@
         .valueAccessor(function(d) {
           return d.value.nb.count
         })
-        .formatNumber(d3.format("d"))
+        .formatNumber(formatNumber)
         .html({
           some: "%number"
         })
@@ -284,14 +311,16 @@
 
       graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
         .group(group)
+        .formatNumber(formatNumber)
         .valueAccessor(function(d) {
           return d.value.woman.count;
         });
 
-      graphs.nbcandidates = dc.numberDisplay(".nbcandidates .nb")
+      graphs.nbnewbies = dc.numberDisplay(".nbnewbies .nb")
         .group(group)
+        .formatNumber(formatNumber)
         .valueAccessor(function(d) {
-          return d.value.candidate.count;
+          return d.value.newbie.count;
         });
       graphs.percentwomen = dc.numberDisplay(".nbwomen .percent")
         .group(group)
@@ -307,12 +336,13 @@
         (function(a,n) {
         graphs["nb" + n] = dc.numberDisplay(".nb" +n+ " .nb")
         .group(group)
+        .formatNumber(formatNumber)
         .valueAccessor(function(d){ return d.value[n].sum });
         })(a,activitymap[a]);
       };
     }
 
-    function drawCandidate(dom) {
+    function drawNewbie(dom) {
       var graph = dc.pieChart(dom) //.radius(70);
       var dim = ndx.dimension(function(d) {
         return d.candidate ? d.candidate : false;
@@ -320,7 +350,7 @@
 
       var group = dim.group().reduceSum(function(d) {return 1;});
 
-      d3.selectAll(".nbcandidates button").on("click",function(){
+      d3.selectAll(".newbie button").on("click",function(){
         graph.filter(true);
         dc.redrawAll();
       });
@@ -344,14 +374,14 @@
         return d.Gender;
       });
 
-      var groupGender = gender.group().reduceSum(function(d) {
-        return 1;
-      });
+      var groupGender = gender.group().reduceCount();
 
       return pie_gender
         .width(0)
         .height(0)
         .dimension(gender)
+        .ordering(function(d){return d.key;})
+        .colorAccessor(function(d){return d.key;})
         .ordinalColors(gender_color)
         .label(function(d) {
           return SymbolGender[d.key];
@@ -470,8 +500,12 @@
         })
         .columns([
             function(d) {
-              var t= '<div class="btn-group btn-group-sm"><a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>' +
-              '<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
+              var t= '<div class="btn-group btn-group-sm">';
+              
+              if (d.phone)
+                t+= '<a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>';
+              if (d.mail)
+                t+='<a title="' + d.mail + '" href="mailto:' + d.mail + '" class="btn btn-default btn-email"><i class="glyphicon glyphicon-envelope"></i></a>';
 
               if (d.Twitter)
                 t += '<button class="btn btn-default btn-twitter" title="Tweet"><svg class="icon"><use href="#icon-twitter"></use></svg></button>';
@@ -481,7 +515,8 @@
           },
           function(d) {
             //return "<a target='_blank' href='http://www.europarl.europa.eu/meps/en/" + d.epid + "/_home.html'>" + d.first_name + " " + d.last_name + "</a>";
-            return d.candidate ? "<span title='Candidate 2019'>" + d.first_name + " <b>" + d.last_name +"</b></span>": d.first_name + " " + d.last_name;
+            if (d.role.length) return d.first_name + " <b>" + d.last_name +"</b>";
+            return d.first_name + " " + d.last_name;
           },
           function(d) {
             var t = "";
@@ -493,6 +528,7 @@
             return t;
           },
           function(d) {
+            return iconify(d.constituency.country,"flag");
             return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
           },
           function(d) {
@@ -619,9 +655,6 @@
         var now = Date.now();
 
         data.forEach(function(e) {
-          if (candidates.indexOf(e.epid) !== -1) {
-            e.candidate = true;
-          }
           e.since = dateFormat.parse(e.since);
           if (e.Birth.date){
             e.birthdate = dateFormat.parse(e.Birth.date);
@@ -658,10 +691,10 @@
       graphs.delegation = drawRow(".delegation .graph","delegation");
       graphs.role = drawRow(".role .graph","role");
       graphs.role.height(100);
-     //      graphs.age = drawAge(".age");
+//           graphs.age = drawAge(".age");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
-      graphs.candidate = drawCandidate(".nbcandidates .hidden");
+//      graphs.candidate = drawCandidate(".nbcandidates .hidden");
       graphs.table = drawTable("#table");
       graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {setUrl()});
@@ -705,8 +738,9 @@
         .dimension(dim)
         .group(group)
         .on("renderlet", function(c) {
-            c.selectAll("g.row")
-              .call(tip)
+            var a = c.selectAll("g.row");
+            if (!a[0].length) return;
+            a.call(tip)
               .on("mouseover.tip", tip.show)
               .on("mouseout.tip", tip.hide);
 //          slideChartLabels(c);
@@ -900,7 +934,7 @@ function download_excel() {
 
   <div class="container-fluid">
     <h1 class="page-header hidden">Members of the European parliament</h1>
-      <div class="row"><div class="col-xs-12">
+      <div class="row hidden"><div class="col-xs-12">
         <input id="twitter-tpl" value=".{mep}, do the right thing">
       </div></div>
     <div id="stat" class="row collapse in">
@@ -917,7 +951,7 @@ function download_excel() {
           <ul class="list-group">
             <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
             <li class="list-group-item nbwomen" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women</li>
-            <li class="list-group-item nbcandidates" title="candidates in the EP2019 elections"><span class="percent badge"></span><button class="btn-xs btn-primary"><span class="nb"></span> Candidates</button></li>
+            <li class="list-group-item newbies" title="percentage of new members"><span class="percent badge"></span><span class="nb"></span> Newbies</li>
           <li class="list-group-item avg_age" title="average age"><span></span></li>
           <li class="list-group-item avg_since" title="how long in office"><span></span></li>
             <li class="list-group-item nbopinion"><span class="nb"></span> Opinions</li>
@@ -1065,15 +1099,6 @@ function download_excel() {
     });
 
     $(function() {
-      d3.csv("data/candidates.csv",function(csv){
-        csv.forEach(function(d){
-          candidates.push(+d.id);
-        });
-        if (data) {
-          adjust(data);
-          console.log("update data from candidates, shouldn't happen");
-        }
-      });
       d3.json("data/meps.json", function(json) {
         data = json;
         draw(data);
@@ -1082,6 +1107,14 @@ function download_excel() {
         abbreviations = json;
       });
     });
+
+d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
+  if (error) throw error;
+  d3.select("body").append("svg").attr("id","flags").html(xml).classed("d-none",true);
+  d3.selectAll("#flags symbol").attr("fill","#000");
+  //document.body.appendChild(xml.documentElement);
+});
+
 
     jQuery.urlParam = function(name) {
       var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -1198,7 +1231,7 @@ function download_excel() {
       background-image: url("img/group/S-D.png");
     }
 
-    .alde {
+    .re,.alde {
       background-image: url("img/group/ALDE.png");
     }
 
@@ -1214,7 +1247,7 @@ function download_excel() {
       background-image: url("img/group/GUE.png");
     }
 
-    .enf {
+    .id,.enf {
       background-image: url("img/group/ENF.png");
     }
 
@@ -1534,7 +1567,7 @@ function download_excel() {
         <div class="modal-body">
           <div class="row">
             <div class="col-md-3">
-              <img src="https://s3.eu-central-1.amazonaws.com/newshubv2/mep/{%=o.epid%}.jpg" class="img-circle img-responsive">
+              <img src="https://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
             </div>
             <div class="col-md-9 main">
               <dl class="dl-horizontal">
@@ -1563,4 +1596,4 @@ function download_excel() {
 </symbol>
 </svg>
 </body>
-T</html>
+</html>

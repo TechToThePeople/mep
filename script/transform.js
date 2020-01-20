@@ -46,7 +46,6 @@ function indexepnews (epnews){
     var sm={}
     if (d.socialMediaSources.twitter){
       sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*\/(.*)\//g,"");
-    console.log(d.socialMediaSources.twitter.feedUrl,sm.twitter);
     }
       // todo: regex ".*twitter.com/"
     if (d.socialMediaSources.facebook)
@@ -112,7 +111,7 @@ function transform(d) {
     if (typeof options.abbr == "string") {
       var k=options.abbr;
       options.abbr = function(d){
-        return d[k] || abbr[d.Organization] || "??";
+        return d.abbr || d[k] || abbr[d.Organization] || "??";
       };
     } else {
       if (options.abbr) {
@@ -128,6 +127,8 @@ function transform(d) {
       if (item.end !== '9999-12-31T00:00:00') return;
       if (options.abbr) {
         abbreviations[options.abbr(item)]= item[options.long];
+        if (options.abbr(item) =="??")
+          console.log(item);
         var i = {
           start:item.start.replace("T00:00:00", ""),
           role:item.role,
@@ -173,15 +174,21 @@ function transform(d) {
   if (!d.Gender) d.Gender=fixGender(d.epid);
   delete d.UserID;
   delete d.Name;
-  delete d.Addresses.Postal;
-  delete d.Addresses.Strasbourg;
-  d.Addresses.Brussels.Office = d.Addresses.Brussels.Address.Office;
-  delete d.Addresses.Brussels.Address;
-  delete d.Addresses.Brussels.Fax;
+  try {
+    delete d.Addresses.Postal;
+    delete d.Addresses.Strasbourg;
+    d.Addresses.Brussels.Office = d.Addresses.Brussels.Address.Office;
+    delete d.Addresses.Brussels.Address;
+    delete d.Addresses.Brussels.Fax;
+  } catch (error){
+    console.error(error.message +":"+d.first_name +" "+d.last_name +" ["+d.epid);
+    d.Addresses={Brussels:{Phone:"",Office:""}};
+  }
   delete d.Photo; //"http://www.europarl.europa.eu/mepphoto/{{d.epid }}.jpg
   d.activities=countActivities(d.activities);
   //delete d.activities; // stuff might be to be kept there
   delete d["Declarations of Participation"];
+  delete d["Declaration of good conduct"];
   delete d["Financial Declarations"];
 
   if (Array.isArray(d.Twitter)) {
@@ -190,7 +197,6 @@ function transform(d) {
   if (d.Twitter)
     d.Twitter=d.Twitter.replace(/.*twitter.com\//ig,"");
   if (epnews[d.epid] && epnews[d.epid].twitter) {
-    console.log(epnews[d.epid].twitter,d.Twitter);
     d.Twitter=epnews[d.epid].twitter;
   };
   if (d.Birth) {
@@ -199,6 +205,9 @@ function transform(d) {
     d.Birth = {};//{date:null,place:null};
   }
   d.mail= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail;
+  if (!d.mail && !d.first_name.includes(" ") && !d.last_name.includes(" "))
+    d.mail = d.first_name.toLowerCase() + "." + d.last_name.toLowerCase() + "@ep.europa.eu";
+
   delete d.Mail;
   //delete d.Delegations;
   activeOnly("Delegations",{abbr:getDelegation});
@@ -212,6 +221,8 @@ function transform(d) {
   activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
   d.constituency.country = country2iso[d.constituency.country];
+  if (!d.constituency.country) 
+    console.log(d);
   if (d.constituency && d.constituency.start)
     d.constituency.start=d.constituency.start.replace("T00:00:00", "");
   return d;
@@ -297,7 +308,7 @@ function write(options = {
   fs.createReadStream(options.from).pipe(stream.input)
   var writer = fs.createWriteStream(options.json);
   const csvwriter = require('csv-write-stream')({headers: head});
-//  csvwriter.pipe(fs.createWriteStream(options.csv));
+  csvwriter.pipe(fs.createWriteStream(options.csv));
   stream.output.pipe(simp);
   simp.pipe(csv).pipe(csvwriter).pipe(fs.createWriteStream(options.csv));
   simp.pipe(JSONStream.stringify()).pipe(writer);

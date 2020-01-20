@@ -1,12 +1,12 @@
 'use strict';
 const   file = require("fs");
-const countries = JSON.parse(file.readFileSync("./data/name2iso.json"));
+const countries = JSON.parse(file.readFileSync("./data/country2iso.json"));
 var finished = function(n) {
   console.log("Processed " + n)
 };
 var total = 0;
 const head = ['epid', 'alias','active'];
-const headall = ['epid','firstname','lastname','active','start','end','birthdate','country','gender','eugroup','party','email','twitter'];
+const headall = ['epid','firstname','lastname','active','start','start9','end','birthdate','country','gender','eugroup','party','email','twitter','term'];
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
@@ -14,8 +14,14 @@ const through2 = require('through2')
 const JSONStream = require('JSONStream');
 const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
 
-var mepid= require('../data/mepid.json'); // direct from EP site, for QA
+var mepid= require('../data/mepid.json'); // direct from EP site, for QA, needs to run scripts/st_mep.json
 var csvparse=require('csv-parse/lib/sync.js');
+var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true});
+  function fixGender (id) {
+    var g=nogender.find(o => o.epid === id);
+    return g? g.gender: '';
+  }
+
 
 function isActive (id) {return mepid.find(o => o.id === id);}
 
@@ -41,32 +47,61 @@ function transform(d) {
     console.log(d);
     return;
   }
-  var t={start:d.Constituencies[0].start,end:d.Constituencies[0].end,country:countries[d.Constituencies[0].country],party:d.Constituencies[0].party};
-  if (!t.country) {
-    console.log("missing country "+d.Constituencies[0].country);
-  }
-  var getFromTo= function(){
-    d.Constituencies.forEach(function(c){
-      if (!c) return;// deal with incomplete
-      if (c.start < t.start) t.start = c.start;
-      if (c.end > t.end) t.end = d.end;
+  //we start with the first constituency, it will be adjusted later if needed
+  var t={start:Date(),end:d.Constituencies[0].end};
+  var getGroup = function (){
+    var abbr=null, end='';
+    if (!d.Groups) return '';
+    d.Groups.forEach(g => {
+      if (g.end > end) {
+        end=g.end;
+        abbr=g.groupid;
+      }
     });
+    return abbr;
+  }
+
+  // set start, to, party and country based on the Constituencies (the latest one)
+  var constituencing= function(){
+    var last = 0;
+    d.Constituencies.forEach(function(c,i){
+      if (!c) return;// deal with incomplete
+      if (c.term==9) {
+        if (!t.start9 || c.start < t.start9)
+          t.start9 = c.start.replace("T00:00:00", "");
+      }
+      if (c.start < t.start) t.start = c.start;
+      if (c.end > t.end) {
+        t.end = c.end;
+        last = i;
+      }
+    });
+    t.start=t.start.replace("T00:00:00", "");
+    if (!t.end) {
+      console.log(t);
+      process.exit(1);
+    }
+    //t.end= d.active ? "" : t.end.replace("T00:00:00", "");
+    t.end= t.end == "9999-12-31T00:00:00"? "": t.end.replace("T00:00:00", "");
+    t.party=d.Constituencies[last].party;
+    t.country=countries[d.Constituencies[last].country];
+    t.term=d.Constituencies[last].term;
   }
 
   t.birthdate=d.Birth ? d.Birth.date.replace("T00:00:00", "") : null;
+  if (!d.Gender) d.Gender=fixGender(d.UserID);
+
   t.gender=d.Gender;
   t.active=d.active;
   t.aliases=d.Name.aliases;
   t.firstname=d.Name.sur;
   t.lastname=d.Name.family;
   t.epid=d.UserID;
-  t.eugroup=d.Groups ? d.Groups[0].groupid : "";
+  t.eugroup= getGroup(); //d.Groups ? d.Groups[0].groupid : "";
   if (Array.isArray(t.eugroup)){
     t.eugroup = t.eugroup.join("/");
   }
-  getFromTo();
-  t.start=t.start.replace("T00:00:00", "");
-  t.end= t.active ? "" : t.end.replace("T00:00:00", "");
+  constituencing();
   t.twitter= "";
   if (d.Twitter && d.Twitter[0].indexOf(".com/") !== -1) {
     t.twitter=d.Twitter[0].substring(d.Twitter[0].indexOf(".com/")+5);
@@ -76,7 +111,6 @@ function transform(d) {
     if (d.Twitter){
       if (d.Twitter[0]){
         t.twitter=d.Twitter[0].substring(d.Twitter[0].indexOf("@")+1);
-console.log(t.twitter);
       } else {
         console.log(d.Twitter);
       }
@@ -85,6 +119,10 @@ console.log(t.twitter);
   t.email= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail || "";
   t.email=t.email.toLowerCase();
   t.twitter=t.twitter.toLowerCase();
+  if (!t.country) {
+    console.log("missing country "+d.Constituencies[0]);
+  }
+//  if (t.epid==97025) console.log(d);
   return t;
 }
 
@@ -107,7 +145,7 @@ csv.on('end', () => {});
 var csvall = through2({
   objectMode: true
 }, function(mep, enc, callback) {
-  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter]);
+  csvall.push([mep.epid,mep.firstname,mep.lastname,mep.active,mep.start,mep.start9,mep.end,mep.birthdate,mep.country,mep.gender,mep.eugroup,mep.party,mep.email,mep.twitter,mep.term]);
   callback();
 });
 

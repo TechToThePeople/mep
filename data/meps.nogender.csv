@@ -1,55 +1,747 @@
-epid,gender,first_name,last_name
-194658,M,Anders,SELLSTRÖM
-193879,M,Igor,GRÄZIN
-193419,M,Christophe,HANSEN
-194391,M,Stefan,GEHROLD
-193273,M,Romeo,FRANZ
-193292,F,Tilly,METZ
-193269,F,Mirja,VEHKAPERÄ
-193080,F,Karine,GLOANEC MAURIN
-192634,M,Giuseppe,FERRANDINO
-192635,M,Danilo Oscar,LANCINI
-192465,M,Aleksander,GABELIC
-192298,M,Dobromir,SOŚNIERZ
-188733,M,Jonathan,BULLOCK
-189490,M,Răzvan,POPA
-189507,M,Jiří,PAYNE
-189391,F,Baroness Nosheena,MOBARIK
-188445,M,André,ELISSEN
-188624,M,Wajid,KHAN
-136236,M,João,PIMENTA LOPES
-124857,M,Peter,KOUROUMBASHEV
-190519,F,Caroline,NAGTEGAAL
-185341,F,Željana,ZOVKO
-185340,M,Ivica,TOLIĆ
-189065,F,France,JAMET
-185974,M,Jordi,SOLÉ
-185619,M,Tiemo,WÖLKEN
-183022,F,Lieve,WIERINCK
-186884,M,Arndt,KOHN
-185637,F,Alex,MAYER
-188254,F,Patricia,LALONDE
-190099,M,Rory,PALMER
-190464,M,Thomas,WAITZ
-188945,M,Dennis,RADTKE
-190517,M,Martin,SCHIRDEWAN
-26146,M,Florent,MARCELLESI
-90110,F,Carolina,PUNSET
-188636,M,John,HOWARTH
-188721,F,Marie-Pierre,VIEU
-183338,M,Jakop,DALUNDE
-188623,M,John,FLACK
-188718,F,Christelle,LECHEVALIER
-189525,M,Asim Ahmedov,ADEMOV
-185628,M,John,PROCTER
-188906,M,Francis,ZAMMIT DIMECH
-183793,M,Angelo,CIOCCA
-188622,M,Rupert,MATTHEWS
-190518,M,Jörg,MEUTHEN
-190799,M,Michael,DETJEN
-191695,M,Miroslavs,MITROFANOVS
-191377,F,Maria Gabriela,ZOANĂ
-191510,M,Jacques,COLOMBIER
-191693,F,Elsi,KATAINEN
-190713,M,Lukas,MANDL
-190774,M,Geoffroy,DIDIER
+epid,firstName,lastName,eugroup,country,started,gender,email,twitter,term
+4246,Othmar,Karas,PPE,at,1999-07-20,M,othmar.karas@europarl.europa.eu,othmar_karas,8
+38511,Georg,Mayer,ID,at,2014-07-01,M,georg.mayer@europarl.europa.eu,,8
+96998,Evelyn,Regner,S&D,at,2009-07-14,F,evelyn.regner@europarl.europa.eu,evelyn_regner,8
+124934,Monika,Vana,Verts/ALE,at,2014-07-01,F,monika.vana@europarl.europa.eu,monikavana,8
+125001,Harald,Vilimsky,ID,at,2014-07-01,M,harald.vilimsky@europarl.europa.eu,,8
+190713,Lukas,Mandl,PPE,at,2017-11-30,M,lukas.mandl@europarl.europa.eu,lukasmandl,8
+197632,Claudia,Gamon,Renew,at,2019-07-02,F,,,9
+197643,Karoline,Edtstadler,PPE,at,2019-07-02,F,,,9
+197648,Alexander,Bernhuber,PPE,at,2019-07-02,F,,,9
+197652,Angelika,Winzig,PPE,at,2019-07-02,M,,,9
+197656,Simone,Schmiedtbauer,PPE,at,2019-07-02,F,,,9
+197667,Barbara,Thaler,PPE,at,2019-07-02,F,,,9
+197670,Andreas,Schieder,S&D,at,2019-07-02,M,,,9
+197675,Sarah,Wiener,Verts/ALE,at,2019-07-02,F,,,9
+197677,Günther,Sidl,S&D,at,2019-07-02,M,,,9
+197678,Bettina,Vollath,S&D,at,2019-07-02,F,,,9
+197682,Hannes,Heide,S&D,at,2019-07-02,F,,,9
+198176,Roman,Haider,ID,at,2019-07-02,M,,,9
+4253,Frédérique,Ries,Renew,be,1999-07-20,F,frederique.ries@europarl.europa.eu,frederiqueries,8
+5729,Kathleen,Van Brempt,S&D,be,2000-01-13,F,kathleen.vanbrempt@europarl.europa.eu,kvanbrempt,8
+24922,Pascal,Arimont,PPE,be,2014-07-01,M,pascal.arimont@europarl.europa.eu,pascal_arimont,8
+29579,Marc,Tarabella,S&D,be,2004-08-09,M,marc.tarabella@europarl.europa.eu,marctarabella,8
+96648,Philippe,Lamberts,Verts/ALE,be,2009-07-14,M,philippe.lamberts@europarl.europa.eu,ph_lamberts,8
+97058,Guy,Verhofstadt,Renew,be,2009-07-14,M,guy.verhofstadt@europarl.europa.eu,guyverhofstadt,8
+124936,Maria,Arena,S&D,be,2014-07-01,F,maria.arena@europarl.europa.eu,mariearenaps,8
+124973,Gerolf,Annemans,ID,be,2014-07-01,M,gerolf.annemans@europarl.europa.eu,,8
+125106,Johan,Van Overtveldt,ECR,be,2014-07-01,M,,,8
+130100,Hilde,Vautmans,Renew,be,2015-01-01,F,hilde.vautmans@europarl.europa.eu,hildevautmans,8
+185771,Tom,Vandendriessche,ID,be,2019-07-02,M,,,9
+187917,Marc,Botenga,GUE/NGL,be,2019-07-02,M,,,9
+197420,Kris,Peeters,PPE,be,2019-07-02,M,,,9
+197455,Cindy,Franssen,PPE,be,2019-07-02,F,,,9
+197458,Benoît,Lutgen,PPE,be,2019-07-02,M,,,9
+197463,Olivier,Chastel,Renew,be,2019-07-02,M,,,9
+197467,Geert,Bourgeois,ECR,be,2019-07-02,M,,,9
+197469,Assita,Kanko,ECR,be,2019-07-02,F,,,9
+197470,Saskia,Bricmont,Verts/ALE,be,2019-07-02,F,,,9
+197471,Petra,De Sutter,Verts/ALE,be,2019-07-02,F,,,9
+197472,Filip,De Man,ID,be,2019-07-02,M,,,9
+97968,Andrey,Kovatchev,PPE,bg,2009-08-24,M,andrey.kovatchev@europarl.europa.eu,andreykovatchev,8
+98341,Eva,Maydell,PPE,bg,2014-07-01,F,eva.maydell@europarl.europa.eu,evamaydell,8
+107212,Andrey,Novakov,PPE,bg,2014-11-24,M,andrey.novakov@europarl.europa.eu,andreynovakov,8
+124850,Emil,Radev,PPE,bg,2014-07-01,M,emil.radev@europarl.europa.eu,emil_radev,8
+124852,Sergei,Stanishev,S&D,bg,2014-07-01,M,sergei.stanishev@europarl.europa.eu,sergeistanishev,8
+124866,Ilhan,Kyuchyuk,Renew,bg,2014-07-01,M,ilhan.kyuchyuk@europarl.europa.eu,ilhankyuchyuk,8
+124873,Angel,Dzhambazki,ECR,bg,2014-07-01,M,angel.dzhambazki@europarl.europa.eu,,8
+125128,Iskra,Mihaylova,Renew,bg,2014-07-01,F,iskra.mihaylova@europarl.europa.eu,,8
+189525,Asim,Ademov,PPE,bg,2017-09-14,M,asim.ademov@europarl.europa.eu,ademovasim,8
+197836,Alexander,Alexandrov Yordanov,PPE,bg,2019-07-02,M,,,9
+197839,Radan,Kanev,PPE,bg,2019-07-02,M,,,9
+197842,Elena,Yoncheva,S&D,bg,2019-07-02,F,,,9
+197844,Petar,Vitanov,S&D,bg,2019-07-02,M,,,9
+197845,Tsvetelina,Penkova,S&D,bg,2019-07-02,F,,,9
+197846,Ivo,Hristov,S&D,bg,2019-07-02,M,,,9
+197848,Atidzhe,Alieva-Veli,Renew,bg,2019-07-02,F,,,9
+197849,Andrey,Slabakov,ECR,bg,2019-07-02,M,,,9
+26837,Lefteris,Christoforou,PPE,cy,2004-04-13,M,lefteris.christoforou@europarl.europa.eu,lefchristoforou,8
+124691,Costas,Mavrides,S&D,cy,2014-07-01,M,costas.mavrides@europarl.europa.eu,,8
+124692,Demetris,Papadakis,S&D,cy,2014-07-01,M,demetris.papadakis@europarl.europa.eu,dempapadakis,8
+197414,Loucas,Fourlas,PPE,cy,2019-07-02,M,,,9
+197415,Niyazi,Kizilyürek,GUE/NGL,cy,2019-07-02,M,,,9
+197416,Giorgos,Georgiou,GUE/NGL,cy,2019-07-02,M,,,9
+23699,Kateřina,Konečná,GUE/NGL,cz,2003-04-23,F,katerina.konecna@europarl.europa.eu,,8
+23712,Jan,Zahradil,ECR,cz,2003-04-23,M,jan.zahradil@europarl.europa.eu,,8
+96713,Evžen,Tošenovský,ECR,cz,2009-07-14,M,evzen.tosenovsky@europarl.europa.eu,,8
+118949,Ondřej,Kovařík,Renew,cz,2019-07-02,M,,,9
+124701,Luděk,Niedermayer,PPE,cz,2014-07-01,M,ludek.niedermayer@europarl.europa.eu,ludeknie,8
+124704,Stanislav,Polčák,PPE,cz,2014-07-01,M,stanislav.polcak@europarl.europa.eu,stanislavpolcak,8
+124708,Dita,Charanzová,Renew,cz,2014-07-01,F,dita.charanzova@europarl.europa.eu,charanzova,8
+124709,Martina,Dlabajová,Renew,cz,2014-07-01,F,martina.dlabajova@europarl.europa.eu,mdlabajova,8
+124710,Michaela,Šojdrová,PPE,cz,2014-07-01,F,michaela.sojdrova@europarl.europa.eu,msojdrova,8
+124713,Tomáš,Zdechovský,PPE,cz,2014-07-01,M,tomas.zdechovsky@europarl.europa.eu,tomzdechovsky,8
+125706,Jiří,Pospíšil,PPE,cz,2014-07-01,M,jiri.pospisil@europarl.europa.eu,pospisil_jiri,8
+197522,Radka,Maxová,Renew,cz,2019-07-02,F,,,9
+197526,Martin,Hlaváček,Renew,cz,2019-07-02,M,,,9
+197528,Ondřej,Knotek,Renew,cz,2019-07-02,M,,,9
+197537,Alexandr,Vondra,ECR,cz,2019-07-02,M,,,9
+197539,Mikuláš,Peksa,Verts/ALE,cz,2019-07-02,M,,,9
+197546,Marcel,Kolaja,Verts/ALE,cz,2019-07-02,M,,,9
+197549,Markéta,Gregorová,Verts/ALE,cz,2019-07-02,F,,,9
+197552,Veronika,Vrecionová,ECR,cz,2019-07-02,F,,,9
+197556,Ivan,David,ID,cz,2019-07-02,M,,,9
+197564,Hynek,Blaško,ID,cz,2019-07-02,M,,,9
+1854,Constanze,Krehl,S&D,de,1991-03-11,F,constanze.krehl@europarl.europa.eu,constanzekrehl,8
+1909,Bernd,Lange,S&D,de,1994-07-19,M,bernd.lange@europarl.europa.eu,berndlange,8
+1913,Evelyne,Gebhardt,S&D,de,1994-07-19,F,evelyne.gebhardt@europarl.europa.eu,,8
+1917,Markus,Ferber,PPE,de,1994-07-19,M,markus.ferber@europarl.europa.eu,markusferber,8
+1927,Peter,Liese,PPE,de,1994-07-19,M,peter.liese@europarl.europa.eu,peterliese,8
+2323,Rainer,Wieland,PPE,de,1997-10-10,M,rainer.wieland@europarl.europa.eu,,8
+2341,Michael,Gahler,PPE,de,1999-04-23,M,michael.gahler@europarl.europa.eu,,8
+4267,Udo,Bullmann,S&D,de,1999-07-20,M,udo.bullmann@europarl.europa.eu,udobullmann,8
+4289,Angelika,Niebler,PPE,de,1999-07-20,F,angelika.niebler@europarl.europa.eu,aniebler,8
+28219,Daniel,Caspary,PPE,de,2004-07-20,M,daniel.caspary@europarl.europa.eu,caspary,8
+28223,Andreas,Schwab,PPE,de,2004-07-20,M,andreas.schwab@europarl.europa.eu,andreas_schwab,8
+28224,Markus,Pieper,PPE,de,2004-07-20,M,markus.pieper@europarl.europa.eu,markuspiepermep,8
+28226,Christian,Ehler,PPE,de,2004-07-20,M,christian.ehler@europarl.europa.eu,,8
+28229,Manfred,Weber,PPE,de,2004-07-20,M,manfred.weber@europarl.europa.eu,manfredweber,8
+86793,Anna,Cavazzini,Verts/ALE,de,2019-07-02,F,,,9
+96646,Helmut,Scholz,GUE/NGL,de,2009-07-14,M,helmut.scholz@europarl.europa.eu,helmutscholz,8
+96730,Sven,Giegold,Verts/ALE,de,2009-07-14,M,sven.giegold@europarl.europa.eu,sven_giegold,8
+96734,Ska,Keller,Verts/ALE,de,2009-07-14,F,franziska.keller@europarl.europa.eu,skakeller,8
+96739,Reinhard,Bütikofer,Verts/ALE,de,2009-07-14,M,reinhard.buetikofer@europarl.europa.eu,bueti,8
+96752,Martin,Häusling,Verts/ALE,de,2009-07-14,M,martin.haeusling@europarl.europa.eu,martinhaeusling,8
+96756,Sabine,Verheyen,PPE,de,2009-07-14,F,sabine.verheyen@europarl.europa.eu,sabineverheyen,8
+96761,Axel,Voss,PPE,de,2009-07-14,M,axel.voss@europarl.europa.eu,axelvossmdep,8
+96772,Peter,Jahr,PPE,de,2009-07-14,M,peter.jahr@europarl.europa.eu,peter_jahr,8
+96780,Monika,Hohlmeier,PPE,de,2009-07-14,F,monika.hohlmeier@europarl.europa.eu,mhohlmeier,8
+96833,Jens,Geier,S&D,de,2009-07-14,M,jens.geier@europarl.europa.eu,europajens,8
+96837,Petra,Kammerevert,S&D,de,2009-07-14,F,petra.kammerevert@europarl.europa.eu,spdeuropa,8
+96842,Ismail,Ertug,S&D,de,2009-07-14,M,ismail.ertug@europarl.europa.eu,ismailertug,8
+96844,Norbert,Neuser,S&D,de,2009-07-14,M,norbert.neuser@europarl.europa.eu,,8
+96852,Cornelia,Ernst,GUE/NGL,de,2009-07-14,F,cornelia.ernst@europarl.europa.eu,ernstcornelia,8
+96932,Birgit,Sippel,S&D,de,2009-07-14,F,birgit.sippel@europarl.europa.eu,birgitsippelmep,8
+99945,Lena,Düpont,PPE,de,2019-07-02,F,,,9
+103381,Terry,Reintke,Verts/ALE,de,2014-07-01,F,terry.reintke@europarl.europa.eu,terryreintke,8
+106936,Daniel,Freund,Verts/ALE,de,2019-07-02,M,,,9
+120478,Martina,Michels,GUE/NGL,de,2013-09-05,F,martina.michels@europarl.europa.eu,martina_michels,8
+124806,David,McAllister,PPE,de,2014-07-01,M,david.mcallister@europarl.europa.eu,davidmcallister,8
+124807,Jens,Gieseke,PPE,de,2014-07-01,M,jens.gieseke@europarl.europa.eu,,8
+124808,Norbert,Lins,PPE,de,2014-07-01,M,norbert.lins@europarl.europa.eu,,8
+124809,Sven,Schulze,PPE,de,2014-07-01,M,sven.schulze@europarl.europa.eu,schulzeeuropa,8
+124818,Klaus,Buchner,Verts/ALE,de,2014-07-01,M,klaus.buchner@europarl.europa.eu,dr_klausbuchner,8
+124822,Dietmar,Köster,S&D,de,2014-07-01,M,dietmar.koester@europarl.europa.eu,,8
+124834,Martin,Sonneborn,NI,de,2014-07-01,M,martin.sonneborn@europarl.europa.eu,martinsonneborn,8
+124836,Maria,Noichl,S&D,de,2014-07-01,F,maria.noichl@europarl.europa.eu,,8
+124837,Joachim,Schuster,S&D,de,2014-07-01,M,joachim.schuster@europarl.europa.eu,,8
+124862,Ulrike,Müller,Renew,de,2014-07-01,F,ulrike.mueller@europarl.europa.eu,ulimuellermdep,8
+128483,Markus,Buchheit,ID,de,2019-07-02,M,,,9
+132191,Gunnar Günter,Beck,ID,de,2019-07-02,M,,,9
+183916,Alexandra,Geese,Verts/ALE,de,2019-07-02,F,,,9
+185619,Tiemo,Wölken,S&D,de,2016-11-14,M,tiemo.woelken@europarl.europa.eu,,8
+188945,Dennis,Radtke,PPE,de,2017-07-24,M,dennis.radtke@europarl.europa.eu,radtkemdep,8
+190517,Martin,Schirdewan,GUE/NGL,de,2017-11-08,M,martin.schirdewan@europarl.europa.eu,schirdewan,8
+190518,Jörg,Meuthen,ID,de,2017-11-08,M,joerg.meuthen@europarl.europa.eu,,8
+193273,Romeo,Franz,Verts/ALE,de,2018-07-03,M,romeo.franz@europarl.europa.eu,,8
+197408,Hildegard,Bentele,PPE,de,2019-07-02,F,,,9
+197410,Stefan,Berger,PPE,de,2019-07-02,M,,,9
+197412,Niclas,Herbst,PPE,de,2019-07-02,M,,,9
+197422,Christine,Schneider,PPE,de,2019-07-02,F,,,9
+197423,Nico,Semsrott,Verts/ALE,de,2019-07-02,M,,,9
+197425,Ralf,Seekatz,PPE,de,2019-07-02,M,,,9
+197426,Sven,Simon,PPE,de,2019-07-02,M,,,9
+197427,Marlene,Mortler,PPE,de,2019-07-02,F,,,9
+197429,Marion,Walsmann,PPE,de,2019-07-02,F,,,9
+197430,Engin,Eroglu,Renew,de,2019-07-02,M,,,9
+197431,Patrick,Breyer,Verts/ALE,de,2019-07-02,M,,,9
+197432,Jan-Christoph,Oetjen,Renew,de,2019-07-02,M,,,9
+197433,Katarina,Barley,S&D,de,2019-07-02,F,,,9
+197434,Martin,Buschmann,GUE/NGL,de,2019-07-02,M,,,9
+197435,Gabriele,Bischoff,S&D,de,2019-07-02,F,,,9
+197436,Helmut,Geuking,ECR,de,2019-07-02,M,,,9
+197437,Nicola,Beer,Renew,de,2019-07-02,F,,,9
+197439,Damian,Boeselager,Verts/ALE,de,2019-07-02,M,,,9
+197440,Delara,Burkhardt,S&D,de,2019-07-02,F,,,9
+197443,Andreas,Glück,Renew,de,2019-07-02,M,,,9
+197444,Svenja,Hahn,Renew,de,2019-07-02,F,,,9
+197445,Moritz,Körner,Renew,de,2019-07-02,M,,,9
+197448,Rasmus,Andresen,Verts/ALE,de,2019-07-02,M,,,9
+197449,Michael,Bloss,Verts/ALE,de,2019-07-02,M,,,9
+197451,Viola,Von Cramon-Taubadel,Verts/ALE,de,2019-07-02,F,,,9
+197453,Anna,Deparnay-Grunenberg,Verts/ALE,de,2019-07-02,F,,,9
+197457,Henrike Nanna Gisela,Hahn,Verts/ALE,de,2019-07-02,F,,,9
+197459,Pierrette Gabrielle,Herzberger-Fofana,Verts/ALE,de,2019-07-02,F,,,9
+197460,Sergey,Lagodinsky,Verts/ALE,de,2019-07-02,M,,,9
+197461,Katrin,Langensiepen,Verts/ALE,de,2019-07-02,F,,,9
+197462,Erik,Marquardt,Verts/ALE,de,2019-07-02,M,,,9
+197464,Hannah,Neumann,Verts/ALE,de,2019-07-02,F,,,9
+197465,Niklas,Nienaß,Verts/ALE,de,2019-07-02,M,,,9
+197466,Jutta,Paulus,Verts/ALE,de,2019-07-02,F,,,9
+197468,Özlem,Demirel,GUE/NGL,de,2019-07-02,F,,,9
+197473,Christian Konrad,Doleschal,PPE,de,2019-07-02,M,,,9
+197475,Christine,Anderson,ID,de,2019-07-02,F,,,9
+197478,Lars Patrick,Berg,ID,de,2019-07-02,M,,,9
+197480,Nicolaus,Fest,ID,de,2019-07-02,M,,,9
+197481,Maximilian,Krah,ID,de,2019-07-02,M,,,9
+197482,Joachim,Kuhs,ID,de,2019-07-02,M,,,9
+197483,Sylvia,Limmer,ID,de,2019-07-02,F,,,9
+197488,Guido,Reil,ID,de,2019-07-02,M,,,9
+197489,Bernhard,Zimniok,ID,de,2019-07-02,M,,,9
+28161,Margrete,Auken,Verts/ALE,dk,2004-07-20,F,margrete.auken@europarl.europa.eu,margreteauken,8
+37312,Christel,Schaldemose,S&D,dk,2006-10-15,F,christel.schaldemose@europarl.europa.eu,schaldemosemep,8
+96709,Morten,Løkkegaard,Renew,dk,2009-07-14,M,morten.lokkegaard@europarl.europa.eu,loekkegaard_mep,8
+101585,Niels,Fuglsang,S&D,dk,2019-07-02,M,,,9
+124872,Morten Helveg,Petersen,Renew,dk,2014-07-01,M,mortenhelveg.petersen@europarl.europa.eu,mortenhelveg,8
+197515,Pernille,Weiss,PPE,dk,2019-07-02,F,,,9
+197555,Søren Gade,Gade,Renew,dk,2019-07-02,M,,,9
+197558,Asger,Christensen,Renew,dk,2019-07-02,M,,,9
+197567,Karen,Melchior,Renew,dk,2019-07-02,F,,,9
+197570,Peter,Kofod,ID,dk,2019-07-02,M,,,9
+197571,Nikolaj,Villumsen,GUE/NGL,dk,2019-07-02,M,,,9
+197573,Kira Marie,Peter-Hansen,Verts/ALE,dk,2019-07-02,F,,,9
+124696,Andrus,Ansip,Renew,ee,2014-07-01,M,andrus.ansip@europarl.europa.eu,,8
+124700,Yana,Toom,Renew,ee,2014-07-01,F,yana.toom@europarl.europa.eu,yanatoom,8
+129073,Urmas,Paet,Renew,ee,2014-11-03,M,urmas.paet@europarl.europa.eu,urmaspaet,8
+197491,Marina,Kaljurand,S&D,ee,2019-07-02,F,,,9
+197493,Jaak,Madison,ID,ee,2019-07-02,M,,,9
+197497,Sven,Mikser,S&D,ee,2019-07-02,M,,,9
+1992,José Manuel,García-Margallo y Marfil,PPE,es,1994-07-19,M,,,7
+4344,María Soraya,Rodríguez Ramos,Renew,es,1999-07-20,F,,,5
+28298,Iratxe,García Pérez,S&D,es,2004-07-20,F,iratxe.garcia-perez@europarl.europa.eu,iratxegarper,8
+28347,Javier,Moreno Sánchez,S&D,es,2004-07-20,M,,,6
+28390,Pilar,del Castillo Vera,PPE,es,2004-07-20,F,pilar.delcastillo@europarl.europa.eu,delcastillop,8
+28399,Antonio,López-Istúriz White,PPE,es,2004-07-20,M,antonio.lopezisturiz@europarl.europa.eu,tonoepp,8
+28400,Francisco José,Millán Mon,PPE,es,2004-07-20,M,francisco.millanmon@europarl.europa.eu,ppegrupo,8
+96808,Pablo,Arias Echeverría,PPE,es,2009-07-14,M,,,7
+96811,Rosa,Estaràs Ferragut,PPE,es,2009-07-14,F,rosa.estaras@europarl.europa.eu,,8
+96812,Juan Fernando,López Aguilar,S&D,es,2009-07-14,M,juanfernando.lopezaguilar@europarl.europa.eu,jflopezaguilar,8
+96922,Izaskun,Bilbao Barandica,Renew,es,2009-07-14,F,izaskun.bilbaobarandica@europarl.europa.eu,izaskunbilbaob,8
+96991,Eider,Gardiazabal Rubial,S&D,es,2009-07-14,F,eider.gardiazabalrubial@europarl.europa.eu,egardiazabal,8
+122978,Alicia,HOMS GINEL,S&D,es,2019-07-02,F,,,9
+124972,Ernest,Urtasun,Verts/ALE,es,2014-07-01,M,ernest.urtasun@europarl.europa.eu,ernesturtasun,8
+125005,Javier,Nart,Renew,es,2014-07-01,M,javier.nart@europarl.europa.eu,,8
+125027,Esteban,González Pons,PPE,es,2014-07-01,M,esteban.gonzalezpons@europarl.europa.eu,gonzalezpons,8
+125038,Maite,Pagazaurtundúa,Renew,es,2014-07-01,F,maite.pagaza@europarl.europa.eu,maitepagaza,8
+125042,Javi,López,S&D,es,2014-07-01,M,javi.lopez@europarl.europa.eu,fjavilopez,8
+125043,Inma,Rodríguez-Piñero,S&D,es,2014-07-01,F,inma.rodriguezpinero@europarl.europa.eu,rodriguezpinero,8
+125045,Clara,Aguilera,S&D,es,2014-07-01,F,claraeugenia.aguileragarcia@europarl.europa.eu,claraaguilera7,8
+125046,Jonás,Fernández,S&D,es,2014-07-01,M,jonas.fernandezalvarez@europarl.europa.eu,jonasfernandez,8
+126644,Jordi,Cañas,Renew,es,2019-07-02,M,,,9
+127096,Domènec,Ruiz Devesa,S&D,es,2019-07-02,M,,,9
+131507,Miguel,Urbán Crespo,GUE/NGL,es,2015-03-05,M,miguel.urbancrespo@europarl.europa.eu,miguelurban,8
+197554,Luis,Garicano,Renew,es,2019-07-02,M,,,9
+197606,Javier,Zarzalejos,PPE,es,2019-07-02,M,,,9
+197621,Juan Ignacio,Zoido Álvarez,PPE,es,2019-07-02,M,,,9
+197679,Isabel,Benjumea Benjumea,PPE,es,2019-07-02,F,,,9
+197681,Sira,Rego,GUE/NGL,es,2019-07-02,F,,,9
+197684,Pernando,Barrena Arza,GUE/NGL,es,2019-07-02,M,,,9
+197702,Lina,Galvez Muñoz,S&D,es,2019-07-02,F,,,9
+197711,Dolors,Montserrat,PPE,es,2019-07-02,F,,,9
+197717,Ibán,Garcia Del Blanco,S&D,es,2019-07-02,M,,,9
+197718,Nicolás,Gonzalez Casares,S&D,es,2019-07-02,M,,,9
+197719,Cristina,Maestre Martín De Almagro,S&D,es,2019-07-02,F,,,9
+197721,César,Luena,S&D,es,2019-07-02,M,,,9
+197722,Nacho,Sánchez Amor,S&D,es,2019-07-02,M,,,9
+197728,Mónica Silvana,González,S&D,es,2019-07-02,F,,,9
+197735,Adriana,Maldonado López,S&D,es,2019-07-02,F,,,9
+197742,Isabel,García Muñoz,S&D,es,2019-07-02,F,,,9
+197777,Leopoldo,López Gil,PPE,es,2019-07-02,M,,,9
+197779,José Ramón,Bauzá Díaz,Renew,es,2019-07-02,M,,,9
+197784,Susana,Solís Pérez,Renew,es,2019-07-02,F,,,9
+197785,Eugenia,RODRÍGUEZ PALOP,GUE/NGL,es,2019-07-02,F,,,9
+197827,Idoia,Villanueva Ruiz,GUE/NGL,es,2019-07-02,F,,,9
+197828,Manu,Pineda Marín,GUE/NGL,es,2019-07-02,M,,,9
+197829,Jorge,Buxadé Villalba,ECR,es,2019-07-02,M,,,9
+197831,Hermann,Tertsch,ECR,es,2019-07-02,M,,,9
+197832,Diana,Riba i Giner,Verts/ALE,es,2019-07-02,F,,,9
+198096,Mazaly,Aguilar,ECR,es,2019-07-02,F,,,9
+2054,Heidi,Hautala,Verts/ALE,fi,1995-01-01,F,heidi.hautala@europarl.europa.eu,heidihautala,8
+40599,Sirpa,Pietikäinen,PPE,fi,2008-04-04,F,sirpa.pietikainen@europarl.europa.eu,spietikainen,8
+112611,Petri,Sarvamaa,PPE,fi,2012-03-01,M,petri.sarvamaa@europarl.europa.eu,petrisarvamaa,8
+114268,Nils,Torvalds,Renew,fi,2012-07-05,M,nils.torvalds@europarl.europa.eu,nilstorvalds,8
+124726,Henna,Virkkunen,PPE,fi,2014-07-01,F,henna.virkkunen@europarl.europa.eu,hennavirkkunen,8
+124735,Miapetra,Kumpula-Natri,S&D,fi,2014-07-01,F,miapetra.kumpula-natri@europarl.europa.eu,miapetrakumpula,8
+191693,Elsi,Katainen,Renew,fi,2018-03-01,F,elsi.katainen@europarl.europa.eu,,8
+197563,Mauri,Pekkarinen,Renew,fi,2019-07-02,M,,,9
+197594,Laura,Huhtasaari,ID,fi,2019-07-02,F,,,9
+197596,Teuvo,Hakkarainen,ID,fi,2019-07-02,M,,,9
+197800,Eero,Heinäluoma,S&D,fi,2019-07-02,M,,,9
+197802,Ville,Niinistö,Verts/ALE,fi,2019-07-02,M,,,9
+197805,Silvia,Modig,GUE/NGL,fi,2019-07-02,F,,,9
+5565,Brice,Hortefeux,PPE,fr,1999-09-15,M,brice.hortefeux@europarl.europa.eu,bricehortefeux,8
+22858,Fabienne,Keller,Renew,fr,2002-06-17,F,,,5
+24505,Emmanuel,Maurel,GUE/NGL,fr,2014-07-01,M,emmanuel.maurel@europarl.europa.eu,emmanuelmaurel,8
+24594,Anne,Sander,PPE,fr,2014-07-01,F,anne.sander@europarl.europa.eu,asandermep,8
+30482,Younous,Omarjee,GUE/NGL,fr,2012-01-04,M,younous.omarjee@europarl.europa.eu,younousomarjee,8
+72779,Nadine,Morano,PPE,fr,2014-07-01,F,nadine.morano@europarl.europa.eu,nadine__morano,8
+94649,Catherine,GRISET,ID,fr,2019-07-02,F,,,9
+96711,Pascal,Canfin,Renew,fr,2009-07-14,M,,,7
+96740,Yannick,Jadot,Verts/ALE,fr,2009-07-14,M,yannick.jadot@europarl.europa.eu,yjadot,8
+96743,Michèle,Rivasi,Verts/ALE,fr,2009-07-14,F,michele.rivasi@europarl.europa.eu,michelerivasi,8
+96747,Arnaud,Danjean,PPE,fr,2009-07-14,M,arnaud.danjean@europarl.europa.eu,arnauddanjean,8
+96750,François,Alfonsi,Verts/ALE,fr,2009-07-14,M,,,7
+96868,Karima,Delli,Verts/ALE,fr,2009-07-14,F,karima.delli@europarl.europa.eu,karimadelli,8
+96885,Dominique,Riquet,Renew,fr,2009-07-14,M,dominique.riquet@europarl.europa.eu,dominiqueriquet,8
+96952,Sylvie,Guillaume,S&D,fr,2009-07-14,F,sylvie.guillaume@europarl.europa.eu,sylvieguillaume,8
+97236,Marie,TOUSSAINT,Verts/ALE,fr,2019-07-02,F,,,9
+113892,Eric,Andrieu,S&D,fr,2012-05-16,M,eric.andrieu@europarl.europa.eu,eric_andrieu,8
+124693,Pascal,Durand,Renew,fr,2014-07-01,M,pascal.durand@europarl.europa.eu,pdurandofficiel,8
+124738,Gilles,Lebreton,ID,fr,2014-07-01,M,gilles.lebreton@europarl.europa.eu,,8
+124760,Nicolas,Bay,ID,fr,2014-07-01,M,nicolas.bay@europarl.europa.eu,,8
+124765,Joëlle,Mélin,ID,fr,2014-07-01,F,joelle.melin@europarl.europa.eu,,8
+124770,Jean-François,Jalkh,ID,fr,2014-07-01,M,jean-francois.jalkh@europarl.europa.eu,,8
+124771,Dominique,Bilde,ID,fr,2014-07-01,F,dominique.bilde@europarl.europa.eu,dominiquebilde,8
+131580,Jordan,BARDELLA,ID,fr,2019-07-02,M,,,9
+135511,Valerie,Hayer,Renew,fr,2019-07-02,F,,,9
+182995,Annika,Bruna,ID,fr,2019-07-02,F,,,9
+189065,France,Jamet,ID,fr,2017-07-21,F,france.jamet@europarl.europa.eu,,8
+190774,Geoffroy,Didier,PPE,fr,2017-12-01,M,geoffroy.didier@europarl.europa.eu,geoffroydidier,8
+197494,Nathalie,Loiseau,Renew,fr,2019-07-02,F,,,9
+197499,Chrysoula,Zacharopoulou,Renew,fr,2019-07-02,F,,,9
+197500,Mounir,Satouri,Verts/ALE,fr,2019-07-02,M,,,9
+197502,Marie-Pierre,Vedrenne,Renew,fr,2019-07-02,F,,,9
+197503,David,Cormand,Verts/ALE,fr,2019-07-02,M,,,9
+197504,Jérémy,Decerle,Renew,fr,2019-07-02,M,,,9
+197505,Catherine,Chabaud,Renew,fr,2019-07-02,F,,,9
+197506,Caroline,Roose,Verts/ALE,fr,2019-07-02,F,,,9
+197508,Stéphane,Séjourné,Renew,fr,2019-07-02,M,,,9
+197511,Salima,Yenbou,Verts/ALE,fr,2019-07-02,F,,,9
+197512,Benoît,Biteau,Verts/ALE,fr,2019-07-02,M,,,9
+197521,Manuel,Bompard,GUE/NGL,fr,2019-07-02,M,,,9
+197527,Anne-Sophie,Pelletier,GUE/NGL,fr,2019-07-02,F,,,9
+197529,Leila,Chaibi,GUE/NGL,fr,2019-07-02,F,,,9
+197531,Gwendoline,Delbos-Corfield,Verts/ALE,fr,2019-07-02,F,,,9
+197533,Manon,Aubry,GUE/NGL,fr,2019-07-02,F,,,9
+197534,François-Xavier,Bellamy,PPE,fr,2019-07-02,M,,,9
+197535,Agnès,Evren,PPE,fr,2019-07-02,F,,,9
+197536,Nathalie,Colin-Oesterlé,PPE,fr,2019-07-02,F,,,9
+197543,Bernard,Guetta,Renew,fr,2019-07-02,M,,,9
+197547,Irène,Tolleret,Renew,fr,2019-07-02,F,,,9
+197551,Stéphane,Bijoux,Renew,fr,2019-07-02,M,,,9
+197557,Christophe,Grudler,Renew,fr,2019-07-02,M,,,9
+197574,Damien,Carême,Verts/ALE,fr,2019-07-02,M,,,9
+197576,Sylvie,Brunet,Renew,fr,2019-07-02,F,,,9
+197577,Gilles,Boyer,Renew,fr,2019-07-02,M,,,9
+197581,Stéphanie,Yon-Courtin,Renew,fr,2019-07-02,F,,,9
+197585,Pierre,Karleskind,Renew,fr,2019-07-02,M,,,9
+197589,Laurence,Farreng,Renew,fr,2019-07-02,F,,,9
+197593,Véronique,Trillet-Lenoir,Renew,fr,2019-07-02,F,,,9
+197597,Hélène,Laporte,ID,fr,2019-07-02,F,,,9
+197615,Jérôme,Rivière,ID,fr,2019-07-02,M,,,9
+197623,Thierry,Mariani,ID,fr,2019-07-02,M,,,9
+197626,Herve,Juvin,ID,fr,2019-07-02,M,,,9
+197627,Virginie,Joron,ID,fr,2019-07-02,F,,,9
+197628,Jean-Paul,Garraud,ID,fr,2019-07-02,M,,,9
+197629,Maxette,Pirbakas,ID,fr,2019-07-02,F,,,9
+197680,Aurelia,Beigneux,ID,fr,2019-07-02,F,,,9
+197683,Gilbert,Collard,ID,fr,2019-07-02,M,,,9
+197686,Julie,Lechanteux,ID,fr,2019-07-02,F,,,9
+197687,Philippe,Olivier,ID,fr,2019-07-02,M,,,9
+197690,André,Rougé,ID,fr,2019-07-02,M,,,9
+197691,Mathilde,Androuët,ID,fr,2019-07-02,F,,,9
+197694,Raphaël,Glucksmann,S&D,fr,2019-07-02,M,,,9
+197697,Aurore,Lalucq,S&D,fr,2019-07-02,F,,,9
+197698,Pierre,Larrouturou,S&D,fr,2019-07-02,M,,,9
+1394,Bill,Newton Dunn,Renew,gb,1979-07-17,M,,,7
+2309,Richard,Corbett,S&D,gb,1996-12-23,M,richard.corbett@europarl.europa.eu,rcorbettmep,8
+4513,Geoffrey,Van Orden,ECR,gb,1999-07-20,M,geoffrey.vanorden@europarl.europa.eu,,8
+4519,Claude,Moraes,S&D,gb,1999-07-20,M,claude.moraes@europarl.europa.eu,claude_moraes,8
+4525,Nigel,Farage,NI,gb,1999-07-20,M,nigel.farage@europarl.europa.eu,,8
+4533,Neena,Gill,S&D,gb,1999-07-20,F,neena.gill@europarl.europa.eu,neenaformep,8
+4550,Jill,Evans,Verts/ALE,gb,1999-07-20,F,jill.evans@europarl.europa.eu,jillevansmep,8
+4554,Chris,Davies,Renew,gb,1999-07-20,M,,,7
+4555,Daniel,Hannan,ECR,gb,1999-07-20,M,dan@hannan.co.uk,danhannanmep,8
+28508,Alyn,Smith,Verts/ALE,gb,2004-07-20,M,alyn.smith@europarl.europa.eu,alynsmithmep,8
+30490,Aileen,McLeod,Verts/ALE,gb,2019-07-02,F,,,9
+96951,Diane,Dodds,NI,gb,2009-07-14,F,diane.dodds@europarl.europa.eu,,8
+96955,Catherine,Bearder,Renew,gb,2009-07-14,F,catherine.bearder@europarl.europa.eu,catherinemep,8
+99461,Alexandra Lesley,Phillips,NI,gb,2019-07-02,F,,,9
+111011,Anthea,McIntyre,ECR,gb,2011-12-01,F,anthea.mcintyre@europarl.europa.eu,,8
+112014,Phil,Bennion,Renew,gb,2012-02-06,M,,,7
+113959,Martina,Anderson,GUE/NGL,gb,2012-06-12,F,martina.anderson@europarl.europa.eu,mepstandingup4u,8
+124942,Molly,Scott Cato,Verts/ALE,gb,2014-07-01,F,molly.scottcato@europarl.europa.eu,mollymep,8
+124952,Seb,Dance,S&D,gb,2014-07-01,M,seb.dance@europarl.europa.eu,sebdance,8
+124953,Jude,Kirton-Darling,S&D,gb,2014-07-01,F,jude.kirton-darling@europarl.europa.eu,jude_kd,8
+124961,Theresa,Griffin,S&D,gb,2014-07-01,F,theresa.griffin@europarl.europa.eu,theresag_eu,8
+124963,Julie,Ward,S&D,gb,2014-07-01,F,julie.ward@europarl.europa.eu,julie4nw,8
+124965,Nathan,Gill,NI,gb,2014-07-01,M,nathan.gill@europarl.europa.eu,nathangillmep,8
+188636,John,Howarth,S&D,gb,2017-06-30,M,john.howarth@europarl.europa.eu,,8
+188733,Jonathan,Bullock,NI,gb,2017-08-01,M,jonathan.bullock@europarl.europa.eu,,8
+189391,Nosheena,Mobarik,ECR,gb,2017-09-08,F,nosheena.mobarik@europarl.europa.eu,,8
+190099,Rory,Palmer,S&D,gb,2017-10-03,M,rory.palmer@europarl.europa.eu,,8
+197599,Richard James,Tice,NI,gb,2019-07-02,M,,,9
+197600,Barbara Ann,Gibson,Renew,gb,2019-07-02,F,,,9
+197601,Michael,Heaver,NI,gb,2019-07-02,M,,,9
+197602,Catherine,Rowett,Verts/ALE,gb,2019-07-02,F,,,9
+197603,June Alison,Mummery,NI,gb,2019-07-02,F,,,9
+197604,Lucy,Nethsingha,Renew,gb,2019-07-02,F,,,9
+197612,Annunziata Mary,Rees-Mogg,NI,gb,2019-07-02,F,,,9
+197613,Gina,Dowding,Verts/ALE,gb,2019-07-02,F,,,9
+197620,Matthew,Patten,NI,gb,2019-07-02,M,,,9
+197625,Irina,Von Wiese,Renew,gb,2019-07-02,F,,,9
+197642,Ben,Habib,NI,gb,2019-07-02,M,,,9
+197644,Christian,Allard,Verts/ALE,gb,2019-07-02,M,,,9
+197693,Dinesh,Dhamija,Renew,gb,2019-07-02,M,,,9
+197696,Scott,Ainslie,Verts/ALE,gb,2019-07-02,M,,,9
+197700,Luisa,Porritt,Renew,gb,2019-07-02,F,,,9
+197703,Lance,Forman,NI,gb,2019-07-02,M,,,9
+197704,Brian,Monteith,NI,gb,2019-07-02,M,,,9
+197705,John David Edward,Tennant,NI,gb,2019-07-02,M,,,9
+197708,Claire,Fox,NI,gb,2019-07-02,F,,,9
+197710,Alexandra Louise Rosenfield,Phillips,Verts/ALE,gb,2019-07-02,F,,,9
+197712,Henrik,Overgaard Nielsen,NI,gb,2019-07-02,M,,,9
+197714,Ellie,Chowns,Verts/ALE,gb,2019-07-02,F,,,9
+197715,David,Bull,NI,gb,2019-07-02,M,,,9
+197716,Jane,Brophy,Renew,gb,2019-07-02,F,,,9
+197730,Antony,Hook,Renew,gb,2019-07-02,M,,,9
+197733,Robert,Rowland,NI,gb,2019-07-02,M,,,9
+197736,Belinda,De Lucy,NI,gb,2019-07-02,F,,,9
+197739,Judith,Bunting,Renew,gb,2019-07-02,F,,,9
+197744,Ann,Widdecombe,NI,gb,2019-07-02,F,,,9
+197749,Caroline,Voaden,Renew,gb,2019-07-02,F,,,9
+197751,James Alexander,Glancy,NI,gb,2019-07-02,M,,,9
+197752,Christina Sheila,Jordan,NI,gb,2019-07-02,F,,,9
+197755,Martin,Horwood,Renew,gb,2019-07-02,M,,,9
+197757,James,Wells,NI,gb,2019-07-02,M,,,9
+197758,Jackie,Jones,S&D,gb,2019-07-02,F,,,9
+197759,Rupert,Lowe,NI,gb,2019-07-02,M,,,9
+197760,Martin Edward,Daubney,NI,gb,2019-07-02,M,,,9
+197803,Andrew,England Kerr,NI,gb,2019-07-02,M,,,9
+197807,John,Longworth,NI,gb,2019-07-02,M,,,9
+197809,Lucy Elizabeth,Harris,NI,gb,2019-07-02,F,,,9
+197811,Shaffaq,Mohammed,Renew,gb,2019-07-02,M,,,9
+197812,Magid,Magid,Verts/ALE,gb,2019-07-02,M,,,9
+197813,Jake,Pugh,NI,gb,2019-07-02,M,,,9
+197814,Louis,Stedman-Bryce,NI,gb,2019-07-02,M,,,9
+197815,Sheila,Ritchie,Renew,gb,2019-07-02,F,,,9
+197816,Naomi,Long,Renew,gb,2019-07-02,F,,,9
+28586,Dimitrios,Papadimoulis,GUE/NGL,gr,2004-07-20,M,dimitrios.papadimoulis@europarl.europa.eu,papadimoulis,8
+125063,Georgios,Kyrtsos,PPE,gr,2014-07-01,M,georgios.kyrtsos@europarl.europa.eu,giorgoskyrtsos,8
+125064,Maria,Spyraki,PPE,gr,2014-07-01,F,maria.spyraki@europarl.europa.eu,mariaspyraki,8
+125065,Elissavet,Vozemberg-Vrionidi,PPE,gr,2014-07-01,F,elissavet.vozemberg@europarl.europa.eu,vozemberg,8
+125067,Theodoros,Zagorakis,PPE,gr,2014-07-01,M,theodoros.zagorakis@europarl.europa.eu,,8
+125068,Manolis,Kefalogiannis,PPE,gr,2014-07-01,M,manolis.kefalogiannis@europarl.europa.eu,m_kefalogiannis,8
+125093,Konstantinos,Papadakis,NI,gr,2014-07-01,M,konstantinos.papadakis@europarl.europa.eu,,8
+125109,Eva,Kaili,S&D,gr,2014-07-01,F,eva.kaili@europarl.europa.eu,evakaili,8
+125110,Nikos,Androulakis,S&D,gr,2014-07-01,M,nikos.androulakis@europarl.europa.eu,androulakisnick,8
+130833,Stelios,Kouloglou,GUE/NGL,gr,2015-01-27,M,stelios.kouloglou@europarl.europa.eu,stelioskoul,8
+197662,Vangelis,Meimarakis,PPE,gr,2019-07-02,M,,,9
+197692,Stelios,Kympouropoulos,PPE,gr,2019-07-02,M,,,9
+197695,Anna-Michelle,Asimakopoulou,PPE,gr,2019-07-02,F,,,9
+197699,Elena,Kountoura,GUE/NGL,gr,2019-07-02,F,,,9
+197701,Konstantinos,Arvanitis,GUE/NGL,gr,2019-07-02,M,,,9
+197734,Lefteris,Nikolaou-Alavanos,NI,gr,2019-07-02,M,,,9
+197737,Ioannis,Lagos,NI,gr,2019-07-02,M,,,9
+197740,Athanasios,Konstantinou,NI,gr,2019-07-02,M,,,9
+197743,Petros,Kokkalis,GUE/NGL,gr,2019-07-02,M,,,9
+197747,Kyriakos,Velopoulos,ECR,gr,2019-07-02,M,,,9
+197819,Alexandros,Georgoulis,GUE/NGL,gr,2019-07-02,M,,,9
+112744,Tonino,Picula,S&D,hr,2012-04-01,M,tonino.picula@europarl.europa.eu,tpicula,8
+112748,Biljana,Borzan,S&D,hr,2012-04-01,F,biljana.borzan@europarl.europa.eu,biljanaborzan,8
+119431,Ruža,Tomašić,ECR,hr,2013-07-01,F,ruza.tomasic@europarl.europa.eu,ruzatomasic,8
+119434,Dubravka,Šuica,PPE,hr,2013-07-01,F,dubravka.suica@europarl.europa.eu,dubravkasuica,8
+185341,Željana,Zovko,PPE,hr,2016-10-24,F,zeljana.zovko@europarl.europa.eu,zovkoeu,8
+197413,Karlo,Ressler,PPE,hr,2019-07-02,M,,,9
+197417,Tomislav,Sokol,PPE,hr,2019-07-02,M,,,9
+197419,Valter,Flego,Renew,hr,2019-07-02,M,,,9
+197438,Mislav,Kolakušić,NI,hr,2019-07-02,M,,,9
+197441,Predrag Fred,Matić,S&D,hr,2019-07-02,M,,,9
+197935,Ivan Vilibor,Sinčić,NI,hr,2019-07-02,M,,,9
+23816,András,Gyürk,PPE,hu,2003-04-18,M,andras.gyurk@europarl.europa.eu,,8
+23821,József,Szájer,PPE,hu,2003-04-18,M,jozsef.szajer@europarl.europa.eu,,8
+27714,Edina,Tóth,PPE,hu,2019-07-02,F,,,9
+28141,Lívia,Járóka,PPE,hu,2004-07-20,F,livia.jaroka@europarl.europa.eu,,8
+28150,Kinga,Gál,PPE,hu,2004-07-20,F,kinga.gal@europarl.europa.eu,,8
+96826,Tamás,Deutsch,PPE,hu,2009-07-14,M,tamas.deutsch@europarl.europa.eu,dajcstomi,8
+96829,Ádám,Kósa,PPE,hu,2009-07-14,M,adam.kosa@europarl.europa.eu,adamkosamep,8
+96830,Enikő,Győri,PPE,hu,2009-07-14,F,,,7
+124586,Balázs,Hidvéghi,PPE,hu,2014-05-15,M,,,7
+124705,István,Ujhelyi,S&D,hu,2014-07-01,M,istvan.ujhelyi@europarl.europa.eu,,8
+124712,Andrea,Bocskor,PPE,hu,2014-07-01,F,andrea.bocskor@europarl.europa.eu,,8
+124714,Andor,Deli,PPE,hu,2014-07-01,M,andor.deli@europarl.europa.eu,andordeli,8
+124715,György,Hölvényi,PPE,hu,2014-07-01,M,gyorgy.holvenyi@europarl.europa.eu,holvenyigyorgy,8
+124722,Csaba,Molnár,S&D,hu,2014-07-01,M,csaba.molnar@europarl.europa.eu,,8
+197579,Klára,Dobrev,S&D,hu,2019-07-02,F,,,9
+197584,Sándor,Rónai,S&D,hu,2019-07-02,M,,,9
+197587,Attila,Ara-Kovács,S&D,hu,2019-07-02,M,,,9
+197588,Katalin,Cseh,Renew,hu,2019-07-02,F,,,9
+197595,Anna Julia,Donáth,Renew,hu,2019-07-02,F,,,9
+197894,László,Trócsányi,PPE,hu,2019-07-02,M,,,9
+198063,Márton,Gyöngyösi,NI,hu,2019-07-02,M,,,9
+28115,Mairead,McGuinness,PPE,ie,2004-07-20,F,mairead.mcguinness@europarl.europa.eu,maireadmcgmep,8
+96668,Seán,Kelly,PPE,ie,2009-07-14,M,sean.kelly@europarl.europa.eu,seankellymep,8
+124985,Luke Ming,Flanagan,GUE/NGL,ie,2014-07-01,M,lukeming.flanagan@europarl.europa.eu,lukeming,8
+124986,Matt,Carthy,GUE/NGL,ie,2014-07-01,M,matt.carthy@europarl.europa.eu,mattcarthy,8
+197654,Ciarán,Cuffe,Verts/ALE,ie,2019-07-02,M,,,9
+197720,Frances,Fitzgerald,PPE,ie,2019-07-02,F,,,9
+197731,Clare,Daly,GUE/NGL,ie,2019-07-02,F,,,9
+197817,Mick,Wallace,GUE/NGL,ie,2019-07-02,M,,,9
+197818,Billy,Kelleher,Renew,ie,2019-07-02,M,,,9
+197863,Maria,Walsh,PPE,ie,2019-07-02,F,,,9
+197889,Grace,O'Sullivan,Verts/ALE,ie,2019-07-02,F,,,9
+2187,Antonio,Tajani,PPE,it,1994-07-19,M,antonio.tajani@europarl.europa.eu,antonio_tajani,8
+4391,Silvio,Berlusconi,PPE,it,1999-07-20,M,,,5
+4465,Raffaele,Fitto,ECR,it,1999-07-20,M,raffaele.fitto@europarl.europa.eu,raffaelefitto,8
+28340,Patrizia,Toia,S&D,it,2004-07-21,F,patrizia.toia@europarl.europa.eu,toiapatrizia,8
+35016,Marco,CAMPOMENOSI,ID,it,2019-07-02,M,,,9
+36392,Aldo,Patriciello,PPE,it,2006-05-08,M,aldo.patriciello@europarl.europa.eu,patricielloaldo,8
+96787,Herbert,Dorfmann,PPE,it,2009-07-14,M,herbert.dorfmann@europarl.europa.eu,herbertdorfmann,8
+96810,Carlo,Fidanza,ECR,it,2009-07-14,M,,,7
+96864,David-Maria,Sassoli,S&D,it,2009-07-14,M,david.sassoli@europarl.europa.eu,davidsassoli,8
+96880,Andrea,Cozzolino,S&D,it,2009-07-14,M,andrea.cozzolino@europarl.europa.eu,cozzolino62,8
+96891,Paolo,De Castro,S&D,it,2009-07-14,M,paolo.decastro@europarl.europa.eu,paolodecastro,8
+96892,Roberto,Gualtieri,S&D,it,2009-07-14,M,roberto.gualtieri@europarl.europa.eu,gualtierieurope,8
+97198,Mara,Bizzotto,ID,it,2009-07-14,F,mara.bizzotto@europarl.europa.eu,,8
+99283,Alessandro,PANZA,ID,it,2019-07-02,M,,,9
+101039,Paolo,Borchia,ID,it,2019-07-02,M,,,9
+124777,Tiziana,Beghin,NI,it,2014-07-01,F,tiziana.beghin@europarl.europa.eu,beghin_t,8
+124779,Eleonora,Evi,NI,it,2014-07-01,F,eleonora.evi@europarl.europa.eu,,8
+124780,Marco,Zanni,ID,it,2014-07-01,M,marco.zanni@europarl.europa.eu,marcozanni86,8
+124799,Alessandra,Moretti,S&D,it,2014-07-01,F,,,8
+124812,Fabio Massimo,Castaldo,NI,it,2014-07-01,M,fabiomassimo.castaldo@europarl.europa.eu,,8
+124814,Simona,Bonafè,S&D,it,2014-07-01,F,simona.bonafe@europarl.europa.eu,simonabonafe,8
+124828,Fulvio,Martusciello,PPE,it,2014-07-01,M,fulvio.martusciello@europarl.europa.eu,fulviomartuscie,8
+124831,Isabella,Adinolfi,NI,it,2014-07-01,F,isabella.adinolfi@europarl.europa.eu,isa_adinolfi,8
+124833,Laura,Ferrara,NI,it,2014-07-01,F,laura.ferrara@europarl.europa.eu,lferraram5s,8
+124835,Rosa,D'Amato,NI,it,2014-07-01,F,rosa.damato@europarl.europa.eu,,8
+124844,Piernicola,Pedicini,NI,it,2014-07-01,M,piernicola.pedicini@europarl.europa.eu,pedicinim5s,8
+124846,Pina,Picierno,S&D,it,2014-07-01,F,giuseppina.picierno@europarl.europa.eu,pinapic,8
+124856,Ignazio,Corrao,NI,it,2014-07-01,M,ignazio.corrao@europarl.europa.eu,,8
+124861,Caterina,Chinnici,S&D,it,2014-07-01,F,caterina.chinnici@europarl.europa.eu,caterinachinnic,8
+124867,Brando,Benifei,S&D,it,2014-07-01,M,brando.benifei@europarl.europa.eu,brandobenifei,8
+125237,Marco,Zullo,NI,it,2014-07-01,M,marco.zullo@europarl.europa.eu,,8
+125670,Massimiliano,Salini,PPE,it,2014-07-01,M,massimiliano.salini@europarl.europa.eu,maxsalini,8
+183793,Angelo,Ciocca,ID,it,2016-07-07,M,angelo.ciocca@europarl.europa.eu,,8
+192634,Giuseppe,Ferrandino,S&D,it,2018-04-17,M,giuseppe.ferrandino@europarl.europa.eu,,8
+192635,Oscar,Lancini,ID,it,2018-04-17,M,danilooscar.lancini@europarl.europa.eu,,8
+197578,Silvia,Sardone,ID,it,2019-07-02,F,,,9
+197580,Isabella,Tovaglieri,ID,it,2019-07-02,F,,,9
+197582,Gianna,Gancia,ID,it,2019-07-02,F,,,9
+197586,Stefania,Zambelli,ID,it,2019-07-02,F,,,9
+197590,Giuliano,Pisapia,S&D,it,2019-07-02,M,,,9
+197591,Irene,Tinagli,S&D,it,2019-07-02,F,,,9
+197592,Pierfrancesco,Majorino,S&D,it,2019-07-02,M,,,9
+197607,Pietro,Fiocchi,ECR,it,2019-07-02,M,,,9
+197608,Gianantonio,Da Re,ID,it,2019-07-02,M,,,9
+197610,Alessandra,Basso,ID,it,2019-07-02,F,,,9
+197611,Elena,Lizzi,ID,it,2019-07-02,F,,,9
+197614,Marco,Dreosto,ID,it,2019-07-02,M,,,9
+197616,Rosanna,Conte,ID,it,2019-07-02,F,,,9
+197617,Carlo,Calenda,S&D,it,2019-07-02,M,,,9
+197618,Elisabetta,Gualmini,S&D,it,2019-07-02,F,,,9
+197619,Sabrina,Pignedoli,NI,it,2019-07-02,F,,,9
+197786,Susanna,Ceccardi,ID,it,2019-07-02,F,,,9
+197787,Antonio Maria,Rinaldi,ID,it,2019-07-02,M,,,9
+197788,Anna,Bonfrisco,ID,it,2019-07-02,F,,,9
+197789,Simona,Baldassarre,ID,it,2019-07-02,F,,,9
+197790,Luisa,Regimenti,ID,it,2019-07-02,F,,,9
+197791,Massimiliano,Smeriglio,S&D,it,2019-07-02,M,,,9
+197792,Daniela,Rondinelli,NI,it,2019-07-02,F,,,9
+197794,Chiara,Gemma,NI,it,2019-07-02,F,,,9
+197795,Mario,Furore,NI,it,2019-07-02,M,,,9
+197796,Massimo,Casanova,ID,it,2019-07-02,M,,,9
+197797,Andrea,Caroppo,ID,it,2019-07-02,M,,,9
+197798,Lucia,Vuolo,ID,it,2019-07-02,F,,,9
+197799,Valentino,Grant,ID,it,2019-07-02,M,,,9
+197801,Franco,Roberti,S&D,it,2019-07-02,M,,,9
+197804,Dino,Giarrusso,NI,it,2019-07-02,M,,,9
+197806,Annalisa,Tardino,ID,it,2019-07-02,F,,,9
+197808,Pietro,Bartolo,S&D,it,2019-07-02,M,,,9
+197820,Nicola,Procaccini,ECR,it,2019-07-02,M,,,9
+197822,Francesca,Donato,ID,it,2019-07-02,F,,,9
+197824,Giuseppe,Milazzo,PPE,it,2019-07-02,M,,,9
+197825,Raffaele,Stancanelli,ECR,it,2019-07-02,M,,,9
+197826,Matteo,Adinolfi,ID,it,2019-07-02,M,,,9
+96681,Vilija,Blinkevičiūtė,S&D,lt,2009-07-14,F,vilija.blinkeviciute@europarl.europa.eu,,8
+96697,Valdemar,Tomaševski,ECR,lt,2009-07-14,M,valdemar.tomasevski@europarl.europa.eu,,8
+96698,Viktor,Uspaskich,Renew,lt,2009-07-14,M,viktor.uspaskich@europarl.europa.eu,viktoruspaskich,8
+124766,Petras,Auštrevičius,Renew,lt,2014-07-01,M,petras.austrevicius@europarl.europa.eu,petras_petras,8
+125214,Bronis,Ropė,Verts/ALE,lt,2014-07-01,M,bronis.rope@europarl.europa.eu,,8
+197835,Aušra,Maldeikienė,PPE,lt,2019-07-02,F,,,9
+197837,Stasys,Jakeliūnas,Verts/ALE,lt,2019-07-02,M,,,9
+197838,Juozas,Olekas,S&D,lt,2019-07-02,M,,,9
+197840,Rasa,Juknevičienė,PPE,lt,2019-07-02,F,,,9
+197841,Liudas,Mažylis,PPE,lt,2019-07-02,M,,,9
+197843,Andrius,Kubilius,PPE,lt,2019-07-02,M,,,9
+840,Charles,Goerens,Renew,lu,1982-02-15,M,charles.goerens@europarl.europa.eu,charlesgoerens,8
+193292,Tilly,Metz,Verts/ALE,lu,2018-06-20,F,tilly.metz@europarl.europa.eu,,8
+193419,Christophe,Hansen,PPE,lu,2018-09-02,M,christophe.hansen@europarl.europa.eu,chanseneu,8
+197418,Monica,Semedo,Renew,lu,2019-07-02,F,,,9
+197421,Isabel,Wiseler-Lima,PPE,lu,2019-07-02,F,,,9
+197428,Nicolas,Schmit,S&D,lu,2019-07-02,M,,,9
+28615,Roberts,Zīle,ECR,lv,2004-07-20,M,roberts.zile@europarl.europa.eu,robertszile,8
+28617,Inese,Vaidere,PPE,lv,2004-07-20,F,inese.vaidere@europarl.europa.eu,inesevaidere,8
+28619,Tatjana,Ždanoka,Verts/ALE,lv,2004-07-20,F,,,8
+96934,Sandra,Kalniete,PPE,lv,2009-07-14,F,sandra.kalniete@europarl.europa.eu,kalniete,8
+130256,Dace,Melbārde,ECR,lv,2019-07-02,F,,,9
+197624,Ivars,Ijabs,Renew,lv,2019-07-02,M,,,9
+197783,Andris,Ameriks,S&D,lv,2019-07-02,M,,,9
+197810,Nils,Ušakovs,S&D,lv,2019-07-02,M,,,9
+28122,David,Casa,PPE,mt,2004-07-20,M,david.casa@europarl.europa.eu,davidcasamep,8
+118859,Roberta,Metsola,PPE,mt,2013-04-25,F,roberta.metsola@europarl.europa.eu,robertametsola,8
+124781,Alfred,Sant,S&D,mt,2014-07-01,M,alfred.sant@europarl.europa.eu,santalfred,8
+124970,Miriam,Dalli,S&D,mt,2014-07-01,F,miriam.dalli@europarl.europa.eu,miriamdalli,8
+197394,Josianne,Cutajar,S&D,mt,2019-07-02,F,,,9
+197403,Alex,Agius Saliba,S&D,mt,2019-07-02,M,,,9
+4560,Antonius,Manders,PPE,nl,1999-07-20,M,,,7
+28266,Sophia,in 't Veld,Renew,nl,2004-07-20,F,sophie.intveld@europarl.europa.eu,sophieintveld,8
+37229,Kati,Piri,S&D,nl,2014-07-01,F,kati.piri@europarl.europa.eu,katipiri,8
+38398,Esther,de Lange,PPE,nl,2007-04-12,F,esther.delange@europarl.europa.eu,esther_de_lange,8
+58789,Jan,Huitema,Renew,nl,2014-07-01,M,jan.huitema@europarl.europa.eu,jhuitema,8
+95074,Jeroen,Lenaers,PPE,nl,2014-07-01,M,jeroen.lenaers@europarl.europa.eu,jeroen_lenaers,8
+96725,Bas,Eickhout,Verts/ALE,nl,2009-07-14,M,bas.eickhout@europarl.europa.eu,baseickhout,8
+96809,Peter,van Dalen,PPE,nl,2009-07-14,M,peter.vandalen@europarl.europa.eu,petervdalen,8
+97133,Derk Jan,Eppink,ECR,nl,2009-07-14,M,,,7
+125020,Paul,Tang,S&D,nl,2014-07-01,M,paul.tang@europarl.europa.eu,paultang,8
+125021,Agnes,Jongerius,S&D,nl,2014-07-01,F,agnes.jongerius@europarl.europa.eu,a_jongerius,8
+125023,Anja,Hazekamp,GUE/NGL,nl,2014-07-01,F,anja.hazekamp@europarl.europa.eu,anjahazekamp,8
+125030,Annie,Schreijer-Pierik,PPE,nl,2014-07-01,F,annie.schreijer-pierik@europarl.europa.eu,annieschreijer,8
+129141,Frans,Timmermans,S&D,nl,2019-07-02,M,,,9
+190519,Caroline,Nagtegaal,Renew,nl,2017-11-14,F,caroline.nagtegaal@europarl.europa.eu,,8
+197709,Robert,Roos,ECR,nl,2019-07-02,M,,,9
+197756,Vera,Tax,S&D,nl,2019-07-02,F,,,9
+197772,Tineke,Strik,Verts/ALE,nl,2019-07-02,F,,,9
+197773,Bert-Jan,Ruissen,ECR,nl,2019-07-02,M,,,9
+197776,Rob,Rooken,ECR,nl,2019-07-02,M,,,9
+197778,Tom,Berendsen,PPE,nl,2019-07-02,M,,,9
+197781,Malik,Azmani,Renew,nl,2019-07-02,M,,,9
+197782,Mohammed,Chahim,S&D,nl,2019-07-02,M,,,9
+197868,Samira,Rafaela,Renew,nl,2019-07-02,F,,,9
+197869,Liesje,Schreinemacher,Renew,nl,2019-07-02,F,,,9
+197870,Kim,Van Sparrentak,Verts/ALE,nl,2019-07-02,F,,,9
+23768,Bogusław,Liberadzki,S&D,pl,2003-04-23,M,boguslaw.liberadzki@europarl.europa.eu,bliberadzki,8
+23781,Janusz,Lewandowski,PPE,pl,2003-04-23,M,janusz.lewandowski@europarl.europa.eu,j_lewandowski,8
+23788,Adam,Bielan,ECR,pl,2003-04-23,M,,,7
+28269,Jerzy,Buzek,PPE,pl,2004-07-20,M,jerzy.buzek@europarl.europa.eu,jerzybuzek,8
+28288,Jan,Olbrycht,PPE,pl,2004-07-20,M,jan.olbrycht@europarl.europa.eu,janolbrycht,8
+28297,Jacek,Saryusz-Wolski,ECR,pl,2004-07-20,M,jacek.saryusz-wolski@europarl.europa.eu,jsaryuszwolski,8
+28353,Anna,Fotyga,ECR,pl,2004-07-20,F,anna.fotyga@europarl.europa.eu,,8
+28372,Ryszard,Czarnecki,ECR,pl,2004-07-20,M,ryszard.czarnecki@europarl.europa.eu,r_czarnecki,8
+28389,Zbigniew,Kuźmiuk,ECR,pl,2004-07-20,M,zbigniew.kuzmiuk@europarl.europa.eu,,8
+96771,Jarosław,Kalinowski,PPE,pl,2009-07-14,M,jaroslaw.kalinowski@europarl.europa.eu,,8
+96776,Róża,Thun und Hohenstein,PPE,pl,2009-07-14,F,roza.thun@europarl.europa.eu,rozathun,8
+96779,Danuta Maria,Hübner,PPE,pl,2009-07-14,F,danuta.huebner@europarl.europa.eu,danutahuebner,8
+96791,Elżbieta Katarzyna,Łukacijewska,PPE,pl,2009-07-14,F,elzbieta.lukacijewska@europarl.europa.eu,,8
+96796,Ryszard Antoni,Legutko,ECR,pl,2009-07-14,M,ryszardantoni.legutko@europarl.europa.eu,,8
+96801,Tomasz Piotr,Poręba,ECR,pl,2009-07-14,M,tomasz.poreba@europarl.europa.eu,,8
+124877,Jadwiga,Wiśniewska,ECR,pl,2014-07-01,F,jadwiga.wisniewska@europarl.europa.eu,,8
+124884,Kosma,Złotowski,ECR,pl,2014-07-01,M,kosma.zlotowski@europarl.europa.eu,kosmazlotowski,8
+124887,Karol,Karski,ECR,pl,2014-07-01,M,karol.karski@europarl.europa.eu,,8
+124891,Zdzisław,Krasnodębski,ECR,pl,2014-07-01,M,zdzislaw.krasnodebski-office@europarl.europa.eu,,8
+124895,Krzysztof,Hetman,PPE,pl,2014-07-01,M,krzysztof.hetman@europarl.europa.eu,hetman_k,8
+197490,Magdalena,Adamowicz,PPE,pl,2019-07-02,F,,,9
+197492,Bartosz,Arłukowicz,PPE,pl,2019-07-02,M,,,9
+197495,Marek Paweł,Balt,S&D,pl,2019-07-02,M,,,9
+197496,Marek,Belka,S&D,pl,2019-07-02,M,,,9
+197498,Robert,Biedroń,S&D,pl,2019-07-02,M,,,9
+197501,Joachim Stanisław,Brudziński,ECR,pl,2019-07-02,M,,,9
+197507,Włodzimierz,Cimoszewicz,S&D,pl,2019-07-02,M,,,9
+197510,Jarosław,Duda,PPE,pl,2019-07-02,M,,,9
+197513,Tomasz,Frankowski,PPE,pl,2019-07-02,M,,,9
+197514,Andrzej,Halicki,PPE,pl,2019-07-02,M,,,9
+197516,Patryk,Jaki,ECR,pl,2019-07-02,M,,,9
+197517,Adam,Jarubas,PPE,pl,2019-07-02,M,,,9
+197518,Krzysztof,Jurgiel,ECR,pl,2019-07-02,M,,,9
+197519,Beata,Kempa,ECR,pl,2019-07-02,F,,,9
+197520,Izabela-Helena,Kloc,ECR,pl,2019-07-02,F,,,9
+197523,Łukasz,Kohut,S&D,pl,2019-07-02,M,,,9
+197525,Ewa,Kopacz,PPE,pl,2019-07-02,F,,,9
+197530,Joanna,Kopcińska,ECR,pl,2019-07-02,F,,,9
+197532,Elżbieta,Kruk,ECR,pl,2019-07-02,F,,,9
+197538,Beata,Mazurek,ECR,pl,2019-07-02,F,,,9
+197540,Leszek,Miller,S&D,pl,2019-07-02,M,,,9
+197541,Andżelika Anna,Możdżanowska,ECR,pl,2019-07-02,F,,,9
+197542,Janina,Ochojska,PPE,pl,2019-07-02,F,,,9
+197544,Elżbieta,Rafalska,ECR,pl,2019-07-02,F,,,9
+197545,Bogdan,Rzońca,ECR,pl,2019-07-02,M,,,9
+197548,Radosław,Sikorski,PPE,pl,2019-07-02,M,,,9
+197550,Sylwia,Spurek,S&D,pl,2019-07-02,F,,,9
+197553,Beata,Szydło,ECR,pl,2019-07-02,F,,,9
+197559,Grzegorz,Tobiszowski,ECR,pl,2019-07-02,M,,,9
+197566,Witold Jan,Waszczykowski,ECR,pl,2019-07-02,M,,,9
+197572,Anna,Zalewska,ECR,pl,2019-07-02,F,,,9
+88715,José,Gusmão,GUE/NGL,pt,2019-07-02,M,,,9
+96706,João,Ferreira,GUE/NGL,pt,2009-07-14,M,joao.ferreira@europarl.europa.eu,,8
+96820,Marisa,Matias,GUE/NGL,pt,2009-07-14,F,marisa.matias@europarl.europa.eu,mmatias_,8
+96867,Maria Da Graça,Carvalho,PPE,pt,2009-07-14,F,,,7
+96899,José Manuel,Fernandes,PPE,pt,2009-07-14,M,josemanuel.fernandes@europarl.europa.eu,jmfernandeseu,8
+96903,Paulo,Rangel,PPE,pt,2009-07-14,M,paulo.rangel@europarl.europa.eu,,8
+96978,Nuno,Melo,PPE,pt,2009-07-14,M,nuno.melo@europarl.europa.eu,,8
+124734,Cláudia,Monteiro de Aguiar,PPE,pt,2014-07-01,F,claudia.monteirodeaguiar@europarl.europa.eu,cmonteiroaguiar,8
+124739,Carlos,Zorrinho,S&D,pt,2014-07-01,M,carlos.zorrinho@europarl.europa.eu,czorrinho,8
+124747,Pedro,Silva Pereira,S&D,pt,2014-07-01,M,pedro.silvapereira@europarl.europa.eu,,8
+197634,Pedro,Marques,S&D,pt,2019-07-02,M,,,9
+197635,Maria Manuel,Leitão Marques,S&D,pt,2019-07-02,F,,,9
+197638,Margarida,Marques,S&D,pt,2019-07-02,F,,,9
+197640,André Jorge,Dionísio Bradford,S&D,pt,2019-07-02,M,,,9
+197641,Sara,Cerdas,S&D,pt,2019-07-02,F,,,9
+197645,Francisco,Guerreiro,Verts/ALE,pt,2019-07-02,M,,,9
+197650,Isabel,Santos,S&D,pt,2019-07-02,F,,,9
+197732,Manuel,Pizarro,S&D,pt,2019-07-02,M,,,9
+197738,Lídia,Pereira,PPE,pt,2019-07-02,F,,,9
+197746,Álvaro,Amaro,PPE,pt,2019-07-02,M,,,9
+197754,Sandra,Pereira,GUE/NGL,pt,2019-07-02,F,,,9
+33982,Marian-Jean,Marinescu,PPE,ro,2005-09-26,M,marian-jean.marinescu@europarl.europa.eu,marianmarinescu,8
+33997,Corina,Crețu,S&D,ro,2005-09-26,F,corina.cretu@europarl.europa.eu,corinacretu_psd,8
+37324,Adina-Ioana,Vălean,PPE,ro,2006-10-26,F,adinaioana.valean@europarl.europa.eu,adinavalean,8
+38420,Cristian-Silviu,Buşoi,PPE,ro,2007-04-24,M,cristiansilviu.busoi@europarl.europa.eu,,8
+38595,Rovana,Plumb,S&D,ro,2007-05-02,F,,,7
+39725,Iuliu,Winkler,PPE,ro,2007-12-10,M,iuliu.winkler@europarl.europa.eu,iuliuwinkler,8
+58766,Nicolae,Ștefănuța,Renew,ro,2019-07-02,M,,,9
+98582,Lorant-Gyorgy,Vincze,PPE,ro,2019-07-02,M,,,9
+124784,Dan,Nica,S&D,ro,2014-07-01,M,dan.nica@europarl.europa.eu,,8
+124785,Maria,Grapini,S&D,ro,2014-07-01,F,maria.grapini@europarl.europa.eu,,8
+124802,Siegfried,Mureşan,PPE,ro,2014-07-01,M,siegfried.muresan@europarl.europa.eu,smuresan,8
+125012,Daniel,Buda,PPE,ro,2014-07-01,M,daniel.buda@europarl.europa.eu,mepdanielbuda,8
+134605,Ramona,Strugariu,Renew,ro,2019-07-02,F,,,9
+197631,Dacian,Ciolos,Renew,ro,2019-07-02,M,,,9
+197636,Ioan-Rareș,Bogdan,PPE,ro,2019-07-02,M,,,9
+197637,Vasile,Blaga,PPE,ro,2019-07-02,M,,,9
+197646,Mircea-Gheorghe,Hava,PPE,ro,2019-07-02,M,,,9
+197647,Dan-Ștefan,Motreanu,PPE,ro,2019-07-02,M,,,9
+197649,Gheorghe,Falcă,PPE,ro,2019-07-02,M,,,9
+197651,Carmen,Avram,S&D,ro,2019-07-02,F,,,9
+197653,Claudiu,Manda,S&D,ro,2019-07-02,M,,,9
+197655,Cristian,Terheș,S&D,ro,2019-07-02,M,,,9
+197657,Tudor,Ciuhodaru,S&D,ro,2019-07-02,M,,,9
+197658,Adrian-Dragoș,Benea,S&D,ro,2019-07-02,M,,,9
+197661,Cristian,Ghinea,Renew,ro,2019-07-02,M,,,9
+197663,Dragoș,Pîslaru,Renew,ro,2019-07-02,M,,,9
+197664,Clotilde,Armand,Renew,ro,2019-07-02,F,,,9
+197665,Dragoș,Tudorache,Renew,ro,2019-07-02,M,,,9
+197668,Vlad-Marius,Botoș,Renew,ro,2019-07-02,M,,,9
+197671,Traian,Băsescu,PPE,ro,2019-07-02,M,,,9
+197672,Eugen,Tomac,PPE,ro,2019-07-02,M,,,9
+198183,Mihai,Tudose,S&D,ro,2019-07-02,M,,,9
+38542,Johan,Danielsson,S&D,se,2019-07-02,M,,,9
+123562,Charlie,WEIMERS,ECR,se,2019-07-02,M,,,9
+124989,Fredrick,Federley,Renew,se,2014-07-01,M,fredrick.federley@europarl.europa.eu,federley,8
+124991,Jytte,Guteland,S&D,se,2014-07-01,F,jytte.guteland@europarl.europa.eu,jytteguteland,8
+124992,Malin,Björk,GUE/NGL,se,2014-07-01,F,malin.bjork@europarl.europa.eu,malinbjork_eu,8
+124996,Peter,Lundgren,ECR,se,2014-07-01,M,peter.lundgren@europarl.europa.eu,,8
+197390,Sara,Skyttedal,PPE,se,2019-07-02,F,,,9
+197391,Heléne,Fritzon,S&D,se,2019-07-02,F,,,9
+197392,Evin,Incir,S&D,se,2019-07-02,F,,,9
+197393,David,Lega,PPE,se,2019-07-02,M,,,9
+197395,Alice,Kuhnke,Verts/ALE,se,2019-07-02,F,,,9
+197396,Erik,Bergkvist,S&D,se,2019-07-02,M,,,9
+197398,Pär,Holmgren,Verts/ALE,se,2019-07-02,M,,,9
+197399,Jessica,Stegrud,ECR,se,2019-07-02,F,,,9
+197400,Abir,Al Sahlani,Renew,se,2019-07-02,F,,,9
+197401,Karin,Karlsbro,Renew,se,2019-07-02,F,,,9
+197402,Tomas,Tobé,PPE,se,2019-07-02,M,,,9
+197404,Jessica,Polfjärd,PPE,se,2019-07-02,F,,,9
+197405,Jörgen,Warborn,PPE,se,2019-07-02,M,,,9
+197406,Arba,Kokalari,PPE,se,2019-07-02,F,,,9
+28294,Ljudmila,Novak,PPE,si,2004-07-20,F,,,6
+96911,Tanja,Fajon,S&D,si,2009-07-14,F,tanja.fajon@europarl.europa.eu,tfajon,8
+96933,Milan,Zver,PPE,si,2009-07-14,M,milan.zver@europarl.europa.eu,milanzver,8
+125004,Franc,Bogovič,PPE,si,2014-07-01,M,franc.bogovic@europarl.europa.eu,franc_bogovic,8
+125104,Romana,Tomc,PPE,si,2014-07-01,F,romana.tomc@europarl.europa.eu,romanatomc,8
+197446,Milan,Brglez,S&D,si,2019-07-02,M,,,9
+197447,Irena,Joveva,Renew,si,2019-07-02,F,,,9
+197452,Klemen,Grošelj,Renew,si,2019-07-02,M,,,9
+23868,Monika,Beňová,S&D,sk,2003-04-30,F,monika.benova@europarl.europa.eu,monikaflabenova,8
+34578,Robert,Hajšel,S&D,sk,2019-07-02,M,,,9
+103746,Michal,Šimečka,Renew,sk,2019-07-02,M,,,9
+124929,Ivan,Štefanec,PPE,sk,2014-07-01,M,ivan.stefanec@europarl.europa.eu,ivanstefanec,8
+197761,Miroslav,Číž,S&D,sk,2019-07-02,M,,,9
+197763,Milan,Uhrík,NI,sk,2019-07-02,M,,,9
+197764,Miroslav,Radačovský,NI,sk,2019-07-02,M,,,9
+197765,Peter,Pollák,PPE,sk,2019-07-02,M,,,9
+197766,Lucia,Ďuriš Nicholsonová,ECR,sk,2019-07-02,F,,,9
+197767,Eugen,Jurzyca,ECR,sk,2019-07-02,M,,,9
+197769,Michal,Wiezik,PPE,sk,2019-07-02,M,,,9
+197770,Martin,Hojsík,Renew,sk,2019-07-02,M,,,9
+197771,Vladimír,Bilčík,PPE,sk,2019-07-02,M,,,9
