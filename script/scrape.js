@@ -10,7 +10,7 @@ cachedRequest.setCacheDirectory(cacheDirectory);
 
 cachedRequest.setValue('ttl', 100000);
 cachedRequest({
-  url: 'http://www.europarl.europa.eu/delegations/en/home.html'
+  url: 'https://www.europarl.europa.eu/delegations/en/list/byname'
 }, function(error, response, html) {
   if (error) {
     console.log("error:" + error);
@@ -18,20 +18,20 @@ cachedRequest({
   }
   const $ = cheerio.load(html);
   var r = {};
-  $("#navigation-selectmenu-field option").each(function(i, d) {
+  $(".select2-committee option").each(function(i, d) {
     var id = $(this).attr("data-additionaltext");
     if (!id) return;
-    r[id] = $(this).text();
+    r[id.toUpperCase()] = $(this).text();
   });
   if (Object.keys(r).length < 10) {
-    console.log("can't parse europarl");
+    console.log("can't parse europarl delegations");
     process.exit(1);
   }
   file.writeFileSync("./data/delegations.json", JSON.stringify(r));
 });
 
 cachedRequest({
-  url: 'http://www.europarl.europa.eu/committees/en/home.html'
+  url: 'http://www.europarl.europa.eu/committees/en/parliamentary-committees.html'
 }, function(error, response, html) {
   if (error) {
     console.log("error:" + error);
@@ -39,13 +39,16 @@ cachedRequest({
   }
   const $ = cheerio.load(html);
   var r = {};
-  $(".js_selectmenu_committees option").each(function(i, d) {
-    var id = $(this).attr("value");
-    if (!id) return;
-    r[id] = $(this).attr("title");
+  $("#select_committees_list a").each(function(i, d) {
+    var id = $(this).find("span");
+    if (!id.text()) return;
+    id=id.text().toUpperCase();
+    var t = $(this).text().split("\n");
+    r[id]=t[2].substring(5);//replace("\t","");
+    console.log(r[id]);
   });
   if (Object.keys(r).length < 10) {
-    console.log("can't parse europarl");
+    console.log("can't parse europarl committees");
     process.exit(1);
   }
   file.writeFileSync("./data/committees.json", JSON.stringify(r));
