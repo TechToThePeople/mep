@@ -60,7 +60,8 @@ function indexepnews (epnews){
 function isIn (id) {
   return ( id in inout);
 };
-function isActive (id) {return mepid.find(o => o.id === id) || isIn(id);}
+function isActive (id) {
+  return mepid.find(o => o.id === id) || isIn(id);}
 
 function f(assembler) {
   if (assembler.stack.length == 2 && assembler.key === null) {
@@ -101,6 +102,8 @@ var abbr = {
   "Special Committee on the Union’s authorisation procedure for pesticides": "PEST",
   "Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA"
 };
+
+Object.values(abbr).forEach((d) => {console.log(d)});
 
 function transform(d) {
   function fixGender (id) {
@@ -251,8 +254,10 @@ var csvrow = function(d) {
     const rows=Array.from(committees, x=> "");
     d.forEach((c)=>{
       var i = committees.indexOf(c.name);
-      if (i === -1)
-        console.log("ERROR: can't find committee "+c.name);
+      if (i === -1) {
+//        console.log("ERROR: can't find committee "+c.name);
+        return;
+      }
       rows[i] = c.role[0];
 
     });

@@ -1,5 +1,5 @@
 var session_str= {
-date_start: '16.12.2019',
+date_start: '13.01.2020',
 };
 meps_str = [
 {
@@ -251,7 +251,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 4525,
-  id_siege: 690,
+  id_siege: 694,
   id_group: 5152
 }
 ,
@@ -702,7 +702,7 @@ meps_str = [
   group_code: 'ECR',
   country_code: 'pl',
   id_mep: 28353,
-  id_siege: 352,
+  id_siege: 349,
   id_group: 5148
 }
 ,
@@ -1703,7 +1703,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 96951,
-  id_siege: 688,
+  id_siege: 692,
   id_group: 5152
 }
 ,
@@ -5751,7 +5751,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197599,
-  id_siege: 689,
+  id_siege: 693,
   id_group: 5152
 }
 ,
@@ -5773,7 +5773,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197601,
-  id_siege: 694,
+  id_siege: 697,
   id_group: 5152
 }
 ,
@@ -5795,7 +5795,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197603,
-  id_siege: 693,
+  id_siege: 696,
   id_group: 5152
 }
 ,
@@ -5869,11 +5869,11 @@ meps_str = [
   value: 'ANNUNZIATA MARY REES-MOGGAnnunziata Mary Rees-Mogg',
   nom: 'Rees-Mogg',
   prenom: 'Annunziata Mary',
-  group_code: 'NI',
+  group_code: 'ECR',
   country_code: 'gb',
   id_mep: 197612,
-  id_siege: 702,
-  id_group: 5152
+  id_siege: 687,
+  id_group: 5148
 }
 ,
 {
@@ -6147,19 +6147,8 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197642,
-  id_siege: 695,
+  id_siege: 698,
   id_group: 5152
-}
-,
-{
-  value: 'KAROLINE EDTSTADLERKaroline Edtstadler',
-  nom: 'Edtstadler',
-  prenom: 'Karoline',
-  group_code: 'PPE',
-  country_code: 'at',
-  id_mep: 197643,
-  id_siege: 101,
-  id_group: 5153
 }
 ,
 {
@@ -6705,11 +6694,11 @@ meps_str = [
   value: 'LANCE FORMANLance Forman',
   nom: 'Forman',
   prenom: 'Lance',
-  group_code: 'NI',
+  group_code: 'ECR',
   country_code: 'gb',
   id_mep: 197703,
-  id_siege: 700,
-  id_group: 5152
+  id_siege: 688,
+  id_group: 5148
 }
 ,
 {
@@ -7049,7 +7038,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197744,
-  id_siege: 691,
+  id_siege: 695,
   id_group: 5152
 }
 ,
@@ -7170,7 +7159,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197760,
-  id_siege: 696,
+  id_siege: 699,
   id_group: 5152
 }
 ,
@@ -7192,7 +7181,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'sk',
   id_mep: 197763,
-  id_siege: 697,
+  id_siege: 700,
   id_group: 5152
 }
 ,
@@ -7203,7 +7192,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'sk',
   id_mep: 197764,
-  id_siege: 698,
+  id_siege: 701,
   id_group: 5152
 }
 ,
@@ -7577,7 +7566,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'gb',
   id_mep: 197803,
-  id_siege: 703,
+  id_siege: 704,
   id_group: 5152
 }
 ,
@@ -7618,11 +7607,11 @@ meps_str = [
   value: 'JOHN LONGWORTHJohn Longworth',
   nom: 'Longworth',
   prenom: 'John',
-  group_code: 'NI',
+  group_code: 'ECR',
   country_code: 'gb',
   id_mep: 197807,
-  id_siege: 704,
-  id_group: 5152
+  id_siege: 686,
+  id_group: 5148
 }
 ,
 {
@@ -7640,11 +7629,11 @@ meps_str = [
   value: 'LUCY ELIZABETH HARRISLucy Elizabeth Harris',
   nom: 'Harris',
   prenom: 'Lucy Elizabeth',
-  group_code: 'NI',
+  group_code: 'ECR',
   country_code: 'gb',
   id_mep: 197809,
-  id_siege: 701,
-  id_group: 5152
+  id_siege: 685,
+  id_group: 5148
 }
 ,
 {
@@ -8105,7 +8094,7 @@ meps_str = [
   group_code: 'NI',
   country_code: 'hu',
   id_mep: 198063,
-  id_siege: 699,
+  id_siege: 702,
   id_group: 5152
 }
 ,
@@ -8116,7 +8105,7 @@ meps_str = [
   group_code: 'ECR',
   country_code: 'es',
   id_mep: 198096,
-  id_siege: 349,
+  id_siege: 352,
   id_group: 5148
 }
 ,
@@ -8217,6 +8206,28 @@ meps_str = [
   id_mep: 202112,
   id_siege: 660,
   id_group: 5153
+}
+,
+{
+  value: 'CARLES PUIGDEMONT I CASAMAJOCarles Puigdemont i Casamajó',
+  nom: 'Puigdemont i Casamajó',
+  prenom: 'Carles',
+  group_code: 'NI',
+  country_code: 'es',
+  id_mep: 202351,
+  id_siege: 854,
+  id_group: 5152
+}
+,
+{
+  value: 'ANTONI COMIN I OLIVERESAntoni Comín i Oliveres',
+  nom: 'Comín i Oliveres',
+  prenom: 'Antoni',
+  group_code: 'NI',
+  country_code: 'es',
+  id_mep: 202352,
+  id_siege: 853,
+  id_group: 5152
 }
 ,
 {

@@ -1,4 +1,28 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Alviina ALAMETSÄ,FI,204335,9,2020-02-01,,incoming,NI,Vihreä liitto
+Barry ANDREWS,IE,204332,9,2020-02-01,,incoming,NI,Fianna Fáil Party
+Sergio BERLATO,IT,4746,9,2020-02-01,,incoming,NI,Fratelli d'Italia
+Ilana CICUREL,FR,204416,9,2020-02-01,,incoming,NI,Liste Renaissance
+Deirdre CLUNE,IE,124988,9,2020-02-01,,incoming,NI,Fine Gael Party
+Jakop DALUNDE,SE,183338,9,2020-02-01,,incoming,NI,Miljöpartiet de gröna
+Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
+Salvatore DE MEO,IT,204333,9,2020-02-01,,incoming,EPP,Forza Italia
+Sandro GOZI,FR,204419,9,2020-02-01,,incoming,NI,Liste Renaissance
+Claude GRUFFAT,FR,204420,9,2020-02-01,,incoming,NI,Europe Écologie
+Romana JERKOVIĆ,HR,112747,9,2020-02-01,,incoming,NI,Socijaldemokratska partija Hrvatske
+Jean-Lin LACAPELLE,FR,204421,9,2020-02-01,,incoming,NI,Rassemblement national
+Miriam LEXMANN,SK,204336,9,2020-02-01,,incoming,NI,Kresťanskodemokratické hnutie
+Gabriel MATO,ES,96936,9,2020-02-01,,incoming,NI,Partido Popular
+Nora MEBAREK,FR,204418,9,2020-02-01,,incoming,NI,Parti socialiste
+Victor NEGRESCU,RO,88882,9,2020-02-01,,incoming,S&D,Partidul Social Democrat
+Clara PONSATÍ OBIOLS,ES,204443,9,2020-02-01,,incoming,NI,Junts per Catalunya - Lliures per Europa
+Marcos ROS SEMPERE,ES,204413,9,2020-02-01,,incoming,NI,Partido Socialista Obrero Español
+Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,NI,Lega
+Linea SØGAARD-LIDELL,DK,204331,9,2020-02-01,,incoming,NI,"Venstre, Danmarks Liberale Parti"
+Dominik TARCZYŃSKI,PL,204346,9,2020-02-01,,incoming,ECR,Prawo i Sprawiedliwość
+Riho TERRAS,EE,204449,9,2020-02-01,,incoming,EPP,Isamaa
+Adrián VÁZQUEZ LÁZARA,ES,204400,9,2020-02-01,,incoming,NI,Ciudadanos – Partido de la Ciudadanía
+Christian SAGARTZ,AT,204368,9,2020-01-23,,incoming,EPP,Österreichische Volkspartei
 Marc ANGEL,LU,202073,9,2019-12-10,,incoming,S&D,Parti ouvrier socialiste luxembourgeois
 Gheorghe-Vlad NISTOR,RO,202112,9,2019-12-02,,incoming,EPP,Partidul Naţional Liberal
 Sunčana GLAVAK,HR,202036,9,2019-12-01,,incoming,EPP,Hrvatska demokratska zajednica
@@ -6,6 +30,81 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,S&D,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Heather ANDERSON,GB,204371,9,2020-01-27,2020-01-31,incoming,Greens/EFA,Scottish National Party
+Heather ANDERSON,GB,204371,9,2020-01-27,2020-01-31,outgoing,Greens/EFA,Scottish National Party
+Scott AINSLIE,GB,197696,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Christian ALLARD,GB,197644,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Scottish National Party
+Martina ANDERSON,GB,113959,9,2019-07-02,2020-01-31,outgoing,GUE/NGL,Sinn Fein
+Catherine BEARDER,GB,96955,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Phil BENNION,GB,112014,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Jane BROPHY,GB,197716,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+David BULL,GB,197715,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Jonathan BULLOCK,GB,188733,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Judith BUNTING,GB,197739,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Ellie CHOWNS,GB,197714,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Richard CORBETT,GB,2309,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Seb DANCE,GB,124952,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Martin Edward DAUBNEY,GB,197760,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Chris DAVIES,GB,4554,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Belinda DE LUCY,GB,197736,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Dinesh DHAMIJA,GB,197693,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Diane DODDS,GB,96951,9,2019-07-02,2020-01-31,outgoing,NI,Democratic Unionist Party
+Gina DOWDING,GB,197613,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Andrew ENGLAND KERR,GB,197803,9,2019-07-02,2020-01-31,outgoing,NI,Independent
+Jill EVANS,GB,4550,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Plaid Cymru - Party of Wales
+Nigel FARAGE,GB,4525,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Lance FORMAN,GB,197703,9,2019-07-02,2020-01-31,outgoing,ECR,The Brexit Party
+Claire FOX,GB,197708,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Barbara Ann GIBSON,GB,197600,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Neena GILL,GB,4533,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Nathan GILL,GB,124965,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+James Alexander GLANCY,GB,197751,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Theresa GRIFFIN,GB,124961,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Ben HABIB,GB,197642,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Daniel HANNAN,GB,4555,9,2019-07-02,2020-01-31,outgoing,ECR,Conservative Party
+Lucy Elizabeth HARRIS,GB,197809,9,2019-07-02,2020-01-31,outgoing,ECR,The Brexit Party
+Michael HEAVER,GB,197601,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Antony HOOK,GB,197730,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Martin HORWOOD,GB,197755,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+John HOWARTH,GB,188636,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Jackie JONES,GB,197758,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Christina Sheila JORDAN,GB,197752,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Jude KIRTON-DARLING,GB,124953,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Naomi LONG,GB,197816,9,2019-07-02,2020-01-31,outgoing,Renew,Alliance Party of Northern Ireland
+John LONGWORTH,GB,197807,9,2019-07-02,2020-01-31,outgoing,ECR,The Brexit Party
+Rupert LOWE,GB,197759,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Anthea McINTYRE,GB,111011,9,2019-07-02,2020-01-31,outgoing,ECR,Conservative Party
+Aileen McLEOD,GB,30490,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Scottish National Party
+Magid MAGID,GB,197812,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Baroness Nosheena MOBARIK,GB,189391,9,2019-07-02,2020-01-31,outgoing,ECR,Conservative Party
+Shaffaq MOHAMMED,GB,197811,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Brian MONTEITH,GB,197704,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Claude MORAES,GB,4519,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+June Alison MUMMERY,GB,197603,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Lucy NETHSINGHA,GB,197604,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Bill NEWTON DUNN,GB,1394,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Henrik OVERGAARD NIELSEN,GB,197712,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Rory PALMER,GB,190099,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+Matthew PATTEN,GB,197620,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Alexandra Louise Rosenfield PHILLIPS,GB,197710,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Alexandra Lesley PHILLIPS,GB,99461,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Luisa PORRITT,GB,197700,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Jake PUGH,GB,197813,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Annunziata Mary REES-MOGG,GB,197612,9,2019-07-02,2020-01-31,outgoing,ECR,The Brexit Party
+Sheila RITCHIE,GB,197815,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Catherine ROWETT,GB,197602,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Robert ROWLAND,GB,197733,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Molly SCOTT CATO,GB,124942,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party
+Louis STEDMAN-BRYCE,GB,197814,9,2019-07-02,2020-01-31,outgoing,NI,Independent
+John David Edward TENNANT,GB,197705,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Richard TICE,GB,197599,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Geoffrey VAN ORDEN,GB,4513,9,2019-07-02,2020-01-31,outgoing,ECR,Conservative Party
+Caroline VOADEN,GB,197749,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Irina VON WIESE,GB,197625,9,2019-07-02,2020-01-31,outgoing,Renew,Liberal Democrats
+Julie WARD,GB,124963,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
+James WELLS,GB,197757,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Ann WIDDECOMBE,GB,197744,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
+Karoline EDTSTADLER,AT,197643,9,2019-07-02,2020-01-06,outgoing,EPP,Österreichische Volkspartei
 Alyn SMITH,GB,28508,9,2019-07-02,2019-12-12,outgoing,Greens/EFA,Scottish National Party
 Nicolas SCHMIT,LU,197428,9,2019-07-02,2019-11-30,outgoing,S&D,Parti ouvrier socialiste luxembourgeois
 Dubravka ŠUICA,HR,119434,9,2019-07-02,2019-11-30,outgoing,EPP,Hrvatska demokratska zajednica

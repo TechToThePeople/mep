@@ -9,8 +9,9 @@ function main (callback) {
     var printError = function(error, explicit) {
       console.log(`[${explicit ? 'EXPLICIT' : 'INEXPLICIT'}] ${error.name}: ${error.message}`);
     }
-    var s=fs.readFileSync('data/meps_str.js', "utf8"); //meps_str has a weird format, the array we want (meps_str) starts at 62 chars
-    s=s.substring(62, s.length - 3);
+    var s=fs.readFileSync('data/meps_str.js', "utf8"); //meps_str has a weird format, the array we want (meps_str) starts at 58 chars
+    s=s.substring(58, s.length - 2);
+    console.log(s);
     try {
       var ms= JSON5.parse(s);
       ms.forEach(function(m){
