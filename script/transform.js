@@ -40,6 +40,14 @@ var inout= require('../data/inout.json'); // direct from EP site, for QA
 var epnews= require('../data/epnewshub.json'); // direct from EP site, for QA
 var csvparse=require('csv-parse/lib/sync.js');
 var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true}); // fixing manually the missing genders
+var tmp = csvparse (fs.readFileSync('data/extra_csv.csv'),{columns:true,auto_parse:true});
+//'EP id' - SCREEN_NAME
+var extraTwitter = {};
+tmp.map( d => {
+  if (d.SCREEN_NAME[0] !== '@') return;
+  extraTwitter[parseInt(d['EP id'],10)] = d.SCREEN_NAME.substr(1);
+});
+var tmp = null;
 
 function indexepnews (epnews){
   var meps={};
@@ -97,13 +105,13 @@ var stream = StreamFilteredArray.make({
 
 var abbr = {
   "Subcommittee on Security and Defence": "SEDE",
+  "Committee of Inquiry on the Protection of Animals during Transport":"ANIT",
   "Special Committee on Terrorism": "TERR",
   "Special committee on financial crimes, tax evasion and tax avoidance": "TAX3",
   "Special Committee on the Union’s authorisation procedure for pesticides": "PEST",
   "Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA"
 };
 
-Object.values(abbr).forEach((d) => {console.log(d)});
 
 function transform(d) {
   function fixGender (id) {
@@ -204,7 +212,10 @@ function transform(d) {
   if (d.Twitter)
     d.Twitter=d.Twitter.replace(/.*twitter.com\//ig,"");
   if (epnews[d.epid] && epnews[d.epid].twitter) {
-    d.Twitter=epnews[d.epid].twitter;
+    d.Twitter=epnews[d.epid].twitter.substr(1); //remove '@'
+  };
+  if (extraTwitter[d.epid] ) {
+    d.Twitter=extraTwitter[d.epid];
   };
   if (d.Birth) {
     d.Birth.date = d.Birth.date.replace("T00:00:00", "");

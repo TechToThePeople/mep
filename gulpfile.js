@@ -49,6 +49,7 @@ gulp.task('download', function() {
   var files = [
     {file: "meps_str.js",url:"http://www.europarl.europa.eu/hemicycle/js/meps_str.js"}, //used by mepid task to generate mepid.json
 //    {file: "mepid.json",url:"http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term="},
+    { file:"extra_csv.csv", url:"https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv"},
     { file:"incoming.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml"},
     {file:"outgoing.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml"},
 
