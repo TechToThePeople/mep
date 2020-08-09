@@ -1,7 +1,7 @@
 {
-  "name": "ep",
+  "name": "mep",
   "version": "1.0.0",
-  "description": "",
+  "description": "List of Members of the European Parliament",
   "main": "list.js",
   "dependencies": {
     "blueimp-tmpl": "^3.11.0",
@@ -50,6 +50,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Tech To The People",
   "license": "ISC"
 }
