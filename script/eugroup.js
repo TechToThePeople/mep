@@ -1,6 +1,6 @@
 const fetch = require ('node-fetch');
 const fs = require('fs');
-
+const imgUrl = "https://s3.eu-central-1.amazonaws.com/newshubv2/party/";
 let groups = JSON.parse(fs.readFileSync('data/eugroup.json'));
 
  const downloadFile = (async (url, path) => {
@@ -26,14 +26,14 @@ async function downloadGroup (groups)  {
     const d = {
       accronym:g.eParty,
       name:g.fullName,
-      picture:g.pictureLink,
-      icon:'/img/group/'+g.eParty.replace('/','_')+'.png',
+      picture:decodeURIComponent(g.pictureLink.replace(imgUrl,"")),
       url:g.profileLink
     }
     r[d.accronym] = d;
-    await downloadFile("https://www.google.com/s2/favicons?domain="+d.url,'.'+d.icon);
+    await downloadFile("https://www.google.com/s2/favicons?domain="+d.url,'./img/party/icon/'+d.picture);
+    console.log(imgUrl+d.picture);
+    await downloadFile(imgUrl+d.picture,'./img/party/logo/'+d.picture);
   });
-    console.log(JSON.stringify(r));
   fs.writeFileSync('./data/eugroups.json', JSON.stringify(r,null,2));
 
 };
