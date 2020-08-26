@@ -69,6 +69,18 @@
     };
 
 
+const emoji = country => {
+  const offset = 127397;
+  let emoji = '';
+
+  if (!country || country.toUpperCase() === "ZZ") return "";
+
+  country.toUpperCase().split('').forEach(char=>
+    emoji += String.fromCodePoint(char.charCodeAt(0) + offset)
+  );
+
+  return emoji;
+}
 
 var iconify = function(name, prefix) {
   prefix = prefix || "icon";
@@ -202,6 +214,7 @@ var iconify = function(name, prefix) {
         .elasticY(true)
         .yAxisLabel("#MEPs")
         .dimension(dim)
+        .label(country => {console.log(country); return emoji(country.x)})
         .group(group)
         .on("renderlet", function(c) {
           rotateBarChartLabels();
@@ -524,8 +537,8 @@ var iconify = function(name, prefix) {
             return t;
           },
           function(d) {
-            return iconify(d.constituency.country,"flag");
-            return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
+            return emoji (d.constituency.country);
+//            return iconify(d.constituency.country,"flag");
           },
           function(d) {
             return "<span title='" + d.eugroup + "' class='img-rounded text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
