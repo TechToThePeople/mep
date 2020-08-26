@@ -233,6 +233,7 @@ function transform(d) {
   activeOnly("Constituencies",{"single":true,"name":"constituency",abbr:null});
   activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
   d.eugroup=d.eugroup.name;
+  console.log(d.eugroup); process.exit(1);
   if (Array.isArray(d.eugroup)){
     d.eugroup = d.eugroup.join("/");
   }

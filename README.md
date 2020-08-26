@@ -4,4 +4,7 @@ It's a mix of various sources, the European Parliament Website, parltrack, euhub
 
 And a bunch of manual data fixing, like adding the gender.
 
+https://www.epnewshub.eu/newshub/rest/contributors/find?cType=group
+
+ http://www.google.com/s2/favicons?domain=DomainName
 
