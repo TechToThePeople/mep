@@ -7,6 +7,17 @@ var finished = function(n) {
 var total = 0;
 var groups = {};
 
+const eugroups = {
+"ECR":"ECR",
+"Group of the European United Left - Nordic Green Left":"GUE/NGL",
+"ID":"ID",
+"NA":"NA",
+"PPE":"EPP",
+"RE":"Renew",
+"S&D":"S&D",
+"Verts/ALE":"Greens/EFA"
+}
+
 var abbreviations={};
 var delegations = require('../data/delegations.json');
 var committees = Object.keys(require('../data/committees.json')).sort();
@@ -232,11 +243,8 @@ function transform(d) {
   activeOnly("Committees",{abbr:"committee_id"});
   activeOnly("Constituencies",{"single":true,"name":"constituency",abbr:null});
   activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
-  d.eugroup=d.eugroup.name;
-  console.log(d.eugroup); process.exit(1);
-  if (Array.isArray(d.eugroup)){
-    d.eugroup = d.eugroup.join("/");
-  }
+  d.eugroup=eugroups[d.eugroup.name];
+  if (!d.eugroup) process.exit(1);
   activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
   d.constituency.country = country2iso[d.constituency.country];

@@ -41,25 +41,3 @@ async function downloadGroup (groups)  {
 downloadGroup(groups);
 
 
-/*    fullName: 'Renew Europe',
-    party: null,
-    localParty: null,
-    pictureLink:
-     'https://s3.eu-central-1.amazonaws.com/newshubv2/party/Renew.png',
-    profileLink: 'https://reneweuropegroup.eu',
-    country: '11',
-    type: 'grouppress',
-    eParty: 'Renew',
-*/
-
-const convert= {
-ECR:'ECR',
-'Group of the European United Left - Nordic Green Left':'GGG',
-ID:'ID',
-NA:'NA',
-PPE:'EPP',
-RE:'RE',
-'S&D':'S&D',
-'Verts/ALE':'aaa'
-};
-
