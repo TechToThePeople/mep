@@ -55,7 +55,6 @@
       "Greens/EFA": "#05a61e",
       "ALDE": "#ffc200",
       "RE": "#ffc200",
-      "Renew": "#ffc200",
       "EFDD": "#5eced6",
       "PPE": "#0a3e63",
       "EPP": "#0a3e63",
@@ -69,18 +68,6 @@
     };
 
 
-const emoji = country => {
-  const offset = 127397;
-  let emoji = '';
-
-  if (!country || country.toUpperCase() === "ZZ") return "";
-
-  country.toUpperCase().split('').forEach(char=>
-    emoji += String.fromCodePoint(char.charCodeAt(0) + offset)
-  );
-
-  return emoji;
-}
 
 var iconify = function(name, prefix) {
   prefix = prefix || "icon";
@@ -214,7 +201,6 @@ var iconify = function(name, prefix) {
         .elasticY(true)
         .yAxisLabel("#MEPs")
         .dimension(dim)
-        .label(country => {console.log(country); return emoji(country.x)})
         .group(group)
         .on("renderlet", function(c) {
           rotateBarChartLabels();
@@ -537,8 +523,8 @@ var iconify = function(name, prefix) {
             return t;
           },
           function(d) {
-            return emoji (d.constituency.country);
-//            return iconify(d.constituency.country,"flag");
+            return iconify(d.constituency.country,"flag");
+            return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
           },
           function(d) {
             return "<span title='" + d.eugroup + "' class='img-rounded text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
@@ -1083,7 +1069,7 @@ function download_excel() {
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2020-07-30</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2020-08-26</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -1242,33 +1228,29 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       overflow: hidden;
       background-size: cover;
     }
-    .eugroup {
-      width: 16px;
-      height: 16px;
-    }
 
-    .epp {
-      background-image: url("img/party/icon/EPP.png");
+    .ppe {
+      background-image: url("img/group/EPP.png");
     }
 
     .s-d {
-      background-image: url("img/party/icon/S&D.png");
+      background-image: url("img/group/S-D.png");
     }
 
-    .alde, .re,.renew {
-      background-image: url("img/party/icon/Renew.png");
+    .alde, .re {
+      background-image: url("img/group/ALDE.png");
     }
 
-    .verts-ale,.greens-efa {
-      background-image: url("img/party/icon/GF.png");
+    .verts-ale {
+      background-image: url("img/group/VERT.png");
     }
 
     .efdd, .id {
-      background-image: url("img/party/icon/ID.png");
+      background-image: url("img/group/EFDD.png");
     }
 
     .gue-ngl {
-      background-image: url("img/party/icon/UL.png");
+      background-image: url("img/group/GUE.png");
     }
 
     .enf {

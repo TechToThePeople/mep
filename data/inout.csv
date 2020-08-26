@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Manuela RIPA,DE,206158,9,2020-07-16,,incoming,Greens/EFA,Ökologisch-Demokratische Partei
 Chris MACMANUS,IE,205452,9,2020-03-06,,incoming,GUE/NGL,Sinn Féin
 Alviina ALAMETSÄ,FI,204335,9,2020-02-01,,incoming,Greens/EFA,Vihreä liitto
 Barry ANDREWS,IE,204332,9,2020-02-01,,incoming,Renew,Fianna Fáil Party
@@ -6,7 +7,6 @@ Sergio BERLATO,IT,4746,9,2020-02-01,,incoming,ECR,Fratelli d'Italia
 Ilana CICUREL,FR,204416,9,2020-02-01,,incoming,Renew,Liste Renaissance
 Deirdre CLUNE,IE,124988,9,2020-02-01,,incoming,EPP,Fine Gael Party
 Jakop G. DALUNDE,SE,183338,9,2020-02-01,,incoming,Greens/EFA,Miljöpartiet de gröna
-Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
 Salvatore DE MEO,IT,204333,9,2020-02-01,,incoming,EPP,Forza Italia
 Sandro GOZI,FR,204419,9,2020-02-01,,incoming,Renew,Liste Renaissance
 Marcel de GRAAFF,NL,125025,9,2020-02-01,,incoming,ID,Partij voor de Vrijheid
@@ -18,6 +18,7 @@ Miriam LEXMANN,SK,204336,9,2020-02-01,,incoming,EPP,Kresťanskodemokratické hnu
 Gabriel MATO,ES,96936,9,2020-02-01,,incoming,EPP,Partido Popular
 Nora MEBAREK,FR,204418,9,2020-02-01,,incoming,S&D,Parti socialiste
 Victor NEGRESCU,RO,88882,9,2020-02-01,,incoming,S&D,Partidul Social Democrat
+Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
 Clara PONSATÍ OBIOLS,ES,204443,9,2020-02-01,,incoming,NI,Junts per Catalunya - Lliures per Europa
 Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,GO Realisme & Daadkracht
 Marcos ROS SEMPERE,ES,204413,9,2020-02-01,,incoming,S&D,Partido Socialista Obrero Español
@@ -29,6 +30,7 @@ Adrián VÁZQUEZ LÁZARA,ES,204400,9,2020-02-01,,incoming,Renew,Ciudadanos – P
 Thomas WAITZ,AT,190464,9,2020-02-01,,incoming,Greens/EFA,Die Grünen - Die Grüne Alternative
 Heather ANDERSON,GB,204371,9,2020-01-27,,incoming,Greens/EFA,Scottish National Party
 Christian SAGARTZ,AT,204368,9,2020-01-23,,incoming,EPP,Österreichische Volkspartei
+Jordi SOLÉ,ES,185974,9,2020-01-03,,incoming,Greens/EFA,Esquerra Republicana de Catalunya
 Marc ANGEL,LU,202073,9,2019-12-10,,incoming,S&D,Parti ouvrier socialiste luxembourgeois
 Gheorghe-Vlad NISTOR,RO,202112,9,2019-12-02,,incoming,EPP,Partidul Naţional Liberal
 Sunčana GLAVAK,HR,202036,9,2019-12-01,,incoming,EPP,Hrvatska demokratska zajednica
@@ -36,6 +38,7 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Klaus BUCHNER,DE,124818,9,2019-07-02,2020-07-15,outgoing,Greens/EFA,Ökologisch-Demokratische Partei
 Matt CARTHY,IE,124986,9,2019-07-02,2020-02-07,outgoing,GUE/NGL,Sinn Féin
 Heather ANDERSON,GB,204371,9,2020-01-27,2020-01-31,outgoing,Greens/EFA,Scottish National Party
 Scott AINSLIE,GB,197696,9,2019-07-02,2020-01-31,outgoing,Greens/EFA,Green Party

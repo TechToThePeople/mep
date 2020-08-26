@@ -3061,7 +3061,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 131507,Miguel,URBÁN CRESPO,true,2015-03-05,2019-07-02,,1980-03-26,es,M,Group of the European United Left - Nordic Green Left,ANTICAPITALISTAS,miguel.urbancrespo@europarl.europa.eu,miguelurban,9,2015-03-05
 26146,Florent,MARCELLESI,false,2016-10-11,,2019-07-01,1979-04-10,es,M,Verts/ALE,EQUO,florent.marcellesi@europarl.europa.eu,,8,2016-10-11
 188733,Jonathan,BULLOCK,false,2017-08-01,2019-07-02,2020-01-31,1963-03-03,uk,M,NA,The Brexit Party,jonathan.bullock@europarl.europa.eu,,9,2017-08-01
-185974,Jordi,SOLÉ,false,2017-01-03,,2019-07-01,1976-10-26,es,M,Verts/ALE,Esquerra Republicana de Catalunya,jordi.sole@europarl.europa.eu,,8,2017-01-03
+185974,Jordi,SOLÉ,true,2017-01-03,2020-01-03,,1976-10-26,es,M,Verts/ALE,Esquerra Republicana de Catalunya,jordi.sole@europarl.europa.eu,jordisolef,9,2017-01-03
 132366,Pirkko,RUOHONEN-LERNER,false,2015-04-27,,2019-07-01,1957-02-06,fi,F,ECR,Perussuomalaiset,pirkko.ruohonen-lerner@europarl.europa.eu,pirkkorl,8,2015-04-27
 188906,Francis,ZAMMIT DIMECH,false,2017-06-24,,2019-07-01,1954-10-23,mt,M,PPE,Partit Nazzjonalista,francis.zammitdimech@europarl.europa.eu,franciszd,8,2017-06-24
 133326,Stefano,MAULLU,false,2015-07-13,,2019-07-01,1962-03-15,it,M,ECR,FRATELLI D' ITALIA,stefano.maullu@europarl.europa.eu,stefanomaullu,8,2015-07-13
