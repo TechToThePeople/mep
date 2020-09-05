@@ -174,5 +174,5 @@ gulp.task('js', function() {
 });
 
 
-gulp.task('build', ['css', 'js']);
-gulp.task('default', ['update']);
+gulp.task('build', gulp.parallel('css', 'js'));
+gulp.task('default', gulp.series('update'));

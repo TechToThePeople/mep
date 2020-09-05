@@ -8,3 +8,5 @@ https://www.epnewshub.eu/newshub/rest/contributors/find?cType=group
 
  http://www.google.com/s2/favicons?domain=DomainName
 
+if (navigator.appVersion.indexOf("Win")!==-1) emojiFlags=false; // 
+
