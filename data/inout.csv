@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Sara MATTHIEU,BE,208722,9,2020-10-08,,incoming,NI,
 Manuela RIPA,DE,206158,9,2020-07-16,,incoming,Greens/EFA,Ökologisch-Demokratische Partei
 Chris MACMANUS,IE,205452,9,2020-03-06,,incoming,GUE/NGL,Sinn Féin
 Alviina ALAMETSÄ,FI,204335,9,2020-02-01,,incoming,Greens/EFA,Vihreä liitto
@@ -20,7 +21,7 @@ Nora MEBAREK,FR,204418,9,2020-02-01,,incoming,S&D,Parti socialiste
 Victor NEGRESCU,RO,88882,9,2020-02-01,,incoming,S&D,Partidul Social Democrat
 Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
 Clara PONSATÍ OBIOLS,ES,204443,9,2020-02-01,,incoming,NI,Junts per Catalunya - Lliures per Europa
-Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,GO Realisme & Daadkracht
+Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,Independent
 Marcos ROS SEMPERE,ES,204413,9,2020-02-01,,incoming,S&D,Partido Socialista Obrero Español
 Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,ID,Lega
 Linea SØGAARD-LIDELL,DK,204331,9,2020-02-01,,incoming,Renew,"Venstre, Danmarks Liberale Parti"
@@ -38,6 +39,8 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Mairead McGUINNESS,IE,28115,9,2019-07-02,2020-10-11,outgoing,EPP,Fine Gael Party
+Petra DE SUTTER,BE,197471,9,2019-07-02,2020-09-30,outgoing,Greens/EFA,Groen
 Klaus BUCHNER,DE,124818,9,2019-07-02,2020-07-15,outgoing,Greens/EFA,Ökologisch-Demokratische Partei
 Matt CARTHY,IE,124986,9,2019-07-02,2020-02-07,outgoing,GUE/NGL,Sinn Féin
 Heather ANDERSON,GB,204371,9,2020-01-27,2020-01-31,outgoing,Greens/EFA,Scottish National Party

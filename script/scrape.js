@@ -31,21 +31,21 @@ cachedRequest({
 });
 
 cachedRequest({
-  url: 'http://www.europarl.europa.eu/committees/en/parliamentary-committees.html'
+  url: 'https://www.europarl.europa.eu/committees/en/parliamentary-committees.html'
 }, function(error, response, html) {
   if (error) {
     console.log("error:" + error);
     process.exit(1)
   }
+  console.log("parsing committees");
   const $ = cheerio.load(html);
   var r = {};
-  $("#select_committees_list a").each(function(i, d) {
-    var id = $(this).find("span");
-    if (!id.text()) return;
-    id=id.text().toUpperCase();
-    var t = $(this).text().split("\n");
-    r[id]=t[2].substring(5);//replace("\t","");
-    console.log(r[id]);
+  $(".select2-committee option").each(function(i, d) {
+    var id = $(this).attr("data-additionaltext");
+    if (!id) return;
+    r[id.toUpperCase()] = $(this).text();
+//    var t = $(this).text().split("\n");
+//    r[id]=t[2].substring(5);//replace("\t","");
   });
   if (Object.keys(r).length < 10) {
     console.log("can't parse europarl committees");

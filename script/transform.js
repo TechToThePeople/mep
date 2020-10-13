@@ -120,7 +120,11 @@ var abbr = {
   "Special Committee on Terrorism": "TERR",
   "Special committee on financial crimes, tax evasion and tax avoidance": "TAX3",
   "Special Committee on the Union’s authorisation procedure for pesticides": "PEST",
-  "Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA"
+  "Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA",
+"Special Committee on Artificial Intelligence in a Digital Age": "AIDA",
+"Special Committee on Beating Cancer":"BECA",
+  "Subcommittee on Tax Matters": "FISC",
+"Special Committee on Foreign Interference in all Democratic Processes in the European Union, including Disinformation" :"INGE" 
 };
 
 
