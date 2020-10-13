@@ -55,7 +55,7 @@ gulp.task('download', function() {
     {file:"outgoing.xml",url:"http://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml"},
 
     {file:"ep_meps_current.json.lz",url:"https://parltrack.org/dumps/ep_meps.json.lz"},
-    {file:"epnewshub.json",url:"http://www.epnewshub.eu/newshub/rest/contributors/find?limit=900&cType=mep"}
+    {file:"epnewshub.json",url:"https://www.epnewshub.eu/newshub/rest/contributors/find?limit=900&cType=mep"}
   ];
   //run script to convert meps_str
   return download(files)
@@ -174,5 +174,5 @@ gulp.task('js', function() {
 });
 
 
-gulp.task('build', ['css', 'js']);
-gulp.task('default', ['update']);
+gulp.task('build', gulp.parallel('css', 'js'));
+gulp.task('default', gulp.series('update'));
