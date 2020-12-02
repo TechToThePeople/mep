@@ -92,10 +92,11 @@ gulp.task('genderify', function() {
   ;
   
 });
-gulp.task('decompress', function() {
+gulp.task('decompress', function(done) {
   var fname = "ep_meps_current.json";
   var exec = require('child_process').exec;
   exec("lunzip data/"+fname+".lz -f");
+  done();
 });
 
 gulp.task("alias", function(done) {
@@ -132,10 +133,6 @@ gulp.task("transform", function(done) {
   }, cb);
 });
 
-gulp.task('update', function (callback) {
-  runSequence('download','decompress', 'mepid','inout','transform','alias','html',callback);
-  });
-
 gulp.task('html', function(){
   return gulp.src(['src/index.html'])
     .pipe(replace("$UPDATE_DATE",new Date().toISOString().slice(0, 10)))
@@ -143,6 +140,11 @@ gulp.task('html', function(){
     .pipe(replace("../build/",'build/'))
     .pipe(gulp.dest("."))
 });
+
+gulp.task('update',gulp.series(
+  'download','decompress', 'mepid','inout','transform','alias','html',function(d){console.log("done")}));
+
+
 
 gulp.task('css', function() {
   return gulp.src(paths.css)
