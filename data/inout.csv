@@ -1,5 +1,8 @@
 fullName,country,id,leg,start,end,file,eugroup,party
-Sara MATTHIEU,BE,208722,9,2020-10-08,,incoming,NI,
+Colm MARKEY,IE,209896,9,2020-11-20,,incoming,EPP,Fine Gael Party
+Vlad GHEORGHE,RO,209140,9,2020-11-10,,incoming,Renew,Uniunea Salvați România
+Cyrus ENGERER,MT,209091,9,2020-11-05,,incoming,S&D,Partit Laburista
+Sara MATTHIEU,BE,208722,9,2020-10-08,,incoming,Greens/EFA,Groen
 Manuela RIPA,DE,206158,9,2020-07-16,,incoming,Greens/EFA,Ökologisch-Demokratische Partei
 Chris MACMANUS,IE,205452,9,2020-03-06,,incoming,GUE/NGL,Sinn Féin
 Alviina ALAMETSÄ,FI,204335,9,2020-02-01,,incoming,Greens/EFA,Vihreä liitto
@@ -39,6 +42,8 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Clotilde ARMAND,RO,197664,9,2019-07-02,2020-11-03,outgoing,Renew,Uniunea Salvați România
+Miriam DALLI,MT,124970,9,2019-07-02,2020-10-18,outgoing,S&D,Partit Laburista
 Mairead McGUINNESS,IE,28115,9,2019-07-02,2020-10-11,outgoing,EPP,Fine Gael Party
 Petra DE SUTTER,BE,197471,9,2019-07-02,2020-09-30,outgoing,Greens/EFA,Groen
 Klaus BUCHNER,DE,124818,9,2019-07-02,2020-07-15,outgoing,Greens/EFA,Ökologisch-Demokratische Partei
