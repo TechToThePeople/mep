@@ -56,7 +56,10 @@ Promise.all([parse("incoming"),parse("outgoing")])
        mepid[mep.id]=mep;
        writer.write(mep);
      });
-     d[1].forEach(mep => writer.write(mep));
+     d[1].forEach(mep => {writer.write(mep)
+       mepid[mep.id]=mep;
+     }
+     );
      fs.writeFileSync('data/inout.json', JSON.stringify(mepid));
      writer.end();
 
