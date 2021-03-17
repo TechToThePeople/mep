@@ -175,7 +175,7 @@ function transform(d) {
     if (options.single && r.length >0) {
       d[options.name] = r[0];
       return;
-    } 
+    }
     d[options.name] = r;
   }
 
@@ -248,7 +248,11 @@ function transform(d) {
   activeOnly("Constituencies",{"single":true,"name":"constituency",abbr:null});
   activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
   d.eugroup=eugroups[d.eugroup.name];
-  if (!d.eugroup) process.exit(1);
+  if (!d.eugroup) { 
+    d.eugroup = "The left";
+    console.log("missing group",d.eugroup, d);
+//    process.exit(1)
+  };
   activeOnly("Staff",{abbr:getDelegation});
   d.since = d.since.replace("T00:00:00", "");
   d.constituency.country = country2iso[d.constituency.country];
@@ -328,7 +332,11 @@ var simp = through2({
   objectMode: true
 }, function(chunk, enc, callback) {
   process.stdout.write(".");
+  try {
   var d = transform(chunk.value);
+  } catch (e) {
+    console.log(e);
+  }
   if (d) {
     total++;
     this.push(d) //change keys and flatten the structure
@@ -342,6 +350,7 @@ simp.on('end', () => {
 });
 
 stream.output.on("end", function() {
+  console.log("end");
   simp.end();
   //  csv.end();
 });

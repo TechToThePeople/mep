@@ -50,6 +50,7 @@
     var gender_color = ["#FDD835", "#9575CD","gray"];
     var eu_groups = {
       "GUE/NGL": "#800c00",
+      "The left": "#800c00",
       "S&D": "#c21200",
       "Verts/ALE": "#05a61e",
       "Greens/EFA": "#05a61e",
@@ -1069,7 +1070,7 @@ function download_excel() {
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2020-12-02</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2021-02-19</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -1229,7 +1230,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-size: cover;
     }
 
-    .ppe, .epp {
+    .ppe {
       background-image: url("img/group/EPP.png");
     }
 
@@ -1237,11 +1238,11 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       background-image: url("img/group/S-D.png");
     }
 
-    .alde, .re, .renew {
+    .alde, .re {
       background-image: url("img/group/ALDE.png");
     }
 
-    .verts-ale, .greens-efa {
+    .verts-ale {
       background-image: url("img/group/VERT.png");
     }
 
