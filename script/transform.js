@@ -249,7 +249,7 @@ function transform(d) {
   activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
   d.eugroup=eugroups[d.eugroup.name];
   if (!d.eugroup) { 
-    d.eugroup = "The left";
+    d.eugroup = "The Left";
     console.log("missing group",d.eugroup, d);
 //    process.exit(1)
   };
