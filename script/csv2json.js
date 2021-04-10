@@ -10,9 +10,17 @@ const pick = (obj, keys) => Object.fromEntries(
   keys.map(key => [key, obj[key]])
 );
 
-
 const props ="epid,country,first_name,last_name,twitter".split(",");
+//raw.map( d => data.push(pick(d, props)));
 
-raw.map( d => data.push(pick(d, props)));
+const epick = d => ({
+  epid:d.epid,
+  first_name:d.first_name,
+  eugroup:d.eugroup,
+  last_name:d.last_name,
+  Twitter:d.twitter,
+  constituency:{party:d.party,country:d.country}
+  });
 
-console.log(data);
+raw.map( d => data.push(epick(d)));
+console.log(JSON.stringify(data));
