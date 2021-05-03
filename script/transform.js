@@ -10,6 +10,7 @@ var groups = {};
 const eugroups = {
 "ECR":"ECR",
 "Group of the European United Left - Nordic Green Left":"GUE/NGL",
+"The Left group in the European Parliament - GUE/NGL":"The Left",
 "ID":"ID",
 "NA":"NA",
 "PPE":"EPP",
@@ -129,6 +130,7 @@ var abbr = {
 
 
 function transform(d) {
+  
   function fixGender (id) {
     var g=nogender.find(o => o.epid === id);
     return g? g.gender: '';
@@ -201,6 +203,9 @@ function transform(d) {
   d.first_name = d.Name.sur;
   d.last_name = d.Name.family;
   d.epid = d.UserID;
+
+d.epid == 218347 && 
+    console.error (d); //&& process.exit(1);
   if (!d.Gender) d.Gender=fixGender(d.epid);
   delete d.UserID;
   delete d.Name;
@@ -247,9 +252,9 @@ function transform(d) {
   activeOnly("Committees",{abbr:"committee_id"});
   activeOnly("Constituencies",{"single":true,"name":"constituency",abbr:null});
   activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
-  d.eugroup=eugroups[d.eugroup.name];
+  d.eugroup= eugroups[d.eugroup.name] ? eugroups[d.eugroup.name]: d.eugroup.name;
   if (!d.eugroup) { 
-    d.eugroup = "The Left";
+    d.eugroup = "?";
     console.log("missing group",d.eugroup, d);
 //    process.exit(1)
   };
@@ -333,9 +338,10 @@ var simp = through2({
 }, function(chunk, enc, callback) {
   process.stdout.write(".");
   try {
+//    console.log(chunk.value.Name.full);
   var d = transform(chunk.value);
   } catch (e) {
-    console.log(e);
+    console.error("error simp",e);
   }
   if (d) {
     total++;
