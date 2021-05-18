@@ -1,7 +1,9 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Michiel HOOGEVEEN,NL,218349,9,2021-04-15,,incoming,ECR,JA21
+Thijs REUTEN,NL,218347,9,2021-04-15,,incoming,S&D,Partij van de Arbeid
 Emma WIESNER,SE,214839,9,2021-02-04,,incoming,Renew,Centerpartiet
 Tom VANDENKENDELAERE,BE,129164,9,2021-01-25,,incoming,EPP,Christen-Democratisch & Vlaams
-Ernő SCHALLER-BAROSS,HU,213330,9,2021-01-10,,incoming,EPP,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
+Ernő SCHALLER-BAROSS,HU,213330,9,2021-01-10,,incoming,NI,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
 Alin MITUȚA,RO,212855,9,2020-12-28,,incoming,Renew,"Partidul Libertate, Unitate și Solidaritate"
 Colm MARKEY,IE,209896,9,2020-11-20,,incoming,EPP,Fine Gael Party
 Vlad GHEORGHE,RO,209140,9,2020-11-10,,incoming,Renew,Uniunea Salvați România
@@ -30,7 +32,7 @@ Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
 Clara PONSATÍ OBIOLS,ES,204443,9,2020-02-01,,incoming,NI,Junts per Catalunya - Lliures per Europa
 Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,Independent
 Marcos ROS SEMPERE,ES,204413,9,2020-02-01,,incoming,S&D,Partido Socialista Obrero Español
-Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,ID,Lega
+Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,ECR,Lega
 Linea SØGAARD-LIDELL,DK,204331,9,2020-02-01,,incoming,Renew,"Venstre, Danmarks Liberale Parti"
 Dominik TARCZYŃSKI,PL,204346,9,2020-02-01,,incoming,ECR,Prawo i Sprawiedliwość
 Riho TERRAS,EE,204449,9,2020-02-01,,incoming,EPP,Isamaa
@@ -46,6 +48,8 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Derk Jan EPPINK,NL,97133,9,2019-07-02,2021-03-30,outgoing,ECR,JA21
+Kati PIRI,NL,37229,9,2019-07-02,2021-03-30,outgoing,S&D,Partij van de Arbeid
 Kris PEETERS,BE,197420,9,2019-07-02,2021-01-11,outgoing,EPP,Christen-Democratisch & Vlaams
 József SZÁJER,HU,23821,9,2019-07-02,2021-01-01,outgoing,EPP,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
 Cristian GHINEA,RO,197661,9,2019-07-02,2020-12-22,outgoing,Renew,USR-PLUS
@@ -130,7 +134,7 @@ Julie WARD,GB,124963,9,2019-07-02,2020-01-31,outgoing,S&D,Labour Party
 James WELLS,GB,197757,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
 Ann WIDDECOMBE,GB,197744,9,2019-07-02,2020-01-31,outgoing,NI,The Brexit Party
 Karoline EDTSTADLER,AT,197643,9,2019-07-02,2020-01-06,outgoing,EPP,Österreichische Volkspartei
-Oriol JUNQUERAS I VIES,ES,96708,9,2019-07-02,2020-01-02,outgoing,NI,
+Oriol JUNQUERAS I VIES,ES,96708,9,2019-07-02,2020-01-02,outgoing,NI,Esquerra Republicana de Catalunya
 Alyn SMITH,GB,28508,9,2019-07-02,2019-12-12,outgoing,Greens/EFA,Scottish National Party
 Nicolas SCHMIT,LU,197428,9,2019-07-02,2019-11-30,outgoing,S&D,Parti ouvrier socialiste luxembourgeois
 Dubravka ŠUICA,HR,119434,9,2019-07-02,2019-11-30,outgoing,EPP,Hrvatska demokratska zajednica
