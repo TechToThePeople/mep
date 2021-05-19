@@ -131,6 +131,9 @@ var abbr = {
 
 function transform(d) {
   
+d.epid == 218349 && 
+    console.error (d); //&& process.exit(1);
+
   function fixGender (id) {
     var g=nogender.find(o => o.epid === id);
     return g? g.gender: '';
@@ -203,9 +206,6 @@ function transform(d) {
   d.first_name = d.Name.sur;
   d.last_name = d.Name.family;
   d.epid = d.UserID;
-
-d.epid == 218347 && 
-    console.error (d); //&& process.exit(1);
   if (!d.Gender) d.Gender=fixGender(d.epid);
   delete d.UserID;
   delete d.Name;
