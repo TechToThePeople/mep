@@ -3054,7 +3054,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 124893,Bogdan Andrzej,ZDROJEWSKI,false,2014-07-01,,2019-07-01,1957-05-18,pl,M,PPE,Platforma Obywatelska,bogdan.zdrojewski@europarl.europa.eu,bzdrojewski,8,2014-07-01
 124786,Damian,DRĂGHICI,false,2014-07-01,,2019-07-01,1970-03-31,ro,M,S&D,Independent,damian.draghici@europarl.europa.eu,damiandraghici1,8,2014-07-01
 124886,Robert Jarosław,IWASZKIEWICZ,false,2014-07-01,,2019-07-01,1962-05-17,pl,M,EFDD,Wolność,robertjaroslaw.iwaszkiewicz@europarl.europa.eu,,8,2014-07-01
-136236,João,PIMENTA LOPES,false,2016-01-31,,2019-07-01,1980-04-12,pt,M,GUE/NGL,Partido Comunista Português,joao.pimentalopes@europarl.europa.eu,,8,2016-01-31
+136236,João,PIMENTA LOPES,true,2016-01-31,2021-07-06,,1980-04-12,pt,M,GUE/NGL,Partido Comunista Português,joao.pimentalopes@europarl.europa.eu,,9,2016-01-31
 103246,Auke,ZIJLSTRA,false,2011-09-13,,2019-07-01,1964-11-01,nl,M,ENF,Partij voor de Vrijheid,auke.zijlstra@europarl.europa.eu,,8,2015-09-01
 131749,Estefanía,TORRES MARTÍNEZ,false,2015-03-25,,2019-07-01,1982-04-27,es,F,GUE/NGL,PODEMOS,estefania.torresmartinez@europarl.europa.eu,,8,2015-03-25
 26851,Nikolaos,CHOUNTIS,false,2004-04-15,,2019-07-01,1953-09-17,gr,M,GUE/NGL,Popular Unity,nikolaos.chountis@europarl.europa.eu,nikoschountis,8,2015-07-20
@@ -4157,4 +4157,4 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 212855,Alin,MITUȚA,true,2020-12-28,2020-12-28,,,ro,M,RE,"Partidul Libertate, Unitate și Solidaritate",alin.mituta@europarl.europa.eu,alinmituta,9,
 218349,Michiel,HOOGEVEEN,true,2021-04-15,2021-04-15,,,nl,M,ECR,JA21,michiel.hoogeveen@europarl.europa.eu,mphoogeveen,9,
 218347,Thijs,REUTEN,true,2021-04-15,2021-04-15,,,nl,M,S&D,Partij van de Arbeid,thijs.reuten@europarl.europa.eu,thijsreuten,9,
-221463,Ladislav,ILČIĆ,true,2021-07-01,2021-07-01,,,hr,,ECR,Pokret za uspješnu Hrvatsku,,,9,
+221463,Ladislav,ILČIĆ,true,2021-07-01,2021-07-01,,,hr,M,ECR,Pokret za uspješnu Hrvatsku,,,9,
