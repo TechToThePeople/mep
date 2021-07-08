@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+João PIMENTA LOPES,PT,136236,9,2021-07-06,,incoming,The Left,Partido Comunista Português
+Ladislav ILČIĆ,HR,221463,9,2021-07-01,,incoming,ECR,Hrast – Pokret za uspješnu Hrvatsku
 Michiel HOOGEVEEN,NL,218349,9,2021-04-15,,incoming,ECR,JA21
 Thijs REUTEN,NL,218347,9,2021-04-15,,incoming,S&D,Partij van de Arbeid
 Emma WIESNER,SE,214839,9,2021-02-04,,incoming,Renew,Centerpartiet
@@ -48,6 +50,8 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+João FERREIRA,PT,96706,9,2019-07-02,2021-07-05,outgoing,The Left,Partido Comunista Português
+Ruža TOMAŠIĆ,HR,119431,9,2019-07-02,2021-06-30,outgoing,ECR,Hrvatska konzervativna stranka
 Derk Jan EPPINK,NL,97133,9,2019-07-02,2021-03-30,outgoing,ECR,JA21
 Kati PIRI,NL,37229,9,2019-07-02,2021-03-30,outgoing,S&D,Partij van de Arbeid
 Kris PEETERS,BE,197420,9,2019-07-02,2021-01-11,outgoing,EPP,Christen-Democratisch & Vlaams

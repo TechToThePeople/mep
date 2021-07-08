@@ -11,7 +11,6 @@ function main (callback) {
     }
     var s=fs.readFileSync('data/meps_str.js', "utf8"); //meps_str has a weird format, the array we want (meps_str) starts at 58 chars
     s=s.substring(58, s.length - 2);
-    console.log(s);
     try {
       var ms= JSON5.parse(s);
       ms.forEach(function(m){
