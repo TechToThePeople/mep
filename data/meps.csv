@@ -130,7 +130,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 1913,de,Evelyne,GEBHARDT,evelyne.gebhardt@europarl.europa.eu,1954-01-19,F,S&D,Sozialdemokratische Partei Deutschlands,0032 2 28 45466,12G202,IMCO,JURI|AIDA,D-CN,egebhardtMdEP,tttp_1913,1994-07-19,,,,S,,,,,,,,,,,,,M,,,,S,,,,,,
 37312,dk,Christel,SCHALDEMOSE,christel.schaldemose@europarl.europa.eu,1967-08-04,F,S&D,Socialdemokratiet,0032 2 28 45491,11G342,IMCO|AIDA,ENVI,D-JP,SchaldemoseMEP,tttp_37312,2006-10-15,,,,M,,,,,,,,,,S,,,M,,,,,,,,,,
 40599,fi,a,PIETIKÄINEN,sirpa.pietikainen@europarl.europa.eu,1959-04-19,F,EPP,Kansallinen Kokoomus,0032 2 28 45264,09E153,ECON|FEMM|ANIT,ENVI|FISC,DPAL|DMED,spietikainen,tttp_40599,2008-04-04,,,,,M,,,,,,,M,,S,M,S,,,,,,,,,,,
-2341,de,Michael,GAHLER,michael.gahler@europarl.europa.eu,1960-04-22,M,EPP,Christlich Demokratische Union Deutschlands,0032 2 28 45977,15E264,AFET,TRAN|SEDE,DACP|D-ZA,gahler_michael,tttp_2341,1988-05-07,,M,,,,,,,,,,,,,,,,,,,,,,,,S,S
+2341,de,Michael,GAHLER,michael.gahler@europarl.europa.eu,1960-04-22,M,EPP,Christlich Demokratische Union Deutschlands,0032 2 28 45977,15E264,AFET,TRAN|SEDE,DACP|D-ZA,gahler_michael,tttp_2341,1998-05-07,,M,,,,,,,,,,,,,,,,,,,,,,,,S,S
 124739,pt,Carlos,ZORRINHO,carlos.zorrinho@europarl.europa.eu,1959-05-28,M,S&D,Partido Socialista,0032 2 28 45260,13G146,ITRE,DEVE,DACP,czorrinho,tttp_124739,2014-07-01,,,,,,,,,,S,,,,,,,,,,M,,,,,,,
 124734,pt,Cláudia,MONTEIRO DE AGUIAR,claudia.monteirodeaguiar@europarl.europa.eu,1982-04-08,F,EPP,Partido Social Democrata,0032 2 28 45458,08E102,TRAN,PECH,D-ZA,cmonteiroaguiar,tttp_124734,2014-07-01,,,,,,,,,,,,,,,,,,,,,,,S,,,,M
 28619,lv,Tatjana,ŽDANOKA,tatjana.zdanoka@europarl.europa.eu,1950-05-08,F,Greens/EFA,Latvijas Krievu savienība,0032 2 28 45322,09G153,EMPL|PETI,LIBE|PECH,D-MD,Tatjana_Zdanoka,tttp_28619,2004-07-20,,,,,,,,,,,,,M,,,,,,,,,S,S,V,,,
@@ -550,7 +550,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 197754,pt,Sandra,PEREIRA,sandra.pereira@europarl.europa.eu,1977-02-18,F,GUE/NGL,Partido Comunista Português,0032 2 28 45620,10G258,FEMM|EMPL,ITRE|AIDA,DLAT,,tttp_197754,2019-07-02,,,,S,,,,,,,,,V,,M,,,,,S,,,,,,,
 197738,pt,Lídia,PEREIRA,lidia.pereira@europarl.europa.eu,1991-07-26,F,EPP,Partido Social Democrata,0032 2 28 45794,08E154,ECON|FISC,ENVI|BECA,D-CN,lidiafopereira,tttp_197738,2019-07-02,,,,,,S,,,,,,M,,S,,M,,,,,,,,,,,
 197573,dk,Kira Marie,PETER-HANSEN,kira.peter-hansen@europarl.europa.eu,1998-02-23,F,Greens/EFA,Socialistisk Folkeparti,0032 2 28 45684,09G158,EMPL|ECON|FISC,FEMM,D-IN,Kira_MPH,tttp_197573,2019-07-02,,,,,,,,,,,,M,M,,S,V,,,,,,,,,,,
-197619,it,Sabrina,PIGNEDOLI,sabrina.pignedoli@europarl.europa.eu,1983-10-24,F,NA,Movimento 5 Stelle,0032 2 28 45810,02M033,CONT,LIBE|AIDA,DCAM|DLAT,SabriPignedoli,tttp_197619,2019-07-02,,,,S,,,,M,,,,,,,,,,,,,,S,,,,,
+197619,it,Sabrina,PIGNEDOLI,sabrina.pignedoli@europarl.europa.eu,1983-10-24,F,NA,Movimento 5 Stelle,0032 2 28 45810,02M033,CONT,LIBE|AIDA|JURI,DCAM|DLAT,SabriPignedoli,tttp_197619,2019-07-02,,,,S,,,,M,,,,,,,,,,,,,S,S,,,,,
 197828,es,Manu,PINEDA,manu.pinedamarin@europarl.europa.eu,1965-09-02,M,GUE/NGL,Izquierda Unida,0032 2 28 45815,07H246,AFET|INGE,DROI|SEDE,DMAS|DLAT|DPAL,Manu_Abu_Carlos,tttp_197828,2019-07-02,,M,,,,,,,,,S,,,,,,,M,,,,,,,,S,
 197629,fr,Maxette,PIRBAKAS,maxette.pirbakas@europarl.europa.eu,1975-04-14,F,ID,Rassemblement national,0032 2 28 45429,04F254,AGRI|INTA,PECH|REGI,DCAR|DACP,MaxettePirbakas,tttp_197629,2019-07-02,,,M,,,,,,,,,,,,,,,,M,,,,S,,S,,
 197590,it,Giuliano,PISAPIA,giuliano.pisapia@europarl.europa.eu,1949-05-20,M,S&D,Independent,0032 2 28 45674,15G201,AFET|AFCO,DROI|LIBE,DPAL,giulianopisapia,tttp_197590,2019-07-02,V,M,,,,,,,,,S,,,,,,,,,,,S,,,,,
@@ -562,7 +562,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 197764,sk,Miroslav,RADAČOVSKÝ,miroslav.radacovsky@europarl.europa.eu,1953-09-24,M,NA,Slovak PATRIOT,0032 2 28 45419,07H154,IMCO|AIDA,AFET,D-RU|D-MD|DEPA,radacovskyMEP,tttp_197764,2019-07-02,,S,,M,,,,,,,,,,,,,M,,,,,,,,,,
 197868,nl,Samira,RAFAELA,samira.rafaela@europarl.europa.eu,1989-02-11,F,Renew,Democraten 66,0032 2 28 45907,06M045,INTA|FEMM,DROI|EMPL,D-CL|DLAT,samiraraf,tttp_197868,2019-07-02,,,,,,,,,,,S,,S,,M,,,,M,,,,,,,,
 197544,pl,Elżbieta,RAFALSKA,elzbieta.rafalska@europarl.europa.eu,1955-06-22,F,ECR,Prawo i Sprawiedliwość,0032 2 28 45687,06U027,EMPL,PECH|CONT,DMER|D-BR|DLAT,E_Rafalska,tttp_197544,2019-07-02,,,,,,,,S,,,,,M,,,,,,,,,,S,,,,
-197790,it,Luisa,REGIMENTI,luisa.regimenti@europarl.europa.eu,1958-06-05,F,EPP,Lega,0032 2 28 45408,03F266,ENVI,JURI,,luisaregimenti,tttp_197790,2019-07-02,,,,,,,,,,,,,,M,,,,,,,S,,,,,,
+197790,it,Luisa,REGIMENTI,luisa.regimenti@europarl.europa.eu,1958-06-05,F,EPP,Forza Italia,0032 2 28 45408,03F266,ENVI,JURI,,luisaregimenti,tttp_197790,2019-07-02,,,,,,,,,,,,,,M,,,,,,,S,,,,,,
 197681,es,,REGO,sira.rego@europarl.europa.eu,1973-11-20,F,GUE/NGL,Izquierda Unida,0032 2 28 45153,07H258,ITRE|PETI,LIBE,DCAM,sirarego,tttp_197681,2019-07-02,,,,,,,,,,,,,,,,,,,,M,,S,,M,,,
 197488,de,Guido,REIL,guido.reil@europarl.europa.eu,1970-01-19,M,ID,Alternative für Deutschland,0032 2 28 45845,05F161,EMPL,ITRE,DAND|DACP,GuidoReil,tttp_197488,2019-07-02,,,,,,,,,,,,,M,,,,,,,S,,,,,,,
 197413,hr,Karlo,RESSLER,karlo.ressler@europarl.europa.eu,1989-12-26,M,EPP,Hrvatska demokratska zajednica,0032 2 28 45601,12E201,BUDG|AIDA,LIBE,D-CN,KarloRessler,tttp_197413,2019-07-02,,,,V,,,M,,,,,,,,,,,,,,,S,,,,,
@@ -703,4 +703,4 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 212855,ro,Alin,MITUȚA,alin.mituta@europarl.europa.eu,,M,Renew,"Partidul Libertate, Unitate și Solidaritate",0032 2 28 45802,05M011,AGRI|CONT,AFCO|EMPL|BECA|REGI,D-MD,AlinMituta,tttp_212855,2020-12-28,S,,M,,,S,,M,,,,,S,,,,,,,,,,,,S,,
 218349,nl,Michiel,HOOGEVEEN,michiel.hoogeveen@europarl.europa.eu,,M,ECR,JA21,0032 2 28 45269,01U044,ECON,INTA|FEMM,D-US,mphoogeveen,tttp_218349,2021-04-15,,,,,,,,,,,,V,,,S,,,,S,,,,,,,,
 218347,nl,Thijs,REUTEN,thijs.reuten@europarl.europa.eu,,M,S&D,Partij van de Arbeid,0032 2 28 45138,15G153,AFET,LIBE,D-MZ,thijsreuten,tttp_218347,2021-04-15,,M,,,,,,,,,,,,,,,,,,,,S,,,,,
-221463,hr,Ladislav,ILČIĆ,ladislav.ilčić@ep.europa.eu,,M,ECR,Hrast – Pokret za uspješnu Hrvatsku,0032 2 28 45636,02U041,PECH,AGRI,,ladislav_ilcic,tttp_221463,2021-07-01,,,S,,,,,,,,,,,,,,,,,,,,M,,,,
+221463,hr,Ladislav,ILČIĆ,ladislav.ilcic@europarl.europa.eu,,M,ECR,Hrast – Pokret za uspješnu Hrvatsku,0032 2 28 45636,02U041,PECH,AGRI,,ladislav_ilcic,tttp_221463,2021-07-01,,,S,,,,,,,,,,,,,,,,,,,,M,,,,
