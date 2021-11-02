@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Karolin BRAUNSBERGER-REINHOLD,DE,226260,9,2021-10-07,,incoming,EPP,Christlich Demokratische Union Deutschlands
 João PIMENTA LOPES,PT,136236,9,2021-07-06,,incoming,The Left,Partido Comunista Português
 Ladislav ILČIĆ,HR,221463,9,2021-07-01,,incoming,ECR,Hrast – Pokret za uspješnu Hrvatsku
 Michiel HOOGEVEEN,NL,218349,9,2021-04-15,,incoming,ECR,JA21
@@ -32,9 +33,9 @@ Nora MEBAREK,FR,204418,9,2020-02-01,,incoming,S&D,Parti socialiste
 Victor NEGRESCU,RO,88882,9,2020-02-01,,incoming,S&D,Partidul Social Democrat
 Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
 Clara PONSATÍ OBIOLS,ES,204443,9,2020-02-01,,incoming,NI,Junts per Catalunya - Lliures per Europa
-Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,Independent
+Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,Meer Directe Democratie
 Marcos ROS SEMPERE,ES,204413,9,2020-02-01,,incoming,S&D,Partido Socialista Obrero Español
-Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,ECR,Lega
+Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,ECR,Fratelli d'Italia
 Linea SØGAARD-LIDELL,DK,204331,9,2020-02-01,,incoming,Renew,"Venstre, Danmarks Liberale Parti"
 Dominik TARCZYŃSKI,PL,204346,9,2020-02-01,,incoming,ECR,Prawo i Sprawiedliwość
 Riho TERRAS,EE,204449,9,2020-02-01,,incoming,EPP,Isamaa
@@ -50,6 +51,7 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Sven SCHULZE,DE,124809,9,2019-07-02,2021-09-28,outgoing,EPP,Christlich Demokratische Union Deutschlands
 João FERREIRA,PT,96706,9,2019-07-02,2021-07-05,outgoing,The Left,Partido Comunista Português
 Ruža TOMAŠIĆ,HR,119431,9,2019-07-02,2021-06-30,outgoing,ECR,Hrvatska konzervativna stranka
 Derk Jan EPPINK,NL,97133,9,2019-07-02,2021-03-30,outgoing,ECR,JA21
