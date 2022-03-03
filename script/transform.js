@@ -130,9 +130,9 @@ var abbr = {
 
 
 function transform(d) {
-  
-d.epid == 218349 && 
-    console.error (d); //&& process.exit(1);
+  if(d.UserID == 229839 ) {
+    console.error (d) && process.exit(1);
+  }
 
   function fixGender (id) {
     var g=nogender.find(o => o.epid === id);
@@ -339,6 +339,10 @@ var simp = through2({
   process.stdout.write(".");
   try {
 //    console.log(chunk.value.Name.full);
+    console.log(chunk.value.Name.full,chunk.value.UserID);
+  if (chunk.value.UserID ===229839) {
+    console.log(chunk.value);
+  }
   var d = transform(chunk.value);
   } catch (e) {
     console.error("error simp",e);
