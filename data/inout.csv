@@ -1,4 +1,10 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+René REPASI,DE,229839,9,2022-02-02,,incoming,S&D,Sozialdemokratische Partei Deutschlands
+Catharina RINZEMA,NL,229519,9,2022-01-18,,incoming,Renew,Volkspartij voor Vrijheid en Democratie
+Camilla LAURETI,IT,230085,9,2022-01-12,,incoming,S&D,Partito Democratico
+Karsten LUCKE,DE,228286,9,2022-01-11,,incoming,S&D,Sozialdemokratische Partei Deutschlands
+Malte GALLÉE,DE,229352,9,2021-12-22,,incoming,Greens/EFA,Bündnis 90/Die Grünen
+Ilan DE BASSO,SE,228604,9,2021-12-13,,incoming,S&D,Arbetarepartiet- Socialdemokraterna
 Karolin BRAUNSBERGER-REINHOLD,DE,226260,9,2021-10-07,,incoming,EPP,Christlich Demokratische Union Deutschlands
 João PIMENTA LOPES,PT,136236,9,2021-07-06,,incoming,The Left,Partido Comunista Português
 Ladislav ILČIĆ,HR,221463,9,2021-07-01,,incoming,ECR,Hrast – Pokret za uspješnu Hrvatsku
@@ -33,7 +39,7 @@ Nora MEBAREK,FR,204418,9,2020-02-01,,incoming,S&D,Parti socialiste
 Victor NEGRESCU,RO,88882,9,2020-02-01,,incoming,S&D,Partidul Social Democrat
 Margarita DE LA PISA CARRIÓN,ES,204414,9,2020-02-01,,incoming,ECR,VOX
 Clara PONSATÍ OBIOLS,ES,204443,9,2020-02-01,,incoming,NI,Junts per Catalunya - Lliures per Europa
-Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,NI,Meer Directe Democratie
+Dorien ROOKMAKER,NL,204733,9,2020-02-01,,incoming,ECR,Meer Directe Democratie
 Marcos ROS SEMPERE,ES,204413,9,2020-02-01,,incoming,S&D,Partido Socialista Obrero Español
 Vincenzo SOFO,IT,204334,9,2020-02-01,,incoming,ECR,Fratelli d'Italia
 Linea SØGAARD-LIDELL,DK,204331,9,2020-02-01,,incoming,Renew,"Venstre, Danmarks Liberale Parti"
@@ -51,6 +57,12 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Evelyne GEBHARDT,DE,1913,9,2019-07-02,2022-02-01,outgoing,S&D,Sozialdemokratische Partei Deutschlands
+David Maria SASSOLI,IT,96864,9,2019-07-02,2022-01-11,outgoing,S&D,Partito Democratico
+Norbert NEUSER,DE,96844,9,2019-07-02,2022-01-10,outgoing,S&D,Sozialdemokratische Partei Deutschlands
+Liesje SCHREINEMACHER,NL,197869,9,2019-07-02,2022-01-09,outgoing,Renew,Volkspartij voor Vrijheid en Democratie
+Sven GIEGOLD,DE,96730,9,2019-07-02,2021-12-15,outgoing,Greens/EFA,Bündnis 90/Die Grünen
+Johan DANIELSSON,SE,38542,9,2019-07-02,2021-11-29,outgoing,S&D,Arbetarepartiet- Socialdemokraterna
 Sven SCHULZE,DE,124809,9,2019-07-02,2021-09-28,outgoing,EPP,Christlich Demokratische Union Deutschlands
 João FERREIRA,PT,96706,9,2019-07-02,2021-07-05,outgoing,The Left,Partido Comunista Português
 Ruža TOMAŠIĆ,HR,119431,9,2019-07-02,2021-06-30,outgoing,ECR,Hrvatska konzervativna stranka
