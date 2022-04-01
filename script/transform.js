@@ -244,7 +244,7 @@ function transform(d) {
   }
   d.mail= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail;
   if (!d.mail && !d.first_name.includes(" ") && !d.last_name.includes(" "))
-    d.mail = d.first_name.toLowerCase() + "." + d.last_name.toLowerCase() + "@ep.europa.eu";
+    d.mail = d.first_name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + d.last_name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@ep.europa.eu";
 
   delete d.Mail;
   //delete d.Delegations;
@@ -339,10 +339,6 @@ var simp = through2({
   process.stdout.write(".");
   try {
 //    console.log(chunk.value.Name.full);
-    console.log(chunk.value.Name.full,chunk.value.UserID);
-  if (chunk.value.UserID ===229839) {
-    console.log(chunk.value);
-  }
   var d = transform(chunk.value);
   } catch (e) {
     console.error("error simp",e);
