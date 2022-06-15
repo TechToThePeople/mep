@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Max ORVILLE,FR,234344,9,2022-05-20,,incoming,Renew,Mouvement Démocrate
+Matjaž NEMEC,SI,233862,9,2022-05-18,,incoming,S&D,Socialni demokrati
 René REPASI,DE,229839,9,2022-02-02,,incoming,S&D,Sozialdemokratische Partei Deutschlands
 Catharina RINZEMA,NL,229519,9,2022-01-18,,incoming,Renew,Volkspartij voor Vrijheid en Democratie
 Camilla LAURETI,IT,230085,9,2022-01-12,,incoming,S&D,Partito Democratico
@@ -13,7 +15,7 @@ Thijs REUTEN,NL,218347,9,2021-04-15,,incoming,S&D,Partij van de Arbeid
 Emma WIESNER,SE,214839,9,2021-02-04,,incoming,Renew,Centerpartiet
 Tom VANDENKENDELAERE,BE,129164,9,2021-01-25,,incoming,EPP,Christen-Democratisch & Vlaams
 Ernő SCHALLER-BAROSS,HU,213330,9,2021-01-10,,incoming,NI,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
-Alin MITUȚA,RO,212855,9,2020-12-28,,incoming,Renew,"Partidul Libertate, Unitate și Solidaritate"
+Alin MITUȚA,RO,212855,9,2020-12-28,,incoming,Renew,Reînnoim Proiectul European al României
 Colm MARKEY,IE,209896,9,2020-11-20,,incoming,EPP,Fine Gael Party
 Vlad GHEORGHE,RO,209140,9,2020-11-10,,incoming,Renew,Uniunea Salvați România
 Cyrus ENGERER,MT,209091,9,2020-11-05,,incoming,S&D,Partit Laburista
@@ -57,6 +59,8 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Chrysoula ZACHAROPOULOU,FR,197499,9,2019-07-02,2022-05-19,outgoing,Renew,La République en marche
+Tanja FAJON,SI,96911,9,2019-07-02,2022-05-12,outgoing,S&D,Socialni demokrati
 Evelyne GEBHARDT,DE,1913,9,2019-07-02,2022-02-01,outgoing,S&D,Sozialdemokratische Partei Deutschlands
 David Maria SASSOLI,IT,96864,9,2019-07-02,2022-01-11,outgoing,S&D,Partito Democratico
 Norbert NEUSER,DE,96844,9,2019-07-02,2022-01-10,outgoing,S&D,Sozialdemokratische Partei Deutschlands
