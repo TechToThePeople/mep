@@ -47,15 +47,15 @@ var paths = {
 
 gulp.task('download', function() {
   var files = [
-    {file:"eugroup.json", url:"https://www.epnewshub.eu/newshub/rest/contributors/find?cType=group"},
-    {file: "meps_str.js",url:"http://www.europarl.europa.eu/hemicycle/js/meps_str.js"}, //used by mepid task to generate mepid.json
+    {file:"eugroup.json", url:"https://www.epnewshub.eu/v1/contributor/?type=grouppress&pageSize=50&search-value=&search-type=contributor"},
+    {file: "meps_str.js",url:"https://www.europarl.europa.eu/hemicycle/js/meps_str.js"}, //used by mepid task to generate mepid.json
 //    {file: "mepid.json",url:"http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term="},
     { file:"extra_csv.csv", url:"https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv"},
     { file:"incoming.xml",url:"https://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml"},
     {file:"outgoing.xml",url:"https://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml"},
 
     {file:"ep_meps_current.json.lz",url:"https://parltrack.org/dumps/ep_meps.json.lz"},
-    {file:"epnewshub.json",url:"https://www.epnewshub.eu/newshub/rest/contributors/find?limit=900&cType=mep"}
+    {file:"epnewshub.json",url:"https://www.epnewshub.eu/v1/contributor/?type=mep&pageSize=1000&search-value=&search-type=contributor"}
   ];
   //run script to convert meps_str
   return download(files)
