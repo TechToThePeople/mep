@@ -49,7 +49,7 @@ const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
 
 var mepid= require('../data/mepid.json'); // direct from EP site, for QA
 var inout= require('../data/inout.json'); // direct from EP site, for QA
-var epnews= require('../data/epnewshub.json'); // direct from EP site, for QA
+var epnews= require('../data/epnewshub.json').data; // direct from EP site, for QA
 var csvparse=require('csv-parse/lib/sync.js');
 var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true}); // fixing manually the missing genders
 var tmp = csvparse (fs.readFileSync('data/extra_csv.csv'),{columns:true,auto_parse:true});
@@ -65,12 +65,13 @@ function indexepnews (epnews){
   var meps={};
   epnews.items.map(function(d){
     var sm={}
-    if (d.socialMediaSources.twitter){
-      sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*\/(.*)\//g,"");
-    }
-      // todo: regex ".*twitter.com/"
-    if (d.socialMediaSources.facebook)
-      sm.facebook=d.socialMediaSources.facebook.feedUrl;
+    d.socialNetworks && d.socialNetworks.forEach( sn =>{
+      if (sn.type === "twitter")
+      //sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*\/(.*)\//g,"");
+        sm.twitter=sn.username;
+      if (sn.type === "facebook")
+        sm.facebook=sn.username;
+    });
     if (sm.twitter || sm.facebook)
       meps[d.codictId]=sm;
   });
@@ -367,7 +368,6 @@ function write(options = {
   csv: "data/meps.csv",
   json: 'data/meps.json'
 }, callback) {
-  console.log(options);
   fs.createReadStream(options.from).pipe(stream.input)
   var writer = fs.createWriteStream(options.json);
   const csvwriter = require('csv-write-stream')({headers: head});
