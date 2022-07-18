@@ -367,6 +367,7 @@ function write(options = {
   csv: "data/meps.csv",
   json: 'data/meps.json'
 }, callback) {
+  console.log(options);
   fs.createReadStream(options.from).pipe(stream.input)
   var writer = fs.createWriteStream(options.json);
   const csvwriter = require('csv-write-stream')({headers: head});
