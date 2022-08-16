@@ -1,3 +1,11 @@
+## How to update
+$gulp -> fetch various datasource (mostly parltrack, may them be blessed)
+
+it's broken here, you need to manually:
+node script/transform.js 
+gulp html
+
+
 List of current MEPs filterable by country, committee, delegation, party...
 
 It's a mix of various sources, the European Parliament Website, parltrack, euhubnews and some others.
