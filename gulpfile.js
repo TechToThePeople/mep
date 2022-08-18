@@ -1,4 +1,5 @@
 
+const fs = require("fs");
 const path = require("path");
 
 const gulp = require("gulp");
@@ -10,7 +11,7 @@ const gulp_uglify = require('gulp-uglify');
 const gulp_minify = require('gulp-clean-css');
 const gulp_rename = require("gulp-rename");
 
-const exec = require('child_process').exec;
+const lunzip = require("lunzip-stream");
 
 // config
 
@@ -55,13 +56,7 @@ const download = exports.download = function download(done){
 };
 
 const decompress = exports.decompress = function decompress(done) {
-	exec("lunzip data/ep_meps_current.json.lz -f", function(err, stdout, stderr) {
-		if (err) {
-			console.log("Error on decompress: " + stderr);
-		} else {
-			done();
-		}
-	});
+	return fs.createReadStream('data/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/ep_meps_current.json").on("end", done));
 };
 
 const mepid = exports.mepid = function mepid(done) {
