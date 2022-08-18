@@ -55,8 +55,13 @@ const download = exports.download = function download(done){
 };
 
 const decompress = exports.decompress = function decompress(done) {
-	exec("lunzip data/ep_meps_current.json.lz -f");
-	done();
+	exec("lunzip data/ep_meps_current.json.lz -f", function(err, stdout, stderr) {
+		if (err) {
+			console.log("Error on decompress: " + stderr);
+		} else {
+			done();
+		}
+	});
 };
 
 const mepid = exports.mepid = function mepid(done) {
