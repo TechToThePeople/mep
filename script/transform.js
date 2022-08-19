@@ -1,6 +1,8 @@
 'use strict';
 
-const main = module.exports = function main(dest, fn){
+const xsv = require("xsv");
+
+const main = module.exports = async function main(dest, fn){
 	
 	const file = require("fs");
 
@@ -53,16 +55,39 @@ const main = module.exports = function main(dest, fn){
 	var mepid= require('../data/mepid.json'); // direct from EP site, for QA
 	var inout= require('../data/inout.json'); // direct from EP site, for QA
 	var epnews= require('../data/epnewshub.json').data; // direct from EP site, for QA
-	var csvparse=require('csv-parse/lib/sync.js');
-	var nogender= csvparse(fs.readFileSync('data/meps.nogender.csv'),{columns:true,auto_parse:true}); // fixing manually the missing genders
-	var tmp = csvparse (fs.readFileSync('data/extra_csv.csv'),{columns:true,auto_parse:true});
+
+	const nogender = await new Promise((resolve, reject) => {
+		let result = [];
+		fs.createReadStream('data/meps.nogender.csv').pipe(xsv({ sep: "," }).on("data", function(r){
+			result.push({
+				...r,
+				epid: parseInt(r.epid,10),
+			});
+		}).on("end", function(){
+			resolve(result);
+		}));
+	});
+	
+	let tmp = await new Promise((resolve, reject) => {
+		let result = [];
+		fs.createReadStream('data/extra_csv.csv').pipe(xsv({ sep: "," }).on("data", function(r){
+			result.push({
+				...r,
+				"EP id": parseInt(r["EP id"],10),
+			});
+		}).on("end", function(){
+			resolve(result);
+		}));
+	});
+	
+
 	//'EP id' - SCREEN_NAME
 	var extraTwitter = {};
 	tmp.map( d => {
 		if (d.SCREEN_NAME[0] !== '@') return;
 		extraTwitter[parseInt(d['EP id'],10)] = d.SCREEN_NAME.substr(1);
 	});
-	var tmp = null;
+	tmp = null;
 
 	function indexepnews (epnews){
 		var meps={};
