@@ -1,26 +1,24 @@
-const csvparse=require('csv-parse/lib/sync.js');
-const fs = require('fs');
+"use strict";
 
-var list = process.argv.slice(2);
+const fs = require("fs");
+const path = require("path");
+const xsv = require("xsv");
 
-const raw = csvparse(fs.readFileSync(list[0]),{columns:true,auto_parse:true}); 
+if (!process.argv[2]) console.error("csv2json.js <meps.csv>"), process.exit(1);
+
 let data = [];
-
-const pick = (obj, keys) => Object.fromEntries(
-  keys.map(key => [key, obj[key]])
-);
-
-const props ="epid,country,first_name,last_name,twitter".split(",");
-//raw.map( d => data.push(pick(d, props)));
-
-const epick = d => ({
-  epid:d.epid,
-  first_name:d.first_name,
-  eugroup:d.eugroup,
-  last_name:d.last_name,
-  Twitter:d.twitter,
-  constituency:{party:d.party,country:d.country}
-  });
-
-raw.map( d => data.push(epick(d)));
-console.log(JSON.stringify(data));
+fs.createReadStream(path.resolve(process.cwd(), process.argv[2])).pipe(xsv({ sep: "," }).on("data", function(r){
+	data.push({
+		epid: r.epid,
+		first_name: r.first_name,
+		eugroup: r.eugroup,
+		last_name: r.last_name,
+		Twitter: r.twitter,
+		constituency:{
+			party: r.party,
+			country: r.country
+		},
+	});
+}).on("end", function(){
+	console.log(JSON.stringify(data,null,"\t"));
+}))
