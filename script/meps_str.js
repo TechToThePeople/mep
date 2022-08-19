@@ -1,51 +1,50 @@
-const fs = require('fs');
-const JSON5 = require('json5');
+const vm = require("vm");
+const fs = require("fs");
+const path = require("path");
 
-function main (callback) {
+const src = path.resolve(__dirname,"../data/meps_str.js");
+const dest = path.resolve(__dirname,"../data/mepid.json");
 
-  var extract_ids=function (){
-    var meps=[];
-    var k2k=Object.entries({firstName:"prenom",lastName:"nom",group:"group_code",country:"country_code",id:"id_mep","seat":"id_siege"});
-    var printError = function(error, explicit) {
-      console.log(`[${explicit ? 'EXPLICIT' : 'INEXPLICIT'}] ${error.name}: ${error.message}`);
-    }
-    var s=fs.readFileSync('data/meps_str.js', "utf8"); //meps_str has a weird format, the array we want (meps_str) starts at 58 chars
-    s=s.substring(58, s.length - 2);
-    try {
-      var ms= JSON5.parse(s);
-      ms.forEach(function(m){
-        var r={};
-        k2k.forEach(function(d){
-          r[d[0]]=m[d[1]];
-        });
-        if (r.country == 'x') return; //council or commission
-        meps.push(r);
-      });
-      //{value: 'CHARLES GOERENSCharles Goerens',nom: 'Goerens',prenom: 'Charles',group_code: 'ALDE',country_code: 'lu',id_mep: 840,id_siege: 325,id_group: 4283
+const main = module.exports = async function main(fn) {
+	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
 
-      //[{"value":"Asim ADEMOV","url":"ASIM_ADEMOV","id":189525,"firstName":"Asim","lastName":"ADEMOV"},
-    } catch (e) {
-      if (e instanceof SyntaxError) {
-          printError(e, true);
-      } else {
-          printError(e, false);
-      }
-    }
-    return meps;
+	// load source js
+	fs.readFile(src, function(err, source){
+		if (err) return fn(err);
 
-  };
+		// execute js in vm
+		const ctx = {};
+		try {
+			new vm.Script(source).runInNewContext(ctx);
+		} catch (err) {
+			return fn(err);
+		}
 
-  fs.writeFileSync('./data/mepid.json', JSON.stringify(extract_ids()));
-  console.log(typeof callback);
-  if (typeof callback == "function") {
-    callback();
-  }
+		// check data
+		if (!ctx.meps_str) throw new Error("invalid data: meps_str not set");
+		if (!Array.isArray(ctx.meps_str)) throw new Error("invalid data: meps_str is not an Array");
+		if (ctx.meps_str.length === 0) throw new Error("invalid data: meps_str is empty");
 
-}
+		// format
+		const result = ctx.meps_str.map(function(r){
+			return {
+				id: r.id_mep,
+				firstName: r.prenom,
+				lastName: r.nom,
+				group: r.group_code,
+				country: r.country_code,
+				seat: r.id_siege,
+			}
+		});
 
-if (require.main === module) {
-  main();
-} else {
-  module.exports = main;
-}
+		// status
+		console.log("[mepid] imported %d records", result.length);
 
+		// save
+		fs.writeFile(dest, JSON.stringify(result), fn);
+
+	});
+
+};
+
+if (require.main === module) main();
