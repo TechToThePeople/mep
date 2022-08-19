@@ -77,7 +77,7 @@ const main = module.exports = async function main(fn) {
 			
 			// write csv
 			const out = fs.createWriteStream(format(dest,"csv"));
-			out.on("end", fn);
+			out.on("close", fn);
 
 			const csv = wsv("csv");
 			csv.pipe(out);
