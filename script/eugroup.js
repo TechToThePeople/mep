@@ -21,7 +21,7 @@ let groups = JSON.parse(fs.readFileSync('data/eugroup.json'));
 
 async function downloadGroup (groups)  {
   const r={};
-  groups.items.map (async g => {
+  groups.data.items.map (async g => {
     //const d = (({accronym,name,picture,url}) => ({eParty,fullName,pictureLink,profileLink}))(g);
     const d = {
       accronym:g.eParty,
