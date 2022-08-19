@@ -79,12 +79,7 @@ const transform = exports.transform = function transform(done) {
 };
 
 const alias = exports.alias = function alias(done) {
-	require("./script/aliases.js").write({
-		from: "data/ep_meps_current.json",
-		csvaliases: "data/meps-aliases.csv",
-		csvall: "data/meps.all.csv",
-		json: 'data/meps-aliases.json',
-	}, done);
+	require("./script/aliases.js")(done);
 };
 
 const html = exports.html = function html(done) {

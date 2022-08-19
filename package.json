@@ -16,6 +16,7 @@
     "gulp-cli": "^2.3.0",
     "handlebars": "^4.0.11",
     "jquery": "^3.3.1",
+    "JSONStream": "^1.3.5",
     "lozad": "^1.9.0",
     "lunzip-stream": "^0.0.1",
     "moment": "^2.21.0",
@@ -24,7 +25,8 @@
     "quu": "^0.4.3",
     "reductio": "^0.6.3",
     "wsv": "^0.0.5",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "xsv": "^0.0.6"
   },
   "devDependencies": {
     "cached-request": "^1.1.2",
@@ -40,7 +42,6 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-transform": "^3.0.5",
     "gulp-uglify": "^3.0.0",
-    "JSONStream": "^1.3.2",
     "minimist": "^1.2.0",
     "run-sequence": "^2.2.1",
     "stream-chain": "^2.0.3",
