@@ -75,6 +75,8 @@ const abbr = {
 	"Special Committee on Beating Cancer": "BECA",
 	"Subcommittee on Tax Matters": "FISC",
 	"Special Committee on Foreign Interference in all Democratic Processes in the European Union, including Disinformation": "INGE",
+  "Special Committee on foreign interference in all democratic processes in the European Union, including disinformation (INGE 2)": "ING2",
+  "Committee of Inquiry to investigate the use of Pegasus and equivalent surveillance spyware": "PEGA"
 };
 
 // spinner animation
@@ -240,7 +242,7 @@ const main = module.exports = async function main(fn) {
 						return {
 							start: v.start.substr(0,10),
 							role: v.role,
-							name: v.abbr || v.name || abbr[v.Organization] || "??",
+							name: v.abbr || v.name || abbr[v.Organization] || v.Organization,
 						};
 					}),
 					
