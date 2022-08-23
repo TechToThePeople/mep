@@ -3,12 +3,12 @@ const fs = require("fs");
 const path = require("path");
 
 const gulp = require("gulp");
-const gulp_download = require("gulp-download-stream");
 const gulp_replace = require('gulp-replace');
 const gulp_sourcemaps = require('gulp-sourcemaps');
 const gulp_concat = require('gulp-concat');
 const gulp_uglify = require('gulp-uglify');
 const gulp_minify = require('gulp-clean-css');
+const gulp_download = require("gulp-download2");
 const gulp_rename = require("gulp-rename");
 
 const lunzip = require("lunzip-stream");
