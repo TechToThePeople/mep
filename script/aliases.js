@@ -63,7 +63,7 @@ const main = module.exports = async function main(fn) {
 				// if (!r.active) return done();
 
 				// check for Constituencies
-				if (!r.Constituencies) return console.log("no Constituencies", r.UserID), done();
+				if (!r.Constituencies) return console.log("[aliases] no Constituencies for id '%d'", r.UserID), done();
 
 				// prepare constituencies
 				const constituencies = r.Constituencies.filter(function(r){
