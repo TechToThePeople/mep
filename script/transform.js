@@ -1,420 +1,365 @@
-'use strict';
+"use strict";
 
+const fs = require("fs");
+const path = require("path");
+const stream = require("stream");
+
+const jsonstream = require("JSONStream");
+const quu = require("quu");
 const xsv = require("xsv");
+const wsv = require("wsv");
 
-const main = module.exports = async function main(dest, fn){
-	
-	const file = require("fs");
+// file paths
 
-	var finished = function(n) {
-		console.log("Processed " + n)
-	};
-	var total = 0;
-	var groups = {};
+const src = path.resolve(__dirname,"../data/ep_meps_current.json");
+const dest_meps_csv = path.resolve(__dirname,"../data/meps.csv");
+const dest_meps_json = path.resolve(__dirname,"../data/meps.json");
+const dest_abbreviations = path.resolve(__dirname,"../data/abbreviations.json");
 
-	const eugroups = {
-	"ECR":"ECR",
-	"Group of the European United Left - Nordic Green Left":"GUE/NGL",
-	"The Left group in the European Parliament - GUE/NGL":"The Left",
-	"ID":"ID",
-	"NA":"NA",
-	"PPE":"EPP",
-	"RE":"Renew",
-	"S&D":"S&D",
-	"Verts/ALE":"Greens/EFA"
-	}
+// data and overrides
 
-	var abbreviations={};
-	var delegations = require('../data/delegations.json');
-	var committees = Object.keys(require('../data/committees.json')).sort();
-	var head = ['epid', 'country', 'first_name', 'last_name', 'email', 'birthdate', 'gender', 'eugroup', 'party', 'phone', 'office', 'committee', 'substitute', 'delegation', 'twitter', 'tttpid', 'since'].concat(committees);
-	var country2iso= require('../data/country2iso.json');
-	delegations.DLAT = "Euro-Latin American Parliamentary Assembly";
-	delegations.DCAS = "EU-Kazakhstan";
-	delegations.ASEAN = "ASEAN";
-	delegations.DEEA = "Switzerland";
-	delegations.DSEE = "Bosnia";
-	delegations.DANZ = "Australia";
-	delegations["D-MZ"] = "Macedonia";
-	delegations.DSCA = "Armenia";
-	//I know, it's not a delegation, but... ;)
-	delegations.CPCO = "Committee Chairs";
-	delegations.CPDO ="Delegation Chairs";
-	delegations.BURO ="Parliament's Bureau";
-	delegations.BCPR="Conference of Presidents";
-	delegations.PE="European Parliament";
-	delegations.QUE="Quaestors";
+const mepid = require("../data/mepid.json");
+const mepids = mepid.map(function(r){ return r.id }); // ids only for quicker lookup
 
-	const fs = require('fs');
-	const util = require('util');
-	const path = require('path');
-	const through2 = require('through2')
-	const JSONStream = require('JSONStream');
-	const StreamFilteredArray = require("stream-json/utils/StreamFilteredArray");
+const inout = require("../data/inout.json");
 
-	var mepid= require('../data/mepid.json'); // direct from EP site, for QA
-	var inout= require('../data/inout.json'); // direct from EP site, for QA
-	var epnews= require('../data/epnewshub.json').data; // direct from EP site, for QA
+const country2iso= require('../data/country2iso.json');
 
-	const nogender = await new Promise((resolve, reject) => {
-		let result = [];
-		fs.createReadStream('data/meps.nogender.csv').pipe(xsv({ sep: "," }).on("data", function(r){
-			result.push({
-				...r,
-				epid: parseInt(r.epid,10),
-			});
-		}).on("end", function(){
-			resolve(result);
-		}));
-	});
-	
-	let tmp = await new Promise((resolve, reject) => {
-		let result = [];
-		fs.createReadStream('data/extra_csv.csv').pipe(xsv({ sep: "," }).on("data", function(r){
-			result.push({
-				...r,
-				"EP id": parseInt(r["EP id"],10),
-			});
-		}).on("end", function(){
-			resolve(result);
-		}));
-	});
-	
+const committees = Object.entries(require("../data/committees.json")).sort(function(a,b){
+	return a[1].length-b[1].length; // order by length to match agains shorter strings first
+}); 
+const committee_ids = committees.map(function(v){ return v[0]; }).sort();
 
-	//'EP id' - SCREEN_NAME
-	var extraTwitter = {};
-	tmp.map( d => {
-		if (d.SCREEN_NAME[0] !== '@') return;
-		extraTwitter[parseInt(d['EP id'],10)] = d.SCREEN_NAME.substr(1);
-	});
-	tmp = null;
+const delegations = Object.entries({ // prepare as array of key-value-pairs
+	...require("../data/delegations.json"),
+	"DLAT": "Euro-Latin American Parliamentary Assembly",
+	"DCAS": "EU-Kazakhstan",
+	"ASEAN": "ASEAN",
+	"DEEA": "Switzerland",
+	"DSEE": "Bosnia",
+	"DANZ": "Australia",
+	"D-MZ": "Macedonia",
+	"DSCA": "Armenia",
+	//I know, it's not a delegation, but... ,)
+	"CPCO": "Committee Chairs",
+	"CPDO": "Delegation Chairs",
+	"BURO": "Parliament's Bureau",
+	"BCPR": "Conference of Presidents",
+	"PE": "European Parliament",
+	"QUE": "Quaestors",
+}).sort(function(a,b){
+	return (a[1].length-b[1].length); // order by length to match agains shorter strings first
+});
 
-	function indexepnews (epnews){
-		var meps={};
-		epnews.items.map(function(d){
-			var sm={}
-			d.socialNetworks && d.socialNetworks.forEach( sn =>{
-				if (sn.type === "twitter")
-				//sm.twitter=d.socialMediaSources.twitter.feedUrl.replace(/.*\/(.*)\//g,"");
-					sm.twitter=sn.username;
-				if (sn.type === "facebook")
-					sm.facebook=sn.username;
-			});
-			if (sm.twitter || sm.facebook)
-				meps[d.codictId]=sm;
-		});
-		return meps;
-	}
+const eugroups = {
+	"ECR": "ECR",
+	"Group of the European United Left - Nordic Green Left": "GUE/NGL",
+	"The Left group in the European Parliament - GUE/NGL": "The Left",
+	"ID": "ID",
+	"NA": "NA",
+	"PPE": "EPP",
+	"RE": "Renew",
+	"S&D": "S&D",
+	"Verts/ALE": "Greens/EFA",
+	"GUE/NGL": "GUE/NGL",
+};
 
-	function isIn (id) {
-		return ( id in inout);
-	};
-	function isActive (id) {
-		return mepid.find(o => o.id === id) || isIn(id);}
-
-	function f(assembler) {
-		if (assembler.stack.length == 2 && assembler.key === null) {
-			if (assembler.current.hasOwnProperty("UserID")) {
-
-				const q=isActive(assembler.current.UserID);
-				if (!q) {
-					return false;
-				}
-			}
-			if (assembler.current.hasOwnProperty("active")) {
-				return assembler.current.active;
-			}
-		}
-		// return undefined to indicate our uncertainty at this moment 
-	}
-
-	function getDelegation(s) {
-		if (!s) return null;
-		for (const key of Object.keys(delegations)) {
-			if (s.indexOf(delegations[key]) !== -1) {
-				return key;
-			}
-		}
-		return null;
-	}
-
-
-	var stream = StreamFilteredArray.make({
-		objectFilter: f
-	});
-	//var transform = s.Transform;
-
-	var abbr = {
-		"Subcommittee on Security and Defence": "SEDE",
-		"Committee of Inquiry on the Protection of Animals during Transport":"ANIT",
-		"Special Committee on Terrorism": "TERR",
-		"Special committee on financial crimes, tax evasion and tax avoidance": "TAX3",
-		"Special Committee on the Union’s authorisation procedure for pesticides": "PEST",
-		"Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA",
+const abbr = {
+	"Subcommittee on Security and Defence": "SEDE",
+	"Committee of Inquiry on the Protection of Animals during Transport": "ANIT",
+	"Special Committee on Terrorism": "TERR",
+	"Special committee on financial crimes, tax evasion and tax avoidance": "TAX3",
+	"Special Committee on the Union’s authorisation procedure for pesticides": "PEST",
+	"Committee of Inquiry to investigate alleged contraventions and maladministration in the application of Union law in relation to money laundering, tax avoidance and tax evasion": "PANA",
 	"Special Committee on Artificial Intelligence in a Digital Age": "AIDA",
-	"Special Committee on Beating Cancer":"BECA",
-		"Subcommittee on Tax Matters": "FISC",
-	"Special Committee on Foreign Interference in all Democratic Processes in the European Union, including Disinformation" :"INGE" 
-	};
+	"Special Committee on Beating Cancer": "BECA",
+	"Subcommittee on Tax Matters": "FISC",
+	"Special Committee on Foreign Interference in all Democratic Processes in the European Union, including Disinformation": "INGE",
+};
 
+// spinner animation
+const spinner = "▁▂▃▄▅▆▇█▇▆▅▄▃▂".split("");
 
-	function transform(d) {
-		if(d.UserID == 229839 ) {
-			console.error (d) && process.exit(1);
-		}
-
-		function fixGender (id) {
-			var g=nogender.find(o => o.epid === id);
-			return g? g.gender: '';
-		}
-		function activeOnly(attr,custom={}) {
-			let defaults = {
-				single : false,name:attr.toLowerCase(),long:"Organization", abbr:"abbr"
-			};
-			let options = Object.assign({}, defaults, custom);
-			if (typeof options.abbr == "string") {
-				var k=options.abbr;
-				options.abbr = function(d){
-					return d.abbr || d[k] || abbr[d.Organization] || "??";
-				};
-			} else {
-				if (options.abbr) {
-					var f=options.abbr;
-					options.abbr = function (i){return f(i.Organization);};
-				}
-			}
-
-			var r = [];
-			if (!d[attr]) return;
-			d[attr].forEach(function(item) {
-				if (item.start < d.since) d.since = item.start;
-				if (item.end !== '9999-12-31T00:00:00') return;
-				if (options.abbr) {
-					abbreviations[options.abbr(item)]= item[options.long];
-					if (options.abbr(item) =="??")
-						console.log(item);
-					var i = {
-						start:item.start.replace("T00:00:00", ""),
-						role:item.role,
-						name:options.abbr(item)
-					}
-					r.push(i);
-					return;
-				}
-				delete item.end;
-				r.push(item);
-				return;
-			});
-			delete d[attr];
-			if (options.single && r.length >0) {
-				d[options.name] = r[0];
-				return;
-			}
-			d[options.name] = r;
-		}
-
-		function countActivities(a) {
-			//console.log(util.inspect(d.activities, {showHidden: false, depth: null}))
-			var r={}
-			for (var type in a) { //REPORT-SHADOW, REPORT...
-				var i=0;
-				r[type]=0;
-				for (var term in a[type]) { //
-					r[type] +=a[type][term].length;
-				}
-			}
-			return r;
-		}
-
-		if (!d || !typeof d === 'object' || !d.hasOwnProperty("Name")) return {};
-		d.since = "9999-99-99";
-		delete d.changes;
-		delete d.assistants;
-		delete d._id;
-		delete d.meta.url;
-		d.first_name = d.Name.sur;
-		d.last_name = d.Name.family;
-		d.epid = d.UserID;
-		if (!d.Gender) d.Gender=fixGender(d.epid);
-		delete d.UserID;
-		delete d.Name;
-		try {
-			delete d.Addresses.Postal;
-			delete d.Addresses.Strasbourg;
-			d.Addresses.Brussels.Office = d.Addresses.Brussels.Address.Office;
-			delete d.Addresses.Brussels.Address;
-			delete d.Addresses.Brussels.Fax;
-		} catch (error){
-			console.error(error.message +":"+d.first_name +" "+d.last_name +" ["+d.epid);
-			d.Addresses={Brussels:{Phone:"",Office:""}};
-		}
-		delete d.Photo; //"http://www.europarl.europa.eu/mepphoto/{{d.epid }}.jpg
-		d.activities=countActivities(d.activities);
-		//delete d.activities; // stuff might be to be kept there
-		delete d["Declarations of Participation"];
-		delete d["Declaration of good conduct"];
-		delete d["Financial Declarations"];
-
-		if (Array.isArray(d.Twitter)) {
-			d.Twitter = d.Twitter[0]
-		};
-		if (d.Twitter)
-			d.Twitter=d.Twitter.replace(/.*twitter.com\//ig,"");
-		if (epnews[d.epid] && epnews[d.epid].twitter) {
-			d.Twitter=epnews[d.epid].twitter.substr(1); //remove '@'
-		};
-		if (extraTwitter[d.epid] ) {
-			d.Twitter=extraTwitter[d.epid];
-		};
-		if (d.Birth) {
-			d.Birth.date = d.Birth.date.replace("T00:00:00", "");
-		} else {
-			d.Birth = {};//{date:null,place:null};
-		}
-		d.mail= Array.isArray(d.Mail) ? d.Mail[0] : d.Mail;
-		if (!d.mail && !d.first_name.includes(" ") && !d.last_name.includes(" "))
-			d.mail = d.first_name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + d.last_name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@ep.europa.eu";
-
-		delete d.Mail;
-		//delete d.Delegations;
-		activeOnly("Delegations",{abbr:getDelegation});
-		activeOnly("Committees",{abbr:"committee_id"});
-		activeOnly("Constituencies",{"single":true,"name":"constituency",abbr:null});
-		activeOnly("Groups",{"single":true,"name":"eugroup",abbr:"groupid"});
-		d.eugroup= eugroups[d.eugroup.name] ? eugroups[d.eugroup.name]: d.eugroup.name;
-		if (!d.eugroup) { 
-			d.eugroup = "?";
-			console.log("missing group",d.eugroup, d);
-	//		process.exit(1)
-		};
-		activeOnly("Staff",{abbr:getDelegation});
-		d.since = d.since.replace("T00:00:00", "");
-		d.constituency.country = country2iso[d.constituency.country];
-		if (!d.constituency.country) 
-			console.log(d);
-		if (d.constituency && d.constituency.start)
-			d.constituency.start=d.constituency.start.replace("T00:00:00", "");
-		return d;
-	}
-
-	var csvrow = function(d) {
-		//epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,office,committee,substitute,delegation,twitter,tttpid,since
-		var roles = function(d, roles) {
-			if (!Array.isArray(roles)) roles = [roles];
-			var r = [];
-			if (!d) return r;
-			d.forEach(function(d) {
-				roles.forEach(function(role) {
-					if (d.role == role) r.push(d.name);
-				});
-			});
-			return r;
-		};
+const main = module.exports = async function main(fn) {
+	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
 	
-		var getCommitteesRows = (d) => {
-			if (!d) return [];
-			const rows=Array.from(committees, x=> "");
-			d.forEach((c)=>{
-				var i = committees.indexOf(c.name);
-				if (i === -1) {
-	//				console.log("ERROR: can't find committee "+c.name);
-					return;
-				}
-				rows[i] = c.role[0];
+	// queue
+	const q = quu(1,true);
 
+	// counters
+	let processed = 0;
+	let total = 0;
+
+	// output
+	const abbreviations = {}; // for collection
+	const result = [];
+	
+	// preload data
+	const gender = {};
+	const twitter = {};
+
+	// load gender overrides
+	q.push(function(next){
+		fs.createReadStream(path.resolve(__dirname,"../data/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+			gender[r.epid] = r.gender;
+		}).on("end", function(){
+			console.log("[transform] gender loaded");
+			next();
+		}));
+	});
+	
+	// load extra_csv for twitter
+	q.push(function(next){
+		fs.createReadStream(path.resolve(__dirname,"../data/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+			if (r.SCREEN_NAME[0] !== "@") return;
+			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1);
+		}).on("end", function(){
+			console.log("[transform] extra_csv loaded");
+			next();
+		}));
+	});
+	
+	// load epnews for twitter accounts
+	q.push(function(next){
+		require("../data/epnewshub.json").data.items.forEach(function(r){
+			if (!r.codictId) return;
+			if (r.socialNetworks) r.socialNetworks.forEach(function(s){
+				if (s.type !== "twitter") return;
+				if (!s.username) return;
+				if (!/^[a-zA-Z0-9_]+$/.test(s.username)) return;
+				twitter[r.codictId.toString()] = s.username.toLowerCase();
 			});
-			return rows;
-		}
+		});
+		console.log("[transform] epnewshub loaded");
+		next();
+	});
+	
+	// transform
+	q.push(function(next){
+		fs.createReadStream(src).pipe(jsonstream.parse(".*")).pipe(new stream.Transform({
+			objectMode: true,
+			transform: function(r, encoding, done) {
 
-		if (!typeof d === 'object' || !d.hasOwnProperty("constituency")) return {};
-		var e = [
-			d.epid,
-			d.constituency.country,
-			d.first_name,
-			d.last_name,
-			d.mail, //Mail[0],
-			d.Birth.date,
-			d.Gender,
-			d.eugroup,
-			d.constituency.party,
-			d.Addresses.Brussels.Phone,
-			d.Addresses.Brussels.Office,
-			roles(d.committees, ["Chair", "Vice-Chair", "Member"]).join("|"),
-			roles(d.committees, "Substitute").join("|"),
-			roles(d.delegations, ["Chair", "Vice-Chair", "Member"]).join("|"),
-			d.Twitter,
-			"tttp_" + d.epid,
-			d.since
+				// very fancy spinner
+				total++;
+				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
 
-		];
+				// check if UserID is known
+				if (!mepids.includes(r.UserID) && !inout.hasOwnProperty(r.UserID)) return done();
+			
+				// check if user is active
+				if (!r.active) return done();
+			
+				// check object
+				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
+			
+				// check for this specific userid (unclear why, taken from old code)
+				// in old code, process.exit() was never called because it was chained to console.log with && (console.log is never true-ish) therefore it's commented out. FIXME
+				if (r.UserID === 229839) /* return */ console.error("[transform] encountered user with id '229839'"); //, process.exit(1);
+			
+				// assemble data
+				const data = {
+					meta: r.meta,
+					CV: r.CV, // ← this makes the file really big. is it needed? FIXME
+					Addresses: {
+						Brussels: { 
+							Phone: (r.Addresses?.Brussels?.Phone||""),
+							Office: (r.Addresses?.Brussels?.Address?.Office||""),
+						}
+					},
+					active: (r.active||false),
+					Birth: { 
+						date: (r.Birth?.date?.substr(0,10)||""),
+						place: (r.Birth?.place||""),
+					},
+					Gender: (r.Gender || gender[r.UserID] || ""),
+					first_name: r.Name.sur,
+					last_name: r.Name.family,
+					epid: r.UserID,
+					Twitter: twitter[r.UserID.toString()] || ((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase(),
+					mail: (((r.Mail && Array.isArray(r.Mail) && r.Mail.length > 0) ? r.Mail[0] : r.Mail) || "").toLowerCase() || ((!r.Name.sur.includes(" ") && !r.Name.family.includes(" ")) ? (r.Name.sur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + r.Name.family.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@ep.europa.eu") : ""), // use r.Mail[0] or r.Mail or try to costruct from first and last name
 
-		return e.concat(getCommitteesRows(d.committees));
-	}
+					// FIXME: data source does not have this property
+					// probably looks like { "$type": { "$term": [ $activitiy, ... ] } }
+					// and should be { "$type": sum($term.length, ...) }
+					activities: {}, // countActivities(r.activities), 
 
+					since: ([ // find earliest date in all the relations
+						...r.Delegations,
+						...(r.Staff||[]),
+						...r.Committees,
+						...r.Constituencies,
+						...r.Groups,
+					].map(function(v){
+						return v.start.substr(0,10);
+					}).sort(function(a,b){
+						return a.localeCompare(b);
+					}).shift() || "9999-99-99"),
+					
+					// filter and format delegations
+					delegations: r.Delegations.map(function(v){ // find abbrevation first so we can save it in an extra json
+						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
+						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
+						abbreviations[v.Organization] = v.name;
+						return v;
+					}).filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){
+						return {
+							start: v.start.substr(0,10),
+							role: v.role,
+							name: v.abbr || v.name || abbr[v.Organization] || "??",
+						};
+					}),
+					
+					// filter and format staff
+					staff: (r.Staff||[]).map(function(v){ // find abbrevation first so we can save it in an extra json
+						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
+						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
+						abbreviations[v.Organization] = v.name;
+						return v;
+					}).filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){
+						return {
+							start: v.start.substr(0,10),
+							role: v.role,
+							name: v.abbr || v.name || abbr[v.Organization] || "??",
+						};
+					}),
+					
+					// filter and format committees
+					committees: r.Committees.map(function(v){ // find abbrevation first so we can save it in an extra json
+						v.name = (!v.Organization) ? null : Array.from(committees.find(function(committee){ return (v.Organization.indexOf(committee[1]) >= 0); }) || [ null ]).shift();
+						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for committee '%s'", v.Organization);
+						abbreviations[v.Organization] = v.name;
+						return v;
+					}).filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){
+						return {
+							start: v.start.substr(0,10),
+							role: v.role,
+							name: v.abbr || v.name || abbr[v.Organization] || "??",
+						};
+					}),
+					
+					// filter and format constituency
+					constituency: r.Constituencies.filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){
+						if (!country2iso.hasOwnProperty(v.country)) console.log("[transform] missing country: '%s'", v.country);
+						return {
+							start: v.start.substr(0,10),
+							party: v.party,
+							country: country2iso[v.country] || v.country,
+							term: v.term,
+						};
+					}).shift(),
+					
+					// filter and format eugroup
+					eugroup: r.Groups.filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){
+						if (!eugroups.hasOwnProperty(v.groupid)) console.log("[transform] missing group: '%s'", v.groupid);
+						return eugroups[v.groupid] || /*v.groupid*/ "?";
+					}).shift(), // first item
+				};
+				
+				// count
+				processed++;
+						
+				this.emit("data", data);
 
-	var csv = through2({
-		objectMode: true
-	}, function(chunk, enc, callback) {
-		var d = csvrow(chunk);
-		this.push(d);
-		callback();
+				done();
+			},
+		})).on("data", function(r){
+			result.push(r);
+		}).on("end", function(){
+			console.log("[transform] got %d records", result.length);
+			next();
+		});
 	});
 
-	csv.on('end', () => {});
+	// save csv
+	q.push(function(next){
 
-	var simp = through2({
-		objectMode: true
-	}, function(chunk, enc, callback) {
-		process.stdout.write(".");
-		try {
-	//		console.log(chunk.value.Name.full);
-		var d = transform(chunk.value);
-		} catch (e) {
-			console.error("error simp",e);
-		}
-		if (d) {
-			total++;
-			this.push(d) //change keys and flatten the structure
-		}
-		callback();
+		// precalculate default committees out of loop
+		const committees_default = committee_ids.reduce(function(d,c){
+			return d[c]="",d;
+		},{});
+
+		// set up csv writer
+		const dest = fs.createWriteStream(dest_meps_csv);
+		const csv = wsv({ preset: "csv", header: ["epid", "country", "first_name", "last_name", "email", "birthdate", "gender", "eugroup", "party", "phone", "office", "committee", "substitute", "delegation", "twitter", "tttpid", "since"].concat(committee_ids) })
+		csv.pipe(dest);
+		dest.on("close", function(){
+			return console.log("[transform] saved meps.csv"), next();
+		});
+
+		// gilter & flatten objects and write to csv
+		result.filter(function(r){
+			return (typeof r === 'object' && r.hasOwnProperty("constituency"));
+		}).sort(function(a,b){ return a.epid - b.epid; }).map(function(r){
+
+			return {
+				...r,
+				
+				email: r.mail,
+				twitter: r.Twitter,
+				gender: r.Gender,
+				
+				country: r.constituency.country,
+				birthdate: r.Birth.date,
+				party: r.constituency.party,
+				phone: r.Addresses.Brussels.Phone,
+				office: r.Addresses.Brussels.Office,
+				
+				committee: r.committees.filter(function(c){ return [ "Chair", "Vice-Chair", "Member" ].includes(c.role) }).map(function(c){ return c.name }).join("|"),
+				substitute: r.committees.filter(function(c){ return (c.role === "Substitute") }).map(function(c){ return c.name }).join("|"),
+				delegation: r.delegations.filter(function(c){ return [ "Chair", "Vice-Chair", "Member" ].includes(c.role) }).map(function(c){ return c.name }).join("|"),
+				
+				tttpid: "tttp_"+r.epid,
+				
+				...committees_default,
+				...r.committees.reduce(function(d,c){
+					return d[c.name] = c.role[0],d;
+				},{}),
+				
+			};
+			
+		}).forEach(function(r){
+			csv.write(r);
+		});
+
+		// finish csv writer
+		csv.end();
+
+	});
+	
+	// save json
+	q.push(function(next){
+		fs.writeFile(dest_meps_json, JSON.stringify(result), function(err){
+			if (err) return console.log("[transform] error saving meps.json: %s", err), next();
+			return console.log("[transform] saved meps.json"), next();
+		});
 	});
 
-	simp.on('end', () => {
-		file.writeFileSync("./data/abbreviations.json", JSON.stringify(abbreviations));
-		finished(total);
+	// save abbreviations json
+	q.push(function(next){
+		fs.writeFile(dest_abbreviations, JSON.stringify(Object.entries(abbreviations).reduce(function(d,v){ 
+			return d[v[1]]=v[0],d; // flip key and value
+		},{})), function(err){
+			if (err) return console.log("[transform] error saving abbreviations.json: %s", err), next();
+			return console.log("[transform] saved abbreviations.json"), next();
+		});
 	});
 
-	stream.output.on("end", function() {
-		console.log("end");
-		simp.end();
-		//	csv.end();
+	// run queue
+	q.run(function(){
+		console.log("[transform] done");
+		fn(null, processed);
 	});
-
-
-	function write(options = {
-		from: "data/ep_meps_current.json",
-		csv: "data/meps.csv",
-		json: 'data/meps.json'
-	}, callback) {
-		fs.createReadStream(options.from).pipe(stream.input)
-		var writer = fs.createWriteStream(options.json);
-		const csvwriter = require('csv-write-stream')({headers: head});
-		csvwriter.pipe(fs.createWriteStream(options.csv));
-		stream.output.pipe(simp);
-		simp.pipe(csv).pipe(csvwriter).pipe(fs.createWriteStream(options.csv));
-		simp.pipe(JSONStream.stringify()).pipe(writer);
-
-		if (typeof callback == "function") {
-			csvwriter.on("finish", function() {
-				callback()
-			});
-		}
-	}
-
-	 epnews = indexepnews(epnews);
-	 write(dest, function(){
-		if (typeof fn === "function") fn(epnews, total);
-	 });
 
 };
 

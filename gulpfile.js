@@ -68,14 +68,7 @@ const inout = exports.inout = function inout(done) {
 };
 
 const transform = exports.transform = function transform(done) {
-	require("./script/transform.js")({
-		from: path.resolve("./data/ep_meps_current.json"),
-		json: "./data/meps.json",
-		csv: "./data/meps.csv",
-	}, function(data, processed){
-		console.log("finished " + processed);
-		done();
-	});
+	require("./script/transform.js")(done);
 };
 
 const alias = exports.alias = function alias(done) {
