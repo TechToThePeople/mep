@@ -26,7 +26,9 @@ const main = module.exports = async function main(fn) {
 		if (ctx.meps_str.length === 0) throw new Error("invalid data: meps_str is empty");
 
 		// format
-		const result = ctx.meps_str.map(function(r){
+		const result = ctx.meps_str.filter(function(r){
+			return r.country_code !== "x";
+		}).map(function(r){
 			return {
 				id: r.id_mep,
 				firstName: r.prenom,
