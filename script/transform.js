@@ -75,8 +75,8 @@ const abbr = {
 	"Special Committee on Beating Cancer": "BECA",
 	"Subcommittee on Tax Matters": "FISC",
 	"Special Committee on Foreign Interference in all Democratic Processes in the European Union, including Disinformation": "INGE",
-  "Special Committee on foreign interference in all democratic processes in the European Union, including disinformation (INGE 2)": "ING2",
-  "Committee of Inquiry to investigate the use of Pegasus and equivalent surveillance spyware": "PEGA"
+	"Special Committee on foreign interference in all democratic processes in the European Union, including disinformation (INGE 2)": "ING2",
+	"Committee of Inquiry to investigate the use of Pegasus and equivalent surveillance spyware": "PEGA",
 };
 
 // spinner animation
