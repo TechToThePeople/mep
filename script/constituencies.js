@@ -1,93 +1,125 @@
-const fs = require('fs');
-const http = require('http');
-const got = require('got');
-const {chain}  = require('stream-chain');
+"use strict";
 
-//const urlParse = require('url').parse;
-//const csv = require('fast-csv');
-//const zlib = require("zlib");
+const fs = require("fs");
+const path = require("path");
 
-const url = "http://www.europarl.europa.eu/meps/en/json/getDistricts.html?country=";
-const countries= ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "GR", "ES", "FR", "HR", "IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT", "RO", "SI", "SK", "FI", "SE", "GB"];
+const fetch = require("node-fetch");
+const cheerio = require("cheerio");
+const quu = require("quu");
+const wsv = require("wsv");
 
-http.globalAgent.maxSockets = 8;
+const src = "https://www.europarl.europa.eu/meps/en/search/advanced";
+const dest_mep = path.resolve(__dirname,"../data/mep_regions.csv");
+const dest_regions = path.resolve(__dirname,"../data/regions.csv");
 
-promises = [];
-var total={};
-region=streamCSV("data/regions.csv","country,region,meps");
-mep=streamCSV("data/mep_regions.csv","country,region,mepid,name");
-promises.push(new Promise((resolve, reject) => {region.on("close",() => resolve);}));
-promises.push(new Promise((resolve, reject) => {mep.on("close",() => resolve);}));
+const main = module.exports = async function main(fn) {
+	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
 
+	const q = quu(1,true);
+	
+	const countries = {};
+	
+	// fetch countries
+	q.push(async function(next){
 
-countries.map((country)=>{
-  let p = constituencies(country);
-  p.then((meps)=>{meps.map((m)=>promises.push(m))})
-  promises.push(p);
-});
-//promises.push(constituencies("FR"));
+		console.log("[constituencies] fetch index");
+		const res = await fetch(src)
+		const html = await res.text();
+		const $ = cheerio.load(html);
 
-Promise
-  .all(promises)
-  .catch((err) =>{
-    console.log(err);
-  })
-  .then(() => {
-    console.log("done");
-  });
+		$("option", "#mepSearchCountrySelectField").map(function(i,e){
+			return $(e).attr("value").trim();
+		}).toArray().filter(function(v){
+			return !!v;
+		}).forEach(function(v){
+			countries[v] = {};
+		});
 
-function streamCSV(file,head){
-//  return new Promise((resolve, reject) => {
-    head = head.split(",");
-    const csvwriter = require('csv-write-stream')({separator:",",headers: head,sendHeaders:true});
+		Object.keys(countries).forEach(function(country){
+			q.push(async function(next){
+				
+				console.log("[constituencies] fetch country %s", country);
+				const res = await fetch(src+"?countryCode="+country);
+				const html = await res.text();
+				const $ = cheerio.load(html);
+				
+				$("option", "#mepSearchConstituencySelectField").map(function(i,e){
+					return $(e).attr("value").trim();
+				}).toArray().filter(function(v){
+					return !!v;
+				}).forEach(function(v){
+					countries[country][v] = [];
+				});
+				
+				Object.keys(countries[country]).forEach(function(constituency){
+					q.push(async function(next){
+						
+						console.log("[constituencies] fetch country %s constituency '%s'", country, constituency);
+						const res = await fetch(src+"?countryCode="+country+"&constituency="+encodeURIComponent(constituency)+"&bodyType=ALL	");
+						const html = await res.text();
+						const $ = cheerio.load(html);
+						
+						// add members 
+						$(".erpl_member-list-item-content").each(function(i,e){
+							e = $(e);
+							countries[country][constituency].push({
+								country: country,
+								region: constituency,
+								mepid: e.attr("href").split("/").pop(),
+								name: $(".erpl_title-h5", e).text().trim(),
+							});
+						});
+						
+						next();
+						
+					});
+				})
+				
+				next();
+				
+			});
+		});
 
-    function row (d) {
-      console.log(d);
-      return d;
-    };
+		next();
+				
+	});
+	
+	q.run(function(errs){
+		
+		const out_mep = fs.createWriteStream(dest_mep);
+		const csv_mep = wsv("csv");
+		csv_mep.pipe(out_mep);
 
-    const pipeline = chain([
-//      row,
-      csvwriter,
-      fs.createWriteStream(file)
-    ]);
-    pipeline.on("close", () => resolve);
-    return pipeline;
-//  });
+		const out_regions = fs.createWriteStream(dest_regions);
+		const csv_regions = wsv("csv");
+		csv_regions.pipe(out_regions);
+		
+		Object.keys(countries).forEach(function(country){
+			Object.keys(countries[country]).forEach(function(constituency){
+
+				csv_regions.write({
+					country: country,
+					region: constituency,
+					meps: Object.keys(countries[country][constituency]).length,
+				});
+				
+				countries[country][constituency].forEach(function(v){
+					csv_mep.write(v);
+				});
+			
+			});
+		});
+		
+		// close destinations
+		csv_mep.end(function(){
+			csv_regions.end(function(){
+				console.log("[constituencies] done");
+				fn();
+			});
+		});
+		
+	});
+
 };
 
-
-function constituencies(country){
-  return new Promise((resolve, reject) => {
-    let premises = [];
-    got(url+country,{json:true})
-      .then((d)=>{
-        d.body.options.map((r)=>{
-          if (!r.code) return;
-          premises.push(meps(country,r.code));
-        });
-        resolve(premises);
-      })
-      .catch((err)=>{
-        console.log(err);
-        reject(err);
-      });
-  })
-}
-
-function meps(country,constituency){
-  return new Promise((resolve, reject) => {
-    got(url+country+"&countryCircons="+encodeURI(constituency),{json:true})
-      .then((d)=>{
-        d.body.result.map((m)=>{
-          mep.write({country:country,region:constituency,mepid:m.persId,name:m.fullName});
-        });
-        region.write({country:country,region:constituency,meps:d.body.result.length});
-        resolve();
-      })
-      .catch((err)=>{
-        console.log(err);
-        reject();
-      });
-  })
-}
+if (require.main === module) main();
