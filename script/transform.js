@@ -346,7 +346,7 @@ const main = module.exports = async function main(fn) {
 	q.push(function(next){
 		fs.writeFile(dest_abbreviations, JSON.stringify(Object.entries(abbreviations).reduce(function(d,v){ 
 			return d[v[1]]=v[0],d; // flip key and value
-		},{})), function(err){
+		},{}),null,"\t"), function(err){
 			if (err) return console.log("[transform] error saving abbreviations.json: %s", err), next();
 			return console.log("[transform] saved abbreviations.json"), next();
 		});
