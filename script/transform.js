@@ -199,14 +199,13 @@ const main = module.exports = async function main(fn) {
 					}).shift() || "9999-99-99"),
 					
 					// filter and format delegations
-					delegations: r.Delegations.map(function(v){ // find abbrevation first so we can save it in an extra json
+					delegations: r.Delegations.filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
 						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
 						abbreviations[v.Organization] = v.name;
-						return v;
-					}).filter(function(v){
-						return (v.end[0] === "9"); // if end is ^9999 its active
-					}).map(function(v){
+
 						return {
 							start: v.start.substr(0,10),
 							role: v.role,
@@ -215,14 +214,12 @@ const main = module.exports = async function main(fn) {
 					}),
 					
 					// filter and format staff
-					staff: (r.Staff||[]).map(function(v){ // find abbrevation first so we can save it in an extra json
+					staff: (r.Staff||[]).filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
 						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
 						abbreviations[v.Organization] = v.name;
-						return v;
-					}).filter(function(v){
-						return (v.end[0] === "9"); // if end is ^9999 its active
-					}).map(function(v){
 						return {
 							start: v.start.substr(0,10),
 							role: v.role,
@@ -231,14 +228,12 @@ const main = module.exports = async function main(fn) {
 					}),
 					
 					// filter and format committees
-					committees: r.Committees.map(function(v){ // find abbrevation first so we can save it in an extra json
+					committees: r.Committees.filter(function(v){
+						return (v.end[0] === "9"); // if end is ^9999 its active
+					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(committees.find(function(committee){ return (v.Organization.indexOf(committee[1]) >= 0); }) || [ null ]).shift();
 						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for committee '%s'", v.Organization);
 						abbreviations[v.Organization] = v.name;
-						return v;
-					}).filter(function(v){
-						return (v.end[0] === "9"); // if end is ^9999 its active
-					}).map(function(v){
 						return {
 							start: v.start.substr(0,10),
 							role: v.role,
