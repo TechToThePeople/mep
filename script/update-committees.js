@@ -14,6 +14,8 @@ const data = require(dest);
 const main = module.exports = async function main(fn) {
 	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
 	
+	let changes = 0;
+	
 	const res = await fetch(src)
 	const html = await res.text();
 	
@@ -26,11 +28,13 @@ const main = module.exports = async function main(fn) {
 		v = v[0].toUpperCase()+v.substr(1);
 		
 		// show changes
-		if (!data.hasOwnProperty(k)) console.log("[update-committees] new: %s - %s", k, v);
-		else if (data[k] !== v) console.log("[update-committees] change: %s - \n←\t'%s'\n→\t'%s'", k, data[k], v);
+		if (!data.hasOwnProperty(k)) console.log("[update-committees] new: %s - %s", k, v), changes++;
+		else if (data[k] !== v) console.log("[update-committees] change: %s - \n←\t'%s'\n→\t'%s'", k, data[k], v), changes++;
 		
 		data[k] = v;
 	});
+
+	console.log("[update-committees] %d change%s", changes, (changes===1)?"":"s");
 	
 	// save
 	fs.writeFile(dest, JSON.stringify(data,null,"\t"), fn);
