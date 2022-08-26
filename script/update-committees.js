@@ -21,8 +21,9 @@ const main = module.exports = async function main(fn) {
 	
 	$(".erpl_badge-committee","#website-body").each(function(i,e){
 		e = $(e);
-		const k = e.text().trim();
-		const v = e.attr("title").trim().replace(/^(Special )?(Committee|Subcommittee) (of Inquiry )?(on|to) (the )?/g,''); // trim pompousness
+		let k = e.text().trim();
+		let v = e.attr("title").trim().replace(/^(Special )?(Committee|Subcommittee) (of Inquiry )?(on|to) (investigate )?(the )?/g,''); // trim pompousness
+		v = v[0].toUpperCase()+v.substr(1);
 		
 		// show changes
 		if (!data.hasOwnProperty(k)) console.log("[update-committees] new: %s - %s", k, v);
