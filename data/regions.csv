@@ -1,35 +1,12 @@
 country,region,meps
-IE,Dublin,3
-IE,Midlands-North-West,4
-IE,South,4
 BE,Collège électoral français,8
 BE,Collège électoral germanophone,1
 BE,Nederlands Kiescollege,12
-FR,Est,9
-FR,Ile-de-France,15
-FR,Massif Central-Centre,4
-FR,Nord-Ouest,10
-FR,Ouest,9
-FR,Outre-Mer,3
-FR,Sud-Est,13
-FR,Sud-Ouest,9
-IT,Centrale,14
-IT,Insulare,7
-IT,Meridionale,17
-IT,Nord-Orientale,14
+IE,Dublin,4
+IE,Midlands-North-West,4
+IE,South,5
+IT,Centrale,15
+IT,Insulare,8
+IT,Meridionale,18
 IT,Nord-Occidentale,20
-GB,East Midlands Region,4
-GB,East Midlands,1
-GB,Eastern Region,7
-GB,Eastern region,7
-GB,London,8
-GB,North East,3
-GB,North West,7
-GB,Noth West region,1
-GB,Northern Ireland,3
-GB,Scotland,6
-GB,South East,10
-GB,South West Region,6
-GB,West Midlands,7
-GB,Wales,4
-GB,Yorkshire and the Humber,6
+IT,Nord-Orientale,15

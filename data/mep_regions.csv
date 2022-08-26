@@ -1,257 +1,111 @@
 country,region,mepid,name
-IE,Dublin,124984,Lynn BOYLAN
-IE,Dublin,96603,Nessa CHILDERS
-IE,Dublin,118658,Brian HAYES
-IE,Midlands-North-West,124986,Matt CARTHY
-IE,Midlands-North-West,124985,Luke Ming FLANAGAN
-IE,Midlands-North-West,28116,Marian HARKIN
-IE,Midlands-North-West,28115,Mairead McGUINNESS
-IE,South,124988,Deirdre CLUNE
-IE,South,2109,Brian CROWLEY
-IE,South,96668,Seán KELLY
-IE,South,124987,Liadh NÍ RIADA
 BE,Collège électoral français,124936,Maria ARENA
-BE,Collège électoral français,125002,Hugues BAYET
-BE,Collège électoral français,1473,Gérard DEPREZ
+BE,Collège électoral français,187917,Marc BOTENGA
+BE,Collège électoral français,197470,Saskia BRICMONT
+BE,Collège électoral français,197463,Olivier CHASTEL
 BE,Collège électoral français,96648,Philippe LAMBERTS
-BE,Collège électoral français,96670,Louis MICHEL
+BE,Collège électoral français,197458,Benoît LUTGEN
 BE,Collège électoral français,4253,Frédérique RIES
-BE,Collège électoral français,125107,Claude ROLIN
 BE,Collège électoral français,29579,Marc TARABELLA
 BE,Collège électoral germanophone,24922,Pascal ARIMONT
 BE,Nederlands Kiescollege,124973,Gerolf ANNEMANS
-BE,Nederlands Kiescollege,28257,Ivo BELET
-BE,Nederlands Kiescollege,117477,Mark DEMESMAEKER
-BE,Nederlands Kiescollege,128717,Sander LOONES
-BE,Nederlands Kiescollege,4751,Bart STAES
-BE,Nederlands Kiescollege,125105,Helga STEVENS
-BE,Nederlands Kiescollege,117491,Anneleen VAN BOSSUYT
+BE,Nederlands Kiescollege,197467,Geert BOURGEOIS
+BE,Nederlands Kiescollege,197472,Filip DE MAN
+BE,Nederlands Kiescollege,197455,Cindy FRANSSEN
+BE,Nederlands Kiescollege,197469,Assita KANKO
+BE,Nederlands Kiescollege,208722,Sara MATTHIEU
 BE,Nederlands Kiescollege,5729,Kathleen VAN BREMPT
+BE,Nederlands Kiescollege,185771,Tom VANDENDRIESSCHE
 BE,Nederlands Kiescollege,129164,Tom VANDENKENDELAERE
+BE,Nederlands Kiescollege,125106,Johan VAN OVERTVELDT
 BE,Nederlands Kiescollege,130100,Hilde VAUTMANS
 BE,Nederlands Kiescollege,97058,Guy VERHOFSTADT
-BE,Nederlands Kiescollege,183022,Lieve WIERINCK
-FR,Est,124771,Dominique BILDE
-FR,Est,96747,Arnaud DANJEAN
-FR,Est,28208,Nathalie GRIESBECK
-FR,Est,124770,Jean-François JALKH
-FR,Est,124947,Edouard MARTIN
-FR,Est,124769,Sophie MONTEL
-FR,Est,72779,Nadine MORANO
-FR,Est,110977,Florian PHILIPPOT
-FR,Est,24594,Anne SANDER
-FR,Ile-de-France,124744,Guillaume BALAS
-FR,Ile-de-France,1985,Pervenche BERÈS
-FR,Ile-de-France,124753,Marie-Christine BOUTONNET
-FR,Ile-de-France,28206,Jean-Marie CAVADA
-FR,Ile-de-France,124752,Aymeric CHAUPRADE
-FR,Ile-de-France,72775,Rachida DATI
-FR,Ile-de-France,190774,Geoffroy DIDIER
-FR,Ile-de-France,124693,Pascal DURAND
-FR,Ile-de-France,96883,Eva JOLY
-FR,Ile-de-France,96884,Philippe JUVIN
-FR,Ile-de-France,188254,Patricia LALONDE
-FR,Ile-de-France,1204,Alain LAMASSOURE
-FR,Ile-de-France,96735,Patrick LE HYARIC
-FR,Ile-de-France,124287,Christine REVAULT D'ALLONNES BONNEFOY
-FR,Ile-de-France,124755,Jean-Luc SCHAFFHAUSER
-FR,Massif Central-Centre,124732,Angélique DELAHAYE
-FR,Massif Central-Centre,5565,Brice HORTEFEUX
-FR,Massif Central-Centre,125684,Philippe LOISEAU
-FR,Massif Central-Centre,124761,Bernard MONOT
-FR,Nord-Ouest,124760,Nicolas BAY
-FR,Nord-Ouest,124757,Steeve BRIOIS
-FR,Nord-Ouest,96868,Karima DELLI
-FR,Nord-Ouest,21331,Sylvie GODDYN
-FR,Nord-Ouest,124731,Jérôme LAVRILLEUX
-FR,Nord-Ouest,188718,Christelle LECHEVALIER
-FR,Nord-Ouest,96948,Gilles PARGNEAUX
-FR,Nord-Ouest,96885,Dominique RIQUET
-FR,Nord-Ouest,4345,Tokia SAÏFI
-FR,Nord-Ouest,124758,Mylène TROSZCZYNSKI
-FR,Ouest,124773,Jean ARTHUIS
-FR,Ouest,124740,Joëlle BERGERON
-FR,Ouest,96849,Alain CADEC
-FR,Ouest,96740,Yannick JADOT
-FR,Ouest,124728,Marc JOULAUD
-FR,Ouest,124738,Gilles LEBRETON
-FR,Ouest,24505,Emmanuel MAUREL
-FR,Ouest,38596,Elisabeth MORIN-CHARTIER
-FR,Ouest,114279,Isabelle THOMAS
-FR,Outre-Mer,124725,Louis-Joseph MANSCOUR
-FR,Outre-Mer,30482,Younous OMARJEE
-FR,Outre-Mer,96931,Maurice PONGA
-FR,Sud-Est,124748,Marie-Christine ARNAUTU
-FR,Sud-Est,4338,Thierry CORNILLET
-FR,Sud-Est,97296,Michel DANTIN
-FR,Sud-Est,124750,Mireille D'ORNANO
-FR,Sud-Est,1164,Bruno GOLLNISCH
-FR,Sud-Est,2025,Françoise GROSSETÊTE
-FR,Sud-Est,96952,Sylvie GUILLAUME
-FR,Sud-Est,1023,Jean-Marie LE PEN
-FR,Sud-Est,124751,Dominique MARTIN
-FR,Sud-Est,124729,Renaud MUSELIER
-FR,Sud-Est,28166,Vincent PEILLON
-FR,Sud-Est,96743,Michèle RIVASI
-FR,Sud-Est,96858,Marie-Christine VERGIAT
-FR,Sud-Ouest,1179,Michèle ALLIOT-MARIE
-FR,Sud-Ouest,113892,Eric ANDRIEU
-FR,Sud-Ouest,96744,José BOVÉ
-FR,Sud-Ouest,189065,France JAMET
-FR,Sud-Ouest,124765,Joëlle MÉLIN
-FR,Sud-Ouest,108080,Franck PROUST
-FR,Sud-Ouest,97022,Robert ROCHEFORT
-FR,Sud-Ouest,103845,Virginie ROZIÈRE
-FR,Sud-Ouest,188721,Marie-Pierre VIEU
-IT,Centrale,124811,Laura AGEA
-IT,Centrale,124819,Goffredo Maria BETTINI
+IE,Dublin,204332,Barry ANDREWS
+IE,Dublin,197654,Ciarán CUFFE
+IE,Dublin,197731,Clare DALY
+IE,Dublin,197720,Frances FITZGERALD
+IE,Midlands-North-West,124985,Luke Ming FLANAGAN
+IE,Midlands-North-West,205452,Chris MACMANUS
+IE,Midlands-North-West,209896,Colm MARKEY
+IE,Midlands-North-West,197863,Maria WALSH
+IE,South,124988,Deirdre CLUNE
+IE,South,197818,Billy KELLEHER
+IE,South,96668,Seán KELLY
+IE,South,197889,Grace O'SULLIVAN
+IE,South,197817,Mick WALLACE
+IT,Centrale,197826,Matteo ADINOLFI
+IT,Centrale,197789,Simona BALDASSARRE
 IT,Centrale,124814,Simona BONAFÈ
-IT,Centrale,21817,Mario BORGHEZIO
+IT,Centrale,197788,Anna BONFRISCO
 IT,Centrale,124812,Fabio Massimo CASTALDO
-IT,Centrale,96917,Silvia COSTA
+IT,Centrale,197786,Susanna CECCARDI
 IT,Centrale,124821,Nicola DANTI
-IT,Centrale,124817,Enrico GASBARRA
-IT,Centrale,96892,Roberto GUALTIERI
-IT,Centrale,28429,Alessandra MUSSOLINI
-IT,Centrale,96864,David-Maria SASSOLI
-IT,Centrale,124810,Barbara SPINELLI
+IT,Centrale,204333,Salvatore DE MEO
+IT,Centrale,230085,Camilla LAURETI
+IT,Centrale,197820,Nicola PROCACCINI
+IT,Centrale,197790,Luisa REGIMENTI
+IT,Centrale,197787,Antonio Maria RINALDI
+IT,Centrale,197792,Daniela RONDINELLI
+IT,Centrale,197791,Massimiliano SMERIGLIO
 IT,Centrale,2187,Antonio TAJANI
-IT,Centrale,124813,Dario TAMBURRANO
+IT,Insulare,197808,Pietro BARTOLO
 IT,Insulare,124861,Caterina CHINNICI
-IT,Insulare,124854,Salvatore CICU
 IT,Insulare,124856,Ignazio CORRAO
-IT,Insulare,124864,Michela GIUFFRIDA
-IT,Insulare,96816,Giovanni LA VIA
-IT,Insulare,124859,Giulia MOI
-IT,Insulare,124860,Renato SORU
+IT,Insulare,197822,Francesca DONATO
+IT,Insulare,197804,Dino GIARRUSSO
+IT,Insulare,197824,Giuseppe MILAZZO
+IT,Insulare,197825,Raffaele STANCANELLI
+IT,Insulare,197806,Annalisa TARDINO
 IT,Meridionale,124831,Isabella ADINOLFI
-IT,Meridionale,124842,Daniela AIUTO
-IT,Meridionale,124851,Nicola CAPUTO
-IT,Meridionale,28451,Lorenzo CESA
+IT,Meridionale,197797,Andrea CAROPPO
+IT,Meridionale,197796,Massimo CASANOVA
 IT,Meridionale,96880,Andrea COZZOLINO
 IT,Meridionale,124835,Rosa D'AMATO
 IT,Meridionale,192634,Giuseppe FERRANDINO
 IT,Meridionale,124833,Laura FERRARA
 IT,Meridionale,4465,Raffaele FITTO
-IT,Meridionale,125193,Eleonora FORENZA
-IT,Meridionale,124847,Elena GENTILE
+IT,Meridionale,197795,Mario FURORE
+IT,Meridionale,197794,Chiara GEMMA
+IT,Meridionale,197799,Valentino GRANT
 IT,Meridionale,124828,Fulvio MARTUSCIELLO
-IT,Meridionale,96813,Barbara MATERA
-IT,Meridionale,124849,Massimo PAOLUCCI
 IT,Meridionale,36392,Aldo PATRICIELLO
 IT,Meridionale,124844,Piernicola PEDICINI
 IT,Meridionale,124846,Pina PICIERNO
-IT,Nord-Orientale,124797,Marco AFFRONTE
-IT,Nord-Orientale,97198,Mara BIZZOTTO
-IT,Nord-Orientale,124796,David BORRELLI
-IT,Nord-Orientale,96891,Paolo DE CASTRO
-IT,Nord-Orientale,124803,Isabella DE MONTE
-IT,Nord-Orientale,96787,Herbert DORFMANN
-IT,Nord-Orientale,58758,Elisabetta GARDINI
-IT,Nord-Orientale,124801,Cécile Kashetu KYENGE
-IT,Nord-Orientale,124804,Elly SCHLEIN
-IT,Nord-Orientale,96996,Giancarlo SCOTTÀ
-IT,Nord-Orientale,124794,Remo SERNAGIOTTO
-IT,Nord-Orientale,124800,Flavio ZANONATO
-IT,Nord-Orientale,131051,Damiano ZOFFOLI
-IT,Nord-Orientale,125237,Marco ZULLO
+IT,Meridionale,197801,Franco ROBERTI
+IT,Meridionale,204334,Vincenzo SOFO
+IT,Meridionale,197798,Lucia VUOLO
 IT,Nord-Occidentale,124777,Tiziana BEGHIN
 IT,Nord-Occidentale,124867,Brando BENIFEI
-IT,Nord-Occidentale,28346,Mercedes BRESSO
-IT,Nord-Occidentale,124787,Renata BRIANO
+IT,Nord-Occidentale,4391,Silvio BERLUSCONI
+IT,Nord-Occidentale,35016,Marco CAMPOMENOSI
 IT,Nord-Occidentale,183793,Angelo CIOCCA
-IT,Nord-Occidentale,124772,Alberto CIRIO
-IT,Nord-Occidentale,96915,Sergio Gaetano COFFERATI
-IT,Nord-Occidentale,96775,Lara COMI
 IT,Nord-Occidentale,124779,Eleonora EVI
+IT,Nord-Occidentale,96810,Carlo FIDANZA
+IT,Nord-Occidentale,197607,Pietro FIOCCHI
+IT,Nord-Occidentale,197582,Gianna GANCIA
 IT,Nord-Occidentale,192635,Danilo Oscar LANCINI
-IT,Nord-Occidentale,125192,Curzio MALTESE
-IT,Nord-Occidentale,133326,Stefano MAULLU
-IT,Nord-Occidentale,124788,Luigi MORGANO
-IT,Nord-Occidentale,124868,Alessia Maria MOSCA
-IT,Nord-Occidentale,28365,Pier Antonio PANZERI
+IT,Nord-Occidentale,197592,Pierfrancesco MAJORINO
+IT,Nord-Occidentale,99283,Alessandro PANZA
+IT,Nord-Occidentale,197590,Giuliano PISAPIA
 IT,Nord-Occidentale,125670,Massimiliano SALINI
+IT,Nord-Occidentale,197578,Silvia SARDONE
+IT,Nord-Occidentale,197591,Irene TINAGLI
 IT,Nord-Occidentale,28340,Patrizia TOIA
-IT,Nord-Occidentale,124778,Marco VALLI
-IT,Nord-Occidentale,124791,Daniele VIOTTI
+IT,Nord-Occidentale,197580,Isabella TOVAGLIERI
+IT,Nord-Occidentale,197586,Stefania ZAMBELLI
 IT,Nord-Occidentale,124780,Marco ZANNI
-GB,East Midlands Region,188733,Jonathan BULLOCK
-GB,East Midlands Region,96919,Emma McCLARKIN
-GB,East Midlands Region,190099,Rory PALMER
-GB,East Midlands Region,124945,Margot PARKER
-GB,East Midlands,188622,Rupert MATTHEWS
-GB,Eastern Region,96897,John Stuart AGNEW
-GB,Eastern Region,99650,Tim AKER
-GB,Eastern Region,96912,David CAMPBELL BANNERMAN
-GB,Eastern Region,188623,John FLACK
-GB,Eastern Region,185637,Alex MAYER
-GB,Eastern Region,124940,Patrick O'FLYNN
-GB,Eastern Region,4513,Geoffrey VAN ORDEN
-GB,Eastern region,96897,John Stuart AGNEW
-GB,Eastern region,99650,Tim AKER
-GB,Eastern region,96912,David CAMPBELL BANNERMAN
-GB,Eastern region,188623,John FLACK
-GB,Eastern region,185637,Alex MAYER
-GB,Eastern region,124940,Patrick O'FLYNN
-GB,Eastern region,4513,Geoffrey VAN ORDEN
-GB,London,124949,Lucy ANDERSON
-GB,London,28497,Gerard BATTEN
-GB,London,124952,Seb DANCE
-GB,London,5846,Mary HONEYBALL
-GB,London,33569,Syed KAMALL
-GB,London,4531,Jean LAMBERT
-GB,London,4519,Claude MORAES
-GB,London,4521,Charles TANNOCK
-GB,North East,124958,Jonathan ARNOTT
-GB,North East,124954,Paul BRANNEN
-GB,North East,124953,Jude KIRTON-DARLING
-GB,North West,124964,Louise BOURS
-GB,North West,4553,Jacqueline FOSTER
-GB,North West,124961,Theresa GRIFFIN
-GB,North West,28481,Sajjad KARIM
-GB,North West,96805,Paul NUTTALL
-GB,North West,124963,Julie WARD
-GB,North West,124966,Steven WOOLFE
-GB,Noth West region,188624,Wajid KHAN
-GB,Northern Ireland,113959,Martina ANDERSON
-GB,Northern Ireland,96951,Diane DODDS
-GB,Northern Ireland,1318,James NICHOLSON
-GB,Scotland,124967,David COBURN
-GB,Scotland,2338,Ian HUDGHTON
-GB,Scotland,1403,David MARTIN
-GB,Scotland,189391,Baroness Nosheena MOBARIK
-GB,Scotland,28508,Alyn SMITH
-GB,Scotland,4545,Catherine STIHLER
-GB,South East,28132,Richard ASHWORTH
-GB,South East,124938,Janice ATKINSON
-GB,South East,96955,Catherine BEARDER
-GB,South East,4556,Nirj DEVA
-GB,South East,4525,Nigel FARAGE
-GB,South East,124941,Raymond FINCH
-GB,South East,4555,Daniel HANNAN
-GB,South East,188636,John HOWARTH
-GB,South East,124939,Diane JAMES
-GB,South East,102931,Keith TAYLOR
-GB,South West Region,96958,William (The Earl of) DARTMOUTH
-GB,South West Region,96957,Ashley FOX
-GB,South West Region,96956,Julie GIRLING
-GB,South West Region,124944,Clare MOODY
-GB,South West Region,106202,Julia REID
-GB,South West Region,124942,Molly SCOTT CATO
-GB,West Midlands,124971,James CARVER
-GB,West Midlands,35135,Daniel DALTON
-GB,West Midlands,124951,Bill ETHERIDGE
-GB,West Midlands,4533,Neena GILL
-GB,West Midlands,111011,Anthea McINTYRE
-GB,West Midlands,124950,Jill SEYMOUR
-GB,West Midlands,124948,Siôn SIMON
-GB,Wales,4550,Jill EVANS
-GB,Wales,124965,Nathan GILL
-GB,Wales,96920,Kay SWINBURNE
-GB,Wales,96918,Derek VAUGHAN
-GB,Yorkshire and the Humber,124956,Amjad BASHIR
-GB,Yorkshire and the Humber,124955,Jane COLLINS
-GB,Yorkshire and the Humber,2309,Richard CORBETT
-GB,Yorkshire and the Humber,124957,Mike HOOKEM
-GB,Yorkshire and the Humber,2327,Linda McAVAN
-GB,Yorkshire and the Humber,185628,John PROCTER
+IT,Nord-Orientale,197610,Alessandra BASSO
+IT,Nord-Orientale,4746,Sergio BERLATO
+IT,Nord-Orientale,97198,Mara BIZZOTTO
+IT,Nord-Orientale,101039,Paolo BORCHIA
+IT,Nord-Orientale,197617,Carlo CALENDA
+IT,Nord-Orientale,197616,Rosanna CONTE
+IT,Nord-Orientale,197608,Gianantonio DA RE
+IT,Nord-Orientale,96891,Paolo DE CASTRO
+IT,Nord-Orientale,96787,Herbert DORFMANN
+IT,Nord-Orientale,197614,Marco DREOSTO
+IT,Nord-Orientale,197618,Elisabetta GUALMINI
+IT,Nord-Orientale,197611,Elena LIZZI
+IT,Nord-Orientale,124799,Alessandra MORETTI
+IT,Nord-Orientale,197619,Sabrina PIGNEDOLI
+IT,Nord-Orientale,125237,Marco ZULLO
