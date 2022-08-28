@@ -85,40 +85,36 @@
       background-size: cover;
     }
 
-    .ppe {
-      background-image: url("img/group/EPP.png");
+    .ecr {
+      background-image: url("img/group/icon-ecr.png");
+    }
+
+    .epp {
+      background-image: url("img/group/icon-epp.png");
+    }
+
+    .greens-efa {
+      background-image: url("img/group/icon-greens-efa.png");
+    }
+	 
+    .gue-ngl {
+      background-image: url("img/group/icon-gue-ngl.png");
+    }
+
+    .id {
+      background-image: url("img/group/icon-id.png");
+    }
+
+    .na {
+      background-image: url("img/group/icon-na.png");
+    }
+
+    .renew {
+      background-image: url("img/group/icon-renew.png");
     }
 
     .s-d {
-      background-image: url("img/group/S-D.png");
-    }
-
-    .alde, .re {
-      background-image: url("img/group/ALDE.png");
-    }
-
-    .verts-ale {
-      background-image: url("img/group/VERT.png");
-    }
-
-    .efdd, .id {
-      background-image: url("img/group/EFDD.png");
-    }
-
-    .gue-ngl {
-      background-image: url("img/group/GUE.png");
-    }
-
-    .enf {
-      background-image: url("img/group/ENF.png");
-    }
-
-    .ecr {
-      background-image: url("img/group/ECR.png");
-    }
-
-    .na-ni {
-      background-image: url("img/group/NA.png");
+      background-image: url("img/group/icon-s-d.png");
     }
 
     .austria {
