@@ -50,7 +50,7 @@ const main = module.exports = async function main(fn) {
 
 		// fetch favicon via google api FIXME maybe this is not the best approach?
 		if (!!r.profileLink && !/facebook|twitter/.test(r.profileLink)) q.push(async function(next){
-			await download("https://www.google.com/s2/favicons?domain="+r.profileLink, path.resolve(dest_img, "icon-"+slug+".png");
+			await download("https://www.google.com/s2/favicons?domain="+r.profileLink, path.resolve(dest_img, "icon-"+slug+".png"));
 			next();
 		});
 			
