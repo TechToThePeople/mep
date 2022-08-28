@@ -7,7 +7,7 @@ const quu = require("quu");
 
 const src = path.resolve(__dirname,"../data/eugroup.json");
 const dest = path.resolve(__dirname,"../data/eugroups.json"); // thats confusing
-const dest_img = path.resolve(__dirname,"../img/party");
+const dest_img = path.resolve(__dirname,"../img/group");
 
 const groups = require(src).data.items;
 
@@ -40,13 +40,13 @@ const main = module.exports = async function main(fn) {
 
 		// fetch logo from data source
 		q.push(async function(next){
-			await download(r.pictureLink, path.resolve(dest_img, "logo", g[r.politicalGroup.eparty].picture));
+			await download(r.pictureLink, path.resolve(dest_img, "logo-"+g[r.politicalGroup.eparty].picture));
 			next();
 		});
 
 		// fetch favicon via google api
-		if (g[r.politicalGroup.eparty].url) q.push(async function(next){
-			await download("https://www.google.com/s2/favicons?domain="+g[r.politicalGroup.eparty].url, path.resolve(dest_img, "icon", g[r.politicalGroup.eparty].picture));
+		if (!!r.profileLink && !/facebook|twitter/.test(r.profileLink)) q.push(async function(next){
+			await download("https://www.google.com/s2/favicons?domain="+g[r.politicalGroup.eparty].url, path.resolve(dest_img, "icon-"+g[r.politicalGroup.eparty].picture));
 			next();
 		});
 			
