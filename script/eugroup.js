@@ -1,43 +1,62 @@
-const fetch = require ('node-fetch');
-const fs = require('fs');
-const imgUrl = "https://s3.eu-central-1.amazonaws.com/newshubv2/party/";
-let groups = JSON.parse(fs.readFileSync('data/eugroup.json'));
+"use strict";
 
- const downloadFile = (async (url, path) => {
-   console.log(url,path);
-  const res = await fetch(url);
-  const fileStream = fs.createWriteStream(path);
-  await new Promise((resolve, reject) => {
-      res.body.pipe(fileStream);
-      res.body.on("error", (err) => {
-        reject(err);
-      });
-      fileStream.on("finish", function() {
-        console.log("saved");
-        resolve();
-      });
-    });
-});
+const fs = require("fs");
+const path = require("path");
+const fetch = require("node-fetch");
+const quu = require("quu");
 
-async function downloadGroup (groups)  {
-  const r={};
-  groups.data.items.map (async g => {
-    //const d = (({accronym,name,picture,url}) => ({eParty,fullName,pictureLink,profileLink}))(g);
-    const d = {
-      accronym:g.eParty,
-      name:g.fullName,
-      picture:decodeURIComponent(g.pictureLink.replace(imgUrl,"")),
-      url:g.profileLink
-    }
-    r[d.accronym] = d;
-    await downloadFile("https://www.google.com/s2/favicons?domain="+d.url,'./img/party/icon/'+d.picture);
-    console.log(imgUrl+d.picture);
-    await downloadFile(imgUrl+d.picture,'./img/party/logo/'+d.picture);
-  });
-  fs.writeFileSync('./data/eugroups.json', JSON.stringify(r,null,2));
+const src = path.resolve(__dirname,"../data/eugroup.json");
+const dest = path.resolve(__dirname,"../data/eugroups.json"); // thats confusing
+const dest_img = path.resolve(__dirname,"../img/party");
+
+const groups = require(src).data.items;
+
+// donwload helper
+const download = function download(url, dest){
+	return new Promise(function(resolve, reject){
+		console.log("[eugroup] download '%s' → '%s'", url, path.basename(dest));
+		fs.mkdir(path.dirname(dest), { recursive: true }, async function(err){
+			const res = await fetch(url);
+			res.body.pipe(fs.createWriteStream(dest).on("error", reject).on("finish", resolve));
+		});
+	});
+};
+
+const main = module.exports = async function main(fn) {
+	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
+
+	const q = quu(5,true);
+
+	const data = groups.reduce(function(g,r){
+
+		console.log("[eugroup] group %s", r.politicalGroup.eparty);
+
+		g[r.politicalGroup.eparty] = {
+			accronym: r.politicalGroup.eparty,
+			name: r.fullName,
+			picture: (r.politicalGroup.eparty.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().replace(" ","-"))+".png",
+			url: r.profileLink
+		};
+
+		// fetch logo from data source
+		q.push(async function(next){
+			await download(r.pictureLink, path.resolve(dest_img, "logo", g[r.politicalGroup.eparty].picture));
+			next();
+		});
+
+		// fetch favicon via google api
+		if (g[r.politicalGroup.eparty].url) q.push(async function(next){
+			await download("https://www.google.com/s2/favicons?domain="+g[r.politicalGroup.eparty].url, path.resolve(dest_img, "icon", g[r.politicalGroup.eparty].picture));
+			next();
+		});
+			
+		return g;
+	},{});
+	
+	q.run(function(){
+		fs.writeFile(dest, JSON.stringify(data,null,"\t"), fn);
+	});
 
 };
 
-downloadGroup(groups);
-
-
+if (require.main === module) main();
