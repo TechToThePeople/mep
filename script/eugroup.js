@@ -31,22 +31,26 @@ const main = module.exports = async function main(fn) {
 
 		console.log("[eugroup] group %s", r.politicalGroup.eparty);
 
+		// make safe for use in filename
+		const slug = (r.politicalGroup.eparty.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().replace(" ","-"));
+
 		g[r.politicalGroup.eparty] = {
 			accronym: r.politicalGroup.eparty,
 			name: r.fullName,
-			picture: (r.politicalGroup.eparty.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().replace(" ","-"))+".png",
+			picture: "logo-"+slug+".png",
+			icon: "icon-"+slug+".png",
 			url: r.profileLink
 		};
 
 		// fetch logo from data source
 		q.push(async function(next){
-			await download(r.pictureLink, path.resolve(dest_img, "logo-"+g[r.politicalGroup.eparty].picture));
+			await download(r.pictureLink, path.resolve(dest_img, "logo-"+slug+".png"));
 			next();
 		});
 
-		// fetch favicon via google api
+		// fetch favicon via google api FIXME maybe this is not the best approach?
 		if (!!r.profileLink && !/facebook|twitter/.test(r.profileLink)) q.push(async function(next){
-			await download("https://www.google.com/s2/favicons?domain="+g[r.politicalGroup.eparty].url, path.resolve(dest_img, "icon-"+g[r.politicalGroup.eparty].picture));
+			await download("https://www.google.com/s2/favicons?domain="+r.profileLink, path.resolve(dest_img, "icon-"+slug+".png");
 			next();
 		});
 			
