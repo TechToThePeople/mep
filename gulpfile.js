@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 
 const gulp = require("gulp");
-const gulp_download = require("gulp-download2");
 const gulp_replace = require("gulp-replace");
 const gulp_sourcemaps = require("gulp-sourcemaps");
 const gulp_concat = require("gulp-concat");
@@ -12,6 +11,7 @@ const gulp_minify = require("gulp-clean-css");
 const gulp_rename = require("gulp-rename");
 
 const lunzip = require("lunzip-stream");
+const downloader = require("./lib/download");
 
 // config
 
@@ -41,7 +41,7 @@ const paths = {
 // tasks
 
 const download = exports.download = function download(done){
-	return gulp_download([
+	return downloader([
 		{ file: "eugroup.json", url: "https://www.epnewshub.eu/v1/contributor/?type=grouppress&pageSize=50&search-value=&search-type=contributor" },
 		{ file: "meps_str.js", url: "https://www.europarl.europa.eu/hemicycle/js/meps_str.js" }, //used by mepid task to generate mepid.json
 		// { file: "mepid.json", url: "http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term=" },
@@ -50,9 +50,12 @@ const download = exports.download = function download(done){
 		{ file: "outgoing.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml" },
 		{ file: "ep_meps_current.json.lz", url: "https://parltrack.org/dumps/ep_meps.json.lz" },
 		{ file: "epnewshub.json", url: "https://www.epnewshub.eu/v1/contributor/?type=mep&pageSize=1000&search-value=&search-type=contributor" },
-	]).pipe(gulp.dest('data').on('end', function(){
+	].map(function(src){
+		src.file = path.resolve(__dirname,"data",src.file);
+		return src;
+	}), function(){
 		done();
-	}));	
+	});
 };
 
 const decompress = exports.decompress = function decompress(done) {
