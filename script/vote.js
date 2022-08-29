@@ -3,6 +3,8 @@
 //find non matching aliases
 //q "select v.* from data/vote/89202.csv v left join data/meps-aliases.csv a on v.name=a.alias where a.epid is null" -d, -H -O
 
+// example https://www.europarl.europa.eu/doceo/document/PV-9-2022-07-04-RCV_FR.xml
+
 'use strict';
 var fs = require('fs');
 var path = require('path');
