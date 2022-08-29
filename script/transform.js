@@ -204,8 +204,7 @@ const main = module.exports = async function main(fn) {
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
 						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
-						abbreviations[v.Organization] = v.name;
-
+						abbreviations[v.Organization] = (v.abbr || v.name || abbr[v.Organization]);
 						return {
 							start: v.start.substr(0,10),
 							role: v.role,
@@ -233,7 +232,7 @@ const main = module.exports = async function main(fn) {
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(committees.find(function(committee){ return (v.Organization.indexOf(committee[1]) >= 0); }) || [ null ]).shift();
 						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for committee '%s'", v.Organization);
-						abbreviations[v.Organization] = v.name;
+						abbreviations[v.Organization] = (v.abbr || v.name || abbr[v.Organization]);
 						return {
 							start: v.start.substr(0,10),
 							role: v.role,
