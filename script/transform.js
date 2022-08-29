@@ -187,7 +187,7 @@ const main = module.exports = async function main(fn) {
 					activities: {}, // countActivities(r.activities), 
 
 					since: ([ // find earliest date in all the relations
-						...r.Delegations,
+						...(r.Delegations||[]),
 						...(r.Staff||[]),
 						...r.Committees,
 						...r.Constituencies,
@@ -199,7 +199,7 @@ const main = module.exports = async function main(fn) {
 					}).shift() || "9999-99-99"),
 					
 					// filter and format delegations
-					delegations: r.Delegations.filter(function(v){
+					delegations: (r.Delegations||[]).filter(function(v){
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
