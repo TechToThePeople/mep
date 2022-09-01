@@ -26,6 +26,7 @@
 		"lunzip-stream": "^0.0.1",
 		"minimist": "^1.2.0",
 		"moment": "^2.21.0",
+		"node-fetch": "^2.6.7",
 		"prb": "^0.0.5",
 		"quu": "^0.4.3",
 		"reductio": "^0.6.3",
