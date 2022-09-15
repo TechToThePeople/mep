@@ -10,14 +10,12 @@ const xsv = require("xsv");
 const wsv = require("wsv");
 
 // file paths
-
 const src = path.resolve(__dirname,"../data/ep_meps_current.json");
 const dest_meps_csv = path.resolve(__dirname,"../data/meps.csv");
 const dest_meps_json = path.resolve(__dirname,"../data/meps.json");
 const dest_abbreviations = path.resolve(__dirname,"../data/abbreviations.json");
 
 // data and overrides
-
 const mepid = require("../data/mepid.json");
 const mepids = mepid.map(function(r){ return r.id }); // ids only for quicker lookup
 
@@ -146,19 +144,15 @@ const main = module.exports = async function main(fn) {
 				total++;
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
 
-				// check if UserID is known
-				if (!mepids.includes(r.UserID) && !inout.hasOwnProperty(r.UserID)) return done();
-			
-				// check if user is active
 				if (!r.active) return done();
+
+				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
+
+				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
 			
 				// check object
 				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
-			
-				// check for this specific userid (unclear why, taken from old code)
-				// in old code, process.exit() was never called because it was chained to console.log with && (console.log is never true-ish) therefore it's commented out. FIXME
-				if (r.UserID === 229839) /* return */ console.error("[transform] encountered user with id '229839'"); //, process.exit(1);
-			
+						
 				// assemble data
 				const data = {
 					meta: r.meta,
