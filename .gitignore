@@ -4,3 +4,4 @@ data/ep_meps_current.json.xz
 data/ep_meps_current.json
 node_modules
 *.swp
+data/mirror
