@@ -10,7 +10,7 @@ const xsv = require("xsv");
 const wsv = require("wsv");
 
 // file paths
-const src = path.resolve(__dirname,"../data/ep_meps_current.json");
+const src = path.resolve(__dirname,"../data/mirror/ep_meps_current.json");
 const dest_meps_csv = path.resolve(__dirname,"../data/meps.csv");
 const dest_meps_json = path.resolve(__dirname,"../data/meps.json");
 const dest_abbreviations = path.resolve(__dirname,"../data/abbreviations.json");

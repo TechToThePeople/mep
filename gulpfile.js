@@ -59,7 +59,7 @@ const download = exports.download = function download(done){
 };
 
 const decompress = exports.decompress = function decompress(done) {
-	return fs.createReadStream('data/mirror/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/ep_meps_current.json").on("end", done));
+	return fs.createReadStream('data/mirror/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/mirror/ep_meps_current.json").on("end", done));
 };
 
 const mepid = exports.mepid = function mepid(done) {

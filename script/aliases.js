@@ -13,7 +13,7 @@ const mepid = require("../data/mepid.json");
 const mepids = mepid.map(function(r){ return r.id }); // ids only for quicker lookup
 const countries = require("../data/static/country2iso.json");
 
-const src = path.resolve(__dirname,"../data/ep_meps_current.json");
+const src = path.resolve(__dirname,"../data/mirror/ep_meps_current.json");
 
 const spinner = "▁▂▃▄▅▆▇█▇▆▅▄▃▂".split("");
 
