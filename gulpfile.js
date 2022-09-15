@@ -51,7 +51,7 @@ const download = exports.download = function download(done){
 		{ file: "ep_meps_current.json.lz", url: "https://parltrack.org/dumps/ep_meps.json.lz" },
 		{ file: "epnewshub.json", url: "https://www.epnewshub.eu/v1/contributor/?type=mep&pageSize=1000&search-value=&search-type=contributor" },
 	].map(function(src){
-		src.file = path.resolve(__dirname,"data",src.file);
+		src.file = path.resolve(__dirname,"data/mirror",src.file);
 		return src;
 	}), function(){
 		done();
@@ -59,7 +59,7 @@ const download = exports.download = function download(done){
 };
 
 const decompress = exports.decompress = function decompress(done) {
-	return fs.createReadStream('data/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/ep_meps_current.json").on("end", done));
+	return fs.createReadStream('data/mirror/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/ep_meps_current.json").on("end", done));
 };
 
 const mepid = exports.mepid = function mepid(done) {

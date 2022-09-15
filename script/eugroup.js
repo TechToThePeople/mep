@@ -5,7 +5,7 @@ const path = require("path");
 const fetch = require("node-fetch");
 const quu = require("quu");
 
-const src = path.resolve(__dirname,"../data/eugroup.json");
+const src = path.resolve(__dirname,"../data/mirror/eugroup.json");
 const dest = path.resolve(__dirname,"../data/eugroups.json"); // thats confusing
 const dest_img = path.resolve(__dirname,"../img/group");
 

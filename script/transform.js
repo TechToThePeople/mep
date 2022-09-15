@@ -23,7 +23,7 @@ const mepids = mepid.map(function(r){ return r.id }); // ids only for quicker lo
 
 const inout = require("../data/inout.json");
 
-const country2iso= require('../data/country2iso.json');
+const country2iso= require('../data/static/country2iso.json');
 
 const committees = Object.entries(require("../data/committees.json")).sort(function(a,b){
 	return a[1].length-b[1].length; // order by length to match agains shorter strings first
@@ -102,7 +102,7 @@ const main = module.exports = async function main(fn) {
 
 	// load gender overrides
 	q.push(function(next){
-		fs.createReadStream(path.resolve(__dirname,"../data/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+		fs.createReadStream(path.resolve(__dirname,"../data/static/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			gender[r.epid] = r.gender;
 		}).on("end", function(){
 			console.log("[transform] gender loaded");
@@ -112,7 +112,7 @@ const main = module.exports = async function main(fn) {
 	
 	// load extra_csv for twitter
 	q.push(function(next){
-		fs.createReadStream(path.resolve(__dirname,"../data/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+		fs.createReadStream(path.resolve(__dirname,"../data/mirror/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			if (r.SCREEN_NAME[0] !== "@") return;
 			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1);
 		}).on("end", function(){
@@ -123,7 +123,7 @@ const main = module.exports = async function main(fn) {
 	
 	// load epnews for twitter accounts
 	q.push(function(next){
-		require("../data/epnewshub.json").data.items.forEach(function(r){
+		require("../data/mirror/epnewshub.json").data.items.forEach(function(r){
 			if (!r.codictId) return;
 			if (r.socialNetworks) r.socialNetworks.forEach(function(s){
 				if (s.type !== "twitter") return;

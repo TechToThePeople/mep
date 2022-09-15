@@ -8,7 +8,7 @@ const xml2js = require("xml2js");
 const quu = require("quu");
 const wsv = require("wsv");
 
-const src = path.resolve(__dirname,"../data/%s.xml");
+const src = path.resolve(__dirname,"../data/mirror/%s.xml");
 const dest = path.resolve(__dirname,"../data/inout.%s");
 
 const main = module.exports = async function main(fn) {
