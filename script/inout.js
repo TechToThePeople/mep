@@ -81,7 +81,9 @@ const main = module.exports = async function main(fn) {
 
 			const csv = wsv("csv");
 			csv.pipe(out);
-			result.forEach(function(r){ csv.write(r); });
+			result.sort(function(a,b){
+				return a.start.localeCompare(b.start); // sort by date
+			}).forEach(function(r){ csv.write(r); });
 			csv.end();
 			
 		});
