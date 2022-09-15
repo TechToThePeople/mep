@@ -11,7 +11,7 @@ const wd = require("../lib/wikidata");
 
 const dest = path.resolve(__dirname,"../data/wikidata.json");
 
-const ids = require("../data/meps.json").map(function(r){ return r.epid.toString() });
+const ids = require("../data/mepid.json").map(function(r){ return r.id.toString(); });
 
 const main = module.exports = async function main(fn) {
 	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
