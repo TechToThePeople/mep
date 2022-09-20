@@ -10,20 +10,18 @@ const xsv = require("xsv");
 const wsv = require("wsv");
 
 // file paths
-
-const src = path.resolve(__dirname,"../data/ep_meps_current.json");
+const src = path.resolve(__dirname,"../data/mirror/ep_meps_current.json");
 const dest_meps_csv = path.resolve(__dirname,"../data/meps.csv");
 const dest_meps_json = path.resolve(__dirname,"../data/meps.json");
 const dest_abbreviations = path.resolve(__dirname,"../data/abbreviations.json");
 
 // data and overrides
-
 const mepid = require("../data/mepid.json");
 const mepids = mepid.map(function(r){ return r.id }); // ids only for quicker lookup
 
 const inout = require("../data/inout.json");
 
-const country2iso= require('../data/country2iso.json');
+const country2iso= require('../data/static/country2iso.json');
 
 const committees = Object.entries(require("../data/committees.json")).sort(function(a,b){
 	return a[1].length-b[1].length; // order by length to match agains shorter strings first
@@ -102,7 +100,7 @@ const main = module.exports = async function main(fn) {
 
 	// load gender overrides
 	q.push(function(next){
-		fs.createReadStream(path.resolve(__dirname,"../data/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+		fs.createReadStream(path.resolve(__dirname,"../data/static/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			gender[r.epid] = r.gender;
 		}).on("end", function(){
 			console.log("[transform] gender loaded");
@@ -112,7 +110,7 @@ const main = module.exports = async function main(fn) {
 	
 	// load extra_csv for twitter
 	q.push(function(next){
-		fs.createReadStream(path.resolve(__dirname,"../data/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+		fs.createReadStream(path.resolve(__dirname,"../data/mirror/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			if (r.SCREEN_NAME[0] !== "@") return;
 			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1);
 		}).on("end", function(){
@@ -123,7 +121,7 @@ const main = module.exports = async function main(fn) {
 	
 	// load epnews for twitter accounts
 	q.push(function(next){
-		require("../data/epnewshub.json").data.items.forEach(function(r){
+		require("../data/mirror/epnewshub.json").data.items.forEach(function(r){
 			if (!r.codictId) return;
 			if (r.socialNetworks) r.socialNetworks.forEach(function(s){
 				if (s.type !== "twitter") return;
@@ -146,19 +144,15 @@ const main = module.exports = async function main(fn) {
 				total++;
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
 
-				// check if UserID is known
-				if (!mepids.includes(r.UserID) && !inout.hasOwnProperty(r.UserID)) return done();
-			
-				// check if user is active
 				if (!r.active) return done();
+
+				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
+
+				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
 			
 				// check object
 				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
-			
-				// check for this specific userid (unclear why, taken from old code)
-				// in old code, process.exit() was never called because it was chained to console.log with && (console.log is never true-ish) therefore it's commented out. FIXME
-				if (r.UserID === 229839) /* return */ console.error("[transform] encountered user with id '229839'"); //, process.exit(1);
-			
+						
 				// assemble data
 				const data = {
 					meta: r.meta,

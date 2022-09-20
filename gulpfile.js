@@ -44,14 +44,14 @@ const download = exports.download = function download(done){
 	return downloader([
 		{ file: "eugroup.json", url: "https://www.epnewshub.eu/v1/contributor/?type=grouppress&pageSize=50&search-value=&search-type=contributor" },
 		{ file: "meps_str.js", url: "https://www.europarl.europa.eu/hemicycle/js/meps_str.js" }, //used by mepid task to generate mepid.json
-		// { file: "mepid.json", url: "http://www.europarl.europa.eu/meps/en/mepquicksearch.html?term=" },
+		{ file: "mepid.xml", url: "https://www.europarl.europa.eu/meps/en/full-list/xml" },
 		{ file: "extra_csv.csv", url: "https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv" },
 		{ file: "incoming.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml" },
 		{ file: "outgoing.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml" },
 		{ file: "ep_meps_current.json.lz", url: "https://parltrack.org/dumps/ep_meps.json.lz" },
 		{ file: "epnewshub.json", url: "https://www.epnewshub.eu/v1/contributor/?type=mep&pageSize=1000&search-value=&search-type=contributor" },
 	].map(function(src){
-		src.file = path.resolve(__dirname,"data",src.file);
+		src.file = path.resolve(__dirname,"data/mirror",src.file);
 		return src;
 	}), function(){
 		done();
@@ -59,11 +59,11 @@ const download = exports.download = function download(done){
 };
 
 const decompress = exports.decompress = function decompress(done) {
-	return fs.createReadStream('data/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/ep_meps_current.json").on("end", done));
+	return fs.createReadStream('data/mirror/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/mirror/ep_meps_current.json").on("end", done));
 };
 
 const mepid = exports.mepid = function mepid(done) {
-	require("./script/meps_str.js")(done);
+	require("./script/update-meps.js")(done);
 };
 
 const inout = exports.inout = function inout(done) {
@@ -151,4 +151,4 @@ const genderify = exports.genderify = function genderify(done){
 
 exports.build = gulp.parallel(css, js);
 
-exports.default = exports.update = gulp.series(download, decompress, mepid, inout, transform, alias, html);
+exports.default = exports.update = gulp.series(download, decompress, inout, mepid, transform, alias, html);

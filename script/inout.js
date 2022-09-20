@@ -8,7 +8,7 @@ const xml2js = require("xml2js");
 const quu = require("quu");
 const wsv = require("wsv");
 
-const src = path.resolve(__dirname,"../data/%s.xml");
+const src = path.resolve(__dirname,"../data/mirror/%s.xml");
 const dest = path.resolve(__dirname,"../data/inout.%s");
 
 const main = module.exports = async function main(fn) {
@@ -81,7 +81,9 @@ const main = module.exports = async function main(fn) {
 
 			const csv = wsv("csv");
 			csv.pipe(out);
-			result.forEach(function(r){ csv.write(r); });
+			result.sort(function(a,b){
+				return a.start.localeCompare(b.start); // sort by date
+			}).forEach(function(r){ csv.write(r); });
 			csv.end();
 			
 		});

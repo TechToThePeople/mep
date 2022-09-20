@@ -1,1 +1,5634 @@
-[{"id":840,"firstName":"Charles","lastName":"Goerens","group":"Renew","country":"lu","seat":329},{"id":1854,"firstName":"Constanze","lastName":"Krehl","group":"S&D","country":"de","seat":308},{"id":1909,"firstName":"Bernd","lastName":"Lange","group":"S&D","country":"de","seat":237},{"id":1913,"firstName":"Evelyne","lastName":"Gebhardt","group":"S&D","country":"de","seat":469},{"id":1917,"firstName":"Markus","lastName":"Ferber","group":"PPE","country":"de","seat":261},{"id":1927,"firstName":"Peter","lastName":"Liese","group":"PPE","country":"de","seat":263},{"id":1992,"firstName":"José Manuel","lastName":"García-Margallo y Marfil","group":"PPE","country":"es","seat":498},{"id":2054,"firstName":"Heidi","lastName":"Hautala","group":"Verts/ALE","country":"fi","seat":56},{"id":2187,"firstName":"Antonio","lastName":"Tajani","group":"PPE","country":"it","seat":100},{"id":2323,"firstName":"Rainer","lastName":"Wieland","group":"PPE","country":"de","seat":195},{"id":2341,"firstName":"Michael","lastName":"Gahler","group":"PPE","country":"de","seat":206},{"id":4246,"firstName":"Othmar","lastName":"Karas","group":"PPE","country":"at","seat":197},{"id":4253,"firstName":"Frédérique","lastName":"Ries","group":"Renew","country":"be","seat":33},{"id":4267,"firstName":"Udo","lastName":"Bullmann","group":"S&D","country":"de","seat":244},{"id":4289,"firstName":"Angelika","lastName":"Niebler","group":"PPE","country":"de","seat":62},{"id":4344,"firstName":"María Soraya","lastName":"Rodríguez Ramos","group":"Renew","country":"es","seat":735},{"id":4391,"firstName":"Silvio","lastName":"Berlusconi","group":"PPE","country":"it","seat":408},{"id":4465,"firstName":"Raffaele","lastName":"Fitto","group":"ECR","country":"it","seat":40},{"id":4560,"firstName":"Antonius","lastName":"Manders","group":"PPE","country":"nl","seat":587},{"id":4746,"firstName":"Sergio","lastName":"Berlato","group":"ECR","country":"it","seat":596},{"id":5392,"firstName":"Lara","lastName":"Wolters","group":"S&D","country":"nl","seat":798},{"id":5565,"firstName":"Brice","lastName":"Hortefeux","group":"PPE","country":"fr","seat":507},{"id":5729,"firstName":"Kathleen","lastName":"Van Brempt","group":"S&D","country":"be","seat":176},{"id":22858,"firstName":"Fabienne","lastName":"Keller","group":"Renew","country":"fr","seat":650},{"id":23699,"firstName":"Kateřina","lastName":"Konečná","group":"GUE/NGL","country":"cz","seat":533},{"id":23712,"firstName":"Jan","lastName":"Zahradil","group":"ECR","country":"cz","seat":154},{"id":23768,"firstName":"Bogusław","lastName":"Liberadzki","group":"S&D","country":"pl","seat":127},{"id":23781,"firstName":"Janusz","lastName":"Lewandowski","group":"PPE","country":"pl","seat":580},{"id":23788,"firstName":"Adam","lastName":"Bielan","group":"ECR","country":"pl","seat":346},{"id":23816,"firstName":"András","lastName":"Gyürk","group":"PPE","country":"hu","seat":503},{"id":23821,"firstName":"József","lastName":"Szájer","group":"PPE","country":"hu","seat":67},{"id":23868,"firstName":"Monika","lastName":"Beňová","group":"S&D","country":"sk","seat":85},{"id":24505,"firstName":"Emmanuel","lastName":"Maurel","group":"GUE/NGL","country":"fr","seat":536},{"id":24594,"firstName":"Anne","lastName":"Sander","group":"PPE","country":"fr","seat":199},{"id":24922,"firstName":"Pascal","lastName":"Arimont","group":"PPE","country":"be","seat":338},{"id":26837,"firstName":"Lefteris","lastName":"Christoforou","group":"PPE","country":"cy","seat":148},{"id":27714,"firstName":"Edina","lastName":"Tóth","group":"PPE","country":"hu","seat":752},{"id":28115,"firstName":"Mairead","lastName":"McGuinness","group":"PPE","country":"ie","seat":153},{"id":28122,"firstName":"David","lastName":"Casa","group":"PPE","country":"mt","seat":200},{"id":28141,"firstName":"Lívia","lastName":"Járóka","group":"PPE","country":"hu","seat":198},{"id":28150,"firstName":"Kinga","lastName":"Gál","group":"PPE","country":"hu","seat":497},{"id":28161,"firstName":"Margrete","lastName":"Auken","group":"Verts/ALE","country":"dk","seat":134},{"id":28219,"firstName":"Daniel","lastName":"Caspary","group":"PPE","country":"de","seat":61},{"id":28223,"firstName":"Andreas","lastName":"Schwab","group":"PPE","country":"de","seat":265},{"id":28224,"firstName":"Markus","lastName":"Pieper","group":"PPE","country":"de","seat":667},{"id":28226,"firstName":"Christian","lastName":"Ehler","group":"PPE","country":"de","seat":264},{"id":28229,"firstName":"Manfred","lastName":"Weber","group":"PPE","country":"de","seat":15},{"id":28266,"firstName":"Sophia","lastName":"in 't Veld","group":"Renew","country":"nl","seat":398},{"id":28269,"firstName":"Jerzy","lastName":"Buzek","group":"PPE","country":"pl","seat":415},{"id":28288,"firstName":"Jan","lastName":"Olbrycht","group":"PPE","country":"pl","seat":16},{"id":28294,"firstName":"Ljudmila","lastName":"Novak","group":"PPE","country":"si","seat":664},{"id":28297,"firstName":"Jacek","lastName":"Saryusz-Wolski","group":"ECR","country":"pl","seat":511},{"id":28298,"firstName":"Iratxe","lastName":"García Pérez","group":"S&D","country":"es","seat":6},{"id":28340,"firstName":"Patrizia","lastName":"Toia","group":"S&D","country":"it","seat":721},{"id":28347,"firstName":"Javier","lastName":"Moreno Sánchez","group":"S&D","country":"es","seat":86},{"id":28353,"firstName":"Anna","lastName":"Fotyga","group":"ECR","country":"pl","seat":275},{"id":28372,"firstName":"Ryszard","lastName":"Czarnecki","group":"ECR","country":"pl","seat":348},{"id":28389,"firstName":"Zbigniew","lastName":"Kuźmiuk","group":"ECR","country":"pl","seat":432},{"id":28390,"firstName":"Pilar","lastName":"del Castillo Vera","group":"PPE","country":"es","seat":417},{"id":28399,"firstName":"Antonio","lastName":"López-Istúriz White","group":"PPE","country":"es","seat":583},{"id":28400,"firstName":"Francisco José","lastName":"Millán Mon","group":"PPE","country":"es","seat":593},{"id":28586,"firstName":"Dimitrios","lastName":"Papadimoulis","group":"GUE/NGL","country":"gr","seat":48},{"id":28615,"firstName":"Roberts","lastName":"Zīle","group":"ECR","country":"lv","seat":69},{"id":28617,"firstName":"Inese","lastName":"Vaidere","group":"PPE","country":"lv","seat":754},{"id":28619,"firstName":"Tatjana","lastName":"Ždanoka","group":"Verts/ALE","country":"lv","seat":250},{"id":29579,"firstName":"Marc","lastName":"Tarabella","group":"S&D","country":"be","seat":718},{"id":30482,"firstName":"Younous","lastName":"Omarjee","group":"GUE/NGL","country":"fr","seat":49},{"id":33982,"firstName":"Marian-Jean","lastName":"Marinescu","group":"PPE","country":"ro","seat":266},{"id":33997,"firstName":"Corina","lastName":"Crețu","group":"S&D","country":"ro","seat":461},{"id":34578,"firstName":"Robert","lastName":"Hajšel","group":"S&D","country":"sk","seat":541},{"id":35016,"firstName":"Marco","lastName":"Campomenosi","group":"ID","country":"it","seat":358},{"id":36392,"firstName":"Aldo","lastName":"Patriciello","group":"PPE","country":"it","seat":665},{"id":37229,"firstName":"Kati","lastName":"Piri","group":"S&D","country":"nl","seat":28},{"id":37312,"firstName":"Christel","lastName":"Schaldemose","group":"S&D","country":"dk","seat":177},{"id":38398,"firstName":"Esther","lastName":"de Lange","group":"PPE","country":"nl","seat":17},{"id":38420,"firstName":"Cristian-Silviu","lastName":"Buşoi","group":"PPE","country":"ro","seat":203},{"id":38511,"firstName":"Georg","lastName":"Mayer","group":"ID","country":"at","seat":111},{"id":38542,"firstName":"Johan","lastName":"Danielsson","group":"S&D","country":"se","seat":307},{"id":38595,"firstName":"Rovana","lastName":"Plumb","group":"S&D","country":"ro","seat":50},{"id":39725,"firstName":"Iuliu","lastName":"Winkler","group":"PPE","country":"ro","seat":762},{"id":40599,"firstName":"Sirpa","lastName":"Pietikäinen","group":"PPE","country":"fi","seat":147},{"id":58766,"firstName":"Nicolae","lastName":"Ştefănuță","group":"Renew","country":"ro","seat":741},{"id":58789,"firstName":"Jan","lastName":"Huitema","group":"Renew","country":"nl","seat":649},{"id":72779,"firstName":"Nadine","lastName":"Morano","group":"PPE","country":"fr","seat":660},{"id":86793,"firstName":"Anna","lastName":"Cavazzini","group":"Verts/ALE","country":"de","seat":189},{"id":88715,"firstName":"José","lastName":"Gusmão","group":"GUE/NGL","country":"pt","seat":451},{"id":88882,"firstName":"Victor","lastName":"Negrescu","group":"S&D","country":"ro","seat":632},{"id":94649,"firstName":"Catherine","lastName":"Griset","group":"ID","country":"fr","seat":434},{"id":95074,"firstName":"Jeroen","lastName":"Lenaers","group":"PPE","country":"nl","seat":579},{"id":96646,"firstName":"Helmut","lastName":"Scholz","group":"GUE/NGL","country":"de","seat":175},{"id":96648,"firstName":"Philippe","lastName":"Lamberts","group":"Verts/ALE","country":"be","seat":8},{"id":96668,"firstName":"Seán","lastName":"Kelly","group":"PPE","country":"ie","seat":106},{"id":96681,"firstName":"Vilija","lastName":"Blinkevičiūtė","group":"S&D","country":"lt","seat":184},{"id":96697,"firstName":"Valdemar","lastName":"Tomaševski","group":"ECR","country":"lt","seat":274},{"id":96698,"firstName":"Viktor","lastName":"Uspaskich","group":"Renew","country":"lt","seat":328},{"id":96706,"firstName":"João","lastName":"Ferreira","group":"GUE/NGL","country":"pt","seat":82},{"id":96709,"firstName":"Morten","lastName":"Løkkegaard","group":"Renew","country":"dk","seat":34},{"id":96711,"firstName":"Pascal","lastName":"Canfin","group":"Renew","country":"fr","seat":139},{"id":96713,"firstName":"Evžen","lastName":"Tošenovský","group":"ECR","country":"cz","seat":599},{"id":96725,"firstName":"Bas","lastName":"Eickhout","group":"Verts/ALE","country":"nl","seat":30},{"id":96730,"firstName":"Sven","lastName":"Giegold","group":"Verts/ALE","country":"de","seat":394},{"id":96734,"firstName":"Ska","lastName":"Keller","group":"Verts/ALE","country":"de","seat":9},{"id":96739,"firstName":"Reinhard","lastName":"Bütikofer","group":"Verts/ALE","country":"de","seat":187},{"id":96740,"firstName":"Yannick","lastName":"Jadot","group":"Verts/ALE","country":"fr","seat":477},{"id":96743,"firstName":"Michèle","lastName":"Rivasi","group":"Verts/ALE","country":"fr","seat":644},{"id":96747,"firstName":"Arnaud","lastName":"Danjean","group":"PPE","country":"fr","seat":36},{"id":96750,"firstName":"François","lastName":"Alfonsi","group":"Verts/ALE","country":"fr","seat":248},{"id":96752,"firstName":"Martin","lastName":"Häusling","group":"Verts/ALE","country":"de","seat":474},{"id":96756,"firstName":"Sabine","lastName":"Verheyen","group":"PPE","country":"de","seat":205},{"id":96761,"firstName":"Axel","lastName":"Voss","group":"PPE","country":"de","seat":270},{"id":96771,"firstName":"Jarosław","lastName":"Kalinowski","group":"PPE","country":"pl","seat":574},{"id":96772,"firstName":"Peter","lastName":"Jahr","group":"PPE","country":"de","seat":331},{"id":96776,"firstName":"Róża","lastName":"Thun und Hohenstein","group":"PPE","country":"pl","seat":832},{"id":96779,"firstName":"Danuta Maria","lastName":"Hübner","group":"PPE","country":"pl","seat":271},{"id":96780,"firstName":"Monika","lastName":"Hohlmeier","group":"PPE","country":"de","seat":202},{"id":96787,"firstName":"Herbert","lastName":"Dorfmann","group":"PPE","country":"it","seat":101},{"id":96791,"firstName":"Elżbieta Katarzyna","lastName":"Łukacijewska","group":"PPE","country":"pl","seat":584},{"id":96796,"firstName":"Ryszard Antoni","lastName":"Legutko","group":"ECR","country":"pl","seat":18},{"id":96801,"firstName":"Tomasz Piotr","lastName":"Poręba","group":"ECR","country":"pl","seat":155},{"id":96808,"firstName":"Pablo","lastName":"Arias Echeverría","group":"PPE","country":"es","seat":337},{"id":96809,"firstName":"Peter","lastName":"van Dalen","group":"PPE","country":"nl","seat":422},{"id":96810,"firstName":"Carlo","lastName":"Fidanza","group":"ECR","country":"it","seat":156},{"id":96811,"firstName":"Rosa","lastName":"Estaràs Ferragut","group":"PPE","country":"es","seat":491},{"id":96812,"firstName":"Juan Fernando","lastName":"López Aguilar","group":"S&D","country":"es","seat":238},{"id":96820,"firstName":"Marisa","lastName":"Matias","group":"GUE/NGL","country":"pt","seat":80},{"id":96826,"firstName":"Tamás","lastName":"Deutsch","group":"PPE","country":"hu","seat":66},{"id":96829,"firstName":"Ádám","lastName":"Kósa","group":"PPE","country":"hu","seat":502},{"id":96830,"firstName":"Enikő","lastName":"Győri","group":"PPE","country":"hu","seat":501},{"id":96833,"firstName":"Jens","lastName":"Geier","group":"S&D","country":"de","seat":88},{"id":96837,"firstName":"Petra","lastName":"Kammerevert","group":"S&D","country":"de","seat":311},{"id":96842,"firstName":"Ismail","lastName":"Ertug","group":"S&D","country":"de","seat":4},{"id":96844,"firstName":"Norbert","lastName":"Neuser","group":"S&D","country":"de","seat":633},{"id":96852,"firstName":"Cornelia","lastName":"Ernst","group":"GUE/NGL","country":"de","seat":173},{"id":96864,"firstName":"David Maria","lastName":"Sassoli","group":"S&D","country":"it","seat":53},{"id":96867,"firstName":"Maria da Graça","lastName":"Carvalho","group":"PPE","country":"pt","seat":416},{"id":96868,"firstName":"Karima","lastName":"Delli","group":"Verts/ALE","country":"fr","seat":318},{"id":96880,"firstName":"Andrea","lastName":"Cozzolino","group":"S&D","country":"it","seat":460},{"id":96885,"firstName":"Dominique","lastName":"Riquet","group":"Renew","country":"fr","seat":59},{"id":96891,"firstName":"Paolo","lastName":"De Castro","group":"S&D","country":"it","seat":309},{"id":96899,"firstName":"José Manuel","lastName":"Fernandes","group":"PPE","country":"pt","seat":259},{"id":96903,"firstName":"Paulo","lastName":"Rangel","group":"PPE","country":"pt","seat":39},{"id":96911,"firstName":"Tanja","lastName":"Fajon","group":"S&D","country":"si","seat":234},{"id":96922,"firstName":"Izaskun","lastName":"Bilbao Barandica","group":"Renew","country":"es","seat":253},{"id":96932,"firstName":"Birgit","lastName":"Sippel","group":"S&D","country":"de","seat":313},{"id":96933,"firstName":"Milan","lastName":"Zver","group":"PPE","country":"si","seat":767},{"id":96934,"firstName":"Sandra","lastName":"Kalniete","group":"PPE","country":"lv","seat":13},{"id":96936,"firstName":"Gabriel","lastName":"Mato","group":"PPE","country":"es","seat":268},{"id":96952,"firstName":"Sylvie","lastName":"Guillaume","group":"S&D","country":"fr","seat":132},{"id":96978,"firstName":"Nuno","lastName":"Melo","group":"PPE","country":"pt","seat":103},{"id":96991,"firstName":"Eider","lastName":"Gardiazabal Rubial","group":"S&D","country":"es","seat":245},{"id":96998,"firstName":"Evelyn","lastName":"Regner","group":"S&D","country":"at","seat":239},{"id":97058,"firstName":"Guy","lastName":"Verhofstadt","group":"Renew","country":"be","seat":191},{"id":97133,"firstName":"Derk Jan","lastName":"Eppink","group":"ECR","country":"nl","seat":110},{"id":97198,"firstName":"Mara","lastName":"Bizzotto","group":"ID","country":"it","seat":283},{"id":97236,"firstName":"Marie","lastName":"Toussaint","group":"Verts/ALE","country":"fr","seat":726},{"id":97968,"firstName":"Andrey","lastName":"Kovatchev","group":"PPE","country":"bg","seat":37},{"id":98341,"firstName":"Eva","lastName":"Maydell","group":"PPE","country":"bg","seat":590},{"id":98582,"firstName":"Loránt","lastName":"Vincze","group":"PPE","country":"ro","seat":755},{"id":99283,"firstName":"Alessandro","lastName":"Panza","group":"ID","country":"it","seat":527},{"id":99945,"firstName":"Lena","lastName":"Düpont","group":"PPE","country":"de","seat":490},{"id":101039,"firstName":"Paolo","lastName":"Borchia","group":"ID","country":"it","seat":357},{"id":101585,"firstName":"Niels","lastName":"Fuglsang","group":"S&D","country":"dk","seat":465},{"id":103381,"firstName":"Terry","lastName":"Reintke","group":"Verts/ALE","country":"de","seat":90},{"id":103746,"firstName":"Michal","lastName":"Šimečka","group":"Renew","country":"sk","seat":60},{"id":106936,"firstName":"Daniel","lastName":"Freund","group":"Verts/ALE","country":"de","seat":392},{"id":107212,"firstName":"Andrey","lastName":"Novakov","group":"PPE","country":"bg","seat":267},{"id":112611,"firstName":"Petri","lastName":"Sarvamaa","group":"PPE","country":"fi","seat":676},{"id":112744,"firstName":"Tonino","lastName":"Picula","group":"S&D","country":"hr","seat":241},{"id":112747,"firstName":"Romana","lastName":"Jerković","group":"S&D","country":"hr","seat":546},{"id":112748,"firstName":"Biljana","lastName":"Borzan","group":"S&D","country":"hr","seat":51},{"id":113892,"firstName":"Eric","lastName":"Andrieu","group":"S&D","country":"fr","seat":29},{"id":114268,"firstName":"Nils","lastName":"Torvalds","group":"Renew","country":"fi","seat":257},{"id":118859,"firstName":"Roberta","lastName":"Metsola","group":"PPE","country":"mt","seat":150},{"id":118949,"firstName":"Ondřej","lastName":"Kovařík","group":"Renew","country":"cz","seat":653},{"id":119431,"firstName":"Ruža","lastName":"Tomašić","group":"ECR","country":"hr","seat":211},{"id":120478,"firstName":"Martina","lastName":"Michels","group":"GUE/NGL","country":"de","seat":174},{"id":122978,"firstName":"Alicia","lastName":"Homs Ginel","group":"S&D","country":"es","seat":543},{"id":123562,"firstName":"Charlie","lastName":"Weimers","group":"ECR","country":"se","seat":603},{"id":124586,"firstName":"Balázs","lastName":"Hidvéghi","group":"PPE","country":"hu","seat":506},{"id":124691,"firstName":"Costas","lastName":"Mavrides","group":"S&D","country":"cy","seat":179},{"id":124692,"firstName":"Demetris","lastName":"Papadakis","group":"S&D","country":"cy","seat":178},{"id":124693,"firstName":"Pascal","lastName":"Durand","group":"Renew","country":"fr","seat":488},{"id":124696,"firstName":"Andrus","lastName":"Ansip","group":"Renew","country":"ee","seat":254},{"id":124700,"firstName":"Yana","lastName":"Toom","group":"Renew","country":"ee","seat":255},{"id":124701,"firstName":"Luděk","lastName":"Niedermayer","group":"PPE","country":"cz","seat":105},{"id":124704,"firstName":"Stanislav","lastName":"Polčák","group":"PPE","country":"cz","seat":668},{"id":124705,"firstName":"István","lastName":"Ujhelyi","group":"S&D","country":"hu","seat":795},{"id":124708,"firstName":"Dita","lastName":"Charanzová","group":"Renew","country":"cz","seat":96},{"id":124709,"firstName":"Martina","lastName":"Dlabajová","group":"Renew","country":"cz","seat":486},{"id":124710,"firstName":"Michaela","lastName":"Šojdrová","group":"PPE","country":"cz","seat":269},{"id":124712,"firstName":"Andrea","lastName":"Bocskor","group":"PPE","country":"hu","seat":412},{"id":124713,"firstName":"Tomáš","lastName":"Zdechovský","group":"PPE","country":"cz","seat":260},{"id":124714,"firstName":"Andor","lastName":"Deli","group":"PPE","country":"hu","seat":423},{"id":124715,"firstName":"György","lastName":"Hölvényi","group":"PPE","country":"hu","seat":258},{"id":124722,"firstName":"Csaba","lastName":"Molnár","group":"S&D","country":"hu","seat":133},{"id":124726,"firstName":"Henna","lastName":"Virkkunen","group":"PPE","country":"fi","seat":756},{"id":124734,"firstName":"Cláudia","lastName":"Monteiro de Aguiar","group":"PPE","country":"pt","seat":594},{"id":124735,"firstName":"Miapetra","lastName":"Kumpula-Natri","group":"S&D","country":"fi","seat":181},{"id":124738,"firstName":"Gilles","lastName":"Lebreton","group":"ID","country":"fr","seat":521},{"id":124739,"firstName":"Carlos","lastName":"Zorrinho","group":"S&D","country":"pt","seat":126},{"id":124747,"firstName":"Pedro","lastName":"Silva Pereira","group":"S&D","country":"pt","seat":54},{"id":124760,"firstName":"Nicolas","lastName":"Bay","group":"ID","country":"fr","seat":20},{"id":124765,"firstName":"Joëlle","lastName":"Mélin","group":"ID","country":"fr","seat":607},{"id":124766,"firstName":"Petras","lastName":"Auštrevičius","group":"Renew","country":"lt","seat":327},{"id":124770,"firstName":"Jean-François","lastName":"Jalkh","group":"ID","country":"fr","seat":355},{"id":124771,"firstName":"Dominique","lastName":"Bilde","group":"ID","country":"fr","seat":281},{"id":124777,"firstName":"Tiziana","lastName":"Beghin","group":"NI","country":"it","seat":684},{"id":124779,"firstName":"Eleonora","lastName":"Evi","group":"NI","country":"it","seat":774},{"id":124780,"firstName":"Marco","lastName":"Zanni","group":"ID","country":"it","seat":19},{"id":124781,"firstName":"Alfred","lastName":"Sant","group":"S&D","country":"mt","seat":711},{"id":124784,"firstName":"Dan","lastName":"Nica","group":"S&D","country":"ro","seat":89},{"id":124785,"firstName":"Maria","lastName":"Grapini","group":"S&D","country":"ro","seat":539},{"id":124799,"firstName":"Alessandra","lastName":"Moretti","group":"S&D","country":"it","seat":631},{"id":124802,"firstName":"Siegfried","lastName":"Mureşan","group":"PPE","country":"ro","seat":35},{"id":124806,"firstName":"David","lastName":"McAllister","group":"PPE","country":"de","seat":201},{"id":124807,"firstName":"Jens","lastName":"Gieseke","group":"PPE","country":"de","seat":499},{"id":124808,"firstName":"Norbert","lastName":"Lins","group":"PPE","country":"de","seat":204},{"id":124809,"firstName":"Sven","lastName":"Schulze","group":"PPE","country":"de","seat":680},{"id":124812,"firstName":"Fabio Massimo","lastName":"Castaldo","group":"NI","country":"it","seat":685},{"id":124814,"firstName":"Simona","lastName":"Bonafè","group":"S&D","country":"it","seat":5},{"id":124818,"firstName":"Klaus","lastName":"Buchner","group":"Verts/ALE","country":"de","seat":186},{"id":124821,"firstName":"Nicola","lastName":"Danti","group":"Renew","country":"it","seat":324},{"id":124822,"firstName":"Dietmar","lastName":"Köster","group":"S&D","country":"de","seat":549},{"id":124828,"firstName":"Fulvio","lastName":"Martusciello","group":"PPE","country":"it","seat":589},{"id":124831,"firstName":"Isabella","lastName":"Adinolfi","group":"NI","country":"it","seat":855},{"id":124833,"firstName":"Laura","lastName":"Ferrara","group":"NI","country":"it","seat":769},{"id":124834,"firstName":"Martin","lastName":"Sonneborn","group":"NI","country":"de","seat":695},{"id":124835,"firstName":"Rosa","lastName":"D'Amato","group":"NI","country":"it","seat":683},{"id":124836,"firstName":"Maria","lastName":"Noichl","group":"S&D","country":"de","seat":315},{"id":124837,"firstName":"Joachim","lastName":"Schuster","group":"S&D","country":"de","seat":712},{"id":124844,"firstName":"Piernicola","lastName":"Pedicini","group":"NI","country":"it","seat":773},{"id":124846,"firstName":"Pina","lastName":"Picierno","group":"S&D","country":"it","seat":636},{"id":124850,"firstName":"Emil","lastName":"Radev","group":"PPE","country":"bg","seat":672},{"id":124852,"firstName":"Sergei","lastName":"Stanishev","group":"S&D","country":"bg","seat":716},{"id":124856,"firstName":"Ignazio","lastName":"Corrao","group":"NI","country":"it","seat":770},{"id":124861,"firstName":"Caterina","lastName":"Chinnici","group":"S&D","country":"it","seat":456},{"id":124862,"firstName":"Ulrike","lastName":"Müller","group":"Renew","country":"de","seat":251},{"id":124866,"firstName":"Ilhan","lastName":"Kyuchyuk","group":"Renew","country":"bg","seat":194},{"id":124867,"firstName":"Brando","lastName":"Benifei","group":"S&D","country":"it","seat":87},{"id":124872,"firstName":"Morten","lastName":"Petersen","group":"Renew","country":"dk","seat":252},{"id":124873,"firstName":"Angel","lastName":"Dzhambazki","group":"ECR","country":"bg","seat":68},{"id":124877,"firstName":"Jadwiga","lastName":"Wiśniewska","group":"ECR","country":"pl","seat":604},{"id":124884,"firstName":"Kosma","lastName":"Złotowski","group":"ECR","country":"pl","seat":157},{"id":124887,"firstName":"Karol","lastName":"Karski","group":"ECR","country":"pl","seat":272},{"id":124891,"firstName":"Zdzisław","lastName":"Krasnodębski","group":"ECR","country":"pl","seat":276},{"id":124895,"firstName":"Krzysztof","lastName":"Hetman","group":"PPE","country":"pl","seat":64},{"id":124929,"firstName":"Ivan","lastName":"Štefanec","group":"PPE","country":"sk","seat":143},{"id":124934,"firstName":"Monika","lastName":"Vana","group":"Verts/ALE","country":"at","seat":727},{"id":124936,"firstName":"Maria","lastName":"Arena","group":"S&D","country":"be","seat":240},{"id":124970,"firstName":"Miriam","lastName":"Dalli","group":"S&D","country":"mt","seat":7},{"id":124972,"firstName":"Ernest","lastName":"Urtasun","group":"Verts/ALE","country":"es","seat":55},{"id":124973,"firstName":"Gerolf","lastName":"Annemans","group":"ID","country":"be","seat":41},{"id":124985,"firstName":"Luke Ming","lastName":"Flanagan","group":"GUE/NGL","country":"ie","seat":454},{"id":124988,"firstName":"Deirdre","lastName":"Clune","group":"PPE","country":"ie","seat":418},{"id":124989,"firstName":"Fredrick","lastName":"Federley","group":"Renew","country":"se","seat":94},{"id":124991,"firstName":"Jytte","lastName":"Guteland","group":"S&D","country":"se","seat":306},{"id":124992,"firstName":"Malin","lastName":"Björk","group":"GUE/NGL","country":"se","seat":376},{"id":124996,"firstName":"Peter","lastName":"Lundgren","group":"ECR","country":"se","seat":108},{"id":125001,"firstName":"Harald","lastName":"Vilimsky","group":"ID","country":"at","seat":112},{"id":125004,"firstName":"Franc","lastName":"Bogovič","group":"PPE","country":"si","seat":413},{"id":125005,"firstName":"Javier","lastName":"Nart","group":"Renew","country":"es","seat":737},{"id":125012,"firstName":"Daniel","lastName":"Buda","group":"PPE","country":"ro","seat":414},{"id":125020,"firstName":"Paul","lastName":"Tang","group":"S&D","country":"nl","seat":717},{"id":125021,"firstName":"Agnes","lastName":"Jongerius","group":"S&D","country":"nl","seat":129},{"id":125023,"firstName":"Anja","lastName":"Hazekamp","group":"GUE/NGL","country":"nl","seat":452},{"id":125025,"firstName":"Marcel","lastName":"de Graaff","group":"ID","country":"nl","seat":160},{"id":125027,"firstName":"Esteban","lastName":"González Pons","group":"PPE","country":"es","seat":14},{"id":125030,"firstName":"Annie","lastName":"Schreijer-Pierik","group":"PPE","country":"nl","seat":679},{"id":125038,"firstName":"Maite","lastName":"Pagazaurtundúa","group":"Renew","country":"es","seat":659},{"id":125042,"firstName":"Javi","lastName":"López","group":"S&D","country":"es","seat":553},{"id":125043,"firstName":"Inma","lastName":"Rodríguez-Piñero","group":"S&D","country":"es","seat":707},{"id":125045,"firstName":"Clara","lastName":"Aguilera","group":"S&D","country":"es","seat":310},{"id":125046,"firstName":"Jonás","lastName":"Fernández","group":"S&D","country":"es","seat":305},{"id":125063,"firstName":"Georgios","lastName":"Kyrtsos","group":"PPE","country":"gr","seat":578},{"id":125064,"firstName":"Maria","lastName":"Spyraki","group":"PPE","country":"gr","seat":749},{"id":125065,"firstName":"Elissavet","lastName":"Vozemberg-Vrionidi","group":"PPE","country":"gr","seat":757},{"id":125067,"firstName":"Theodoros","lastName":"Zagorakis","group":"PPE","country":"gr","seat":763},{"id":125068,"firstName":"Manolis","lastName":"Kefalogiannis","group":"PPE","country":"gr","seat":576},{"id":125093,"firstName":"Kostas","lastName":"Papadakis","group":"NI","country":"gr","seat":782},{"id":125104,"firstName":"Romana","lastName":"Tomc","group":"PPE","country":"si","seat":146},{"id":125106,"firstName":"Johan","lastName":"Van Overtveldt","group":"ECR","country":"be","seat":277},{"id":125109,"firstName":"Eva","lastName":"Kaili","group":"S&D","country":"gr","seat":547},{"id":125110,"firstName":"Nikos","lastName":"Androulakis","group":"S&D","country":"gr","seat":182},{"id":125128,"firstName":"Iskra","lastName":"Mihaylova","group":"Renew","country":"bg","seat":12},{"id":125214,"firstName":"Bronis","lastName":"Ropė","group":"Verts/ALE","country":"lt","seat":646},{"id":125237,"firstName":"Marco","lastName":"Zullo","group":"NI","country":"it","seat":771},{"id":125670,"firstName":"Massimiliano","lastName":"Salini","group":"PPE","country":"it","seat":675},{"id":125706,"firstName":"Jiří","lastName":"Pospíšil","group":"PPE","country":"cz","seat":671},{"id":126644,"firstName":"Jordi","lastName":"Cañas","group":"Renew","country":"es","seat":481},{"id":127096,"firstName":"Domènec","lastName":"Ruiz Devesa","group":"S&D","country":"es","seat":314},{"id":128483,"firstName":"Markus","lastName":"Buchheit","group":"ID","country":"de","seat":362},{"id":129073,"firstName":"Urmas","lastName":"Paet","group":"Renew","country":"ee","seat":658},{"id":130100,"firstName":"Hilde","lastName":"Vautmans","group":"Renew","country":"be","seat":193},{"id":130256,"firstName":"Dace","lastName":"Melbārde","group":"ECR","country":"lv","seat":516},{"id":130833,"firstName":"Stelios","lastName":"Kouloglou","group":"GUE/NGL","country":"gr","seat":302},{"id":131507,"firstName":"Miguel","lastName":"Urbán Crespo","group":"GUE/NGL","country":"es","seat":124},{"id":131580,"firstName":"Jordan","lastName":"Bardella","group":"ID","country":"fr","seat":279},{"id":132191,"firstName":"Gunnar","lastName":"Beck","group":"ID","country":"de","seat":286},{"id":134605,"firstName":"Ramona","lastName":"Strugariu","group":"Renew","country":"ro","seat":742},{"id":135511,"firstName":"Valerie","lastName":"Hayer","group":"Renew","country":"fr","seat":572},{"id":182995,"firstName":"Annika","lastName":"Bruna","group":"ID","country":"fr","seat":437},{"id":183338,"firstName":"Jakop G.","lastName":"Dalunde","group":"Verts/ALE","country":"se","seat":317},{"id":183793,"firstName":"Angelo","lastName":"Ciocca","group":"ID","country":"it","seat":439},{"id":183916,"firstName":"Alexandra","lastName":"Geese","group":"Verts/ALE","country":"de","seat":393},{"id":185341,"firstName":"Željana","lastName":"Zovko","group":"PPE","country":"hr","seat":766},{"id":185619,"firstName":"Tiemo","lastName":"Wölken","group":"S&D","country":"de","seat":312},{"id":185771,"firstName":"Tom","lastName":"Vandendriessche","group":"ID","country":"be","seat":162},{"id":187917,"firstName":"Marc","lastName":"Botenga","group":"GUE/NGL","country":"be","seat":373},{"id":188945,"firstName":"Dennis","lastName":"Radtke","group":"PPE","country":"de","seat":262},{"id":189065,"firstName":"France","lastName":"Jamet","group":"ID","country":"fr","seat":436},{"id":189525,"firstName":"Asim","lastName":"Ademov","group":"PPE","country":"bg","seat":334},{"id":190464,"firstName":"Thomas","lastName":"Waitz","group":"Verts/ALE","country":"at","seat":91},{"id":190517,"firstName":"Martin","lastName":"Schirdewan","group":"GUE/NGL","country":"de","seat":3},{"id":190518,"firstName":"Jörg","lastName":"Meuthen","group":"ID","country":"de","seat":42},{"id":190519,"firstName":"Caroline","lastName":"Nagtegaal","group":"Renew","country":"nl","seat":656},{"id":190713,"firstName":"Lukas","lastName":"Mandl","group":"PPE","country":"at","seat":588},{"id":190774,"firstName":"Geoffroy","lastName":"Didier","group":"PPE","country":"fr","seat":425},{"id":191693,"firstName":"Elsi","lastName":"Katainen","group":"Renew","country":"fi","seat":256},{"id":192634,"firstName":"Giuseppe","lastName":"Ferrandino","group":"S&D","country":"it","seat":464},{"id":192635,"firstName":"Danilo Oscar","lastName":"Lancini","group":"ID","country":"it","seat":525},{"id":193273,"firstName":"Romeo","lastName":"Franz","group":"Verts/ALE","country":"de","seat":321},{"id":193292,"firstName":"Tilly","lastName":"Metz","group":"Verts/ALE","country":"lu","seat":559},{"id":193419,"firstName":"Christophe","lastName":"Hansen","group":"PPE","country":"lu","seat":149},{"id":197390,"firstName":"Sara","lastName":"Skyttedal","group":"PPE","country":"se","seat":747},{"id":197391,"firstName":"Heléne","lastName":"Fritzon","group":"S&D","country":"se","seat":26},{"id":197392,"firstName":"Evin","lastName":"Incir","group":"S&D","country":"se","seat":545},{"id":197393,"firstName":"David","lastName":"Lega","group":"PPE","country":"se","seat":837},{"id":197394,"firstName":"Josianne","lastName":"Cutajar","group":"S&D","country":"mt","seat":462},{"id":197395,"firstName":"Alice","lastName":"Kuhnke","group":"Verts/ALE","country":"se","seat":31},{"id":197396,"firstName":"Erik","lastName":"Bergkvist","group":"S&D","country":"se","seat":622},{"id":197398,"firstName":"Pär","lastName":"Holmgren","group":"Verts/ALE","country":"se","seat":476},{"id":197399,"firstName":"Jessica","lastName":"Stegrud","group":"ECR","country":"se","seat":687},{"id":197400,"firstName":"Abir","lastName":"Al-Sahlani","group":"Renew","country":"se","seat":404},{"id":197401,"firstName":"Karin","lastName":"Karlsbro","group":"Renew","country":"se","seat":401},{"id":197402,"firstName":"Tomas","lastName":"Tobé","group":"PPE","country":"se","seat":104},{"id":197403,"firstName":"Alex","lastName":"Agius Saliba","group":"S&D","country":"mt","seat":316},{"id":197404,"firstName":"Jessica","lastName":"Polfjärd","group":"PPE","country":"se","seat":669},{"id":197405,"firstName":"Jörgen","lastName":"Warborn","group":"PPE","country":"se","seat":760},{"id":197406,"firstName":"Arba","lastName":"Kokalari","group":"PPE","country":"se","seat":577},{"id":197408,"firstName":"Hildegard","lastName":"Bentele","group":"PPE","country":"de","seat":343},{"id":197410,"firstName":"Stefan","lastName":"Berger","group":"PPE","country":"de","seat":345},{"id":197412,"firstName":"Niclas","lastName":"Herbst","group":"PPE","country":"de","seat":505},{"id":197413,"firstName":"Karlo","lastName":"Ressler","group":"PPE","country":"hr","seat":673},{"id":197414,"firstName":"Loucas","lastName":"Fourlas","group":"PPE","country":"cy","seat":494},{"id":197415,"firstName":"Niyazi","lastName":"Kizilyürek","group":"GUE/NGL","country":"cy","seat":233},{"id":197416,"firstName":"Giorgos","lastName":"Georgiou","group":"GUE/NGL","country":"cy","seat":232},{"id":197417,"firstName":"Tomislav","lastName":"Sokol","group":"PPE","country":"hr","seat":748},{"id":197418,"firstName":"Monica","lastName":"Semedo","group":"Renew","country":"lu","seat":739},{"id":197419,"firstName":"Valter","lastName":"Flego","group":"Renew","country":"hr","seat":323},{"id":197420,"firstName":"Kris","lastName":"Peeters","group":"PPE","country":"be","seat":144},{"id":197421,"firstName":"Isabel","lastName":"Wiseler-Lima","group":"PPE","country":"lu","seat":332},{"id":197422,"firstName":"Christine","lastName":"Schneider","group":"PPE","country":"de","seat":678},{"id":197423,"firstName":"Nico","lastName":"Semsrott","group":"Verts/ALE","country":"de","seat":724},{"id":197425,"firstName":"Ralf","lastName":"Seekatz","group":"PPE","country":"de","seat":681},{"id":197426,"firstName":"Sven","lastName":"Simon","group":"PPE","country":"de","seat":746},{"id":197427,"firstName":"Marlene","lastName":"Mortler","group":"PPE","country":"de","seat":661},{"id":197429,"firstName":"Marion","lastName":"Walsmann","group":"PPE","country":"de","seat":759},{"id":197430,"firstName":"Engin","lastName":"Eroglu","group":"Renew","country":"de","seat":562},{"id":197431,"firstName":"Patrick","lastName":"Breyer","group":"Verts/ALE","country":"de","seat":556},{"id":197432,"firstName":"Jan-Christoph","lastName":"Oetjen","group":"Renew","country":"de","seat":657},{"id":197433,"firstName":"Katarina","lastName":"Barley","group":"S&D","country":"de","seat":83},{"id":197434,"firstName":"Martin","lastName":"Buschmann","group":"NI","country":"de","seat":778},{"id":197435,"firstName":"Gabriele","lastName":"Bischoff","group":"S&D","country":"de","seat":385},{"id":197436,"firstName":"Helmut","lastName":"Geuking","group":"ECR","country":"de","seat":351},{"id":197437,"firstName":"Nicola","lastName":"Beer","group":"Renew","country":"de","seat":97},{"id":197438,"firstName":"Mislav","lastName":"Kolakušić","group":"NI","country":"hr","seat":777},{"id":197439,"firstName":"Damian","lastName":"Boeselager","group":"Verts/ALE","country":"de","seat":137},{"id":197440,"firstName":"Delara","lastName":"Burkhardt","group":"S&D","country":"de","seat":387},{"id":197441,"firstName":"Predrag Fred","lastName":"Matić","group":"S&D","country":"hr","seat":628},{"id":197443,"firstName":"Andreas","lastName":"Glück","group":"Renew","country":"de","seat":565},{"id":197444,"firstName":"Svenja","lastName":"Hahn","group":"Renew","country":"de","seat":571},{"id":197445,"firstName":"Moritz","lastName":"Körner","group":"Renew","country":"de","seat":652},{"id":197446,"firstName":"Milan","lastName":"Brglez","group":"S&D","country":"si","seat":386},{"id":197447,"firstName":"Irena","lastName":"Joveva","group":"Renew","country":"si","seat":402},{"id":197448,"firstName":"Rasmus","lastName":"Andresen","group":"Verts/ALE","country":"de","seat":93},{"id":197449,"firstName":"Michael","lastName":"Bloss","group":"Verts/ALE","country":"de","seat":136},{"id":197451,"firstName":"Viola","lastName":"Von Cramon-Taubadel","group":"Verts/ALE","country":"de","seat":729},{"id":197452,"firstName":"Klemen","lastName":"Grošelj","group":"Renew","country":"si","seat":568},{"id":197453,"firstName":"Anna","lastName":"Deparnay-Grunenberg","group":"Verts/ALE","country":"de","seat":319},{"id":197455,"firstName":"Cindy","lastName":"Franssen","group":"PPE","country":"be","seat":496},{"id":197457,"firstName":"Henrike","lastName":"Hahn","group":"Verts/ALE","country":"de","seat":397},{"id":197458,"firstName":"Benoît","lastName":"Lutgen","group":"PPE","country":"be","seat":585},{"id":197459,"firstName":"Pierrette","lastName":"Herzberger-Fofana","group":"Verts/ALE","country":"de","seat":475},{"id":197460,"firstName":"Sergey","lastName":"Lagodinsky","group":"Verts/ALE","country":"de","seat":557},{"id":197461,"firstName":"Katrin","lastName":"Langensiepen","group":"Verts/ALE","country":"de","seat":640},{"id":197462,"firstName":"Erik","lastName":"Marquardt","group":"Verts/ALE","country":"de","seat":558},{"id":197463,"firstName":"Olivier","lastName":"Chastel","group":"Renew","country":"be","seat":192},{"id":197464,"firstName":"Hannah","lastName":"Neumann","group":"Verts/ALE","country":"de","seat":560},{"id":197465,"firstName":"Niklas","lastName":"Nienaß","group":"Verts/ALE","country":"de","seat":561},{"id":197466,"firstName":"Jutta","lastName":"Paulus","group":"Verts/ALE","country":"de","seat":642},{"id":197467,"firstName":"Geert","lastName":"Bourgeois","group":"ECR","country":"be","seat":209},{"id":197468,"firstName":"Özlem","lastName":"Demirel","group":"GUE/NGL","country":"de","seat":172},{"id":197469,"firstName":"Assita","lastName":"Kanko","group":"ECR","country":"be","seat":109},{"id":197470,"firstName":"Saskia","lastName":"Bricmont","group":"Verts/ALE","country":"be","seat":185},{"id":197471,"firstName":"Petra","lastName":"De Sutter","group":"Verts/ALE","country":"be","seat":320},{"id":197472,"firstName":"Filip","lastName":"De Man","group":"ID","country":"be","seat":161},{"id":197473,"firstName":"Christian","lastName":"Doleschal","group":"PPE","country":"de","seat":426},{"id":197475,"firstName":"Christine","lastName":"Anderson","group":"ID","country":"de","seat":529},{"id":197478,"firstName":"Lars Patrick","lastName":"Berg","group":"ID","country":"de","seat":361},{"id":197480,"firstName":"Nicolaus","lastName":"Fest","group":"ID","country":"de","seat":285},{"id":197481,"firstName":"Maximilian","lastName":"Krah","group":"ID","country":"de","seat":218},{"id":197482,"firstName":"Joachim","lastName":"Kuhs","group":"ID","country":"de","seat":217},{"id":197483,"firstName":"Sylvia","lastName":"Limmer","group":"ID","country":"de","seat":443},{"id":197488,"firstName":"Guido","lastName":"Reil","group":"ID","country":"de","seat":528},{"id":197489,"firstName":"Bernhard","lastName":"Zimniok","group":"ID","country":"de","seat":444},{"id":197490,"firstName":"Magdalena","lastName":"Adamowicz","group":"PPE","country":"pl","seat":333},{"id":197491,"firstName":"Marina","lastName":"Kaljurand","group":"S&D","country":"ee","seat":180},{"id":197492,"firstName":"Bartosz","lastName":"Arłukowicz","group":"PPE","country":"pl","seat":339},{"id":197493,"firstName":"Jaak","lastName":"Madison","group":"ID","country":"ee","seat":114},{"id":197494,"firstName":"Nathalie","lastName":"Loiseau","group":"Renew","country":"fr","seat":140},{"id":197495,"firstName":"Marek Paweł","lastName":"Balt","group":"S&D","country":"pl","seat":381},{"id":197496,"firstName":"Marek","lastName":"Belka","group":"S&D","country":"pl","seat":383},{"id":197497,"firstName":"Sven","lastName":"Mikser","group":"S&D","country":"ee","seat":243},{"id":197498,"firstName":"Robert","lastName":"Biedroń","group":"S&D","country":"pl","seat":128},{"id":197499,"firstName":"Chrysoula","lastName":"Zacharopoulou","group":"Renew","country":"fr","seat":818},{"id":197500,"firstName":"Mounir","lastName":"Satouri","group":"Verts/ALE","country":"fr","seat":723},{"id":197501,"firstName":"Joachim Stanisław","lastName":"Brudziński","group":"ECR","country":"pl","seat":347},{"id":197502,"firstName":"Marie-Pierre","lastName":"Vedrenne","group":"Renew","country":"fr","seat":816},{"id":197503,"firstName":"David","lastName":"Cormand","group":"Verts/ALE","country":"fr","seat":246},{"id":197504,"firstName":"Jérémy","lastName":"Decerle","group":"Renew","country":"fr","seat":485},{"id":197505,"firstName":"Catherine","lastName":"Chabaud","group":"Renew","country":"fr","seat":482},{"id":197506,"firstName":"Caroline","lastName":"Roose","group":"Verts/ALE","country":"fr","seat":645},{"id":197507,"firstName":"Włodzimierz","lastName":"Cimoszewicz","group":"S&D","country":"pl","seat":457},{"id":197508,"firstName":"Stéphane","lastName":"Séjourné","group":"Renew","country":"fr","seat":322},{"id":197510,"firstName":"Jarosław","lastName":"Duda","group":"PPE","country":"pl","seat":489},{"id":197511,"firstName":"Salima","lastName":"Yenbou","group":"Verts/ALE","country":"fr","seat":731},{"id":197512,"firstName":"Benoît","lastName":"Biteau","group":"Verts/ALE","country":"fr","seat":135},{"id":197513,"firstName":"Tomasz","lastName":"Frankowski","group":"PPE","country":"pl","seat":495},{"id":197514,"firstName":"Andrzej","lastName":"Halicki","group":"PPE","country":"pl","seat":63},{"id":197515,"firstName":"Pernille","lastName":"Weiss","group":"PPE","country":"dk","seat":151},{"id":197516,"firstName":"Patryk","lastName":"Jaki","group":"ECR","country":"pl","seat":353},{"id":197517,"firstName":"Adam","lastName":"Jarubas","group":"PPE","country":"pl","seat":508},{"id":197518,"firstName":"Krzysztof","lastName":"Jurgiel","group":"ECR","country":"pl","seat":352},{"id":197519,"firstName":"Beata","lastName":"Kempa","group":"ECR","country":"pl","seat":427},{"id":197520,"firstName":"Izabela-Helena","lastName":"Kloc","group":"ECR","country":"pl","seat":428},{"id":197521,"firstName":"Manuel","lastName":"Bompard","group":"GUE/NGL","country":"fr","seat":534},{"id":197522,"firstName":"Radka","lastName":"Maxová","group":"Renew","country":"cz","seat":654},{"id":197523,"firstName":"Łukasz","lastName":"Kohut","group":"S&D","country":"pl","seat":548},{"id":197525,"firstName":"Ewa","lastName":"Kopacz","group":"PPE","country":"pl","seat":196},{"id":197526,"firstName":"Martin","lastName":"Hlaváček","group":"Renew","country":"cz","seat":647},{"id":197527,"firstName":"Anne-Sophie","lastName":"Pelletier","group":"GUE/NGL","country":"fr","seat":537},{"id":197528,"firstName":"Ondřej","lastName":"Knotek","group":"Renew","country":"cz","seat":651},{"id":197529,"firstName":"Leila","lastName":"Chaibi","group":"GUE/NGL","country":"fr","seat":535},{"id":197530,"firstName":"Joanna","lastName":"Kopcińska","group":"ECR","country":"pl","seat":429},{"id":197531,"firstName":"Gwendoline","lastName":"Delbos-Corfield","group":"Verts/ALE","country":"fr","seat":57},{"id":197532,"firstName":"Elżbieta","lastName":"Kruk","group":"ECR","country":"pl","seat":431},{"id":197533,"firstName":"Manon","lastName":"Aubry","group":"GUE/NGL","country":"fr","seat":25},{"id":197534,"firstName":"François-Xavier","lastName":"Bellamy","group":"PPE","country":"fr","seat":99},{"id":197535,"firstName":"Agnès","lastName":"Evren","group":"PPE","country":"fr","seat":492},{"id":197536,"firstName":"Nathalie","lastName":"Colin-Oesterlé","group":"PPE","country":"fr","seat":421},{"id":197537,"firstName":"Alexandr","lastName":"Vondra","group":"ECR","country":"cz","seat":600},{"id":197538,"firstName":"Beata","lastName":"Mazurek","group":"ECR","country":"pl","seat":510},{"id":197539,"firstName":"Mikuláš","lastName":"Peksa","group":"Verts/ALE","country":"cz","seat":555},{"id":197540,"firstName":"Leszek","lastName":"Miller","group":"S&D","country":"pl","seat":630},{"id":197541,"firstName":"Andżelika Anna","lastName":"Możdżanowska","group":"ECR","country":"pl","seat":597},{"id":197542,"firstName":"Janina","lastName":"Ochojska","group":"PPE","country":"pl","seat":833},{"id":197543,"firstName":"Bernard","lastName":"Guetta","group":"Renew","country":"fr","seat":570},{"id":197544,"firstName":"Elżbieta","lastName":"Rafalska","group":"ECR","country":"pl","seat":513},{"id":197545,"firstName":"Bogdan","lastName":"Rzońca","group":"ECR","country":"pl","seat":517},{"id":197546,"firstName":"Marcel","lastName":"Kolaja","group":"Verts/ALE","country":"cz","seat":473},{"id":197547,"firstName":"Irène","lastName":"Tolleret","group":"Renew","country":"fr","seat":743},{"id":197548,"firstName":"Radosław","lastName":"Sikorski","group":"PPE","country":"pl","seat":745},{"id":197549,"firstName":"Markéta","lastName":"Gregorová","group":"Verts/ALE","country":"cz","seat":472},{"id":197550,"firstName":"Sylwia","lastName":"Spurek","group":"S&D","country":"pl","seat":715},{"id":197551,"firstName":"Stéphane","lastName":"Bijoux","group":"Renew","country":"fr","seat":479},{"id":197552,"firstName":"Veronika","lastName":"Vrecionová","group":"ECR","country":"cz","seat":601},{"id":197553,"firstName":"Beata","lastName":"Szydło","group":"ECR","country":"pl","seat":210},{"id":197554,"firstName":"Luis","lastName":"Garicano","group":"Renew","country":"es","seat":58},{"id":197555,"firstName":"Søren","lastName":"Gade","group":"Renew","country":"dk","seat":564},{"id":197556,"firstName":"Ivan","lastName":"David","group":"ID","country":"cz","seat":158},{"id":197557,"firstName":"Christophe","lastName":"Grudler","group":"Renew","country":"fr","seat":569},{"id":197558,"firstName":"Asger","lastName":"Christensen","group":"Renew","country":"dk","seat":483},{"id":197559,"firstName":"Grzegorz","lastName":"Tobiszowski","group":"ECR","country":"pl","seat":688},{"id":197563,"firstName":"Mauri","lastName":"Pekkarinen","group":"Renew","country":"fi","seat":732},{"id":197564,"firstName":"Hynek","lastName":"Blaško","group":"ID","country":"cz","seat":159},{"id":197566,"firstName":"Witold Jan","lastName":"Waszczykowski","group":"ECR","country":"pl","seat":602},{"id":197567,"firstName":"Karen","lastName":"Melchior","group":"Renew","country":"dk","seat":655},{"id":197570,"firstName":"Peter","lastName":"Kofod","group":"ID","country":"dk","seat":72},{"id":197571,"firstName":"Nikolaj","lastName":"Villumsen","group":"GUE/NGL","country":"dk","seat":81},{"id":197572,"firstName":"Anna","lastName":"Zalewska","group":"ECR","country":"pl","seat":512},{"id":197573,"firstName":"Kira Marie","lastName":"Peter-Hansen","group":"Verts/ALE","country":"dk","seat":643},{"id":197574,"firstName":"Damien","lastName":"Carême","group":"Verts/ALE","country":"fr","seat":188},{"id":197576,"firstName":"Sylvie","lastName":"Brunet","group":"Renew","country":"fr","seat":95},{"id":197577,"firstName":"Gilles","lastName":"Boyer","group":"Renew","country":"fr","seat":138},{"id":197578,"firstName":"Silvia","lastName":"Sardone","group":"ID","country":"it","seat":612},{"id":197579,"firstName":"Klára","lastName":"Dobrev","group":"S&D","country":"hu","seat":84},{"id":197580,"firstName":"Isabella","lastName":"Tovaglieri","group":"ID","country":"it","seat":615},{"id":197581,"firstName":"Stéphanie","lastName":"Yon-Courtin","group":"Renew","country":"fr","seat":817},{"id":197582,"firstName":"Gianna","lastName":"Gancia","group":"ID","country":"it","seat":523},{"id":197584,"firstName":"Sándor","lastName":"Rónai","group":"S&D","country":"hu","seat":708},{"id":197585,"firstName":"Pierre","lastName":"Karleskind","group":"Renew","country":"fr","seat":141},{"id":197586,"firstName":"Stefania","lastName":"Zambelli","group":"ID","country":"it","seat":617},{"id":197587,"firstName":"Attila","lastName":"Ara-Kovács","group":"S&D","country":"hu","seat":379},{"id":197588,"firstName":"Katalin","lastName":"Cseh","group":"Renew","country":"hu","seat":32},{"id":197589,"firstName":"Laurence","lastName":"Farreng","group":"Renew","country":"fr","seat":563},{"id":197590,"firstName":"Giuliano","lastName":"Pisapia","group":"S&D","country":"it","seat":637},{"id":197591,"firstName":"Irene","lastName":"Tinagli","group":"S&D","country":"it","seat":236},{"id":197592,"firstName":"Pierfrancesco","lastName":"Majorino","group":"S&D","country":"it","seat":624},{"id":197593,"firstName":"Véronique","lastName":"Trillet-Lenoir","group":"Renew","country":"fr","seat":744},{"id":197594,"firstName":"Laura","lastName":"Huhtasaari","group":"ID","country":"fi","seat":71},{"id":197595,"firstName":"Anna Júlia","lastName":"Donáth","group":"Renew","country":"hu","seat":487},{"id":197596,"firstName":"Teuvo","lastName":"Hakkarainen","group":"ID","country":"fi","seat":70},{"id":197597,"firstName":"Hélène","lastName":"Laporte","group":"ID","country":"fr","seat":520},{"id":197606,"firstName":"Javier","lastName":"Zarzalejos","group":"PPE","country":"es","seat":764},{"id":197607,"firstName":"Pietro","lastName":"Fiocchi","group":"ECR","country":"it","seat":430},{"id":197608,"firstName":"Gianantonio","lastName":"Da Re","group":"ID","country":"it","seat":441},{"id":197610,"firstName":"Alessandra","lastName":"Basso","group":"ID","country":"it","seat":282},{"id":197611,"firstName":"Elena","lastName":"Lizzi","group":"ID","country":"it","seat":526},{"id":197614,"firstName":"Marco","lastName":"Dreosto","group":"ID","country":"it","seat":522},{"id":197615,"firstName":"Jérôme","lastName":"Rivière","group":"ID","country":"fr","seat":213},{"id":197616,"firstName":"Rosanna","lastName":"Conte","group":"ID","country":"it","seat":440},{"id":197617,"firstName":"Carlo","lastName":"Calenda","group":"S&D","country":"it","seat":388},{"id":197618,"firstName":"Elisabetta","lastName":"Gualmini","group":"S&D","country":"it","seat":540},{"id":197619,"firstName":"Sabrina","lastName":"Pignedoli","group":"NI","country":"it","seat":682},{"id":197621,"firstName":"Juan Ignacio","lastName":"Zoido Álvarez","group":"PPE","country":"es","seat":765},{"id":197623,"firstName":"Thierry","lastName":"Mariani","group":"ID","country":"fr","seat":214},{"id":197624,"firstName":"Ivars","lastName":"Ijabs","group":"Renew","country":"lv","seat":326},{"id":197626,"firstName":"Herve","lastName":"Juvin","group":"ID","country":"fr","seat":519},{"id":197627,"firstName":"Virginie","lastName":"Joron","group":"ID","country":"fr","seat":518},{"id":197628,"firstName":"Jean-Paul","lastName":"Garraud","group":"ID","country":"fr","seat":435},{"id":197629,"firstName":"Maxette","lastName":"Pirbakas","group":"ID","country":"fr","seat":609},{"id":197631,"firstName":"Dacian","lastName":"Cioloş","group":"Renew","country":"ro","seat":11},{"id":197632,"firstName":"Claudia","lastName":"Gamon","group":"Renew","country":"at","seat":190},{"id":197634,"firstName":"Pedro","lastName":"Marques","group":"S&D","country":"pt","seat":627},{"id":197635,"firstName":"Maria Manuel","lastName":"Leitão Marques","group":"S&D","country":"pt","seat":552},{"id":197636,"firstName":"Ioan-Rareş","lastName":"Bogdan","group":"PPE","country":"ro","seat":65},{"id":197637,"firstName":"Vasile","lastName":"Blaga","group":"PPE","country":"ro","seat":411},{"id":197638,"firstName":"Margarida","lastName":"Marques","group":"S&D","country":"pt","seat":626},{"id":197641,"firstName":"Sara","lastName":"Cerdas","group":"S&D","country":"pt","seat":390},{"id":197645,"firstName":"Francisco","lastName":"Guerreiro","group":"Verts/ALE","country":"pt","seat":396},{"id":197646,"firstName":"Mircea-Gheorghe","lastName":"Hava","group":"PPE","country":"ro","seat":504},{"id":197647,"firstName":"Dan-Ştefan","lastName":"Motreanu","group":"PPE","country":"ro","seat":662},{"id":197648,"firstName":"Alexander","lastName":"Bernhuber","group":"PPE","country":"at","seat":409},{"id":197649,"firstName":"Gheorghe","lastName":"Falcă","group":"PPE","country":"ro","seat":493},{"id":197650,"firstName":"Isabel","lastName":"Santos","group":"S&D","country":"pt","seat":242},{"id":197651,"firstName":"Carmen","lastName":"Avram","group":"S&D","country":"ro","seat":380},{"id":197652,"firstName":"Angelika","lastName":"Winzig","group":"PPE","country":"at","seat":102},{"id":197653,"firstName":"Claudiu","lastName":"Manda","group":"S&D","country":"ro","seat":304},{"id":197654,"firstName":"Ciarán","lastName":"Cuffe","group":"Verts/ALE","country":"ie","seat":247},{"id":197655,"firstName":"Cristian","lastName":"Terheş","group":"S&D","country":"ro","seat":720},{"id":197656,"firstName":"Simone","lastName":"Schmiedtbauer","group":"PPE","country":"at","seat":677},{"id":197657,"firstName":"Tudor","lastName":"Ciuhodaru","group":"S&D","country":"ro","seat":458},{"id":197658,"firstName":"Adrian-Dragoş","lastName":"Benea","group":"S&D","country":"ro","seat":384},{"id":197661,"firstName":"Cristian","lastName":"Ghinea","group":"Renew","country":"ro","seat":400},{"id":197662,"firstName":"Vangelis","lastName":"Meimarakis","group":"PPE","country":"gr","seat":38},{"id":197663,"firstName":"Dragoş","lastName":"Pîslaru","group":"Renew","country":"ro","seat":733},{"id":197664,"firstName":"Clotilde","lastName":"Armand","group":"Renew","country":"ro","seat":406},{"id":197665,"firstName":"Dragoş","lastName":"Tudorache","group":"Renew","country":"ro","seat":399},{"id":197667,"firstName":"Barbara","lastName":"Thaler","group":"PPE","country":"at","seat":750},{"id":197668,"firstName":"Vlad-Marius","lastName":"Botoş","group":"Renew","country":"ro","seat":480},{"id":197670,"firstName":"Andreas","lastName":"Schieder","group":"S&D","country":"at","seat":130},{"id":197671,"firstName":"Traian","lastName":"Băsescu","group":"PPE","country":"ro","seat":341},{"id":197672,"firstName":"Eugen","lastName":"Tomac","group":"PPE","country":"ro","seat":751},{"id":197675,"firstName":"Sarah","lastName":"Wiener","group":"Verts/ALE","country":"at","seat":730},{"id":197677,"firstName":"Günther","lastName":"Sidl","group":"S&D","country":"at","seat":713},{"id":197678,"firstName":"Bettina","lastName":"Vollath","group":"S&D","country":"at","seat":797},{"id":197679,"firstName":"Isabel","lastName":"Benjumea Benjumea","group":"PPE","country":"es","seat":342},{"id":197680,"firstName":"Aurelia","lastName":"Beigneux","group":"ID","country":"fr","seat":356},{"id":197681,"firstName":"Sira","lastName":"Rego","group":"GUE/NGL","country":"es","seat":230},{"id":197682,"firstName":"Hannes","lastName":"Heide","group":"S&D","country":"at","seat":542},{"id":197683,"firstName":"Gilbert","lastName":"Collard","group":"ID","country":"fr","seat":354},{"id":197684,"firstName":"Pernando","lastName":"Barrena Arza","group":"GUE/NGL","country":"es","seat":532},{"id":197686,"firstName":"Julie","lastName":"Lechanteux","group":"ID","country":"fr","seat":605},{"id":197687,"firstName":"Philippe","lastName":"Olivier","group":"ID","country":"fr","seat":212},{"id":197690,"firstName":"André","lastName":"Rougé","group":"ID","country":"fr","seat":608},{"id":197691,"firstName":"Mathilde","lastName":"Androuët","group":"ID","country":"fr","seat":280},{"id":197692,"firstName":"Stelios","lastName":"Kympouropoulos","group":"PPE","country":"gr","seat":835},{"id":197694,"firstName":"Raphaël","lastName":"Glucksmann","group":"S&D","country":"fr","seat":470},{"id":197695,"firstName":"Anna-Michelle","lastName":"Asimakopoulou","group":"PPE","country":"gr","seat":340},{"id":197697,"firstName":"Aurore","lastName":"Lalucq","group":"S&D","country":"fr","seat":550},{"id":197698,"firstName":"Pierre","lastName":"Larrouturou","group":"S&D","country":"fr","seat":551},{"id":197699,"firstName":"Elena","lastName":"Kountoura","group":"GUE/NGL","country":"gr","seat":303},{"id":197701,"firstName":"Konstantinos","lastName":"Arvanitis","group":"GUE/NGL","country":"gr","seat":299},{"id":197702,"firstName":"Lina","lastName":"Gálvez Muñoz","group":"S&D","country":"es","seat":466},{"id":197709,"firstName":"Robert","lastName":"Roos","group":"ECR","country":"nl","seat":515},{"id":197711,"firstName":"Dolors","lastName":"Montserrat","group":"PPE","country":"es","seat":98},{"id":197717,"firstName":"Ibán","lastName":"García Del Blanco","group":"S&D","country":"es","seat":467},{"id":197718,"firstName":"Nicolás","lastName":"González Casares","group":"S&D","country":"es","seat":538},{"id":197719,"firstName":"Cristina","lastName":"Maestre Martín De Almagro","group":"S&D","country":"es","seat":623},{"id":197720,"firstName":"Frances","lastName":"Fitzgerald","group":"PPE","country":"ie","seat":330},{"id":197721,"firstName":"César","lastName":"Luena","group":"S&D","country":"es","seat":554},{"id":197722,"firstName":"Nacho","lastName":"Sánchez Amor","group":"S&D","country":"es","seat":710},{"id":197728,"firstName":"Mónica Silvana","lastName":"González","group":"S&D","country":"es","seat":471},{"id":197731,"firstName":"Clare","lastName":"Daly","group":"GUE/NGL","country":"ie","seat":453},{"id":197732,"firstName":"Manuel","lastName":"Pizarro","group":"S&D","country":"pt","seat":638},{"id":197734,"firstName":"Lefteris","lastName":"Nikolaou-Alavanos","group":"NI","country":"gr","seat":783},{"id":197735,"firstName":"Adriana","lastName":"Maldonado López","group":"S&D","country":"es","seat":625},{"id":197737,"firstName":"Ioannis","lastName":"Lagos","group":"NI","country":"gr","seat":690},{"id":197738,"firstName":"Lídia","lastName":"Pereira","group":"PPE","country":"pt","seat":666},{"id":197740,"firstName":"Athanasios","lastName":"Konstantinou","group":"NI","country":"gr","seat":689},{"id":197742,"firstName":"Isabel","lastName":"García Muñoz","group":"S&D","country":"es","seat":468},{"id":197743,"firstName":"Petros","lastName":"Kokkalis","group":"GUE/NGL","country":"gr","seat":301},{"id":197746,"firstName":"Álvaro","lastName":"Amaro","group":"PPE","country":"pt","seat":336},{"id":197754,"firstName":"Sandra","lastName":"Pereira","group":"GUE/NGL","country":"pt","seat":374},{"id":197756,"firstName":"Vera","lastName":"Tax","group":"S&D","country":"nl","seat":719},{"id":197761,"firstName":"Miroslav","lastName":"Číž","group":"S&D","country":"sk","seat":459},{"id":197763,"firstName":"Milan","lastName":"Uhrík","group":"NI","country":"sk","seat":691},{"id":197764,"firstName":"Miroslav","lastName":"Radačovský","group":"NI","country":"sk","seat":692},{"id":197765,"firstName":"Peter","lastName":"Pollák","group":"PPE","country":"sk","seat":670},{"id":197766,"firstName":"Lucia","lastName":"Ďuriš Nicholsonová","group":"ECR","country":"sk","seat":278},{"id":197767,"firstName":"Eugen","lastName":"Jurzyca","group":"ECR","country":"sk","seat":433},{"id":197769,"firstName":"Michal","lastName":"Wiezik","group":"PPE","country":"sk","seat":761},{"id":197770,"firstName":"Martin","lastName":"Hojsík","group":"Renew","country":"sk","seat":648},{"id":197771,"firstName":"Vladimír","lastName":"Bilčík","group":"PPE","country":"sk","seat":410},{"id":197772,"firstName":"Tineke","lastName":"Strik","group":"Verts/ALE","country":"nl","seat":725},{"id":197773,"firstName":"Bert-Jan","lastName":"Ruissen","group":"ECR","country":"nl","seat":350},{"id":197776,"firstName":"Rob","lastName":"Rooken","group":"ECR","country":"nl","seat":514},{"id":197777,"firstName":"Leopoldo","lastName":"López Gil","group":"PPE","country":"es","seat":582},{"id":197778,"firstName":"Tom","lastName":"Berendsen","group":"PPE","country":"nl","seat":344},{"id":197779,"firstName":"José Ramón","lastName":"Bauzá Díaz","group":"Renew","country":"es","seat":407},{"id":197780,"firstName":"Bart","lastName":"Groothuis","group":"Renew","country":"nl","seat":567},{"id":197781,"firstName":"Malik","lastName":"Azmani","group":"Renew","country":"nl","seat":10},{"id":197782,"firstName":"Mohammed","lastName":"Chahim","group":"S&D","country":"nl","seat":391},{"id":197783,"firstName":"Andris","lastName":"Ameriks","group":"S&D","country":"lv","seat":378},{"id":197784,"firstName":"Susana","lastName":"Solís Pérez","group":"Renew","country":"es","seat":740},{"id":197785,"firstName":"Eugenia","lastName":"Rodríguez Palop","group":"GUE/NGL","country":"es","seat":123},{"id":197786,"firstName":"Susanna","lastName":"Ceccardi","group":"ID","country":"it","seat":360},{"id":197787,"firstName":"Antonio Maria","lastName":"Rinaldi","group":"ID","country":"it","seat":611},{"id":197788,"firstName":"Anna","lastName":"Bonfrisco","group":"ID","country":"it","seat":284},{"id":197789,"firstName":"Simona","lastName":"Baldassarre","group":"ID","country":"it","seat":216},{"id":197790,"firstName":"Luisa","lastName":"Regimenti","group":"ID","country":"it","seat":610},{"id":197791,"firstName":"Massimiliano","lastName":"Smeriglio","group":"S&D","country":"it","seat":714},{"id":197792,"firstName":"Daniela","lastName":"Rondinelli","group":"NI","country":"it","seat":856},{"id":197794,"firstName":"Chiara","lastName":"Gemma","group":"NI","country":"it","seat":854},{"id":197795,"firstName":"Mario","lastName":"Furore","group":"NI","country":"it","seat":772},{"id":197796,"firstName":"Massimo","lastName":"Casanova","group":"ID","country":"it","seat":438},{"id":197797,"firstName":"Andrea","lastName":"Caroppo","group":"ID","country":"it","seat":359},{"id":197798,"firstName":"Lucia","lastName":"Vuolo","group":"ID","country":"it","seat":616},{"id":197799,"firstName":"Valentino","lastName":"Grant","group":"ID","country":"it","seat":524},{"id":197800,"firstName":"Eero","lastName":"Heinäluoma","group":"S&D","country":"fi","seat":52},{"id":197801,"firstName":"Franco","lastName":"Roberti","group":"S&D","country":"it","seat":706},{"id":197802,"firstName":"Ville","lastName":"Niinistö","group":"Verts/ALE","country":"fi","seat":639},{"id":197804,"firstName":"Dino","lastName":"Giarrusso","group":"NI","country":"it","seat":775},{"id":197805,"firstName":"Silvia","lastName":"Modig","group":"GUE/NGL","country":"fi","seat":377},{"id":197806,"firstName":"Annalisa","lastName":"Tardino","group":"ID","country":"it","seat":614},{"id":197808,"firstName":"Pietro","lastName":"Bartolo","group":"S&D","country":"it","seat":382},{"id":197810,"firstName":"Nils","lastName":"Ušakovs","group":"S&D","country":"lv","seat":183},{"id":197817,"firstName":"Mick","lastName":"Wallace","group":"GUE/NGL","country":"ie","seat":455},{"id":197818,"firstName":"Billy","lastName":"Kelleher","group":"Renew","country":"ie","seat":325},{"id":197819,"firstName":"Alexis","lastName":"Georgoulis","group":"GUE/NGL","country":"gr","seat":300},{"id":197820,"firstName":"Nicola","lastName":"Procaccini","group":"ECR","country":"it","seat":598},{"id":197822,"firstName":"Francesca","lastName":"Donato","group":"ID","country":"it","seat":442},{"id":197824,"firstName":"Giuseppe","lastName":"Milazzo","group":"PPE","country":"it","seat":592},{"id":197825,"firstName":"Raffaele","lastName":"Stancanelli","group":"ECR","country":"it","seat":686},{"id":197826,"firstName":"Matteo","lastName":"Adinolfi","group":"ID","country":"it","seat":215},{"id":197827,"firstName":"Idoia","lastName":"Villanueva Ruiz","group":"GUE/NGL","country":"es","seat":125},{"id":197828,"firstName":"Manu","lastName":"Pineda","group":"GUE/NGL","country":"es","seat":231},{"id":197829,"firstName":"Jorge","lastName":"Buxadé Villalba","group":"ECR","country":"es","seat":207},{"id":197831,"firstName":"Hermann","lastName":"Tertsch","group":"ECR","country":"es","seat":107},{"id":197832,"firstName":"Diana","lastName":"Riba i Giner","group":"Verts/ALE","country":"es","seat":249},{"id":197835,"firstName":"Aušra","lastName":"Maldeikienė","group":"PPE","country":"lt","seat":586},{"id":197836,"firstName":"Alexander","lastName":"Alexandrov Yordanov","group":"PPE","country":"bg","seat":335},{"id":197837,"firstName":"Stasys","lastName":"Jakeliūnas","group":"Verts/ALE","country":"lt","seat":478},{"id":197838,"firstName":"Juozas","lastName":"Olekas","group":"S&D","country":"lt","seat":634},{"id":197839,"firstName":"Radan","lastName":"Kanev","group":"PPE","country":"bg","seat":575},{"id":197840,"firstName":"Rasa","lastName":"Juknevičienė","group":"PPE","country":"lt","seat":573},{"id":197841,"firstName":"Liudas","lastName":"Mažylis","group":"PPE","country":"lt","seat":591},{"id":197842,"firstName":"Elena","lastName":"Yoncheva","group":"S&D","country":"bg","seat":799},{"id":197843,"firstName":"Andrius","lastName":"Kubilius","group":"PPE","country":"lt","seat":145},{"id":197844,"firstName":"Petar","lastName":"Vitanov","group":"S&D","country":"bg","seat":131},{"id":197845,"firstName":"Tsvetelina","lastName":"Penkova","group":"S&D","country":"bg","seat":635},{"id":197846,"firstName":"Ivo","lastName":"Hristov","group":"S&D","country":"bg","seat":544},{"id":197848,"firstName":"Atidzhe","lastName":"Alieva-Veli","group":"Renew","country":"bg","seat":403},{"id":197849,"firstName":"Andrey","lastName":"Slabakov","group":"ECR","country":"bg","seat":595},{"id":197863,"firstName":"Maria","lastName":"Walsh","group":"PPE","country":"ie","seat":758},{"id":197868,"firstName":"Samira","lastName":"Rafaela","group":"Renew","country":"nl","seat":734},{"id":197869,"firstName":"Liesje","lastName":"Schreinemacher","group":"Renew","country":"nl","seat":738},{"id":197870,"firstName":"Kim","lastName":"Van Sparrentak","group":"Verts/ALE","country":"nl","seat":728},{"id":197889,"firstName":"Grace","lastName":"O'Sullivan","group":"Verts/ALE","country":"ie","seat":641},{"id":197894,"firstName":"László","lastName":"Trócsányi","group":"PPE","country":"hu","seat":753},{"id":197935,"firstName":"Ivan Vilibor","lastName":"Sinčić","group":"NI","country":"hr","seat":776},{"id":198063,"firstName":"Márton","lastName":"Gyöngyösi","group":"NI","country":"hu","seat":693},{"id":198096,"firstName":"Mazaly","lastName":"Aguilar","group":"ECR","country":"es","seat":208},{"id":198176,"firstName":"Roman","lastName":"Haider","group":"ID","country":"at","seat":113},{"id":198183,"firstName":"Mihai","lastName":"Tudose","group":"S&D","country":"ro","seat":722},{"id":198329,"firstName":"Estrella","lastName":"Durá Ferrandis","group":"S&D","country":"es","seat":463},{"id":198490,"firstName":"Emmanouil","lastName":"Fragkos","group":"ECR","country":"gr","seat":273},{"id":199941,"firstName":"Marianne","lastName":"Vind","group":"S&D","country":"dk","seat":796},{"id":199996,"firstName":"Isabel","lastName":"Carvalhais","group":"S&D","country":"pt","seat":389},{"id":202036,"firstName":"Sunčana","lastName":"Glavak","group":"PPE","country":"hr","seat":500},{"id":202073,"firstName":"Marc","lastName":"Angel","group":"S&D","country":"lu","seat":235},{"id":202112,"firstName":"Gheorghe-Vlad","lastName":"Nistor","group":"PPE","country":"ro","seat":663},{"id":202351,"firstName":"Carles","lastName":"Puigdemont i Casamajó","group":"NI","country":"es","seat":780},{"id":202352,"firstName":"Antoni","lastName":"Comín i Oliveres","group":"NI","country":"es","seat":779},{"id":204331,"firstName":"Linea","lastName":"Søgaard-Lidell","group":"Renew","country":"dk","seat":736},{"id":204332,"firstName":"Barry","lastName":"Andrews","group":"Renew","country":"ie","seat":405},{"id":204333,"firstName":"Salvatore","lastName":"De Meo","group":"PPE","country":"it","seat":424},{"id":204334,"firstName":"Vincenzo","lastName":"Sofo","group":"ID","country":"it","seat":613},{"id":204335,"firstName":"Alviina","lastName":"Alametsä","group":"Verts/ALE","country":"fi","seat":92},{"id":204336,"firstName":"Miriam","lastName":"Lexmann","group":"PPE","country":"sk","seat":581},{"id":204346,"firstName":"Dominik","lastName":"Tarczyński","group":"ECR","country":"pl","seat":349},{"id":204368,"firstName":"Christian","lastName":"Sagartz","group":"PPE","country":"at","seat":674},{"id":204400,"firstName":"Adrián","lastName":"Vázquez Lázara","group":"Renew","country":"es","seat":142},{"id":204413,"firstName":"Marcos","lastName":"Ros Sempere","group":"S&D","country":"es","seat":709},{"id":204414,"firstName":"Margarita","lastName":"de la Pisa Carrión","group":"ECR","country":"es","seat":509},{"id":204416,"firstName":"Ilana","lastName":"Cicurel","group":"Renew","country":"fr","seat":484},{"id":204418,"firstName":"Nora","lastName":"Mebarek","group":"S&D","country":"fr","seat":629},{"id":204419,"firstName":"Sandro","lastName":"Gozi","group":"Renew","country":"fr","seat":566},{"id":204420,"firstName":"Claude","lastName":"Gruffat","group":"Verts/ALE","country":"fr","seat":395},{"id":204421,"firstName":"Jean-Lin","lastName":"Lacapelle","group":"ID","country":"fr","seat":606},{"id":204443,"firstName":"Clara","lastName":"Ponsatí Obiols","group":"NI","country":"es","seat":781},{"id":204449,"firstName":"Riho","lastName":"Terras","group":"PPE","country":"ee","seat":152},{"id":204733,"firstName":"Dorien","lastName":"Rookmaker","group":"NI","country":"nl","seat":694}]
+[
+	{
+		"id": 840,
+		"firstName": "Charles",
+		"lastName": "GOERENS",
+		"group": "Renew",
+		"country": "lu",
+		"seat": 329
+	},
+	{
+		"id": 1854,
+		"firstName": "Constanze",
+		"lastName": "KREHL",
+		"group": "S&D",
+		"country": "de",
+		"seat": 308
+	},
+	{
+		"id": 1909,
+		"firstName": "Bernd",
+		"lastName": "LANGE",
+		"group": "S&D",
+		"country": "de",
+		"seat": 237
+	},
+	{
+		"id": 1917,
+		"firstName": "Markus",
+		"lastName": "FERBER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 261
+	},
+	{
+		"id": 1927,
+		"firstName": "Peter",
+		"lastName": "LIESE",
+		"group": "PPE",
+		"country": "de",
+		"seat": 263
+	},
+	{
+		"id": 1992,
+		"firstName": "José Manuel",
+		"lastName": "GARCÍA-MARGALLO Y MARFIL",
+		"group": "PPE",
+		"country": "es",
+		"seat": 498
+	},
+	{
+		"id": 2054,
+		"firstName": "Heidi",
+		"lastName": "HAUTALA",
+		"group": "Verts/ALE",
+		"country": "fi",
+		"seat": 56
+	},
+	{
+		"id": 2187,
+		"firstName": "Antonio",
+		"lastName": "TAJANI",
+		"group": "PPE",
+		"country": "it",
+		"seat": 100
+	},
+	{
+		"id": 2323,
+		"firstName": "Rainer",
+		"lastName": "WIELAND",
+		"group": "PPE",
+		"country": "de",
+		"seat": 195
+	},
+	{
+		"id": 2341,
+		"firstName": "Michael",
+		"lastName": "GAHLER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 206
+	},
+	{
+		"id": 4246,
+		"firstName": "Othmar",
+		"lastName": "KARAS",
+		"group": "PPE",
+		"country": "at",
+		"seat": 197
+	},
+	{
+		"id": 4253,
+		"firstName": "Frédérique",
+		"lastName": "RIES",
+		"group": "Renew",
+		"country": "be",
+		"seat": 33
+	},
+	{
+		"id": 4267,
+		"firstName": "Udo",
+		"lastName": "BULLMANN",
+		"group": "S&D",
+		"country": "de",
+		"seat": 244
+	},
+	{
+		"id": 4289,
+		"firstName": "Angelika",
+		"lastName": "NIEBLER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 62
+	},
+	{
+		"id": 4344,
+		"firstName": "María Soraya",
+		"lastName": "RODRÍGUEZ RAMOS",
+		"group": "Renew",
+		"country": "es",
+		"seat": 735
+	},
+	{
+		"id": 4391,
+		"firstName": "Silvio",
+		"lastName": "BERLUSCONI",
+		"group": "PPE",
+		"country": "it",
+		"seat": 408
+	},
+	{
+		"id": 4465,
+		"firstName": "Raffaele",
+		"lastName": "FITTO",
+		"group": "ECR",
+		"country": "it",
+		"seat": 40
+	},
+	{
+		"id": 4560,
+		"firstName": "Antonius",
+		"lastName": "MANDERS",
+		"group": "PPE",
+		"country": "nl",
+		"seat": 587
+	},
+	{
+		"id": 4746,
+		"firstName": "Sergio",
+		"lastName": "BERLATO",
+		"group": "ECR",
+		"country": "it",
+		"seat": 596
+	},
+	{
+		"id": 5392,
+		"firstName": "Lara",
+		"lastName": "WOLTERS",
+		"group": "S&D",
+		"country": "nl",
+		"seat": 798
+	},
+	{
+		"id": 5565,
+		"firstName": "Brice",
+		"lastName": "HORTEFEUX",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 507
+	},
+	{
+		"id": 5729,
+		"firstName": "Kathleen",
+		"lastName": "VAN BREMPT",
+		"group": "S&D",
+		"country": "be",
+		"seat": 176
+	},
+	{
+		"id": 22858,
+		"firstName": "Fabienne",
+		"lastName": "KELLER",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 650
+	},
+	{
+		"id": 23699,
+		"firstName": "Kateřina",
+		"lastName": "KONEČNÁ",
+		"group": "GUE/NGL",
+		"country": "cz",
+		"seat": 533
+	},
+	{
+		"id": 23712,
+		"firstName": "Jan",
+		"lastName": "ZAHRADIL",
+		"group": "ECR",
+		"country": "cz",
+		"seat": 154
+	},
+	{
+		"id": 23768,
+		"firstName": "Bogusław",
+		"lastName": "LIBERADZKI",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 127
+	},
+	{
+		"id": 23781,
+		"firstName": "Janusz",
+		"lastName": "LEWANDOWSKI",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 580
+	},
+	{
+		"id": 23788,
+		"firstName": "Adam",
+		"lastName": "BIELAN",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 346
+	},
+	{
+		"id": 23816,
+		"firstName": "András",
+		"lastName": "GYÜRK",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 503
+	},
+	{
+		"id": 23868,
+		"firstName": "Monika",
+		"lastName": "BEŇOVÁ",
+		"group": "S&D",
+		"country": "sk",
+		"seat": 85
+	},
+	{
+		"id": 24505,
+		"firstName": "Emmanuel",
+		"lastName": "MAUREL",
+		"group": "GUE/NGL",
+		"country": "fr",
+		"seat": 536
+	},
+	{
+		"id": 24594,
+		"firstName": "Anne",
+		"lastName": "SANDER",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 199
+	},
+	{
+		"id": 24922,
+		"firstName": "Pascal",
+		"lastName": "ARIMONT",
+		"group": "PPE",
+		"country": "be",
+		"seat": 338
+	},
+	{
+		"id": 24942,
+		"firstName": "Ana",
+		"lastName": "MIRANDA",
+		"group": "Greens/EFA",
+		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 26837,
+		"firstName": "Lefteris",
+		"lastName": "CHRISTOFOROU",
+		"group": "PPE",
+		"country": "cy",
+		"seat": 148
+	},
+	{
+		"id": 27714,
+		"firstName": "Edina",
+		"lastName": "TÓTH",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 752
+	},
+	{
+		"id": 28122,
+		"firstName": "David",
+		"lastName": "CASA",
+		"group": "PPE",
+		"country": "mt",
+		"seat": 200
+	},
+	{
+		"id": 28141,
+		"firstName": "Lívia",
+		"lastName": "JÁRÓKA",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 198
+	},
+	{
+		"id": 28150,
+		"firstName": "Kinga",
+		"lastName": "GÁL",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 497
+	},
+	{
+		"id": 28161,
+		"firstName": "Margrete",
+		"lastName": "AUKEN",
+		"group": "Verts/ALE",
+		"country": "dk",
+		"seat": 134
+	},
+	{
+		"id": 28219,
+		"firstName": "Daniel",
+		"lastName": "CASPARY",
+		"group": "PPE",
+		"country": "de",
+		"seat": 61
+	},
+	{
+		"id": 28223,
+		"firstName": "Andreas",
+		"lastName": "SCHWAB",
+		"group": "PPE",
+		"country": "de",
+		"seat": 265
+	},
+	{
+		"id": 28224,
+		"firstName": "Markus",
+		"lastName": "PIEPER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 667
+	},
+	{
+		"id": 28226,
+		"firstName": "Christian",
+		"lastName": "EHLER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 264
+	},
+	{
+		"id": 28229,
+		"firstName": "Manfred",
+		"lastName": "WEBER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 15
+	},
+	{
+		"id": 28266,
+		"firstName": "Sophia",
+		"lastName": "IN 'T VELD",
+		"group": "Renew",
+		"country": "nl",
+		"seat": 398
+	},
+	{
+		"id": 28269,
+		"firstName": "Jerzy",
+		"lastName": "BUZEK",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 415
+	},
+	{
+		"id": 28288,
+		"firstName": "Jan",
+		"lastName": "OLBRYCHT",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 16
+	},
+	{
+		"id": 28294,
+		"firstName": "Ljudmila",
+		"lastName": "NOVAK",
+		"group": "PPE",
+		"country": "si",
+		"seat": 664
+	},
+	{
+		"id": 28297,
+		"firstName": "Jacek",
+		"lastName": "SARYUSZ-WOLSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 511
+	},
+	{
+		"id": 28298,
+		"firstName": "Iratxe",
+		"lastName": "GARCÍA PÉREZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 6
+	},
+	{
+		"id": 28340,
+		"firstName": "Patrizia",
+		"lastName": "TOIA",
+		"group": "S&D",
+		"country": "it",
+		"seat": 721
+	},
+	{
+		"id": 28347,
+		"firstName": "Javier",
+		"lastName": "MORENO SÁNCHEZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 86
+	},
+	{
+		"id": 28353,
+		"firstName": "Anna",
+		"lastName": "FOTYGA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 275
+	},
+	{
+		"id": 28372,
+		"firstName": "Ryszard",
+		"lastName": "CZARNECKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 348
+	},
+	{
+		"id": 28389,
+		"firstName": "Zbigniew",
+		"lastName": "KUŹMIUK",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 432
+	},
+	{
+		"id": 28390,
+		"firstName": "Pilar",
+		"lastName": "DEL CASTILLO VERA",
+		"group": "PPE",
+		"country": "es",
+		"seat": 417
+	},
+	{
+		"id": 28399,
+		"firstName": "Antonio",
+		"lastName": "LÓPEZ-ISTÚRIZ WHITE",
+		"group": "PPE",
+		"country": "es",
+		"seat": 583
+	},
+	{
+		"id": 28400,
+		"firstName": "Francisco José",
+		"lastName": "MILLÁN MON",
+		"group": "PPE",
+		"country": "es",
+		"seat": 593
+	},
+	{
+		"id": 28586,
+		"firstName": "Dimitrios",
+		"lastName": "PAPADIMOULIS",
+		"group": "GUE/NGL",
+		"country": "gr",
+		"seat": 48
+	},
+	{
+		"id": 28615,
+		"firstName": "Roberts",
+		"lastName": "ZĪLE",
+		"group": "ECR",
+		"country": "lv",
+		"seat": 69
+	},
+	{
+		"id": 28617,
+		"firstName": "Inese",
+		"lastName": "VAIDERE",
+		"group": "PPE",
+		"country": "lv",
+		"seat": 754
+	},
+	{
+		"id": 28619,
+		"firstName": "Tatjana",
+		"lastName": "ŽDANOKA",
+		"group": "Verts/ALE",
+		"country": "lv",
+		"seat": 250
+	},
+	{
+		"id": 29579,
+		"firstName": "Marc",
+		"lastName": "TARABELLA",
+		"group": "S&D",
+		"country": "be",
+		"seat": 718
+	},
+	{
+		"id": 30482,
+		"firstName": "Younous",
+		"lastName": "OMARJEE",
+		"group": "GUE/NGL",
+		"country": "fr",
+		"seat": 49
+	},
+	{
+		"id": 33982,
+		"firstName": "Marian-Jean",
+		"lastName": "MARINESCU",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 266
+	},
+	{
+		"id": 33997,
+		"firstName": "Corina",
+		"lastName": "CREȚU",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 461
+	},
+	{
+		"id": 34578,
+		"firstName": "Robert",
+		"lastName": "HAJŠEL",
+		"group": "S&D",
+		"country": "sk",
+		"seat": 541
+	},
+	{
+		"id": 35016,
+		"firstName": "Marco",
+		"lastName": "CAMPOMENOSI",
+		"group": "ID",
+		"country": "it",
+		"seat": 358
+	},
+	{
+		"id": 36392,
+		"firstName": "Aldo",
+		"lastName": "PATRICIELLO",
+		"group": "PPE",
+		"country": "it",
+		"seat": 665
+	},
+	{
+		"id": 37312,
+		"firstName": "Christel",
+		"lastName": "SCHALDEMOSE",
+		"group": "S&D",
+		"country": "dk",
+		"seat": 177
+	},
+	{
+		"id": 38398,
+		"firstName": "Esther",
+		"lastName": "DE LANGE",
+		"group": "PPE",
+		"country": "nl",
+		"seat": 17
+	},
+	{
+		"id": 38420,
+		"firstName": "Cristian-Silviu",
+		"lastName": "BUŞOI",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 203
+	},
+	{
+		"id": 38511,
+		"firstName": "Georg",
+		"lastName": "MAYER",
+		"group": "ID",
+		"country": "at",
+		"seat": 111
+	},
+	{
+		"id": 38595,
+		"firstName": "Rovana",
+		"lastName": "PLUMB",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 50
+	},
+	{
+		"id": 39725,
+		"firstName": "Iuliu",
+		"lastName": "WINKLER",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 762
+	},
+	{
+		"id": 40599,
+		"firstName": "Sirpa",
+		"lastName": "PIETIKÄINEN",
+		"group": "PPE",
+		"country": "fi",
+		"seat": 147
+	},
+	{
+		"id": 58766,
+		"firstName": "Nicolae",
+		"lastName": "ŞTEFĂNUȚĂ",
+		"group": "Renew",
+		"country": "ro",
+		"seat": 741
+	},
+	{
+		"id": 58789,
+		"firstName": "Jan",
+		"lastName": "HUITEMA",
+		"group": "Renew",
+		"country": "nl",
+		"seat": 649
+	},
+	{
+		"id": 72779,
+		"firstName": "Nadine",
+		"lastName": "MORANO",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 660
+	},
+	{
+		"id": 86793,
+		"firstName": "Anna",
+		"lastName": "CAVAZZINI",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 189
+	},
+	{
+		"id": 88715,
+		"firstName": "José",
+		"lastName": "GUSMÃO",
+		"group": "GUE/NGL",
+		"country": "pt",
+		"seat": 451
+	},
+	{
+		"id": 88882,
+		"firstName": "Victor",
+		"lastName": "NEGRESCU",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 632
+	},
+	{
+		"id": 94649,
+		"firstName": "Catherine",
+		"lastName": "GRISET",
+		"group": "ID",
+		"country": "fr",
+		"seat": 434
+	},
+	{
+		"id": 95074,
+		"firstName": "Jeroen",
+		"lastName": "LENAERS",
+		"group": "PPE",
+		"country": "nl",
+		"seat": 579
+	},
+	{
+		"id": 96646,
+		"firstName": "Helmut",
+		"lastName": "SCHOLZ",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": 175
+	},
+	{
+		"id": 96648,
+		"firstName": "Philippe",
+		"lastName": "LAMBERTS",
+		"group": "Verts/ALE",
+		"country": "be",
+		"seat": 8
+	},
+	{
+		"id": 96668,
+		"firstName": "Seán",
+		"lastName": "KELLY",
+		"group": "PPE",
+		"country": "ie",
+		"seat": 106
+	},
+	{
+		"id": 96681,
+		"firstName": "Vilija",
+		"lastName": "BLINKEVIČIŪTĖ",
+		"group": "S&D",
+		"country": "lt",
+		"seat": 184
+	},
+	{
+		"id": 96697,
+		"firstName": "Valdemar",
+		"lastName": "TOMAŠEVSKI",
+		"group": "ECR",
+		"country": "lt",
+		"seat": 274
+	},
+	{
+		"id": 96698,
+		"firstName": "Viktor",
+		"lastName": "USPASKICH",
+		"group": "Renew",
+		"country": "lt",
+		"seat": 328
+	},
+	{
+		"id": 96709,
+		"firstName": "Morten",
+		"lastName": "LØKKEGAARD",
+		"group": "Renew",
+		"country": "dk",
+		"seat": 34
+	},
+	{
+		"id": 96711,
+		"firstName": "Pascal",
+		"lastName": "CANFIN",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 139
+	},
+	{
+		"id": 96713,
+		"firstName": "Evžen",
+		"lastName": "TOŠENOVSKÝ",
+		"group": "ECR",
+		"country": "cz",
+		"seat": 599
+	},
+	{
+		"id": 96725,
+		"firstName": "Bas",
+		"lastName": "EICKHOUT",
+		"group": "Verts/ALE",
+		"country": "nl",
+		"seat": 30
+	},
+	{
+		"id": 96734,
+		"firstName": "Ska",
+		"lastName": "KELLER",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 9
+	},
+	{
+		"id": 96739,
+		"firstName": "Reinhard",
+		"lastName": "BÜTIKOFER",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 187
+	},
+	{
+		"id": 96740,
+		"firstName": "Yannick",
+		"lastName": "JADOT",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 477
+	},
+	{
+		"id": 96743,
+		"firstName": "Michèle",
+		"lastName": "RIVASI",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 644
+	},
+	{
+		"id": 96747,
+		"firstName": "Arnaud",
+		"lastName": "DANJEAN",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 36
+	},
+	{
+		"id": 96750,
+		"firstName": "François",
+		"lastName": "ALFONSI",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 248
+	},
+	{
+		"id": 96752,
+		"firstName": "Martin",
+		"lastName": "HÄUSLING",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 474
+	},
+	{
+		"id": 96756,
+		"firstName": "Sabine",
+		"lastName": "VERHEYEN",
+		"group": "PPE",
+		"country": "de",
+		"seat": 205
+	},
+	{
+		"id": 96761,
+		"firstName": "Axel",
+		"lastName": "VOSS",
+		"group": "PPE",
+		"country": "de",
+		"seat": 270
+	},
+	{
+		"id": 96771,
+		"firstName": "Jarosław",
+		"lastName": "KALINOWSKI",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 574
+	},
+	{
+		"id": 96772,
+		"firstName": "Peter",
+		"lastName": "JAHR",
+		"group": "PPE",
+		"country": "de",
+		"seat": 331
+	},
+	{
+		"id": 96776,
+		"firstName": "Róża",
+		"lastName": "THUN UND HOHENSTEIN",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 832
+	},
+	{
+		"id": 96779,
+		"firstName": "Danuta Maria",
+		"lastName": "HÜBNER",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 271
+	},
+	{
+		"id": 96780,
+		"firstName": "Monika",
+		"lastName": "HOHLMEIER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 202
+	},
+	{
+		"id": 96787,
+		"firstName": "Herbert",
+		"lastName": "DORFMANN",
+		"group": "PPE",
+		"country": "it",
+		"seat": 101
+	},
+	{
+		"id": 96791,
+		"firstName": "Elżbieta Katarzyna",
+		"lastName": "ŁUKACIJEWSKA",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 584
+	},
+	{
+		"id": 96796,
+		"firstName": "Ryszard Antoni",
+		"lastName": "LEGUTKO",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 18
+	},
+	{
+		"id": 96801,
+		"firstName": "Tomasz Piotr",
+		"lastName": "PORĘBA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 155
+	},
+	{
+		"id": 96808,
+		"firstName": "Pablo",
+		"lastName": "ARIAS ECHEVERRÍA",
+		"group": "PPE",
+		"country": "es",
+		"seat": 337
+	},
+	{
+		"id": 96809,
+		"firstName": "Peter",
+		"lastName": "VAN DALEN",
+		"group": "PPE",
+		"country": "nl",
+		"seat": 422
+	},
+	{
+		"id": 96810,
+		"firstName": "Carlo",
+		"lastName": "FIDANZA",
+		"group": "ECR",
+		"country": "it",
+		"seat": 156
+	},
+	{
+		"id": 96811,
+		"firstName": "Rosa",
+		"lastName": "ESTARÀS FERRAGUT",
+		"group": "PPE",
+		"country": "es",
+		"seat": 491
+	},
+	{
+		"id": 96812,
+		"firstName": "Juan Fernando",
+		"lastName": "LÓPEZ AGUILAR",
+		"group": "S&D",
+		"country": "es",
+		"seat": 238
+	},
+	{
+		"id": 96820,
+		"firstName": "Marisa",
+		"lastName": "MATIAS",
+		"group": "GUE/NGL",
+		"country": "pt",
+		"seat": 80
+	},
+	{
+		"id": 96826,
+		"firstName": "Tamás",
+		"lastName": "DEUTSCH",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 66
+	},
+	{
+		"id": 96829,
+		"firstName": "Ádám",
+		"lastName": "KÓSA",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 502
+	},
+	{
+		"id": 96830,
+		"firstName": "Enikő",
+		"lastName": "GYŐRI",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 501
+	},
+	{
+		"id": 96833,
+		"firstName": "Jens",
+		"lastName": "GEIER",
+		"group": "S&D",
+		"country": "de",
+		"seat": 88
+	},
+	{
+		"id": 96837,
+		"firstName": "Petra",
+		"lastName": "KAMMEREVERT",
+		"group": "S&D",
+		"country": "de",
+		"seat": 311
+	},
+	{
+		"id": 96842,
+		"firstName": "Ismail",
+		"lastName": "ERTUG",
+		"group": "S&D",
+		"country": "de",
+		"seat": 4
+	},
+	{
+		"id": 96852,
+		"firstName": "Cornelia",
+		"lastName": "ERNST",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": 173
+	},
+	{
+		"id": 96867,
+		"firstName": "Maria da Graça",
+		"lastName": "CARVALHO",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 416
+	},
+	{
+		"id": 96868,
+		"firstName": "Karima",
+		"lastName": "DELLI",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 318
+	},
+	{
+		"id": 96880,
+		"firstName": "Andrea",
+		"lastName": "COZZOLINO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 460
+	},
+	{
+		"id": 96885,
+		"firstName": "Dominique",
+		"lastName": "RIQUET",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 59
+	},
+	{
+		"id": 96891,
+		"firstName": "Paolo",
+		"lastName": "DE CASTRO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 309
+	},
+	{
+		"id": 96899,
+		"firstName": "José Manuel",
+		"lastName": "FERNANDES",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 259
+	},
+	{
+		"id": 96903,
+		"firstName": "Paulo",
+		"lastName": "RANGEL",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 39
+	},
+	{
+		"id": 96922,
+		"firstName": "Izaskun",
+		"lastName": "BILBAO BARANDICA",
+		"group": "Renew",
+		"country": "es",
+		"seat": 253
+	},
+	{
+		"id": 96932,
+		"firstName": "Birgit",
+		"lastName": "SIPPEL",
+		"group": "S&D",
+		"country": "de",
+		"seat": 313
+	},
+	{
+		"id": 96933,
+		"firstName": "Milan",
+		"lastName": "ZVER",
+		"group": "PPE",
+		"country": "si",
+		"seat": 767
+	},
+	{
+		"id": 96934,
+		"firstName": "Sandra",
+		"lastName": "KALNIETE",
+		"group": "PPE",
+		"country": "lv",
+		"seat": 13
+	},
+	{
+		"id": 96936,
+		"firstName": "Gabriel",
+		"lastName": "MATO",
+		"group": "PPE",
+		"country": "es",
+		"seat": 268
+	},
+	{
+		"id": 96952,
+		"firstName": "Sylvie",
+		"lastName": "GUILLAUME",
+		"group": "S&D",
+		"country": "fr",
+		"seat": 132
+	},
+	{
+		"id": 96978,
+		"firstName": "Nuno",
+		"lastName": "MELO",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 103
+	},
+	{
+		"id": 96991,
+		"firstName": "Eider",
+		"lastName": "GARDIAZABAL RUBIAL",
+		"group": "S&D",
+		"country": "es",
+		"seat": 245
+	},
+	{
+		"id": 96998,
+		"firstName": "Evelyn",
+		"lastName": "REGNER",
+		"group": "S&D",
+		"country": "at",
+		"seat": 239
+	},
+	{
+		"id": 97058,
+		"firstName": "Guy",
+		"lastName": "VERHOFSTADT",
+		"group": "Renew",
+		"country": "be",
+		"seat": 191
+	},
+	{
+		"id": 97198,
+		"firstName": "Mara",
+		"lastName": "BIZZOTTO",
+		"group": "ID",
+		"country": "it",
+		"seat": 283
+	},
+	{
+		"id": 97236,
+		"firstName": "Marie",
+		"lastName": "TOUSSAINT",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 726
+	},
+	{
+		"id": 97968,
+		"firstName": "Andrey",
+		"lastName": "KOVATCHEV",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 37
+	},
+	{
+		"id": 98341,
+		"firstName": "Eva",
+		"lastName": "MAYDELL",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 590
+	},
+	{
+		"id": 98582,
+		"firstName": "Loránt",
+		"lastName": "VINCZE",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 755
+	},
+	{
+		"id": 99283,
+		"firstName": "Alessandro",
+		"lastName": "PANZA",
+		"group": "ID",
+		"country": "it",
+		"seat": 527
+	},
+	{
+		"id": 99945,
+		"firstName": "Lena",
+		"lastName": "DÜPONT",
+		"group": "PPE",
+		"country": "de",
+		"seat": 490
+	},
+	{
+		"id": 101039,
+		"firstName": "Paolo",
+		"lastName": "BORCHIA",
+		"group": "ID",
+		"country": "it",
+		"seat": 357
+	},
+	{
+		"id": 101585,
+		"firstName": "Niels",
+		"lastName": "FUGLSANG",
+		"group": "S&D",
+		"country": "dk",
+		"seat": 465
+	},
+	{
+		"id": 103381,
+		"firstName": "Terry",
+		"lastName": "REINTKE",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 90
+	},
+	{
+		"id": 103746,
+		"firstName": "Michal",
+		"lastName": "ŠIMEČKA",
+		"group": "Renew",
+		"country": "sk",
+		"seat": 60
+	},
+	{
+		"id": 106936,
+		"firstName": "Daniel",
+		"lastName": "FREUND",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 392
+	},
+	{
+		"id": 107212,
+		"firstName": "Andrey",
+		"lastName": "NOVAKOV",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 267
+	},
+	{
+		"id": 112611,
+		"firstName": "Petri",
+		"lastName": "SARVAMAA",
+		"group": "PPE",
+		"country": "fi",
+		"seat": 676
+	},
+	{
+		"id": 112744,
+		"firstName": "Tonino",
+		"lastName": "PICULA",
+		"group": "S&D",
+		"country": "hr",
+		"seat": 241
+	},
+	{
+		"id": 112747,
+		"firstName": "Romana",
+		"lastName": "JERKOVIĆ",
+		"group": "S&D",
+		"country": "hr",
+		"seat": 546
+	},
+	{
+		"id": 112748,
+		"firstName": "Biljana",
+		"lastName": "BORZAN",
+		"group": "S&D",
+		"country": "hr",
+		"seat": 51
+	},
+	{
+		"id": 113892,
+		"firstName": "Eric",
+		"lastName": "ANDRIEU",
+		"group": "S&D",
+		"country": "fr",
+		"seat": 29
+	},
+	{
+		"id": 114268,
+		"firstName": "Nils",
+		"lastName": "TORVALDS",
+		"group": "Renew",
+		"country": "fi",
+		"seat": 257
+	},
+	{
+		"id": 118859,
+		"firstName": "Roberta",
+		"lastName": "METSOLA",
+		"group": "PPE",
+		"country": "mt",
+		"seat": 150
+	},
+	{
+		"id": 118949,
+		"firstName": "Ondřej",
+		"lastName": "KOVAŘÍK",
+		"group": "Renew",
+		"country": "cz",
+		"seat": 653
+	},
+	{
+		"id": 120478,
+		"firstName": "Martina",
+		"lastName": "MICHELS",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": 174
+	},
+	{
+		"id": 122978,
+		"firstName": "Alicia",
+		"lastName": "HOMS GINEL",
+		"group": "S&D",
+		"country": "es",
+		"seat": 543
+	},
+	{
+		"id": 123562,
+		"firstName": "Charlie",
+		"lastName": "WEIMERS",
+		"group": "ECR",
+		"country": "se",
+		"seat": 603
+	},
+	{
+		"id": 124586,
+		"firstName": "Balázs",
+		"lastName": "HIDVÉGHI",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 506
+	},
+	{
+		"id": 124691,
+		"firstName": "Costas",
+		"lastName": "MAVRIDES",
+		"group": "S&D",
+		"country": "cy",
+		"seat": 179
+	},
+	{
+		"id": 124692,
+		"firstName": "Demetris",
+		"lastName": "PAPADAKIS",
+		"group": "S&D",
+		"country": "cy",
+		"seat": 178
+	},
+	{
+		"id": 124693,
+		"firstName": "Pascal",
+		"lastName": "DURAND",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 488
+	},
+	{
+		"id": 124696,
+		"firstName": "Andrus",
+		"lastName": "ANSIP",
+		"group": "Renew",
+		"country": "ee",
+		"seat": 254
+	},
+	{
+		"id": 124700,
+		"firstName": "Yana",
+		"lastName": "TOOM",
+		"group": "Renew",
+		"country": "ee",
+		"seat": 255
+	},
+	{
+		"id": 124701,
+		"firstName": "Luděk",
+		"lastName": "NIEDERMAYER",
+		"group": "PPE",
+		"country": "cz",
+		"seat": 105
+	},
+	{
+		"id": 124704,
+		"firstName": "Stanislav",
+		"lastName": "POLČÁK",
+		"group": "PPE",
+		"country": "cz",
+		"seat": 668
+	},
+	{
+		"id": 124705,
+		"firstName": "István",
+		"lastName": "UJHELYI",
+		"group": "S&D",
+		"country": "hu",
+		"seat": 795
+	},
+	{
+		"id": 124708,
+		"firstName": "Dita",
+		"lastName": "CHARANZOVÁ",
+		"group": "Renew",
+		"country": "cz",
+		"seat": 96
+	},
+	{
+		"id": 124709,
+		"firstName": "Martina",
+		"lastName": "DLABAJOVÁ",
+		"group": "Renew",
+		"country": "cz",
+		"seat": 486
+	},
+	{
+		"id": 124710,
+		"firstName": "Michaela",
+		"lastName": "ŠOJDROVÁ",
+		"group": "PPE",
+		"country": "cz",
+		"seat": 269
+	},
+	{
+		"id": 124712,
+		"firstName": "Andrea",
+		"lastName": "BOCSKOR",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 412
+	},
+	{
+		"id": 124713,
+		"firstName": "Tomáš",
+		"lastName": "ZDECHOVSKÝ",
+		"group": "PPE",
+		"country": "cz",
+		"seat": 260
+	},
+	{
+		"id": 124714,
+		"firstName": "Andor",
+		"lastName": "DELI",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 423
+	},
+	{
+		"id": 124715,
+		"firstName": "György",
+		"lastName": "HÖLVÉNYI",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 258
+	},
+	{
+		"id": 124722,
+		"firstName": "Csaba",
+		"lastName": "MOLNÁR",
+		"group": "S&D",
+		"country": "hu",
+		"seat": 133
+	},
+	{
+		"id": 124726,
+		"firstName": "Henna",
+		"lastName": "VIRKKUNEN",
+		"group": "PPE",
+		"country": "fi",
+		"seat": 756
+	},
+	{
+		"id": 124734,
+		"firstName": "Cláudia",
+		"lastName": "MONTEIRO DE AGUIAR",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 594
+	},
+	{
+		"id": 124735,
+		"firstName": "Miapetra",
+		"lastName": "KUMPULA-NATRI",
+		"group": "S&D",
+		"country": "fi",
+		"seat": 181
+	},
+	{
+		"id": 124738,
+		"firstName": "Gilles",
+		"lastName": "LEBRETON",
+		"group": "ID",
+		"country": "fr",
+		"seat": 521
+	},
+	{
+		"id": 124739,
+		"firstName": "Carlos",
+		"lastName": "ZORRINHO",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 126
+	},
+	{
+		"id": 124747,
+		"firstName": "Pedro",
+		"lastName": "SILVA PEREIRA",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 54
+	},
+	{
+		"id": 124760,
+		"firstName": "Nicolas",
+		"lastName": "BAY",
+		"group": "ID",
+		"country": "fr",
+		"seat": 20
+	},
+	{
+		"id": 124766,
+		"firstName": "Petras",
+		"lastName": "AUŠTREVIČIUS",
+		"group": "Renew",
+		"country": "lt",
+		"seat": 327
+	},
+	{
+		"id": 124770,
+		"firstName": "Jean-François",
+		"lastName": "JALKH",
+		"group": "ID",
+		"country": "fr",
+		"seat": 355
+	},
+	{
+		"id": 124771,
+		"firstName": "Dominique",
+		"lastName": "BILDE",
+		"group": "ID",
+		"country": "fr",
+		"seat": 281
+	},
+	{
+		"id": 124777,
+		"firstName": "Tiziana",
+		"lastName": "BEGHIN",
+		"group": "NI",
+		"country": "it",
+		"seat": 684
+	},
+	{
+		"id": 124779,
+		"firstName": "Eleonora",
+		"lastName": "EVI",
+		"group": "NI",
+		"country": "it",
+		"seat": 774
+	},
+	{
+		"id": 124780,
+		"firstName": "Marco",
+		"lastName": "ZANNI",
+		"group": "ID",
+		"country": "it",
+		"seat": 19
+	},
+	{
+		"id": 124781,
+		"firstName": "Alfred",
+		"lastName": "SANT",
+		"group": "S&D",
+		"country": "mt",
+		"seat": 711
+	},
+	{
+		"id": 124784,
+		"firstName": "Dan",
+		"lastName": "NICA",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 89
+	},
+	{
+		"id": 124785,
+		"firstName": "Maria",
+		"lastName": "GRAPINI",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 539
+	},
+	{
+		"id": 124799,
+		"firstName": "Alessandra",
+		"lastName": "MORETTI",
+		"group": "S&D",
+		"country": "it",
+		"seat": 631
+	},
+	{
+		"id": 124802,
+		"firstName": "Siegfried",
+		"lastName": "MUREŞAN",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 35
+	},
+	{
+		"id": 124806,
+		"firstName": "David",
+		"lastName": "MCALLISTER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 201
+	},
+	{
+		"id": 124807,
+		"firstName": "Jens",
+		"lastName": "GIESEKE",
+		"group": "PPE",
+		"country": "de",
+		"seat": 499
+	},
+	{
+		"id": 124808,
+		"firstName": "Norbert",
+		"lastName": "LINS",
+		"group": "PPE",
+		"country": "de",
+		"seat": 204
+	},
+	{
+		"id": 124812,
+		"firstName": "Fabio Massimo",
+		"lastName": "CASTALDO",
+		"group": "NI",
+		"country": "it",
+		"seat": 685
+	},
+	{
+		"id": 124814,
+		"firstName": "Simona",
+		"lastName": "BONAFÈ",
+		"group": "S&D",
+		"country": "it",
+		"seat": 5
+	},
+	{
+		"id": 124821,
+		"firstName": "Nicola",
+		"lastName": "DANTI",
+		"group": "Renew",
+		"country": "it",
+		"seat": 324
+	},
+	{
+		"id": 124822,
+		"firstName": "Dietmar",
+		"lastName": "KÖSTER",
+		"group": "S&D",
+		"country": "de",
+		"seat": 549
+	},
+	{
+		"id": 124828,
+		"firstName": "Fulvio",
+		"lastName": "MARTUSCIELLO",
+		"group": "PPE",
+		"country": "it",
+		"seat": 589
+	},
+	{
+		"id": 124831,
+		"firstName": "Isabella",
+		"lastName": "ADINOLFI",
+		"group": "NI",
+		"country": "it",
+		"seat": 855
+	},
+	{
+		"id": 124833,
+		"firstName": "Laura",
+		"lastName": "FERRARA",
+		"group": "NI",
+		"country": "it",
+		"seat": 769
+	},
+	{
+		"id": 124834,
+		"firstName": "Martin",
+		"lastName": "SONNEBORN",
+		"group": "NI",
+		"country": "de",
+		"seat": 695
+	},
+	{
+		"id": 124835,
+		"firstName": "Rosa",
+		"lastName": "D'AMATO",
+		"group": "NI",
+		"country": "it",
+		"seat": 683
+	},
+	{
+		"id": 124836,
+		"firstName": "Maria",
+		"lastName": "NOICHL",
+		"group": "S&D",
+		"country": "de",
+		"seat": 315
+	},
+	{
+		"id": 124837,
+		"firstName": "Joachim",
+		"lastName": "SCHUSTER",
+		"group": "S&D",
+		"country": "de",
+		"seat": 712
+	},
+	{
+		"id": 124844,
+		"firstName": "Piernicola",
+		"lastName": "PEDICINI",
+		"group": "NI",
+		"country": "it",
+		"seat": 773
+	},
+	{
+		"id": 124846,
+		"firstName": "Pina",
+		"lastName": "PICIERNO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 636
+	},
+	{
+		"id": 124850,
+		"firstName": "Emil",
+		"lastName": "RADEV",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 672
+	},
+	{
+		"id": 124852,
+		"firstName": "Sergei",
+		"lastName": "STANISHEV",
+		"group": "S&D",
+		"country": "bg",
+		"seat": 716
+	},
+	{
+		"id": 124856,
+		"firstName": "Ignazio",
+		"lastName": "CORRAO",
+		"group": "NI",
+		"country": "it",
+		"seat": 770
+	},
+	{
+		"id": 124861,
+		"firstName": "Caterina",
+		"lastName": "CHINNICI",
+		"group": "S&D",
+		"country": "it",
+		"seat": 456
+	},
+	{
+		"id": 124862,
+		"firstName": "Ulrike",
+		"lastName": "MÜLLER",
+		"group": "Renew",
+		"country": "de",
+		"seat": 251
+	},
+	{
+		"id": 124866,
+		"firstName": "Ilhan",
+		"lastName": "KYUCHYUK",
+		"group": "Renew",
+		"country": "bg",
+		"seat": 194
+	},
+	{
+		"id": 124867,
+		"firstName": "Brando",
+		"lastName": "BENIFEI",
+		"group": "S&D",
+		"country": "it",
+		"seat": 87
+	},
+	{
+		"id": 124872,
+		"firstName": "Morten",
+		"lastName": "PETERSEN",
+		"group": "Renew",
+		"country": "dk",
+		"seat": 252
+	},
+	{
+		"id": 124873,
+		"firstName": "Angel",
+		"lastName": "DZHAMBAZKI",
+		"group": "ECR",
+		"country": "bg",
+		"seat": 68
+	},
+	{
+		"id": 124877,
+		"firstName": "Jadwiga",
+		"lastName": "WIŚNIEWSKA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 604
+	},
+	{
+		"id": 124884,
+		"firstName": "Kosma",
+		"lastName": "ZŁOTOWSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 157
+	},
+	{
+		"id": 124887,
+		"firstName": "Karol",
+		"lastName": "KARSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 272
+	},
+	{
+		"id": 124891,
+		"firstName": "Zdzisław",
+		"lastName": "KRASNODĘBSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 276
+	},
+	{
+		"id": 124895,
+		"firstName": "Krzysztof",
+		"lastName": "HETMAN",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 64
+	},
+	{
+		"id": 124929,
+		"firstName": "Ivan",
+		"lastName": "ŠTEFANEC",
+		"group": "PPE",
+		"country": "sk",
+		"seat": 143
+	},
+	{
+		"id": 124934,
+		"firstName": "Monika",
+		"lastName": "VANA",
+		"group": "Verts/ALE",
+		"country": "at",
+		"seat": 727
+	},
+	{
+		"id": 124936,
+		"firstName": "Maria",
+		"lastName": "ARENA",
+		"group": "S&D",
+		"country": "be",
+		"seat": 240
+	},
+	{
+		"id": 124972,
+		"firstName": "Ernest",
+		"lastName": "URTASUN",
+		"group": "Verts/ALE",
+		"country": "es",
+		"seat": 55
+	},
+	{
+		"id": 124973,
+		"firstName": "Gerolf",
+		"lastName": "ANNEMANS",
+		"group": "ID",
+		"country": "be",
+		"seat": 41
+	},
+	{
+		"id": 124985,
+		"firstName": "Luke Ming",
+		"lastName": "FLANAGAN",
+		"group": "GUE/NGL",
+		"country": "ie",
+		"seat": 454
+	},
+	{
+		"id": 124988,
+		"firstName": "Deirdre",
+		"lastName": "CLUNE",
+		"group": "PPE",
+		"country": "ie",
+		"seat": 418
+	},
+	{
+		"id": 124991,
+		"firstName": "Jytte",
+		"lastName": "GUTELAND",
+		"group": "S&D",
+		"country": "se",
+		"seat": 306
+	},
+	{
+		"id": 124992,
+		"firstName": "Malin",
+		"lastName": "BJÖRK",
+		"group": "GUE/NGL",
+		"country": "se",
+		"seat": 376
+	},
+	{
+		"id": 124996,
+		"firstName": "Peter",
+		"lastName": "LUNDGREN",
+		"group": "ECR",
+		"country": "se",
+		"seat": 108
+	},
+	{
+		"id": 125001,
+		"firstName": "Harald",
+		"lastName": "VILIMSKY",
+		"group": "ID",
+		"country": "at",
+		"seat": 112
+	},
+	{
+		"id": 125004,
+		"firstName": "Franc",
+		"lastName": "BOGOVIČ",
+		"group": "PPE",
+		"country": "si",
+		"seat": 413
+	},
+	{
+		"id": 125005,
+		"firstName": "Javier",
+		"lastName": "NART",
+		"group": "Renew",
+		"country": "es",
+		"seat": 737
+	},
+	{
+		"id": 125012,
+		"firstName": "Daniel",
+		"lastName": "BUDA",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 414
+	},
+	{
+		"id": 125020,
+		"firstName": "Paul",
+		"lastName": "TANG",
+		"group": "S&D",
+		"country": "nl",
+		"seat": 717
+	},
+	{
+		"id": 125021,
+		"firstName": "Agnes",
+		"lastName": "JONGERIUS",
+		"group": "S&D",
+		"country": "nl",
+		"seat": 129
+	},
+	{
+		"id": 125023,
+		"firstName": "Anja",
+		"lastName": "HAZEKAMP",
+		"group": "GUE/NGL",
+		"country": "nl",
+		"seat": 452
+	},
+	{
+		"id": 125025,
+		"firstName": "Marcel",
+		"lastName": "DE GRAAFF",
+		"group": "ID",
+		"country": "nl",
+		"seat": 160
+	},
+	{
+		"id": 125027,
+		"firstName": "Esteban",
+		"lastName": "GONZÁLEZ PONS",
+		"group": "PPE",
+		"country": "es",
+		"seat": 14
+	},
+	{
+		"id": 125030,
+		"firstName": "Annie",
+		"lastName": "SCHREIJER-PIERIK",
+		"group": "PPE",
+		"country": "nl",
+		"seat": 679
+	},
+	{
+		"id": 125038,
+		"firstName": "Maite",
+		"lastName": "PAGAZAURTUNDÚA",
+		"group": "Renew",
+		"country": "es",
+		"seat": 659
+	},
+	{
+		"id": 125042,
+		"firstName": "Javi",
+		"lastName": "LÓPEZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 553
+	},
+	{
+		"id": 125043,
+		"firstName": "Inma",
+		"lastName": "RODRÍGUEZ-PIÑERO",
+		"group": "S&D",
+		"country": "es",
+		"seat": 707
+	},
+	{
+		"id": 125045,
+		"firstName": "Clara",
+		"lastName": "AGUILERA",
+		"group": "S&D",
+		"country": "es",
+		"seat": 310
+	},
+	{
+		"id": 125046,
+		"firstName": "Jonás",
+		"lastName": "FERNÁNDEZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 305
+	},
+	{
+		"id": 125063,
+		"firstName": "Georgios",
+		"lastName": "KYRTSOS",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 578
+	},
+	{
+		"id": 125064,
+		"firstName": "Maria",
+		"lastName": "SPYRAKI",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 749
+	},
+	{
+		"id": 125065,
+		"firstName": "Elissavet",
+		"lastName": "VOZEMBERG-VRIONIDI",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 757
+	},
+	{
+		"id": 125067,
+		"firstName": "Theodoros",
+		"lastName": "ZAGORAKIS",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 763
+	},
+	{
+		"id": 125068,
+		"firstName": "Manolis",
+		"lastName": "KEFALOGIANNIS",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 576
+	},
+	{
+		"id": 125093,
+		"firstName": "Kostas",
+		"lastName": "PAPADAKIS",
+		"group": "NI",
+		"country": "gr",
+		"seat": 782
+	},
+	{
+		"id": 125104,
+		"firstName": "Romana",
+		"lastName": "TOMC",
+		"group": "PPE",
+		"country": "si",
+		"seat": 146
+	},
+	{
+		"id": 125106,
+		"firstName": "Johan",
+		"lastName": "VAN OVERTVELDT",
+		"group": "ECR",
+		"country": "be",
+		"seat": 277
+	},
+	{
+		"id": 125109,
+		"firstName": "Eva",
+		"lastName": "KAILI",
+		"group": "S&D",
+		"country": "gr",
+		"seat": 547
+	},
+	{
+		"id": 125110,
+		"firstName": "Nikos",
+		"lastName": "ANDROULAKIS",
+		"group": "S&D",
+		"country": "gr",
+		"seat": 182
+	},
+	{
+		"id": 125128,
+		"firstName": "Iskra",
+		"lastName": "MIHAYLOVA",
+		"group": "Renew",
+		"country": "bg",
+		"seat": 12
+	},
+	{
+		"id": 125214,
+		"firstName": "Bronis",
+		"lastName": "ROPĖ",
+		"group": "Verts/ALE",
+		"country": "lt",
+		"seat": 646
+	},
+	{
+		"id": 125237,
+		"firstName": "Marco",
+		"lastName": "ZULLO",
+		"group": "NI",
+		"country": "it",
+		"seat": 771
+	},
+	{
+		"id": 125670,
+		"firstName": "Massimiliano",
+		"lastName": "SALINI",
+		"group": "PPE",
+		"country": "it",
+		"seat": 675
+	},
+	{
+		"id": 125706,
+		"firstName": "Jiří",
+		"lastName": "POSPÍŠIL",
+		"group": "PPE",
+		"country": "cz",
+		"seat": 671
+	},
+	{
+		"id": 126644,
+		"firstName": "Jordi",
+		"lastName": "CAÑAS",
+		"group": "Renew",
+		"country": "es",
+		"seat": 481
+	},
+	{
+		"id": 127096,
+		"firstName": "Domènec",
+		"lastName": "RUIZ DEVESA",
+		"group": "S&D",
+		"country": "es",
+		"seat": 314
+	},
+	{
+		"id": 128483,
+		"firstName": "Markus",
+		"lastName": "BUCHHEIT",
+		"group": "ID",
+		"country": "de",
+		"seat": 362
+	},
+	{
+		"id": 129073,
+		"firstName": "Urmas",
+		"lastName": "PAET",
+		"group": "Renew",
+		"country": "ee",
+		"seat": 658
+	},
+	{
+		"id": 129164,
+		"firstName": "Tom",
+		"lastName": "VANDENKENDELAERE",
+		"group": "EPP",
+		"country": "be",
+		"seat": null
+	},
+	{
+		"id": 130100,
+		"firstName": "Hilde",
+		"lastName": "VAUTMANS",
+		"group": "Renew",
+		"country": "be",
+		"seat": 193
+	},
+	{
+		"id": 130256,
+		"firstName": "Dace",
+		"lastName": "MELBĀRDE",
+		"group": "ECR",
+		"country": "lv",
+		"seat": 516
+	},
+	{
+		"id": 130833,
+		"firstName": "Stelios",
+		"lastName": "KOULOGLOU",
+		"group": "GUE/NGL",
+		"country": "gr",
+		"seat": 302
+	},
+	{
+		"id": 131507,
+		"firstName": "Miguel",
+		"lastName": "URBÁN CRESPO",
+		"group": "GUE/NGL",
+		"country": "es",
+		"seat": 124
+	},
+	{
+		"id": 131580,
+		"firstName": "Jordan",
+		"lastName": "BARDELLA",
+		"group": "ID",
+		"country": "fr",
+		"seat": 279
+	},
+	{
+		"id": 132191,
+		"firstName": "Gunnar",
+		"lastName": "BECK",
+		"group": "ID",
+		"country": "de",
+		"seat": 286
+	},
+	{
+		"id": 134605,
+		"firstName": "Ramona",
+		"lastName": "STRUGARIU",
+		"group": "Renew",
+		"country": "ro",
+		"seat": 742
+	},
+	{
+		"id": 135511,
+		"firstName": "Valerie",
+		"lastName": "HAYER",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 572
+	},
+	{
+		"id": 136236,
+		"firstName": "João",
+		"lastName": "PIMENTA LOPES",
+		"group": "GUE/NGL",
+		"country": "pt",
+		"seat": null
+	},
+	{
+		"id": 182995,
+		"firstName": "Annika",
+		"lastName": "BRUNA",
+		"group": "ID",
+		"country": "fr",
+		"seat": 437
+	},
+	{
+		"id": 183338,
+		"firstName": "Jakop G.",
+		"lastName": "DALUNDE",
+		"group": "Verts/ALE",
+		"country": "se",
+		"seat": 317
+	},
+	{
+		"id": 183793,
+		"firstName": "Angelo",
+		"lastName": "CIOCCA",
+		"group": "ID",
+		"country": "it",
+		"seat": 439
+	},
+	{
+		"id": 183916,
+		"firstName": "Alexandra",
+		"lastName": "GEESE",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 393
+	},
+	{
+		"id": 185341,
+		"firstName": "Željana",
+		"lastName": "ZOVKO",
+		"group": "PPE",
+		"country": "hr",
+		"seat": 766
+	},
+	{
+		"id": 185619,
+		"firstName": "Tiemo",
+		"lastName": "WÖLKEN",
+		"group": "S&D",
+		"country": "de",
+		"seat": 312
+	},
+	{
+		"id": 185771,
+		"firstName": "Tom",
+		"lastName": "VANDENDRIESSCHE",
+		"group": "ID",
+		"country": "be",
+		"seat": 162
+	},
+	{
+		"id": 185974,
+		"firstName": "Jordi",
+		"lastName": "SOLÉ",
+		"group": "Greens/EFA",
+		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 187917,
+		"firstName": "Marc",
+		"lastName": "BOTENGA",
+		"group": "GUE/NGL",
+		"country": "be",
+		"seat": 373
+	},
+	{
+		"id": 188945,
+		"firstName": "Dennis",
+		"lastName": "RADTKE",
+		"group": "PPE",
+		"country": "de",
+		"seat": 262
+	},
+	{
+		"id": 189065,
+		"firstName": "France",
+		"lastName": "JAMET",
+		"group": "ID",
+		"country": "fr",
+		"seat": 436
+	},
+	{
+		"id": 189525,
+		"firstName": "Asim",
+		"lastName": "ADEMOV",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 334
+	},
+	{
+		"id": 190464,
+		"firstName": "Thomas",
+		"lastName": "WAITZ",
+		"group": "Verts/ALE",
+		"country": "at",
+		"seat": 91
+	},
+	{
+		"id": 190517,
+		"firstName": "Martin",
+		"lastName": "SCHIRDEWAN",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": 3
+	},
+	{
+		"id": 190518,
+		"firstName": "Jörg",
+		"lastName": "MEUTHEN",
+		"group": "ID",
+		"country": "de",
+		"seat": 42
+	},
+	{
+		"id": 190519,
+		"firstName": "Caroline",
+		"lastName": "NAGTEGAAL",
+		"group": "Renew",
+		"country": "nl",
+		"seat": 656
+	},
+	{
+		"id": 190713,
+		"firstName": "Lukas",
+		"lastName": "MANDL",
+		"group": "PPE",
+		"country": "at",
+		"seat": 588
+	},
+	{
+		"id": 190774,
+		"firstName": "Geoffroy",
+		"lastName": "DIDIER",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 425
+	},
+	{
+		"id": 191693,
+		"firstName": "Elsi",
+		"lastName": "KATAINEN",
+		"group": "Renew",
+		"country": "fi",
+		"seat": 256
+	},
+	{
+		"id": 192634,
+		"firstName": "Giuseppe",
+		"lastName": "FERRANDINO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 464
+	},
+	{
+		"id": 192635,
+		"firstName": "Danilo Oscar",
+		"lastName": "LANCINI",
+		"group": "ID",
+		"country": "it",
+		"seat": 525
+	},
+	{
+		"id": 193273,
+		"firstName": "Romeo",
+		"lastName": "FRANZ",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 321
+	},
+	{
+		"id": 193292,
+		"firstName": "Tilly",
+		"lastName": "METZ",
+		"group": "Verts/ALE",
+		"country": "lu",
+		"seat": 559
+	},
+	{
+		"id": 193419,
+		"firstName": "Christophe",
+		"lastName": "HANSEN",
+		"group": "PPE",
+		"country": "lu",
+		"seat": 149
+	},
+	{
+		"id": 197390,
+		"firstName": "Sara",
+		"lastName": "SKYTTEDAL",
+		"group": "PPE",
+		"country": "se",
+		"seat": 747
+	},
+	{
+		"id": 197391,
+		"firstName": "Heléne",
+		"lastName": "FRITZON",
+		"group": "S&D",
+		"country": "se",
+		"seat": 26
+	},
+	{
+		"id": 197392,
+		"firstName": "Evin",
+		"lastName": "INCIR",
+		"group": "S&D",
+		"country": "se",
+		"seat": 545
+	},
+	{
+		"id": 197393,
+		"firstName": "David",
+		"lastName": "LEGA",
+		"group": "PPE",
+		"country": "se",
+		"seat": 837
+	},
+	{
+		"id": 197394,
+		"firstName": "Josianne",
+		"lastName": "CUTAJAR",
+		"group": "S&D",
+		"country": "mt",
+		"seat": 462
+	},
+	{
+		"id": 197395,
+		"firstName": "Alice",
+		"lastName": "KUHNKE",
+		"group": "Verts/ALE",
+		"country": "se",
+		"seat": 31
+	},
+	{
+		"id": 197396,
+		"firstName": "Erik",
+		"lastName": "BERGKVIST",
+		"group": "S&D",
+		"country": "se",
+		"seat": 622
+	},
+	{
+		"id": 197398,
+		"firstName": "Pär",
+		"lastName": "HOLMGREN",
+		"group": "Verts/ALE",
+		"country": "se",
+		"seat": 476
+	},
+	{
+		"id": 197399,
+		"firstName": "Jessica",
+		"lastName": "STEGRUD",
+		"group": "ECR",
+		"country": "se",
+		"seat": 687
+	},
+	{
+		"id": 197400,
+		"firstName": "Abir",
+		"lastName": "AL-SAHLANI",
+		"group": "Renew",
+		"country": "se",
+		"seat": 404
+	},
+	{
+		"id": 197401,
+		"firstName": "Karin",
+		"lastName": "KARLSBRO",
+		"group": "Renew",
+		"country": "se",
+		"seat": 401
+	},
+	{
+		"id": 197402,
+		"firstName": "Tomas",
+		"lastName": "TOBÉ",
+		"group": "PPE",
+		"country": "se",
+		"seat": 104
+	},
+	{
+		"id": 197403,
+		"firstName": "Alex",
+		"lastName": "AGIUS SALIBA",
+		"group": "S&D",
+		"country": "mt",
+		"seat": 316
+	},
+	{
+		"id": 197404,
+		"firstName": "Jessica",
+		"lastName": "POLFJÄRD",
+		"group": "PPE",
+		"country": "se",
+		"seat": 669
+	},
+	{
+		"id": 197405,
+		"firstName": "Jörgen",
+		"lastName": "WARBORN",
+		"group": "PPE",
+		"country": "se",
+		"seat": 760
+	},
+	{
+		"id": 197406,
+		"firstName": "Arba",
+		"lastName": "KOKALARI",
+		"group": "PPE",
+		"country": "se",
+		"seat": 577
+	},
+	{
+		"id": 197408,
+		"firstName": "Hildegard",
+		"lastName": "BENTELE",
+		"group": "PPE",
+		"country": "de",
+		"seat": 343
+	},
+	{
+		"id": 197410,
+		"firstName": "Stefan",
+		"lastName": "BERGER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 345
+	},
+	{
+		"id": 197412,
+		"firstName": "Niclas",
+		"lastName": "HERBST",
+		"group": "PPE",
+		"country": "de",
+		"seat": 505
+	},
+	{
+		"id": 197413,
+		"firstName": "Karlo",
+		"lastName": "RESSLER",
+		"group": "PPE",
+		"country": "hr",
+		"seat": 673
+	},
+	{
+		"id": 197414,
+		"firstName": "Loucas",
+		"lastName": "FOURLAS",
+		"group": "PPE",
+		"country": "cy",
+		"seat": 494
+	},
+	{
+		"id": 197415,
+		"firstName": "Niyazi",
+		"lastName": "KIZILYÜREK",
+		"group": "GUE/NGL",
+		"country": "cy",
+		"seat": 233
+	},
+	{
+		"id": 197416,
+		"firstName": "Giorgos",
+		"lastName": "GEORGIOU",
+		"group": "GUE/NGL",
+		"country": "cy",
+		"seat": 232
+	},
+	{
+		"id": 197417,
+		"firstName": "Tomislav",
+		"lastName": "SOKOL",
+		"group": "PPE",
+		"country": "hr",
+		"seat": 748
+	},
+	{
+		"id": 197418,
+		"firstName": "Monica",
+		"lastName": "SEMEDO",
+		"group": "Renew",
+		"country": "lu",
+		"seat": 739
+	},
+	{
+		"id": 197419,
+		"firstName": "Valter",
+		"lastName": "FLEGO",
+		"group": "Renew",
+		"country": "hr",
+		"seat": 323
+	},
+	{
+		"id": 197421,
+		"firstName": "Isabel",
+		"lastName": "WISELER-LIMA",
+		"group": "PPE",
+		"country": "lu",
+		"seat": 332
+	},
+	{
+		"id": 197422,
+		"firstName": "Christine",
+		"lastName": "SCHNEIDER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 678
+	},
+	{
+		"id": 197423,
+		"firstName": "Nico",
+		"lastName": "SEMSROTT",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 724
+	},
+	{
+		"id": 197425,
+		"firstName": "Ralf",
+		"lastName": "SEEKATZ",
+		"group": "PPE",
+		"country": "de",
+		"seat": 681
+	},
+	{
+		"id": 197426,
+		"firstName": "Sven",
+		"lastName": "SIMON",
+		"group": "PPE",
+		"country": "de",
+		"seat": 746
+	},
+	{
+		"id": 197427,
+		"firstName": "Marlene",
+		"lastName": "MORTLER",
+		"group": "PPE",
+		"country": "de",
+		"seat": 661
+	},
+	{
+		"id": 197429,
+		"firstName": "Marion",
+		"lastName": "WALSMANN",
+		"group": "PPE",
+		"country": "de",
+		"seat": 759
+	},
+	{
+		"id": 197430,
+		"firstName": "Engin",
+		"lastName": "EROGLU",
+		"group": "Renew",
+		"country": "de",
+		"seat": 562
+	},
+	{
+		"id": 197431,
+		"firstName": "Patrick",
+		"lastName": "BREYER",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 556
+	},
+	{
+		"id": 197432,
+		"firstName": "Jan-Christoph",
+		"lastName": "OETJEN",
+		"group": "Renew",
+		"country": "de",
+		"seat": 657
+	},
+	{
+		"id": 197433,
+		"firstName": "Katarina",
+		"lastName": "BARLEY",
+		"group": "S&D",
+		"country": "de",
+		"seat": 83
+	},
+	{
+		"id": 197434,
+		"firstName": "Martin",
+		"lastName": "BUSCHMANN",
+		"group": "NI",
+		"country": "de",
+		"seat": 778
+	},
+	{
+		"id": 197435,
+		"firstName": "Gabriele",
+		"lastName": "BISCHOFF",
+		"group": "S&D",
+		"country": "de",
+		"seat": 385
+	},
+	{
+		"id": 197436,
+		"firstName": "Helmut",
+		"lastName": "GEUKING",
+		"group": "ECR",
+		"country": "de",
+		"seat": 351
+	},
+	{
+		"id": 197437,
+		"firstName": "Nicola",
+		"lastName": "BEER",
+		"group": "Renew",
+		"country": "de",
+		"seat": 97
+	},
+	{
+		"id": 197438,
+		"firstName": "Mislav",
+		"lastName": "KOLAKUŠIĆ",
+		"group": "NI",
+		"country": "hr",
+		"seat": 777
+	},
+	{
+		"id": 197439,
+		"firstName": "Damian",
+		"lastName": "BOESELAGER",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 137
+	},
+	{
+		"id": 197440,
+		"firstName": "Delara",
+		"lastName": "BURKHARDT",
+		"group": "S&D",
+		"country": "de",
+		"seat": 387
+	},
+	{
+		"id": 197441,
+		"firstName": "Predrag Fred",
+		"lastName": "MATIĆ",
+		"group": "S&D",
+		"country": "hr",
+		"seat": 628
+	},
+	{
+		"id": 197443,
+		"firstName": "Andreas",
+		"lastName": "GLÜCK",
+		"group": "Renew",
+		"country": "de",
+		"seat": 565
+	},
+	{
+		"id": 197444,
+		"firstName": "Svenja",
+		"lastName": "HAHN",
+		"group": "Renew",
+		"country": "de",
+		"seat": 571
+	},
+	{
+		"id": 197445,
+		"firstName": "Moritz",
+		"lastName": "KÖRNER",
+		"group": "Renew",
+		"country": "de",
+		"seat": 652
+	},
+	{
+		"id": 197446,
+		"firstName": "Milan",
+		"lastName": "BRGLEZ",
+		"group": "S&D",
+		"country": "si",
+		"seat": 386
+	},
+	{
+		"id": 197447,
+		"firstName": "Irena",
+		"lastName": "JOVEVA",
+		"group": "Renew",
+		"country": "si",
+		"seat": 402
+	},
+	{
+		"id": 197448,
+		"firstName": "Rasmus",
+		"lastName": "ANDRESEN",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 93
+	},
+	{
+		"id": 197449,
+		"firstName": "Michael",
+		"lastName": "BLOSS",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 136
+	},
+	{
+		"id": 197451,
+		"firstName": "Viola",
+		"lastName": "VON CRAMON-TAUBADEL",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 729
+	},
+	{
+		"id": 197452,
+		"firstName": "Klemen",
+		"lastName": "GROŠELJ",
+		"group": "Renew",
+		"country": "si",
+		"seat": 568
+	},
+	{
+		"id": 197453,
+		"firstName": "Anna",
+		"lastName": "DEPARNAY-GRUNENBERG",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 319
+	},
+	{
+		"id": 197455,
+		"firstName": "Cindy",
+		"lastName": "FRANSSEN",
+		"group": "PPE",
+		"country": "be",
+		"seat": 496
+	},
+	{
+		"id": 197457,
+		"firstName": "Henrike",
+		"lastName": "HAHN",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 397
+	},
+	{
+		"id": 197458,
+		"firstName": "Benoît",
+		"lastName": "LUTGEN",
+		"group": "PPE",
+		"country": "be",
+		"seat": 585
+	},
+	{
+		"id": 197459,
+		"firstName": "Pierrette",
+		"lastName": "HERZBERGER-FOFANA",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 475
+	},
+	{
+		"id": 197460,
+		"firstName": "Sergey",
+		"lastName": "LAGODINSKY",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 557
+	},
+	{
+		"id": 197461,
+		"firstName": "Katrin",
+		"lastName": "LANGENSIEPEN",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 640
+	},
+	{
+		"id": 197462,
+		"firstName": "Erik",
+		"lastName": "MARQUARDT",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 558
+	},
+	{
+		"id": 197463,
+		"firstName": "Olivier",
+		"lastName": "CHASTEL",
+		"group": "Renew",
+		"country": "be",
+		"seat": 192
+	},
+	{
+		"id": 197464,
+		"firstName": "Hannah",
+		"lastName": "NEUMANN",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 560
+	},
+	{
+		"id": 197465,
+		"firstName": "Niklas",
+		"lastName": "NIENASS",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 561
+	},
+	{
+		"id": 197466,
+		"firstName": "Jutta",
+		"lastName": "PAULUS",
+		"group": "Verts/ALE",
+		"country": "de",
+		"seat": 642
+	},
+	{
+		"id": 197467,
+		"firstName": "Geert",
+		"lastName": "BOURGEOIS",
+		"group": "ECR",
+		"country": "be",
+		"seat": 209
+	},
+	{
+		"id": 197468,
+		"firstName": "Özlem",
+		"lastName": "DEMIREL",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": 172
+	},
+	{
+		"id": 197469,
+		"firstName": "Assita",
+		"lastName": "KANKO",
+		"group": "ECR",
+		"country": "be",
+		"seat": 109
+	},
+	{
+		"id": 197470,
+		"firstName": "Saskia",
+		"lastName": "BRICMONT",
+		"group": "Verts/ALE",
+		"country": "be",
+		"seat": 185
+	},
+	{
+		"id": 197472,
+		"firstName": "Filip",
+		"lastName": "DE MAN",
+		"group": "ID",
+		"country": "be",
+		"seat": 161
+	},
+	{
+		"id": 197473,
+		"firstName": "Christian",
+		"lastName": "DOLESCHAL",
+		"group": "PPE",
+		"country": "de",
+		"seat": 426
+	},
+	{
+		"id": 197475,
+		"firstName": "Christine",
+		"lastName": "ANDERSON",
+		"group": "ID",
+		"country": "de",
+		"seat": 529
+	},
+	{
+		"id": 197478,
+		"firstName": "Lars Patrick",
+		"lastName": "BERG",
+		"group": "ID",
+		"country": "de",
+		"seat": 361
+	},
+	{
+		"id": 197480,
+		"firstName": "Nicolaus",
+		"lastName": "FEST",
+		"group": "ID",
+		"country": "de",
+		"seat": 285
+	},
+	{
+		"id": 197481,
+		"firstName": "Maximilian",
+		"lastName": "KRAH",
+		"group": "ID",
+		"country": "de",
+		"seat": 218
+	},
+	{
+		"id": 197482,
+		"firstName": "Joachim",
+		"lastName": "KUHS",
+		"group": "ID",
+		"country": "de",
+		"seat": 217
+	},
+	{
+		"id": 197483,
+		"firstName": "Sylvia",
+		"lastName": "LIMMER",
+		"group": "ID",
+		"country": "de",
+		"seat": 443
+	},
+	{
+		"id": 197488,
+		"firstName": "Guido",
+		"lastName": "REIL",
+		"group": "ID",
+		"country": "de",
+		"seat": 528
+	},
+	{
+		"id": 197489,
+		"firstName": "Bernhard",
+		"lastName": "ZIMNIOK",
+		"group": "ID",
+		"country": "de",
+		"seat": 444
+	},
+	{
+		"id": 197490,
+		"firstName": "Magdalena",
+		"lastName": "ADAMOWICZ",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 333
+	},
+	{
+		"id": 197491,
+		"firstName": "Marina",
+		"lastName": "KALJURAND",
+		"group": "S&D",
+		"country": "ee",
+		"seat": 180
+	},
+	{
+		"id": 197492,
+		"firstName": "Bartosz",
+		"lastName": "ARŁUKOWICZ",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 339
+	},
+	{
+		"id": 197493,
+		"firstName": "Jaak",
+		"lastName": "MADISON",
+		"group": "ID",
+		"country": "ee",
+		"seat": 114
+	},
+	{
+		"id": 197494,
+		"firstName": "Nathalie",
+		"lastName": "LOISEAU",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 140
+	},
+	{
+		"id": 197495,
+		"firstName": "Marek Paweł",
+		"lastName": "BALT",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 381
+	},
+	{
+		"id": 197496,
+		"firstName": "Marek",
+		"lastName": "BELKA",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 383
+	},
+	{
+		"id": 197497,
+		"firstName": "Sven",
+		"lastName": "MIKSER",
+		"group": "S&D",
+		"country": "ee",
+		"seat": 243
+	},
+	{
+		"id": 197498,
+		"firstName": "Robert",
+		"lastName": "BIEDROŃ",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 128
+	},
+	{
+		"id": 197500,
+		"firstName": "Mounir",
+		"lastName": "SATOURI",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 723
+	},
+	{
+		"id": 197501,
+		"firstName": "Joachim Stanisław",
+		"lastName": "BRUDZIŃSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 347
+	},
+	{
+		"id": 197502,
+		"firstName": "Marie-Pierre",
+		"lastName": "VEDRENNE",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 816
+	},
+	{
+		"id": 197503,
+		"firstName": "David",
+		"lastName": "CORMAND",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 246
+	},
+	{
+		"id": 197504,
+		"firstName": "Jérémy",
+		"lastName": "DECERLE",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 485
+	},
+	{
+		"id": 197505,
+		"firstName": "Catherine",
+		"lastName": "CHABAUD",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 482
+	},
+	{
+		"id": 197506,
+		"firstName": "Caroline",
+		"lastName": "ROOSE",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 645
+	},
+	{
+		"id": 197507,
+		"firstName": "Włodzimierz",
+		"lastName": "CIMOSZEWICZ",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 457
+	},
+	{
+		"id": 197508,
+		"firstName": "Stéphane",
+		"lastName": "SÉJOURNÉ",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 322
+	},
+	{
+		"id": 197510,
+		"firstName": "Jarosław",
+		"lastName": "DUDA",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 489
+	},
+	{
+		"id": 197511,
+		"firstName": "Salima",
+		"lastName": "YENBOU",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 731
+	},
+	{
+		"id": 197512,
+		"firstName": "Benoît",
+		"lastName": "BITEAU",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 135
+	},
+	{
+		"id": 197513,
+		"firstName": "Tomasz",
+		"lastName": "FRANKOWSKI",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 495
+	},
+	{
+		"id": 197514,
+		"firstName": "Andrzej",
+		"lastName": "HALICKI",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 63
+	},
+	{
+		"id": 197515,
+		"firstName": "Pernille",
+		"lastName": "WEISS",
+		"group": "PPE",
+		"country": "dk",
+		"seat": 151
+	},
+	{
+		"id": 197516,
+		"firstName": "Patryk",
+		"lastName": "JAKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 353
+	},
+	{
+		"id": 197517,
+		"firstName": "Adam",
+		"lastName": "JARUBAS",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 508
+	},
+	{
+		"id": 197518,
+		"firstName": "Krzysztof",
+		"lastName": "JURGIEL",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 352
+	},
+	{
+		"id": 197519,
+		"firstName": "Beata",
+		"lastName": "KEMPA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 427
+	},
+	{
+		"id": 197520,
+		"firstName": "Izabela-Helena",
+		"lastName": "KLOC",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 428
+	},
+	{
+		"id": 197522,
+		"firstName": "Radka",
+		"lastName": "MAXOVÁ",
+		"group": "Renew",
+		"country": "cz",
+		"seat": 654
+	},
+	{
+		"id": 197523,
+		"firstName": "Łukasz",
+		"lastName": "KOHUT",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 548
+	},
+	{
+		"id": 197525,
+		"firstName": "Ewa",
+		"lastName": "KOPACZ",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 196
+	},
+	{
+		"id": 197526,
+		"firstName": "Martin",
+		"lastName": "HLAVÁČEK",
+		"group": "Renew",
+		"country": "cz",
+		"seat": 647
+	},
+	{
+		"id": 197527,
+		"firstName": "Anne-Sophie",
+		"lastName": "PELLETIER",
+		"group": "GUE/NGL",
+		"country": "fr",
+		"seat": 537
+	},
+	{
+		"id": 197528,
+		"firstName": "Ondřej",
+		"lastName": "KNOTEK",
+		"group": "Renew",
+		"country": "cz",
+		"seat": 651
+	},
+	{
+		"id": 197529,
+		"firstName": "Leila",
+		"lastName": "CHAIBI",
+		"group": "GUE/NGL",
+		"country": "fr",
+		"seat": 535
+	},
+	{
+		"id": 197530,
+		"firstName": "Joanna",
+		"lastName": "KOPCIŃSKA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 429
+	},
+	{
+		"id": 197531,
+		"firstName": "Gwendoline",
+		"lastName": "DELBOS-CORFIELD",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 57
+	},
+	{
+		"id": 197532,
+		"firstName": "Elżbieta",
+		"lastName": "KRUK",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 431
+	},
+	{
+		"id": 197533,
+		"firstName": "Manon",
+		"lastName": "AUBRY",
+		"group": "GUE/NGL",
+		"country": "fr",
+		"seat": 25
+	},
+	{
+		"id": 197534,
+		"firstName": "François-Xavier",
+		"lastName": "BELLAMY",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 99
+	},
+	{
+		"id": 197535,
+		"firstName": "Agnès",
+		"lastName": "EVREN",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 492
+	},
+	{
+		"id": 197536,
+		"firstName": "Nathalie",
+		"lastName": "COLIN-OESTERLÉ",
+		"group": "PPE",
+		"country": "fr",
+		"seat": 421
+	},
+	{
+		"id": 197537,
+		"firstName": "Alexandr",
+		"lastName": "VONDRA",
+		"group": "ECR",
+		"country": "cz",
+		"seat": 600
+	},
+	{
+		"id": 197538,
+		"firstName": "Beata",
+		"lastName": "MAZUREK",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 510
+	},
+	{
+		"id": 197539,
+		"firstName": "Mikuláš",
+		"lastName": "PEKSA",
+		"group": "Verts/ALE",
+		"country": "cz",
+		"seat": 555
+	},
+	{
+		"id": 197540,
+		"firstName": "Leszek",
+		"lastName": "MILLER",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 630
+	},
+	{
+		"id": 197541,
+		"firstName": "Andżelika Anna",
+		"lastName": "MOŻDŻANOWSKA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 597
+	},
+	{
+		"id": 197542,
+		"firstName": "Janina",
+		"lastName": "OCHOJSKA",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 833
+	},
+	{
+		"id": 197543,
+		"firstName": "Bernard",
+		"lastName": "GUETTA",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 570
+	},
+	{
+		"id": 197544,
+		"firstName": "Elżbieta",
+		"lastName": "RAFALSKA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 513
+	},
+	{
+		"id": 197545,
+		"firstName": "Bogdan",
+		"lastName": "RZOŃCA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 517
+	},
+	{
+		"id": 197546,
+		"firstName": "Marcel",
+		"lastName": "KOLAJA",
+		"group": "Verts/ALE",
+		"country": "cz",
+		"seat": 473
+	},
+	{
+		"id": 197547,
+		"firstName": "Irène",
+		"lastName": "TOLLERET",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 743
+	},
+	{
+		"id": 197548,
+		"firstName": "Radosław",
+		"lastName": "SIKORSKI",
+		"group": "PPE",
+		"country": "pl",
+		"seat": 745
+	},
+	{
+		"id": 197549,
+		"firstName": "Markéta",
+		"lastName": "GREGOROVÁ",
+		"group": "Verts/ALE",
+		"country": "cz",
+		"seat": 472
+	},
+	{
+		"id": 197550,
+		"firstName": "Sylwia",
+		"lastName": "SPUREK",
+		"group": "S&D",
+		"country": "pl",
+		"seat": 715
+	},
+	{
+		"id": 197551,
+		"firstName": "Stéphane",
+		"lastName": "BIJOUX",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 479
+	},
+	{
+		"id": 197552,
+		"firstName": "Veronika",
+		"lastName": "VRECIONOVÁ",
+		"group": "ECR",
+		"country": "cz",
+		"seat": 601
+	},
+	{
+		"id": 197553,
+		"firstName": "Beata",
+		"lastName": "SZYDŁO",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 210
+	},
+	{
+		"id": 197555,
+		"firstName": "Søren",
+		"lastName": "GADE",
+		"group": "Renew",
+		"country": "dk",
+		"seat": 564
+	},
+	{
+		"id": 197556,
+		"firstName": "Ivan",
+		"lastName": "DAVID",
+		"group": "ID",
+		"country": "cz",
+		"seat": 158
+	},
+	{
+		"id": 197557,
+		"firstName": "Christophe",
+		"lastName": "GRUDLER",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 569
+	},
+	{
+		"id": 197558,
+		"firstName": "Asger",
+		"lastName": "CHRISTENSEN",
+		"group": "Renew",
+		"country": "dk",
+		"seat": 483
+	},
+	{
+		"id": 197559,
+		"firstName": "Grzegorz",
+		"lastName": "TOBISZOWSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 688
+	},
+	{
+		"id": 197563,
+		"firstName": "Mauri",
+		"lastName": "PEKKARINEN",
+		"group": "Renew",
+		"country": "fi",
+		"seat": 732
+	},
+	{
+		"id": 197564,
+		"firstName": "Hynek",
+		"lastName": "BLAŠKO",
+		"group": "ID",
+		"country": "cz",
+		"seat": 159
+	},
+	{
+		"id": 197566,
+		"firstName": "Witold Jan",
+		"lastName": "WASZCZYKOWSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 602
+	},
+	{
+		"id": 197567,
+		"firstName": "Karen",
+		"lastName": "MELCHIOR",
+		"group": "Renew",
+		"country": "dk",
+		"seat": 655
+	},
+	{
+		"id": 197570,
+		"firstName": "Peter",
+		"lastName": "KOFOD",
+		"group": "ID",
+		"country": "dk",
+		"seat": 72
+	},
+	{
+		"id": 197571,
+		"firstName": "Nikolaj",
+		"lastName": "VILLUMSEN",
+		"group": "GUE/NGL",
+		"country": "dk",
+		"seat": 81
+	},
+	{
+		"id": 197572,
+		"firstName": "Anna",
+		"lastName": "ZALEWSKA",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 512
+	},
+	{
+		"id": 197573,
+		"firstName": "Kira Marie",
+		"lastName": "PETER-HANSEN",
+		"group": "Verts/ALE",
+		"country": "dk",
+		"seat": 643
+	},
+	{
+		"id": 197574,
+		"firstName": "Damien",
+		"lastName": "CARÊME",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 188
+	},
+	{
+		"id": 197576,
+		"firstName": "Sylvie",
+		"lastName": "BRUNET",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 95
+	},
+	{
+		"id": 197577,
+		"firstName": "Gilles",
+		"lastName": "BOYER",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 138
+	},
+	{
+		"id": 197578,
+		"firstName": "Silvia",
+		"lastName": "SARDONE",
+		"group": "ID",
+		"country": "it",
+		"seat": 612
+	},
+	{
+		"id": 197579,
+		"firstName": "Klára",
+		"lastName": "DOBREV",
+		"group": "S&D",
+		"country": "hu",
+		"seat": 84
+	},
+	{
+		"id": 197580,
+		"firstName": "Isabella",
+		"lastName": "TOVAGLIERI",
+		"group": "ID",
+		"country": "it",
+		"seat": 615
+	},
+	{
+		"id": 197581,
+		"firstName": "Stéphanie",
+		"lastName": "YON-COURTIN",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 817
+	},
+	{
+		"id": 197582,
+		"firstName": "Gianna",
+		"lastName": "GANCIA",
+		"group": "ID",
+		"country": "it",
+		"seat": 523
+	},
+	{
+		"id": 197584,
+		"firstName": "Sándor",
+		"lastName": "RÓNAI",
+		"group": "S&D",
+		"country": "hu",
+		"seat": 708
+	},
+	{
+		"id": 197585,
+		"firstName": "Pierre",
+		"lastName": "KARLESKIND",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 141
+	},
+	{
+		"id": 197586,
+		"firstName": "Stefania",
+		"lastName": "ZAMBELLI",
+		"group": "ID",
+		"country": "it",
+		"seat": 617
+	},
+	{
+		"id": 197587,
+		"firstName": "Attila",
+		"lastName": "ARA-KOVÁCS",
+		"group": "S&D",
+		"country": "hu",
+		"seat": 379
+	},
+	{
+		"id": 197588,
+		"firstName": "Katalin",
+		"lastName": "CSEH",
+		"group": "Renew",
+		"country": "hu",
+		"seat": 32
+	},
+	{
+		"id": 197589,
+		"firstName": "Laurence",
+		"lastName": "FARRENG",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 563
+	},
+	{
+		"id": 197590,
+		"firstName": "Giuliano",
+		"lastName": "PISAPIA",
+		"group": "S&D",
+		"country": "it",
+		"seat": 637
+	},
+	{
+		"id": 197591,
+		"firstName": "Irene",
+		"lastName": "TINAGLI",
+		"group": "S&D",
+		"country": "it",
+		"seat": 236
+	},
+	{
+		"id": 197592,
+		"firstName": "Pierfrancesco",
+		"lastName": "MAJORINO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 624
+	},
+	{
+		"id": 197593,
+		"firstName": "Véronique",
+		"lastName": "TRILLET-LENOIR",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 744
+	},
+	{
+		"id": 197594,
+		"firstName": "Laura",
+		"lastName": "HUHTASAARI",
+		"group": "ID",
+		"country": "fi",
+		"seat": 71
+	},
+	{
+		"id": 197595,
+		"firstName": "Anna Júlia",
+		"lastName": "DONÁTH",
+		"group": "Renew",
+		"country": "hu",
+		"seat": 487
+	},
+	{
+		"id": 197596,
+		"firstName": "Teuvo",
+		"lastName": "HAKKARAINEN",
+		"group": "ID",
+		"country": "fi",
+		"seat": 70
+	},
+	{
+		"id": 197606,
+		"firstName": "Javier",
+		"lastName": "ZARZALEJOS",
+		"group": "PPE",
+		"country": "es",
+		"seat": 764
+	},
+	{
+		"id": 197607,
+		"firstName": "Pietro",
+		"lastName": "FIOCCHI",
+		"group": "ECR",
+		"country": "it",
+		"seat": 430
+	},
+	{
+		"id": 197608,
+		"firstName": "Gianantonio",
+		"lastName": "DA RE",
+		"group": "ID",
+		"country": "it",
+		"seat": 441
+	},
+	{
+		"id": 197610,
+		"firstName": "Alessandra",
+		"lastName": "BASSO",
+		"group": "ID",
+		"country": "it",
+		"seat": 282
+	},
+	{
+		"id": 197611,
+		"firstName": "Elena",
+		"lastName": "LIZZI",
+		"group": "ID",
+		"country": "it",
+		"seat": 526
+	},
+	{
+		"id": 197614,
+		"firstName": "Marco",
+		"lastName": "DREOSTO",
+		"group": "ID",
+		"country": "it",
+		"seat": 522
+	},
+	{
+		"id": 197615,
+		"firstName": "Jérôme",
+		"lastName": "RIVIÈRE",
+		"group": "ID",
+		"country": "fr",
+		"seat": 213
+	},
+	{
+		"id": 197616,
+		"firstName": "Rosanna",
+		"lastName": "CONTE",
+		"group": "ID",
+		"country": "it",
+		"seat": 440
+	},
+	{
+		"id": 197617,
+		"firstName": "Carlo",
+		"lastName": "CALENDA",
+		"group": "S&D",
+		"country": "it",
+		"seat": 388
+	},
+	{
+		"id": 197618,
+		"firstName": "Elisabetta",
+		"lastName": "GUALMINI",
+		"group": "S&D",
+		"country": "it",
+		"seat": 540
+	},
+	{
+		"id": 197619,
+		"firstName": "Sabrina",
+		"lastName": "PIGNEDOLI",
+		"group": "NI",
+		"country": "it",
+		"seat": 682
+	},
+	{
+		"id": 197621,
+		"firstName": "Juan Ignacio",
+		"lastName": "ZOIDO ÁLVAREZ",
+		"group": "PPE",
+		"country": "es",
+		"seat": 765
+	},
+	{
+		"id": 197623,
+		"firstName": "Thierry",
+		"lastName": "MARIANI",
+		"group": "ID",
+		"country": "fr",
+		"seat": 214
+	},
+	{
+		"id": 197624,
+		"firstName": "Ivars",
+		"lastName": "IJABS",
+		"group": "Renew",
+		"country": "lv",
+		"seat": 326
+	},
+	{
+		"id": 197626,
+		"firstName": "Herve",
+		"lastName": "JUVIN",
+		"group": "ID",
+		"country": "fr",
+		"seat": 519
+	},
+	{
+		"id": 197627,
+		"firstName": "Virginie",
+		"lastName": "JORON",
+		"group": "ID",
+		"country": "fr",
+		"seat": 518
+	},
+	{
+		"id": 197628,
+		"firstName": "Jean-Paul",
+		"lastName": "GARRAUD",
+		"group": "ID",
+		"country": "fr",
+		"seat": 435
+	},
+	{
+		"id": 197629,
+		"firstName": "Maxette",
+		"lastName": "PIRBAKAS",
+		"group": "ID",
+		"country": "fr",
+		"seat": 609
+	},
+	{
+		"id": 197631,
+		"firstName": "Dacian",
+		"lastName": "CIOLOŞ",
+		"group": "Renew",
+		"country": "ro",
+		"seat": 11
+	},
+	{
+		"id": 197632,
+		"firstName": "Claudia",
+		"lastName": "GAMON",
+		"group": "Renew",
+		"country": "at",
+		"seat": 190
+	},
+	{
+		"id": 197634,
+		"firstName": "Pedro",
+		"lastName": "MARQUES",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 627
+	},
+	{
+		"id": 197635,
+		"firstName": "Maria Manuel",
+		"lastName": "LEITÃO MARQUES",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 552
+	},
+	{
+		"id": 197636,
+		"firstName": "Ioan-Rareş",
+		"lastName": "BOGDAN",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 65
+	},
+	{
+		"id": 197637,
+		"firstName": "Vasile",
+		"lastName": "BLAGA",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 411
+	},
+	{
+		"id": 197638,
+		"firstName": "Margarida",
+		"lastName": "MARQUES",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 626
+	},
+	{
+		"id": 197641,
+		"firstName": "Sara",
+		"lastName": "CERDAS",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 390
+	},
+	{
+		"id": 197645,
+		"firstName": "Francisco",
+		"lastName": "GUERREIRO",
+		"group": "Verts/ALE",
+		"country": "pt",
+		"seat": 396
+	},
+	{
+		"id": 197646,
+		"firstName": "Mircea-Gheorghe",
+		"lastName": "HAVA",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 504
+	},
+	{
+		"id": 197647,
+		"firstName": "Dan-Ştefan",
+		"lastName": "MOTREANU",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 662
+	},
+	{
+		"id": 197648,
+		"firstName": "Alexander",
+		"lastName": "BERNHUBER",
+		"group": "PPE",
+		"country": "at",
+		"seat": 409
+	},
+	{
+		"id": 197649,
+		"firstName": "Gheorghe",
+		"lastName": "FALCĂ",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 493
+	},
+	{
+		"id": 197650,
+		"firstName": "Isabel",
+		"lastName": "SANTOS",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 242
+	},
+	{
+		"id": 197651,
+		"firstName": "Carmen",
+		"lastName": "AVRAM",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 380
+	},
+	{
+		"id": 197652,
+		"firstName": "Angelika",
+		"lastName": "WINZIG",
+		"group": "PPE",
+		"country": "at",
+		"seat": 102
+	},
+	{
+		"id": 197653,
+		"firstName": "Claudiu",
+		"lastName": "MANDA",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 304
+	},
+	{
+		"id": 197654,
+		"firstName": "Ciarán",
+		"lastName": "CUFFE",
+		"group": "Verts/ALE",
+		"country": "ie",
+		"seat": 247
+	},
+	{
+		"id": 197655,
+		"firstName": "Cristian",
+		"lastName": "TERHEŞ",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 720
+	},
+	{
+		"id": 197656,
+		"firstName": "Simone",
+		"lastName": "SCHMIEDTBAUER",
+		"group": "PPE",
+		"country": "at",
+		"seat": 677
+	},
+	{
+		"id": 197657,
+		"firstName": "Tudor",
+		"lastName": "CIUHODARU",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 458
+	},
+	{
+		"id": 197658,
+		"firstName": "Adrian-Dragoş",
+		"lastName": "BENEA",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 384
+	},
+	{
+		"id": 197662,
+		"firstName": "Vangelis",
+		"lastName": "MEIMARAKIS",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 38
+	},
+	{
+		"id": 197663,
+		"firstName": "Dragoş",
+		"lastName": "PÎSLARU",
+		"group": "Renew",
+		"country": "ro",
+		"seat": 733
+	},
+	{
+		"id": 197665,
+		"firstName": "Dragoş",
+		"lastName": "TUDORACHE",
+		"group": "Renew",
+		"country": "ro",
+		"seat": 399
+	},
+	{
+		"id": 197667,
+		"firstName": "Barbara",
+		"lastName": "THALER",
+		"group": "PPE",
+		"country": "at",
+		"seat": 750
+	},
+	{
+		"id": 197668,
+		"firstName": "Vlad-Marius",
+		"lastName": "BOTOŞ",
+		"group": "Renew",
+		"country": "ro",
+		"seat": 480
+	},
+	{
+		"id": 197670,
+		"firstName": "Andreas",
+		"lastName": "SCHIEDER",
+		"group": "S&D",
+		"country": "at",
+		"seat": 130
+	},
+	{
+		"id": 197671,
+		"firstName": "Traian",
+		"lastName": "BĂSESCU",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 341
+	},
+	{
+		"id": 197672,
+		"firstName": "Eugen",
+		"lastName": "TOMAC",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 751
+	},
+	{
+		"id": 197675,
+		"firstName": "Sarah",
+		"lastName": "WIENER",
+		"group": "Verts/ALE",
+		"country": "at",
+		"seat": 730
+	},
+	{
+		"id": 197677,
+		"firstName": "Günther",
+		"lastName": "SIDL",
+		"group": "S&D",
+		"country": "at",
+		"seat": 713
+	},
+	{
+		"id": 197678,
+		"firstName": "Bettina",
+		"lastName": "VOLLATH",
+		"group": "S&D",
+		"country": "at",
+		"seat": 797
+	},
+	{
+		"id": 197679,
+		"firstName": "Isabel",
+		"lastName": "BENJUMEA BENJUMEA",
+		"group": "PPE",
+		"country": "es",
+		"seat": 342
+	},
+	{
+		"id": 197680,
+		"firstName": "Aurelia",
+		"lastName": "BEIGNEUX",
+		"group": "ID",
+		"country": "fr",
+		"seat": 356
+	},
+	{
+		"id": 197681,
+		"firstName": "Sira",
+		"lastName": "REGO",
+		"group": "GUE/NGL",
+		"country": "es",
+		"seat": 230
+	},
+	{
+		"id": 197682,
+		"firstName": "Hannes",
+		"lastName": "HEIDE",
+		"group": "S&D",
+		"country": "at",
+		"seat": 542
+	},
+	{
+		"id": 197683,
+		"firstName": "Gilbert",
+		"lastName": "COLLARD",
+		"group": "ID",
+		"country": "fr",
+		"seat": 354
+	},
+	{
+		"id": 197687,
+		"firstName": "Philippe",
+		"lastName": "OLIVIER",
+		"group": "ID",
+		"country": "fr",
+		"seat": 212
+	},
+	{
+		"id": 197690,
+		"firstName": "André",
+		"lastName": "ROUGÉ",
+		"group": "ID",
+		"country": "fr",
+		"seat": 608
+	},
+	{
+		"id": 197691,
+		"firstName": "Mathilde",
+		"lastName": "ANDROUËT",
+		"group": "ID",
+		"country": "fr",
+		"seat": 280
+	},
+	{
+		"id": 197692,
+		"firstName": "Stelios",
+		"lastName": "KYMPOUROPOULOS",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 835
+	},
+	{
+		"id": 197694,
+		"firstName": "Raphaël",
+		"lastName": "GLUCKSMANN",
+		"group": "S&D",
+		"country": "fr",
+		"seat": 470
+	},
+	{
+		"id": 197695,
+		"firstName": "Anna-Michelle",
+		"lastName": "ASIMAKOPOULOU",
+		"group": "PPE",
+		"country": "gr",
+		"seat": 340
+	},
+	{
+		"id": 197697,
+		"firstName": "Aurore",
+		"lastName": "LALUCQ",
+		"group": "S&D",
+		"country": "fr",
+		"seat": 550
+	},
+	{
+		"id": 197698,
+		"firstName": "Pierre",
+		"lastName": "LARROUTUROU",
+		"group": "S&D",
+		"country": "fr",
+		"seat": 551
+	},
+	{
+		"id": 197699,
+		"firstName": "Elena",
+		"lastName": "KOUNTOURA",
+		"group": "GUE/NGL",
+		"country": "gr",
+		"seat": 303
+	},
+	{
+		"id": 197701,
+		"firstName": "Konstantinos",
+		"lastName": "ARVANITIS",
+		"group": "GUE/NGL",
+		"country": "gr",
+		"seat": 299
+	},
+	{
+		"id": 197702,
+		"firstName": "Lina",
+		"lastName": "GÁLVEZ MUÑOZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 466
+	},
+	{
+		"id": 197709,
+		"firstName": "Robert",
+		"lastName": "ROOS",
+		"group": "ECR",
+		"country": "nl",
+		"seat": 515
+	},
+	{
+		"id": 197711,
+		"firstName": "Dolors",
+		"lastName": "MONTSERRAT",
+		"group": "PPE",
+		"country": "es",
+		"seat": 98
+	},
+	{
+		"id": 197717,
+		"firstName": "Ibán",
+		"lastName": "GARCÍA DEL BLANCO",
+		"group": "S&D",
+		"country": "es",
+		"seat": 467
+	},
+	{
+		"id": 197718,
+		"firstName": "Nicolás",
+		"lastName": "GONZÁLEZ CASARES",
+		"group": "S&D",
+		"country": "es",
+		"seat": 538
+	},
+	{
+		"id": 197719,
+		"firstName": "Cristina",
+		"lastName": "MAESTRE MARTÍN DE ALMAGRO",
+		"group": "S&D",
+		"country": "es",
+		"seat": 623
+	},
+	{
+		"id": 197720,
+		"firstName": "Frances",
+		"lastName": "FITZGERALD",
+		"group": "PPE",
+		"country": "ie",
+		"seat": 330
+	},
+	{
+		"id": 197721,
+		"firstName": "César",
+		"lastName": "LUENA",
+		"group": "S&D",
+		"country": "es",
+		"seat": 554
+	},
+	{
+		"id": 197722,
+		"firstName": "Nacho",
+		"lastName": "SÁNCHEZ AMOR",
+		"group": "S&D",
+		"country": "es",
+		"seat": 710
+	},
+	{
+		"id": 197728,
+		"firstName": "Mónica Silvana",
+		"lastName": "GONZÁLEZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 471
+	},
+	{
+		"id": 197731,
+		"firstName": "Clare",
+		"lastName": "DALY",
+		"group": "GUE/NGL",
+		"country": "ie",
+		"seat": 453
+	},
+	{
+		"id": 197734,
+		"firstName": "Lefteris",
+		"lastName": "NIKOLAOU-ALAVANOS",
+		"group": "NI",
+		"country": "gr",
+		"seat": 783
+	},
+	{
+		"id": 197735,
+		"firstName": "Adriana",
+		"lastName": "MALDONADO LÓPEZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 625
+	},
+	{
+		"id": 197737,
+		"firstName": "Ioannis",
+		"lastName": "LAGOS",
+		"group": "NI",
+		"country": "gr",
+		"seat": 690
+	},
+	{
+		"id": 197738,
+		"firstName": "Lídia",
+		"lastName": "PEREIRA",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 666
+	},
+	{
+		"id": 197740,
+		"firstName": "Athanasios",
+		"lastName": "KONSTANTINOU",
+		"group": "NI",
+		"country": "gr",
+		"seat": 689
+	},
+	{
+		"id": 197742,
+		"firstName": "Isabel",
+		"lastName": "GARCÍA MUÑOZ",
+		"group": "S&D",
+		"country": "es",
+		"seat": 468
+	},
+	{
+		"id": 197743,
+		"firstName": "Petros",
+		"lastName": "KOKKALIS",
+		"group": "GUE/NGL",
+		"country": "gr",
+		"seat": 301
+	},
+	{
+		"id": 197746,
+		"firstName": "Álvaro",
+		"lastName": "AMARO",
+		"group": "PPE",
+		"country": "pt",
+		"seat": 336
+	},
+	{
+		"id": 197754,
+		"firstName": "Sandra",
+		"lastName": "PEREIRA",
+		"group": "GUE/NGL",
+		"country": "pt",
+		"seat": 374
+	},
+	{
+		"id": 197756,
+		"firstName": "Vera",
+		"lastName": "TAX",
+		"group": "S&D",
+		"country": "nl",
+		"seat": 719
+	},
+	{
+		"id": 197761,
+		"firstName": "Miroslav",
+		"lastName": "ČÍŽ",
+		"group": "S&D",
+		"country": "sk",
+		"seat": 459
+	},
+	{
+		"id": 197763,
+		"firstName": "Milan",
+		"lastName": "UHRÍK",
+		"group": "NI",
+		"country": "sk",
+		"seat": 691
+	},
+	{
+		"id": 197764,
+		"firstName": "Miroslav",
+		"lastName": "RADAČOVSKÝ",
+		"group": "NI",
+		"country": "sk",
+		"seat": 692
+	},
+	{
+		"id": 197765,
+		"firstName": "Peter",
+		"lastName": "POLLÁK",
+		"group": "PPE",
+		"country": "sk",
+		"seat": 670
+	},
+	{
+		"id": 197766,
+		"firstName": "Lucia",
+		"lastName": "ĎURIŠ NICHOLSONOVÁ",
+		"group": "ECR",
+		"country": "sk",
+		"seat": 278
+	},
+	{
+		"id": 197767,
+		"firstName": "Eugen",
+		"lastName": "JURZYCA",
+		"group": "ECR",
+		"country": "sk",
+		"seat": 433
+	},
+	{
+		"id": 197769,
+		"firstName": "Michal",
+		"lastName": "WIEZIK",
+		"group": "PPE",
+		"country": "sk",
+		"seat": 761
+	},
+	{
+		"id": 197770,
+		"firstName": "Martin",
+		"lastName": "HOJSÍK",
+		"group": "Renew",
+		"country": "sk",
+		"seat": 648
+	},
+	{
+		"id": 197771,
+		"firstName": "Vladimír",
+		"lastName": "BILČÍK",
+		"group": "PPE",
+		"country": "sk",
+		"seat": 410
+	},
+	{
+		"id": 197772,
+		"firstName": "Tineke",
+		"lastName": "STRIK",
+		"group": "Verts/ALE",
+		"country": "nl",
+		"seat": 725
+	},
+	{
+		"id": 197773,
+		"firstName": "Bert-Jan",
+		"lastName": "RUISSEN",
+		"group": "ECR",
+		"country": "nl",
+		"seat": 350
+	},
+	{
+		"id": 197776,
+		"firstName": "Rob",
+		"lastName": "ROOKEN",
+		"group": "ECR",
+		"country": "nl",
+		"seat": 514
+	},
+	{
+		"id": 197777,
+		"firstName": "Leopoldo",
+		"lastName": "LÓPEZ GIL",
+		"group": "PPE",
+		"country": "es",
+		"seat": 582
+	},
+	{
+		"id": 197778,
+		"firstName": "Tom",
+		"lastName": "BERENDSEN",
+		"group": "PPE",
+		"country": "nl",
+		"seat": 344
+	},
+	{
+		"id": 197779,
+		"firstName": "José Ramón",
+		"lastName": "BAUZÁ DÍAZ",
+		"group": "Renew",
+		"country": "es",
+		"seat": 407
+	},
+	{
+		"id": 197780,
+		"firstName": "Bart",
+		"lastName": "GROOTHUIS",
+		"group": "Renew",
+		"country": "nl",
+		"seat": 567
+	},
+	{
+		"id": 197781,
+		"firstName": "Malik",
+		"lastName": "AZMANI",
+		"group": "Renew",
+		"country": "nl",
+		"seat": 10
+	},
+	{
+		"id": 197782,
+		"firstName": "Mohammed",
+		"lastName": "CHAHIM",
+		"group": "S&D",
+		"country": "nl",
+		"seat": 391
+	},
+	{
+		"id": 197783,
+		"firstName": "Andris",
+		"lastName": "AMERIKS",
+		"group": "S&D",
+		"country": "lv",
+		"seat": 378
+	},
+	{
+		"id": 197784,
+		"firstName": "Susana",
+		"lastName": "SOLÍS PÉREZ",
+		"group": "Renew",
+		"country": "es",
+		"seat": 740
+	},
+	{
+		"id": 197785,
+		"firstName": "Eugenia",
+		"lastName": "RODRÍGUEZ PALOP",
+		"group": "GUE/NGL",
+		"country": "es",
+		"seat": 123
+	},
+	{
+		"id": 197786,
+		"firstName": "Susanna",
+		"lastName": "CECCARDI",
+		"group": "ID",
+		"country": "it",
+		"seat": 360
+	},
+	{
+		"id": 197787,
+		"firstName": "Antonio Maria",
+		"lastName": "RINALDI",
+		"group": "ID",
+		"country": "it",
+		"seat": 611
+	},
+	{
+		"id": 197788,
+		"firstName": "Anna",
+		"lastName": "BONFRISCO",
+		"group": "ID",
+		"country": "it",
+		"seat": 284
+	},
+	{
+		"id": 197789,
+		"firstName": "Simona",
+		"lastName": "BALDASSARRE",
+		"group": "ID",
+		"country": "it",
+		"seat": 216
+	},
+	{
+		"id": 197790,
+		"firstName": "Luisa",
+		"lastName": "REGIMENTI",
+		"group": "ID",
+		"country": "it",
+		"seat": 610
+	},
+	{
+		"id": 197791,
+		"firstName": "Massimiliano",
+		"lastName": "SMERIGLIO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 714
+	},
+	{
+		"id": 197792,
+		"firstName": "Daniela",
+		"lastName": "RONDINELLI",
+		"group": "NI",
+		"country": "it",
+		"seat": 856
+	},
+	{
+		"id": 197794,
+		"firstName": "Chiara",
+		"lastName": "GEMMA",
+		"group": "NI",
+		"country": "it",
+		"seat": 854
+	},
+	{
+		"id": 197795,
+		"firstName": "Mario",
+		"lastName": "FURORE",
+		"group": "NI",
+		"country": "it",
+		"seat": 772
+	},
+	{
+		"id": 197796,
+		"firstName": "Massimo",
+		"lastName": "CASANOVA",
+		"group": "ID",
+		"country": "it",
+		"seat": 438
+	},
+	{
+		"id": 197797,
+		"firstName": "Andrea",
+		"lastName": "CAROPPO",
+		"group": "ID",
+		"country": "it",
+		"seat": 359
+	},
+	{
+		"id": 197798,
+		"firstName": "Lucia",
+		"lastName": "VUOLO",
+		"group": "ID",
+		"country": "it",
+		"seat": 616
+	},
+	{
+		"id": 197799,
+		"firstName": "Valentino",
+		"lastName": "GRANT",
+		"group": "ID",
+		"country": "it",
+		"seat": 524
+	},
+	{
+		"id": 197800,
+		"firstName": "Eero",
+		"lastName": "HEINÄLUOMA",
+		"group": "S&D",
+		"country": "fi",
+		"seat": 52
+	},
+	{
+		"id": 197801,
+		"firstName": "Franco",
+		"lastName": "ROBERTI",
+		"group": "S&D",
+		"country": "it",
+		"seat": 706
+	},
+	{
+		"id": 197802,
+		"firstName": "Ville",
+		"lastName": "NIINISTÖ",
+		"group": "Verts/ALE",
+		"country": "fi",
+		"seat": 639
+	},
+	{
+		"id": 197804,
+		"firstName": "Dino",
+		"lastName": "GIARRUSSO",
+		"group": "NI",
+		"country": "it",
+		"seat": 775
+	},
+	{
+		"id": 197805,
+		"firstName": "Silvia",
+		"lastName": "MODIG",
+		"group": "GUE/NGL",
+		"country": "fi",
+		"seat": 377
+	},
+	{
+		"id": 197806,
+		"firstName": "Annalisa",
+		"lastName": "TARDINO",
+		"group": "ID",
+		"country": "it",
+		"seat": 614
+	},
+	{
+		"id": 197808,
+		"firstName": "Pietro",
+		"lastName": "BARTOLO",
+		"group": "S&D",
+		"country": "it",
+		"seat": 382
+	},
+	{
+		"id": 197810,
+		"firstName": "Nils",
+		"lastName": "UŠAKOVS",
+		"group": "S&D",
+		"country": "lv",
+		"seat": 183
+	},
+	{
+		"id": 197817,
+		"firstName": "Mick",
+		"lastName": "WALLACE",
+		"group": "GUE/NGL",
+		"country": "ie",
+		"seat": 455
+	},
+	{
+		"id": 197818,
+		"firstName": "Billy",
+		"lastName": "KELLEHER",
+		"group": "Renew",
+		"country": "ie",
+		"seat": 325
+	},
+	{
+		"id": 197819,
+		"firstName": "Alexis",
+		"lastName": "GEORGOULIS",
+		"group": "GUE/NGL",
+		"country": "gr",
+		"seat": 300
+	},
+	{
+		"id": 197820,
+		"firstName": "Nicola",
+		"lastName": "PROCACCINI",
+		"group": "ECR",
+		"country": "it",
+		"seat": 598
+	},
+	{
+		"id": 197822,
+		"firstName": "Francesca",
+		"lastName": "DONATO",
+		"group": "ID",
+		"country": "it",
+		"seat": 442
+	},
+	{
+		"id": 197824,
+		"firstName": "Giuseppe",
+		"lastName": "MILAZZO",
+		"group": "PPE",
+		"country": "it",
+		"seat": 592
+	},
+	{
+		"id": 197825,
+		"firstName": "Raffaele",
+		"lastName": "STANCANELLI",
+		"group": "ECR",
+		"country": "it",
+		"seat": 686
+	},
+	{
+		"id": 197826,
+		"firstName": "Matteo",
+		"lastName": "ADINOLFI",
+		"group": "ID",
+		"country": "it",
+		"seat": 215
+	},
+	{
+		"id": 197827,
+		"firstName": "Idoia",
+		"lastName": "VILLANUEVA RUIZ",
+		"group": "GUE/NGL",
+		"country": "es",
+		"seat": 125
+	},
+	{
+		"id": 197828,
+		"firstName": "Manu",
+		"lastName": "PINEDA",
+		"group": "GUE/NGL",
+		"country": "es",
+		"seat": 231
+	},
+	{
+		"id": 197829,
+		"firstName": "Jorge",
+		"lastName": "BUXADÉ VILLALBA",
+		"group": "ECR",
+		"country": "es",
+		"seat": 207
+	},
+	{
+		"id": 197831,
+		"firstName": "Hermann",
+		"lastName": "TERTSCH",
+		"group": "ECR",
+		"country": "es",
+		"seat": 107
+	},
+	{
+		"id": 197832,
+		"firstName": "Diana",
+		"lastName": "RIBA I GINER",
+		"group": "Verts/ALE",
+		"country": "es",
+		"seat": 249
+	},
+	{
+		"id": 197835,
+		"firstName": "Aušra",
+		"lastName": "MALDEIKIENĖ",
+		"group": "PPE",
+		"country": "lt",
+		"seat": 586
+	},
+	{
+		"id": 197836,
+		"firstName": "Alexander",
+		"lastName": "ALEXANDROV YORDANOV",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 335
+	},
+	{
+		"id": 197837,
+		"firstName": "Stasys",
+		"lastName": "JAKELIŪNAS",
+		"group": "Verts/ALE",
+		"country": "lt",
+		"seat": 478
+	},
+	{
+		"id": 197838,
+		"firstName": "Juozas",
+		"lastName": "OLEKAS",
+		"group": "S&D",
+		"country": "lt",
+		"seat": 634
+	},
+	{
+		"id": 197839,
+		"firstName": "Radan",
+		"lastName": "KANEV",
+		"group": "PPE",
+		"country": "bg",
+		"seat": 575
+	},
+	{
+		"id": 197840,
+		"firstName": "Rasa",
+		"lastName": "JUKNEVIČIENĖ",
+		"group": "PPE",
+		"country": "lt",
+		"seat": 573
+	},
+	{
+		"id": 197841,
+		"firstName": "Liudas",
+		"lastName": "MAŽYLIS",
+		"group": "PPE",
+		"country": "lt",
+		"seat": 591
+	},
+	{
+		"id": 197842,
+		"firstName": "Elena",
+		"lastName": "YONCHEVA",
+		"group": "S&D",
+		"country": "bg",
+		"seat": 799
+	},
+	{
+		"id": 197843,
+		"firstName": "Andrius",
+		"lastName": "KUBILIUS",
+		"group": "PPE",
+		"country": "lt",
+		"seat": 145
+	},
+	{
+		"id": 197844,
+		"firstName": "Petar",
+		"lastName": "VITANOV",
+		"group": "S&D",
+		"country": "bg",
+		"seat": 131
+	},
+	{
+		"id": 197845,
+		"firstName": "Tsvetelina",
+		"lastName": "PENKOVA",
+		"group": "S&D",
+		"country": "bg",
+		"seat": 635
+	},
+	{
+		"id": 197846,
+		"firstName": "Ivo",
+		"lastName": "HRISTOV",
+		"group": "S&D",
+		"country": "bg",
+		"seat": 544
+	},
+	{
+		"id": 197848,
+		"firstName": "Atidzhe",
+		"lastName": "ALIEVA-VELI",
+		"group": "Renew",
+		"country": "bg",
+		"seat": 403
+	},
+	{
+		"id": 197849,
+		"firstName": "Andrey",
+		"lastName": "SLABAKOV",
+		"group": "ECR",
+		"country": "bg",
+		"seat": 595
+	},
+	{
+		"id": 197863,
+		"firstName": "Maria",
+		"lastName": "WALSH",
+		"group": "PPE",
+		"country": "ie",
+		"seat": 758
+	},
+	{
+		"id": 197868,
+		"firstName": "Samira",
+		"lastName": "RAFAELA",
+		"group": "Renew",
+		"country": "nl",
+		"seat": 734
+	},
+	{
+		"id": 197870,
+		"firstName": "Kim",
+		"lastName": "VAN SPARRENTAK",
+		"group": "Verts/ALE",
+		"country": "nl",
+		"seat": 728
+	},
+	{
+		"id": 197889,
+		"firstName": "Grace",
+		"lastName": "O'SULLIVAN",
+		"group": "Verts/ALE",
+		"country": "ie",
+		"seat": 641
+	},
+	{
+		"id": 197894,
+		"firstName": "László",
+		"lastName": "TRÓCSÁNYI",
+		"group": "PPE",
+		"country": "hu",
+		"seat": 753
+	},
+	{
+		"id": 197935,
+		"firstName": "Ivan Vilibor",
+		"lastName": "SINČIĆ",
+		"group": "NI",
+		"country": "hr",
+		"seat": 776
+	},
+	{
+		"id": 198063,
+		"firstName": "Márton",
+		"lastName": "GYÖNGYÖSI",
+		"group": "NI",
+		"country": "hu",
+		"seat": 693
+	},
+	{
+		"id": 198096,
+		"firstName": "Mazaly",
+		"lastName": "AGUILAR",
+		"group": "ECR",
+		"country": "es",
+		"seat": 208
+	},
+	{
+		"id": 198176,
+		"firstName": "Roman",
+		"lastName": "HAIDER",
+		"group": "ID",
+		"country": "at",
+		"seat": 113
+	},
+	{
+		"id": 198183,
+		"firstName": "Mihai",
+		"lastName": "TUDOSE",
+		"group": "S&D",
+		"country": "ro",
+		"seat": 722
+	},
+	{
+		"id": 198329,
+		"firstName": "Estrella",
+		"lastName": "DURÁ FERRANDIS",
+		"group": "S&D",
+		"country": "es",
+		"seat": 463
+	},
+	{
+		"id": 198490,
+		"firstName": "Emmanouil",
+		"lastName": "FRAGKOS",
+		"group": "ECR",
+		"country": "gr",
+		"seat": 273
+	},
+	{
+		"id": 199941,
+		"firstName": "Marianne",
+		"lastName": "VIND",
+		"group": "S&D",
+		"country": "dk",
+		"seat": 796
+	},
+	{
+		"id": 199996,
+		"firstName": "Isabel",
+		"lastName": "CARVALHAIS",
+		"group": "S&D",
+		"country": "pt",
+		"seat": 389
+	},
+	{
+		"id": 202036,
+		"firstName": "Sunčana",
+		"lastName": "GLAVAK",
+		"group": "PPE",
+		"country": "hr",
+		"seat": 500
+	},
+	{
+		"id": 202073,
+		"firstName": "Marc",
+		"lastName": "ANGEL",
+		"group": "S&D",
+		"country": "lu",
+		"seat": 235
+	},
+	{
+		"id": 202112,
+		"firstName": "Gheorghe-Vlad",
+		"lastName": "NISTOR",
+		"group": "PPE",
+		"country": "ro",
+		"seat": 663
+	},
+	{
+		"id": 202351,
+		"firstName": "Carles",
+		"lastName": "PUIGDEMONT I CASAMAJÓ",
+		"group": "NI",
+		"country": "es",
+		"seat": 780
+	},
+	{
+		"id": 202352,
+		"firstName": "Antoni",
+		"lastName": "COMÍN I OLIVERES",
+		"group": "NI",
+		"country": "es",
+		"seat": 779
+	},
+	{
+		"id": 204331,
+		"firstName": "Linea",
+		"lastName": "SØGAARD-LIDELL",
+		"group": "Renew",
+		"country": "dk",
+		"seat": 736
+	},
+	{
+		"id": 204332,
+		"firstName": "Barry",
+		"lastName": "ANDREWS",
+		"group": "Renew",
+		"country": "ie",
+		"seat": 405
+	},
+	{
+		"id": 204333,
+		"firstName": "Salvatore",
+		"lastName": "DE MEO",
+		"group": "PPE",
+		"country": "it",
+		"seat": 424
+	},
+	{
+		"id": 204334,
+		"firstName": "Vincenzo",
+		"lastName": "SOFO",
+		"group": "ID",
+		"country": "it",
+		"seat": 613
+	},
+	{
+		"id": 204335,
+		"firstName": "Alviina",
+		"lastName": "ALAMETSÄ",
+		"group": "Verts/ALE",
+		"country": "fi",
+		"seat": 92
+	},
+	{
+		"id": 204336,
+		"firstName": "Miriam",
+		"lastName": "LEXMANN",
+		"group": "PPE",
+		"country": "sk",
+		"seat": 581
+	},
+	{
+		"id": 204346,
+		"firstName": "Dominik",
+		"lastName": "TARCZYŃSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": 349
+	},
+	{
+		"id": 204368,
+		"firstName": "Christian",
+		"lastName": "SAGARTZ",
+		"group": "PPE",
+		"country": "at",
+		"seat": 674
+	},
+	{
+		"id": 204400,
+		"firstName": "Adrián",
+		"lastName": "VÁZQUEZ LÁZARA",
+		"group": "Renew",
+		"country": "es",
+		"seat": 142
+	},
+	{
+		"id": 204413,
+		"firstName": "Marcos",
+		"lastName": "ROS SEMPERE",
+		"group": "S&D",
+		"country": "es",
+		"seat": 709
+	},
+	{
+		"id": 204414,
+		"firstName": "Margarita",
+		"lastName": "DE LA PISA CARRIÓN",
+		"group": "ECR",
+		"country": "es",
+		"seat": 509
+	},
+	{
+		"id": 204416,
+		"firstName": "Ilana",
+		"lastName": "CICUREL",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 484
+	},
+	{
+		"id": 204418,
+		"firstName": "Nora",
+		"lastName": "MEBAREK",
+		"group": "S&D",
+		"country": "fr",
+		"seat": 629
+	},
+	{
+		"id": 204419,
+		"firstName": "Sandro",
+		"lastName": "GOZI",
+		"group": "Renew",
+		"country": "fr",
+		"seat": 566
+	},
+	{
+		"id": 204420,
+		"firstName": "Claude",
+		"lastName": "GRUFFAT",
+		"group": "Verts/ALE",
+		"country": "fr",
+		"seat": 395
+	},
+	{
+		"id": 204421,
+		"firstName": "Jean-Lin",
+		"lastName": "LACAPELLE",
+		"group": "ID",
+		"country": "fr",
+		"seat": 606
+	},
+	{
+		"id": 204443,
+		"firstName": "Clara",
+		"lastName": "PONSATÍ OBIOLS",
+		"group": "NI",
+		"country": "es",
+		"seat": 781
+	},
+	{
+		"id": 204449,
+		"firstName": "Riho",
+		"lastName": "TERRAS",
+		"group": "PPE",
+		"country": "ee",
+		"seat": 152
+	},
+	{
+		"id": 204733,
+		"firstName": "Dorien",
+		"lastName": "ROOKMAKER",
+		"group": "NI",
+		"country": "nl",
+		"seat": 694
+	},
+	{
+		"id": 205452,
+		"firstName": "Chris",
+		"lastName": "MACMANUS",
+		"group": "GUE/NGL",
+		"country": "ie",
+		"seat": null
+	},
+	{
+		"id": 206158,
+		"firstName": "Manuela",
+		"lastName": "RIPA",
+		"group": "Greens/EFA",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 208722,
+		"firstName": "Sara",
+		"lastName": "MATTHIEU",
+		"group": "Greens/EFA",
+		"country": "be",
+		"seat": null
+	},
+	{
+		"id": 209091,
+		"firstName": "Cyrus",
+		"lastName": "ENGERER",
+		"group": "S&D",
+		"country": "mt",
+		"seat": null
+	},
+	{
+		"id": 209140,
+		"firstName": "Vlad",
+		"lastName": "GHEORGHE",
+		"group": "Renew",
+		"country": "ro",
+		"seat": null
+	},
+	{
+		"id": 209896,
+		"firstName": "Colm",
+		"lastName": "MARKEY",
+		"group": "EPP",
+		"country": "ie",
+		"seat": null
+	},
+	{
+		"id": 212855,
+		"firstName": "Alin",
+		"lastName": "MITUȚA",
+		"group": "Renew",
+		"country": "ro",
+		"seat": null
+	},
+	{
+		"id": 213330,
+		"firstName": "Ernő",
+		"lastName": "SCHALLER-BAROSS",
+		"group": "NA",
+		"country": "hu",
+		"seat": null
+	},
+	{
+		"id": 214839,
+		"firstName": "Emma",
+		"lastName": "WIESNER",
+		"group": "Renew",
+		"country": "se",
+		"seat": null
+	},
+	{
+		"id": 218347,
+		"firstName": "Thijs",
+		"lastName": "REUTEN",
+		"group": "S&D",
+		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 218349,
+		"firstName": "Michiel",
+		"lastName": "HOOGEVEEN",
+		"group": "ECR",
+		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 221463,
+		"firstName": "Ladislav",
+		"lastName": "ILČIĆ",
+		"group": "ECR",
+		"country": "hr",
+		"seat": null
+	},
+	{
+		"id": 226260,
+		"firstName": "Karolin",
+		"lastName": "BRAUNSBERGER-REINHOLD",
+		"group": "EPP",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 228286,
+		"firstName": "Karsten",
+		"lastName": "LUCKE",
+		"group": "S&D",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 228604,
+		"firstName": "Ilan",
+		"lastName": "DE BASSO",
+		"group": "S&D",
+		"country": "se",
+		"seat": null
+	},
+	{
+		"id": 229352,
+		"firstName": "Malte",
+		"lastName": "GALLÉE",
+		"group": "Greens/EFA",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 229519,
+		"firstName": "Catharina",
+		"lastName": "RINZEMA",
+		"group": "Renew",
+		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 229839,
+		"firstName": "René",
+		"lastName": "REPASI",
+		"group": "S&D",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 230085,
+		"firstName": "Camilla",
+		"lastName": "LAURETI",
+		"group": "S&D",
+		"country": "it",
+		"seat": null
+	},
+	{
+		"id": 233862,
+		"firstName": "Matjaž",
+		"lastName": "NEMEC",
+		"group": "S&D",
+		"country": "si",
+		"seat": null
+	},
+	{
+		"id": 234344,
+		"firstName": "Max",
+		"lastName": "ORVILLE",
+		"group": "Renew",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 236050,
+		"firstName": "Marie",
+		"lastName": "DAUCHY",
+		"group": "ID",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 236051,
+		"firstName": "Eric",
+		"lastName": "MINARDI",
+		"group": "ID",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 236052,
+		"firstName": "Patricia",
+		"lastName": "CHAGNON",
+		"group": "ID",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 236053,
+		"firstName": "Marina",
+		"lastName": "MESURE",
+		"group": "GUE/NGL",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 237224,
+		"firstName": "João",
+		"lastName": "ALBUQUERQUE",
+		"group": "S&D",
+		"country": "pt",
+		"seat": null
+	}
+]

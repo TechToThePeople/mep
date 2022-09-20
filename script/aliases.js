@@ -11,9 +11,9 @@ const wsv = require("wsv");
 // data
 const mepid = require("../data/mepid.json");
 const mepids = mepid.map(function(r){ return r.id }); // ids only for quicker lookup
-const countries = require("../data/country2iso.json");
+const countries = require("../data/static/country2iso.json");
 
-const src = path.resolve(__dirname,"../data/ep_meps_current.json");
+const src = path.resolve(__dirname,"../data/mirror/ep_meps_current.json");
 
 const spinner = "▁▂▃▄▅▆▇█▇▆▅▄▃▂".split("");
 
@@ -29,7 +29,7 @@ const main = module.exports = async function main(fn) {
 	// preload gender
 	const gender = {};
 	q.push(function(next){
-		fs.createReadStream(path.resolve(__dirname,"../data/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
+		fs.createReadStream(path.resolve(__dirname,"../data/static/meps.nogender.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			gender[r.epid] = r.gender;
 		}).on("end", function(){
 			console.log("[aliases] gender loaded");
