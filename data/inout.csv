@@ -1,6 +1,7 @@
 fullName,country,id,leg,start,end,file,eugroup,party
-Patricia CHAGNON,FR,236052,9,2022-07-29,,incoming,ID,
-Marie DAUCHY,FR,236050,9,2022-07-29,,incoming,ID,
+Ana MIRANDA,ES,24942,9,2022-09-05,,incoming,Greens/EFA,Bloque Nacionalista Galego
+Patricia CHAGNON,FR,236052,9,2022-07-29,,incoming,ID,Rassemblement national
+Marie DAUCHY,FR,236050,9,2022-07-29,,incoming,ID,Rassemblement national
 Marina MESURE,FR,236053,9,2022-07-29,,incoming,The Left,La France Insoumise
 Eric MINARDI,FR,236051,9,2022-07-29,,incoming,ID,
 Max ORVILLE,FR,234344,9,2022-05-20,,incoming,Renew,Mouvement Démocrate
@@ -63,6 +64,9 @@ Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
+Manuel PIZARRO,PT,197732,9,2019-07-02,2022-09-09,outgoing,S&D,Partido Socialista
+Pernando BARRENA ARZA,ES,197684,9,2019-07-02,2022-09-02,outgoing,The Left,EH BILDU
+Luis GARICANO,ES,197554,9,2019-07-02,2022-09-01,outgoing,Renew,Ciudadanos – Partido de la Ciudadanía
 Manuel BOMPARD,FR,197521,9,2019-07-02,2022-07-28,outgoing,The Left,La France Insoumise
 Hélène LAPORTE,FR,197597,9,2019-07-02,2022-07-28,outgoing,ID,Rassemblement national
 Julie LECHANTEUX,FR,197686,9,2019-07-02,2022-07-28,outgoing,ID,Rassemblement national
