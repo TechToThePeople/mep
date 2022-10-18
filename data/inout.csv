@@ -1,4 +1,17 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Silvio BERLUSCONI,IT,4391,9,2019-07-02,2022-10-12,outgoing,EPP,Forza Italia
+Mara BIZZOTTO,IT,97198,9,2019-07-02,2022-10-12,outgoing,ID,Lega
+Simona BONAFÈ,IT,124814,9,2019-07-02,2022-10-12,outgoing,S&D,Partito Democratico
+Carlo CALENDA,IT,197617,9,2019-07-02,2022-10-12,outgoing,Renew,Azione
+Andrea CAROPPO,IT,197797,9,2019-07-02,2022-10-12,outgoing,EPP,Forza Italia
+Marco DREOSTO,IT,197614,9,2019-07-02,2022-10-12,outgoing,ID,Lega
+Eleonora EVI,IT,124779,9,2019-07-02,2022-10-12,outgoing,Greens/EFA,Europa Verde
+Raffaele FITTO,IT,4465,9,2019-07-02,2022-10-12,outgoing,ECR,Fratelli d'Italia
+Antonio TAJANI,IT,2187,9,2019-07-02,2022-10-12,outgoing,EPP,Forza Italia
+Bettina VOLLATH,AT,197678,9,2019-07-02,2022-10-09,outgoing,S&D,Sozialdemokratische Partei Österreichs
+Constanze KREHL,DE,1854,9,2019-07-02,2022-10-02,outgoing,S&D,Sozialdemokratische Partei Deutschlands
+Jytte GUTELAND,SE,124991,9,2019-07-02,2022-09-25,outgoing,S&D,Arbetarepartiet- Socialdemokraterna
+Jessica STEGRUD,SE,197399,9,2019-07-02,2022-09-25,outgoing,ECR,Sverigedemokraterna
 Manuel PIZARRO,PT,197732,9,2019-07-02,2022-09-09,outgoing,S&D,Partido Socialista
 Pernando BARRENA ARZA,ES,197684,9,2019-07-02,2022-09-02,outgoing,The Left,EH BILDU
 Luis GARICANO,ES,197554,9,2019-07-02,2022-09-01,outgoing,Renew,Ciudadanos – Partido de la Ciudadanía
@@ -180,3 +193,7 @@ Eric MINARDI,FR,236051,9,2022-07-29,,incoming,ID,Rassemblement national
 Ana MIRANDA,ES,24942,9,2022-09-05,,incoming,Greens/EFA,Bloque Nacionalista Galego
 João ALBUQUERQUE,PT,237224,9,2022-09-13,,incoming,S&D,Partido Socialista
 Eva Maria POPTCHEVA,ES,237320,9,2022-09-15,,incoming,Renew,Ciudadanos – Partido de la Ciudadanía
+Carina OHLSSON,SE,237779,9,2022-09-26,,incoming,S&D,Arbetarepartiet- Socialdemokraterna
+Matthias ECKE,DE,237465,9,2022-10-03,,incoming,S&D,Sozialdemokratische Partei Deutschlands
+Theresa MUIGG,AT,238674,9,2022-10-10,,incoming,S&D,Sozialdemokratische Partei Österreichs
+Johan NISSINEN,SE,238639,9,2022-10-11,,incoming,ECR,Sverigedemokraterna
