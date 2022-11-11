@@ -258,7 +258,7 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 125046,es,Jonás,FERNÁNDEZ,jonas.fernandezalvarez@europarl.europa.eu,1979-01-08,M,S&D,Partido Socialista Obrero Español,003222845174,14G113,ECON|FISC,BUDG,D-ME,jonasfernandez,tttp_125046,2014-07-01,,,,,,,S,,,,,,M,,,,M,,,,,,,,,,,,,
 125063,gr,Georgios,KYRTSOS,georgios.kyrtsos@europarl.europa.eu,1952-06-04,M,Renew,Independent,003222845856,07M081,ECON,AFET|ING2,,giorgoskyrtsos,tttp_125063,2014-07-01,,S,,,,,,,,,,,M,,,,,,S,,,,,,,,,,,
 125064,gr,Maria,SPYRAKI,maria.spyraki@europarl.europa.eu,1965-09-11,F,EPP,Nea Demokratia,003222845176,09E103,ITRE|ENVI,REGI|ING2,D-CN,mariaspyraki,tttp_125064,2014-07-01,,,,,,,,,,,,,,,M,,,,S,,,M,,,,,,S,,
-125065,gr,Elissavet,VOZEMBERG-VRIONIDI,elissavet.vozemberg@europarl.europa.eu,1956-09-14,F,EPP,Nea Demokratia,003222845232,09E116,LIBE|TRAN|FEMM,,D-TR,vozemberg,tttp_125065,2014-07-01,,,,,,,,,,,,,,,,V,,,,,,,,M,,,,,,M
+125065,gr,Elissavet,VOZEMBERG-VRIONIDI,elissavet.vozemberg@europarl.europa.eu,1956-09-14,F,EPP,Nea Demokratia,003222845232,09E116,LIBE|TRAN|FEMM,PEGA,D-TR,vozemberg,tttp_125065,2014-07-01,,,,,,,,,,,,,,,,V,,,,,,,,M,,S,,,,M
 125067,gr,Theodoros,ZAGORAKIS,theodoros.zagorakis@europarl.europa.eu,1971-10-27,M,EPP,Nea Demokratia,003222845461,09E154,CULT|PECH,SEDE,D-RU,,tttp_125067,2014-07-01,,,,,,,,,,M,,,,,,,,,,,,,,,M,,,,S,
 125068,gr,Manolis,KEFALOGIANNIS,manolis.kefalogiannis@europarl.europa.eu,1959-05-24,M,EPP,Nea Demokratia,003222845570,09E142,REGI,AGRI|AFET,D-TR|D-AL|DARP,m_kefalogiannis,tttp_125068,2014-07-01,,S,S,,,,,,,,,,,,,,,,,,,,,,,,,M,,
 125093,gr,Kostas,PAPADAKIS,konstantinos.papadakis@europarl.europa.eu,1975-04-18,M,NA,Communist Party of Greece,003222845494,03E266,AFET|DROI,LIBE|SEDE,D-TR,,tttp_125093,2014-07-01,,M,,,,,,,,,,M,,,,,,,,,,,,S,,,,,S,
@@ -702,5 +702,5 @@ epid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,off
 236051,fr,Eric,MINARDI,eric.minardi@ep.europa.eu,,M,ID,Rassemblement national,003222845310,04F146,BUDG,REGI,,,tttp_236051,2022-07-29,,,,,,,M,,,,,,,,,,,,,,,,,,,,,S,,
 236052,fr,Patricia,CHAGNON,patricia.chagnon@ep.europa.eu,,F,ID,Rassemblement national,003222845844,04F254,LIBE,AFET,,ChagnonPatricia,tttp_236052,2022-07-29,,S,,,,,,,,,,,,,,,,,,,,,,M,,,,,,
 236053,fr,Marina,MESURE,marina.mesure@ep.europa.eu,,F,GUE/NGL,La France Insoumise,003222845432,01H251,ITRE|ENVI,,,MarinaMesure,tttp_236053,2022-07-29,,,,,,,,,,,,,,,M,,,,,,,M,,,,,,,,
-237224,pt,João,ALBUQUERQUE,joao.albuquerque@ep.europa.eu,,M,S&D,Partido Socialista,003222858707,13G140,EMPL|PECH,CULT|PETI|ENVI,D-BR|D-RU,jdalbuquerque,tttp_237224,2022-09-13,,,,,,,,,,S,,,,M,S,,,,,,,,,,M,,S,,,
-237320,es,Eva Maria,POPTCHEVA,,,F,Renew,Ciudadanos – Partido de la Ciudadanía,003222846708,09Y053,,BUDG,,,tttp_237320,2022-09-15,,,,,,,S,,,,,,,,,,,,,,,,,,,,,,,
+237224,pt,João,ALBUQUERQUE,joao.albuquerque@ep.europa.eu,,M,S&D,Partido Socialista,003222845245,13G153,EMPL|PECH,CULT|PETI|ENVI,D-BR|D-RU,jdalbuquerque,tttp_237224,2022-09-13,,,,,,,,,,S,,,,M,S,,,,,,,,,,M,,S,,,
+237320,es,Eva Maria,POPTCHEVA,,,F,Renew,Ciudadanos – Partido de la Ciudadanía,003222845127,05M075,,BUDG,,epoptcheva,tttp_237320,2022-09-15,,,,,,,S,,,,,,,,,,,,,,,,,,,,,,,
