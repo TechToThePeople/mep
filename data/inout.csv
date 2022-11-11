@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Lefteris CHRISTOFOROU,CY,26837,9,2019-07-02,2022-11-01,outgoing,EPP,Democratic Rally
 Silvio BERLUSCONI,IT,4391,9,2019-07-02,2022-10-12,outgoing,EPP,Forza Italia
 Mara BIZZOTTO,IT,97198,9,2019-07-02,2022-10-12,outgoing,ID,Lega
 Simona BONAFÈ,IT,124814,9,2019-07-02,2022-10-12,outgoing,S&D,Partito Democratico
@@ -128,7 +129,7 @@ Frans TIMMERMANS,NL,129141,9,2019-07-02,2019-07-02,outgoing,S&D,Partij van de Ar
 Lara WOLTERS,NL,5392,9,2019-07-04,,incoming,S&D,Partij van de Arbeid
 Emmanouil FRAGKOS,GR,198490,9,2019-07-10,,incoming,ECR,Elliniki Lusi-Greek Solution
 Isabel CARVALHAIS,PT,199996,9,2019-09-03,,incoming,S&D,Partido Socialista
-Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Italia Viva
+Nicola DANTI,IT,124821,9,2019-09-05,,incoming,Renew,Azione - Italia Viva
 Sunčana GLAVAK,HR,202036,9,2019-12-01,,incoming,EPP,Hrvatska demokratska zajednica
 Gheorghe-Vlad NISTOR,RO,202112,9,2019-12-02,,incoming,EPP,Partidul Naţional Liberal
 Marc ANGEL,LU,202073,9,2019-12-10,,incoming,S&D,Parti ouvrier socialiste luxembourgeois
@@ -144,7 +145,7 @@ Deirdre CLUNE,IE,124988,9,2020-02-01,,incoming,EPP,Fine Gael Party
 Jakop G. DALUNDE,SE,183338,9,2020-02-01,,incoming,Greens/EFA,Miljöpartiet de gröna
 Salvatore DE MEO,IT,204333,9,2020-02-01,,incoming,EPP,Forza Italia
 Sandro GOZI,FR,204419,9,2020-02-01,,incoming,Renew,Liste Renaissance
-Marcel de GRAAFF,NL,125025,9,2020-02-01,,incoming,ID,Partij voor de Vrijheid
+Marcel de GRAAFF,NL,125025,9,2020-02-01,,incoming,NI,Forum voor Democratie
 Bart GROOTHUIS,NL,197780,9,2020-02-01,,incoming,Renew,Volkspartij voor Vrijheid en Democratie
 Claude GRUFFAT,FR,204420,9,2020-02-01,,incoming,Greens/EFA,Europe Écologie
 Romana JERKOVIĆ,HR,112747,9,2020-02-01,,incoming,S&D,Socijaldemokratska partija Hrvatske
@@ -197,3 +198,12 @@ Carina OHLSSON,SE,237779,9,2022-09-26,,incoming,S&D,Arbetarepartiet- Socialdemok
 Matthias ECKE,DE,237465,9,2022-10-03,,incoming,S&D,Sozialdemokratische Partei Deutschlands
 Theresa MUIGG,AT,238674,9,2022-10-10,,incoming,S&D,Sozialdemokratische Partei Österreichs
 Johan NISSINEN,SE,238639,9,2022-10-11,,incoming,ECR,Sverigedemokraterna
+Lara COMI,IT,96775,9,2022-11-02,,incoming,EPP,Forza Italia
+Maria Angela DANZÌ,IT,239258,9,2022-11-02,,incoming,NI,Movimento 5 Stelle
+Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,ID,Lega
+Matteo GAZZINI,IT,239255,9,2022-11-02,,incoming,ID,Lega
+Paola GHIDONI,IT,239256,9,2022-11-02,,incoming,ID,Lega
+Alessandra MUSSOLINI,IT,28429,9,2022-11-02,,incoming,EPP,
+Denis NESCI,IT,239260,9,2022-11-02,,incoming,ECR,FRATELLI D' ITALIA
+Eleni STAVROU,CY,239271,9,2022-11-02,,incoming,EPP,Democratic Rally
+Achille VARIATI,IT,239257,9,2022-11-02,,incoming,S&D,Partito Democratico

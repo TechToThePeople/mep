@@ -149,14 +149,16 @@ const main = module.exports = async function main(fn) {
 				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
 
 				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
-			
+          if (!r.Committees)
+            r.Committees=[];
+
 				// check object
 				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
 						
 				// assemble data
 				const data = {
 					meta: r.meta,
-					CV: r.CV, // ← this makes the file really big. is it needed? FIXME
+//					CV: r.CV, // ← this makes the file really big. is it needed? FIXME
 					Addresses: {
 						Brussels: { 
 							Phone: (r.Addresses?.Brussels?.Phone||""),
@@ -172,7 +174,7 @@ const main = module.exports = async function main(fn) {
 					first_name: r.Name.sur,
 					last_name: r.Name.family,
 					epid: r.UserID,
-					Twitter: twitter[r.UserID.toString()] || ((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase(),
+					Twitter: ((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase() || twitter[r.UserID.toString()],
 					mail: (((r.Mail && Array.isArray(r.Mail) && r.Mail.length > 0) ? r.Mail[0] : r.Mail) || "").toLowerCase() || ((!r.Name.sur.includes(" ") && !r.Name.family.includes(" ")) ? (r.Name.sur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + r.Name.family.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@ep.europa.eu") : ""), // use r.Mail[0] or r.Mail or try to costruct from first and last name
 
 					// FIXME: data source does not have this property
