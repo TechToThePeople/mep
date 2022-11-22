@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Søren GADE,DK,197555,9,2019-07-02,2022-11-14,outgoing,Renew,"Venstre, Danmarks Liberale Parti"
+Peter KOFOD,DK,197570,9,2019-07-02,2022-11-14,outgoing,ID,Dansk Folkeparti
 Lefteris CHRISTOFOROU,CY,26837,9,2019-07-02,2022-11-01,outgoing,EPP,Democratic Rally
 Silvio BERLUSCONI,IT,4391,9,2019-07-02,2022-10-12,outgoing,EPP,Forza Italia
 Mara BIZZOTTO,IT,97198,9,2019-07-02,2022-10-12,outgoing,ID,Lega
@@ -164,6 +166,7 @@ Dominik TARCZYŃSKI,PL,204346,9,2020-02-01,,incoming,ECR,Prawo i Sprawiedliwoś�
 Riho TERRAS,EE,204449,9,2020-02-01,,incoming,EPP,Isamaa
 Adrián VÁZQUEZ LÁZARA,ES,204400,9,2020-02-01,,incoming,Renew,Ciudadanos – Partido de la Ciudadanía
 Thomas WAITZ,AT,190464,9,2020-02-01,,incoming,Greens/EFA,Die Grünen - Die Grüne Alternative
+Linea SØGAARD-LIDELL,DK,204331,9,2020-02-01,2022-11-14,outgoing,Renew,"Venstre, Danmarks Liberale Parti"
 Chris MACMANUS,IE,205452,9,2020-03-06,,incoming,The Left,Sinn Féin
 Manuela RIPA,DE,206158,9,2020-07-16,,incoming,Greens/EFA,Ökologisch-Demokratische Partei
 Sara MATTHIEU,BE,208722,9,2020-10-08,,incoming,Greens/EFA,Groen
@@ -203,7 +206,7 @@ Maria Angela DANZÌ,IT,239258,9,2022-11-02,,incoming,NI,Movimento 5 Stelle
 Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,ID,Lega
 Matteo GAZZINI,IT,239255,9,2022-11-02,,incoming,ID,Lega
 Paola GHIDONI,IT,239256,9,2022-11-02,,incoming,ID,Lega
-Alessandra MUSSOLINI,IT,28429,9,2022-11-02,,incoming,EPP,
+Alessandra MUSSOLINI,IT,28429,9,2022-11-02,,incoming,EPP,Forza Italia
 Denis NESCI,IT,239260,9,2022-11-02,,incoming,ECR,FRATELLI D' ITALIA
 Eleni STAVROU,CY,239271,9,2022-11-02,,incoming,EPP,Democratic Rally
 Achille VARIATI,IT,239257,9,2022-11-02,,incoming,S&D,Partito Democratico

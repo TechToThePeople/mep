@@ -3536,14 +3536,6 @@
 		"seat": 210
 	},
 	{
-		"id": 197555,
-		"firstName": "Søren",
-		"lastName": "GADE",
-		"group": "Renew",
-		"country": "dk",
-		"seat": 564
-	},
-	{
 		"id": 197556,
 		"firstName": "Ivan",
 		"lastName": "DAVID",
@@ -3606,14 +3598,6 @@
 		"group": "Renew",
 		"country": "dk",
 		"seat": 655
-	},
-	{
-		"id": 197570,
-		"firstName": "Peter",
-		"lastName": "KOFOD",
-		"group": "ID",
-		"country": "dk",
-		"seat": 72
 	},
 	{
 		"id": 197571,
@@ -5174,14 +5158,6 @@
 		"group": "NI",
 		"country": "es",
 		"seat": 779
-	},
-	{
-		"id": 204331,
-		"firstName": "Linea",
-		"lastName": "SØGAARD-LIDELL",
-		"group": "Renew",
-		"country": "dk",
-		"seat": 736
 	},
 	{
 		"id": 204332,
