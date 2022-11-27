@@ -1768,6 +1768,14 @@
 		"seat": 68
 	},
 	{
+		"id": 124875,
+		"firstName": "Anders",
+		"lastName": "VISTISEN",
+		"group": "ID",
+		"country": "dk",
+		"seat": null
+	},
+	{
 		"id": 124877,
 		"firstName": "Jadwiga",
 		"lastName": "WIŚNIEWSKA",
@@ -5605,6 +5613,22 @@
 		"lastName": "STAVROU",
 		"group": "EPP",
 		"country": "cy",
+		"seat": null
+	},
+	{
+		"id": 239972,
+		"firstName": "Erik",
+		"lastName": "POULSEN",
+		"group": "Renew",
+		"country": "dk",
+		"seat": null
+	},
+	{
+		"id": 239973,
+		"firstName": "Bergur Løkke",
+		"lastName": "RASMUSSEN",
+		"group": "Renew",
+		"country": "dk",
 		"seat": null
 	}
 ]

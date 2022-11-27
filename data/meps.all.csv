@@ -2984,7 +2984,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 28240,Helga,TRÜPEL,false,2004-07-20,,2019-07-01,1958-07-21,de,F,Verts/ALE,Bündnis 90/Die Grünen,helga.truepel@europarl.europa.eu,helgatruepel,8,2014-07-01
 125020,Paul,TANG,true,2014-07-01,2019-07-02,,1967-04-23,nl,M,S&D,Partij van de Arbeid,paul.tang@europarl.europa.eu,paultang,9,2014-07-01
 124737,Maria João,RODRIGUES,false,2014-07-01,,2019-07-01,1955-09-25,pt,F,S&D,Partido Socialista,mariajoao.rodrigues@europarl.europa.eu,mjr_eu,8,2014-07-01
-124875,Anders Primdahl,VISTISEN,false,2014-07-01,,2019-07-01,1987-11-12,dk,M,ECR,Dansk Folkeparti,anders.vistisen@europarl.europa.eu,,8,2014-07-01
+124875,Anders,VISTISEN,false,2014-07-01,,2019-07-01,1987-11-12,dk,M,ID,Dansk Folkeparti,anders.vistisen@europarl.europa.eu,,8,2014-07-01
 28301,Tadeusz,ZWIEFKA,false,2004-07-20,,2019-07-01,1954-12-28,pl,M,PPE,Platforma Obywatelska,tadeusz.zwiefka@europarl.europa.eu,tadeuszzwiefka,8,2014-07-01
 124937,Peter,ERIKSSON,false,2014-07-01,,2016-05-24,1958-08-03,se,M,Verts/ALE,Miljöpartiet de gröna,,,8,2014-07-01
 96919,Emma,McCLARKIN,false,2009-07-14,,2019-07-01,1978-10-09,uk,F,ECR,Conservative Party,emma.mcclarkin@europarl.europa.eu,emmamcclarkin,8,2014-07-01
@@ -4184,3 +4184,5 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 239271,Eleni,STAVROU,true,2022-11-02,2022-11-02,,,cy,F,PPE,Democratic Rally,,,9,
 239255,Matteo,GAZZINI,true,2022-11-02,2022-11-02,,,it,M,ID,Lega,,,9,
 239257,Achille,VARIATI,true,2022-11-02,2022-11-02,,,it,M,S&D,Partito Democratico,,,9,
+239972,Erik,POULSEN,true,2022-11-22,2022-11-22,,,dk,,RE,"Venstre, Danmarks Liberale Parti",,,9,
+239973,Bergur Løkke,RASMUSSEN,true,2022-11-22,2022-11-22,,,dk,,RE,"Venstre, Danmarks Liberale Parti",,,9,
