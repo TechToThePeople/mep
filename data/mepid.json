@@ -5630,5 +5630,13 @@
 		"group": "Renew",
 		"country": "dk",
 		"seat": null
+	},
+	{
+		"id": 240478,
+		"firstName": "Beatrice",
+		"lastName": "COVASSI",
+		"group": "S&D",
+		"country": "it",
+		"seat": null
 	}
 ]
