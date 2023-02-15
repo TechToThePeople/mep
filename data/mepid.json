@@ -664,6 +664,14 @@
 		"seat": 8
 	},
 	{
+		"id": 96653,
+		"firstName": "Katarína",
+		"lastName": "ROTH NEVEĎALOVÁ",
+		"group": "S&D",
+		"country": "sk",
+		"seat": null
+	},
+	{
 		"id": 96668,
 		"firstName": "Seán",
 		"lastName": "KELLY",
@@ -5546,7 +5554,7 @@
 	{
 		"id": 238674,
 		"firstName": "Theresa",
-		"lastName": "MUIGG",
+		"lastName": "BIELOWSKI",
 		"group": "S&D",
 		"country": "at",
 		"seat": null
