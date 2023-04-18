@@ -107,12 +107,39 @@ const main = module.exports = async function main(fn) {
 			next();
 		}));
 	});
+
+  const twitterQA = (id,screenname) => {
+     if (screenname && twitter[id] && twitter[id].toLowerCase() !== screenname.toLowerCase())
+       console.log("mismatch on twitter accounts for ", id, twitter[id], screenname.toLowerCase());
+  }
 	
+	// load wikidata for twitter (and gender and mastodon?)
+	q.push(function(next){
+    const wikidata = path.resolve(__dirname,"../data/wikidata.json");
+    const meps = JSON.parse(fs.readFileSync(wikidata));
+    meps.forEach ( d => {
+//  'Mastodon address': 'violavoncramon@respublicae.eu',
+//  'languages spoken, written or signed': 'German',
+//  'official website': 'https://violavoncramon.de/',
+//  'abgeordnetenwatch.de politician ID': '120712',
+//  image: 'http://commons.wikimedia.org/wiki/Special:FilePath/Dimitris%20Rallis%2C%20Viola%20von%20Cramon%20%28cropped%29.jpg',
+         twitterQA(d['MEP directory ID'],d['Twitter username']);
+      if (Array.isArray(d['Twitter username'])) {
+        console.log("multiple twitter accounts", d['MEP directory ID'], d['Twitter username']);
+        return;
+      }
+      twitter[d['MEP directory ID']] = d['Twitter username'];
+//  'native language': 'German',
+   });
+			next();
+	});
+
 	// load extra_csv for twitter
 	q.push(function(next){
 		fs.createReadStream(path.resolve(__dirname,"../data/mirror/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			if (r.SCREEN_NAME[0] !== "@") return;
-			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1);
+//      twitterQA(r["EP id"],r.SCREEN_NAME.substr(1));
+//			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1).toLowerCase();
 		}).on("end", function(){
 			console.log("[transform] extra_csv loaded");
 			next();
@@ -127,6 +154,7 @@ const main = module.exports = async function main(fn) {
 				if (s.type !== "twitter") return;
 				if (!s.username) return;
 				if (!/^[a-zA-Z0-9_]+$/.test(s.username)) return;
+         twitterQA(r.codictId.toString(),s.username.toLowerCase());
 				twitter[r.codictId.toString()] = s.username.toLowerCase();
 			});
 		});
@@ -143,9 +171,19 @@ const main = module.exports = async function main(fn) {
 				// very fancy spinner
 				total++;
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
-
+if (r.UserID === 58766) {
+  r.active = true; //wrongly flaged as inactive
+  r.Constituencies= [
+    {
+      party: '',
+      country: 'Romania',
+      start: '2019-07-02T00:00:00',
+      end: '9999-12-31T00:00:00',
+      term: 9
+    }
+  ];
+}
 				if (!r.active) return done();
-
 				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
 
 				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
@@ -154,7 +192,9 @@ const main = module.exports = async function main(fn) {
 
 				// check object
 				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
-						
+					twitterQA (             r.UserID.toString(),
+					((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase());
+
 				// assemble data
 				const data = {
 					meta: r.meta,
