@@ -7,13 +7,15 @@ const stream = require("stream");
 const jsonstream = require("JSONStream");
 const quu = require("quu");
 const xsv = require("xsv");
-const wsv = require("wsv");
+//const wsv = require("wsv");
+const fastcsv = require ('@fast-csv/format');
 
 // file paths
 const src = path.resolve(__dirname,"../data/mirror/ep_meps_current.json");
 const dest_meps_csv = path.resolve(__dirname,"../data/meps.csv");
 const dest_meps_json = path.resolve(__dirname,"../data/meps.json");
 const dest_abbreviations = path.resolve(__dirname,"../data/abbreviations.json");
+const dest_twitter_dupes = path.resolve(__dirname,"../data/twitter_errors.csv");
 
 // data and overrides
 const mepid = require("../data/mepid.json");
@@ -97,6 +99,7 @@ const main = module.exports = async function main(fn) {
 	// preload data
 	const gender = {};
 	const twitter = {};
+	const twitterError = {};
 
 	// load gender overrides
 	q.push(function(next){
@@ -108,9 +111,18 @@ const main = module.exports = async function main(fn) {
 		}));
 	});
 
-  const twitterQA = (id,screenname) => {
-     if (screenname && twitter[id] && twitter[id].toLowerCase() !== screenname.toLowerCase())
-       console.log("mismatch on twitter accounts for ", id, twitter[id], screenname.toLowerCase());
+  const twitterQA = (id,screenname,source) => {
+     if (screenname && twitter[id] && twitter[id].toLowerCase() !== screenname.toLowerCase()) {
+       if (!source) {
+         console.log("mismatch on twitter accounts for ", id, twitter[id], screenname.toLowerCase());
+process.exit(1);
+       }
+      console.log("["+source+"] mismatch on twitter accounts for ", id, twitter[id], screenname.toLowerCase());
+       if (twitterError[id])
+         twitterError[id].twitter = twitterError[id].twitter.concat([screenname]);
+       else 
+         twitterError[id] = {twitter: [twitter[id],screenname]};
+     }
   }
 	
 	// load wikidata for twitter (and gender and mastodon?)
@@ -123,9 +135,9 @@ const main = module.exports = async function main(fn) {
 //  'official website': 'https://violavoncramon.de/',
 //  'abgeordnetenwatch.de politician ID': '120712',
 //  image: 'http://commons.wikimedia.org/wiki/Special:FilePath/Dimitris%20Rallis%2C%20Viola%20von%20Cramon%20%28cropped%29.jpg',
-         twitterQA(d['MEP directory ID'],d['Twitter username']);
+         twitterQA(d['MEP directory ID'],d['Twitter username'],'wikipedia');
       if (Array.isArray(d['Twitter username'])) {
-        console.log("multiple twitter accounts", d['MEP directory ID'], d['Twitter username']);
+        twitterError[d['MEP directory ID']] = {name:d['given name'] || d['family name'],country:d['country of citizenship'],twitter:d['Twitter username']};
         return;
       }
       twitter[d['MEP directory ID']] = d['Twitter username'];
@@ -135,11 +147,12 @@ const main = module.exports = async function main(fn) {
 	});
 
 	// load extra_csv for twitter
-	q.push(function(next){
+
+	false && q.push(function(next){
 		fs.createReadStream(path.resolve(__dirname,"../data/mirror/extra_csv.csv")).pipe(xsv({ sep: "," }).on("data", function(r){
 			if (r.SCREEN_NAME[0] !== "@") return;
-//      twitterQA(r["EP id"],r.SCREEN_NAME.substr(1));
-//			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1).toLowerCase();
+      twitterQA(r["EP id"],r.SCREEN_NAME.substr(1),"extra_csv");
+			twitter[r["EP id"]] = r.SCREEN_NAME.substr(1).toLowerCase();
 		}).on("end", function(){
 			console.log("[transform] extra_csv loaded");
 			next();
@@ -154,7 +167,7 @@ const main = module.exports = async function main(fn) {
 				if (s.type !== "twitter") return;
 				if (!s.username) return;
 				if (!/^[a-zA-Z0-9_]+$/.test(s.username)) return;
-         twitterQA(r.codictId.toString(),s.username.toLowerCase());
+         twitterQA(r.codictId.toString(),s.username.toLowerCase(), "epnewshub");
 				twitter[r.codictId.toString()] = s.username.toLowerCase();
 			});
 		});
@@ -171,8 +184,9 @@ const main = module.exports = async function main(fn) {
 				// very fancy spinner
 				total++;
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
+				if (!r.active) return done();
+
 if (r.UserID === 58766) {
-  r.active = true; //wrongly flaged as inactive
   r.Constituencies= [
     {
       party: '',
@@ -183,7 +197,7 @@ if (r.UserID === 58766) {
     }
   ];
 }
-				if (!r.active) return done();
+
 				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
 
 				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
@@ -193,7 +207,7 @@ if (r.UserID === 58766) {
 				// check object
 				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
 					twitterQA (             r.UserID.toString(),
-					((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase());
+					((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase(),"europarl");
 
 				// assemble data
 				const data = {
@@ -323,7 +337,8 @@ if (r.UserID === 58766) {
 
 		// set up csv writer
 		const dest = fs.createWriteStream(dest_meps_csv);
-		const csv = wsv({ preset: "csv", header: ["epid", "country", "first_name", "last_name", "email", "birthdate", "gender", "eugroup", "party", "phone", "office", "committee", "substitute", "delegation", "twitter", "tttpid", "since"].concat(committee_ids) })
+		const csv = fastcsv.format({ headers: ["epid", "country", "first_name", "last_name", "email", "birthdate", "gender", "eugroup", "party", "phone", "office", "committee", "substitute", "delegation", "twitter", "tttpid", "since"].concat(committee_ids) , writeHeaders: true });
+
 		csv.pipe(dest);
 		dest.on("close", function(){
 			return console.log("[transform] saved meps.csv"), next();
@@ -332,11 +347,15 @@ if (r.UserID === 58766) {
 		// gilter & flatten objects and write to csv
 		result.filter(function(r){
 			return (typeof r === 'object' && r.hasOwnProperty("constituency"));
-		}).sort(function(a,b){ return a.epid - b.epid; }).map(function(r){
-
+		}).sort(function(a,b){ return b.epid - a.epid; }).map(function(r){
 			return {
-				...r,
-				
+			  epid: r.epid,
+        country: r.country,
+        first_name: r.first_name,
+        last_name: r.last_name,
+        eugroup: r.eugroup,
+        since: r.since,
+	
 				email: r.mail,
 				twitter: r.Twitter,
 				gender: r.Gender,
@@ -364,6 +383,40 @@ if (r.UserID === 58766) {
 			csv.write(r);
 		});
 
+		// finish csv writer
+		csv.end();
+
+	});
+	
+	// save twitter duplicates csv
+	q.push(function(next){
+next();
+
+		// set up csv writer
+		const dest = fs.createWriteStream(dest_twitter_dupes);
+		const csv = fastcsv.format({ headers: ["epid", "name","correct","twitter1","twitter2"]});
+		csv.pipe(dest);
+		dest.on("close", function(){
+			return console.log("[transform] saved twitter dupes.csv"), next();
+		});
+
+		// gilter & flatten objects and write to csv
+		Object.keys(twitterError).forEach ( d => {
+      d = parseInt(d,10);
+      const mep=result.find (m => {
+        return m.epid === d;
+     });
+     if (!mep)  {
+console.log("missing",d);
+      }
+      const t = {...twitterError[d],epid:d};
+      t.name = mep? mep.first_name + " " + mep.last_name : t.name;
+      twitterError[d].twitter.forEach ( (d,i) => {
+        t["twitter"+(i+1)]=d;
+        t["twitter"+(i+1)]=d;
+      });
+			csv.write(t);
+		});
 		// finish csv writer
 		csv.end();
 
