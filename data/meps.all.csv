@@ -3094,7 +3094,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 96809,Peter,van DALEN,true,2009-07-14,2019-07-02,,1958-09-03,nl,M,PPE,ChristenUnie,peter.vandalen@europarl.europa.eu,petervdalen,9,2014-07-01
 124939,Diane,JAMES,false,2014-07-01,,2019-07-01,1959-11-20,uk,F,EFDD,The Brexit Party,diane.james@europarl.europa.eu,dianejamesmep,8,2014-07-01
 28223,Andreas,SCHWAB,true,2004-07-20,2019-07-02,,1973-04-09,de,M,PPE,Christlich Demokratische Union Deutschlands,andreas.schwab@europarl.europa.eu,andreas_schwab,9,2014-07-01
-124705,István,UJHELYI,true,2014-07-01,2019-07-02,,1975-02-28,hu,M,S&D,Magyar Szocialista Párt,istvan.ujhelyi@europarl.europa.eu,istvan_ujhelyi,9,2014-07-01
+124705,István,UJHELYI,true,2014-07-01,2019-07-02,,1975-02-28,hu,M,S&D,Esély Közösség,istvan.ujhelyi@europarl.europa.eu,istvan_ujhelyi,9,2014-07-01
 37324,Adina-Ioana,VĂLEAN,false,2006-10-26,2019-07-02,2019-11-30,1968-02-16,ro,F,PPE,Partidul Naţional Liberal,adinaioana.valean@europarl.europa.eu,adinavalean,9,2014-07-01
 124826,Martina,WERNER,false,2014-07-01,,2019-07-01,1961-12-28,de,F,S&D,Sozialdemokratische Partei Deutschlands,martina.werner@europarl.europa.eu,,8,2014-07-01
 124735,Miapetra,KUMPULA-NATRI,true,2014-07-01,2019-07-02,,1972-05-19,fi,F,S&D,Suomen Sosialidemokraattinen Puolue/Finlands Socialdemokratiska Parti,miapetra.kumpula-natri@europarl.europa.eu,miapetrakumpula,9,2014-07-01
@@ -3304,7 +3304,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 124868,Alessia Maria,MOSCA,false,2014-07-01,,2019-07-01,1975-05-23,it,F,S&D,Partito Democratico,alessia.mosca@europarl.europa.eu,alessiamosca,8,2014-07-01
 88882,Victor,NEGRESCU,true,2014-07-01,2020-02-01,,1985-08-17,ro,M,S&D,Partidul Social Democrat,victor.negrescu@europarl.europa.eu,negrescuvictor,9,2014-07-01
 125090,Sotirios,ZARIANOPOULOS,false,2014-07-01,,2019-07-01,1961-02-16,gr,M,NA,Communist Party of Greece,sotirios.zarianopoulos@europarl.europa.eu,,8,2014-07-01
-29579,Marc,TARABELLA,true,2004-08-09,2019-07-02,,1963-03-11,be,M,NA,Parti Socialiste,marc.tarabella@europarl.europa.eu,marctarabella,9,2014-07-01
+29579,Marc,TARABELLA,true,2004-08-09,2019-07-02,,1963-03-11,be,M,NA,Independent,marc.tarabella@europarl.europa.eu,marctarabella,9,2014-07-01
 36392,Aldo,PATRICIELLO,true,2006-05-08,2019-07-02,,1957-09-27,it,M,PPE,Forza Italia,aldo.patriciello@europarl.europa.eu,patricielloaldo,9,2014-07-01
 124970,Miriam,DALLI,false,2014-07-01,2019-07-02,2020-10-18,1976-05-19,mt,F,S&D,Partit Laburista,miriam.dalli@europarl.europa.eu,miriamdalli,9,2014-07-01
 124858,Fabio,DE MASI,false,2014-07-01,,2017-10-23,1980-03-07,de,M,GUE/NGL,DIE LINKE.,,,8,2014-07-01
@@ -3371,7 +3371,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 118859,Roberta,METSOLA,true,2013-04-25,2019-07-02,,1979-01-18,mt,F,PPE,Partit Nazzjonalista,roberta.metsola@europarl.europa.eu,robertametsola,9,2014-07-01
 124962,Afzal,KHAN,false,2014-07-01,,2017-06-08,1958-04-05,uk,M,S&D,Labour Party,,,8,2014-07-01
 125043,Inma,RODRÍGUEZ-PIÑERO,true,2014-07-01,2019-07-02,,1958-01-07,es,F,S&D,Partido Socialista Obrero Español,inma.rodriguezpinero@europarl.europa.eu,rodriguezpinero,9,2014-07-01
-124861,Caterina,CHINNICI,true,2014-07-01,2019-07-02,,1954-11-05,it,F,S&D,Partito Democratico,caterina.chinnici@europarl.europa.eu,caterinachinnic,9,2014-07-01
+124861,Caterina,CHINNICI,true,2014-07-01,2019-07-02,,1954-11-05,it,F,PPE,Forza Italia,caterina.chinnici@europarl.europa.eu,caterinachinnic,9,2014-07-01
 124732,Angélique,DELAHAYE,false,2014-07-01,,2019-07-01,1963-02-22,fr,F,PPE,Les Républicains,angelique.delahaye@europarl.europa.eu,delahaye_europe,8,2014-07-01
 96824,Monica,MACOVEI,false,2009-07-14,,2019-07-01,1959-02-04,ro,F,ECR,Independent,monica.macovei@europarl.europa.eu,monicamacovei1,8,2014-07-01
 96713,Evžen,TOŠENOVSKÝ,true,2009-07-14,2019-07-02,,1956-02-26,cz,M,ECR,Občanská demokratická strana,evzen.tosenovsky@europarl.europa.eu,,9,2014-07-01
@@ -3628,7 +3628,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 112788,Birgit,COLLIN-LANGEN,false,2012-03-17,,2019-07-01,1956-09-04,de,F,PPE,Christlich Demokratische Union Deutschlands,birgit.collin-langen@europarl.europa.eu,,8,2014-07-01
 96842,Ismail,ERTUG,true,2009-07-14,2019-07-02,,1975-12-05,de,M,S&D,Sozialdemokratische Partei Deutschlands,ismail.ertug@europarl.europa.eu,ismailertug,9,2014-07-01
 124847,Elena,GENTILE,false,2014-07-01,,2019-07-01,1953-11-02,it,F,S&D,Partito Democratico,elena.gentile@europarl.europa.eu,elena_gentile,8,2014-07-01
-125110,Nikos,ANDROULAKIS,true,2014-07-01,2019-07-02,,1979-02-07,gr,M,S&D,PASOK-KINAL,nikos.androulakis@europarl.europa.eu,androulakisnick,9,2014-07-01
+125110,Nikos,ANDROULAKIS,false,2014-07-01,2019-07-02,2023-05-02,1979-02-07,gr,M,S&D,PASOK-KINAL,nikos.androulakis@europarl.europa.eu,androulakisnick,9,2014-07-01
 124779,Eleonora,EVI,false,2014-07-01,2019-07-02,2022-10-12,1983-11-20,it,F,Verts/ALE,Europa Verde,eleonora.evi@europarl.europa.eu,eleonoraevi,9,2014-07-01
 124711,Norbert,ERDŐS,false,2014-07-01,,2019-07-01,1972-10-25,hu,M,PPE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,norbert.erdos@europarl.europa.eu,,8,2014-07-01
 124869,Gianluca,BUONANNO,false,2014-07-01,,2016-06-05,1966-05-15,it,M,ENF,Lega Nord,,,8,2014-07-01
@@ -3938,7 +3938,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 197719,Cristina,MAESTRE MARTÍN DE ALMAGRO,true,2019-07-02,2019-07-02,,1975-07-27,es,F,S&D,Partido Socialista Obrero Español,cristina.maestre@europarl.europa.eu,crismaestre,9,
 197812,Magid,MAGID,false,2019-07-02,2019-07-02,2020-01-31,1989-06-26,uk,M,Verts/ALE,Green Party,magid.magid@europarl.europa.eu,magicmagid,9,
 197592,Pierfrancesco,MAJORINO,false,2019-07-02,2019-07-02,2023-04-04,1973-05-14,it,M,S&D,Partito Democratico,pierfrancesco.majorino@europarl.europa.eu,,9,
-197835,Aušra,MALDEIKIENĖ,true,2019-07-02,2019-07-02,,1958-06-04,lt,F,PPE,Independent,ausra.maldeikiene@europarl.europa.eu,maldeikiene,9,
+197835,Aušra,MALDEIKIENĖ,true,2019-07-02,2019-07-02,,1958-06-04,lt,F,PPE,Tėvynės sąjunga-Lietuvos krikščionys demokratai,ausra.maldeikiene@europarl.europa.eu,maldeikiene,9,
 197735,Adriana,MALDONADO LÓPEZ,true,2019-07-02,2019-07-02,,1990-01-09,es,F,S&D,Partido Socialista Obrero Español,adriana.maldonado@europarl.europa.eu,_amaldonado_,9,
 197653,Claudiu,MANDA,true,2019-07-02,2019-07-02,,1975-12-20,ro,M,S&D,Partidul Social Democrat,iulian-claudiu.manda@europarl.europa.eu,,9,
 197623,Thierry,MARIANI,true,2019-07-02,2019-07-02,,1958-08-08,fr,M,ID,Rassemblement national,thierry.mariani@europarl.europa.eu,thierrymariani,9,
@@ -4189,3 +4189,4 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 240478,Beatrice,COVASSI,true,2022-12-06,2022-12-06,,1968-12-01,it,F,S&D,Partito Democratico,beatrice.covassi@europarl.europa.eu,,9,
 243912,Maria Veronica,ROSSI,true,2023-04-06,2023-04-06,,1988-09-22,it,F,ID,Lega,mariaveronica.rossi@europarl.europa.eu,,9,
 243979,Francesca,PEPPUCCI,true,2023-04-06,2023-04-06,,1993-06-02,it,F,PPE,Forza Italia,francesca.peppucci@europarl.europa.eu,,9,
+244571,Nikos,PAPANDREOU,true,2023-05-03,2023-05-03,,1956-09-29,gr,,S&D,PASOK-KINAL,nikos.papandreou@europarl.europa.eu,,9,

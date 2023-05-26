@@ -2096,14 +2096,6 @@
 		"seat": 547
 	},
 	{
-		"id": 125110,
-		"firstName": "Nikos",
-		"lastName": "ANDROULAKIS",
-		"group": "S&D",
-		"country": "gr",
-		"seat": 182
-	},
-	{
 		"id": 125128,
 		"firstName": "Iskra",
 		"lastName": "MIHAYLOVA",
@@ -5637,6 +5629,14 @@
 		"lastName": "PEPPUCCI",
 		"group": "EPP",
 		"country": "it",
+		"seat": null
+	},
+	{
+		"id": 244571,
+		"firstName": "Nikos",
+		"lastName": "PAPANDREOU",
+		"group": "S&D",
+		"country": "gr",
 		"seat": null
 	}
 ]
