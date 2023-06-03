@@ -3590,7 +3590,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 96883,Eva,JOLY,false,2009-07-14,,2019-07-01,1943-12-05,fr,F,Verts/ALE,Europe Écologie,eva.joly@europarl.europa.eu,evajoly,8,2014-07-01
 124866,Ilhan,KYUCHYUK,true,2014-07-01,2019-07-02,,1985-09-16,bg,M,RE,Movement for Rights and Freedoms,ilhan.kyuchyuk@europarl.europa.eu,ilhankyuchyuk,9,2014-07-01
 124969,Anneliese,DODDS,false,2014-07-01,,2017-06-08,1978-03-16,uk,F,S&D,Labour Party,,,8,2014-07-01
-113892,Eric,ANDRIEU,true,2012-05-16,2019-07-02,,1960-04-14,fr,M,S&D,Parti socialiste,eric.andrieu@europarl.europa.eu,eric_andrieu,9,2014-07-01
+113892,Eric,ANDRIEU,false,2012-05-16,2019-07-02,2023-06-01,1960-04-14,fr,M,S&D,Parti socialiste,eric.andrieu@europarl.europa.eu,eric_andrieu,9,2014-07-01
 125004,Franc,BOGOVIČ,true,2014-07-01,2019-07-02,,1963-02-02,si,M,PPE,Slovenska ljudska stranka,franc.bogovic@europarl.europa.eu,franc_bogovic,9,2014-07-01
 128588,Linnéa,ENGSTRÖM,false,2014-10-08,,2019-07-01,1981-04-02,se,F,Verts/ALE,Miljöpartiet de gröna,linnea.engstrom@europarl.europa.eu,linneaengstrom,8,2014-10-08
 124967,David,COBURN,false,2014-07-01,,2019-07-01,1959-02-11,uk,M,EFDD,The Brexit Party,david.coburn@europarl.europa.eu,davidcoburnukip,8,2014-07-01
@@ -3831,7 +3831,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 197554,Luis,GARICANO,false,2019-07-02,2019-07-02,2022-09-01,1967-04-10,es,M,RE,Ciudadanos – Partido de la Ciudadanía,luis.garicano@europarl.europa.eu,lugaricano,9,
 197628,Jean-Paul,GARRAUD,true,2019-07-02,2019-07-02,,1956-02-27,fr,M,ID,Rassemblement national,jean-paul.garraud@europarl.europa.eu,,9,
 183916,Alexandra,GEESE,true,2019-07-02,2019-07-02,,1968-07-01,de,F,Verts/ALE,Bündnis 90/Die Grünen,alexandra.geese@europarl.europa.eu,alexandrageese,9,
-197794,Chiara,GEMMA,true,2019-07-02,2019-07-02,,1968-09-20,it,F,ECR,Independent,chiara.gemma@europarl.europa.eu,,9,
+197794,Chiara,GEMMA,true,2019-07-02,2019-07-02,,1968-09-20,it,F,ECR,FRATELLI D' ITALIA,chiara.gemma@europarl.europa.eu,,9,
 197416,Giorgos,GEORGIOU,true,2019-07-02,2019-07-02,,1963-04-09,cy,M,GUE/NGL,Progressive Party of Working People - Left - New Forces,giorgos.georgiou@europarl.europa.eu,,9,
 197819,Alexis,GEORGOULIS,true,2019-07-02,2019-07-02,,1974-10-06,gr,M,NA,Independent,alexis.georgoulis@europarl.europa.eu,alexismep,9,
 197436,Helmut,GEUKING,true,2019-07-02,2019-07-02,,1964-01-16,de,M,PPE,Familien-Partei Deutschlands,helmut.geuking@europarl.europa.eu,geukinghelmut,9,
@@ -4189,4 +4189,5 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 240478,Beatrice,COVASSI,true,2022-12-06,2022-12-06,,1968-12-01,it,F,S&D,Partito Democratico,beatrice.covassi@europarl.europa.eu,,9,
 243912,Maria Veronica,ROSSI,true,2023-04-06,2023-04-06,,1988-09-22,it,F,ID,Lega,mariaveronica.rossi@europarl.europa.eu,,9,
 243979,Francesca,PEPPUCCI,true,2023-04-06,2023-04-06,,1993-06-02,it,F,PPE,Forza Italia,francesca.peppucci@europarl.europa.eu,,9,
-244571,Nikos,PAPANDREOU,true,2023-05-03,2023-05-03,,1956-09-29,gr,,S&D,PASOK-KINAL,nikos.papandreou@europarl.europa.eu,,9,
+244571,Nikos,PAPANDREOU,true,2023-05-03,2023-05-03,,1956-09-29,gr,M,S&D,PASOK-KINAL,nikos.papandreou@europarl.europa.eu,,9,
+245018,Christophe,CLERGEAU,true,2023-06-02,2023-06-02,,1968-09-01,fr,,S&D,Parti socialiste,christophe.clergeau@europarl.europa.eu,clergeau,9,

@@ -1264,14 +1264,6 @@
 		"seat": 51
 	},
 	{
-		"id": 113892,
-		"firstName": "Eric",
-		"lastName": "ANDRIEU",
-		"group": "S&D",
-		"country": "fr",
-		"seat": 29
-	},
-	{
 		"id": 114268,
 		"firstName": "Nils",
 		"lastName": "TORVALDS",
@@ -5637,6 +5629,14 @@
 		"lastName": "PAPANDREOU",
 		"group": "S&D",
 		"country": "gr",
+		"seat": null
+	},
+	{
+		"id": 245018,
+		"firstName": "Christophe",
+		"lastName": "CLERGEAU",
+		"group": "S&D",
+		"country": "fr",
 		"seat": null
 	}
 ]
