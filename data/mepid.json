@@ -984,14 +984,6 @@
 		"seat": 311
 	},
 	{
-		"id": 96842,
-		"firstName": "Ismail",
-		"lastName": "ERTUG",
-		"group": "S&D",
-		"country": "de",
-		"seat": 4
-	},
-	{
 		"id": 96852,
 		"firstName": "Cornelia",
 		"lastName": "ERNST",
@@ -5637,6 +5629,14 @@
 		"lastName": "CLERGEAU",
 		"group": "S&D",
 		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 245858,
+		"firstName": "Thomas",
+		"lastName": "RUDNER",
+		"group": "S&D",
+		"country": "de",
 		"seat": null
 	}
 ]

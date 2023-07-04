@@ -186,7 +186,7 @@ process.exit(1);
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
 				if (!r.active) return done();
 
-if (r.UserID === 58766) {
+if (r.UserID === 58766 && !r.Constituencies) {
   r.Constituencies= [
     {
       party: '',
@@ -203,6 +203,8 @@ if (r.UserID === 58766) {
 				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
           if (!r.Committees)
             r.Committees=[];
+          if (!r.Constituencies)
+            r.Constituencies=[{start:"9999-99-99",end:"9",party:"?",country:"?"}];
 
 				// check object
 				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
@@ -343,10 +345,9 @@ if (r.UserID === 58766) {
 		dest.on("close", function(){
 			return console.log("[transform] saved meps.csv"), next();
 		});
-
 		// gilter & flatten objects and write to csv
 		result.filter(function(r){
-			return (typeof r === 'object' && r.hasOwnProperty("constituency"));
+			return (typeof r === 'object' && r.hasOwnProperty("constituency") && r.constituency.length > 0);
 		}).sort(function(a,b){ return b.epid - a.epid; }).map(function(r){
 			return {
 			  epid: r.epid,
