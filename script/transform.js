@@ -231,7 +231,7 @@ if (r.UserID === 58766 && !r.Constituencies) {
 					last_name: r.Name.family,
 					epid: r.UserID,
 					Twitter: ((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase() || twitter[r.UserID.toString()],
-					mail: (((r.Mail && Array.isArray(r.Mail) && r.Mail.length > 0) ? r.Mail[0] : r.Mail) || "").toLowerCase() || ((!r.Name.sur.includes(" ") && !r.Name.family.includes(" ")) ? (r.Name.sur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + r.Name.family.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@ep.europa.eu") : ""), // use r.Mail[0] or r.Mail or try to costruct from first and last name
+					mail: (((r.Mail && Array.isArray(r.Mail) && r.Mail.length > 0) ? r.Mail[0] : r.Mail) || "").toLowerCase() || ((!r.Name.sur.includes(" ") && !r.Name.family.includes(" ")) ? (r.Name.sur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + r.Name.family.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@europarl.europa.eu") : ""), // use r.Mail[0] or r.Mail or try to costruct from first and last name
 
 					// FIXME: data source does not have this property
 					// probably looks like { "$type": { "$term": [ $activitiy, ... ] } }
@@ -313,7 +313,11 @@ if (r.UserID === 58766 && !r.Constituencies) {
 						return eugroups[v.groupid] || /*v.groupid*/ "?";
 					}).shift(), // first item
 				};
-				
+			
+        if (data.constituency === undefined) {
+console.log("missing constituency", data); 
+          data.constituency = {country:"??", party:"??"};
+        }
 				// count
 				processed++;
 						
@@ -347,11 +351,15 @@ if (r.UserID === 58766 && !r.Constituencies) {
 		});
 		// gilter & flatten objects and write to csv
 		result.filter(function(r){
-			return (typeof r === 'object' && r.hasOwnProperty("constituency") && r.constituency.length > 0);
+      if (typeof r?.constituency !== 'object') {
+        console.warn("missing constituency",r.first_name,r.last_name);
+        return false;
+      }
+      return true;
 		}).sort(function(a,b){ return b.epid - a.epid; }).map(function(r){
 			return {
 			  epid: r.epid,
-        country: r.country,
+//        country: r.country,
         first_name: r.first_name,
         last_name: r.last_name,
         eugroup: r.eugroup,

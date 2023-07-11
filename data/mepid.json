@@ -8,6 +8,14 @@
 		"seat": 329
 	},
 	{
+		"id": 1892,
+		"firstName": "Carlos",
+		"lastName": "COELHO",
+		"group": "EPP",
+		"country": "pt",
+		"seat": null
+	},
+	{
 		"id": 1909,
 		"firstName": "Bernd",
 		"lastName": "LANGE",
@@ -4430,14 +4438,6 @@
 		"group": "GUE/NGL",
 		"country": "gr",
 		"seat": 301
-	},
-	{
-		"id": 197746,
-		"firstName": "Álvaro",
-		"lastName": "AMARO",
-		"group": "PPE",
-		"country": "pt",
-		"seat": 336
 	},
 	{
 		"id": 197754,

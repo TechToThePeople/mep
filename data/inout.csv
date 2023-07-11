@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Álvaro AMARO,PT,197746,9,2019-07-02,2023-07-06,outgoing,EPP,Partido Social Democrata
 Ismail ERTUG,DE,96842,9,2019-07-02,2023-07-02,outgoing,S&D,Sozialdemokratische Partei Deutschlands
 Eric ANDRIEU,FR,113892,9,2019-07-02,2023-06-01,outgoing,S&D,Parti socialiste
 Nikos ANDROULAKIS,GR,125110,9,2019-07-02,2023-05-02,outgoing,S&D,PASOK-KINAL
@@ -230,3 +231,4 @@ Pirkko RUOHONEN-LERNER,FI,132366,9,2023-04-12,,incoming,ECR,Perussuomalaiset
 Nikos PAPANDREOU,GR,244571,9,2023-05-03,,incoming,S&D,PASOK-KINAL
 Christophe CLERGEAU,FR,245018,9,2023-06-02,,incoming,S&D,Parti socialiste
 Thomas RUDNER,DE,245858,9,2023-07-03,,incoming,S&D,Sozialdemokratische Partei Deutschlands
+Carlos COELHO,PT,1892,9,2023-07-07,,incoming,EPP,Partido Social Democrata
