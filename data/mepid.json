@@ -1960,14 +1960,6 @@
 		"seat": 160
 	},
 	{
-		"id": 125027,
-		"firstName": "Esteban",
-		"lastName": "GONZÁLEZ PONS",
-		"group": "PPE",
-		"country": "es",
-		"seat": 14
-	},
-	{
 		"id": 125030,
 		"firstName": "Annie",
 		"lastName": "SCHREIJER-PIERIK",
@@ -3768,14 +3760,6 @@
 		"seat": 236
 	},
 	{
-		"id": 197593,
-		"firstName": "Véronique",
-		"lastName": "TRILLET-LENOIR",
-		"group": "Renew",
-		"country": "fr",
-		"seat": 744
-	},
-	{
 		"id": 197595,
 		"firstName": "Anna Júlia",
 		"lastName": "DONÁTH",
@@ -4390,14 +4374,6 @@
 		"group": "NI",
 		"country": "gr",
 		"seat": 783
-	},
-	{
-		"id": 197735,
-		"firstName": "Adriana",
-		"lastName": "MALDONADO LÓPEZ",
-		"group": "S&D",
-		"country": "es",
-		"seat": 625
 	},
 	{
 		"id": 197737,
@@ -5637,6 +5613,14 @@
 		"lastName": "RUDNER",
 		"group": "S&D",
 		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 247122,
+		"firstName": "Catherine",
+		"lastName": "AMALRIC",
+		"group": "Renew",
+		"country": "fr",
 		"seat": null
 	}
 ]

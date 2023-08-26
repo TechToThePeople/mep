@@ -3173,7 +3173,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 96864,David Maria,SASSOLI,false,2009-07-14,2019-07-02,2022-01-11,1956-05-30,it,M,S&D,Partito Democratico,david.sassoli@europarl.europa.eu,davidsassoli,9,2014-07-01
 124942,Molly,SCOTT CATO,false,2014-07-01,2019-07-02,2020-01-31,1963-05-21,uk,F,Verts/ALE,Green Party,molly.scottcato@europarl.europa.eu,mollymep,9,2014-07-01
 96933,Milan,ZVER,true,2009-07-14,2019-07-02,,1962-05-25,si,M,PPE,Slovenska demokratska stranka,milan.zver@europarl.europa.eu,milanzver,9,2014-07-01
-125027,Esteban,GONZÁLEZ PONS,true,2014-07-01,2019-07-02,,1964-08-21,es,M,PPE,Partido Popular,esteban.gonzalezpons@europarl.europa.eu,gonzalezpons,9,2014-07-01
+125027,Esteban,GONZÁLEZ PONS,false,2014-07-01,2019-07-02,2023-08-16,1964-08-21,es,M,PPE,Partido Popular,esteban.gonzalezpons@europarl.europa.eu,gonzalezpons,9,2014-07-01
 124830,Marcus,PRETZELL,false,2014-07-01,,2019-07-01,1973-07-16,de,M,ENF,Die blaue Partei,marcus.pretzell@europarl.europa.eu,,8,2014-07-01
 1913,Evelyne,GEBHARDT,false,1994-07-19,2019-07-02,2022-02-01,1954-01-19,de,F,S&D,Sozialdemokratische Partei Deutschlands,evelyne.gebhardt@europarl.europa.eu,egebhardtmdep,9,2014-07-01
 96997,Burkhard,BALZ,false,2009-07-14,,2018-08-31,1969-07-24,de,M,PPE,Christlich Demokratische Union Deutschlands,,,8,2014-07-01
@@ -3939,7 +3939,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 197812,Magid,MAGID,false,2019-07-02,2019-07-02,2020-01-31,1989-06-26,uk,M,Verts/ALE,Green Party,magid.magid@europarl.europa.eu,magicmagid,9,
 197592,Pierfrancesco,MAJORINO,false,2019-07-02,2019-07-02,2023-04-04,1973-05-14,it,M,S&D,Partito Democratico,pierfrancesco.majorino@europarl.europa.eu,,9,
 197835,Aušra,MALDEIKIENĖ,true,2019-07-02,2019-07-02,,1958-06-04,lt,F,PPE,Tėvynės sąjunga-Lietuvos krikščionys demokratai,ausra.maldeikiene@europarl.europa.eu,maldeikiene,9,
-197735,Adriana,MALDONADO LÓPEZ,true,2019-07-02,2019-07-02,,1990-01-09,es,F,S&D,Partido Socialista Obrero Español,adriana.maldonado@europarl.europa.eu,_amaldonado_,9,
+197735,Adriana,MALDONADO LÓPEZ,false,2019-07-02,2019-07-02,2023-08-16,1990-01-09,es,F,S&D,Partido Socialista Obrero Español,adriana.maldonado@europarl.europa.eu,_amaldonado_,9,
 197653,Claudiu,MANDA,true,2019-07-02,2019-07-02,,1975-12-20,ro,M,S&D,Partidul Social Democrat,iulian-claudiu.manda@europarl.europa.eu,,9,
 197623,Thierry,MARIANI,true,2019-07-02,2019-07-02,,1958-08-08,fr,M,ID,Rassemblement national,thierry.mariani@europarl.europa.eu,thierrymariani,9,
 197462,Erik,MARQUARDT,true,2019-07-02,2019-07-02,,1987-10-20,de,M,Verts/ALE,Bündnis 90/Die Grünen,erik.marquardt@europarl.europa.eu,erikmarquardt,9,
@@ -4069,7 +4069,7 @@ epid,firstname,lastname,active,start,start9,end,birthdate,country,gender,eugroup
 27714,Edina,TÓTH,true,2019-07-02,2019-07-02,,1975-03-11,hu,F,NA,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,edina.toth@europarl.europa.eu,toth_edina,9,
 97236,Marie,TOUSSAINT,true,2019-07-02,2019-07-02,,1987-05-27,fr,F,Verts/ALE,Europe Écologie,marie.toussaint@europarl.europa.eu,marietouss1,9,
 197580,Isabella,TOVAGLIERI,true,2019-07-02,2019-07-02,,1987-06-25,it,F,ID,Lega,isabella.tovaglieri@europarl.europa.eu,,9,
-197593,Véronique,TRILLET-LENOIR,true,2019-07-02,2019-07-02,,1957-06-12,fr,F,RE,Liste Renaissance,veronique.trillet-lenoir@europarl.europa.eu,,9,
+197593,Véronique,TRILLET-LENOIR,false,2019-07-02,2019-07-02,2023-08-09,1957-06-12,fr,F,RE,Liste Renaissance,veronique.trillet-lenoir@europarl.europa.eu,,9,
 197894,László,TRÓCSÁNYI,true,2019-07-02,2019-07-02,,1956-03-06,hu,M,NA,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,laszlo.trocsanyi@europarl.europa.eu,trocsanyi,9,
 197665,Dragoş,TUDORACHE,true,2019-07-02,2019-07-02,,1975-01-14,ro,M,RE,Reînnoim Proiectul European al României,ioan-dragos.tudorache@europarl.europa.eu,ioandragost,9,
 198183,Mihai,TUDOSE,true,2019-07-02,2019-07-02,,1967-03-06,ro,M,S&D,Partidul Social Democrat,mihai.tudose@europarl.europa.eu,,9,
