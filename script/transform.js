@@ -9,6 +9,7 @@ const quu = require("quu");
 const xsv = require("xsv");
 //const wsv = require("wsv");
 const fastcsv = require ('@fast-csv/format');
+const dxid = require ('dxid');
 
 // file paths
 const src = path.resolve(__dirname,"../data/mirror/ep_meps_current.json");
@@ -230,6 +231,7 @@ if (r.UserID === 58766 && !r.Constituencies) {
 					first_name: r.Name.sur,
 					last_name: r.Name.family,
 					epid: r.UserID,
+					dxid: dxid.stringify(r.UserID),
 					Twitter: ((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase() || twitter[r.UserID.toString()],
 					mail: (((r.Mail && Array.isArray(r.Mail) && r.Mail.length > 0) ? r.Mail[0] : r.Mail) || "").toLowerCase() || ((!r.Name.sur.includes(" ") && !r.Name.family.includes(" ")) ? (r.Name.sur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "." + r.Name.family.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + "@europarl.europa.eu") : ""), // use r.Mail[0] or r.Mail or try to costruct from first and last name
 
@@ -343,7 +345,7 @@ console.log("missing constituency", data);
 
 		// set up csv writer
 		const dest = fs.createWriteStream(dest_meps_csv);
-		const csv = fastcsv.format({ headers: ["epid", "country", "first_name", "last_name", "email", "birthdate", "gender", "eugroup", "party", "phone", "office", "committee", "substitute", "delegation", "twitter", "tttpid", "since"].concat(committee_ids) , writeHeaders: true });
+		const csv = fastcsv.format({ headers: ["dxid", "country", "first_name", "last_name", "email", "birthdate", "gender", "eugroup", "party", "phone", "office", "committee", "substitute", "delegation", "twitter", "epid", "since"].concat(committee_ids) , writeHeaders: true });
 
 		csv.pipe(dest);
 		dest.on("close", function(){
@@ -358,7 +360,7 @@ console.log("missing constituency", data);
       return true;
 		}).sort(function(a,b){ return b.epid - a.epid; }).map(function(r){
 			return {
-			  epid: r.epid,
+			  dxid: r.dxid,
 //        country: r.country,
         first_name: r.first_name,
         last_name: r.last_name,
@@ -367,6 +369,7 @@ console.log("missing constituency", data);
 	
 				email: r.mail,
 				twitter: r.Twitter,
+			  epid: r.epid,
 				gender: r.Gender,
 				
 				country: r.constituency.country,
@@ -378,8 +381,6 @@ console.log("missing constituency", data);
 				committee: r.committees.filter(function(c){ return [ "Chair", "Vice-Chair", "Member" ].includes(c.role) }).map(function(c){ return c.name }).join("|"),
 				substitute: r.committees.filter(function(c){ return (c.role === "Substitute") }).map(function(c){ return c.name }).join("|"),
 				delegation: r.delegations.filter(function(c){ return [ "Chair", "Vice-Chair", "Member" ].includes(c.role) }).map(function(c){ return c.name }).join("|"),
-				
-				tttpid: "tttp_"+r.epid,
 				
 				...committees_default,
 				...r.committees.reduce(function(d,c){
