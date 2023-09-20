@@ -912,14 +912,6 @@
 		"seat": 337
 	},
 	{
-		"id": 96809,
-		"firstName": "Peter",
-		"lastName": "VAN DALEN",
-		"group": "PPE",
-		"country": "nl",
-		"seat": 422
-	},
-	{
 		"id": 96810,
 		"firstName": "Carlo",
 		"lastName": "FIDANZA",
@@ -5539,7 +5531,7 @@
 		"id": 239262,
 		"firstName": "Elisabetta",
 		"lastName": "DE BLASIS",
-		"group": "ID",
+		"group": "NA",
 		"country": "it",
 		"seat": null
 	},
@@ -5621,6 +5613,30 @@
 		"lastName": "AMALRIC",
 		"group": "Renew",
 		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 247709,
+		"firstName": "Anja",
+		"lastName": "HAGA",
+		"group": "EPP",
+		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 247735,
+		"firstName": "Laura",
+		"lastName": "BALLARÍN CEREZA",
+		"group": "S&D",
+		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 247737,
+		"firstName": "Ana",
+		"lastName": "COLLADO JIMÉNEZ",
+		"group": "EPP",
+		"country": "es",
 		"seat": null
 	}
 ]
