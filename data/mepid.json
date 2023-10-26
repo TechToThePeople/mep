@@ -683,7 +683,7 @@
 		"id": 96653,
 		"firstName": "Katarína",
 		"lastName": "ROTH NEVEĎALOVÁ",
-		"group": "S&D",
+		"group": "NA",
 		"country": "sk",
 		"seat": null
 	},
@@ -766,14 +766,6 @@
 		"group": "Verts/ALE",
 		"country": "de",
 		"seat": 187
-	},
-	{
-		"id": 96740,
-		"firstName": "Yannick",
-		"lastName": "JADOT",
-		"group": "Verts/ALE",
-		"country": "fr",
-		"seat": 477
 	},
 	{
 		"id": 96743,
@@ -1198,14 +1190,6 @@
 		"group": "Verts/ALE",
 		"country": "de",
 		"seat": 90
-	},
-	{
-		"id": 103746,
-		"firstName": "Michal",
-		"lastName": "ŠIMEČKA",
-		"group": "Renew",
-		"country": "sk",
-		"seat": 60
 	},
 	{
 		"id": 106936,
@@ -2416,14 +2400,6 @@
 		"seat": 559
 	},
 	{
-		"id": 193419,
-		"firstName": "Christophe",
-		"lastName": "HANSEN",
-		"group": "PPE",
-		"country": "lu",
-		"seat": 149
-	},
-	{
 		"id": 197390,
 		"firstName": "Sara",
 		"lastName": "SKYTTEDAL",
@@ -3384,14 +3360,6 @@
 		"seat": 99
 	},
 	{
-		"id": 197535,
-		"firstName": "Agnès",
-		"lastName": "EVREN",
-		"group": "PPE",
-		"country": "fr",
-		"seat": 492
-	},
-	{
 		"id": 197536,
 		"firstName": "Nathalie",
 		"lastName": "COLIN-OESTERLÉ",
@@ -4046,14 +4014,6 @@
 		"group": "S&D",
 		"country": "ro",
 		"seat": 720
-	},
-	{
-		"id": 197656,
-		"firstName": "Simone",
-		"lastName": "SCHMIEDTBAUER",
-		"group": "PPE",
-		"country": "at",
-		"seat": 677
 	},
 	{
 		"id": 197657,
@@ -5637,6 +5597,38 @@
 		"lastName": "COLLADO JIMÉNEZ",
 		"group": "EPP",
 		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 249284,
+		"firstName": "Laurence",
+		"lastName": "SAILLIET",
+		"group": "EPP",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 249285,
+		"firstName": "Lydie",
+		"lastName": "MASSARD",
+		"group": "Greens/EFA",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 249443,
+		"firstName": "Wolfram",
+		"lastName": "PIRCHNER",
+		"group": "EPP",
+		"country": "at",
+		"seat": null
+	},
+	{
+		"id": 249603,
+		"firstName": "Martine",
+		"lastName": "KEMP",
+		"group": "EPP",
+		"country": "lu",
 		"seat": null
 	}
 ]

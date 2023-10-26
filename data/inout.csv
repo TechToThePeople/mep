@@ -1,4 +1,9 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Michal ŠIMEČKA,SK,103746,9,2019-07-02,2023-10-24,outgoing,Renew,Progresívne Slovensko
+Christophe HANSEN,LU,193419,9,2019-07-02,2023-10-23,outgoing,EPP,Parti chrétien social luxembourgeois
+Simone SCHMIEDTBAUER,AT,197656,9,2019-07-02,2023-10-16,outgoing,EPP,Österreichische Volkspartei
+Agnès EVREN,FR,197535,9,2019-07-02,2023-09-23,outgoing,EPP,Les Républicains
+Yannick JADOT,FR,96740,9,2019-07-02,2023-09-23,outgoing,Greens/EFA,Europe Écologie
 Peter van DALEN,NL,96809,9,2019-07-02,2023-09-03,outgoing,EPP,ChristenUnie
 Esteban GONZÁLEZ PONS,ES,125027,9,2019-07-02,2023-08-16,outgoing,EPP,Partido Popular
 Adriana MALDONADO LÓPEZ,ES,197735,9,2019-07-02,2023-08-16,outgoing,S&D,Partido Socialista Obrero Español
@@ -227,7 +232,7 @@ Erik POULSEN,DK,239972,9,2022-11-22,,incoming,Renew,"Venstre, Danmarks Liberale 
 Bergur Løkke RASMUSSEN,DK,239973,9,2022-11-22,,incoming,Renew,Moderaterne
 Anders VISTISEN,DK,124875,9,2022-11-22,,incoming,ID,Dansk Folkeparti
 Beatrice COVASSI,IT,240478,9,2022-12-06,,incoming,S&D,Partito Democratico
-Katarína ROTH NEVEĎALOVÁ,SK,96653,9,2022-12-30,,incoming,S&D,SMER-Sociálna demokracia
+Katarína ROTH NEVEĎALOVÁ,SK,96653,9,2022-12-30,,incoming,NI,SMER-Sociálna demokracia
 Mercedes BRESSO,IT,28346,9,2023-04-06,,incoming,S&D,Partito Democratico
 Francesca PEPPUCCI,IT,243979,9,2023-04-06,,incoming,EPP,Forza Italia
 Maria Veronica ROSSI,IT,243912,9,2023-04-06,,incoming,ID,Lega
@@ -240,3 +245,7 @@ Catherine AMALRIC,FR,247122,9,2023-08-10,,incoming,Renew,Parti Radical
 Anja HAGA,NL,247709,9,2023-09-05,,incoming,EPP,ChristenUnie
 Laura BALLARÍN CEREZA,ES,247735,9,2023-09-06,,incoming,S&D,Partido Socialista Obrero Español
 Ana COLLADO JIMÉNEZ,ES,247737,9,2023-09-06,,incoming,EPP,Partido Popular
+Lydie MASSARD,FR,249285,9,2023-09-24,,incoming,Greens/EFA,Régions et Peuples Solidaires
+Laurence SAILLIET,FR,249284,9,2023-09-24,,incoming,EPP,Les Républicains
+Wolfram PIRCHNER,AT,249443,9,2023-10-17,,incoming,EPP,
+Martine KEMP,LU,249603,9,2023-10-24,,incoming,EPP,Parti chrétien social luxembourgeois
