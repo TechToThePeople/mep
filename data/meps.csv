@@ -1,8 +1,8 @@
 dxid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,office,committee,substitute,delegation,twitter,epid,since,AFCO,AFET,AGRI,AIDA,ANIT,BECA,BUDG,CONT,COVI,CULT,DEVE,DROI,ECON,EMPL,ENVI,FEMM,FISC,IMCO,ING2,INGE,INTA,ITRE,JURI,LIBE,PECH,PEGA,PETI,REGI,SANT,SEDE,TRAN
-zky2f,lu,Martine,KEMP,martine.kemp@europarl.europa.eu,1994-07-08,,EPP,Parti chrétien social luxembourgeois,003222845460,07F353,,"ECON|ENVI",,,249603,2023-10-24,,,,,,,,,,,,,S,,S,,,,,,,,,,,,,,,,
-3kyyf,at,Wolfram,PIRCHNER,wolfram.pirchner@europarl.europa.eu,1958-04-21,,EPP,Österreichische Volkspartei,003222845568,10E254,,"CONT|CULT|EMPL",,,249443,2023-10-17,,,,,,,,S,,S,,,,S,,,,,,,,,,,,,,,,,
-4kysh,fr,Lydie,MASSARD,lydie.massard@europarl.europa.eu,1978-08-24,,Greens/EFA,Régions et Peuples Solidaires,003222845375,08G310,ENVI,INTA,,,249285,2023-09-24,,,,,,,,,,,,,,,M,,,,,,S,,,,,,,,,,
-6kysg,fr,Laurence,SAILLIET,laurence.sailliet@europarl.europa.eu,1973-03-01,,EPP,Les Républicains,003222845464,09E210,,ECON,,lsailliet,249284,2023-09-24,,,,,,,,,,,,,S,,,,,,,,,,,,,,,,,,
+zky2f,lu,Martine,KEMP,martine.kemp@europarl.europa.eu,1994-07-08,F,EPP,Parti chrétien social luxembourgeois,003222845460,07F353,,"ECON|ENVI",,,249603,2023-10-24,,,,,,,,,,,,,S,,S,,,,,,,,,,,,,,,,
+3kyyf,at,Wolfram,PIRCHNER,wolfram.pirchner@europarl.europa.eu,1958-04-21,M,EPP,Österreichische Volkspartei,003222845568,10E254,,"CONT|CULT|EMPL",,,249443,2023-10-17,,,,,,,,S,,S,,,,S,,,,,,,,,,,,,,,,,
+4kysh,fr,Lydie,MASSARD,lydie.massard@europarl.europa.eu,1978-08-24,F,Greens/EFA,Régions et Peuples Solidaires,003222845375,08G310,ENVI,INTA,,,249285,2023-09-24,,,,,,,,,,,,,,,M,,,,,,S,,,,,,,,,,
+6kysg,fr,Laurence,SAILLIET,laurence.sailliet@europarl.europa.eu,1973-03-01,F,EPP,Les Républicains,003222845464,09E210,,ECON,,lsailliet,249284,2023-09-24,,,,,,,,,,,,,S,,,,,,,,,,,,,,,,,,
 jkw73,es,Ana,COLLADO JIMÉNEZ,ana.colladojimenez@europarl.europa.eu,1984-02-08,F,EPP,Partido Popular,003222845372,12E154,AFCO,BUDG,"D-BR|DLAT",anicollado,247737,2023-09-06,M,,,,,,S,,,,,,,,,,,,,,,,,,,,,,,,
 nkw71,es,Laura,BALLARÍN CEREZA,laura.ballarincereza@europarl.europa.eu,1984-07-19,F,S&D,Partido Socialista Obrero Español,003222845563,14G101,IMCO,"ITRE|FEMM","DMAG|DMED",x.com/lauballarin,247735,2023-09-06,,,,,,,,,,,,,,,,S,,M,,,,S,,,,,,,,,
 9kw67,nl,Anja,HAGA,anja.haga@europarl.europa.eu,1976-12-25,F,EPP,ChristenUnie,003222845719,08E254,"PECH|DROI",AFET,DSAS,anjahaga,247709,2023-09-05,,S,,,,,,,,,,M,,,,,,,,,,,,,M,,,,,,
