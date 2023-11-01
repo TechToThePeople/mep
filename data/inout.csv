@@ -1,6 +1,9 @@
 fullName,country,id,leg,start,end,file,eugroup,party
 Michal ŠIMEČKA,SK,103746,9,2019-07-02,2023-10-24,outgoing,Renew,Progresívne Slovensko
 Christophe HANSEN,LU,193419,9,2019-07-02,2023-10-23,outgoing,EPP,Parti chrétien social luxembourgeois
+Bartosz ARŁUKOWICZ,PL,197492,9,2019-07-02,2023-10-18,outgoing,EPP,Platforma Obywatelska
+Krzysztof HETMAN,PL,124895,9,2019-07-02,2023-10-18,outgoing,EPP,Polskie Stronnictwo Ludowe
+Zbigniew KUŹMIUK,PL,28389,9,2019-07-02,2023-10-18,outgoing,ECR,Prawo i Sprawiedliwość
 Simone SCHMIEDTBAUER,AT,197656,9,2019-07-02,2023-10-16,outgoing,EPP,Österreichische Volkspartei
 Agnès EVREN,FR,197535,9,2019-07-02,2023-09-23,outgoing,EPP,Les Républicains
 Yannick JADOT,FR,96740,9,2019-07-02,2023-09-23,outgoing,Greens/EFA,Europe Écologie
@@ -247,5 +250,5 @@ Laura BALLARÍN CEREZA,ES,247735,9,2023-09-06,,incoming,S&D,Partido Socialista O
 Ana COLLADO JIMÉNEZ,ES,247737,9,2023-09-06,,incoming,EPP,Partido Popular
 Lydie MASSARD,FR,249285,9,2023-09-24,,incoming,Greens/EFA,Régions et Peuples Solidaires
 Laurence SAILLIET,FR,249284,9,2023-09-24,,incoming,EPP,Les Républicains
-Wolfram PIRCHNER,AT,249443,9,2023-10-17,,incoming,EPP,
+Wolfram PIRCHNER,AT,249443,9,2023-10-17,,incoming,EPP,Österreichische Volkspartei
 Martine KEMP,LU,249603,9,2023-10-24,,incoming,EPP,Parti chrétien social luxembourgeois

@@ -67,11 +67,11 @@
 	"BCPR": "Conference of Presidents",
 	"D-CL": "Delegation to the EU-Chile Joint Parliamentary Committee",
 	"DNAT": "Delegation for relations with the NATO Parliamentary Assembly",
-	"D-UA": "Delegation to the EU-Ukraine Parliamentary Association Committee",
 	"DEPA": "Delegation to the Euronest Parliamentary Assembly",
 	"D-MD": "Delegation to the EU-Moldova Parliamentary Association Committee",
 	"D-BY": "Delegation for relations with Belarus",
 	"D-AF": "Delegation for relations with Afghanistan",
 	"DSCA": "Delegation to the EU-Armenia Parliamentary Partnership Committee, the EU-Azerbaijan Parliamentary Cooperation Committee and the EU-Georgia Parliamentary Association Committee",
-	"D-IQ": "Delegation for relations with Iraq"
+	"D-IQ": "Delegation for relations with Iraq",
+	"D-UA": "Delegation to the EU-Ukraine Parliamentary Association Committee"
 }

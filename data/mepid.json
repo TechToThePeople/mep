@@ -416,14 +416,6 @@
 		"seat": 348
 	},
 	{
-		"id": 28389,
-		"firstName": "Zbigniew",
-		"lastName": "KUŹMIUK",
-		"group": "ECR",
-		"country": "pl",
-		"seat": 432
-	},
-	{
 		"id": 28390,
 		"firstName": "Pilar",
 		"lastName": "DEL CASTILLO VERA",
@@ -1792,14 +1784,6 @@
 		"seat": 276
 	},
 	{
-		"id": 124895,
-		"firstName": "Krzysztof",
-		"lastName": "HETMAN",
-		"group": "PPE",
-		"country": "pl",
-		"seat": 64
-	},
-	{
 		"id": 124929,
 		"firstName": "Ivan",
 		"lastName": "ŠTEFANEC",
@@ -3046,14 +3030,6 @@
 		"group": "S&D",
 		"country": "ee",
 		"seat": 180
-	},
-	{
-		"id": 197492,
-		"firstName": "Bartosz",
-		"lastName": "ARŁUKOWICZ",
-		"group": "PPE",
-		"country": "pl",
-		"seat": 339
 	},
 	{
 		"id": 197493,
