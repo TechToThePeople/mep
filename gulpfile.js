@@ -9,7 +9,7 @@ const gulp_concat = require("gulp-concat");
 const gulp_uglify = require("gulp-uglify");
 const gulp_minify = require("gulp-clean-css");
 const gulp_rename = require("gulp-rename");
-
+const exec = require('child_process').exec;
 const lunzip = require("lunzip-stream");
 const downloader = require("./lib/download");
 
@@ -73,6 +73,7 @@ const inout = exports.inout = function inout(done) {
 const transform = exports.transform = function transform(done) {
 	require("./script/transform.js")(done);
 };
+
 
 const alias = exports.alias = function alias(done) {
 	require("./script/aliases.js")(done);
@@ -146,6 +147,17 @@ const genderify = exports.genderify = function genderify(done){
 //	.pipe(process.stdout);
 //	.pipe(tf('utf-8',gender))
 };
+
+const party = exports.party = (done) => {
+console.log("not working");
+  exec('q "select party,country,eugroup, count(*) meps from data/meps.csv group by party,country,eugroup order by meps desc" -d, -H -O | ./csv2json.py > data/parties.json', function (err, stdout, stderr) {
+console.log("done",err);
+    console.log(stdout);
+    console.log(stderr);
+    done();
+  });
+}
+
 
 // aliases
 

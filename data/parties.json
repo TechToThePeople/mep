@@ -1,0 +1,1418 @@
+[
+  {
+    "party": "Christlich Demokratische Union Deutschlands",
+    "country": "de",
+    "eugroup": "EPP",
+    "meps": "23"
+  },
+  {
+    "party": "Lega",
+    "country": "it",
+    "eugroup": "ID",
+    "meps": "23"
+  },
+  {
+    "party": "Prawo i Sprawiedliwość",
+    "country": "pl",
+    "eugroup": "ECR",
+    "meps": "23"
+  },
+  {
+    "party": "Bündnis 90/Die Grünen",
+    "country": "de",
+    "eugroup": "Greens/EFA",
+    "meps": "21"
+  },
+  {
+    "party": "Partido Socialista Obrero Español",
+    "country": "es",
+    "eugroup": "S&D",
+    "meps": "20"
+  },
+  {
+    "party": "Rassemblement national",
+    "country": "fr",
+    "eugroup": "ID",
+    "meps": "18"
+  },
+  {
+    "party": "Sozialdemokratische Partei Deutschlands",
+    "country": "de",
+    "eugroup": "S&D",
+    "meps": "16"
+  },
+  {
+    "party": "Partito Democratico",
+    "country": "it",
+    "eugroup": "S&D",
+    "meps": "15"
+  },
+  {
+    "party": "Partido Popular",
+    "country": "es",
+    "eugroup": "EPP",
+    "meps": "13"
+  },
+  {
+    "party": "Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt",
+    "country": "hu",
+    "eugroup": "NA",
+    "meps": "12"
+  },
+  {
+    "party": "Europe Écologie",
+    "country": "fr",
+    "eugroup": "Greens/EFA",
+    "meps": "10"
+  },
+  {
+    "party": "Forza Italia",
+    "country": "it",
+    "eugroup": "EPP",
+    "meps": "10"
+  },
+  {
+    "party": "Partidul Naţional Liberal",
+    "country": "ro",
+    "eugroup": "EPP",
+    "meps": "10"
+  },
+  {
+    "party": "Platforma Obywatelska",
+    "country": "pl",
+    "eugroup": "EPP",
+    "meps": "10"
+  },
+  {
+    "party": "Alternative für Deutschland",
+    "country": "de",
+    "eugroup": "ID",
+    "meps": "9"
+  },
+  {
+    "party": "Partido Socialista",
+    "country": "pt",
+    "eugroup": "S&D",
+    "meps": "9"
+  },
+  {
+    "party": "Partidul Social Democrat",
+    "country": "ro",
+    "eugroup": "S&D",
+    "meps": "8"
+  },
+  {
+    "party": "Fratelli d'Italia",
+    "country": "it",
+    "eugroup": "ECR",
+    "meps": "7"
+  },
+  {
+    "party": "Les Républicains",
+    "country": "fr",
+    "eugroup": "EPP",
+    "meps": "7"
+  },
+  {
+    "party": "Liste Renaissance",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "7"
+  },
+  {
+    "party": "Nea Demokratia",
+    "country": "gr",
+    "eugroup": "EPP",
+    "meps": "7"
+  },
+  {
+    "party": "Österreichische Volkspartei",
+    "country": "at",
+    "eugroup": "EPP",
+    "meps": "7"
+  },
+  {
+    "party": "Christlich-Soziale Union in Bayern e.V.",
+    "country": "de",
+    "eugroup": "EPP",
+    "meps": "6"
+  },
+  {
+    "party": "Ciudadanos – Partido de la Ciudadanía",
+    "country": "es",
+    "eugroup": "Renew",
+    "meps": "6"
+  },
+  {
+    "party": "Mouvement Démocrate",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "6"
+  },
+  {
+    "party": "Movimento 5 Stelle",
+    "country": "it",
+    "eugroup": "NA",
+    "meps": "6"
+  },
+  {
+    "party": "Partido Social Democrata",
+    "country": "pt",
+    "eugroup": "EPP",
+    "meps": "6"
+  },
+  {
+    "party": "Partij van de Arbeid",
+    "country": "nl",
+    "eugroup": "S&D",
+    "meps": "6"
+  },
+  {
+    "party": "ANO 2011",
+    "country": "cz",
+    "eugroup": "Renew",
+    "meps": "5"
+  },
+  {
+    "party": "Arbetarepartiet- Socialdemokraterna",
+    "country": "se",
+    "eugroup": "S&D",
+    "meps": "5"
+  },
+  {
+    "party": "Bulgarian Socialist Party",
+    "country": "bg",
+    "eugroup": "S&D",
+    "meps": "5"
+  },
+  {
+    "party": "Christen Democratisch Appèl",
+    "country": "nl",
+    "eugroup": "EPP",
+    "meps": "5"
+  },
+  {
+    "party": "Citizens for European Development of Bulgaria",
+    "country": "bg",
+    "eugroup": "EPP",
+    "meps": "5"
+  },
+  {
+    "party": "DIE LINKE.",
+    "country": "de",
+    "eugroup": "GUE/NGL",
+    "meps": "5"
+  },
+  {
+    "party": "Fine Gael Party",
+    "country": "ie",
+    "eugroup": "EPP",
+    "meps": "5"
+  },
+  {
+    "party": "Freie Demokratische Partei",
+    "country": "de",
+    "eugroup": "Renew",
+    "meps": "5"
+  },
+  {
+    "party": "La France Insoumise",
+    "country": "fr",
+    "eugroup": "GUE/NGL",
+    "meps": "5"
+  },
+  {
+    "party": "Nowa Lewica",
+    "country": "pl",
+    "eugroup": "S&D",
+    "meps": "5"
+  },
+  {
+    "party": "Reînnoim Proiectul European al României",
+    "country": "ro",
+    "eugroup": "Renew",
+    "meps": "5"
+  },
+  {
+    "party": "Sozialdemokratische Partei Österreichs",
+    "country": "at",
+    "eugroup": "S&D",
+    "meps": "5"
+  },
+  {
+    "party": "Volkspartij voor Vrijheid en Democratie",
+    "country": "nl",
+    "eugroup": "Renew",
+    "meps": "5"
+  },
+  {
+    "party": "Coalition of the Radical Left",
+    "country": "gr",
+    "eugroup": "GUE/NGL",
+    "meps": "4"
+  },
+  {
+    "party": "Demokratikus Koalíció",
+    "country": "hu",
+    "eugroup": "S&D",
+    "meps": "4"
+  },
+  {
+    "party": "Hrvatska demokratska zajednica",
+    "country": "hr",
+    "eugroup": "EPP",
+    "meps": "4"
+  },
+  {
+    "party": "Independent",
+    "country": "gr",
+    "eugroup": "NA",
+    "meps": "4"
+  },
+  {
+    "party": "Moderaterna",
+    "country": "se",
+    "eugroup": "EPP",
+    "meps": "4"
+  },
+  {
+    "party": "Občanská demokratická strana",
+    "country": "cz",
+    "eugroup": "ECR",
+    "meps": "4"
+  },
+  {
+    "party": "Partit Laburista",
+    "country": "mt",
+    "eugroup": "S&D",
+    "meps": "4"
+  },
+  {
+    "party": "Socijaldemokratska partija Hrvatske",
+    "country": "hr",
+    "eugroup": "S&D",
+    "meps": "4"
+  },
+  {
+    "party": "Tėvynės sąjunga-Lietuvos krikščionys demokratai",
+    "country": "lt",
+    "eugroup": "EPP",
+    "meps": "4"
+  },
+  {
+    "party": "VOX",
+    "country": "es",
+    "eugroup": "ECR",
+    "meps": "4"
+  },
+  {
+    "party": "Die Grünen - Die Grüne Alternative",
+    "country": "at",
+    "eugroup": "Greens/EFA",
+    "meps": "3"
+  },
+  {
+    "party": "Freiheitliche Partei Österreichs",
+    "country": "at",
+    "eugroup": "ID",
+    "meps": "3"
+  },
+  {
+    "party": "GroenLinks",
+    "country": "nl",
+    "eugroup": "Greens/EFA",
+    "meps": "3"
+  },
+  {
+    "party": "Independent",
+    "country": "it",
+    "eugroup": "Greens/EFA",
+    "meps": "3"
+  },
+  {
+    "party": "Junts per Catalunya - Lliures per Europa",
+    "country": "es",
+    "eugroup": "NA",
+    "meps": "3"
+  },
+  {
+    "party": "Kansallinen Kokoomus",
+    "country": "fi",
+    "eugroup": "EPP",
+    "meps": "3"
+  },
+  {
+    "party": "La République en marche",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "3"
+  },
+  {
+    "party": "Miljöpartiet de gröna",
+    "country": "se",
+    "eugroup": "Greens/EFA",
+    "meps": "3"
+  },
+  {
+    "party": "Movement for Rights and Freedoms",
+    "country": "bg",
+    "eugroup": "Renew",
+    "meps": "3"
+  },
+  {
+    "party": "Nieuw-Vlaamse Alliantie",
+    "country": "be",
+    "eugroup": "ECR",
+    "meps": "3"
+  },
+  {
+    "party": "PIRÁTI",
+    "country": "cz",
+    "eugroup": "Greens/EFA",
+    "meps": "3"
+  },
+  {
+    "party": "Parti socialiste",
+    "country": "fr",
+    "eugroup": "S&D",
+    "meps": "3"
+  },
+  {
+    "party": "Partija \"VIENOTĪBA\"",
+    "country": "lv",
+    "eugroup": "EPP",
+    "meps": "3"
+  },
+  {
+    "party": "Socialdemokratiet",
+    "country": "dk",
+    "eugroup": "S&D",
+    "meps": "3"
+  },
+  {
+    "party": "Sverigedemokraterna",
+    "country": "se",
+    "eugroup": "ECR",
+    "meps": "3"
+  },
+  {
+    "party": "Venstre, Danmarks Liberale Parti",
+    "country": "dk",
+    "eugroup": "Renew",
+    "meps": "3"
+  },
+  {
+    "party": "Vihreä liitto",
+    "country": "fi",
+    "eugroup": "Greens/EFA",
+    "meps": "3"
+  },
+  {
+    "party": "Vlaams Belang",
+    "country": "be",
+    "eugroup": "ID",
+    "meps": "3"
+  },
+  {
+    "party": "Azione - Italia Viva",
+    "country": "it",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Bloco de Esquerda",
+    "country": "pt",
+    "eugroup": "GUE/NGL",
+    "meps": "2"
+  },
+  {
+    "party": "Centerpartiet",
+    "country": "se",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Christen-Democratisch & Vlaams",
+    "country": "be",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Communist Party of Greece",
+    "country": "gr",
+    "eugroup": "NA",
+    "meps": "2"
+  },
+  {
+    "party": "Democratic Rally",
+    "country": "cy",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Ecologistes Confédérés pour l'Organisation de Luttes Originales",
+    "country": "be",
+    "eugroup": "Greens/EFA",
+    "meps": "2"
+  },
+  {
+    "party": "Eesti Reformierakond",
+    "country": "ee",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Esquerra Republicana de Catalunya",
+    "country": "es",
+    "eugroup": "Greens/EFA",
+    "meps": "2"
+  },
+  {
+    "party": "FRATELLI D' ITALIA",
+    "country": "it",
+    "eugroup": "ECR",
+    "meps": "2"
+  },
+  {
+    "party": "Fianna Fáil Party",
+    "country": "ie",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Freie Wähler",
+    "country": "de",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Gibanje Svoboda",
+    "country": "si",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Green Party",
+    "country": "ie",
+    "eugroup": "Greens/EFA",
+    "meps": "2"
+  },
+  {
+    "party": "Independent",
+    "country": "de",
+    "eugroup": "NA",
+    "meps": "2"
+  },
+  {
+    "party": "Independent",
+    "country": "it",
+    "eugroup": "NA",
+    "meps": "2"
+  },
+  {
+    "party": "Independent",
+    "country": "nl",
+    "eugroup": "ECR",
+    "meps": "2"
+  },
+  {
+    "party": "Independent",
+    "country": "pl",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Independents for change",
+    "country": "ie",
+    "eugroup": "GUE/NGL",
+    "meps": "2"
+  },
+  {
+    "party": "Indépendant",
+    "country": "fr",
+    "eugroup": "NA",
+    "meps": "2"
+  },
+  {
+    "party": "Izquierda Unida",
+    "country": "es",
+    "eugroup": "GUE/NGL",
+    "meps": "2"
+  },
+  {
+    "party": "Kresťanskodemokratické hnutie",
+    "country": "sk",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Kristdemokraterna",
+    "country": "se",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Křesťanská a demokratická unie - Československá strana lidová",
+    "country": "cz",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Lietuvos socialdemokratų partija",
+    "country": "lt",
+    "eugroup": "S&D",
+    "meps": "2"
+  },
+  {
+    "party": "Momentum",
+    "country": "hu",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Mouvement Réformateur",
+    "country": "be",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Open Vlaamse Liberalen en Democraten",
+    "country": "be",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "PODEMOS",
+    "country": "es",
+    "eugroup": "GUE/NGL",
+    "meps": "2"
+  },
+  {
+    "party": "Parti chrétien social luxembourgeois",
+    "country": "lu",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Partido Comunista Português",
+    "country": "pt",
+    "eugroup": "GUE/NGL",
+    "meps": "2"
+  },
+  {
+    "party": "Partidul Mișcarea Populară",
+    "country": "ro",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Partit Nazzjonalista",
+    "country": "mt",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Perussuomalaiset",
+    "country": "fi",
+    "eugroup": "ECR",
+    "meps": "2"
+  },
+  {
+    "party": "Place publique",
+    "country": "fr",
+    "eugroup": "S&D",
+    "meps": "2"
+  },
+  {
+    "party": "Polskie Stronnictwo Ludowe",
+    "country": "pl",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Progressive Party of Working People - Left - New Forces",
+    "country": "cy",
+    "eugroup": "GUE/NGL",
+    "meps": "2"
+  },
+  {
+    "party": "Progresívne Slovensko",
+    "country": "sk",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Reconquête!",
+    "country": "fr",
+    "eugroup": "NA",
+    "meps": "2"
+  },
+  {
+    "party": "Renaissance",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Régions et Peuples Solidaires",
+    "country": "fr",
+    "eugroup": "Greens/EFA",
+    "meps": "2"
+  },
+  {
+    "party": "SMER-Sociálna demokracia",
+    "country": "sk",
+    "eugroup": "NA",
+    "meps": "2"
+  },
+  {
+    "party": "Slovenska demokratska stranka",
+    "country": "si",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Socialistisk Folkeparti",
+    "country": "dk",
+    "eugroup": "Greens/EFA",
+    "meps": "2"
+  },
+  {
+    "party": "Socialni demokrati",
+    "country": "si",
+    "eugroup": "S&D",
+    "meps": "2"
+  },
+  {
+    "party": "Solidarna Polska Zbigniewa Ziobro",
+    "country": "pl",
+    "eugroup": "ECR",
+    "meps": "2"
+  },
+  {
+    "party": "Sotsiaaldemokraatlik Erakond",
+    "country": "ee",
+    "eugroup": "S&D",
+    "meps": "2"
+  },
+  {
+    "party": "Suomen Keskusta",
+    "country": "fi",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "Suomen Sosialidemokraattinen Puolue/Finlands Socialdemokratiska Parti",
+    "country": "fi",
+    "eugroup": "S&D",
+    "meps": "2"
+  },
+  {
+    "party": "Svoboda a přímá demokracie",
+    "country": "cz",
+    "eugroup": "ID",
+    "meps": "2"
+  },
+  {
+    "party": "TOP 09 a Starostové",
+    "country": "cz",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Uniunea Democrată Maghiară din România",
+    "country": "ro",
+    "eugroup": "EPP",
+    "meps": "2"
+  },
+  {
+    "party": "Uniunea Salvați România",
+    "country": "ro",
+    "eugroup": "Renew",
+    "meps": "2"
+  },
+  {
+    "party": "VMRO",
+    "country": "bg",
+    "eugroup": "ECR",
+    "meps": "2"
+  },
+  {
+    "party": "\"Saskaņa\" sociāldemokrātiskā partija",
+    "country": "lv",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "-",
+    "country": "hr",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "ANTICAPITALISTAS",
+    "country": "es",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Agir - La Droite constructive",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Attīstībai/Par!",
+    "country": "lv",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Bloque Nacionalista Galego",
+    "country": "es",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Bündnis Deutschland",
+    "country": "de",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Catalunya en Comú",
+    "country": "es",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "ChristenUnie",
+    "country": "nl",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Christlich Soziale Partei",
+    "country": "be",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Dansk Folkeparti",
+    "country": "dk",
+    "eugroup": "ID",
+    "meps": "1"
+  },
+  {
+    "party": "Darbo partija",
+    "country": "lt",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Delegación Ciudadanos Europeos",
+    "country": "es",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Democraten 66",
+    "country": "nl",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Democratic Party",
+    "country": "cy",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Democrats for Strong Bulgaria",
+    "country": "bg",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Democrazia Cristiana",
+    "country": "it",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Det Konservative Folkeparti",
+    "country": "dk",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Det Radikale Venstre",
+    "country": "dk",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Die PARTEI",
+    "country": "de",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Déi Gréng - Les Verts",
+    "country": "lu",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Eesti Keskerakond",
+    "country": "ee",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Eesti Konservatiivne Rahvaerakond",
+    "country": "ee",
+    "eugroup": "ID",
+    "meps": "1"
+  },
+  {
+    "party": "Elliniki Lusi-Greek Solution",
+    "country": "gr",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Enhedslisten",
+    "country": "dk",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Esély Közösség",
+    "country": "hu",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Familien-Partei Deutschlands",
+    "country": "de",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Forum voor Democratie",
+    "country": "nl",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Gauche républicaine et socialiste",
+    "country": "fr",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Gods kalpot Rīgai",
+    "country": "lv",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Groen",
+    "country": "be",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Hnutie Republika",
+    "country": "sk",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Horizons",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Hrvatski suverenisti",
+    "country": "hr",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "be",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "cz",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "de",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "dk",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "gr",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "gr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "ie",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "it",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "it",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "it",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "lt",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "nl",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "pl",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "pl",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "ro",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "sk",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Independent",
+    "country": "sk",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Independente",
+    "country": "pt",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Independiente",
+    "country": "es",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Indépendent",
+    "country": "lu",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Isamaa",
+    "country": "ee",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Istarski demokratski sabor - Dieta democratica istriana",
+    "country": "hr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "JA21",
+    "country": "nl",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Jobbik – Konzervatívok",
+    "country": "hu",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "KLJUČ Hrvatske",
+    "country": "hr",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Kereszténydemokrata Néppárt",
+    "country": "hu",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Komunistická strana Čech a Moravy",
+    "country": "cz",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Latvijas Krievu savienība",
+    "country": "lv",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Les Engagés",
+    "country": "be",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Les centristes",
+    "country": "fr",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Liberalerna",
+    "country": "se",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Lietuvos Respublikos liberalų sąjūdis",
+    "country": "lt",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Lietuvos lenkų rinkimų akcija – Krikščioniškų šeimų sąjunga",
+    "country": "lt",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Lietuvos valstiečių ir žaliųjų sąjunga",
+    "country": "lt",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Liste L'Europe Ensemble",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Liste Renaissance",
+    "country": "fr",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Meer Directe Democratie",
+    "country": "nl",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Moderaterne",
+    "country": "dk",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Mouvement Radical Social-Libéral",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Movement for Social Democracy EDEK",
+    "country": "cy",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "NEOS – Das Neue Österreich",
+    "country": "at",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Nacionālā apvienība \"Visu Latvijai!\"-\"Tēvzemei un Brīvībai/LNNK\"",
+    "country": "lv",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Nouvelle Donne",
+    "country": "fr",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Nova Slovenija – Krščanski demokrati",
+    "country": "si",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Obyčajní ľudia a nezávislé osobnosti",
+    "country": "sk",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "PASOK-KINAL",
+    "country": "gr",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "PRO Romania",
+    "country": "ro",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Parti Radical",
+    "country": "fr",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Parti Socialiste",
+    "country": "be",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Parti du Travail de Belgique",
+    "country": "be",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Parti démocratique",
+    "country": "lu",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Parti ouvrier socialiste luxembourgeois",
+    "country": "lu",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Partia Republikańska",
+    "country": "pl",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Partido Nacionalista Vasco",
+    "country": "es",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Partido do Centro Democrático Social-Partido Popular",
+    "country": "pt",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Partidul Național Țărănesc Creștin Democrat",
+    "country": "ro",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Partidul Umanist Social Liberal",
+    "country": "ro",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Partij voor de Dieren",
+    "country": "nl",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Partit dels Socialistes de Catalunya",
+    "country": "es",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Partito Democratico",
+    "country": "it",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Piratenpartei Deutschland",
+    "country": "de",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Polska 2050",
+    "country": "pl",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Rassemblement national",
+    "country": "fr",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Sinn Féin",
+    "country": "ie",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Sloboda a Solidarita",
+    "country": "sk",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Slovak PATRIOT",
+    "country": "sk",
+    "eugroup": "NA",
+    "meps": "1"
+  },
+  {
+    "party": "Slovakia – Demokrati",
+    "country": "sk",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Slovenska ljudska stranka",
+    "country": "si",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Sojusz Lewicy Demokratycznej - Unia Pracy",
+    "country": "pl",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Staatkundig Gereformeerde Partij",
+    "country": "nl",
+    "eugroup": "ECR",
+    "meps": "1"
+  },
+  {
+    "party": "Starostové a nezávisli",
+    "country": "cz",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Svenska folkpartiet",
+    "country": "fi",
+    "eugroup": "Renew",
+    "meps": "1"
+  },
+  {
+    "party": "Südtiroler Volkspartei",
+    "country": "it",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Union of Democratic Forces",
+    "country": "bg",
+    "eugroup": "EPP",
+    "meps": "1"
+  },
+  {
+    "party": "Vasemmistoliitto",
+    "country": "fi",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Volt",
+    "country": "de",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  },
+  {
+    "party": "Vooruit",
+    "country": "be",
+    "eugroup": "S&D",
+    "meps": "1"
+  },
+  {
+    "party": "Vänsterpartiet",
+    "country": "se",
+    "eugroup": "GUE/NGL",
+    "meps": "1"
+  },
+  {
+    "party": "Ökologisch-Demokratische Partei",
+    "country": "de",
+    "eugroup": "Greens/EFA",
+    "meps": "1"
+  }
+]
