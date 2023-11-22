@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Sira REGO,ES,197681,9,2019-07-02,2023-11-20,outgoing,The Left,Izquierda Unida
+Ernest URTASUN,ES,124972,9,2019-07-02,2023-11-20,outgoing,Greens/EFA,Catalunya en Comú
 Michal ŠIMEČKA,SK,103746,9,2019-07-02,2023-10-24,outgoing,Renew,Progresívne Slovensko
 Christophe HANSEN,LU,193419,9,2019-07-02,2023-10-23,outgoing,EPP,Parti chrétien social luxembourgeois
 Bartosz ARŁUKOWICZ,PL,197492,9,2019-07-02,2023-10-18,outgoing,EPP,Platforma Obywatelska
@@ -224,7 +226,7 @@ Theresa BIELOWSKI,AT,238674,9,2022-10-10,,incoming,S&D,Sozialdemokratische Parte
 Johan NISSINEN,SE,238639,9,2022-10-11,,incoming,ECR,Sverigedemokraterna
 Lara COMI,IT,96775,9,2022-11-02,,incoming,EPP,Forza Italia
 Maria Angela DANZÌ,IT,239258,9,2022-11-02,,incoming,NI,Movimento 5 Stelle
-Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,NI,Independent
+Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,ECR,Independent
 Matteo GAZZINI,IT,239255,9,2022-11-02,,incoming,ID,Lega
 Paola GHIDONI,IT,239256,9,2022-11-02,,incoming,ID,Lega
 Alessandra MUSSOLINI,IT,28429,9,2022-11-02,,incoming,EPP,Forza Italia
@@ -252,3 +254,6 @@ Lydie MASSARD,FR,249285,9,2023-09-24,,incoming,Greens/EFA,Régions et Peuples So
 Laurence SAILLIET,FR,249284,9,2023-09-24,,incoming,EPP,Les Républicains
 Wolfram PIRCHNER,AT,249443,9,2023-10-17,,incoming,EPP,Österreichische Volkspartei
 Martine KEMP,LU,249603,9,2023-10-24,,incoming,EPP,Parti chrétien social luxembourgeois
+Jozef MIHÁL,SK,249826,9,2023-10-26,,incoming,Renew,Independent
+Włodzimierz Witold KARPIŃSKI,PL,250237,9,2023-11-16,,incoming,EPP,
+Witold PAHL,PL,250235,9,2023-11-16,,incoming,EPP,Platforma Obywatelska

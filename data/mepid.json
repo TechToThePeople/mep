@@ -1808,14 +1808,6 @@
 		"seat": 240
 	},
 	{
-		"id": 124972,
-		"firstName": "Ernest",
-		"lastName": "URTASUN",
-		"group": "Verts/ALE",
-		"country": "es",
-		"seat": 55
-	},
-	{
 		"id": 124973,
 		"firstName": "Gerolf",
 		"lastName": "ANNEMANS",
@@ -4104,14 +4096,6 @@
 		"seat": 356
 	},
 	{
-		"id": 197681,
-		"firstName": "Sira",
-		"lastName": "REGO",
-		"group": "GUE/NGL",
-		"country": "es",
-		"seat": 230
-	},
-	{
 		"id": 197682,
 		"firstName": "Hannes",
 		"lastName": "HEIDE",
@@ -5467,7 +5451,7 @@
 		"id": 239262,
 		"firstName": "Elisabetta",
 		"lastName": "DE BLASIS",
-		"group": "NA",
+		"group": "ECR",
 		"country": "it",
 		"seat": null
 	},
@@ -5605,6 +5589,30 @@
 		"lastName": "KEMP",
 		"group": "EPP",
 		"country": "lu",
+		"seat": null
+	},
+	{
+		"id": 249826,
+		"firstName": "Jozef",
+		"lastName": "MIHÁL",
+		"group": "Renew",
+		"country": "sk",
+		"seat": null
+	},
+	{
+		"id": 250235,
+		"firstName": "Witold",
+		"lastName": "PAHL",
+		"group": "EPP",
+		"country": "pl",
+		"seat": null
+	},
+	{
+		"id": 250237,
+		"firstName": "Włodzimierz Witold",
+		"lastName": "KARPIŃSKI",
+		"group": "EPP",
+		"country": "pl",
 		"seat": null
 	}
 ]
