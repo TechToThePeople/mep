@@ -156,6 +156,8 @@ console.log("done",err);
     console.log(stderr);
     done();
   });
+//exec('q "select country, count(*) meps from data/meps.csv group by country order by meps desc" -d, -H -O | ./csv2json.py > data/countries.json');
+//exec ('q "select eugroup, count(*) meps from data/meps.csv group by eugroup order by meps desc" -d, -H -O | ./csv2json.py > data/eugroups.json');
 }
 
 

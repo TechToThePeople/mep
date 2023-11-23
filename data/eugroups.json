@@ -1,58 +1,34 @@
-{
-	"ECR": {
-		"accronym": "ECR",
-		"name": "European Conservatives and Reformists Group",
-		"picture": "logo-ecr.png",
-		"icon": "icon-ecr.png",
-		"url": "http://www.ecrgroup.eu/"
-	},
-	"EPP": {
-		"accronym": "EPP",
-		"name": "Group of the European People's Party (Christian Democrats)",
-		"picture": "logo-epp.png",
-		"icon": "icon-epp.png",
-		"url": "http://www.eppgroup.eu/"
-	},
-	"Greens/EFA": {
-		"accronym": "Greens/EFA",
-		"name": "Group of the Greens/European Free Alliance",
-		"picture": "logo-greens-efa.png",
-		"icon": "icon-greens-efa.png",
-		"url": "http://www.greens-efa.eu/"
-	},
-	"S&D": {
-		"accronym": "S&D",
-		"name": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
-		"picture": "logo-s-d.png",
-		"icon": "icon-s-d.png",
-		"url": "http://www.socialistsanddemocrats.eu/"
-	},
-	"ID": {
-		"accronym": "ID",
-		"name": "Identity and Democracy Group",
-		"picture": "logo-id.png",
-		"icon": "icon-id.png",
-		"url": "https://www.facebook.com/IDgroupEP/"
-	},
-	"NA": {
-		"accronym": "NA",
-		"name": "Non-attached Members",
-		"picture": "logo-na.png",
-		"icon": "icon-na.png",
-		"url": null
-	},
-	"Renew": {
-		"accronym": "Renew",
-		"name": "Renew Europe Group",
-		"picture": "logo-renew.png",
-		"icon": "icon-renew.png",
-		"url": "https://reneweuropegroup.eu"
-	},
-	"GUE/NGL": {
-		"accronym": "GUE/NGL",
-		"name": "The Left group in the European Parliament - GUE/NGL",
-		"picture": "logo-gue-ngl.png",
-		"icon": "icon-gue-ngl.png",
-		"url": "http://www.guengl.eu/"
-	}
-}
+[
+  {
+    "eugroup": "EPP",
+    "meps": "178"
+  },
+  {
+    "eugroup": "S&D",
+    "meps": "141"
+  },
+  {
+    "eugroup": "Renew",
+    "meps": "101"
+  },
+  {
+    "eugroup": "Greens/EFA",
+    "meps": "71"
+  },
+  {
+    "eugroup": "ECR",
+    "meps": "66"
+  },
+  {
+    "eugroup": "ID",
+    "meps": "60"
+  },
+  {
+    "eugroup": "NA",
+    "meps": "49"
+  },
+  {
+    "eugroup": "GUE/NGL",
+    "meps": "36"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "country": "de",
+    "meps": "96"
+  },
+  {
+    "country": "fr",
+    "meps": "79"
+  },
+  {
+    "country": "it",
+    "meps": "76"
+  },
+  {
+    "country": "es",
+    "meps": "57"
+  },
+  {
+    "country": "pl",
+    "meps": "51"
+  },
+  {
+    "country": "ro",
+    "meps": "33"
+  },
+  {
+    "country": "nl",
+    "meps": "29"
+  },
+  {
+    "country": "se",
+    "meps": "21"
+  },
+  {
+    "country": "pt",
+    "meps": "21"
+  },
+  {
+    "country": "hu",
+    "meps": "21"
+  },
+  {
+    "country": "gr",
+    "meps": "21"
+  },
+  {
+    "country": "cz",
+    "meps": "21"
+  },
+  {
+    "country": "be",
+    "meps": "21"
+  },
+  {
+    "country": "at",
+    "meps": "19"
+  },
+  {
+    "country": "bg",
+    "meps": "17"
+  },
+  {
+    "country": "sk",
+    "meps": "14"
+  },
+  {
+    "country": "fi",
+    "meps": "14"
+  },
+  {
+    "country": "dk",
+    "meps": "14"
+  },
+  {
+    "country": "ie",
+    "meps": "13"
+  },
+  {
+    "country": "hr",
+    "meps": "12"
+  },
+  {
+    "country": "lt",
+    "meps": "11"
+  },
+  {
+    "country": "si",
+    "meps": "8"
+  },
+  {
+    "country": "lv",
+    "meps": "8"
+  },
+  {
+    "country": "ee",
+    "meps": "7"
+  },
+  {
+    "country": "mt",
+    "meps": "6"
+  },
+  {
+    "country": "lu",
+    "meps": "6"
+  },
+  {
+    "country": "cy",
+    "meps": "6"
+  }
+]
