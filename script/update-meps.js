@@ -39,7 +39,10 @@ const import_xml = function(fn) {
 					lastName: [],
 				});
 
-				if (!groups.hasOwnProperty(r.politicalGroup[0])) throw new Error("Unknown Group: "+r.politicalGroup[0]);
+				if (!groups.hasOwnProperty(r.politicalGroup[0])) {
+console.log(r.politicalGroup);
+          throw new Error("Unknown Group: "+r.politicalGroup[0]);
+        }
 				if (!countries.hasOwnProperty(r.country[0])) throw new Error("Unknown Country: "+r.country[0]);
 
 				return {

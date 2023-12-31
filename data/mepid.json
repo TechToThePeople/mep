@@ -760,14 +760,6 @@
 		"seat": 187
 	},
 	{
-		"id": 96743,
-		"firstName": "Michèle",
-		"lastName": "RIVASI",
-		"group": "Verts/ALE",
-		"country": "fr",
-		"seat": 644
-	},
-	{
 		"id": 96747,
 		"firstName": "Arnaud",
 		"lastName": "DANJEAN",
@@ -3424,14 +3416,6 @@
 		"seat": 743
 	},
 	{
-		"id": 197548,
-		"firstName": "Radosław",
-		"lastName": "SIKORSKI",
-		"group": "PPE",
-		"country": "pl",
-		"seat": 745
-	},
-	{
 		"id": 197549,
 		"firstName": "Markéta",
 		"lastName": "GREGOROVÁ",
@@ -5411,7 +5395,7 @@
 		"id": 239255,
 		"firstName": "Matteo",
 		"lastName": "GAZZINI",
-		"group": "ID",
+		"group": "NA",
 		"country": "it",
 		"seat": null
 	},
@@ -5609,10 +5593,42 @@
 	},
 	{
 		"id": 250237,
-		"firstName": "Włodzimierz Witold",
+		"firstName": "Włodzimierz",
 		"lastName": "KARPIŃSKI",
 		"group": "EPP",
 		"country": "pl",
+		"seat": null
+	},
+	{
+		"id": 250538,
+		"firstName": "Rafał",
+		"lastName": "ROMANOWSKI",
+		"group": "ECR",
+		"country": "pl",
+		"seat": null
+	},
+	{
+		"id": 250572,
+		"firstName": "Patricia",
+		"lastName": "CARO MAYA",
+		"group": "GUE/NGL",
+		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 250918,
+		"firstName": "François",
+		"lastName": "THIOLLET",
+		"group": "Greens/EFA",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 251249,
+		"firstName": "Esther",
+		"lastName": "SANZ SELVA",
+		"group": "GUE/NGL",
+		"country": "es",
 		"seat": null
 	}
 ]
