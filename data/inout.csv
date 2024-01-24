@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Stéphane SÉJOURNÉ,FR,197508,9,2019-07-02,2024-01-11,outgoing,Renew,La République en marche
+Nicola BEER,DE,197437,9,2019-07-02,2023-12-31,outgoing,Renew,Freie Demokratische Partei
 Radosław SIKORSKI,PL,197548,9,2019-07-02,2023-12-12,outgoing,EPP,Platforma Obywatelska
 Michèle RIVASI,FR,96743,9,2019-07-02,2023-11-29,outgoing,Greens/EFA,Europe Écologie
 Sira REGO,ES,197681,9,2019-07-02,2023-11-20,outgoing,The Left,Izquierda Unida
@@ -229,7 +231,7 @@ Johan NISSINEN,SE,238639,9,2022-10-11,,incoming,ECR,Sverigedemokraterna
 Lara COMI,IT,96775,9,2022-11-02,,incoming,EPP,Forza Italia
 Maria Angela DANZÌ,IT,239258,9,2022-11-02,,incoming,NI,Movimento 5 Stelle
 Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,ECR,Independent
-Matteo GAZZINI,IT,239255,9,2022-11-02,,incoming,NI,Independent
+Matteo GAZZINI,IT,239255,9,2022-11-02,,incoming,EPP,Independent
 Paola GHIDONI,IT,239256,9,2022-11-02,,incoming,ID,Lega
 Alessandra MUSSOLINI,IT,28429,9,2022-11-02,,incoming,EPP,Forza Italia
 Denis NESCI,IT,239260,9,2022-11-02,,incoming,ECR,FRATELLI D' ITALIA
@@ -262,4 +264,7 @@ Witold PAHL,PL,250235,9,2023-11-16,,incoming,EPP,Platforma Obywatelska
 Rafał ROMANOWSKI,PL,250538,9,2023-11-29,,incoming,ECR,Prawo i Sprawiedliwość
 Patricia CARO MAYA,ES,250572,9,2023-11-30,,incoming,The Left,PODEMOS
 François THIOLLET,FR,250918,9,2023-11-30,,incoming,Greens/EFA,Europe Écologie
-Esther SANZ SELVA,ES,251249,9,2023-12-21,,incoming,The Left,
+Esther SANZ SELVA,ES,251249,9,2023-12-21,,incoming,The Left,PODEMOS
+Michael KAUCH,DE,251268,9,2024-01-01,,incoming,Renew,Freie Demokratische Partei
+Krzysztof BREJZA,PL,251324,9,2024-01-03,,incoming,EPP,Platforma Obywatelska
+Guy LAVOCAT,FR,251859,9,2024-01-12,,incoming,Renew,Renaissance

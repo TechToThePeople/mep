@@ -2680,14 +2680,6 @@
 		"seat": 351
 	},
 	{
-		"id": 197437,
-		"firstName": "Nicola",
-		"lastName": "BEER",
-		"group": "Renew",
-		"country": "de",
-		"seat": 97
-	},
-	{
 		"id": 197438,
 		"firstName": "Mislav",
 		"lastName": "KOLAKUŠIĆ",
@@ -3126,14 +3118,6 @@
 		"group": "S&D",
 		"country": "pl",
 		"seat": 457
-	},
-	{
-		"id": 197508,
-		"firstName": "Stéphane",
-		"lastName": "SÉJOURNÉ",
-		"group": "Renew",
-		"country": "fr",
-		"seat": 322
 	},
 	{
 		"id": 197510,
@@ -5395,7 +5379,7 @@
 		"id": 239255,
 		"firstName": "Matteo",
 		"lastName": "GAZZINI",
-		"group": "NA",
+		"group": "EPP",
 		"country": "it",
 		"seat": null
 	},
@@ -5629,6 +5613,30 @@
 		"lastName": "SANZ SELVA",
 		"group": "GUE/NGL",
 		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 251268,
+		"firstName": "Michael",
+		"lastName": "KAUCH",
+		"group": "Renew",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 251324,
+		"firstName": "Krzysztof",
+		"lastName": "BREJZA",
+		"group": "EPP",
+		"country": "pl",
+		"seat": null
+	},
+	{
+		"id": 251859,
+		"firstName": "Guy",
+		"lastName": "LAVOCAT",
+		"group": "Renew",
+		"country": "fr",
 		"seat": null
 	}
 ]
