@@ -2672,14 +2672,6 @@
 		"seat": 385
 	},
 	{
-		"id": 197436,
-		"firstName": "Helmut",
-		"lastName": "GEUKING",
-		"group": "ECR",
-		"country": "de",
-		"seat": 351
-	},
-	{
 		"id": 197438,
 		"firstName": "Mislav",
 		"lastName": "KOLAKUŠIĆ",
@@ -5637,6 +5629,14 @@
 		"lastName": "LAVOCAT",
 		"group": "Renew",
 		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 251874,
+		"firstName": "Niels",
+		"lastName": "GEUKING",
+		"group": "NA",
+		"country": "de",
 		"seat": null
 	}
 ]

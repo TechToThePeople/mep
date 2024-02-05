@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Helmut GEUKING,DE,197436,9,2019-07-02,2024-02-04,outgoing,EPP,Familien-Partei Deutschlands
 Stéphane SÉJOURNÉ,FR,197508,9,2019-07-02,2024-01-11,outgoing,Renew,La République en marche
 Nicola BEER,DE,197437,9,2019-07-02,2023-12-31,outgoing,Renew,Freie Demokratische Partei
 Radosław SIKORSKI,PL,197548,9,2019-07-02,2023-12-12,outgoing,EPP,Platforma Obywatelska
@@ -230,7 +231,7 @@ Theresa BIELOWSKI,AT,238674,9,2022-10-10,,incoming,S&D,Sozialdemokratische Parte
 Johan NISSINEN,SE,238639,9,2022-10-11,,incoming,ECR,Sverigedemokraterna
 Lara COMI,IT,96775,9,2022-11-02,,incoming,EPP,Forza Italia
 Maria Angela DANZÌ,IT,239258,9,2022-11-02,,incoming,NI,Movimento 5 Stelle
-Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,ECR,Independent
+Elisabetta DE BLASIS,IT,239262,9,2022-11-02,,incoming,ECR,FRATELLI D' ITALIA
 Matteo GAZZINI,IT,239255,9,2022-11-02,,incoming,EPP,Independent
 Paola GHIDONI,IT,239256,9,2022-11-02,,incoming,ID,Lega
 Alessandra MUSSOLINI,IT,28429,9,2022-11-02,,incoming,EPP,Forza Italia
@@ -268,3 +269,4 @@ Esther SANZ SELVA,ES,251249,9,2023-12-21,,incoming,The Left,PODEMOS
 Michael KAUCH,DE,251268,9,2024-01-01,,incoming,Renew,Freie Demokratische Partei
 Krzysztof BREJZA,PL,251324,9,2024-01-03,,incoming,EPP,Platforma Obywatelska
 Guy LAVOCAT,FR,251859,9,2024-01-12,,incoming,Renew,Renaissance
+Niels GEUKING,DE,251874,9,2024-02-05,,incoming,NI,
