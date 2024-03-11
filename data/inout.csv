@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Erik BERGKVIST,SE,197396,9,2019-07-02,2024-02-20,outgoing,S&D,Arbetarepartiet- Socialdemokraterna
+Esther DE LANGE,NL,38398,9,2019-07-02,2024-02-15,outgoing,EPP,Christen Democratisch Appèl
 Helmut GEUKING,DE,197436,9,2019-07-02,2024-02-04,outgoing,EPP,Familien-Partei Deutschlands
 Stéphane SÉJOURNÉ,FR,197508,9,2019-07-02,2024-01-11,outgoing,Renew,La République en marche
 Nicola BEER,DE,197437,9,2019-07-02,2023-12-31,outgoing,Renew,Freie Demokratische Partei
@@ -199,7 +201,7 @@ Chris MACMANUS,IE,205452,9,2020-03-06,,incoming,The Left,Sinn Féin
 Manuela RIPA,DE,206158,9,2020-07-16,,incoming,Greens/EFA,Ökologisch-Demokratische Partei
 Sara MATTHIEU,BE,208722,9,2020-10-08,,incoming,Greens/EFA,Groen
 Cyrus ENGERER,MT,209091,9,2020-11-05,,incoming,S&D,Partit Laburista
-Vlad GHEORGHE,RO,209140,9,2020-11-10,,incoming,Renew,Uniunea Salvați România
+Vlad GHEORGHE,RO,209140,9,2020-11-10,,incoming,Renew,Independent
 Colm MARKEY,IE,209896,9,2020-11-20,,incoming,EPP,Fine Gael Party
 Alin MITUȚA,RO,212855,9,2020-12-28,,incoming,Renew,Reînnoim Proiectul European al României
 Ernő SCHALLER-BAROSS,HU,213330,9,2021-01-10,,incoming,NI,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
@@ -211,7 +213,7 @@ Ladislav ILČIĆ,HR,221463,9,2021-07-01,,incoming,ECR,Hrvatski suverenisti
 João PIMENTA LOPES,PT,136236,9,2021-07-06,,incoming,The Left,Partido Comunista Português
 Karolin BRAUNSBERGER-REINHOLD,DE,226260,9,2021-10-07,,incoming,EPP,Christlich Demokratische Union Deutschlands
 Ilan DE BASSO,SE,228604,9,2021-12-13,,incoming,S&D,Arbetarepartiet- Socialdemokraterna
-Malte GALLÉE,DE,229352,9,2021-12-22,,incoming,Greens/EFA,Bündnis 90/Die Grünen
+Malte GALLÉE,DE,229352,9,2021-12-22,,incoming,NI,Bündnis 90/Die Grünen
 Karsten LUCKE,DE,228286,9,2022-01-11,,incoming,S&D,Sozialdemokratische Partei Deutschlands
 Camilla LAURETI,IT,230085,9,2022-01-12,,incoming,S&D,Partito Democratico
 Catharina RINZEMA,NL,229519,9,2022-01-18,,incoming,Renew,Volkspartij voor Vrijheid en Democratie
@@ -269,4 +271,6 @@ Esther SANZ SELVA,ES,251249,9,2023-12-21,,incoming,The Left,PODEMOS
 Michael KAUCH,DE,251268,9,2024-01-01,,incoming,Renew,Freie Demokratische Partei
 Krzysztof BREJZA,PL,251324,9,2024-01-03,,incoming,EPP,Platforma Obywatelska
 Guy LAVOCAT,FR,251859,9,2024-01-12,,incoming,Renew,Renaissance
-Niels GEUKING,DE,251874,9,2024-02-05,,incoming,NI,
+Niels GEUKING,DE,251874,9,2024-02-05,,incoming,EPP,Familien-Partei Deutschlands
+Linus GLANZELIUS,SE,253008,9,2024-02-27,,incoming,S&D,Arbetarepartiet- Socialdemokraterna
+Henk Jan ORMEL,NL,253043,9,2024-02-27,,incoming,EPP,Christen Democratisch Appèl
