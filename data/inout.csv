@@ -1,4 +1,9 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Maria da Graça CARVALHO,PT,96867,9,2019-07-02,2024-04-01,outgoing,EPP,Partido Social Democrata
+José Manuel FERNANDES,PT,96899,9,2019-07-02,2024-04-01,outgoing,EPP,Partido Social Democrata
+Paulo RANGEL,PT,96903,9,2019-07-02,2024-04-01,outgoing,EPP,Partido Social Democrata
+Marisa MATIAS,PT,96820,9,2019-07-02,2024-03-25,outgoing,The Left,Bloco de Esquerda
+Nuno MELO,PT,96978,9,2019-07-02,2024-03-25,outgoing,EPP,Partido do Centro Democrático Social-Partido Popular
 Erik BERGKVIST,SE,197396,9,2019-07-02,2024-02-20,outgoing,S&D,Arbetarepartiet- Socialdemokraterna
 Esther DE LANGE,NL,38398,9,2019-07-02,2024-02-15,outgoing,EPP,Christen Democratisch Appèl
 Helmut GEUKING,DE,197436,9,2019-07-02,2024-02-04,outgoing,EPP,Familien-Partei Deutschlands
@@ -214,6 +219,7 @@ João PIMENTA LOPES,PT,136236,9,2021-07-06,,incoming,The Left,Partido Comunista 
 Karolin BRAUNSBERGER-REINHOLD,DE,226260,9,2021-10-07,,incoming,EPP,Christlich Demokratische Union Deutschlands
 Ilan DE BASSO,SE,228604,9,2021-12-13,,incoming,S&D,Arbetarepartiet- Socialdemokraterna
 Malte GALLÉE,DE,229352,9,2021-12-22,,incoming,NI,Bündnis 90/Die Grünen
+Malte GALLÉE,DE,229352,9,2021-12-22,2024-03-10,outgoing,NI,Bündnis 90/Die Grünen
 Karsten LUCKE,DE,228286,9,2022-01-11,,incoming,S&D,Sozialdemokratische Partei Deutschlands
 Camilla LAURETI,IT,230085,9,2022-01-12,,incoming,S&D,Partito Democratico
 Catharina RINZEMA,NL,229519,9,2022-01-18,,incoming,Renew,Volkspartij voor Vrijheid en Democratie
@@ -274,3 +280,4 @@ Guy LAVOCAT,FR,251859,9,2024-01-12,,incoming,Renew,Renaissance
 Niels GEUKING,DE,251874,9,2024-02-05,,incoming,EPP,Familien-Partei Deutschlands
 Linus GLANZELIUS,SE,253008,9,2024-02-27,,incoming,S&D,Arbetarepartiet- Socialdemokraterna
 Henk Jan ORMEL,NL,253043,9,2024-02-27,,incoming,EPP,Christen Democratisch Appèl
+Jan OVELGÖNNE,DE,232843,9,2024-03-12,,incoming,Greens/EFA,Bündnis 90/Die Grünen

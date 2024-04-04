@@ -904,14 +904,6 @@
 		"seat": 238
 	},
 	{
-		"id": 96820,
-		"firstName": "Marisa",
-		"lastName": "MATIAS",
-		"group": "GUE/NGL",
-		"country": "pt",
-		"seat": 80
-	},
-	{
 		"id": 96826,
 		"firstName": "Tamás",
 		"lastName": "DEUTSCH",
@@ -960,14 +952,6 @@
 		"seat": 173
 	},
 	{
-		"id": 96867,
-		"firstName": "Maria da Graça",
-		"lastName": "CARVALHO",
-		"group": "PPE",
-		"country": "pt",
-		"seat": 416
-	},
-	{
 		"id": 96868,
 		"firstName": "Karima",
 		"lastName": "DELLI",
@@ -998,22 +982,6 @@
 		"group": "S&D",
 		"country": "it",
 		"seat": 309
-	},
-	{
-		"id": 96899,
-		"firstName": "José Manuel",
-		"lastName": "FERNANDES",
-		"group": "PPE",
-		"country": "pt",
-		"seat": 259
-	},
-	{
-		"id": 96903,
-		"firstName": "Paulo",
-		"lastName": "RANGEL",
-		"group": "PPE",
-		"country": "pt",
-		"seat": 39
 	},
 	{
 		"id": 96922,
@@ -1062,14 +1030,6 @@
 		"group": "S&D",
 		"country": "fr",
 		"seat": 132
-	},
-	{
-		"id": 96978,
-		"firstName": "Nuno",
-		"lastName": "MELO",
-		"group": "PPE",
-		"country": "pt",
-		"seat": 103
 	},
 	{
 		"id": 96991,
@@ -5224,14 +5184,6 @@
 		"seat": null
 	},
 	{
-		"id": 229352,
-		"firstName": "Malte",
-		"lastName": "GALLÉE",
-		"group": "NA",
-		"country": "de",
-		"seat": null
-	},
-	{
 		"id": 229519,
 		"firstName": "Catharina",
 		"lastName": "RINZEMA",
@@ -5253,6 +5205,14 @@
 		"lastName": "LAURETI",
 		"group": "S&D",
 		"country": "it",
+		"seat": null
+	},
+	{
+		"id": 232843,
+		"firstName": "Jan",
+		"lastName": "OVELGÖNNE",
+		"group": "Greens/EFA",
+		"country": "de",
 		"seat": null
 	},
 	{
