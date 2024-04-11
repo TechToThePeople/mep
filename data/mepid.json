@@ -1368,14 +1368,6 @@
 		"seat": 756
 	},
 	{
-		"id": 124734,
-		"firstName": "Cláudia",
-		"lastName": "MONTEIRO DE AGUIAR",
-		"group": "PPE",
-		"country": "pt",
-		"seat": 594
-	},
-	{
 		"id": 124735,
 		"firstName": "Miapetra",
 		"lastName": "KUMPULA-NATRI",
@@ -5597,6 +5589,54 @@
 		"lastName": "ORMEL",
 		"group": "EPP",
 		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 254718,
+		"firstName": "Anabela",
+		"lastName": "RODRIGUES",
+		"group": "GUE/NGL",
+		"country": "pt",
+		"seat": null
+	},
+	{
+		"id": 254719,
+		"firstName": "Vasco",
+		"lastName": "BECKER-WEINBERG",
+		"group": "EPP",
+		"country": "pt",
+		"seat": null
+	},
+	{
+		"id": 254720,
+		"firstName": "Ana Miguel",
+		"lastName": "DOS SANTOS",
+		"group": "EPP",
+		"country": "pt",
+		"seat": null
+	},
+	{
+		"id": 254721,
+		"firstName": "Vânia",
+		"lastName": "NETO",
+		"group": "EPP",
+		"country": "pt",
+		"seat": null
+	},
+	{
+		"id": 254722,
+		"firstName": "Teófilo",
+		"lastName": "SANTOS",
+		"group": "EPP",
+		"country": "pt",
+		"seat": null
+	},
+	{
+		"id": 254876,
+		"firstName": "Ricardo",
+		"lastName": "MORGADO",
+		"group": "EPP",
+		"country": "pt",
 		"seat": null
 	}
 ]
