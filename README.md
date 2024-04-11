@@ -6,6 +6,18 @@ It's a mix of various sources, the European Parliament Website, parltrack, euhub
 
 And a bunch of manual data fixing, like adding the gender.
 
+# download the result
+
+all the votes:
+https://mepwatch.eu/9/data/item_rollcall.csv
+
+a specific vote:
+https://mepwatch.eu/9/cards/167531.csv
+
+more info about the meps:
+https://mepwatch.eu/9/data/meps.csv
+
+
 ## How to update
 
 * `gulp update` to fetch and update data
@@ -15,7 +27,7 @@ And a bunch of manual data fixing, like adding the gender.
 
 For metadata updates and data inspection
 
-* `node scripts/eugroup.js` — update `data/eugrous.json` from `data/eugroup.json` and download logos and icons to `img/group`
+* `node scripts/eugroup.js` — update `data/eugroup.json` from `data/eugroup.json` and download logos and icons to `img/group`
 * `node scripts/update-comittees.js` — update `data/comittees.json` from eu website
 * `node scripts/update-delegations.js` — update `data/delegations.json` from eu website
 * `node scripts/constituencies.js` — extract constituencies data to `data/mep_regions.csv` and `data/regions.csv`
