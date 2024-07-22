@@ -1,4 +1,11 @@
 {
+	"ESN": {
+		"accronym": "ESN",
+		"name": "Europe of Sovereign Nations Group",
+		"picture": "logo-esn.png",
+		"icon": "icon-esn.png",
+		"url": ""
+	},
 	"ECR": {
 		"accronym": "ECR",
 		"name": "European Conservatives and Reformists Group",
@@ -27,19 +34,19 @@
 		"icon": "icon-s-d.png",
 		"url": "http://www.socialistsanddemocrats.eu/"
 	},
-	"ID": {
-		"accronym": "ID",
-		"name": "Identity and Democracy Group",
-		"picture": "logo-id.png",
-		"icon": "icon-id.png",
-		"url": "https://www.facebook.com/IDgroupEP/"
-	},
 	"NA": {
 		"accronym": "NA",
 		"name": "Non-attached Members",
 		"picture": "logo-na.png",
 		"icon": "icon-na.png",
 		"url": null
+	},
+	"Patriots": {
+		"accronym": "Patriots",
+		"name": "Patriots for Europe Group",
+		"picture": "logo-patriots.png",
+		"icon": "icon-patriots.png",
+		"url": ""
 	},
 	"Renew": {
 		"accronym": "Renew",

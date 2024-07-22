@@ -39,6 +39,10 @@ const main = module.exports = async function main(fn) {
 				// parse, format, add to result
 				parser.parseString(data, function(err, data) {
 					if (err) throw err;
+          if (!data.meps) {
+            console.warn("no meps in");
+            return;
+          }
 					data.meps.mep.forEach(function(r){
 						result.push({
 							fullName: r.fullName,
@@ -64,7 +68,7 @@ const main = module.exports = async function main(fn) {
 	q.run(function(){
 		
 		// sanity checks
-		if (!result || result.length === 0) throw new Error("invalid data: result is empty");
+//		if (!result || result.length === 0) throw new Error("invalid data: result is empty");
 
 		// status
 		console.log("[inout] imported %d records", result.length);

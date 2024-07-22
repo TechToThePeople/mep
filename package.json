@@ -4,12 +4,17 @@
 	"version": "1.0.0",
 	"description": "List of Members of the European Parliament",
 	"main": "list.js",
+	"scripts": {
+		"start": "./node_modules/gulp/bin/gulp.js",
+		"gulp": "./node_modules/gulp/bin/gulp.js"
+	},
 	"dependencies": {
 		"@fast-csv/format": "^4.3.5",
 		"blueimp-tmpl": "^3.11.0",
 		"bootstrap": "^3.3.7",
 		"bootstrap-material-design": "^0.5.10",
 		"cheerio": "^1.0.0-rc.2",
+		"country-flag-emoji-polyfill": "^0.1.8",
 		"crossfilter2": "^1.4.5",
 		"csv-write-stream": "^2.0.0",
 		"d3": "^3.5.17",

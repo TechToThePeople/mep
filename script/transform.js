@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 
 const fs = require("fs");
@@ -52,18 +53,25 @@ const delegations = Object.entries({ // prepare as array of key-value-pairs
 	return (a[1].length-b[1].length); // order by length to match agains shorter strings first
 });
 
-const eugroups = {
-	"ECR": "ECR",
-	"Group of the European United Left - Nordic Green Left": "GUE/NGL",
-	"The Left group in the European Parliament - GUE/NGL": "The Left",
-	"ID": "ID",
-	"NA": "NA",
-	"PPE": "EPP",
-	"RE": "Renew",
-	"S&D": "S&D",
-	"Verts/ALE": "Greens/EFA",
-	"GUE/NGL": "GUE/NGL",
+const eugroups = Object.values(require("../data/eugroups.json")).reduce(function(g,r){
+	return g[r.name]=r.accronym,g;
+},{});
+
+/*
+const eugroupaliases = {
+       "ECR": "ECR",
+       "Group of the European United Left - Nordic Green Left": "GUE/NGL",
+       "The Left group in the European Parliament - GUE/NGL": "The Left",
+       "ID": "ID",
+       "NA": "NA",
+       "PPE": "EPP",
+       "RE": "Renew",
+       "S&D": "S&D",
+       "Verts/ALE": "Greens/EFA",
+       "GUE/NGL": "GUE/NGL",
 };
+
+*/
 
 const abbr = {
 	"Subcommittee on Security and Defence": "SEDE",
@@ -187,18 +195,6 @@ process.exit(1);
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
 				if (!r.active) return done();
 
-if (r.UserID === 58766 && !r.Constituencies) {
-  r.Constituencies= [
-    {
-      party: '',
-      country: 'Romania',
-      start: '2019-07-02T00:00:00',
-      end: '9999-12-31T00:00:00',
-      term: 9
-    }
-  ];
-}
-
 				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
 
 				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
@@ -256,8 +252,9 @@ if (r.UserID === 58766 && !r.Constituencies) {
 					delegations: (r.Delegations||[]).filter(function(v){
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
-						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
-						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
+
+//						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
+//						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
 						abbreviations[v.Organization] = (v.abbr || v.name || abbr[v.Organization]);
 						return {
 							start: v.start.substr(0,10),
@@ -311,14 +308,23 @@ if (r.UserID === 58766 && !r.Constituencies) {
 					eugroup: r.Groups.filter(function(v){
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){
-						if (!eugroups.hasOwnProperty(v.groupid)) console.log("[transform] missing group: '%s'", v.groupid);
-						return eugroups[v.groupid] || /*v.groupid*/ "?";
+						if (!eugroups.hasOwnProperty(v.Organization)) {
+//Organization
+              console.log("[transform] missing group: '%s'", v.groupid);
+console.log(v);
+					 return v.groupid;
+            }
+					 return eugroups[v.Organization] || /*v.groupid*/ "?";
 					}).shift(), // first item
 				};
 			
         if (data.constituency === undefined) {
-console.log("missing constituency", data); 
           data.constituency = {country:"??", party:"??"};
+          if (r.Constituencies?.length) {
+            const v = r.Constituencies[0];
+            data.constituency.country = country2iso[v.country] || v.country;
+          }
+          console.warn("missing constituency-party", data);
         }
 				// count
 				processed++;

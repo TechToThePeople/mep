@@ -62,6 +62,7 @@ const main = module.exports = async function main(fn) {
       try {
 			await download("https://www.google.com/s2/favicons?domain="+r.profileLink, path.resolve(dest_img, "icon-"+slug+".png"));
       } catch (e) {
+			g[r.politicalGroup.eparty].icon= undefined;
  console.log("can't download",e);
       }
 			next();
