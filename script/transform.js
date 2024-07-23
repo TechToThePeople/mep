@@ -440,7 +440,8 @@ console.log("missing",d);
 	
 	// save json
 	q.push(function(next){
-		fs.writeFile(dest_meps_json, JSON.stringify(result), function(err){
+    const r =  JSON.stringify(result).replaceAll ('},{"meta"',"},\n{\"meta\"");
+		fs.writeFile(dest_meps_json, r, function(err){
 			if (err) return console.log("[transform] error saving meps.json: %s", err), next();
 			return console.log("[transform] saved meps.json"), next();
 		});
