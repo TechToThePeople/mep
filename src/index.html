@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -104,8 +104,8 @@ var iconify = function(name, prefix) {
     }
 
     function drawAge(dom) {
-      //var graph = dc.barChart(dom);
-      var graph = dc.lineChart(dom);
+      var graph = dc.barChart(dom);
+      //var graph = dc.lineChart(dom);
 
       var dim = ndx.dimension(function(d) {
         if (typeof d.age == "undefined") return "";
@@ -115,34 +115,27 @@ var iconify = function(name, prefix) {
       var group = dim.group().reduceSum(function(d) {
         return 1;
       });
-      //.x(d3.scale.ordinal())
       graph
         .width(0)
-        .height(200)
+        .height(85)
         .margins({
           top: 0,
-          right: 0,
-          bottom: 95,
-          left: 30
+          right: 4,
+          bottom: 17,
+          left: 6
         })
-        .x(d3.scale.linear().domain([20, 90]))
+      //.x(d3.scale.ordinal())
+        .x(d3.scale.linear().domain([20, 80]))
         .brushOn(true)
-        .renderArea(true)
+        .outerPadding(0)
+        .gap(0)
+//        .renderArea(true)
         .elasticY(true)
-        .yAxisLabel("#MEPs")
+//        .yAxisLabel("#MEPs")
         .dimension(dim)
         .group(group)
-        .on('renderlet', function(chart) {
-          var d = chart.dimension().top(Number.POSITIVE_INFINITY);
-          var total = 0,
-            nb = 0;
-          d.forEach(function(a) {
-            ++nb;
-            total += a.age;
-          });
-          var avg = total / nb;
-          $("#avg_age").text(Math.round(avg));
-        });
+      graph.xAxis().ticks(6);
+      graph.yAxis().ticks(0);
       return graph;
     }
 
@@ -295,6 +288,9 @@ var iconify = function(name, prefix) {
           return d.value.birthdate.avg;
         })
         .formatNumber(function(n) {
+          const now = new Date();
+          const avg = new Date (n);
+          document.getElementById('avg_age').innerHTML = now.getFullYear() - avg.getFullYear();
           return moment(n).fromNow().replace(" ago", "");
         })
         .html({
@@ -656,7 +652,7 @@ var iconify = function(name, prefix) {
       graphs.delegation = drawRow(".delegation .graph","delegation");
       graphs.role = drawRow(".role .graph","role");
       graphs.role.height(100);
-//           graphs.age = drawAge(".age");
+           graphs.age = drawAge(".age .panel-body");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
       graphs.table = drawTable("#table");
@@ -917,12 +913,12 @@ function download_excel() {
             <li class="list-group-item newbies" title="percentage of new members"><span class="percent badge"></span><span class="nb"></span> Newbies</li>
           <li class="list-group-item avg_age" title="average age"><span></span></li>
           <li class="list-group-item avg_since" title="how long in office"><span></span></li>
-            <li class="list-group-item nbopinion"><span class="nb"></span> Opinions</li>
-            <li class="list-group-item nbreport" title="Number of rapporteurs, all terms. Each MEP can be rapporteur several time"><span class="nb"></span> Rapporteurs</li>
-            <li class="list-group-item nbreport_shadow" title="Shadow rapporteurs, all terms." ><span class="nb"></span> Shadow</li>
-            <li class="list-group-item nbmotion"><span class="nb"></span> Motions</li>
-            <li class="list-group-item nbquestion"><span class="nb"></span> Questions</li>
-            <li class="list-group-item nbspeech"><span class="nb"></span> Speeches</li>
+            <li class="list-group-item nbopinion hidden"><span class="nb"></span> Opinions</li>
+            <li class="list-group-item nbreport hidden" title="Number of rapporteurs, all terms. Each MEP can be rapporteur several time"><span class="nb"></span> Rapporteurs</li>
+            <li class="list-group-item nbreport_shadow hidden" title="Shadow rapporteurs, all terms." ><span class="nb"></span> Shadow</li>
+            <li class="list-group-item nbmotion hidden"><span class="nb"></span> Motions</li>
+            <li class="list-group-item nbquestion hidden"><span class="nb"></span> Questions</li>
+            <li class="list-group-item nbspeech hidden"><span class="nb"></span> Speeches</li>
           </ul>
         </div>
         </div>
@@ -939,6 +935,13 @@ function download_excel() {
             </div>
             <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".committee .panel-body">Role</a></h3>
           </div>
+          <div class="panel-body graph collapse in"></div>
+        </div>
+        <div class="age panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".age .panel-body">Age</a></h3>
+          </div>
+<div id="avg_age"></div>
           <div class="panel-body graph collapse in"></div>
         </div>
         </div>
@@ -994,7 +997,7 @@ function download_excel() {
           <div class="panel-body graph collapse in"></div>
         </div>
       </div>
-      <div class="delegation col-md-2 col-xs-6">
+      <div class="delegation col-md-2 col-xs-6 hidden">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="btn-group-xs pull-right btn-toggle-group" data-target="delegation">
@@ -1005,7 +1008,7 @@ function download_excel() {
                 <i class="material-icon glyphicon glyphicon-sort-by-attributes-alt"></i>
               </a>
             </div>
-            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".committee .panel-body">Delegations</a></h3>
+            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".delegation .panel-body">Delegations</a></h3>
           </div>
           <div class="panel-body graph collapse in"></div>
         </div>
@@ -1073,7 +1076,7 @@ function download_excel() {
 
 d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
   if (error) throw error;
-  d3.select("body").append("svg").attr("id","flags").html(xml).classed("d-none",true);
+  d3.select("body").append("svg").attr("id","flags").html(xml).classed("hidden",true);
   d3.selectAll("#flags symbol").attr("fill","#000");
   //document.body.appendChild(xml.documentElement);
 });
@@ -1413,6 +1416,7 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
     .age {
       position: relative;
     }
+    .age .y {display: none}
 
     .dc-data-grid,
     .dc-grid-group {
@@ -1492,6 +1496,19 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
       float: none;
       padding: 10px 0
     }
+
+div#avg_age {
+  font-size: 60px;
+color: #111;
+opacity: 0.5;
+position: absolute;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+top: 40px;
+left: 30px;
+}
+
   </style>
   </div>
 
@@ -1545,12 +1562,12 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
         <a href="tel:{%=o.phone.replace(/ /g,'')%}" title="{%=o.phone%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-earphone"></i></a></a>
           <a href="mailto:{%=o.email%}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-envelope"></i></a>
           <a href="http://www.europarl.europa.eu/meps/en/{%=o.epid%}/name/home" target="_blank" class="btn btn-default"><img class="img-responsive btn-img" title="see more on the parliament website" src="img/ep.svg"></a>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" title="close" data-dismiss="modal">✖</button>
         </div>
       </div>
 
   </style>
-<svg class="d-none" id="icons">
+<svg class="hidden" id="icons">
 <symbol id="icon-twitter" viewBox="0 0 24 24">
 <path fill="#1DA1F2" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
 </symbol>
