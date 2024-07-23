@@ -1,5 +1,5 @@
 "use strict";
-
+// to use https://www.europarl.europa.eu/erpl-public/hemicycle//str/en.json .groups
 const fs = require("fs");
 const path = require("path");
 const fetch = require("node-fetch");

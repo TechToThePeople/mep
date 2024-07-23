@@ -1,852 +1,363 @@
-epid,gender,firstName,lastName
-254722,M,Teófilo,SANTOS
-254719,M,Vasco,BECKER-WEINBERG
-254721,F,Vânia,NETO
-254720,F,Ana Miguel,DOS SANTOS
-254718,F,Anabela,RODRIGUES
-254876,M,Ricardo,MORGADO
-232843,M,Jan,OVELGÖNNE
-251859,M,Guy,LAVOCAT
-251874,M,Niels,GEUKING
-253008,M,Linus,GLANZELIUS
-253043,M,Henk Jan,ORMEL
-251249,F,Esther,SANZ SELVA
-251268,M,Michael,KAUCH
-251324,M,Krzysztof,BREJZA
-249826,M,Jozef,MIHÁL
-250235,M,Witold,PAHL
-250237,M,Włodzimierz,KARPIŃSKI
-250538,M,Rafał,ROMANOWSKI
-250572,F,Patricia,CARO MAYA
-250918,M,François,THIOLLET
-249284,F,Laurence,SAILLIET
-249285,F,Lydie,MASSARD
-249443,M,Wolfram,PIRCHNER
-249603,F,Martine,KEMP
-247709,F,Anja,HAGA
-247737,F,Ana,COLLADO JIMÉNEZ
-247735,F,Laura,BALLARÍN CEREZA
-247122,F,Catherine,AMALRIC
-245858,M,Thomas,RUDNER
-245018,M,Christophe,CLERGEAU
-244571,M,Nikos,PAPANDREOU
-243912,F,Maria Veronica,ROSSI
-243979,F,Francesca,PEPPUCCI
-240478,F,Beatrice,COVASSI
-239972,M,Erik,POULSEN
-239973,M,Bergur Løkke,RASMUSSEN
-237779,F,Carina,OHLSSON
-237465,M,Matthias,ECKE
-238674,F,Theresa,MUIGG
-238639,M,Johan,NISSINEN
-239262,F,Elisabetta,DE BLASIS
-239256,F,Paola,GHIDONI
-239258,F,Maria Angela,DANZÌ
-239260,M,Denis,NESCI
-239271,F,Eleni,STAVROU
-239255,M,Matteo,GAZZINI
-239257,M,Achille,VARIATI
-236051,M,Eric,MINARDI
-236052,F,Patricia,CHAGNON
-236053,F,Marina,MESURE
-236050,F,Marie,DAUCHY
-237224,M,João,ALBUQUERQUE
-237320,F,Eva Maria,POPTCHEVA
-233862,M,Matjaž,NEMEC
-234344,M,Max,ORVILLE
-228604,M,Ilan,DE BASSO
-228286,M,Karsten,LUCKE
-229352,M,Malte,GALLÉE
-229519,F,Catharina,RINZEMA
-229839,M,René,REPASI
-230085,F,Camilla,LAURETI
-226260,F,Karolin,BRAUNSBERGER-REINHOLD
-221463,M,Ladislav,ILČIĆ
-218349,M,Michiel,HOOGEVEEN
-218347,M,Thijs,REUTEN
-209091,M,Cyrus,ENGERER
-209140,M,Vlad,GHEORGHE
-209896,M,Colm,MARKEY
-214839,F,Emma,WIESNER
-213330,M,Ernő,SCHALLER-BAROSS
-212855,M,Alin,MITUȚA
-208722,F,Sara,MATTHIEU
-206158,F,Manuela,RIPA
-4246,M,Othmar,Karas
-38511,M,Georg,Mayer
-96998,F,Evelyn,Regner
-124934,F,Monika,Vana
-125001,M,Harald,Vilimsky
-190713,M,Lukas,Mandl
-197632,F,Claudia,Gamon
-197643,F,Karoline,Edtstadler
-197648,F,Alexander,Bernhuber
-197652,M,Angelika,Winzig
-197656,F,Simone,Schmiedtbauer
-197667,F,Barbara,Thaler
-197670,M,Andreas,Schieder
-197675,F,Sarah,Wiener
-197677,M,Günther,Sidl
-197678,F,Bettina,Vollath
-197682,F,Hannes,Heide
-198176,M,Roman,Haider
-4253,F,Frédérique,Ries
-5729,F,Kathleen,Van Brempt
-24922,M,Pascal,Arimont
-29579,M,Marc,Tarabella
-96648,M,Philippe,Lamberts
-97058,M,Guy,Verhofstadt
-124936,F,Maria,Arena
-124973,M,Gerolf,Annemans
-125106,M,Johan,Van Overtveldt
-130100,F,Hilde,Vautmans
-185771,M,Tom,Vandendriessche
-187917,M,Marc,Botenga
-197420,M,Kris,Peeters
-197455,F,Cindy,Franssen
-197458,M,Benoît,Lutgen
-197463,M,Olivier,Chastel
-197467,M,Geert,Bourgeois
-197469,F,Assita,Kanko
-197470,F,Saskia,Bricmont
-197471,F,Petra,De Sutter
-197472,M,Filip,De Man
-97968,M,Andrey,Kovatchev
-98341,F,Eva,Maydell
-107212,M,Andrey,Novakov
-124850,M,Emil,Radev
-124852,M,Sergei,Stanishev
-124866,M,Ilhan,Kyuchyuk
-124873,M,Angel,Dzhambazki
-125128,F,Iskra,Mihaylova
-189525,M,Asim,Ademov
-197836,M,Alexander,Alexandrov Yordanov
-197839,M,Radan,Kanev
-197842,F,Elena,Yoncheva
-197844,M,Petar,Vitanov
-197845,F,Tsvetelina,Penkova
-197846,M,Ivo,Hristov
-197848,F,Atidzhe,Alieva-Veli
-197849,M,Andrey,Slabakov
-26837,M,Lefteris,Christoforou
-124691,M,Costas,Mavrides
-124692,M,Demetris,Papadakis
-197414,M,Loucas,Fourlas
-197415,M,Niyazi,Kizilyürek
-197416,M,Giorgos,Georgiou
-23699,F,Kateřina,Konečná
-23712,M,Jan,Zahradil
-96713,M,Evžen,Tošenovský
-118949,M,Ondřej,Kovařík
-124701,M,Luděk,Niedermayer
-124704,M,Stanislav,Polčák
-124708,F,Dita,Charanzová
-124709,F,Martina,Dlabajová
-124710,F,Michaela,Šojdrová
-124713,M,Tomáš,Zdechovský
-125706,M,Jiří,Pospíšil
-197522,F,Radka,Maxová
-197526,M,Martin,Hlaváček
-197528,M,Ondřej,Knotek
-197537,M,Alexandr,Vondra
-197539,M,Mikuláš,Peksa
-197546,M,Marcel,Kolaja
-197549,F,Markéta,Gregorová
-197552,F,Veronika,Vrecionová
-197556,M,Ivan,David
-197564,M,Hynek,Blaško
-1854,F,Constanze,Krehl
-1909,M,Bernd,Lange
-1913,F,Evelyne,Gebhardt
-1917,M,Markus,Ferber
-1927,M,Peter,Liese
-2323,M,Rainer,Wieland
-2341,M,Michael,Gahler
-4267,M,Udo,Bullmann
-4289,F,Angelika,Niebler
-28219,M,Daniel,Caspary
-28223,M,Andreas,Schwab
-28224,M,Markus,Pieper
-28226,M,Christian,Ehler
-28229,M,Manfred,Weber
-86793,F,Anna,Cavazzini
-96646,M,Helmut,Scholz
-96730,M,Sven,Giegold
-96734,F,Ska,Keller
-96739,M,Reinhard,Bütikofer
-96752,M,Martin,Häusling
-96756,F,Sabine,Verheyen
-96761,M,Axel,Voss
-96772,M,Peter,Jahr
-96780,F,Monika,Hohlmeier
-96833,M,Jens,Geier
-96837,F,Petra,Kammerevert
-96842,M,Ismail,Ertug
-96844,M,Norbert,Neuser
-96852,F,Cornelia,Ernst
-96932,F,Birgit,Sippel
-99945,F,Lena,Düpont
-103381,F,Terry,Reintke
-106936,M,Daniel,Freund
-120478,F,Martina,Michels
-124806,M,David,McAllister
-124807,M,Jens,Gieseke
-124808,M,Norbert,Lins
-124809,M,Sven,Schulze
-124818,M,Klaus,Buchner
-124822,M,Dietmar,Köster
-124834,M,Martin,Sonneborn
-124836,F,Maria,Noichl
-124837,M,Joachim,Schuster
-124862,F,Ulrike,Müller
-128483,M,Markus,Buchheit
-132191,M,Gunnar Günter,Beck
-183916,F,Alexandra,Geese
-185619,M,Tiemo,Wölken
-188945,M,Dennis,Radtke
-190517,M,Martin,Schirdewan
-190518,M,Jörg,Meuthen
-193273,M,Romeo,Franz
-197408,F,Hildegard,Bentele
-197410,M,Stefan,Berger
-197412,M,Niclas,Herbst
-197422,F,Christine,Schneider
-197423,M,Nico,Semsrott
-197425,M,Ralf,Seekatz
-197426,M,Sven,Simon
-197427,F,Marlene,Mortler
-197429,F,Marion,Walsmann
-197430,M,Engin,Eroglu
-197431,M,Patrick,Breyer
-197432,M,Jan-Christoph,Oetjen
-197433,F,Katarina,Barley
-197434,M,Martin,Buschmann
-197435,F,Gabriele,Bischoff
-197436,M,Helmut,Geuking
-197437,F,Nicola,Beer
-197439,M,Damian,Boeselager
-197440,F,Delara,Burkhardt
-197443,M,Andreas,Glück
-197444,F,Svenja,Hahn
-197445,M,Moritz,Körner
-197448,M,Rasmus,Andresen
-197449,M,Michael,Bloss
-197451,F,Viola,Von Cramon-Taubadel
-197453,F,Anna,Deparnay-Grunenberg
-197457,F,Henrike Nanna Gisela,Hahn
-197459,F,Pierrette Gabrielle,Herzberger-Fofana
-197460,M,Sergey,Lagodinsky
-197461,F,Katrin,Langensiepen
-197462,M,Erik,Marquardt
-197464,F,Hannah,Neumann
-197465,M,Niklas,Nienaß
-197466,F,Jutta,Paulus
-197468,F,Özlem,Demirel
-197473,M,Christian Konrad,Doleschal
-197475,F,Christine,Anderson
-197478,M,Lars Patrick,Berg
-197480,M,Nicolaus,Fest
-197481,M,Maximilian,Krah
-197482,M,Joachim,Kuhs
-197483,F,Sylvia,Limmer
-197488,M,Guido,Reil
-197489,M,Bernhard,Zimniok
-28161,F,Margrete,Auken
-37312,F,Christel,Schaldemose
-96709,M,Morten,Løkkegaard
-101585,M,Niels,Fuglsang
-124872,M,Morten Helveg,Petersen
-197515,F,Pernille,Weiss
-197555,M,Søren Gade,Gade
-197558,M,Asger,Christensen
-197567,F,Karen,Melchior
-197570,M,Peter,Kofod
-197571,M,Nikolaj,Villumsen
-197573,F,Kira Marie,Peter-Hansen
-124696,M,Andrus,Ansip
-124700,F,Yana,Toom
-129073,M,Urmas,Paet
-197491,F,Marina,Kaljurand
-197493,M,Jaak,Madison
-197497,M,Sven,Mikser
-1992,M,José Manuel,García-Margallo y Marfil
-4344,F,María Soraya,Rodríguez Ramos
-28298,F,Iratxe,García Pérez
-28347,M,Javier,Moreno Sánchez
-28390,F,Pilar,del Castillo Vera
-28399,M,Antonio,López-Istúriz White
-28400,M,Francisco José,Millán Mon
-96808,M,Pablo,Arias Echeverría
-96811,F,Rosa,Estaràs Ferragut
-96812,M,Juan Fernando,López Aguilar
-96922,F,Izaskun,Bilbao Barandica
-96991,F,Eider,Gardiazabal Rubial
-122978,F,Alicia,HOMS GINEL
-124972,M,Ernest,Urtasun
-125005,M,Javier,Nart
-125027,M,Esteban,González Pons
-125038,F,Maite,Pagazaurtundúa
-125042,M,Javi,López
-125043,F,Inma,Rodríguez-Piñero
-125045,F,Clara,Aguilera
-125046,M,Jonás,Fernández
-126644,M,Jordi,Cañas
-127096,M,Domènec,Ruiz Devesa
-131507,M,Miguel,Urbán Crespo
-197554,M,Luis,Garicano
-197606,M,Javier,Zarzalejos
-197621,M,Juan Ignacio,Zoido Álvarez
-197679,F,Isabel,Benjumea Benjumea
-197681,F,Sira,Rego
-197684,M,Pernando,Barrena Arza
-197702,F,Lina,Galvez Muñoz
-197711,F,Dolors,Montserrat
-197717,M,Ibán,Garcia Del Blanco
-197718,M,Nicolás,Gonzalez Casares
-197719,F,Cristina,Maestre Martín De Almagro
-197721,M,César,Luena
-197722,M,Nacho,Sánchez Amor
-197728,F,Mónica Silvana,González
-197735,F,Adriana,Maldonado López
-197742,F,Isabel,García Muñoz
-197777,M,Leopoldo,López Gil
-197779,M,José Ramón,Bauzá Díaz
-197784,F,Susana,Solís Pérez
-197785,F,Eugenia,RODRÍGUEZ PALOP
-197827,F,Idoia,Villanueva Ruiz
-197828,M,Manu,Pineda Marín
-197829,M,Jorge,Buxadé Villalba
-197831,M,Hermann,Tertsch
-197832,F,Diana,Riba i Giner
-198096,F,Mazaly,Aguilar
-2054,F,Heidi,Hautala
-40599,F,Sirpa,Pietikäinen
-112611,M,Petri,Sarvamaa
-114268,M,Nils,Torvalds
-124726,F,Henna,Virkkunen
-124735,F,Miapetra,Kumpula-Natri
-191693,F,Elsi,Katainen
-197563,M,Mauri,Pekkarinen
-197594,F,Laura,Huhtasaari
-197596,M,Teuvo,Hakkarainen
-197800,M,Eero,Heinäluoma
-197802,M,Ville,Niinistö
-197805,F,Silvia,Modig
-5565,M,Brice,Hortefeux
-22858,F,Fabienne,Keller
-24505,M,Emmanuel,Maurel
-24594,F,Anne,Sander
-30482,M,Younous,Omarjee
-72779,F,Nadine,Morano
-94649,F,Catherine,GRISET
-96711,M,Pascal,Canfin
-96740,M,Yannick,Jadot
-96743,F,Michèle,Rivasi
-96747,M,Arnaud,Danjean
-96750,M,François,Alfonsi
-96868,F,Karima,Delli
-96885,M,Dominique,Riquet
-96952,F,Sylvie,Guillaume
-97236,F,Marie,TOUSSAINT
-113892,M,Eric,Andrieu
-124693,M,Pascal,Durand
-124738,M,Gilles,Lebreton
-124760,M,Nicolas,Bay
-124765,F,Joëlle,Mélin
-124770,M,Jean-François,Jalkh
-124771,F,Dominique,Bilde
-131580,M,Jordan,BARDELLA
-135511,F,Valerie,Hayer
-182995,F,Annika,Bruna
-189065,F,France,Jamet
-190774,M,Geoffroy,Didier
-197494,F,Nathalie,Loiseau
-197499,F,Chrysoula,Zacharopoulou
-197500,M,Mounir,Satouri
-197502,F,Marie-Pierre,Vedrenne
-197503,M,David,Cormand
-197504,M,Jérémy,Decerle
-197505,F,Catherine,Chabaud
-197506,F,Caroline,Roose
-197508,M,Stéphane,Séjourné
-197511,F,Salima,Yenbou
-197512,M,Benoît,Biteau
-197521,M,Manuel,Bompard
-197527,F,Anne-Sophie,Pelletier
-197529,F,Leila,Chaibi
-197531,F,Gwendoline,Delbos-Corfield
-197533,F,Manon,Aubry
-197534,M,François-Xavier,Bellamy
-197535,F,Agnès,Evren
-197536,F,Nathalie,Colin-Oesterlé
-197543,M,Bernard,Guetta
-197547,F,Irène,Tolleret
-197551,M,Stéphane,Bijoux
-197557,M,Christophe,Grudler
-197574,M,Damien,Carême
-197576,F,Sylvie,Brunet
-197577,M,Gilles,Boyer
-197581,F,Stéphanie,Yon-Courtin
-197585,M,Pierre,Karleskind
-197589,F,Laurence,Farreng
-197593,F,Véronique,Trillet-Lenoir
-197597,F,Hélène,Laporte
-197615,M,Jérôme,Rivière
-197623,M,Thierry,Mariani
-197626,M,Herve,Juvin
-197627,F,Virginie,Joron
-197628,M,Jean-Paul,Garraud
-197629,F,Maxette,Pirbakas
-197680,F,Aurelia,Beigneux
-197683,M,Gilbert,Collard
-197686,F,Julie,Lechanteux
-197687,M,Philippe,Olivier
-197690,M,André,Rougé
-197691,F,Mathilde,Androuët
-197694,M,Raphaël,Glucksmann
-197697,F,Aurore,Lalucq
-197698,M,Pierre,Larrouturou
-1394,M,Bill,Newton Dunn
-2309,M,Richard,Corbett
-4513,M,Geoffrey,Van Orden
-4519,M,Claude,Moraes
-4525,M,Nigel,Farage
-4533,F,Neena,Gill
-4550,F,Jill,Evans
-4554,M,Chris,Davies
-4555,M,Daniel,Hannan
-28508,M,Alyn,Smith
-30490,F,Aileen,McLeod
-96951,F,Diane,Dodds
-96955,F,Catherine,Bearder
-99461,F,Alexandra Lesley,Phillips
-111011,F,Anthea,McIntyre
-112014,M,Phil,Bennion
-113959,F,Martina,Anderson
-124942,F,Molly,Scott Cato
-124952,M,Seb,Dance
-124953,F,Jude,Kirton-Darling
-124961,F,Theresa,Griffin
-124963,F,Julie,Ward
-124965,M,Nathan,Gill
-188636,M,John,Howarth
-188733,M,Jonathan,Bullock
-189391,F,Nosheena,Mobarik
-190099,M,Rory,Palmer
-197599,M,Richard James,Tice
-197600,F,Barbara Ann,Gibson
-197601,M,Michael,Heaver
-197602,F,Catherine,Rowett
-197603,F,June Alison,Mummery
-197604,F,Lucy,Nethsingha
-197612,F,Annunziata Mary,Rees-Mogg
-197613,F,Gina,Dowding
-197620,M,Matthew,Patten
-197625,F,Irina,Von Wiese
-197642,M,Ben,Habib
-197644,M,Christian,Allard
-197693,M,Dinesh,Dhamija
-197696,M,Scott,Ainslie
-197700,F,Luisa,Porritt
-197703,M,Lance,Forman
-197704,M,Brian,Monteith
-197705,M,John David Edward,Tennant
-197708,F,Claire,Fox
-197710,F,Alexandra Louise Rosenfield,Phillips
-197712,M,Henrik,Overgaard Nielsen
-197714,F,Ellie,Chowns
-197715,M,David,Bull
-197716,F,Jane,Brophy
-197730,M,Antony,Hook
-197733,M,Robert,Rowland
-197736,F,Belinda,De Lucy
-197739,F,Judith,Bunting
-197744,F,Ann,Widdecombe
-197749,F,Caroline,Voaden
-197751,M,James Alexander,Glancy
-197752,F,Christina Sheila,Jordan
-197755,M,Martin,Horwood
-197757,M,James,Wells
-197758,F,Jackie,Jones
-197759,M,Rupert,Lowe
-197760,M,Martin Edward,Daubney
-197803,M,Andrew,England Kerr
-197807,M,John,Longworth
-197809,F,Lucy Elizabeth,Harris
-197811,M,Shaffaq,Mohammed
-197812,M,Magid,Magid
-197813,M,Jake,Pugh
-197814,M,Louis,Stedman-Bryce
-197815,F,Sheila,Ritchie
-197816,F,Naomi,Long
-28586,M,Dimitrios,Papadimoulis
-125063,M,Georgios,Kyrtsos
-125064,F,Maria,Spyraki
-125065,F,Elissavet,Vozemberg-Vrionidi
-125067,M,Theodoros,Zagorakis
-125068,M,Manolis,Kefalogiannis
-125093,M,Konstantinos,Papadakis
-125109,F,Eva,Kaili
-125110,M,Nikos,Androulakis
-130833,M,Stelios,Kouloglou
-197662,M,Vangelis,Meimarakis
-197692,M,Stelios,Kympouropoulos
-197695,F,Anna-Michelle,Asimakopoulou
-197699,F,Elena,Kountoura
-197701,M,Konstantinos,Arvanitis
-197734,M,Lefteris,Nikolaou-Alavanos
-197737,M,Ioannis,Lagos
-197740,M,Athanasios,Konstantinou
-197743,M,Petros,Kokkalis
-197747,M,Kyriakos,Velopoulos
-197819,M,Alexandros,Georgoulis
-112744,M,Tonino,Picula
-112748,F,Biljana,Borzan
-119431,F,Ruža,Tomašić
-119434,F,Dubravka,Šuica
-185341,F,Željana,Zovko
-197413,M,Karlo,Ressler
-197417,M,Tomislav,Sokol
-197419,M,Valter,Flego
-197438,M,Mislav,Kolakušić
-197441,M,Predrag Fred,Matić
-197935,M,Ivan Vilibor,Sinčić
-23816,M,András,Gyürk
-23821,M,József,Szájer
-27714,F,Edina,Tóth
-28141,F,Lívia,Járóka
-28150,F,Kinga,Gál
-96826,M,Tamás,Deutsch
-96829,M,Ádám,Kósa
-96830,F,Enikő,Győri
-124586,M,Balázs,Hidvéghi
-124705,M,István,Ujhelyi
-124712,F,Andrea,Bocskor
-124714,M,Andor,Deli
-124715,M,György,Hölvényi
-124722,M,Csaba,Molnár
-197579,F,Klára,Dobrev
-197584,M,Sándor,Rónai
-197587,M,Attila,Ara-Kovács
-197588,F,Katalin,Cseh
-197595,F,Anna Julia,Donáth
-197894,M,László,Trócsányi
-198063,M,Márton,Gyöngyösi
-28115,F,Mairead,McGuinness
-96668,M,Seán,Kelly
-124985,M,Luke Ming,Flanagan
-124986,M,Matt,Carthy
-197654,M,Ciarán,Cuffe
-197720,F,Frances,Fitzgerald
-197731,F,Clare,Daly
-197817,M,Mick,Wallace
-197818,M,Billy,Kelleher
-197863,F,Maria,Walsh
-197889,F,Grace,O'Sullivan
-2187,M,Antonio,Tajani
-4391,M,Silvio,Berlusconi
-4465,M,Raffaele,Fitto
-28340,F,Patrizia,Toia
-35016,M,Marco,CAMPOMENOSI
-36392,M,Aldo,Patriciello
-96787,M,Herbert,Dorfmann
-96810,M,Carlo,Fidanza
-96864,M,David-Maria,Sassoli
-96880,M,Andrea,Cozzolino
-96891,M,Paolo,De Castro
-96892,M,Roberto,Gualtieri
-97198,F,Mara,Bizzotto
-99283,M,Alessandro,PANZA
-101039,M,Paolo,Borchia
-124777,F,Tiziana,Beghin
-124779,F,Eleonora,Evi
-124780,M,Marco,Zanni
-124799,F,Alessandra,Moretti
-124812,M,Fabio Massimo,Castaldo
-124814,F,Simona,Bonafè
-124828,M,Fulvio,Martusciello
-124831,F,Isabella,Adinolfi
-124833,F,Laura,Ferrara
-124835,F,Rosa,D'Amato
-124844,M,Piernicola,Pedicini
-124846,F,Pina,Picierno
-124856,M,Ignazio,Corrao
-124861,F,Caterina,Chinnici
-124867,M,Brando,Benifei
-125237,M,Marco,Zullo
-125670,M,Massimiliano,Salini
-183793,M,Angelo,Ciocca
-192634,M,Giuseppe,Ferrandino
-192635,M,Oscar,Lancini
-197578,F,Silvia,Sardone
-197580,F,Isabella,Tovaglieri
-197582,F,Gianna,Gancia
-197586,F,Stefania,Zambelli
-197590,M,Giuliano,Pisapia
-197591,F,Irene,Tinagli
-197592,M,Pierfrancesco,Majorino
-197607,M,Pietro,Fiocchi
-197608,M,Gianantonio,Da Re
-197610,F,Alessandra,Basso
-197611,F,Elena,Lizzi
-197614,M,Marco,Dreosto
-197616,F,Rosanna,Conte
-197617,M,Carlo,Calenda
-197618,F,Elisabetta,Gualmini
-197619,F,Sabrina,Pignedoli
-197786,F,Susanna,Ceccardi
-197787,M,Antonio Maria,Rinaldi
-197788,F,Anna,Bonfrisco
-197789,F,Simona,Baldassarre
-197790,F,Luisa,Regimenti
-197791,M,Massimiliano,Smeriglio
-197792,F,Daniela,Rondinelli
-197794,F,Chiara,Gemma
-197795,M,Mario,Furore
-197796,M,Massimo,Casanova
-197797,M,Andrea,Caroppo
-197798,F,Lucia,Vuolo
-197799,M,Valentino,Grant
-197801,M,Franco,Roberti
-197804,M,Dino,Giarrusso
-197806,F,Annalisa,Tardino
-197808,M,Pietro,Bartolo
-197820,M,Nicola,Procaccini
-197822,F,Francesca,Donato
-197824,M,Giuseppe,Milazzo
-197825,M,Raffaele,Stancanelli
-197826,M,Matteo,Adinolfi
-96681,F,Vilija,Blinkevičiūtė
-96697,M,Valdemar,Tomaševski
-96698,M,Viktor,Uspaskich
-124766,M,Petras,Auštrevičius
-125214,M,Bronis,Ropė
-197835,F,Aušra,Maldeikienė
-197837,M,Stasys,Jakeliūnas
-197838,M,Juozas,Olekas
-197840,F,Rasa,Juknevičienė
-197841,M,Liudas,Mažylis
-197843,M,Andrius,Kubilius
-840,M,Charles,Goerens
-193292,F,Tilly,Metz
-193419,M,Christophe,Hansen
-197418,F,Monica,Semedo
-197421,F,Isabel,Wiseler-Lima
-197428,M,Nicolas,Schmit
-28615,M,Roberts,Zīle
-28617,F,Inese,Vaidere
-28619,F,Tatjana,Ždanoka
-96934,F,Sandra,Kalniete
-130256,F,Dace,Melbārde
-197624,M,Ivars,Ijabs
-197783,M,Andris,Ameriks
-197810,M,Nils,Ušakovs
-28122,M,David,Casa
-118859,F,Roberta,Metsola
-124781,M,Alfred,Sant
-124970,F,Miriam,Dalli
-197394,F,Josianne,Cutajar
-197403,M,Alex,Agius Saliba
-4560,M,Antonius,Manders
-28266,F,Sophia,in 't Veld
-37229,F,Kati,Piri
-38398,F,Esther,de Lange
-58789,M,Jan,Huitema
-95074,M,Jeroen,Lenaers
-96725,M,Bas,Eickhout
-96809,M,Peter,van Dalen
-97133,M,Derk Jan,Eppink
-125020,M,Paul,Tang
-125021,F,Agnes,Jongerius
-125023,F,Anja,Hazekamp
-125030,F,Annie,Schreijer-Pierik
-129141,M,Frans,Timmermans
-190519,F,Caroline,Nagtegaal
-197709,M,Robert,Roos
-197756,F,Vera,Tax
-197772,F,Tineke,Strik
-197773,M,Bert-Jan,Ruissen
-197776,M,Rob,Rooken
-197778,M,Tom,Berendsen
-197781,M,Malik,Azmani
-197782,M,Mohammed,Chahim
-197868,F,Samira,Rafaela
-197869,F,Liesje,Schreinemacher
-197870,F,Kim,Van Sparrentak
-23768,M,Bogusław,Liberadzki
-23781,M,Janusz,Lewandowski
-23788,M,Adam,Bielan
-28269,M,Jerzy,Buzek
-28288,M,Jan,Olbrycht
-28297,M,Jacek,Saryusz-Wolski
-28353,F,Anna,Fotyga
-28372,M,Ryszard,Czarnecki
-28389,M,Zbigniew,Kuźmiuk
-96771,M,Jarosław,Kalinowski
-96776,F,Róża,Thun und Hohenstein
-96779,F,Danuta Maria,Hübner
-96791,F,Elżbieta Katarzyna,Łukacijewska
-96796,M,Ryszard Antoni,Legutko
-96801,M,Tomasz Piotr,Poręba
-124877,F,Jadwiga,Wiśniewska
-124884,M,Kosma,Złotowski
-124887,M,Karol,Karski
-124891,M,Zdzisław,Krasnodębski
-124895,M,Krzysztof,Hetman
-197490,F,Magdalena,Adamowicz
-197492,M,Bartosz,Arłukowicz
-197495,M,Marek Paweł,Balt
-197496,M,Marek,Belka
-197498,M,Robert,Biedroń
-197501,M,Joachim Stanisław,Brudziński
-197507,M,Włodzimierz,Cimoszewicz
-197510,M,Jarosław,Duda
-197513,M,Tomasz,Frankowski
-197514,M,Andrzej,Halicki
-197516,M,Patryk,Jaki
-197517,M,Adam,Jarubas
-197518,M,Krzysztof,Jurgiel
-197519,F,Beata,Kempa
-197520,F,Izabela-Helena,Kloc
-197523,M,Łukasz,Kohut
-197525,F,Ewa,Kopacz
-197530,F,Joanna,Kopcińska
-197532,F,Elżbieta,Kruk
-197538,F,Beata,Mazurek
-197540,M,Leszek,Miller
-197541,F,Andżelika Anna,Możdżanowska
-197542,F,Janina,Ochojska
-197544,F,Elżbieta,Rafalska
-197545,M,Bogdan,Rzońca
-197548,M,Radosław,Sikorski
-197550,F,Sylwia,Spurek
-197553,F,Beata,Szydło
-197559,M,Grzegorz,Tobiszowski
-197566,M,Witold Jan,Waszczykowski
-197572,F,Anna,Zalewska
-88715,M,José,Gusmão
-96706,M,João,Ferreira
-96820,F,Marisa,Matias
-96867,F,Maria Da Graça,Carvalho
-96899,M,José Manuel,Fernandes
-96903,M,Paulo,Rangel
-96978,M,Nuno,Melo
-124734,F,Cláudia,Monteiro de Aguiar
-124739,M,Carlos,Zorrinho
-124747,M,Pedro,Silva Pereira
-197634,M,Pedro,Marques
-197635,F,Maria Manuel,Leitão Marques
-197638,F,Margarida,Marques
-197640,M,André Jorge,Dionísio Bradford
-197641,F,Sara,Cerdas
-197645,M,Francisco,Guerreiro
-197650,F,Isabel,Santos
-197732,M,Manuel,Pizarro
-197738,F,Lídia,Pereira
-197746,M,Álvaro,Amaro
-197754,F,Sandra,Pereira
-33982,M,Marian-Jean,Marinescu
-33997,F,Corina,Crețu
-37324,F,Adina-Ioana,Vălean
-38420,M,Cristian-Silviu,Buşoi
-38595,F,Rovana,Plumb
-39725,M,Iuliu,Winkler
-58766,M,Nicolae,Ștefănuța
-98582,M,Lorant-Gyorgy,Vincze
-124784,M,Dan,Nica
-124785,F,Maria,Grapini
-124802,M,Siegfried,Mureşan
-125012,M,Daniel,Buda
-134605,F,Ramona,Strugariu
-197631,M,Dacian,Ciolos
-197636,M,Ioan-Rareș,Bogdan
-197637,M,Vasile,Blaga
-197646,M,Mircea-Gheorghe,Hava
-197647,M,Dan-Ștefan,Motreanu
-197649,M,Gheorghe,Falcă
-197651,F,Carmen,Avram
-197653,M,Claudiu,Manda
-197655,M,Cristian,Terheș
-197657,M,Tudor,Ciuhodaru
-197658,M,Adrian-Dragoș,Benea
-197661,M,Cristian,Ghinea
-197663,M,Dragoș,Pîslaru
-197664,F,Clotilde,Armand
-197665,M,Dragoș,Tudorache
-197668,M,Vlad-Marius,Botoș
-197671,M,Traian,Băsescu
-197672,M,Eugen,Tomac
-198183,M,Mihai,Tudose
-38542,M,Johan,Danielsson
-123562,M,Charlie,WEIMERS
-124989,M,Fredrick,Federley
-124991,F,Jytte,Guteland
-124992,F,Malin,Björk
-124996,M,Peter,Lundgren
-197390,F,Sara,Skyttedal
-197391,F,Heléne,Fritzon
-197392,F,Evin,Incir
-197393,M,David,Lega
-197395,F,Alice,Kuhnke
-197396,M,Erik,Bergkvist
-197398,M,Pär,Holmgren
-197399,F,Jessica,Stegrud
-197400,F,Abir,Al Sahlani
-197401,F,Karin,Karlsbro
-197402,M,Tomas,Tobé
-197404,F,Jessica,Polfjärd
-197405,M,Jörgen,Warborn
-197406,F,Arba,Kokalari
-28294,F,Ljudmila,Novak
-96911,F,Tanja,Fajon
-96933,M,Milan,Zver
-125004,M,Franc,Bogovič
-125104,F,Romana,Tomc
-197446,M,Milan,Brglez
-197447,F,Irena,Joveva
-197452,M,Klemen,Grošelj
-23868,F,Monika,Beňová
-34578,M,Robert,Hajšel
-103746,M,Michal,Šimečka
-124929,M,Ivan,Štefanec
-197761,M,Miroslav,Číž
-197763,M,Milan,Uhrík
-197764,M,Miroslav,Radačovský
-197765,M,Peter,Pollák
-197766,F,Lucia,Ďuriš Nicholsonová
-197767,M,Eugen,Jurzyca
-197769,M,Michal,Wiezik
-197770,M,Martin,Hojsík
-197771,M,Vladimír,Bilčík
-198329,F,Estrella,DURA FERRANDIS
-5392,F,Lara,WOLTERS
-198490,M,Emmanouil,FRAGKOS
-199941,F,Marianne,VIND
-199996,F,Isabel,CARVALHAIS
-202036,F,Sunčana,GLAVAK
-202112,M,Gheorghe-Vlad,NISTOR
-202073,M,Marc,ANGEL
-202352,M,Antoni,COMÍN I OLIVERES
-202351,M,Carles,PUIGDEMONT I CASAMAJÓ
-204368,M,Christian,SAGARTZ
-204332,M,Barry,ANDREWS
-204335,F,Alviina,ALAMETSÄ
-204416,F,Ilana,CICUREL
-204414,F,Margarita,DE LA PISA CARRIÓN
-204333,M,Salvatore,DE MEO
-204420,M,Claude,GRUFFAT
-204419,M,Sandro,GOZI
-204336,F,Miriam,LEXMANN
-204421,M,Jean-Lin,LACAPELLE
-112747,F,Romana,JERKOVIĆ
-204418,F,Nora,MEBAREK
-204443,F,Clara,PONSATÍ OBIOLS
-204413,M,Marcos,ROS SEMPERE
-204334,M,Vincenzo,SOFO
-204331,F,Linea,SØGAARD-LIDELL
-204346,M,Dominik,TARCZYŃSKI
-204449,M,Riho,TERRAS
-204400,M,Adrián,VÁZQUEZ LÁZARA
-197780,M,Bart,GROOTHUIS
-204733,M,Dorien,ROOKMAKER
-205452,M,Chris,MACMANUS
+epid,gender,first_name,last_name
+256858,M,Nikolaos,ANADIOTIS
+256820,M,Georgios,AFTIAS
+256810,,Mika,AALTOLA
+256956,,Galato,ALEXANDRAKI
+113523,M,Peter,AGIUS
+257043,F,Maravillas,ABADÍA JOVER
+256987,F,Oihane,AGIRREGOITIA MARTÍNEZ
+256869,M,Grégory,ALLIONE
+256805,,Li,ANDERSSON
+119652,,Vytenis Povilas,ANDRIUKAITIS
+257123,F,Lucia,ANNUNZIATA
+257138,M,Giuseppe,ANTOCI
+256951,F,Anja,ARNDT
+256829,M,Sakis,ARNAOUTOGLOU
+257015,M,Jaume,ASENS LLODRÀ
+256934,M,Daniel,ATTARD
+256929,M,René,AUST
+257117,M,Adrian-George,AXINIA
+256936,M,Thomas,BAJADA
+257003,F,Jeannette,BALJEU
+257110,M,Dan,BARNA
+257000,,Stephen Nikola,BARTULICA
+256948,M,Arno,BAUSEMER
+256887,M,Wouter,BEKE
+256947,M,Fredis,BELERIS
+256852,,Nikola,BARTŮŠEK
+256960,F,Sibylle,BERG
+257005,,Ľuboš,BLAHA
+256998,F,Rachel,BLOM
+257073,M,Tobiasz,BOCHEŃSKI
+257108,M,Stefano,BONACCINI
+256881,F,Barbara,BONTE
+257024,F,Mireia,BORRÁS PABÓN
+257457,F,Zsuzsanna,BORVENDÉG
+256945,F,Irmhild,BOSSDORF
+256995,M,Gordan,BOSANAC
+257020,F,Stine,BOSSE
+256841,M,Helmut,BRANDSTÄTTER
+257067,M,Grzegorz,BRAUN
+256878,F,Marie-Luce,BRASIER-CLAIN
+257064,F,Anna,BRYŁKA
+257072,M,Tomasz,BUCZEK
+204129,F,Nikolina,BRNJAC
+99878,M,Waldemar,BUDA
+257047,M,Borys,BUDKA
+257081,M,Sebastião,BUGALHO
+257051,M,Andrzej,BUŁA
+256928,M,Petr,BYSTRON
+256915,F,Mélissa,CAMARA
+220840,M,Jaroslav,BŽOCH
+257296,F,Nina,CARBERRY
+257100,M,Gheorghe,CÂRCIU
+256891,M,Benoit,CASSART
+256921,M,Laurent,CASTILLO
+257096,M,Stefano,CAVEDAGNA
+257002,,José,CEPEDA
+256880,F,Estelle,CEULEMANS
+257093,M,Carlo,CICCIOLI
+257014,F,Veronika,CIFROVÁ OSTRIHOŇOVÁ
+257147,M,Alessandro,CIRIANI
+257131,F,Anna Maria,CISINT
+257023,M,Per,CLAUSEN
+257169,F,Annalisa,CORRADO
+256937,,Vivien,COSTANZO
+257057,M,João,COTRIM DE FIGUEIREDO
+256938,M,Tobias,CREMER
+257297,M,Barry,COWEN
+257034,F,Carmen,CRESPO DÍAZ
+257094,M,Giovanni,CROSETTO
+257078,M,Paulo,CUNHA
+257028,M,Henrik,DAHL
+256862,F,Dóra,DÁVID
+257122,M,Antonio,DECARO
+257030,M,Raúl,DE LA HOZ QUINTANO
+256886,F,Valérie,DELOGE
+257155,M,Danilo,DELLA VALLE
+256870,F,Valérie,DEVAUX
+256981,M,Ton,DIEPEVEEN
+257087,M,Adnan,DIBRANI
+256834,F,Elisabeth,DIERINGER
+256874,F,Mélanie,DISDIER
+257237,F,Regina,DOHERTY
+257048,M,Paulo,DO NASCIMENTO CABRAL
+257095,F,Elena,DONAZZAN
+256853,F,Klara,DOSTALOVA
+256851,,Ondřej,DOSTÁL
+256949,,Siegbert Frank,DROESE
+257076,M,Michał,DWORCZYK
+256897,M,Gaëtan,DUSSAUSAYE
+192254,F,Marieke,EHLERS
+257088,F,Sofie,ERIKSSON
+257091,M,Dick,ERIXON
+257035,F,Alma,EZCURRA ALMANSA
+256961,M,Sebastian,EVERDING
+257137,M,Marco,FALCONE
+256823,M,Nikolas,FARANTOURIS
+256857,F,Viktória,FERENC
+256840,M,Jan,FARSKÝ
+257098,F,Gabriela,FIREA
+25758,F,Ruth,FIRMENICH
+256906,F,Claire,FITA
+256913,F,Emma,FOURREAU
+256876,F,Anne-Sophie,FRIGOUT
+257038,F,Sigrid,FRIIS
+190574,M,Tomasz,FROELICH
+256896,F,Angéline,FURET
+257299,F,Kathleen,FUNCHION
+257012,F,Estrella,GALÁN
+257097,M,Alberico,GAMBINO
+257032,F,Kamila,GASIUK-PIHOWICZ
+256986,,Geadis,GEADI
+256970,F,Raquel,GARCÍA HERMIDA-VAN DER WALLE
+257092,F,Hanna,GEDIN
+256939,M,Thomas,GEISEL
+256901,M,Jean-Marc,GERMAIN
+256866,F,Gabriella,GERZSENYI
+125204,M,Borja,GIMÉNEZ LARRAZ
+256919,M,Christophe,GOMART
+257075,F,Isilda,GOMES
+256997,F,Sandra,GÓMEZ LÓPEZ
+257059,M,Bruno,GONÇALVES
+257079,M,Sérgio,GONÇALVES
+257102,M,Giorgio,GORI
+257055,F,Małgorzata,GOSIEWSKA
+97399,M,Dirk,GOTINK
+256808,M,Petras,GRAŽULIS
+220908,M,Branko,GRIMS
+256830,F,Elisabeth,GROSSMANN
+257130,F,Cristina,GUARDA
+256854,M,Balázs,GYŐRFFY
+256803,F,Maria,GUZENINA
+256985,M,Michalis,HADJIPANTELA
+256912,F,Rima,HASSAN
+257033,M,Niels Flemming,HANSEN
+256842,M,Gerald,HAUSER
+198073,F,Anna-Maja,HENRIKSSON
+257065,M,Sérgio,HUMBERTO
+256918,F,Céline,IMART
+257144,M,Paolo,INSELVINI
+257120,F,Diana,IOVANOVICI ŞOŞOACĂ
+256992,F,Hana,JALLOUL MURO
+256942,M,Marc,JONGEN
+257031,M,Dariusz,JOŃSKI
+256894,F,Sylvie,JOSSERAND
+256898,M,Pierre,JOUVET
+257022,F,Nora,JUNCO GARCÍA
+256908,M,François,KALFON
+256941,M,Alexander,JUNGBLUTH
+257256,M,Taner,KABILOV
+257007,M,Erik,KALIŇÁK
+257056,M,Mariusz,KAMIŃSKI
+256900,M,Fernand,KARTHEISER
+257013,,Ľubica,KARVAŠOVÁ
+256890,M,Rudi,KENNES
+256957,F,Mary,KHAN
+257042,M,Marcin,KIERWIŃSKI
+256831,F,Sophia,KIRCHER
+256924,F,Sarah,KNAFO
+256973,M,Stefan,KÖHLER
+257037,M,Michał,KOBOSKO
+256846,,Ondřej,KOLÁŘ
+256861,F,Kinga,KOLLÁR
+220871,M,Rihards,KOLS
+256909,M,Vilis,KRIŠTOPANS
+256996,M,Sebastian,KRUIS
+256845,,Ondřej,KRUTÍLEK
+198084,F,Katri,KULMUNI
+256864,,András Tivadar,KULJA
+256865,F,Eszter,LAKOS
+198373,F,Judita,LAŠŠÁKOVÁ
+256860,M,András,LÁSZLÓ
+256954,F,Afroditi,LATINOPOULOU
+256899,F,Murielle,LAURENT
+257262,F,Rada,LAYKOVA
+257261,,Ilia,LAZAROV
+257118,,Luis-Vicențiu,LAZARUS
+256895,M,Julien,LEONARDELLI
+256920,F,Isabelle,LE CALLENNEC
+256872,M,Fabrice,LEGGERI
+220896,M,Reinhold,LOPATKA
+257129,M,Mimmo,LUCANO
+257124,M,Giuseppe,LUPO
+257149,F,Lara,MAGONI
+256868,M,Péter,MAGYAR
+91636,F,Marit,MAIJ
+257077,F,Marlena,MALĄG
+256824,M,Yannis,MANIATIS
+257727,M,Pierfrancesco,MARAN
+257082,F,Jagna,MARCZUŁAJTIS-WALCZAK
+256922,,Marion,MARÉCHAL
+257132,,Ignazio Roberto,MARINO
+257029,M,Jorge,MARTÍN FRÍAS
+257063,F,Catarina,MARTINS
+257016,M,Vicent,MARZÀ IBÁÑEZ
+249982,M,Milan,MAZUREK
+257300,M,Michael,MCNAMARA
+256980,F,Alexandra,MEHNERT
+256943,F,Eleonora,MELETI
+256994,F,Idoia,MENDIA CUEVA
+256974,F,Verena,MERTENS
+257053,,Ana Catarina,MENDES
+257105,F,Roxana,MÎNZATU
+257259,,Nikola,MINCHEV
+245770,F,Irene,MONTERO
+257140,F,Carolina,MORACE
+257151,F,Letizia,MORATTI
+257054,M,Tiago,MOREIRA DE SÁ
+257060,M,Arkadiusz,MULARCZYK
+257080,M,Piotr,MÜLLER
+257298,M,Ciaran,MULLOOLY
+257103,M,Ştefan,MUŞOIU
+256843,F,Jana,NAGYOVÁ
+257111,M,Dario,NARDELLA
+257027,M,Fernando,NAVARRETE ROJAS
+256847,,Danuše,NERUDOVÁ
+256944,M,Hans,NEUHOFF
+257039,F,Elena,NEVADO DEL CAMPO
+256883,M,Aleksandar,NIKOLIC
+257301,F,Cynthia,NÍ MHURCHÚ
+257044,M,Rasmus,NORDQVIST
+257049,,Mirosława,NYKIEL
+257058,M,Daniel,OBAJTEK
+257010,,Ľudovít,ÓDOR
+198076,F,Maria,OHISALO
+257083,M,João,OLIVEIRA
+257018,M,Branislav,ONDRUŠ
+257238,,Aodhán,Ó RÍORDÁIN
+257086,M,Jacek,OZDOBA
+256993,F,Leire,PAJÍN
+256989,,Fidias,PANAYIOTOU
+257135,F,Valentina,PALMISANO
+257040,M,Nicolás,PASCUAL DE LA PARTE
+256952,M,Nikos,PAPPAS
+110673,,Ana Miguel,PEDRO
+257126,M,Gaetano,PEDULLA'
+256903,M,Thomas,PELLERIN-CARLIN
+30123,M,Guillaume,PELTIER
+126699,M,Gilles,PENNELLE
+257019,M,Alvise,PÉREZ
+257257,M,Hristo,PETROV
+257150,,Michele,PICARO
+256877,F,Pascale,PIERA
+256893,M,Pierre,PIMPIE
+257115,M,Gheorghe,PIPEREA
+256844,F,Jaroslava,POKORNÁ JERMANOVÁ
+257145,,Daniele,POLATO
+257107,,Virgil-Daniel,POPESCU
+256907,M,Reinis,POZŅAKS
+256813,M,Vladimir,PREBILIČ
+257128,F,Giusi,PRINCI
+257041,M,Jacek,PROTAS
+256969,M,Friedrich,PÜRNER
+256927,F,Carola,RACKETE
+256902,F,Emma,RAFOWICZ
+257104,M,Ruggero,RAZZA
+188096,M,Jüri,RATAS
+256882,F,Julie,RECHAGNEUX
+256935,F,Sabrina,REPP
+256904,F,Chloé,RIDEL
+257121,M,Matteo,RICCI
+256964,F,Nela,RIEHL
+257066,M,André,RODRIGUES
+257170,M,Sandro,RUOTOLO
+256911,M,Arash,SAEIDI
+257127,F,Ilaria,SALIS
+98219,F,Aura,SALLA
+88552,M,Julien,SANCHEZ
+257001,F,Elena,SANCHO MURILLO
+127766,M,Jussi,SARAMO
+256905,M,Eric,SARGIACOMO
+256815,M,Marjan,ŠAREC
+256809,M,Paulius,SAUDARGAS
+256917,F,Majdouline,SBAI
+257113,F,Antonella,SBERNA
+256979,M,Oliver,SCHENK
+257084,F,Joanna,SCHEURING-WIELGUS
+256833,F,Lena,SCHILLING
+257139,F,Benedetta,SCUDERI
+256959,M,Alexander,SELL
+256999,,Rosa María,SERRANO SIERRA
+257009,F,Isabel,SERRA SÁNCHEZ
+86057,,Bartłomiej,SIENKIEWICZ
+256971,M,Lukas,SIEPER
+256946,F,Christine,SINGER
+201945,M,Virginijus,SINKEVIČIUS
+257085,M,Krzysztof,ŚMISZEK
+256910,M,Anthony,SMITH
+125325,M,Sander,SMIT
+257021,M,Diego,SOLIER
+256889,F,Liesbet,SOMMEN
+256871,F,Malika,SOREL
+257068,M,Hélder,SOUSA SILVA
+111412,M,Villy,SØVNDAL
+257109,M,Marco,SQUARTA
+256916,,Mārtiņš,STAĶIS
+220897,F,Petra,STEGER
+257025,M,Kristoffer,STORM
+256991,M,Sebastiaan,STÖTELER
+257255,M,Stanislav,STOYANOV
+256926,F,Marie-Agnes,STRACK-ZIMMERMANN
+257101,F,Cecilia,STRADA
+256962,M,Joachim,STREIT
+256990,F,Anna,STROLENBERG
+257119,,Şerban-Dimitrie,STURDZA
+256839,F,Anna,STÜRGKH
+257070,M,Marcin,SYPNIEWSKI
+257026,M,Michał,SZCZERBA
+256855,M,Pál,SZEKERES
+257050,M,António,TÂNGER CORRÊA
+256863,M,Zoltán,TARR
+257160,M,Marco,TARQUINIO
+257114,,Claudiu-Richard,TÂRZIU
+257071,F,Carla,TAVARES
+256965,M,Kai,TEGETHOFF
+210480,F,Marta,TEMIDO
+257089,F,Alice,TEODORESCU MÅWE
+257116,F,Georgiana,TEODORESCU
+256968,F,Ingeborg,TER LAAK
+200345,M,Pierre-Romain,THIONNET
+257090,F,Beatrice,TIMGREN
+256885,M,Bruno,TOBBACK
+256888,M,Rody,TOLASSY
+256814,F,Zala,TOMAŠIČ
+219652,M,Matej,TONIN
+257163,M,Francesco,TORSELLI
+257148,M,Raffaele,TOPO
+256804,M,Pekka,TOVERI
+257133,M,Pasquale,TRIDICO
+256925,,Laurence,TROCHU
+256950,M,Dimitris,TSIODRAS
+256850,M,Filip,TUREK
+256806,M,Sebastian,TYNKKYNEN
+257062,M,Stanisław,TYSZKA
+257258,M,Ivaylo,VALCHEV
+256875,M,Matthieu,VALET
+257438,F,Anouk,VAN BRUG
+256976,F,Brigitte,VAN DEN BERG
+256884,M,Kris,VAN DIJCK
+256978,M,Reinier,VAN LANSCHOT
+256983,F,Jessika,VAN LEEUWEN
+257125,M,Roberto,VANNACCI
+257061,F,Ana,VASCONCELOS
+257112,M,Vlad,VASILE-VOICULESCU
+257099,M,Francesco,VENTOLA
+256879,M,Yvan,VEROUGSTRAETE
+256811,M,Aurelijus,VERYGA
+256859,F,Annamária,VICSEK
+257437,F,Catarina,VIEIRA
+257143,F,Mariateresa,VIVALDINI
+257260,M,Petar,VOLGIN
+256966,M,Michael,VON DER SCHULENBURG
+256967,M,Jan-Peter,WARNKE
+257052,M,Maciej,WĄSIK
+257045,M,Michał,WAWRYKIEWICZ
+257046,F,Marta,WCISŁO
+256977,F,Andrea,WECHSLER
+220801,F,Sophie,WILMÈS
+257011,F,Lucia,YAR
+256955,F,Maria,ZACHARIA
+257069,F,Ewa,ZAJĄCZKOWSKA-HERNIK
+256807,M,Dainius,ŽALIMAS
+257106,M,Alessandro,ZAN

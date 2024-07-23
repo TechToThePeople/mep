@@ -66,9 +66,9 @@
       "ENF": "#A1480D",
       "ID": "#A1480D",
       "Array": "pink",
-"ESN": "#003768",
-"Patriots": "#202c81",
-"PfE": "#202c81",
+"ESN": "#808080",
+"Patriots": "#9b20a9",
+"PfE": "#9b20a9",
     };
 
 
@@ -101,13 +101,6 @@ var iconify = function(name, prefix) {
 
       $("#detail").html(html).modal();
       //d3.event.stopPropagation();
-      $.getJSON("https://api.rss2json.com/v1/api.json?api_key=zzofxeix1yyi1ukwkevu3axziufzd2lyxufvs7rj&rss_url=http://www.europarl.europa.eu/rss/mep/"+d.first_name.replace(/ /g,'').toLowerCase()+"."+d.last_name.replace(/ /g,'').toLowerCase()+"/en.xml")
-        .done(function(d){
-          if (d.status != "ok") return;
-          $("#detail .modal-dialog").addClass("modal-lg");
-          $("#detail .main").removeClass("col-md-9").addClass("col-md-5");
-          $("#detail .feed").removeClass("hidden").html(tmpl("tmpl-rss",d));
-        });
     }
 
     function drawAge(dom) {
@@ -504,7 +497,7 @@ var iconify = function(name, prefix) {
             return "<span title='" + d.constituency.country + "' class='img-rounded text-filter country-flag " + d.constituency.country.replace(" ", "-").toLowerCase() + "'>" + d.constituency.country + "</span>";
           },
           function(d) {
-            return "<span title='" + d.eugroup + "' class='img-rounded text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "'>" + d.eugroup + "</span>";
+            return "<span title='" + d.eugroup + "' class='icon text-filter eugroup " + d.eugroup.replace(/&|\/|car/g, "-").toLowerCase() + "' style='background-color:"+eu_groups[d.eugroup] +"'>" + d.eugroup + "</span>";
           },
           function(d) {
             return "<span class='text-filter'>" + d.constituency.party + "</span>";
@@ -1042,7 +1035,7 @@ function download_excel() {
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2024-07-22</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2024-07-23</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -1185,12 +1178,14 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
     .eugroup,
     .country-flag {
       display: inline-block;
-      width: 25px;
-      height: 20px;
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
       background-size: cover;
+    }
+    .country-flag {
+      width: 25px;
+      height: 20px;
     }
 
     .ecr {
@@ -1214,7 +1209,6 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
     }
 
     .na {
-      background-image: url("img/group/icon-na.png");
     }
 
     .renew {

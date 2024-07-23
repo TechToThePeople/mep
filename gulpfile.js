@@ -43,6 +43,7 @@ const paths = {
 const download = exports.download = function download(done){
 	return downloader([
 		{ file: "eugroup.json", url: "https://www.epnewshub.eu/v1/contributor/?type=grouppress&pageSize=50&search-value=&search-type=contributor" },
+    { file: "seats.json", url: "https://www.europarl.europa.eu/erpl-public/hemicycle//str/en.json" },
 		{ file: "meps_str.js", url: "https://www.europarl.europa.eu/hemicycle/js/meps_str.js" }, //used by mepid task to generate mepid.json
 		{ file: "mepid.xml", url: "https://www.europarl.europa.eu/meps/en/full-list/xml" },
 		{ file: "extra_csv.csv", url: "https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv" },
