@@ -349,12 +349,11 @@ var iconify = function(name, prefix) {
        graph.hasFilter = () => (dimFilter.hasCurrentFilter());
 
        graph.filter = (d) => {
-         if (d) { 
+         if (d || d === null) { 
             dimFilter.filter(d);
             return dimFilter.currentFilter();
           }
           const current = dimFilter.currentFilter();
-          console.log ("current filter",current);
            switch (current) {
                 case true:
                   dimFilter.filter(false);
