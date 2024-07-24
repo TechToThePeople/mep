@@ -19,7 +19,7 @@
 
   <script>
     'use strict';
-    //var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se","uk"]
+    //var iso=["be","bg","cz","dk","de","ee","ie","el","es","fr","hr","it","cy","lv","lt","lu","hu","mt","nl","at","pl","pt","ro","si","sk","fi","se"]
     var graphs = [];
     var summary = {};
     var abbreviations = {};
@@ -104,6 +104,7 @@ var iconify = function(name, prefix) {
     }
 
     function drawAge(dom) {
+       const width = getWidth (dom);
       var graph = dc.barChart(dom);
       //var graph = dc.lineChart(dom);
 
@@ -116,7 +117,7 @@ var iconify = function(name, prefix) {
         return 1;
       });
       graph
-        .width(0)
+        .width(width)
         .height(85)
         .margins({
           top: 0,
@@ -140,6 +141,7 @@ var iconify = function(name, prefix) {
     }
 
     function drawGroup(dom) {
+      const width = getWidth (dom);
       var graph = dc.pieChart(dom).innerRadius(40) //.radius(70);
       var dim = ndx.dimension(function(d) {
         if (typeof d.eugroup == "undefined") return "";
@@ -149,7 +151,7 @@ var iconify = function(name, prefix) {
         return 1;
       });
       graph
-        .width(0)
+        .width(width)
         .height(0)
         .ordering(function(d){return d.key;})
         .colorCalculator(function(d, i) {
@@ -192,7 +194,7 @@ var iconify = function(name, prefix) {
         .yAxisLabel("#MEPs")
         .dimension(dim)
         .group(group)
-        .on("renderlet", function(c) {
+        .on('pretransition', function(c) {
           rotateBarChartLabels();
         });
       graph.xAxis().ticks(3);
@@ -230,20 +232,13 @@ var iconify = function(name, prefix) {
         return d.since.getTime()
       });
 
-      reducer.value("birthdate").count(true).filter(function(d) {
-        return d.birthdate;
-      }).avg(function(d) {
-        return +d.birthdate.getTime()
-      });
+      reducer.value("birthdate").count(true).filter(d => d.birthdate).avg(d => +d.birthdate.getTime());
 
       reducer.value("nb").count(true);
-      reducer.value("woman").count(true).filter(function(d) {
-        return d.Gender == "F"
-      });
+      reducer.value("woman").count(true).filter(d => d.Gender == "F");
 
+      reducer.value("newbie").count(true).filter(d => d.newbie);
 
-
-      reducer.value("nb").count(true);
 
       for (var a in activitymap) {(function(a,n) {
           reducer.value(n).sum(function(d){return d.activities[a] || 0;});
@@ -254,21 +249,11 @@ var iconify = function(name, prefix) {
 
       graphs.total = dc.numberDisplay(".nbmep .nb")
         .group(group)
-        .valueAccessor(function(d) {
-          return d.value.nb.count
-        })
-        .formatNumber(formatNumber)
+        .valueAccessor(d => d.value.nb.count)
+        .formatNumber(d => Math.floor(d))
         .html({
           some: "%number"
         })
-      //        .formatNumber(format)
-      //        .on("renderlet",function(chart) {
-      //            var d= chart.group().all()[0];
-      //            d3.selectAll(chart.anchor()).attr("data-original-title", 
-      //              "from fundraisers:" + d.value.donation_fundraiser.sum + 
-      //              "\nfrom petitions:" + d.value.donation_petition.sum 
-      //              );
-      //        })
 
       graphs.avg_since = dc.numberDisplay(".avg_since span")
         .group(group)
@@ -299,10 +284,17 @@ var iconify = function(name, prefix) {
 
       graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
         .group(group)
-        .formatNumber(formatNumber)
+        .formatNumber(d => Math.floor(d))
         .valueAccessor(function(d) {
           return d.value.woman.count;
         });
+      document.querySelectorAll('.nbwomen').forEach(element => {
+        element.addEventListener('click', () => {
+          graphs.gender.filter('F');
+          dc.redrawAll();
+          // You can add more actions here
+        });
+      });
 
       graphs.percentwomen = dc.numberDisplay(".nbwomen .percent")
         .group(group)
@@ -314,6 +306,28 @@ var iconify = function(name, prefix) {
           some: "%number"
         })
 
+      graphs.nbnewbie = dc.numberDisplay(".newbie .nb")
+        .group(group)
+        .valueAccessor(d => d.value.newbie.count)
+        .formatNumber(d => Math.floor(d))
+        .on("renderlet", c => {});
+
+      document.querySelectorAll('.newbie').forEach(element => {
+        element.addEventListener('click', () => {
+          console.log('Newbie element clicked!');
+          graphs.nbnewbie.filter(true);
+          dc.redrawAll();
+          // You can add more actions here
+        });
+      });
+
+      graphs.percentnewbie = dc.numberDisplay(".newbie .percent")
+        .group(group)
+        .valueAccessor( d => d.value.newbie.count / graphs.total.data())
+        .formatNumber(formatPercent)
+        .html({
+          some: "%number"
+        })
       for (var a in activitymap) {
         (function(a,n) {
         graphs["nb" + n] = dc.numberDisplay(".nb" +n+ " .nb")
@@ -323,6 +337,73 @@ var iconify = function(name, prefix) {
       };
     }
 
+    const getWidth = (dom) => {
+      const container = document.querySelector(dom);
+      return container.getBoundingClientRect().width;
+    }
+
+    function drawNewbie(dom) {
+       const width = getWidth (dom);
+       const dim = ndx.dimension ( () => "Total" );
+       const dimFilter = ndx.dimension ( d => d.newbie );
+
+       const  group = dim.group().reduce( (p, v) => {
+        p.total++;
+        if (v.newbie ) { p.newbie++;
+        } else {
+          p.oldie ++;
+        }
+        return p;
+    },
+    function(p, v) {
+        p.total--;
+        if (v.newbie ) { p.newbie--;
+        } else {
+          p.oldie--;
+        }
+        return p;
+    },
+    function() {
+        return {total:0,newbie:0,oldie:0};
+    });
+
+
+       const graph = dc.barChart(dom);
+graph.rescale = () => {
+       const width = getWidth (dom);
+       graph
+       .width(4)
+      .height(width);
+}
+       graph
+       .width(4)
+      .height(width)
+      .dimension(dim)
+  .group(group, 'newbie', kv => kv.value.newbie / kv.value.total )
+  .stack(group, 'oldie', kv => kv.value.oldie / kv.value.total )
+    .title(function (d) {
+        return this.layer + ': ' + d.value[this.layer];
+    })
+        .x(d3.scale.ordinal())
+    .xUnits(dc.units.ordinal)
+    .brushOn(false)
+    .colors(d => d === 'newbie' ? "#2ca02c": "#d62728")  // Custom colors for Newbie and Experienced
+    .margins({top: 0, right: 0, bottom: 0, left: 0});
+    graph.on('pretransition', function(chart) {
+        const height = chart.height();
+        chart.select('svg').attr("transform", "rotate(90, "+height/2+",0)")
+          chart.selectAll(".axis").remove();
+     });
+
+
+graph.yAxis().tickFormat(()  => "");
+graph.yAxis().ticks(0);
+graph.xAxis().tickFormat(()  => "");
+graph.xAxis().ticks(0);
+
+     return graph;
+
+    }
 
     function drawGender(dom) {
       var pie_gender = dc.pieChart(dom) //.radius(70);
@@ -337,9 +418,10 @@ var iconify = function(name, prefix) {
       });
 
       var groupGender = gender.group().reduceCount();
+       const width = getWidth (dom);
 
       return pie_gender
-        .width(0)
+        .width(width)
         .height(0)
         .dimension(gender)
         .ordering(function(d){return d.key;})
@@ -612,11 +694,13 @@ var iconify = function(name, prefix) {
     }
 
       function adjust(data) {
-        var dateFormat = d3.time.format("%Y-%m-%d");
-        var now = Date.now();
+        const dateFormat = d3.time.format("%Y-%m-%d");
+        const now = Date.now();
+        const start10 = new Date("2024-06-09");
 
         data.forEach(function(e) {
           e.since = dateFormat.parse(e.since);
+          e.newbie = e.since > start10;
           if (e.Birth.date){
             e.birthdate = dateFormat.parse(e.Birth.date);
             e.age = ~~((now - e.birthdate) / (31557600000)); // 24 * 3600 * 365.25 * 1000
@@ -653,6 +737,7 @@ var iconify = function(name, prefix) {
       graphs.role = drawRow(".role .graph","role");
       graphs.role.height(100);
            graphs.age = drawAge(".age .panel-body");
+           graphs.newbieG = drawNewbie(".newbie .graph");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".gender .panel-body");
       graphs.table = drawTable("#table");
@@ -664,6 +749,7 @@ var iconify = function(name, prefix) {
     }
 
     function drawRow(dom,attr) {
+       const width = getWidth (dom);
       var tip = d3.tip()
         .attr('class', 'd3-tip')
         .offset([0, 10])
@@ -679,7 +765,7 @@ var iconify = function(name, prefix) {
         return 1;
       });
       var graph = dc.rowChart(dom)
-        .width(0)
+        .width(width)
         .height(464)
         //      .rowsCap(18)
         .ordering(function(d) {
@@ -689,7 +775,7 @@ var iconify = function(name, prefix) {
         .margins({
           top: 0,
           right: 0,
-          bottom: 20,
+          bottom: 0,
           left: 0
         })
         .ordinalColors([committee_color])
@@ -697,6 +783,9 @@ var iconify = function(name, prefix) {
         .elasticX(true)
         .dimension(dim)
         .group(group)
+        .on('pretransition', function(chart) {
+          chart.selectAll(".axis").remove();
+     })
         .on("renderlet", function(c) {
             c.selectAll("g.row")
               .call(tip)
@@ -910,7 +999,8 @@ function download_excel() {
           <ul class="list-group">
             <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
             <li class="list-group-item nbwomen" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women</li>
-            <li class="list-group-item newbies" title="percentage of new members"><span class="percent badge"></span><span class="nb"></span> Newbies</li>
+            <li class="list-group-item newbie" title="percentage of new members"><span class="percent badge"></span><span class="nb"></span> Newbies
+<div class="graph"></div></li>
           <li class="list-group-item avg_age" title="average age"><span></span></li>
           <li class="list-group-item avg_since" title="how long in office"><span></span></li>
             <li class="list-group-item nbopinion hidden"><span class="nb"></span> Opinions</li>
@@ -933,7 +1023,7 @@ function download_excel() {
                 <i class="material-icon glyphicon glyphicon-sort-by-attributes-alt"></i>
               </a>
             </div>
-            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".committee .panel-body">Role</a></h3>
+            <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".role .panel-body">Role</a></h3>
           </div>
           <div class="panel-body graph collapse in"></div>
         </div>
@@ -1038,7 +1128,7 @@ function download_excel() {
         </table>
       </div>
     </div>
-    <div id="update_date" ><small class="pull-right">Updated on 2024-07-23</small></div>
+    <div id="update_date" ><small class="pull-right">Updated on 2024-07-24</small></div>
 
     <div class="row">
       <div class="list col-md-12"></div>
@@ -1093,6 +1183,13 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
   </script>
 
   <style>
+
+.nbwomen, .newbie {
+    cursor: pointer;
+}
+
+.list-group .graph {
+padding:0;margin: 2px 0 -8px -8px;height:2px;}
 
 .icon {width:16px;height:16px;}
 .d3-tip {font-weight:normal;}
@@ -1503,10 +1600,8 @@ color: #111;
 opacity: 0.5;
 position: absolute;
 text-align: center;
-margin-left: auto;
-margin-right: auto;
 top: 40px;
-left: 30px;
+left: 35%;
 }
 
   </style>
