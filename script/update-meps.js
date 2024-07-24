@@ -17,7 +17,6 @@ const out = Object.keys(Object.values(require("../data/inout.json")).filter(func
 },{}));
 
 const src_xml = path.resolve(__dirname,"../data/mirror/mepid.xml");
-const src_js = path.resolve(__dirname,"../data/mirror/meps_str.js");
 const dest = path.resolve(__dirname,"../data/mepid.json");
 
 const import_xml = function(fn) {
@@ -136,18 +135,6 @@ const main = module.exports = async function main(fn) {
 		});
 	});
 
-	q.push(function(next){
-		import_js(function(err, data){
-			if (err) throw err;
-			data.forEach(function(r){
-				result[r.id] = {
-					...(result[r.id]||{}),
-					...r,
-				};
-			});
-			next();
-		});
-	});
 		
 	q.run(function(){
 		// status

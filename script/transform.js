@@ -223,7 +223,7 @@ process.exit(1);
 						date: (r.Birth?.date?.substr(0,10)||""),
 						place: (r.Birth?.place||""),
 					},
-					Gender: (r.Gender || gender[r.UserID] || ""),
+					Gender: ( gender[r.UserID] || r.Gender || ""),
 					first_name: r.Name.sur,
 					last_name: r.Name.family,
 					epid: r.UserID,
