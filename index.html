@@ -314,8 +314,7 @@ var iconify = function(name, prefix) {
 
       document.querySelectorAll('.newbie').forEach(element => {
         element.addEventListener('click', () => {
-          console.log('Newbie element clicked!');
-          graphs.nbnewbie.filter(true);
+          graphs.newbieG.filter();
           dc.redrawAll();
           // You can add more actions here
         });
@@ -369,6 +368,33 @@ var iconify = function(name, prefix) {
 
 
        const graph = dc.barChart(dom);
+graph.hasFilter = () => (dimFilter.hasCurrentFilter());
+
+graph.filter = (d) => {
+  if (d) { 
+    dimFilter.filter(d);
+    return dimFilter.currentFilter();
+  }
+  const current = dimFilter.currentFilter();
+  console.log ("current filter",current);
+   switch (current) {
+        case true:
+          dimFilter.filter(false);
+            break;
+        case false:
+          dimFilter.filter(undefined);
+            break;
+        case undefined:
+          dimFilter.filter(true);
+            break;
+        default:
+            console.log('Value is neither true, false, nor undefined');
+            break;
+    }
+    return dimFilter.currentFilter();
+
+};
+
 graph.rescale = () => {
        const width = getWidth (dom);
        graph
@@ -387,7 +413,7 @@ graph.rescale = () => {
         .x(d3.scale.ordinal())
     .xUnits(dc.units.ordinal)
     .brushOn(false)
-    .colors(d => d === 'newbie' ? "#2ca02c": "#d62728")  // Custom colors for Newbie and Experienced
+    .colors(d => d === 'newbie' ? "#9ACD32": "#6C6E6F")  // Custom colors for Newbie and Experienced
     .margins({top: 0, right: 0, bottom: 0, left: 0});
     graph.on('pretransition', function(chart) {
         const height = chart.height();
@@ -1187,6 +1213,9 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
 .nbwomen, .newbie {
     cursor: pointer;
 }
+
+.newbie .badge {background-color: #9ACD32}
+.nbwomen .badge {background-color: #9575CD}
 
 .list-group .graph {
 padding:0;margin: 2px 0 -8px -8px;height:2px;}
