@@ -578,12 +578,6 @@ var iconify = function(name, prefix) {
           return d.last_name;
         })
         .order(d3.ascending)
-        .on('renderlet', function(grid) {
-          $("img.lazy-load").lazyload({
-              effect: "fadeIn"
-            })
-            .removeClass("alazy-load");
-        });
     };
 
     jQuery(function($) {
@@ -671,7 +665,8 @@ var iconify = function(name, prefix) {
         })
         .columns([
             function(d) {
-              var t= '<div class="btn-group btn-group-sm">';
+              let t= '<div class="btn-group btn-group-sm">';
+              t += '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>';
               
               if (d.phone)
                 t+= '<a class="btn btn-default" title="' + d.phone + '" href="tel:' + d.phone + '"><i class="glyphicon glyphicon-earphone"></i></a>';
@@ -681,12 +676,12 @@ var iconify = function(name, prefix) {
               if (d.Twitter)
                 t += '<button class="btn btn-default btn-twitter" title="Tweet"><svg class="icon"><use href="#icon-twitter"></use></svg></button>';
 
-              t += '<a class="btn btn-default btn-detail" title="View details"><i class="glyphicon glyphicon-fullscreen"></i></a>';
               return t+'</div>';
           },
           function(d) {
 //            return "<a target='_blank' href='https://www.europarl.europa.eu/meps/en/" + d.epid + "/name/home'>" + d.first_name + " " + d.last_name + "</a>";
-            return d.first_name + " <span class='"+(d.role.length ? d.role[0] : 'member')+"'>" + d.last_name +"</span>";
+              return '<img src="https://www.europarl.europa.eu/mepphoto/'+d.epid+'.jpg" class="img-circle picture"  loading="lazy">' +
+                     d.first_name + " <span class='"+(d.role.length ? d.role[0] : 'member')+"'>" + d.last_name +"</span>";
           },
           function(d) {
             var t = "";
@@ -1674,8 +1669,14 @@ padding:0;margin: 2px 0 -8px -8px;height:2px;}
       padding: 10px;
     }
 
+    .picture {
+      margin: -10px 2px -10px -10px;
+      width: 26px;
+      height: 32px;
+    }
     td .btn-group {
-      min-width: 70px
+      min-width: 70px;
+      margin: 0;
     }
 
     td .btn-group>.btn {
