@@ -383,8 +383,11 @@ var iconify = function(name, prefix) {
     }
 
     const getWidth = (dom) => {
-      const container = document.querySelector(dom);
-      return container.getBoundingClientRect().width;
+      let container = dom;
+      if (typeof container === 'string')
+        container = document.querySelector(dom);
+      const computedStyle = window.getComputedStyle(container);
+      return container.getBoundingClientRect().width - parseFloat(computedStyle.paddingLeft) - parseFloat(computedStyle.paddingRight);
     }
 
     const sparkBar = (config)  => {
@@ -859,7 +862,7 @@ var iconify = function(name, prefix) {
       graphs.committee = drawRow(".committee .graph","committee");
       graphs.delegation = drawRow(".delegation .graph","delegation");
       graphs.role = drawRow(".role .graph","role");
-      graphs.role.height(100);
+      graphs.role.height(75);
            graphs.age = drawAge(".age .graph");
            graphs.newbieG = drawNewbie(".newbie .graph");
       graphs.group = drawGroup(".group .panel-body");
@@ -1275,8 +1278,9 @@ function download_excel() {
         dc.chartRegistry.list().forEach(function(chart) {
           var container = chart.root().node();
           if (!container) return; // some graphs don't have a node (?!)
-          container = container.parentNode.getBoundingClientRect();
-          chart.width(container.width);
+//          container = container.parentNode.getBoundingClientRect();
+          chart.width(getWidth (container.parentNode));
+  //        chart.width(container.width);
           chart.rescale && chart.rescale(); // some graphs don't have a rescale
         });
 
