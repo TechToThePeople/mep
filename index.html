@@ -282,21 +282,21 @@ var iconify = function(name, prefix) {
           some: "%number old"
         })
 
-      graphs.nbwomen = dc.numberDisplay(".nbwomen .nb")
+      graphs.women = dc.numberDisplay(".women .nb")
         .group(group)
         .formatNumber(d => Math.floor(d))
         .valueAccessor(function(d) {
           return d.value.woman.count;
         });
-      document.querySelectorAll('.nbwomen').forEach(element => {
+      document.querySelectorAll('.women').forEach(element => {
         element.addEventListener('click', () => {
-          graphs.gender.filter('F');
+          graphs.gender.filter();
           dc.redrawAll();
           // You can add more actions here
         });
       });
 
-      graphs.percentwomen = dc.numberDisplay(".nbwomen .percent")
+      graphs.percentwomen = dc.numberDisplay(".women .percent")
         .group(group)
         .valueAccessor(function(d) {
           return d.value.woman.count / graphs.total.data();
@@ -341,79 +341,54 @@ var iconify = function(name, prefix) {
       return container.getBoundingClientRect().width;
     }
 
-    function drawNewbie(dom) {
-       const width = getWidth (dom);
+    const sparkBar = (config)  => {
+       const width = getWidth (config.dom);
        const dim = ndx.dimension ( () => "Total" );
-       const dimFilter = ndx.dimension ( d => d.newbie );
+       const dimFilter = ndx.dimension ( config.filter );
+       const graph = dc.barChart(config.dom);
+       graph.hasFilter = () => (dimFilter.hasCurrentFilter());
 
-       const  group = dim.group().reduce( (p, v) => {
-        p.total++;
-        if (v.newbie ) { p.newbie++;
-        } else {
-          p.oldie ++;
-        }
-        return p;
-    },
-    function(p, v) {
-        p.total--;
-        if (v.newbie ) { p.newbie--;
-        } else {
-          p.oldie--;
-        }
-        return p;
-    },
-    function() {
-        return {total:0,newbie:0,oldie:0};
-    });
+       graph.filter = (d) => {
+         if (d) { 
+            dimFilter.filter(d);
+            return dimFilter.currentFilter();
+          }
+          const current = dimFilter.currentFilter();
+          console.log ("current filter",current);
+           switch (current) {
+                case true:
+                  dimFilter.filter(false);
+                    break;
+                case false:
+                  dimFilter.filter(undefined);
+                    break;
+                case undefined:
+                  dimFilter.filter(true);
+                    break;
+                default:
+                    console.log('Value is neither true, false, nor undefined');
+                    break;
+            }
+            return dimFilter.currentFilter();
+       };
 
+       graph.rescale = () => {
+         const width = getWidth (config.dom);
+         graph
+         .width(4)
+         .height(width);
+       }
 
-       const graph = dc.barChart(dom);
-graph.hasFilter = () => (dimFilter.hasCurrentFilter());
-
-graph.filter = (d) => {
-  if (d) { 
-    dimFilter.filter(d);
-    return dimFilter.currentFilter();
-  }
-  const current = dimFilter.currentFilter();
-  console.log ("current filter",current);
-   switch (current) {
-        case true:
-          dimFilter.filter(false);
-            break;
-        case false:
-          dimFilter.filter(undefined);
-            break;
-        case undefined:
-          dimFilter.filter(true);
-            break;
-        default:
-            console.log('Value is neither true, false, nor undefined');
-            break;
-    }
-    return dimFilter.currentFilter();
-
-};
-
-graph.rescale = () => {
-       const width = getWidth (dom);
-       graph
-       .width(4)
-      .height(width);
-}
        graph
        .width(4)
       .height(width)
       .dimension(dim)
-  .group(group, 'newbie', kv => kv.value.newbie / kv.value.total )
-  .stack(group, 'oldie', kv => kv.value.oldie / kv.value.total )
     .title(function (d) {
         return this.layer + ': ' + d.value[this.layer];
     })
         .x(d3.scale.ordinal())
     .xUnits(dc.units.ordinal)
     .brushOn(false)
-    .colors(d => d === 'newbie' ? "#9ACD32": "#6C6E6F")  // Custom colors for Newbie and Experienced
     .margins({top: 0, right: 0, bottom: 0, left: 0});
     graph.on('pretransition', function(chart) {
         const height = chart.height();
@@ -422,16 +397,94 @@ graph.rescale = () => {
      });
 
 
-graph.yAxis().tickFormat(()  => "");
-graph.yAxis().ticks(0);
-graph.xAxis().tickFormat(()  => "");
-graph.xAxis().ticks(0);
+    graph.yAxis().tickFormat(()  => "");
+    graph.yAxis().ticks(0);
+    graph.xAxis().tickFormat(()  => "");
+    graph.xAxis().ticks(0);
 
      return graph;
+    }
+
+    function drawNewbie(dom) {
+       const graph = sparkBar ({
+         filter: d => d.newbie,
+         dom
+       });
+
+      const  group = graph.dimension().group().reduce( (p, v) => {
+        p.total++;
+        if (v.newbie ) { 
+          p.newbie++;
+        } else {
+          p.oldie ++;
+        }
+        return p;
+        },
+        (p, v) => {
+          p.total--;
+          if (v.newbie ) { p.newbie--;
+          } else {
+            p.oldie--;
+          }
+          return p;
+       },
+       () =>({total:0,newbie:0,oldie:0})
+      );
+
+  graph
+  .group(group, 'newbie', kv => kv.value.newbie / kv.value.total )
+  .stack(group, 'oldie', kv => kv.value.oldie / kv.value.total )
+  .colors(d => d === 'newbie' ? "#9ACD32": "#6C6E6F")  // Custom colors for Newbie and Experienced
+
+   return graph;
 
     }
 
     function drawGender(dom) {
+      var NameGender = {
+        "M": "Male",
+        "F": "Female",
+        "": "missing data"
+      };
+      var gender = ndx.dimension(function(d) {
+        if (typeof d.Gender == "undefined") return "";
+        return d.Gender;
+      });
+       const graph = sparkBar ({
+         filter: d => d.Gender === "F",
+         dom
+       });
+
+      const  group = graph.dimension().group().reduce( (p, v) => {
+        p.total++;
+        if (v.Gender === "F" ) { 
+          p.female++;
+        } else {
+          p.male ++;
+        }
+        return p;
+        },
+        (p, v) => {
+          p.total--;
+          if (v.Gender === "F" ) { p.female--;
+          } else {
+            p.male--;
+          }
+          return p;
+       },
+       () =>({total:0,female:0,male:0})
+      );
+
+  graph
+  .group(group, 'female', kv => kv.value.female / kv.value.total )
+  .stack(group, 'male', kv => kv.value.male / kv.value.total )
+  .colors(d => d !== 'female' ? "#FDD835": "#9575CD")
+
+   return graph;
+
+    }
+
+    function drawGenderPie(dom) {
       var pie_gender = dc.pieChart(dom) //.radius(70);
       var NameGender = {
         "M": "Male",
@@ -765,7 +818,8 @@ graph.xAxis().ticks(0);
            graphs.age = drawAge(".age .panel-body");
            graphs.newbieG = drawNewbie(".newbie .graph");
       graphs.group = drawGroup(".group .panel-body");
-      graphs.gender = drawGender(".gender .panel-body");
+      graphs.gender = drawGender(".women .graph");
+      graphs.genderPie = drawGenderPie(".gender .panel-body");
       graphs.table = drawTable("#table");
       graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {setUrl()});
@@ -1024,7 +1078,10 @@ function download_excel() {
         <div class="panel overview">
           <ul class="list-group">
             <li class="list-group-item nbmep"><a class="resetall"><span class="percent badge"></span><span class="nb"></span> MEPs</a></li>
-            <li class="list-group-item nbwomen" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women</li>
+            <li class="list-group-item women" title="percentage of women"><span class="percent badge"></span><span class="nb"></span> Women
+<div class="graph"></div></li>
+
+</li>
             <li class="list-group-item newbie" title="percentage of new members"><span class="percent badge"></span><span class="nb"></span> Newbies
 <div class="graph"></div></li>
           <li class="list-group-item avg_age" title="average age"><span></span></li>
@@ -1210,12 +1267,13 @@ d3.text("img/eu-flags.svg").mimeType("image/svg+xml").get(function(error, xml) {
 
   <style>
 
-.nbwomen, .newbie {
+.women, .newbie, .nbmep {
     cursor: pointer;
+    color: #009688;
 }
 
 .newbie .badge {background-color: #9ACD32}
-.nbwomen .badge {background-color: #9575CD}
+.women .badge {background-color: #9575CD}
 
 .list-group .graph {
 padding:0;margin: 2px 0 -8px -8px;height:2px;}
