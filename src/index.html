@@ -679,9 +679,8 @@ var iconify = function(name, prefix) {
               return t+'</div>';
           },
           function(d) {
-//            return "<a target='_blank' href='https://www.europarl.europa.eu/meps/en/" + d.epid + "/name/home'>" + d.first_name + " " + d.last_name + "</a>";
-              return '<img src="https://www.europarl.europa.eu/mepphoto/'+d.epid+'.jpg" class="img-circle picture"  loading="lazy">' +
-                     d.first_name + " <span class='"+(d.role.length ? d.role[0] : 'member')+"'>" + d.last_name +"</span>";
+              return '<span class="btn-detail"><img src="https://www.europarl.europa.eu/mepphoto/'+d.epid+'.jpg" class="img-circle picture"  loading="lazy">' +
+                     d.first_name + " <span class='"+(d.role.length ? d.role[0] : 'member')+"'>" + d.last_name +"</span></span>";
           },
           function(d) {
             var t = "";
