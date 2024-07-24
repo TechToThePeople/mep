@@ -211,7 +211,7 @@ process.exit(1);
 				// assemble data
 				const data = {
 					meta: r.meta,
-//					CV: r.CV, // ← this makes the file really big. is it needed? FIXME
+					CV: r.CV, // ← this makes the file really big. is it needed? FIXME
 					Addresses: {
 						Brussels: { 
 							Phone: (r.Addresses?.Brussels?.Phone||""),

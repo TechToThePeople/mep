@@ -1756,6 +1756,22 @@ left: 35%;
   </div>
   <div id="detail" class="modal fade" role="dialog">
   </div>
+  <style type="text/x-tmpl" id="cv">
+{% for (var key in o.cv) {  if (key !== 'updated') { %}
+        <h4>{%= key %}</h4>
+              <ul>
+{% for (var i = 0; i < o.cv[key].length; i++) { %}
+<li>{%= o.cv[key][i] %}</li>
+    {% } %}
+              </ul>
+    {% }} %}
+  </style>
+  <style type="text/x-tmpl" id="_cv">
+{% for (var key in o.cv) { %}
+        <h3>{%= key %}</h3>
+        <div>{%= o.cv[key] %}</div>
+    {% } %}
+  </style>
   <style type="text/x-tmpl" id="dtd">
     {% if (o.dd) { %}
     <dt>{%=o.dt%}</dt>
@@ -1771,7 +1787,7 @@ left: 35%;
   </style>
 
   <style type="text/x-tmpl" id="tmpl-detail">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -1782,10 +1798,10 @@ left: 35%;
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
               <img src="https://www.europarl.europa.eu/mepphoto/{%=o.epid%}.jpg" class="img-circle img-responsive">
             </div>
-            <div class="col-md-9 main">
+            <div class="col-md-4 main">
               <dl class="dl-horizontal">
                 {% include('dtd', {dt: "Since", dd:formatDate(o.since)}); %} {% include('dtd', {dt: "Country", dd:o.constituency.country}); %} {% include('dtd', {dt: "Group", dd:o.eugroup}); %} {% include('dtd', {dt: "Party", dd:o.constituency.party}); %} {% include('dtd', {dt: "Email", dd:o.email}); %} {% include('dtd', {dt: "Phone", dd:o.phone}); %} {% include('dtd', {dt: "Twitter", dd:o.Twitter}); %} {% include('dtd', {dt: "Birthdate", dd:formatDate(o.birthdate)}); %}
               </dl>
@@ -1793,7 +1809,8 @@ left: 35%;
               {% include('dtd', {dt: "Rapporteur of", dd:o.activities.REPORT}); %} {% include('dtd', {dt: "Motions", dd:o.activities.MOTION}); %} {% include('dtd', {dt: "Shadow rapporteur", dd:o.activities['REPORT-SHADOW']}); %} {% include('dtd', {dt: "Opinions", dd:o.activities.COMPARL}); %} {% include('dtd', {dt: "Opinion shadow", dd:o.activities['OPINION-SHADOW']}); %} {% include('dtd', {dt: "Declarations", dd:o.activities.WECL}); %} {% include('dtd', {dt: "Questions", dd:o.activities.QP}); %} {% include('dtd', {dt: "Speeches", dd:o.activities.CRE}); %}
               </dl>
             </div>
-            <div class="col-md-4 hidden feed">
+            <div class="col-md-6 CV">
+{% include('cv',{cv: o.CV}); %}
             </div>
           </div>
         </div>
