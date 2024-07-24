@@ -139,8 +139,8 @@ var iconify = function(name, prefix) {
       graph.yAxis().ticks(0);
       return graph;
     }
-
-    function drawGroup(dom) {
+    
+    function drawGroupPie(dom) {
       const width = getWidth (dom);
       var graph = dc.pieChart(dom).innerRadius(40) //.radius(70);
       var dim = ndx.dimension(function(d) {
@@ -163,6 +163,56 @@ var iconify = function(name, prefix) {
         .externalLabels(-26)
         .minAngleForLabel(0.2);
 //        .legend(dc.legend().horizontal(true).autoItemWidth(true).y(200));
+      return graph;
+    }
+      function rotateBarChartLabels(dom) {
+        d3.selectAll(dom + ' .axis.x text')
+          .style("text-anchor", "start")
+          .attr("transform", function(d) {
+            return "rotate(-90, -4, 9), translate(10,0) ";
+          });
+      }
+
+    function drawGroup(dom) {
+      const width = getWidth (dom);
+      var graph = dc.barChart(dom);
+      var dim = ndx.dimension(function(d) {
+        if (typeof d.eugroup == "undefined") return "???";
+        return d.eugroup;
+      });
+      var group = dim.group().reduceSum(function(d) {
+        return 1;
+      });
+      graph
+        .width(width)
+        .height(0)
+        .ordering(function(d){return d.key;})
+        .colorCalculator(function(d, i) {
+          return eu_groups[d.key];
+          //return color(d.value.score/d.value.count);
+        })
+        .dimension(dim)
+        .group(group)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .yAxisLabel("#MEPs")
+        .margins({
+          top: 0,
+          right: 0,
+          bottom: 42,
+          left: 50
+        })
+        .ordering(d => { console.log(d);return -d.value; })
+
+        .on('pretransition', function(c) {
+        d3.selectAll(dom + ' .axis.x text')
+          .style("text-anchor", "end")
+          .attr("transform", function(d) {
+            return "translate(-9,0),rotate(-30, 0, 0)";
+          });
+        //  rotateBarChartLabels(dom);
+        });
       return graph;
     }
 
@@ -195,18 +245,11 @@ var iconify = function(name, prefix) {
         .dimension(dim)
         .group(group)
         .on('pretransition', function(c) {
-          rotateBarChartLabels();
+          rotateBarChartLabels(dom);
         });
       graph.xAxis().ticks(3);
       return graph;
 
-      function rotateBarChartLabels() {
-        d3.selectAll(dom + ' .axis.x text')
-          .style("text-anchor", "start")
-          .attr("transform", function(d) {
-            return "rotate(-90, -4, 9), translate(10,0) ";
-          });
-      }
     }
 
     function drawNumbers(graphs) {
@@ -818,7 +861,7 @@ var iconify = function(name, prefix) {
            graphs.newbieG = drawNewbie(".newbie .graph");
       graphs.group = drawGroup(".group .panel-body");
       graphs.gender = drawGender(".women .graph");
-      graphs.genderPie = drawGenderPie(".gender .panel-body");
+//      graphs.genderPie = drawGenderPie(".gender .panel-body");
       graphs.table = drawTable("#table");
       graphs.search = drawTextSearch('#input-filter', jQuery);
       graphs.total.on("postRedraw", function() {setUrl()});
@@ -1139,13 +1182,13 @@ function download_excel() {
         </div>
         <div class="row">
 
-          <div class="col-xs-6"><div class="group panel panel-default">
+          <div class="col-xs-12"><div class="group panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><a data-toggle="collapse" data-target=".group .panel-body" href="#">Groups</a></h3>
           </div>
           <div class="panel-body collapse in"></div>
             </div></div>
-            <div class="col-xs-6"><div class="gender panel panel-default">
+            <div class="col-xs-6 hidden"><div class="gender panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><a href="#" data-toggle="collapse" data-target=".gender .panel-body">Gender</a></h3>
           </div>
