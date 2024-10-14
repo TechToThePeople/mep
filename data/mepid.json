@@ -1720,14 +1720,6 @@
 		"seat": null
 	},
 	{
-		"id": 197441,
-		"firstName": "Predrag Fred",
-		"lastName": "MATIĆ",
-		"group": "S&D",
-		"country": "hr",
-		"seat": null
-	},
-	{
 		"id": 197443,
 		"firstName": "Andreas",
 		"lastName": "GLÜCK",
@@ -1997,14 +1989,6 @@
 		"lastName": "KOPACZ",
 		"group": "EPP",
 		"country": "pl",
-		"seat": null
-	},
-	{
-		"id": 197526,
-		"firstName": "Martin",
-		"lastName": "HLAVÁČEK",
-		"group": "Patriots",
-		"country": "cz",
 		"seat": null
 	},
 	{
@@ -3408,14 +3392,6 @@
 		"seat": null
 	},
 	{
-		"id": 256854,
-		"firstName": "Balázs",
-		"lastName": "GYŐRFFY",
-		"group": "Patriots",
-		"country": "hu",
-		"seat": null
-	},
-	{
 		"id": 256855,
 		"firstName": "Pál",
 		"lastName": "SZEKERES",
@@ -3696,14 +3672,6 @@
 		"seat": null
 	},
 	{
-		"id": 256894,
-		"firstName": "Sylvie",
-		"lastName": "JOSSERAND",
-		"group": "Patriots",
-		"country": "fr",
-		"seat": null
-	},
-	{
 		"id": 256895,
 		"firstName": "Julien",
 		"lastName": "LEONARDELLI",
@@ -3715,14 +3683,6 @@
 		"id": 256896,
 		"firstName": "Angéline",
 		"lastName": "FURET",
-		"group": "Patriots",
-		"country": "fr",
-		"seat": null
-	},
-	{
-		"id": 256897,
-		"firstName": "Gaëtan",
-		"lastName": "DUSSAUSAYE",
 		"group": "Patriots",
 		"country": "fr",
 		"seat": null
@@ -4050,7 +4010,7 @@
 	{
 		"id": 256945,
 		"firstName": "Irmhild",
-		"lastName": "BOSSDORF",
+		"lastName": "BOẞDORF",
 		"group": "ESN",
 		"country": "de",
 		"seat": null
@@ -4378,7 +4338,7 @@
 	{
 		"id": 256994,
 		"firstName": "Idoia",
-		"lastName": "MENDIA CUEVA",
+		"lastName": "MENDIA",
 		"group": "S&D",
 		"country": "es",
 		"seat": null
@@ -4417,7 +4377,7 @@
 	},
 	{
 		"id": 256999,
-		"firstName": "Rosa María",
+		"firstName": "Rosa",
 		"lastName": "SERRANO SIERRA",
 		"group": "S&D",
 		"country": "es",
@@ -4720,14 +4680,6 @@
 		"seat": null
 	},
 	{
-		"id": 257042,
-		"firstName": "Marcin",
-		"lastName": "KIERWIŃSKI",
-		"group": "EPP",
-		"country": "pl",
-		"seat": null
-	},
-	{
 		"id": 257043,
 		"firstName": "Maravillas",
 		"lastName": "ABADÍA JOVER",
@@ -4899,7 +4851,7 @@
 		"id": 257064,
 		"firstName": "Anna",
 		"lastName": "BRYŁKA",
-		"group": "NA",
+		"group": "Patriots",
 		"country": "pl",
 		"seat": null
 	},
@@ -4963,7 +4915,7 @@
 		"id": 257072,
 		"firstName": "Tomasz",
 		"lastName": "BUCZEK",
-		"group": "NA",
+		"group": "Patriots",
 		"country": "pl",
 		"seat": null
 	},
@@ -5749,6 +5701,46 @@
 		"lastName": "MARAN",
 		"group": "S&D",
 		"country": "it",
+		"seat": null
+	},
+	{
+		"id": 260035,
+		"firstName": "Marko",
+		"lastName": "VEŠLIGAJ",
+		"group": "S&D",
+		"country": "hr",
+		"seat": null
+	},
+	{
+		"id": 260724,
+		"firstName": "Csaba",
+		"lastName": "DÖMÖTÖR",
+		"group": "Patriots",
+		"country": "hu",
+		"seat": null
+	},
+	{
+		"id": 261038,
+		"firstName": "Tomáš",
+		"lastName": "KUBÍN",
+		"group": "Patriots",
+		"country": "cz",
+		"seat": null
+	},
+	{
+		"id": 261796,
+		"firstName": "Séverine",
+		"lastName": "WERBROUCK",
+		"group": "Patriots",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 261797,
+		"firstName": "Christophe",
+		"lastName": "BAY",
+		"group": "Patriots",
+		"country": "fr",
 		"seat": null
 	}
 ]

@@ -45,13 +45,21 @@ const main = module.exports = async function main(fn) {
 		csv.pipe(out);
 
 		const out_all = fs.createWriteStream(path.resolve(__dirname,"../data/meps.all.csv"));
-		const csv_all = wsv({ preset: "csv", header: [ 'epid','firstname','lastname','active','start','start9','end','birthdate','country','gender','eugroup','party','email','twitter','term','start8' ] });
+		const csv_all = wsv({ preset: "csv", header: [ 'epid','firstname','lastname','active','start','start10','end','birthdate','country','gender','eugroup','party','email','twitter','term','start8', 'start9' ] });
 		csv_all.pipe(out_all);
 		
-		fs.createReadStream(src).pipe(jsonstream.parse('.*')).pipe(new stream.Transform({
+		fs.createReadStream(src).
+on('data', (chunk) => {
+  console.log(chunk.toString()); // Convert chunk to string if needed
+}).
+pipe(jsonstream.parse('.*')).
+on('data', (row) => {
+  console.log("data",row); // Convert chunk to string if needed
+}).
+
+pipe(new stream.Transform({
 			objectMode: true,
 			transform: function(r, encoding, done) {
-
 				// very fancy spinner
 				total++;
 				if (process.stdout.isTTY) process.stdout.write("[aliases] "+spinner[total%spinner.length]+"\r");
@@ -103,6 +111,9 @@ const main = module.exports = async function main(fn) {
 						return c.term === 8;
 					})||{}).start || null),
 					start9: ((constituencies.find(function(c){
+						return c.term === 9;
+					})||{}).start || null),
+					start10: ((constituencies.find(function(c){
 						return c.term === 9;
 					})||{}).start || null),
 
