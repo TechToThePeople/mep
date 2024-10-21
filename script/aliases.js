@@ -49,14 +49,7 @@ const main = module.exports = async function main(fn) {
 		csv_all.pipe(out_all);
 		
 		fs.createReadStream(src).
-on('data', (chunk) => {
-  console.log(chunk.toString()); // Convert chunk to string if needed
-}).
 pipe(jsonstream.parse('.*')).
-on('data', (row) => {
-  console.log("data",row); // Convert chunk to string if needed
-}).
-
 pipe(new stream.Transform({
 			objectMode: true,
 			transform: function(r, encoding, done) {
@@ -114,7 +107,7 @@ pipe(new stream.Transform({
 						return c.term === 9;
 					})||{}).start || null),
 					start10: ((constituencies.find(function(c){
-						return c.term === 9;
+						return c.term === 10;
 					})||{}).start || null),
 
 					// latest constituency
