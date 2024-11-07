@@ -1,8 +1,8 @@
 dxid,country,first_name,last_name,email,birthdate,gender,eugroup,party,phone,office,committee,substitute,delegation,twitter,epid,since,AFCO,AFET,AGRI,AIDA,ANIT,BECA,BUDG,CONT,COVI,CULT,DEVE,DROI,ECON,EMPL,ENVI,FEMM,FISC,IMCO,ING2,INGE,INTA,ITRE,JURI,LIBE,PECH,PEGA,PETI,REGI,SANT,SEDE,TRAN
-zk96h,pl,Hanna,GRONKIEWICZ-WALTZ,hanna.gronkiewicz-waltz@europarl.europa.eu,1952-11-04,,EPP,Platforma Obywatelska,003222845565,12E116,,,,,262021,2024-10-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-5k9_h,fr,Christophe,BAY,christophe.bay@europarl.europa.eu,1962-09-06,,Patriots,Rassemblement national,,05M055,INTA,ITRE,D-TR,,261797,2024-09-27,,,,,,,,,,,,,,,,,,,,,M,S,,,,,,,,,
-7k9_g,fr,Séverine,WERBROUCK,severine.werbrouck@europarl.europa.eu,1978-10-31,,Patriots,Rassemblement national,,06M071,EMPL,DROI,DSAS,,261796,2024-09-27,,,,,,,,,,,,S,,M,,,,,,,,,,,,,,,,,
-fk87s,cz,Tomáš,KUBÍN,tomas.kubin@europarl.europa.eu,1962-07-24,,Patriots,ANO 2011,003222845022,04M081,"AGRI|FISC",ECON,D-IQ,,261038,2024-08-01,,,M,,,,,,,,,,S,,,,M,,,,,,,,,,,,,,
+zk96h,pl,Hanna,GRONKIEWICZ-WALTZ,hanna.gronkiewicz-waltz@europarl.europa.eu,1952-11-04,,EPP,Platforma Obywatelska,003222845565,12E116,ENVI,ECON,,,262021,2024-10-10,,,,,,,,,,,,,S,,M,,,,,,,,,,,,,,,,
+5k9_h,fr,Christophe,BAY,christophe.bay@europarl.europa.eu,1962-09-06,,Patriots,Rassemblement national,003222845729,05M055,INTA,ITRE,D-TR,,261797,2024-09-27,,,,,,,,,,,,,,,,,,,,,M,S,,,,,,,,,
+7k9_g,fr,Séverine,WERBROUCK,severine.werbrouck@europarl.europa.eu,1978-10-31,,Patriots,Rassemblement national,003222845847,06M071,EMPL,DROI,DSAS,,261796,2024-09-27,,,,,,,,,,,,S,,M,,,,,,,,,,,,,,,,,
+fk87s,cz,Tomáš,KUBÍN,tomas.kubin@europarl.europa.eu,1962-07-24,,Patriots,ANO 2011,003222845022,04M081,"AGRI|FISC|ECON",,D-IQ,,261038,2024-08-01,,,M,,,,,,,,,,M,,,,M,,,,,,,,,,,,,,
 bk8yz,hu,Csaba,DÖMÖTÖR,csaba.domotor@europarl.europa.eu,1982-09-13,,Patriots,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,,03M103,"AGRI|PECH",,,,260724,2024-09-22,,,M,,,,,,,,,,,,,,,,,,,,,,M,,,,,,
 4k78f,hr,Marko,VEŠLIGAJ,marko.vesligaj@europarl.europa.eu,,,S&D,Socijaldemokratska partija Hrvatske,003222845425,11G317,FEMM,"AGRI|AFET","OACPS|DPAC",,260035,2024-09-05,,S,S,,,,,,,,,,,,,V,,,,,,,,,,,,,,,
 sk5_9,it,Pierfrancesco,MARAN,pierfrancesco.maran@europarl.europa.eu,1980-05-27,M,S&D,Partito Democratico,003222845654,15G146,IMCO,EMPL,"DSEE|DEPA",,257727,2024-07-16,,,,,,,,,,,,,,S,,,,M,,,,,,,,,,,,,
@@ -18,7 +18,7 @@ _k5lx,ie,Ciaran,MULLOOLY,ciaran.mullooly@europarl.europa.eu,1966-09-04,M,Renew,I
 9k5ks,bg,Rada,LAYKOVA,rada.laykova@europarl.europa.eu,1990-04-03,F,ESN,Revival,003222845832,02M081,ECON,IMCO,DASE,,257262,2024-07-16,,,,,,,,,,,,,M,,,,,S,,,,,,,,,,,,,
 ck5kr,bg,Ilia,LAZAROV,ilia.lazarov@europarl.europa.eu,1965-09-19,M,EPP,Union of Democratic Forces,003222845951,08F258,INTA,AGRI,DLAT,,257261,2024-07-16,,,S,,,,,,,,,,,,,,,,,,M,,,,,,,,,,
 fk5kq,bg,Petar,VOLGIN,petar.volgin@europarl.europa.eu,1969-09-28,M,ESN,Revival,003222845887,02M083,EMPL,"LIBE|AFET|ITRE",D-IL,,257260,2024-07-16,,S,,,,,,,,,,,,M,,,,,,,,S,,S,,,,,,,
-hk5kp,bg,Nikola,MINCHEV,nikola.minchev@europarl.europa.eu,1987-09-13,M,Renew,We continue the change – Democratic Bulgaria,003222845546,10G154,IMCO,"LIBE|CULT",D-JP,,257259,2024-07-16,,,,,,,,,,S,,,,,,,,V,,,,,,S,,,,,,,
+hk5kp,bg,Nikola,MINCHEV,nikola.minchev@europarl.europa.eu,1987-09-13,M,Renew,We continue the change – Democratic Bulgaria,003222845546,10G152,IMCO,"LIBE|CULT",D-JP,,257259,2024-07-16,,,,,,,,,,S,,,,,,,,V,,,,,,S,,,,,,,
 kk5kn,bg,Ivaylo,VALCHEV,ivaylo.valchev@europarl.europa.eu,1972-01-09,M,ECR,There Is Such a People,003222845940,05U041,"CULT|PETI","AFET|IMCO",D-MK,,257258,2024-07-16,,S,,,,,,,,M,,,,,,,,S,,,,,,,,,M,,,,
 mk5km,bg,Hristo,PETROV,hristo.petrov@europarl.europa.eu,1979-12-19,M,Renew,We continue the change – Democratic Bulgaria,003222845567,10G115,CULT,EMPL,D-MK,,257257,2024-07-16,,,,,,,,,,V,,,,S,,,,,,,,,,,,,,,,,
 pk5kl,bg,Taner,KABILOV,taner.kabilov@europarl.europa.eu,1987-04-28,M,Renew,Movement for Rights and Freedoms,003222845961,09G351,REGI,TRAN,DSCA,,257256,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,M,,,S
@@ -99,11 +99,11 @@ sk5c3,pt,Sebastião,BUGALHO,sebastiao.bugalho@europarl.europa.eu,,M,EPP,Independ
 vk5c2,pl,Piotr,MÜLLER,piotr.muller@europarl.europa.eu,1989-05-02,M,ECR,Prawo i Sprawiedliwość,003222845776,06U001,IMCO,PECH,,,257080,2024-07-16,,,,,,,,,,,,,,,,,,M,,,,,,,S,,,,,,
 xk5c1,pt,Sérgio,GONÇALVES,sergio.sousagoncalves@europarl.europa.eu,1979-04-07,M,S&D,Partido Socialista,003222845554,09G130,"REGI|TRAN",PECH,D-ZA,,257079,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,S,,,M,,,M
 zk5c0,pt,Paulo,CUNHA,pauloalexandre.matoscunha@europarl.europa.eu,1971-08-22,M,EPP,Partido Social Democrata,003222845248,08E130,LIBE,"CONT|ITRE|PETI",,,257078,2024-07-16,,,,,,,,S,,,,,,,,,,,,,,S,,M,,,S,,,,
-0k5c_,pl,Marlena,MALĄG,marlena.malag@europarl.europa.eu,1964-11-02,F,ECR,Prawo i Sprawiedliwość,003222845687,06U037,"EMPL|ECON",IMCO,D-TR,,257077,2024-07-16,,,,,,,,,,,,,M,M,,,,S,,,,,,,,,,,,,
+0k5c_,pl,Marlena,MALĄG,marlena.malag@europarl.europa.eu,1964-11-02,F,ECR,Prawo i Sprawiedliwość,003222845687,06U037,"EMPL|ECON",IMCO,D-TR,,257077,2024-07-16,,,,,,,,,,,,,V,M,,,,S,,,,,,,,,,,,,
 2k5cz,pl,Michał,DWORCZYK,michal.dworczyk@europarl.europa.eu,1975-07-22,M,ECR,Prawo i Sprawiedliwość,003222845505,06U006,"IMCO|SEDE",AFET,"D-UA|DEPA",,257076,2024-07-16,,S,,,,,,,,,,,,,,,,M,,,,,,,,,,,,M,
 4k5cy,pt,Isilda,GOMES,isilda.gomes@europarl.europa.eu,1951-09-16,F,S&D,Partido Socialista,003222845542,13G253,"EMPL|PETI",CULT,DLAT,,257075,2024-07-16,,,,,,,,,,S,,,,M,,,,,,,,,,,,,M,,,,
 8k5cw,pl,Tobiasz,BOCHEŃSKI,tobiasz.bochenski@europarl.europa.eu,1987-12-15,M,ECR,Prawo i Sprawiedliwość,003222845284,05U049,"JURI|BUDG",AFCO,"D-CN|D-RU",,257073,2024-07-16,S,,,,,,M,,,,,,,,,,,,,,,,M,,,,,,,,
-bk5cv,pl,Tomasz,BUCZEK,tomasz.buczek@europarl.europa.eu,1986-04-24,M,Patriots,Konfederacja Wolność i Niepodległość,003222845524,06G358,,IMCO,D-ME,,257072,2024-07-16,,,,,,,,,,,,,,,,,,S,,,,,,,,,,,,,
+bk5cv,pl,Tomasz,BUCZEK,tomasz.buczek@europarl.europa.eu,1986-04-24,M,Patriots,Konfederacja Wolność i Niepodległość,003222845524,06G358,BUDG,IMCO,"D-ME|DMED",,257072,2024-07-16,,,,,,,M,,,,,,,,,,,S,,,,,,,,,,,,,
 fk5ct,pt,Carla,TAVARES,carlamaria.nunestavares@europarl.europa.eu,1970-08-15,F,S&D,Partido Socialista,003222845222,13G269,"CONT|BUDG","DEVE|ECON|FEMM","D-RU|D-IN|DEPA",,257071,2024-07-16,,,,,,,M,M,,,S,,S,,,S,,,,,,,,,,,,,,,
 hk5cs,pl,Marcin,SYPNIEWSKI,marcin.sypniewski@europarl.europa.eu,1979-01-30,M,ESN,Konfederacja Wolność i Niepodległość,003222845882,02M089,"ITRE|PETI",JURI,"DCAB|DCAR",,257070,2024-07-16,,,,,,,,,,,,,,,,,,,,,,M,S,,,,M,,,,
 kk5cr,pl,Ewa,ZAJĄCZKOWSKA-HERNIK,ewa.zajaczkowska-hernik@europarl.europa.eu,1990-01-20,F,ESN,Konfederacja Wolność i Niepodległość,003222845895,02M109,LIBE,"ECON|FISC",DMER,,257069,2024-07-16,,,,,,,,,,,,,S,,,,S,,,,,,,M,,,,,,,
@@ -111,7 +111,7 @@ mk5cq,pt,Hélder,SOUSA SILVA,helder.sousasilva@europarl.europa.eu,1965-07-21,M,E
 pk5cp,pl,Grzegorz,BRAUN,grzegorz.braun@europarl.europa.eu,1967-03-11,M,NA,Konfederacja Korony Polskiej,003222875444,06G340,AFET,CONT,D-RU,,257067,2024-07-16,,M,,,,,,S,,,,,,,,,,,,,,,,,,,,,,,
 rk5cn,pt,André,RODRIGUES,andre.franqueirarodrigues@europarl.europa.eu,1977-02-12,M,S&D,Partido Socialista,003222845826,13G318,"AGRI|PECH","TRAN|ENVI",D-US,,257066,2024-07-16,,,M,,,,,,,,,,,,S,,,,,,,,,,M,,,,,,S
 tk5cm,pt,Sérgio,HUMBERTO,sergio.humberto@europarl.europa.eu,1975-11-07,M,EPP,Aliança Democrática,003222845531,08E115,"TRAN|EMPL",ENVI,"D-MX|DLAT",,257065,2024-07-16,,,,,,,,,,,,,,M,S,,,,,,,,,,,,,,,,M
-wk5cl,pl,Anna,BRYŁKA,anna.brylka@europarl.europa.eu,1990-09-01,F,Patriots,Konfederacja Wolność i Niepodległość,003222845517,06G351,,ITRE,D-AF,,257064,2024-07-16,,,,,,,,,,,,,,,,,,,,,,S,,,,,,,,,
+wk5cl,pl,Anna,BRYŁKA,anna.brylka@europarl.europa.eu,1990-09-01,F,Patriots,Konfederacja Wolność i Niepodległość,003222845517,06G351,INTA,ITRE,"D-AF|DEPA",,257064,2024-07-16,,,,,,,,,,,,,,,,,,,,,M,S,,,,,,,,,
 yk5ck,pt,Catarina,MARTINS,catarina.martins@europarl.europa.eu,1973-09-07,F,GUE/NGL,Bloco de Esquerda,003222845846,07H146,"ENVI|SANT","EMPL|ITRE|ECON","D-BR|DCAB|OACPS",,257063,2024-07-16,,,,,,,,,,,,,S,S,M,,,,,,,S,,,,,,,M,,
 _k5cj,pl,Stanisław,TYSZKA,stanislaw.tyszka@europarl.europa.eu,1979-04-11,M,ESN,Konfederacja Wolność i Niepodległość,003222845883,02M099,AFCO,BUDG,D-US,,257062,2024-07-16,M,,,,,,S,,,,,,,,,,,,,,,,,,,,,,,,
 1k5ch,pt,Ana,VASCONCELOS,ana.vasconcelosmartins@europarl.europa.eu,1985-03-14,F,Renew,Iniciativa Liberal,003222845730,10G157,ENVI,TRAN,"D-CL|DLAT",,257061,2024-07-16,,,,,,,,,,,,,,,M,,,,,,,,,,,,,,,,S
@@ -141,13 +141,13 @@ lk5br,pl,Michał,KOBOSKO,michal.kobosko@europarl.europa.eu,1968-04-15,M,Renew,Po
 qk5bp,es,Alma,EZCURRA ALMANSA,alma.ezcurra@europarl.europa.eu,1986-12-11,F,EPP,Partido Popular,003222845398,10E130,"CULT|PETI","LIBE|FEMM",DMER,,257035,2024-07-16,,,,,,,,,,M,,,,,,S,,,,,,,,S,,,M,,,,
 sk5bn,es,Carmen,CRESPO DÍAZ,mariacarmen.crespodiaz@europarl.europa.eu,1966-12-08,F,EPP,Partido Popular,003222845241,10E254,"AGRI|PECH",ENVI,D-CA,,257034,2024-07-16,,,M,,,,,,,,,,,,S,,,,,,,,,,C,,,,,,
 vk5bm,dk,Niels Flemming,HANSEN,niels.hansen@europarl.europa.eu,1974-05-16,M,EPP,Det Konservative Folkeparti,003222845508,08E258,ITRE,ENVI,D-IN,,257033,2024-07-16,,,,,,,,,,,,,,,S,,,,,,,M,,,,,,,,,
-xk5bl,pl,Kamila,GASIUK-PIHOWICZ,kamila.gasiuk-pihowicz@europarl.europa.eu,1983-05-08,F,EPP,Platforma Obywatelska,003222845412,12E101,IMCO,AFCO,D-US,,257032,2024-07-16,S,,,,,,,,,,,,,,,,,V,,,,,,,,,,,,,
+xk5bl,pl,Kamila,GASIUK-PIHOWICZ,kamila.gasiuk-pihowicz@europarl.europa.eu,1983-05-08,F,EPP,Platforma Obywatelska,003222845412,12E101,IMCO,"AFCO|ITRE",D-US,,257032,2024-07-16,S,,,,,,,,,,,,,,,,,V,,,,S,,,,,,,,,
 zk5bk,pl,Dariusz,JOŃSKI,dariusz.jonski@europarl.europa.eu,1979-01-12,M,EPP,Inicjatywa Polska,003222845947,13E153,"PETI|TRAN",INTA,"DCAB|OACPS",,257031,2024-07-16,,,,,,,,,,,,,,,,,,,,,S,,,,,,M,,,,M
 0k5bj,es,Raúl,DE LA HOZ QUINTANO,raul.delahoz@europarl.europa.eu,1973-05-04,M,EPP,Partido Popular,003222845264,10E242,ITRE,"EMPL|REGI|ENVI",DLAT,,257030,2024-07-16,,,,,,,,,,,,,,S,S,,,,,,,M,,,,,,S,,,
 2k5bh,es,Jorge,MARTÍN FRÍAS,jorge.martinfrias@europarl.europa.eu,1980-04-08,M,Patriots,VOX,003222845392,05M021,"ECON|IMCO|DROI",AFET,"D-MX|DLAT",,257029,2024-07-16,,S,,,,,,,,,,M,M,,,,,M,,,,,,,,,,,,,
 4k5bg,dk,Henrik,DAHL,henrik.dahl@europarl.europa.eu,1960-02-20,M,EPP,Liberal Alliance,003222845259,08E254,"IMCO|EMPL",,,,257028,2024-07-16,,,,,,,,,,,,,,M,,,,M,,,,,,,,,,,,,
 6k5bf,es,Fernando,NAVARRETE ROJAS,fernando.navarrete@europarl.europa.eu,1976-01-24,M,EPP,Partido Popular,003222845765,09E258,"BUDG|ECON|FISC",ITRE,D-BR,,257027,2024-07-16,,,,,,,M,,,,,,M,,,,M,,,,,S,,,,,,,,,
-8k5bd,pl,Michał,SZCZERBA,michal.szczerba@europarl.europa.eu,1977-12-14,M,EPP,Platforma Obywatelska,003222845804,13E262,AFET,"ITRE|SEDE",DSCA,,257026,2024-07-16,,M,,,,,,,,,,,,,,,,,,,,S,,,,,,,,S,
+8k5bd,pl,Michał,SZCZERBA,michal.szczerba@europarl.europa.eu,1977-12-14,M,EPP,Platforma Obywatelska,003222845804,13E262,AFET,"ITRE|SEDE","DSCA|D-UA",,257026,2024-07-16,,M,,,,,,,,,,,,,,,,,,,,S,,,,,,,,S,
 bk5bc,dk,Kristoffer,STORM,kristoffer.storm@europarl.europa.eu,1989-01-26,M,ECR,Danmarksdemokraterne,003222845926,01U026,DEVE,"ENVI|ECON","DAFR|OACPS|DPAP",,257025,2024-07-16,,,,,,,,,,,M,,S,,S,,,,,,,,,,,,,,,,
 dk5bb,es,Mireia,BORRÁS PABÓN,mireia.borras@europarl.europa.eu,1986-10-14,F,Patriots,VOX,003222845959,05M121,"AGRI|FEMM","PETI|REGI|ENVI","DMER|DLAT",,257024,2024-07-16,,,M,,,,,,,,,,,,S,M,,,,,,,,,,,S,S,,,
 jk499,dk,Per,CLAUSEN,per.clausen@europarl.europa.eu,1955-02-20,M,GUE/NGL,Enhedslisten,003222845660,07H242,EMPL,"ITRE|ENVI","D-BY|DEPA",,257023,2024-07-16,,,,,,,,,,,,,,M,S,,,,,,,S,,,,,,,,,
@@ -156,7 +156,7 @@ nk497,es,Diego,SOLIER,diego.solierfernandez@europarl.europa.eu,1980-04-26,M,NA,S
 qk496,dk,Stine,BOSSE,stine.bosse@europarl.europa.eu,1960-12-21,F,Renew,Moderaterne,003222845221,09G111,"ENVI|SANT",BUDG,DPAP,,257020,2024-07-16,,,,,,,S,,,,,,,,M,,,,,,,,,,,,,,V,,
 sk495,es,Alvise,PÉREZ,luisalvise.perezfernandez@europarl.europa.eu,1990-02-26,M,NA,Se Acabó la Fiesta,003222845873,03F265,AGRI,LIBE,DLAT,,257019,2024-07-16,,,M,,,,,,,,,,,,,,,,,,,,,S,,,,,,,
 vk494,sk,Branislav,ONDRUŠ,branislav.ondrus@europarl.europa.eu,1973-03-28,M,NA,Hlas – sociálna demokracia,003222845924,03M059,EMPL,INTA,D-MK,,257018,2024-07-16,,,,,,,,,,,,,,M,,,,,,,S,,,,,,,,,,
-zk492,es,Vicent,MARZÀ IBÁÑEZ,vicent.marzaibanez@europarl.europa.eu,1983-03-03,M,Greens/EFA,Compromís,003222845382,04E246,TRAN,INTA,DMAG,,257016,2024-07-16,,,,,,,,,,,,,,,,,,,,,S,,,,,,,,,,M
+zk492,es,Vicent,MARZÀ IBÁÑEZ,vicent.marzaibanez@europarl.europa.eu,1983-03-03,M,Greens/EFA,Compromís,003222845382,04E240,TRAN,INTA,DMAG,,257016,2024-07-16,,,,,,,,,,,,,,,,,,,,,S,,,,,,,,,,M
 0k491,es,Jaume,ASENS LLODRÀ,jaume.asens@europarl.europa.eu,1972-03-29,M,Greens/EFA,Movimiento Sumar,003222845220,06E266,"LIBE|DROI",AFET,DPAL,,257015,2024-07-16,,S,,,,,,,,,,M,,,,,,,,,,,,M,,,,,,,
 2k490,sk,Veronika,CIFROVÁ OSTRIHOŇOVÁ,veronika.ostrihonova@europarl.europa.eu,1989-02-03,F,Renew,Progresívne Slovensko,003222845266,08G116,LIBE,FEMM,D-UK,,257014,2024-07-16,,,,,,,,,,,,,,,,S,,,,,,,,M,,,,,,,
 4k49_,sk,Ľubica,KARVAŠOVÁ,lubica.karvasova@europarl.europa.eu,,F,Renew,Progresívne Slovensko,003222845519,08G146,"AFCO|REGI",INTA,DKOR,,257013,2024-07-16,M,,,,,,,,,,,,,,,,,,,,S,,,,,,,V,,,
@@ -168,9 +168,9 @@ kk49t,sk,Erik,KALIŇÁK,erik.kalinak@europarl.europa.eu,1991-09-09,M,NA,SMER-Soc
 pk49r,sk,Ľuboš,BLAHA,lubos.blaha@europarl.europa.eu,1979-12-07,M,NA,SMER-Sociálna demokracia,003222845410,03M069,"AFET|DROI",EMPL,"DAND|D-RU|DLAT",,257005,2024-07-16,,M,,,,,,,,,,M,,S,,,,,,,,,,,,,,,,,
 tk49p,nl,Jeannette,BALJEU,jeannettenicole.baljeu@europarl.europa.eu,1967-08-07,F,Renew,Volkspartij voor Vrijheid en Democratie,003222845216,10G351,IMCO,ENVI,D-CN,,257003,2024-07-16,,,,,,,,,,,,,,,S,,,M,,,,,,,,,,,,,
 wk49n,es,José,CEPEDA,jose.cepeda@europarl.europa.eu,1968-07-19,M,S&D,Partido Socialista Obrero Español,003222845292,14G165,"CONT|JURI",IMCO,"DCAM|DLAT",,257002,2024-07-16,,,,,,,,M,,,,,,,,,,S,,,,,M,,,,,,,,
-yk49m,es,Elena,SANCHO MURILLO,elena.sanchomurillo@europarl.europa.eu,1989-01-26,F,S&D,Partido Socialista Obrero Español,,14G153,ITRE,"AGRI|ENVI",DMED,,257001,2024-07-16,,,S,,,,,,,,,,,,S,,,,,,,M,,,,,,,,,
+yk49m,es,Elena,SANCHO MURILLO,elena.sanchomurillo@europarl.europa.eu,1989-01-26,F,S&D,Partido Socialista Obrero Español,003222845868,14G153,ITRE,"AGRI|ENVI",DMED,,257001,2024-07-16,,,S,,,,,,,,,,,,S,,,,,,,M,,,,,,,,,
 _k49l,hr,Stephen Nikola,BARTULICA,stephennikola.bartulica@europarl.europa.eu,,M,ECR,Dom i nacionalno okupljanje,003222845272,07U043,"ECON|PECH","CULT|SEDE",DLAT,,257000,2024-07-16,,,,,,,,,,S,,,M,,,,,,,,,,,,M,,,,,S,
-1k49k,es,Rosa,SERRANO SIERRA,rosa.serranosierra@europarl.europa.eu,1969-11-11,F,S&D,Partido Socialista Obrero Español,003222845186,14G113,TRAN,REGI,D-CN,,256999,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,S,,,M
+1k49k,es,Rosa,SERRANO SIERRA,rosa.serranosierra@europarl.europa.eu,1969-11-11,F,S&D,Partido Socialista Obrero Español,003222845186,14G115,TRAN,REGI,D-CN,,256999,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,S,,,M
 3k49j,nl,Rachel,BLOM,rachel.blom@europarl.europa.eu,1987-10-07,F,Patriots,Partij voor de Vrijheid,003222845262,07M031,"EMPL|TRAN",,DSEE,,256998,2024-07-16,,,,,,,,,,,,,,M,,,,,,,,,,,,,,,,,M
 5k49h,es,Sandra,GÓMEZ LÓPEZ,sandra.gomezlopez@europarl.europa.eu,1985-07-23,F,S&D,Partido Socialista Obrero Español,003222845547,14G130,"BUDG|PETI","AFET|DROI",D-JP,,256997,2024-07-16,,S,,,,,M,,,,,S,,,,,,,,,,,,,,,M,,,,
 7k49g,nl,Sebastian,KRUIS,sebastian.kruis@europarl.europa.eu,1989-08-04,M,Patriots,Partij voor de Vrijheid,003222845267,07M015,"INTA|PETI",IMCO,DAND,,256996,2024-07-16,,,,,,,,,,,,,,,,,,S,,,M,,,,,,M,,,,
@@ -188,12 +188,12 @@ yk483,cy,Michalis,HADJIPANTELA,michael.hadjipantela@europarl.europa.eu,1974-05-2
 5k48_,nl,Ton,DIEPEVEEN,ton.diepeveen@europarl.europa.eu,1957-08-27,M,Patriots,Partij voor de Vrijheid,003222845587,07M115,"PECH|JURI",AGRI,D-UK,,256981,2024-07-16,,,S,,,,,,,,,,,,,,,,,,,,M,,M,,,,,,
 7k48z,de,Alexandra,MEHNERT,alexandra.mehnert@europarl.europa.eu,1974-08-06,F,EPP,Christlich Demokratische Union Deutschlands,003222845719,15E154,"PETI|TRAN",REGI,"D-BY|D-MX|DEPA",,256980,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,,,M,S,,,M
 9k48y,de,Oliver,SCHENK,oliver.schenk@europarl.europa.eu,1968-08-14,M,EPP,Christlich Demokratische Union Deutschlands,003222845746,14E169,"ENVI|SANT","LIBE|ITRE","D-CN|DEPA",,256979,2024-07-16,,,,,,,,,,,,,,,M,,,,,,,S,,S,,,,,M,,
-ck48x,nl,Reinier,VAN LANSCHOT,reinier.vanlanschot@europarl.europa.eu,1989-12-07,M,Greens/EFA,Volt,003222845588,04F258,"AFCO|AFET","IMCO|SEDE","DSCA|D-RU",,256978,2024-07-16,M,M,,,,,,,,,,,,,,,,S,,,,,,,,,,,,S,
+ck48x,nl,Reinier,VAN LANSCHOT,reinier.vanlanschot@europarl.europa.eu,1989-12-07,M,Greens/EFA,Volt,003222845588,04F341,"AFCO|AFET","IMCO|SEDE","DSCA|D-RU",,256978,2024-07-16,M,M,,,,,,,,,,,,,,,,S,,,,,,,,,,,,S,
 fk48w,de,Andrea,WECHSLER,andrea.wechsler@europarl.europa.eu,1977-06-19,F,EPP,Christlich Demokratische Union Deutschlands,003222845859,15E116,ITRE,"EMPL|ENVI","D-MD|DEPA",,256977,2024-07-16,,,,,,,,,,,,,,S,S,,,,,,,M,,,,,,,,,
 hk48v,nl,Brigitte,VAN DEN BERG,brigitte.vandenberg@europarl.europa.eu,1989-03-22,F,Renew,Democraten 66,003222845708,08G154,EMPL,"CULT|ITRE","DSCA|DEPA",,256976,2024-07-16,,,,,,,,,,S,,,,M,,,,,,,,S,,,,,,,,,
 nk48s,de,Verena,MERTENS,verena.mertens@europarl.europa.eu,1981-11-20,F,EPP,Christlich Demokratische Union Deutschlands,003222845744,15E115,LIBE,"CONT|FEMM","DLAT|D-CL",,256974,2024-07-16,,,,,,,,S,,,,,,,,S,,,,,,,,M,,,,,,,
 qk48r,de,Stefan,KÖHLER,stefan.koehler@europarl.europa.eu,1967-09-24,M,EPP,Christlich-Soziale Union in Bayern e.V.,003222845586,14E217,"AGRI|ENVI",PETI,D-CA,,256973,2024-07-16,,,M,,,,,,,,,,,,M,,,,,,,,,,,,S,,,,
-vk48p,de,Lukas,SIEPER,lukas.sieper@europarl.europa.eu,1997-03-22,M,NA,Partei des Fortschritts,003222845878,03F358,INTA,TRAN,"D-AF|DEPA|D-IQ",,256971,2024-07-16,,,,,,,,,,,,,,,,,,,,,M,,,,,,,,,,S
+vk48p,de,Lukas,SIEPER,lukas.sieper@europarl.europa.eu,1997-03-22,M,NA,Partei des Fortschritts,003222845878,03F358,INTA,"TRAN|AFET","D-AF|DEPA|D-IQ",,256971,2024-07-16,,S,,,,,,,,,,,,,,,,,,,M,,,,,,,,,,S
 xk48n,nl,Raquel,GARCÍA HERMIDA-VAN DER WALLE,raquel.garciahermida-vanderwalle@europarl.europa.eu,1983-05-28,F,Renew,Democraten 66,003222845381,08G162,REGI,"LIBE|FEMM","DMED|D-AF",,256970,2024-07-16,,,,,,,,,,,,,,,,S,,,,,,,,S,,,,M,,,
 zk48m,de,Friedrich,PÜRNER,friedrich.puerner@europarl.europa.eu,1967-04-24,M,NA,Bündnis Sahra Wagenknecht – Vernunft und Gerechtigkeit,003222845875,03K052,ECON,ENVI,"OACPS|DPAC",,256969,2024-07-16,,,,,,,,,,,,,M,,S,,,,,,,,,,,,,,,,
 0k48l,nl,Ingeborg,TER LAAK,ingeborg.terlaak@europarl.europa.eu,1973-02-18,F,EPP,Christen Democratisch Appèl,003222845825,08E210,ENVI,"AFET|SANT","DAFR|OACPS",,256968,2024-07-16,,S,,,,,,,,,,,,,M,,,,,,,,,,,,,,S,,
@@ -221,11 +221,11 @@ jk47v,de,Hans,NEUHOFF,hans.neuhoff@europarl.europa.eu,1959-01-10,M,ESN,Alternati
 mk47t,gr,Eleonora,MELETI,eleonora.meleti@europarl.europa.eu,1978-09-17,F,EPP,Nea Demokratia,003222845733,09E115,"CULT|EMPL|FEMM",,D-ZA,,256943,2024-07-16,,,,,,,,,,M,,,,M,,M,,,,,,,,,,,,,,,
 pk47s,de,Marc,JONGEN,marc.jongen@europarl.europa.eu,1968-05-23,M,ESN,Alternative für Deutschland,003222845758,02M121,"DEVE|ENVI","CULT|DROI","D-UK|OACPS",,256942,2024-07-16,,,,,,,,,,S,M,S,,,M,,,,,,,,,,,,,,,,
 rk47r,de,Alexander,JUNGBLUTH,alexander.jungbluth@europarl.europa.eu,1987-02-07,M,ESN,Alternative für Deutschland,003222845799,03F155,"CONT|BUDG",ECON,DMAS,,256941,2024-07-16,,,,,,,M,M,,,,,S,,,,,,,,,,,,,,,,,,
-wk47p,de,Thomas,GEISEL,thomas.geisel@europarl.europa.eu,1963-10-26,M,NA,Bündnis Sahra Wagenknecht – Vernunft und Gerechtigkeit,003222845659,03K048,BUDG,ITRE,D-IR,,256939,2024-07-16,,,,,,,M,,,,,,,,,,,,,,,S,,,,,,,,,
+wk47p,de,Thomas,GEISEL,thomas.geisel@europarl.europa.eu,1963-10-26,M,NA,Bündnis Sahra Wagenknecht – Vernunft und Gerechtigkeit,003222845659,03K056,BUDG,ITRE,D-IR,,256939,2024-07-16,,,,,,,M,,,,,,,,,,,,,,,S,,,,,,,,,
 yk47n,de,Tobias,CREMER,tobias.cremer@europarl.europa.eu,1992-06-30,M,S&D,Sozialdemokratische Partei Deutschlands,003222845423,12G115,"AFET|SEDE",,"DNAT|D-US",,256938,2024-07-16,,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,M,
 _k47m,de,Vivien,COSTANZO,vivien.costanzo@europarl.europa.eu,1990-02-06,F,S&D,Sozialdemokratische Partei Deutschlands,003222845413,12G218,TRAN,EMPL,D-TR,,256937,2024-07-16,,,,,,,,,,,,,,S,,,,,,,,,,,,,,,,,M
 1k47l,mt,Thomas,BAJADA,thomas.bajada@europarl.europa.eu,1994-06-13,M,S&D,Partit Laburista,003222845274,15G115,"PECH|ENVI",ECON,DMED,,256936,2024-07-16,,,,,,,,,,,,,S,,M,,,,,,,,,,M,,,,,,
-3k47k,de,Sabrina,REPP,sabrina.repp@europarl.europa.eu,1999-02-01,F,S&D,Sozialdemokratische Partei Deutschlands,003222845783,12G242,"CULT|REGI",FEMM,DEEA,,256935,2024-07-16,,,,,,,,,,M,,,,,,S,,,,,,,,,,,,M,,,
+3k47k,de,Sabrina,REPP,sabrina.repp@europarl.europa.eu,1999-02-01,F,S&D,Sozialdemokratische Partei Deutschlands,003222845783,12G162,"CULT|REGI",FEMM,DEEA,,256935,2024-07-16,,,,,,,,,,M,,,,,,S,,,,,,,,,,,,M,,,
 5k47j,mt,Daniel,ATTARD,daniel.attard@europarl.europa.eu,1992-04-18,M,S&D,Partit Laburista,003222845260,15G103,TRAN,"ITRE|REGI","DASE|D-IR",,256934,2024-07-16,,,,,,,,,,,,,,,,,,,,,,S,,,,,,S,,,M
 hk47c,de,René,AUST,rene.aust@europarl.europa.eu,1987-04-24,M,ESN,Alternative für Deutschland,003222845257,02M003,"ECON|INTA|FISC","EMPL|ITRE","DLAT|OACPS|DPAC",,256929,2024-07-16,,,,,,,,,,,,,M,S,,,M,,,,M,S,,,,,,,,,
 kk47b,de,Petr,BYSTRON,petr.bystron@europarl.europa.eu,1972-11-30,M,ESN,Alternative für Deutschland,003222845534,02M059,"EMPL|AFET|IMCO",,"DCAS|D-TR",,256928,2024-07-16,,M,,,,,,,,,,,,M,,,,M,,,,,,,,,,,,,
@@ -280,7 +280,7 @@ yk45p,fr,Matthieu,VALET,matthieu.valet@europarl.europa.eu,1986-01-04,M,Patriots,
 _k45n,fr,Mélanie,DISDIER,melanie.disdier@europarl.europa.eu,1974-01-27,F,Patriots,Rassemblement national,003222845653,06M033,EMPL,,DMAS,,256874,2024-07-16,,,,,,,,,,,,,,M,,,,,,,,,,,,,,,,,
 3k45l,fr,Fabrice,LEGGERI,fabrice.leggeri@europarl.europa.eu,1968-03-28,M,Patriots,Rassemblement national,003222845273,06M107,LIBE,"AFCO|PETI",DKOR,,256872,2024-07-16,S,,,,,,,,,,,,,,,,,,,,,,,M,,,S,,,,
 5k45k,fr,Malika,SOREL,malika.sorel@europarl.europa.eu,,F,Patriots,Sans parti,003222845480,05M073,CULT,LIBE,D-UK,,256871,2024-07-16,,,,,,,,,,M,,,,,,,,,,,,,,S,,,,,,,
-7k45j,fr,Valérie,DEVAUX,valerie.devaux@europarl.europa.eu,1964-06-19,F,Renew,Union des démocrates et indépendants,003222845297,08G253,"TRAN|FEMM",EMPL,"DCAM|DLAT",,256870,2024-07-16,,,,,,,,,,,,,,S,,M,,,,,,,,,,,,,,,M
+7k45j,fr,Valérie,DEVAUX,valerie.devaux@europarl.europa.eu,1964-06-19,F,Renew,Union des démocrates et indépendants,003222845297,08G217,"TRAN|FEMM",EMPL,"DCAM|DLAT",,256870,2024-07-16,,,,,,,,,,,,,,S,,M,,,,,,,,,,,,,,,M
 9k45h,fr,Grégory,ALLIONE,gregory.allione@europarl.europa.eu,1971-07-25,M,Renew,Renaissance,003222845215,08G318,"EMPL|ENVI",,"DMAG|DLAT|DMED",,256869,2024-07-16,,,,,,,,,,,,,,M,M,,,,,,,,,,,,,,,,
 ck45g,hu,Péter,MAGYAR,peter.magyar@europarl.europa.eu,1981-03-16,M,EPP,Tisztelet és Szabadság Párt,003222845704,12E254,"AGRI|AFCO",,"D-US|D-UK",,256868,2024-07-16,V,,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 hk45d,hu,Gabriella,GERZSENYI,gabriella.gerzsenyi@europarl.europa.eu,1977-10-30,F,EPP,Tisztelet és Szabadság Párt,003222845416,12E158,REGI,ENVI,"DMAS|DMED",,256866,2024-07-16,,,,,,,,,,,,,,,S,,,,,,,,,,,,,V,,,
@@ -298,12 +298,12 @@ _k444,gr,Nikolaos,ANADIOTIS,nikolaos.anadiotis@europarl.europa.eu,1983-02-10,M,N
 ck44z,cz,Nikola,BARTŮŠEK,nikola.bartusek@europarl.europa.eu,1985-05-11,F,Patriots,Přísaha,003222845252,04M057,"LIBE|EMPL","AFET|SEDE",D-TR,,256852,2024-07-16,,S,,,,,,,,,,,,M,,,,,,,,,,M,,,,,,S,
 fk44y,cz,Ondřej,DOSTÁL,ondrej.dostal@europarl.europa.eu,,M,NA,Independent,003222845591,03K076,ENVI,AGRI,DASE,dostalondrejmep,256851,2024-07-16,,,S,,,,,,,,,,,,M,,,,,,,,,,,,,,,,
 hk44x,cz,Filip,TUREK,filip.turek@europarl.europa.eu,1985-10-15,M,Patriots,Motoristé sobě,003222845950,04M047,"ITRE|ENVI|IMCO",,"DCAS|D-IR",,256850,2024-07-16,,,,,,,,,,,,,,,M,,,M,,,,M,,,,,,,,,
-qk44t,cz,Danuše,NERUDOVÁ,danuse.nerudova@europarl.europa.eu,1979-01-04,F,EPP,Starostové a nezávisli,003222845767,07F252,BUDG,"ECON|ENVI|FISC","D-IR|DKOR",,256847,2024-07-16,,,,,,,M,,,,,,S,,S,,S,,,,,,,,,,,,,,
+qk44t,cz,Danuše,NERUDOVÁ,danuse.nerudova@europarl.europa.eu,1979-01-04,F,EPP,Starostové a nezávisli,003222845767,07F252,"BUDG|FISC","ECON|ENVI","D-IR|DKOR",,256847,2024-07-16,,,,,,,M,,,,,,S,,S,,M,,,,,,,,,,,,,,
 sk44s,cz,Ondřej,KOLÁŘ,ondrej.kolar@europarl.europa.eu,1984-03-13,M,EPP,TOP 09 a Starostové,003222845596,07F255,"AFET|DROI",DEVE,DEPA,,256846,2024-07-16,,M,,,,,,,,,S,M,,,,,,,,,,,,,,,,,,,
 vk44r,cz,Ondřej,KRUTÍLEK,ondrej.krutilek@europarl.europa.eu,1981-04-30,M,ECR,Občanská demokratická strana,003222845673,04U009,ITRE,TRAN,DKOR,,256845,2024-07-16,,,,,,,,,,,,,,,,,,,,,,M,,,,,,,,,S
 xk44q,cz,Jaroslava,POKORNÁ JERMANOVÁ,jaroslava.pokornajermanova@europarl.europa.eu,1970-08-17,F,Patriots,ANO 2011,003222845455,04M089,"ECON|SEDE",AFET,DNAT,,256844,2024-07-16,,S,,,,,,,,,,,M,,,,,,,,,,,,,,,,,M,
 zk44p,cz,Jana,NAGYOVÁ,jana.nagyova@europarl.europa.eu,1970-09-26,F,Patriots,ANO 2011,003222845404,04M083,"ITRE|ENVI",,D-IN,,256843,2024-07-16,,,,,,,,,,,,,,,M,,,,,,,M,,,,,,,,,
-0k44n,at,Gerald,HAUSER,gerald.hauser@europarl.europa.eu,1961-09-30,M,Patriots,Freiheitliche Partei Österreichs,003222845844,07M081,SANT,"AGRI|ENVI","DEEA|D-RU|DEPA",,256842,2024-07-16,,,S,,,,,,,,,,,,S,,,,,,,,,,,,,,M,,
+0k44n,at,Gerald,HAUSER,gerald.hauser@europarl.europa.eu,1961-09-30,M,Patriots,Freiheitliche Partei Österreichs,003222845844,07M081,SANT,"AGRI|ENVI","DEEA|D-RU|DEPA|D-BY",,256842,2024-07-16,,,S,,,,,,,,,,,,S,,,,,,,,,,,,,,M,,
 2k44m,at,Helmut,BRANDSTÄTTER,helmut.brandstaetter@europarl.europa.eu,1955-04-24,M,Renew,NEOS – Das Neue Österreich,003222845239,09G215,AFET,AFCO,"DSEE|D-AL|D-UA|DEPA",,256841,2024-07-16,S,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 4k44l,cz,Jan,FARSKÝ,jan.farsky@europarl.europa.eu,1979-07-11,M,EPP,Starostové a nezávisli,003222845408,07F266,ITRE,REGI,"DAFR|OACPS",,256840,2024-07-16,,,,,,,,,,,,,,,,,,,,,,M,,,,,,S,,,
 6k44k,at,Anna,STÜRGKH,anna.sturgkh@europarl.europa.eu,1994-04-02,F,Renew,NEOS – Das Neue Österreich,003222845683,09G253,ITRE,"ENVI|IMCO",D-RS,,256839,2024-07-16,,,,,,,,,,,,,,,S,,,S,,,,M,,,,,,,,,
@@ -328,7 +328,7 @@ ck43h,fi,Li,ANDERSSON,li.andersson@europarl.europa.eu,1987-05-13,F,GUE/NGL,Vasem
 fk43g,fi,Pekka,TOVERI,pekka.toveri@europarl.europa.eu,1961-04-06,M,EPP,Kansallinen Kokoomus,003222845837,06F155,AGRI,"LIBE|AFET|SEDE",D-UA,,256804,2024-07-16,,S,M,,,,,,,,,,,,,,,,,,,,,S,,,,,,S,
 hk43f,fi,Maria,GUZENINA,maria.guzenina@europarl.europa.eu,1969-01-12,F,S&D,Suomen Sosialidemokraattinen Puolue/Finlands Socialdemokratiska Parti,003222845595,12G318,IMCO,"CULT|FEMM",D-US,,256803,2024-07-16,,,,,,,,,,S,,,,,,S,,M,,,,,,,,,,,,,
 pk_9d,de,Niels,GEUKING,niels.geuking@europarl.europa.eu,1992-11-17,M,EPP,Familien-Partei Deutschlands,003222845670,07F372,"DEVE|EMPL",,,,251874,2024-02-05,,,,,,,,,,,M,,,M,,,,,,,,,,,,,,,,,
-lk_r6,pl,Krzysztof,BREJZA,krzysztof.brejza@europarl.europa.eu,1983-05-16,M,EPP,Platforma Obywatelska,003222845451,13E202,LIBE,JURI,"D-MD|DEPA",,251324,2024-01-03,,,,,,,,,,,,,,,,,,,,,,,S,M,,,,,,,
+lk_r6,pl,Krzysztof,BREJZA,krzysztof.brejza@europarl.europa.eu,1983-05-16,M,EPP,Platforma Obywatelska,003222845451,13E202,LIBE,AFET,"D-MD|DEPA",,251324,2024-01-03,,S,,,,,,,,,,,,,,,,,,,,,,M,,,,,,,
 vkzf8,sk,Milan,MAZUREK,milan.mazurek@europarl.europa.eu,1994-01-24,M,NA,Hnutie Republika,003222845845,04G340,TRAN,REGI,D-ME,,249982,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,S,,,M
 nkw71,es,Laura,BALLARÍN CEREZA,laura.ballarincereza@europarl.europa.eu,1984-07-19,F,S&D,Partido Socialista Obrero Español,003222845563,14G108,IMCO,"AFET|ITRE","DAFR|OACPS",x.com/lauballarin,247735,2023-09-06,,S,,,,,,,,,,,,,,,,M,,,,S,,,,,,,,,
 gkvbn,es,Irene,MONTERO,irene.montero@europarl.europa.eu,1988-02-13,F,GUE/NGL,PODEMOS,003222845893,08H156,FEMM,AFET,D-CL,,245770,2024-07-16,,S,,,,,,,,,,,,,,V,,,,,,,,,,,,,,,
@@ -385,7 +385,7 @@ rjcjx,bg,Elena,YONCHEVA,elena.yoncheva@europarl.europa.eu,1964-05-27,F,Renew,Mov
 wjcjv,lt,Rasa,JUKNEVIČIENĖ,rasa.jukneviciene@europarl.europa.eu,1958-01-26,F,EPP,Tėvynės sąjunga-Lietuvos krikščionys demokratai,003222845592,07F343,DEVE,"LIBE|AFET|SEDE","DSCA|DEPA",rjukneviciene,197840,2019-07-02,,S,,,,,,,,,M,,,,,,,,,,,,,S,,,,,,S,
 zjcjt,bg,Radan,KANEV,radan.kanev@europarl.europa.eu,1975-09-30,M,EPP,Democrats for Strong Bulgaria,003222845326,08F266,ENVI,"ITRE|SANT","DSCA|DEPA",rmkanev,197839,2019-07-02,,,,,,,,,,,,,,,M,,,,,,,S,,,,,,,S,,
 djcjl,es,Diana,RIBA I GINER,diana.ribaiginer@europarl.europa.eu,1975-02-21,F,Greens/EFA,Esquerra Republicana de Catalunya,003222845630,04F361,CULT,LIBE,"D-US|D-MX|DCAM",dianaribaginer,197832,2019-07-02,,,,,,,,,,V,,,,,,,,,,,,,,S,,,,,,,
-gjcjk,es,Hermann,TERTSCH,hermann.tertsch@europarl.europa.eu,1958-04-09,M,Patriots,VOX,003222845655,05M115,"AFET|INTA",DEVE,"D-CL|DLAT",hermanntertsch,197831,2019-07-02,,M,,,,,,,,,S,,,,,,,,,,M,,,,,,,,,,
+gjcjk,es,Hermann,TERTSCH,hermann.tertsch@europarl.europa.eu,1958-04-09,M,Patriots,VOX,003222845655,05M115,AFET,"DEVE|INTA","D-CL|DLAT",hermanntertsch,197831,2019-07-02,,M,,,,,,,,,S,,,,,,,,,,S,,,,,,,,,,
 ljcjh,es,Jorge,BUXADÉ VILLALBA,jorge.buxadevillalba@europarl.europa.eu,1975-06-16,M,Patriots,VOX,003222845558,05M003,"LIBE|ENVI",SEDE,"DMAG|DMED",jorgebuxade,197829,2019-07-02,,,,,,,,,,,,,,,M,,,,,,,,,M,,,,,,S,
 vjcjc,it,Raffaele,STANCANELLI,raffaele.stancanelli@europarl.europa.eu,1950-06-30,M,Patriots,Lega,003222845617,04M023,AGRI,"ITRE|JURI","DAFR|OACPS",,197825,2019-07-02,,,M,,,,,,,,,,,,,,,,,,,S,S,,,,,,,,
 xjcjb,it,Giuseppe,MILAZZO,giuseppe.milazzo@europarl.europa.eu,1977-08-21,M,ECR,FRATELLI D' ITALIA,003222845781,03F258,PECH,"LIBE|REGI",D-US,giuseppemilaz11,197824,2019-07-02,,,,,,,,,,,,,,,,,,,,,,,,S,V,,,S,,,
@@ -446,7 +446,7 @@ vjb9_,es,Juan Ignacio,ZOIDO ÁLVAREZ,juanignacio.zoidoalvarez@europarl.europa.eu
 0jb9x,it,Elisabetta,GUALMINI,elisabetta.gualmini@europarl.europa.eu,1968-05-17,F,S&D,Partito Democratico,003222845616,15G318,ITRE,"AGRI|ECON",D-UK,,197618,2019-07-02,,,S,,,,,,,,,,S,,,,,,,,,M,,,,,,,,,
 rjb9k,it,Pietro,FIOCCHI,pietro.fiocchi@europarl.europa.eu,1964-05-22,M,ECR,FRATELLI D' ITALIA,003222845762,02U041,ENVI,"ITRE|SANT","DCAB|OACPS",fiocchipietro,197607,2019-07-02,,,,,,,,,,,,,,,V,,,,,,,S,,,,,,,S,,
 tjb9j,es,Javier,ZARZALEJOS,javier.zarzalejos@europarl.europa.eu,1960-06-06,M,EPP,Partido Popular,003222845634,10E165,LIBE,"PECH|JURI","DCAB|OACPS",fzarzalejos,197606,2019-07-02,,,,,,,,,,,,,,,,,,,,,,,S,C,S,,,,,,
-rjb81,it,Irene,TINAGLI,irene.tinagli@europarl.europa.eu,1974-04-16,F,S&D,Partito Democratico,003222845827,15G258,ECON,"ITRE|ENVI",D-CA,itinagli,197591,2019-07-02,,,,,,,,,,,,,M,,S,,,,,,,S,,,,,,,,,
+rjb81,it,Irene,TINAGLI,irene.tinagli@europarl.europa.eu,1974-04-16,F,S&D,Partito Democratico,003222845827,15G262,ECON,"ITRE|ENVI",D-CA,itinagli,197591,2019-07-02,,,,,,,,,,,,,M,,S,,,,,,,S,,,,,,,,,
 wjb8_,fr,Laurence,FARRENG,laurence.farreng@europarl.europa.eu,1966-09-06,F,Renew,Mouvement Démocrate,003222845456,08G317,CULT,"EMPL|JURI",D-IN,laurencefarreng,197589,2019-07-02,,,,,,,,,,M,,,,S,,,,,,,,,S,,,,,,,,
 djb8r,fr,Stéphanie,YON-COURTIN,stephanie.yon@europarl.europa.eu,1974-03-28,F,Renew,Renaissance,003222845582,08G351,"ECON|PECH",IMCO,D-CA,s_yoncourtin,197581,2019-07-02,,,,,,,,,,,,,M,,,,,S,,,,,,,V,,,,,,
 gjb8q,it,Isabella,TOVAGLIERI,isabella.tovaglieri@europarl.europa.eu,1987-06-25,F,Patriots,Lega,003222845725,04M015,ITRE,"AGRI|INTA","DAFR|OACPS",,197580,2019-07-02,,,S,,,,,,,,,,,,,,,,,,S,M,,,,,,,,,
@@ -461,7 +461,7 @@ xjb7_,fr,Christophe,GRUDLER,christophe.grudler@europarl.europa.eu,1965-04-09,M,R
 zjb7z,cz,Ivan,DAVID,ivan.david@europarl.europa.eu,1952-09-24,M,ESN,Svoboda a přímá demokracie,003222845712,02M057,AGRI,"ENVI|SANT",D-RS,,197556,2019-07-02,,,M,,,,,,,,,,,,S,,,,,,,,,,,,,,S,,
 4jb7w,pl,Beata,SZYDŁO,beata.szydlo@europarl.europa.eu,1963-04-15,F,ECR,Prawo i Sprawiedliwość,003222845754,06U032,ITRE,"TRAN|BUDG",DASE,beataszydlo,197553,2019-07-02,,,,,,,S,,,,,,,,,,,,,,,M,,,,,,,,,S
 6jb7v,cz,Veronika,VRECIONOVÁ,veronika.vrecionova@europarl.europa.eu,1965-09-08,F,ECR,Občanská demokratická strana,003222845303,04U012,AGRI,LIBE,DMED,vrecionova,197552,2019-07-02,,,C,,,,,,,,,,,,,,,,,,,,,S,,,,,,,
-fjb7r,cz,Markéta,GREGOROVÁ,marketa.gregorova@europarl.europa.eu,1993-01-14,F,Greens/EFA,PIRÁTI,003222840064,01Y096,INTA,"LIBE|AFCO|ITRE","D-CN|DEPA",marketkag,197549,2019-07-02,S,,,,,,,,,,,,,,,,,,,,M,S,,S,,,,,,,
+fjb7r,cz,Markéta,GREGOROVÁ,marketa.gregorova@europarl.europa.eu,1993-01-14,F,Greens/EFA,PIRÁTI,003222845334,04E264,INTA,"LIBE|AFCO|ITRE","D-CN|DEPA",marketkag,197549,2019-07-02,S,,,,,,,,,,,,,,,,,,,,M,S,,S,,,,,,,
 pjb7m,pl,Bogdan,RZOŃCA,bogdan.rzonca@europarl.europa.eu,1961-02-01,M,ECR,Prawo i Sprawiedliwość,003222845124,00U009,"BUDG|PETI",ECON,D-RS,bogdan_rzonca,197545,2019-07-02,,,,,,,M,,,,,,S,,,,,,,,,,,,,,C,,,,
 tjb7k,fr,Bernard,GUETTA,bernard.guetta@europarl.europa.eu,1951-01-28,M,Renew,Sans parti,003222845540,08G258,"AFET|DROI",CULT,"DMAS|D-RU|DEPA",guetta_en,197543,2019-07-02,,M,,,,,,,,S,,M,,,,,,,,,,,,,,,,,,,
 5jb7c,cz,Alexandr,VONDRA,alexandr.vondra@europarl.europa.eu,1961-08-17,M,ECR,Občanská demokratická strana,003222845483,04U004,ENVI,SEDE,"DNAT|D-US",alexandrvondra,197537,2019-07-02,,,,,,,,,,,,,,,M,,,,,,,,,,,,,,,S,
@@ -520,18 +520,18 @@ _jb3j,cy,Loucas,FOURLAS,loucas.fourlas@europarl.europa.eu,1969-08-21,M,EPP,Democ
 1jb3h,hr,Karlo,RESSLER,karlo.ressler@europarl.europa.eu,1989-12-26,M,EPP,Hrvatska demokratska zajednica,003222845601,12E201,BUDG,"CONT|LIBE",D-MK,karloressler,197413,2019-07-02,,,,,,,M,S,,,,,,,,,,,,,,,,S,,,,,,,
 3jb3g,de,Niclas,HERBST,niclas.herbst@europarl.europa.eu,1973-02-28,M,EPP,Christlich Demokratische Union Deutschlands,003222847270,14E202,"SEDE|CONT","BUDG|PECH","DAFR|OACPS",,197412,2019-07-02,,,,,,,S,C,,,,,,,,,,,,,,,,,S,,,,,M,
 7jb3d,de,Stefan,BERGER,stefan.berger@europarl.europa.eu,1969-09-15,M,EPP,Christlich Demokratische Union Deutschlands,003222845427,15E173,"ECON|FISC",ITRE,D-JP,drstefanberger,197410,2019-07-02,,,,,,,,,,,,,M,,,,M,,,,,S,,,,,,,,,
-cjb3b,de,Hildegard,BENTELE,hildegard.bentele@europarl.europa.eu,1976-05-22,F,EPP,Christlich Demokratische Union Deutschlands,003222845234,15E157,"ITRE|DEVE",ENVI,D-TR,hildebentele,197408,2019-07-02,,,,,,,,,,,V,,,,S,,,,,,,M,,,,,,,,,
+cjb3b,de,Hildegard,BENTELE,hildegard.bentele@europarl.europa.eu,1976-05-22,F,EPP,Christlich Demokratische Union Deutschlands,003222845234,15E157,"ITRE|DEVE",ENVI,D-IL,hildebentele,197408,2019-07-02,,,,,,,,,,,V,,,,S,,,,,,,M,,,,,,,,,
 hjb28,se,Arba,KOKALARI,arba.kokalari@europarl.europa.eu,1986-11-27,F,EPP,Moderaterna,003222845450,08F353,"FEMM|IMCO","ECON|EMPL",D-AL,arbakokalari,197406,2019-07-02,,,,,,,,,,,,,S,S,,M,,M,,,,,,,,,,,,,
 kjb27,se,Jörgen,WARBORN,jorgen.warborn@europarl.europa.eu,1969-01-23,M,EPP,Moderaterna,003222845897,08F359,INTA,"ITRE|JURI|EMPL","DASE|DAFR|OACPS",jorgenwarborn,197405,2019-07-02,,,,,,,,,,,,,,S,,,,,,,M,S,S,,,,,,,,
 mjb26,se,Jessica,POLFJÄRD,jessica.polfjard@europarl.europa.eu,1971-05-27,F,EPP,Moderaterna,003222845514,08F368,"ENVI|SANT|PECH",AGRI,"DKOR|DEPA",jessicapolfjard,197404,2019-07-02,,,S,,,,,,,,,,,,M,,,,,,,,,,V,,,,M,,
 pjb25,mt,Alex,AGIUS SALIBA,alex.agiussaliba@europarl.europa.eu,1988-01-31,M,S&D,Partit Laburista,003222845536,15G108,IMCO,"LIBE|EMPL|PETI",DLAT,,197403,2019-07-02,,,,,,,,,,,,,,S,,,,M,,,,,,S,,,S,,,,
 rjb24,se,Tomas,TOBÉ,tomas.tobe@europarl.europa.eu,1978-02-16,M,EPP,Moderaterna,003222845557,08F358,LIBE,"DEVE|ITRE|TRAN","D-UK|D-BY",tomastobe,197402,2019-07-02,,,,,,,,,,,S,,,,,,,,,,,S,,M,,,,,,,S
-tjb23,se,Karin,KARLSBRO,karin.karlsbro@europarl.europa.eu,1970-09-23,F,Renew,Liberalerna,003222845385,08G210,INTA,"PECH|ENVI",DEEA,karinkarlsbro,197401,2019-07-02,,,,,,,,,,,,,,,S,,,,,,V,,,,S,,,,,,
+tjb23,se,Karin,KARLSBRO,karin.karlsbro@europarl.europa.eu,1970-09-23,F,Renew,Liberalerna,003222845385,08G216,INTA,"PECH|ENVI",DEEA,karinkarlsbro,197401,2019-07-02,,,,,,,,,,,,,,,S,,,,,,V,,,,S,,,,,,
 wjb22,se,Abir,AL-SAHLANI,abir.alsahlani@europarl.europa.eu,1976-05-18,F,Renew,Centerpartiet,003222845507,10G258,"LIBE|FEMM|DEVE",,"D-IQ|DARP",abiralsahlani,197400,2019-07-02,,,,,,,,,,,V,,,,,M,,,,,,,,M,,,,,,,
 _jb20,se,Pär,HOLMGREN,par.holmgren@europarl.europa.eu,1964-10-24,M,Greens/EFA,Miljöpartiet de gröna,003222845928,05F263,ENVI,AGRI,D-UK,parholmgren,197398,2019-07-02,,,S,,,,,,,,,,,,M,,,,,,,,,,,,,,,,
 5jb2y,se,Alice,KUHNKE,alice.kuhnke@europarl.europa.eu,1971-12-21,F,Greens/EFA,Miljöpartiet de gröna,003222845411,05F263,LIBE,"FEMM|IMCO",D-UK,,197395,2019-07-02,,,,,,,,,,,,,,,,S,,S,,,,,,M,,,,,,,
 cjb2v,se,Evin,INCIR,evin.incir@europarl.europa.eu,1984-06-15,F,S&D,Arbetarepartiet- Socialdemokraterna,003222845219,12G265,LIBE,AFET,"DLAT|D-IQ",,197392,2019-07-02,,S,,,,,,,,,,,,,,,,,,,,,,M,,,,,,,
-gjb2t,se,Heléne,FRITZON,helene.fritzon@europarl.europa.eu,1960-09-29,F,S&D,Arbetarepartiet- Socialdemokraterna,003222845437,12G201,"FEMM|ENVI",AGRI,D-UA,,197391,2019-07-02,,,S,,,,,,,,,,,,M,M,,,,,,,,,,,,,,,
+gjb2t,se,Heléne,FRITZON,helene.fritzon@europarl.europa.eu,1960-09-29,F,S&D,Arbetarepartiet- Socialdemokraterna,003222845437,12G205,"FEMM|ENVI",AGRI,D-UA,,197391,2019-07-02,,,S,,,,,,,,,,,,M,M,,,,,,,,,,,,,,,
 vh66p,lu,Christophe,HANSEN,christophe.hansen@europarl.europa.eu,1982-02-21,M,EPP,Parti chrétien social luxembourgeois,003222845496,07F155,"EMPL|INTA|TRAN","ECON|ENVI","DAND|DLAT",chanseneu,193419,2018-09-02,,,,,,,,,,,,,S,M,S,,,,,,M,,,,,,,,,,M
 xh62q,lu,Tilly,METZ,tilly.metz@europarl.europa.eu,1967-05-26,F,Greens/EFA,Déi Gréng - Les Verts,003222845246,06F371,"ENVI|SANT","AGRI|TRAN",D-ZA,metztilly,193292,2018-06-20,,,S,,,,,,,,,,,,M,,,,,,,,,,,,,,V,,S
 vh518,nl,Marieke,EHLERS,marieke.roos@europarl.europa.eu,,F,Patriots,Partij voor de Vrijheid,003222845741,07M121,LIBE,"AFCO|DEVE",D-US,,192254,2024-07-16,S,,,,,,,,,,S,,,,,,,,,,,,,M,,,,,,,
@@ -568,7 +568,7 @@ qf4f6,es,Juan Carlos,GIRAUTA VIDAL,juancarlos.girautavidal@europarl.europa.eu,19
 bf4fx,es,Javi,LÓPEZ,javi.lopez@europarl.europa.eu,1985-11-11,M,S&D,Partit dels Socialistes de Catalunya (PSC-PSOE),003222845625,14G306,ENVI,"AFET|SEDE","D-MX|DLAT",javilopezeu,125042,2014-07-01,,S,,,,,,,,,,,,,M,,,,,,,,,,,,,,,S,
 9f4ff,es,Esteban,GONZÁLEZ PONS,esteban.gonzalezpons@europarl.europa.eu,1964-08-21,M,EPP,Partido Popular,003222845435,06E202,CONT,,"D-MX|DLAT",gonzalezpons,125027,2014-07-01,,,,,,,,M,,,,,,,,,,,,,,,,,,,,,,,
 kf4d9,nl,Anja,HAZEKAMP,anja.hazekamp@europarl.europa.eu,1968-01-21,F,GUE/NGL,Partij voor de Dieren,003222845629,07H141,"PECH|ENVI","AGRI|SANT",DEEA,anjahazekamp,125023,2014-07-01,,,S,,,,,,,,,,,,V,,,,,,,,,,M,,,,S,,
-7f4dz,ro,Daniel,BUDA,daniel.buda@europarl.europa.eu,1970-01-11,M,EPP,Partidul Naţional Liberal,003222845110,11E158,"JURI|REGI|AGRI",ENVI,"D-IL|OACPS|DPAC",mepdanielbuda,125012,2014-07-01,,,V,,,,,,,,,,,,S,,,,,,,,M,,,,,M,,,
+7f4dz,ro,Daniel,BUDA,daniel.buda@europarl.europa.eu,1970-01-11,M,EPP,Partidul Naţional Liberal,003222845110,11E158,"JURI|REGI|AGRI",ENVI,"OACPS|DPAC|D-TR",mepdanielbuda,125012,2014-07-01,,,V,,,,,,,,,,,,S,,,,,,,,M,,,,,M,,,
 zf4dm,at,Harald,VILIMSKY,harald.vilimsky@europarl.europa.eu,1966-07-22,M,Patriots,Freiheitliche Partei Österreichs,003222845324,07M105,AFET,AFCO,D-US,vilimsky,125001,2014-07-01,S,M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 zf4c3,ie,Luke Ming,FLANAGAN,lukeming.flanagan@europarl.europa.eu,1972-01-22,M,GUE/NGL,Independent,003222845238,01H246,AGRI,"PECH|IMCO","D-UK|DMER",lukeming,124985,2014-07-01,,,M,,,,,,,,,,,,,,,S,,,,,,,S,,,,,,
 0f4c2,ie,Lynn,BOYLAN,lynn.boylan@europarl.europa.eu,1976-11-29,F,GUE/NGL,Sinn Féin,003222845651,08H247,"INTA|ENVI",,DPAL,lnbdublin,124984,2014-07-01,,,,,,,,,,,,,,,M,,,,,,M,,,,,,,,,,
@@ -585,12 +585,12 @@ xf377,it,Caterina,CHINNICI,caterina.chinnici@europarl.europa.eu,1954-11-05,F,EPP
 lf37x,bg,Emil,RADEV,emil.radev@europarl.europa.eu,1971-05-26,M,EPP,Citizens for European Development of Bulgaria,003222845189,08F167,"LIBE|PETI|JURI",,"DAFR|OACPS|DMED",emil_radev,124850,2014-07-01,,,,,,,,,,,,,,,,,,,,,,,V,M,,,M,,,,
 wf37s,it,Pina,PICIERNO,giuseppina.picierno@europarl.europa.eu,1981-05-10,F,S&D,Partito Democratico,003222845229,15G257,PETI,LIBE,"D-UA|DEPA",pinapic,124846,2014-07-01,,,,,,,,,,,,,,,,,,,,,,,,S,,,M,,,,
 hf37g,de,Maria,NOICHL,maria.noichl@europarl.europa.eu,1967-01-09,F,S&D,Sozialdemokratische Partei Deutschlands,003222845157,12G108,"AGRI|FEMM","ENVI|DROI",DMED,,124836,2014-07-01,,,M,,,,,,,,,S,,,S,M,,,,,,,,,,,,,,,
-mf37d,de,Martin,SONNEBORN,martin.sonneborn@europarl.europa.eu,1965-05-15,M,NA,Die PARTEI,003222845756,03F370,LIBE,AFET,DCAS,martinsonneborn,124834,2014-07-01,,S,,,,,,,,,,,,,,,,,,,,,,M,,,,,,,
+mf37d,de,Martin,SONNEBORN,martin.sonneborn@europarl.europa.eu,1965-05-15,M,NA,Die PARTEI,003222845756,03F370,LIBE,,DCAS,martinsonneborn,124834,2014-07-01,,,,,,,,,,,,,,,,,,,,,,,,M,,,,,,,
 _f366,it,Fulvio,MARTUSCIELLO,fulvio.martusciello@europarl.europa.eu,1968-05-25,M,EPP,Forza Italia,003222845745,11E217,"ECON|ITRE",DEVE,"DCAM|DASE",fulviomartuscie,124828,2014-07-01,,,,,,,,,,,S,,M,,,,,,,,,M,,,,,,,,,
 zf36r,it,Dario,TAMBURRANO,dario.tamburrano@europarl.europa.eu,1969-08-27,M,GUE/NGL,Movimento 5 Stelle,003222845915,01H347,ITRE,TRAN,D-RU,,124813,2014-07-01,,,,,,,,,,,,,,,,,,,,,,M,,,,,,,,,S
 8f36l,de,Norbert,LINS,norbert.lins@europarl.europa.eu,1977-12-22,M,EPP,Christlich Demokratische Union Deutschlands,003222845819,15E242,AGRI,"TRAN|ENVI|DEVE",DCAR,linsnorbert,124808,2014-07-01,,,V,,,,,,,,S,,,,S,,,,,,,,,,,,,,,,S
 bf36k,de,Jens,GIESEKE,jens.gieseke@europarl.europa.eu,1971-05-18,M,EPP,Christlich Demokratische Union Deutschlands,003222845556,15E158,TRAN,"ITRE|ENVI",DASE,,124807,2014-07-01,,,,,,,,,,,,,,,S,,,,,,,S,,,,,,,,,M
-df36j,de,David,MCALLISTER,david.mcallister@europarl.europa.eu,1971-01-12,M,EPP,Christlich Demokratische Union Deutschlands,003222845130,15E201,AFET,"INTA|SEDE","DNAT|D-UK",davidmcallister,124806,2014-07-01,,C,,,,,,,,,,,,,,,,,,,S,,,,,,,,,S,
+df36j,de,David,MCALLISTER,david.mcallister@europarl.europa.eu,1971-01-12,M,EPP,Christlich Demokratische Union Deutschlands,003222845130,15E201,AFET,INTA,"DNAT|D-UK",davidmcallister,124806,2014-07-01,,C,,,,,,,,,,,,,,,,,,,S,,,,,,,,,,
 nf36d,ro,Siegfried,MUREŞAN,siegfried.muresan@europarl.europa.eu,1981-09-20,M,EPP,Partidul Naţional Liberal,003222845154,11E259,"BUDG|ECON",,"DEPA|D-MD",smuresan,124802,2014-07-01,,,,,,,M,,,,,,M,,,,,,,,,,,,,,,,,,
 vf359,it,Alessandra,MORETTI,alessandra.moretti@europarl.europa.eu,1973-06-24,F,S&D,Partito Democratico,003222845139,15G346,"FEMM|ENVI","AFET|SANT","D-IR|D-AF|D-RS",ale_moretti,124799,2014-07-01,,S,,,,,,,,,,,,,M,M,,,,,,,,,,,,,S,,
 2f355,it,Flavio,TOSI,flavio.tosi@europarl.europa.eu,1969-06-18,M,EPP,Forza Italia,003222845835,11E218,ENVI,TRAN,"D-US|DSCA|DEPA",,124795,2014-07-01,,,,,,,,,,,,,,,M,,,,,,,,,,,,,,,,S
@@ -611,7 +611,7 @@ hf2fd,es,Alicia,HOMS GINEL,alicia.homs@europarl.europa.eu,1993-10-15,F,S&D,Parti
 wfz5g,lt,Vytenis Povilas,ANDRIUKAITIS,vytenispovilas.andriukaitis@europarl.europa.eu,1951-08-09,M,S&D,Lietuvos socialdemokratų partija,003222845185,11G257,"ENVI|SANT",AFCO,"D-BY|DCAS|DSCA",,119652,2024-07-16,S,,,,,,,,,,,,,,M,,,,,,,,,,,,,,M,,
 nfzzp,hr,Davor Ivo,STIER,davorivo.stier@europarl.europa.eu,1972-01-06,M,EPP,Hrvatska demokratska zajednica,003222845798,12E217,AFET,ITRE,"DLAT|DSEE",,119435,2013-07-01,,M,,,,,,,,,,,,,,,,,,,,S,,,,,,,,,
 hfzhh,cz,Ondřej,KOVAŘÍK,ondrej.kovarik@europarl.europa.eu,1980-08-21,M,Patriots,ANO 2011,003222845923,04M069,"BUDG|ECON|FISC",TRAN,D-CA,okovarikmep,118949,2019-07-02,,,,,,,M,,,,,,M,,,,M,,,,,,,,,,,,,,S
-6fzdp,mt,Roberta,METSOLA,roberta.metsola@europarl.europa.eu,1979-01-18,F,EPP,Partit Nazzjonalista,003222845686,09B011,,,,robertametsola,118859,2013-04-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6fzdp,mt,Roberta,METSOLA,roberta.metsola@europarl.europa.eu,1979-01-18,F,EPP,Partit Nazzjonalista,003222845686,09B011,,,DMED,robertametsola,118859,2013-04-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 9fs5y,mt,Peter,AGIUS,peter.agius@europarl.europa.eu,1979-04-09,M,EPP,Partit Nazzjonalista,003222845192,07F136,"PETI|IMCO",AGRI,,,113523,2024-07-16,,,S,,,,,,,,,,,,,,,M,,,,,,,,,M,,,,
 jfsfq,hr,Biljana,BORZAN,biljana.borzan@europarl.europa.eu,1971-11-29,F,S&D,Socijaldemokratska partija Hrvatske,003222845932,11G351,IMCO,ENVI,"DSAS|D-MK",biljanaborzan,112748,2012-04-01,,,,,,,,,,,,,,,S,,,M,,,,,,,,,,,,,
 lfsfp,hr,Romana,JERKOVIĆ,romana.jerkovic@europarl.europa.eu,1964-11-28,F,S&D,Socijaldemokratska partija Hrvatske,003222845689,11G301,"ENVI|SANT",EMPL,D-JP,jerkovicromana,112747,2012-04-01,,,,,,,,,,,,,,S,M,,,,,,,,,,,,,,V,,
@@ -639,7 +639,7 @@ bd8_j,lv,Sandra,KALNIETE,sandra.kalniete@europarl.europa.eu,1952-12-22,F,EPP,Jau
 dd8_h,si,Milan,ZVER,milan.zver@europarl.europa.eu,1962-05-25,M,EPP,Slovenska demokratska stranka,003222845315,14E254,ENVI,AFET,D-IL,milanzver,96933,2009-07-14,,S,,,,,,,,,,,,,M,,,,,,,,,,,,,,,,
 gd8_g,de,Birgit,SIPPEL,birgit.sippel@europarl.europa.eu,1960-01-29,F,S&D,Sozialdemokratische Partei Deutschlands,003222845559,12G116,LIBE,EMPL,DMAS,birgitsippelmep,96932,2009-07-14,,,,,,,,,,,,,,S,,,,,,,,,,M,,,,,,,
 rd8xc,de,Jens,GEIER,jens.geier@europarl.europa.eu,1961-06-22,M,S&D,Sozialdemokratische Partei Deutschlands,003222845874,12G154,"BUDG|ITRE",,D-JP,europajens,96833,2009-07-14,,,,,,,M,,,,,,,,,,,,,,,M,,,,,,,,,
-yd8w8,hu,Enikő,GYŐRI,eniko.gyori@europarl.europa.eu,1968-07-17,F,Patriots,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,003222845352,03M111,"ECON|INTA|FISC",,DLAT,gyorieniko,96830,2009-07-14,,,,,,,,,,,,,M,,,,M,,,,M,,,,,,,,,,
+yd8w8,hu,Enikő,GYŐRI,eniko.gyori@europarl.europa.eu,1968-07-17,F,Patriots,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,003222845352,03M115,"ECON|INTA|FISC",,DLAT,gyorieniko,96830,2009-07-14,,,,,,,,,,,,,M,,,,M,,,,M,,,,,,,,,,
 5d8w4,hu,Tamás,DEUTSCH,tamas.deutsch@europarl.europa.eu,1966-07-27,M,Patriots,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,003222845156,03M045,"CONT|BUDG|REGI",,D-JP,dajcstomi,96826,2009-07-14,,,,,,,M,M,,,,,,,,,,,,,,,,,,,,M,,,
 2d8wq,es,Juan Fernando,LÓPEZ AGUILAR,juanfernando.lopezaguilar@europarl.europa.eu,1961-06-10,M,S&D,Partido Socialista Obrero Español,003222845336,14G142,"LIBE|AFCO",DEVE,"DAFR|DCAR|OACPS",jflopezaguilar,96812,2009-07-14,M,,,,,,,,,,S,,,,,,,,,,,,,M,,,,,,,
 4d8wp,es,Rosa,ESTARÀS FERRAGUT,rosa.estaras@europarl.europa.eu,1965-10-21,F,EPP,Partido Popular,003222845163,10E202,"DEVE|FEMM","EMPL|PETI","DASE|DAND|DLAT",,96811,2009-07-14,,,,,,,,,,,M,,,S,,V,,,,,,,,,,,S,,,,
@@ -660,7 +660,7 @@ sd8rf,se,Isabella,LÖVIN,isabella.lovin@europarl.europa.eu,1963-02-03,F,Greens/E
 6d8q6,ie,Seán,KELLY,sean.kelly@europarl.europa.eu,1952-04-26,M,EPP,Fine Gael Party,003222845206,13G301,ITRE,"AFET|ENVI",DANZ,seankellymep,96668,2009-07-14,,S,,,,,,,,,,,,,S,,,,,,,M,,,,,,,,,
 5d8qr,sk,Katarína,ROTH NEVEĎALOVÁ,katarina.roth@europarl.europa.eu,1982-11-10,F,NA,SMER-Sociálna demokracia,003222845824,03M089,AGRI,REGI,OACPS,,96653,2009-07-14,,,M,,,,,,,,,,,,,,,,,,,,,,,,,S,,,
 jd65d,nl,Jeroen,LENAERS,jeroen.lenaers@europarl.europa.eu,1984-04-29,M,EPP,Christen Democratisch Appèl,003222845560,08E202,LIBE,EMPL,D-UK,jeroen_lenaers,95074,2014-07-01,,,,,,,,,,,,,,S,,,,,,,,,,M,,,,,,,
-hd6r3,fr,Catherine,GRISET,catherine.griset@europarl.europa.eu,1972-08-20,F,Patriots,Rassemblement national,003222845311,06M113,CULT,FEMM,"OACPS|DPAC",grisetcatherine,94649,2019-07-02,,,,,,,,,,M,,,,,,S,,,,,,,,,,,,,,,
+hd6r3,fr,Catherine,GRISET,catherine.griset@europarl.europa.eu,1972-08-20,F,Patriots,Rassemblement national,003222845311,06M113,"CULT|FEMM",,"OACPS|DPAC",grisetcatherine,94649,2019-07-02,,,,,,,,,,M,,,,,,M,,,,,,,,,,,,,,,
 yd3tz,nl,Marit,MAIJ,marit.maij@europarl.europa.eu,1972-01-16,F,S&D,Partij van de Arbeid,003222845641,12G342,"EMPL|CONT",DEVE,"DAFR|DCAR|OACPS",,91636,2024-07-16,,,,,,,,M,,,S,,,M,,,,,,,,,,,,,,,,,
 yd03x,ro,Victor,NEGRESCU,victor.negrescu@europarl.europa.eu,1985-08-17,M,S&D,Partidul Social Democrat,003222845711,13G130,"BUDG|JURI|SANT",ENVI,D-US,negrescuvictor,88882,2014-07-01,,,,,,,M,,,,,,,,S,,,,,,,,M,,,,,,M,,
 xd0tl,fr,Julien,SANCHEZ,julien.sanchez@europarl.europa.eu,1983-10-19,M,Patriots,Rassemblement national,003222845474,05M091,"CONT|BUDG",,"D-CN|D-US",,88552,2024-07-16,,,,,,,M,M,,,,,,,,,,,,,,,,,,,,,,,
@@ -680,7 +680,7 @@ l72x,fr,Younous,OMARJEE,younous.omarjee@europarl.europa.eu,1969-09-30,M,GUE/NGL,
 d7rp,fr,Guillaume,PELTIER,guillaume.peltier@europarl.europa.eu,,M,ECR,Divers droite,003222845866,07U023,ECON,"CULT|REGI|INTA","DCAS|DCAR",,30123,2024-07-16,,,,,,,,,,S,,,M,,,,,,,,S,,,,,,,S,,,
 358m,lv,Inese,VAIDERE,inese.vaidere@europarl.europa.eu,1952-09-03,F,EPP,Jaunā Vienotība,003222845424,09E158,"INTA|IMCO",ITRE,DLAT,inesevaidere,28617,2004-07-20,,,,,,,,,,,,,,,,,,M,,,M,S,,,,,,,,,
 758k,lv,Roberts,ZĪLE,roberts.zile@europarl.europa.eu,1958-06-20,M,ECR,"Nacionālā apvienība ""Visu Latvijai!""-""Tēvzemei un Brīvībai/LNNK""",003222845224,09E259,"ECON|TRAN|FISC",BUDG,"D-JP|DCAM",robertszile,28615,2004-07-20,,,,,,,S,,,,,,M,,,,M,,,,,,,,,,,,,,M
-p52f,it,Nicola,ZINGARETTI,nicola.zingaretti@europarl.europa.eu,1965-10-11,M,S&D,Partito Democratico,003222845258,15G154,"AFET|ITRE",CULT,"D-TR|D-IQ",nzingaretti,28419,2004-07-20,,M,,,,,,,,S,,,,,,,,,,,,M,,,,,,,,,
+p52f,it,Nicola,ZINGARETTI,nicola.zingaretti@europarl.europa.eu,1965-10-11,M,S&D,Partito Democratico,003222845258,15G158,"AFET|ITRE",CULT,"D-TR|D-IQ",nzingaretti,28419,2004-07-20,,M,,,,,,,,S,,,,,,,,,,,,M,,,,,,,,,
 w51v,es,Francisco José,MILLÁN MON,francisco.millanmon@europarl.europa.eu,1955-03-08,M,EPP,Partido Popular,003222845430,10E153,"PECH|AFET",,D-US,pacomillanmon,28400,2004-07-20,,M,,,,,,,,,,,,,,,,,,,,,,,M,,,,,,
 z51t,es,Antonio,LÓPEZ-ISTÚRIZ WHITE,antonio.lopezisturiz@europarl.europa.eu,1970-04-01,M,EPP,Partido Popular,003222845713,10E108,"AFET|DROI",ECON,"D-IL|DARP|D-MX",tonoepp,28399,2004-07-20,,M,,,,,,,,,,M,S,,,,,,,,,,,,,,,,,,
 j51j,es,Pilar,DEL CASTILLO VERA,pilar.delcastillo@europarl.europa.eu,1952-07-31,F,EPP,Partido Popular,003222845982,10E158,ITRE,"CULT|IMCO",D-IN,delcastillop,28390,2004-07-20,,,,,,,,,,S,,,,,,,,S,,,,M,,,,,,,,,
@@ -710,7 +710,7 @@ vgzn,it,Sergio,BERLATO,sergio.berlato@europarl.europa.eu,1959-07-27,M,ECR,FRATEL
 3gmp,it,Mario,MANTOVANI,mario.mantovani@europarl.europa.eu,1950-07-28,M,ECR,FRATELLI D' ITALIA,003222845697,02U028,JURI,"AFCO|EMPL",D-IN,,4395,1999-07-20,S,,,,,,,,,,,,,S,,,,,,,,,V,,,,,,,,
 vgjc,de,Angelika,NIEBLER,angelika.niebler@europarl.europa.eu,1963-02-18,F,EPP,Christlich-Soziale Union in Bayern e.V.,003222845390,14E102,ITRE,"AFET|JURI","DASE|D-IN",aniebler,4289,1999-07-20,,S,,,,,,,,,,,,,,,,,,,,M,S,,,,,,,,
 7ghp,de,Udo,BULLMANN,udo.bullmann@europarl.europa.eu,1956-06-08,M,S&D,Sozialdemokratische Partei Deutschlands,003222845342,12G210,"DEVE|INTA",,"DCAM|DLAT|D-ZA",udobullmann,4267,1999-07-20,,,,,,,,,,,M,,,,,,,,,,M,,,,,,,,,,
-mdmh,de,Michael,GAHLER,michael.gahler@europarl.europa.eu,1960-04-22,M,EPP,Christlich Demokratische Union Deutschlands,003222845977,15E264,AFET,ECON,"D-ZA|DAFR|OACPS",gahler_michael,2341,1999-04-23,,M,,,,,,,,,,,S,,,,,,,,,,,,,,,,,,
+mdmh,de,Michael,GAHLER,michael.gahler@europarl.europa.eu,1960-04-22,M,EPP,Christlich Demokratische Union Deutschlands,003222845977,15E264,AFET,"ECON|SEDE","D-ZA|DAFR|OACPS",gahler_michael,2341,1999-04-23,,M,,,,,,,,,,,S,,,,,,,,,,,,,,,,,S,
 7dj6,se,Jonas,SJÖSTEDT,jonas.sjostedt@europarl.europa.eu,1964-12-25,M,GUE/NGL,Vänsterpartiet,003222845913,07H247,"CONT|ENVI",AFET,"DCAS|D-MD|D-UA|DEPA",,2268,1995-10-09,,S,,,,,,M,,,,,,,M,,,,,,,,,,,,,,,,
 mdfl,it,Leoluca,ORLANDO,leoluca.orlando@europarl.europa.eu,1947-08-01,M,Greens/EFA,Independent,003222845397,07F143,AFET,"LIBE|AFCO","DMED|DMAS",,2152,1994-07-19,S,M,,,,,,,,,,,,,,,,,,,,,,S,,,,,,,
 zc6k,de,Peter,LIESE,peter.liese@europarl.europa.eu,1965-05-20,M,EPP,Christlich Demokratische Union Deutschlands,003222845981,15E218,"ENVI|SANT",,DCAM,peterliese,1927,1994-07-19,,,,,,,,,,,,,,,M,,,,,,,,,,,,,,M,,

@@ -2971,7 +2971,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 28389,Zbigniew,KUŹMIUK,false,2004-07-20,,2023-10-18,1956-09-19,pl,M,ECR,Prawo i Sprawiedliwość,zbigniew.kuzmiuk@europarl.europa.eu,zbigniewkuzmiuk,9,2014-07-01,2019-07-02
 1909,Bernd,LANGE,true,1994-07-19,2024-07-16,,1955-11-14,de,M,S&D,Sozialdemokratische Partei Deutschlands,bernd.lange@europarl.europa.eu,berndlange,10,2014-07-01,2019-07-02
 111011,Anthea,McINTYRE,false,2011-12-01,,2020-01-31,1954-06-29,uk,F,ECR,Conservative Party,anthea.mcintyre@europarl.europa.eu,,9,2014-07-01,2019-07-02
-124816,Julia,REDA,false,2014-07-01,,2019-07-01,1986-11-30,de,F,Verts/ALE,Piratenpartei Deutschland,julia.reda@europarl.europa.eu,senficon,8,2014-07-01,
+124816,Felix,REDA,false,2014-07-01,,2019-07-01,1986-11-30,de,F,Verts/ALE,Piratenpartei Deutschland,julia.reda@europarl.europa.eu,senficon,8,2014-07-01,
 1185,Viviane,REDING,false,1989-07-25,,2018-09-01,1951-04-27,lu,F,PPE,Parti chrétien social luxembourgeois,,,8,2014-07-01,
 96920,Kay,SWINBURNE,false,2009-07-14,,2019-07-01,1967-06-08,uk,F,ECR,Conservative Party,kay.swinburne@europarl.europa.eu,kayswinburnemep,8,2014-07-01,
 96931,Maurice,PONGA,false,2009-07-14,,2019-07-01,1947-06-05,fr,M,PPE,Les Républicains,maurice.ponga@europarl.europa.eu,mauriceponga,8,2014-07-01,
@@ -4172,7 +4172,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 236053,Marina,MESURE,true,2022-07-29,2024-07-16,,1989-07-12,fr,F,GUE/NGL,La France Insoumise,marina.mesure@europarl.europa.eu,,10,,2022-07-29
 236050,Marie,DAUCHY,true,2022-07-29,2024-07-16,,1987-02-05,fr,F,Patriots for Europe Group,Rassemblement national,marie.dauchy@europarl.europa.eu,,10,,2022-07-29
 237224,João,ALBUQUERQUE,false,2022-09-13,,2024-07-15,1986-12-25,pt,M,S&D,Partido Socialista,joao.albuquerque@europarl.europa.eu,jdalbuquerque,9,,2022-09-13
-237320,Eva Maria,POPTCHEVA,false,2022-09-15,,2024-07-15,1979-10-17,es,F,RE,Ciudadanos – Partido de la Ciudadanía,evamaria.poptcheva@europarl.europa.eu,,9,,2022-09-15
+237320,Eva-Maria Alexandrova,POPTCHEVA,false,2022-09-15,,2024-07-15,1979-10-17,es,F,RE,Ciudadanos – Partido de la Ciudadanía,evamaria.poptcheva@europarl.europa.eu,,9,,2022-09-15
 237779,Carina,OHLSSON,false,2022-09-26,,2024-07-15,1957-06-14,se,F,S&D,Arbetarepartiet- Socialdemokraterna,carina.ohlsson@europarl.europa.eu,,9,,2022-09-26
 237465,Matthias,ECKE,true,2022-10-03,2024-07-16,,1983-04-12,de,M,S&D,Sozialdemokratische Partei Deutschlands,matthias.ecke@europarl.europa.eu,mattecke,10,,2022-10-03
 238674,Theresa,BIELOWSKI,false,2022-10-10,,2024-07-15,1984-06-15,at,F,S&D,Sozialdemokratische Partei Österreichs,theresa.bielowski@europarl.europa.eu,,9,,2022-10-10
