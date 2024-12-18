@@ -45,7 +45,7 @@ const download = exports.download = function download(done){
 		{ file: "eugroup.json", url: "https://www.epnewshub.eu/v1/contributor/?type=grouppress&pageSize=50&search-value=&search-type=contributor" },
     { file: "seats.json", url: "https://www.europarl.europa.eu/erpl-public/hemicycle//str/en.json" },
 		{ file: "mepid.xml", url: "https://www.europarl.europa.eu/meps/en/full-list/xml" },
-		{ file: "extra_csv.csv", url: "https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv" },
+//		{ file: "extra_csv.csv", url: "https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv" },
 		{ file: "incoming.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml" },
 		{ file: "outgoing.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml" },
 		{ file: "ep_meps_current.json.lz", url: "https://parltrack.org/dumps/ep_meps.json.lz" },

@@ -400,6 +400,22 @@
 		"seat": null
 	},
 	{
+		"id": 40224,
+		"firstName": "Andi",
+		"lastName": "CRISTEA",
+		"group": "S&D",
+		"country": "ro",
+		"seat": null
+	},
+	{
+		"id": 40599,
+		"firstName": "Sirpa",
+		"lastName": "PIETIKÄINEN",
+		"group": "EPP",
+		"country": "fi",
+		"seat": null
+	},
+	{
 		"id": 58766,
 		"firstName": "Nicolae",
 		"lastName": "ŞTEFĂNUȚĂ",
@@ -944,14 +960,6 @@
 		"seat": null
 	},
 	{
-		"id": 124726,
-		"firstName": "Henna",
-		"lastName": "VIRKKUNEN",
-		"group": "EPP",
-		"country": "fi",
-		"seat": null
-	},
-	{
 		"id": 124736,
 		"firstName": "Merja",
 		"lastName": "KYLLÖNEN",
@@ -1476,14 +1484,6 @@
 		"firstName": "Tilly",
 		"lastName": "METZ",
 		"group": "Greens/EFA",
-		"country": "lu",
-		"seat": null
-	},
-	{
-		"id": 193419,
-		"firstName": "Christophe",
-		"lastName": "HANSEN",
-		"group": "EPP",
 		"country": "lu",
 		"seat": null
 	},
@@ -2688,19 +2688,19 @@
 		"seat": null
 	},
 	{
+		"id": 197841,
+		"firstName": "Liudas",
+		"lastName": "MAŽYLIS",
+		"group": "EPP",
+		"country": "lt",
+		"seat": null
+	},
+	{
 		"id": 197842,
 		"firstName": "Elena",
 		"lastName": "YONCHEVA",
 		"group": "Renew",
 		"country": "bg",
-		"seat": null
-	},
-	{
-		"id": 197843,
-		"firstName": "Andrius",
-		"lastName": "KUBILIUS",
-		"group": "EPP",
-		"country": "lt",
 		"seat": null
 	},
 	{
@@ -3101,6 +3101,14 @@
 		"lastName": "BALLARÍN CEREZA",
 		"group": "S&D",
 		"country": "es",
+		"seat": null
+	},
+	{
+		"id": 249603,
+		"firstName": "Martine",
+		"lastName": "KEMP",
+		"group": "EPP",
+		"country": "lu",
 		"seat": null
 	},
 	{
@@ -5165,14 +5173,6 @@
 		"lastName": "RAZZA",
 		"group": "ECR",
 		"country": "it",
-		"seat": null
-	},
-	{
-		"id": 257105,
-		"firstName": "Roxana",
-		"lastName": "MÎNZATU",
-		"group": "S&D",
-		"country": "ro",
 		"seat": null
 	},
 	{
