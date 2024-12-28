@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fetch = require('node-fetch');
 const sharp = require('sharp');
 const fs = require('fs');
@@ -6,7 +7,7 @@ const os = require('os');
 
 // Resolve paths relative to the script file
 const inputJsonPath = path.resolve(__dirname, '../data/meps.json');
-const outputDir = path.resolve(__dirname, 'img/mep/');
+const outputDir = path.resolve(__dirname, '../img/mep/');
 
 // Ensure output directory exists
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
@@ -32,14 +33,14 @@ async function processMEP(mep) {
 
     // Skip if file already exists
     if (fs.existsSync(outputFile)) {
-        console.log(`Skipped: ${outputFile} (already exists)`);
+//        console.log(`Skipped: ${outputFile} (already exists)`);
         return;
     }
 
     try {
         // Download the image
         const imageBuffer = await downloadImage(imageUrl);
-        if (!imageBuffer) return;
+        if (!imageBuffer) throw new Error ("no image " + imageUrl);
 
         // Resize with max height of 100px, maintaining aspect ratio, and cropping to focus on faces
         await sharp(imageBuffer)
@@ -51,7 +52,7 @@ async function processMEP(mep) {
             .toFormat('webp')
             .toFile(outputFile);
 
-        console.log(`Processed: ${outputFile}`);
+//        console.log(`Processed: ${outputFile}`);
     } catch (error) {
         console.error(`Error processing ${imageUrl}:`, error.message);
     }
@@ -62,7 +63,8 @@ async function processMEP(mep) {
         // Read and parse JSON data
         const data = fs.readFileSync(inputJsonPath, 'utf8');
         const meps = JSON.parse(data);
-
+let total = 0;
+console.log("meps",meps.length);
         // Process all MEPs concurrently (limit concurrency to avoid system overload)
         const CONCURRENT_LIMIT = 5;
         const chunks = Array.from({ length: Math.ceil(meps.length / CONCURRENT_LIMIT) }, (_, i) =>
@@ -71,7 +73,15 @@ async function processMEP(mep) {
 
         for (const chunk of chunks) {
             await Promise.all(chunk.map(processMEP));
+total +=chunk.length;
         }
+
+//        for (const mep of meps) {
+//            await processMEP(mep);
+//total ++;
+//        }
+
+console.log("processed",total);
     } catch (error) {
         console.error('Error:', error.message);
     }

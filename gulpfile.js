@@ -10,7 +10,8 @@ const gulp_uglify = require("gulp-uglify");
 const gulp_minify = require("gulp-clean-css");
 const gulp_rename = require("gulp-rename");
 const exec = require('child_process').exec;
-const lunzip = require("lunzip-stream");
+//const lunzip = require("lunzip-stream");
+const zstd = require('node-zstandard');
 const downloader = require("./lib/download");
 
 // config
@@ -48,7 +49,8 @@ const download = exports.download = function download(done){
 //		{ file: "extra_csv.csv", url: "https://raw.githubusercontent.com/eliflab/European-Parliament-Open-Data/master/meps_full_list_with_twitter_accounts.csv" },
 		{ file: "incoming.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/incoming/xml" },
 		{ file: "outgoing.xml", url: "https://www.europarl.europa.eu/meps/en/incoming-outgoing/outgoing/xml" },
-		{ file: "ep_meps_current.json.lz", url: "https://parltrack.org/dumps/ep_meps.json.lz" },
+    { file: "ep_meps_current.json.zst", url: "https://parltrack.org/dumps/ep_meps.json.zst"},
+//obsolete		{ file: "ep_meps_current.json.lz", url: "https://parltrack.org/dumps/ep_meps.json.lz" },
 		{ file: "epnewshub.json", url: "https://www.epnewshub.eu/v1/contributor/?type=mep&pageSize=1000&search-value=&search-type=contributor" },
 	].map(function(src){
 		src.file = path.resolve(__dirname,"data/mirror",src.file);
@@ -59,7 +61,14 @@ const download = exports.download = function download(done){
 };
 
 const decompress = exports.decompress = function decompress(done) {
-	return fs.createReadStream('data/mirror/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/mirror/ep_meps_current.json").on("end", done));
+const inputFile ='data/mirror/ep_meps_current.json.zst';
+const outputFile = 'data/mirror/ep_meps_current.json';
+zstd.decompressFileToFile (inputFile, outputFile, done);
+return;
+console.log(zstd);
+      const decompressStream = new zstd.DecompressStream();
+	//return fs.createReadStream('data/mirror/ep_meps_current.json.lz').pipe(lunzip()).pipe(fs.createWriteStream("data/mirror/ep_meps_current.json").on("end", done));
+	return fs.createReadStream('data/mirror/ep_meps_current.json.zst').pipe(decompressStream).pipe(fs.createWriteStream("data/mirror/ep_meps_current.json").on("end", done));
 };
 
 const mepid = exports.mepid = function mepid(done) {
