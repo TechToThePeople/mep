@@ -4104,7 +4104,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 197652,Angelika,WINZIG,true,2019-07-02,2024-07-16,,1963-05-09,at,F,PPE,Österreichische Volkspartei,angelika.winzig@europarl.europa.eu,angelikawinzig,10,,2019-07-02
 197421,Isabel,WISELER-LIMA,true,2019-07-02,2024-07-16,,1961-12-29,lu,F,PPE,Parti chrétien social luxembourgeois,isabel.wiseler@europarl.europa.eu,iwiseler,10,,2019-07-02
 197511,Salima,YENBOU,false,2019-07-02,,2024-07-15,1971-03-14,fr,F,RE,Renaissance,salima.yenbou@europarl.europa.eu,salima_yenbou,9,,2019-07-02
-197842,Elena,YONCHEVA,true,2019-07-02,2024-07-16,,1964-05-27,bg,F,RE,Movement for Rights and Freedoms,elena.yoncheva@europarl.europa.eu,,10,,2019-07-02
+197842,Elena,YONCHEVA,true,2019-07-02,2024-07-16,,1964-05-27,bg,F,NA,Movement for Rights and Freedoms,elena.yoncheva@europarl.europa.eu,,10,,2019-07-02
 197581,Stéphanie,YON-COURTIN,true,2019-07-02,2024-07-16,,1974-03-28,fr,F,RE,Renaissance,stephanie.yon@europarl.europa.eu,s_yoncourtin,10,,2019-07-02
 197499,Chrysoula,ZACHAROPOULOU,false,2019-07-02,,2022-05-19,1976-05-07,fr,F,RE,La République en marche,chrysoula.zacharopoulou@europarl.europa.eu,,9,,2019-07-02
 197572,Anna,ZALEWSKA,true,2019-07-02,2024-07-16,,1965-07-06,pl,F,ECR,Prawo i Sprawiedliwość,anna.zalewska@europarl.europa.eu,annazalewskamep,10,,2019-07-02
@@ -4369,7 +4369,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257022,Nora,JUNCO GARCÍA,true,2024-07-16,2024-07-16,,,es,F,ECR,Se Acabó la Fiesta,nora.juncogarcia@europarl.europa.eu,,10,,
 256908,François,KALFON,true,2024-07-16,2024-07-16,,1968-06-11,fr,M,S&D,Parti socialiste,francois.kalfon@europarl.europa.eu,,10,,
 256941,Alexander,JUNGBLUTH,true,2024-07-16,2024-07-16,,1987-02-07,de,M,Europe of Sovereign Nations Group,Alternative für Deutschland,alexander.jungbluth@europarl.europa.eu,,10,,
-257256,Taner,KABILOV,true,2024-07-16,2024-07-16,,1987-04-28,bg,M,RE,Movement for Rights and Freedoms,taner.kabilov@europarl.europa.eu,,10,,
+257256,Taner,KABILOV,true,2024-07-16,2024-07-16,,1987-04-28,bg,M,NA,Movement for Rights and Freedoms,taner.kabilov@europarl.europa.eu,,10,,
 257007,Erik,KALIŇÁK,true,2024-07-16,2024-07-16,,1991-09-09,sk,M,NA,SMER-Sociálna demokracia,erik.kalinak@europarl.europa.eu,,10,,
 257056,Mariusz,KAMIŃSKI,true,2024-07-16,2024-07-16,,1965-09-25,pl,M,ECR,Prawo i Sprawiedliwość,mariusz.kaminski@europarl.europa.eu,,10,,
 256900,Fernand,KARTHEISER,true,2024-07-16,2024-07-16,,1959-09-30,lu,M,ECR,Alternativ Demokratesch Reformpartei,fernand.kartheiser@europarl.europa.eu,,10,,
@@ -4448,7 +4448,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257083,João,OLIVEIRA,true,2024-07-16,2024-07-16,,1979-07-09,pt,M,GUE/NGL,Partido Comunista Português,joao.oliveira@europarl.europa.eu,,10,,
 257018,Branislav,ONDRUŠ,true,2024-07-16,2024-07-16,,1973-03-28,sk,M,NA,Hlas – sociálna demokracia,branislav.ondrus@europarl.europa.eu,,10,,
 257238,Aodhán,Ó RÍORDÁIN,true,2024-07-16,2024-07-16,,1976-07-22,ie,M,S&D,Labour Party,aodhan.oriordain@europarl.europa.eu,,10,,
-257086,Jacek,OZDOBA,true,2024-07-16,2024-07-16,,1991-09-22,pl,M,ECR,Sovereign Poland,jacek.ozdoba@europarl.europa.eu,,10,,
+257086,Jacek,OZDOBA,true,2024-07-16,2024-07-16,,1991-09-22,pl,M,ECR,Prawo i Sprawiedliwość,jacek.ozdoba@europarl.europa.eu,,10,,
 256993,Leire,PAJÍN,true,2024-07-16,2024-07-16,,1976-09-16,es,F,S&D,Partido Socialista Obrero Español,leire.pajiniraola@europarl.europa.eu,,10,,
 256989,Fidias,PANAYIOTOU,true,2024-07-16,2024-07-16,,2000-04-10,cy,M,NA,Independent,fidias.panayiotou@europarl.europa.eu,,10,,
 257135,Valentina,PALMISANO,true,2024-07-16,2024-07-16,,1983-01-24,it,F,GUE/NGL,Movimento 5 Stelle,valentina.palmisano@europarl.europa.eu,,10,,
@@ -4524,7 +4524,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257101,Cecilia,STRADA,true,2024-07-16,2024-07-16,,1979-03-12,it,F,S&D,Partito Democratico,cecilia.strada@europarl.europa.eu,,10,,
 256962,Joachim,STREIT,true,2024-07-16,2024-07-16,,1965-06-04,de,M,RE,Freie Wähler,joachim.streit@europarl.europa.eu,,10,,
 256990,Anna,STROLENBERG,true,2024-07-16,2024-07-16,,1995-07-23,nl,F,Verts/ALE,Volt,anna.strolenberg@europarl.europa.eu,,10,,
-257119,Şerban-Dimitrie,STURDZA,true,2024-07-16,2024-07-16,,1967-03-30,ro,M,ECR,Alianța pentru Unirea Românilor,serban.dimitrie.sturdza@europarl.europa.eu,,10,,
+257119,Şerban Dimitrie,STURDZA,true,2024-07-16,2024-07-16,,1967-03-30,ro,M,ECR,Alianța pentru Unirea Românilor,serban.dimitrie.sturdza@europarl.europa.eu,,10,,
 256839,Anna,STÜRGKH,true,2024-07-16,2024-07-16,,1994-04-02,at,F,RE,NEOS – Das Neue Österreich,anna.sturgkh@europarl.europa.eu,,10,,
 257070,Marcin,SYPNIEWSKI,true,2024-07-16,2024-07-16,,1979-01-30,pl,M,Europe of Sovereign Nations Group,Konfederacja Wolność i Niepodległość,marcin.sypniewski@europarl.europa.eu,,10,,
 257026,Michał,SZCZERBA,true,2024-07-16,2024-07-16,,1977-12-14,pl,M,PPE,Platforma Obywatelska,michal.szczerba@europarl.europa.eu,,10,,
