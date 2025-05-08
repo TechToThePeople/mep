@@ -2297,7 +2297,7 @@
 	},
 	{
 		"id": 197658,
-		"firstName": "Adrian-Dragoş",
+		"firstName": "Dragoş",
 		"lastName": "BENEA",
 		"group": "S&D",
 		"country": "ro",
@@ -3507,7 +3507,7 @@
 		"id": 256871,
 		"firstName": "Malika",
 		"lastName": "SOREL",
-		"group": "Patriots",
+		"group": "NA",
 		"country": "fr",
 		"seat": null
 	},
@@ -5741,6 +5741,14 @@
 		"lastName": "GRONKIEWICZ-WALTZ",
 		"group": "EPP",
 		"country": "pl",
+		"seat": null
+	},
+	{
+		"id": 267485,
+		"firstName": "Volker",
+		"lastName": "SCHNURRBUSCH",
+		"group": "ESN",
+		"country": "de",
 		"seat": null
 	}
 ]
