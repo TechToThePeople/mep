@@ -83,6 +83,11 @@ const transform = exports.transform = function transform(done) {
 	require("./script/transform.js")(done);
 };
 
+const addLang = exports.addLang = function addLang(done) {
+	require("./script/addLang.js")(done);
+};
+
+
 
 const alias = exports.alias = function alias(done) {
 	require("./script/aliases.js")(done);
@@ -174,4 +179,4 @@ console.log("done",err);
 
 exports.build = gulp.parallel(css, js);
 
-exports.default = exports.update = gulp.series(download, decompress, inout, mepid, transform, alias, html);
+exports.default = exports.update = gulp.series(download, decompress, inout, mepid, transform, addLang, alias, html);

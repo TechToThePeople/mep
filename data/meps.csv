@@ -38,7 +38,7 @@ jk5f6,it,Raffaele,TOPO,raffaele.topo@europarl.europa.eu,1965-03-02,M,S&D,Partito
 lk5f5,it,Alessandro,CIRIANI,alessandro.ciriani@europarl.europa.eu,1970-08-02,M,ECR,FRATELLI D' ITALIA,003222845441,04U033,LIBE,"ITRE|HOUS",D-RS,,257147,2024-07-16,,,,,,,,,,,,,,,,,,,,,,S,,M,,,,,,,
 qk5f3,it,Daniele,POLATO,daniele.polato@europarl.europa.eu,1975-06-04,M,ECR,FRATELLI D' ITALIA,003222845917,03U035,INTA,"IMCO|EUDS","DARP|DASE",,257145,2024-07-16,,,,,,,,,,,,,,,,,,S,,,M,,,,,,,,,,
 sk5f2,it,Paolo,INSELVINI,paolo.inselvini@europarl.europa.eu,1994-10-05,M,ECR,FRATELLI D' ITALIA,003222845606,03U024,"LIBE|PETI","DEVE|ENVI","DAFR|OACPS",,257144,2024-07-16,,,,,,,,,,,S,,,,S,,,,,,,,,M,,,M,,,,
-vk5f1,it,Mariateresa,VIVALDINI,mariateresa.vivaldini@europarl.europa.eu,1967-11-22,F,ECR,FRATELLI D' ITALIA,003222845944,03U045,"EMPL|ITRE",IMCO,D-MX,,257143,2024-07-16,,,,,,,,,,,,,,M,,,,S,,,,M,,,,,,,,,
+vk5f1,it,Mariateresa,VIVALDINI,mariateresa.vivaldini@europarl.europa.eu,1967-11-22,F,ECR,FRATELLI D' ITALIA,003222845944,03U045,"EMPL|ITRE","IMCO|ECON",D-MX,,257143,2024-07-16,,,,,,,,,,,,,S,M,,,,S,,,,M,,,,,,,,,
 0k5fz,it,Carolina,MORACE,carolina.morace@europarl.europa.eu,1964-02-05,F,GUE/NGL,Movimento 5 Stelle,003222845898,01H253,FEMM,"CULT|DEVE",DANZ,,257140,2024-07-16,,,,,,,,,,S,S,,,,,M,,,,,,,,,,,,,,,
 2k5fy,it,Benedetta,SCUDERI,benedetta.scuderi@europarl.europa.eu,1991-09-08,F,Greens/EFA,Europa Verde - Verdi,003222845490,04F134,"ITRE|FEMM","CULT|EMPL",D-CN,,257139,2024-07-16,,,,,,,,,,S,,,,S,,M,,,,,,M,,,,,,,,,
 4k5fx,it,Giuseppe,ANTOCI,giuseppe.antoci@europarl.europa.eu,1968-01-11,M,GUE/NGL,Movimento 5 Stelle,,,LIBE,"AGRI|REGI|SEDE","D-IL|DMED",,257138,2024-07-16,,,S,,,,,,,,,,,,,,,,,,,,,M,,,,S,,S,
@@ -254,7 +254,7 @@ zk46n,fr,Claire,FITA,claire.fita@europarl.europa.eu,1976-12-31,F,S&D,Parti socia
 4k46k,fr,Thomas,PELLERIN-CARLIN,thomas.pellerin-carlin@europarl.europa.eu,1989-11-05,M,S&D,Place publique,003222845715,11G169,ITRE,"CONT|ENVI",D-UK,,256903,2024-07-16,,,,,,,,S,,,,,,,S,,,,,,,M,,,,,,,,,
 6k46j,fr,Emma,RAFOWICZ,emma.rafowicz@europarl.europa.eu,1995-06-24,F,S&D,Parti socialiste,003222845734,11G209,"FEMM|CULT",LIBE,D-IN,,256902,2024-07-16,,,,,,,,,,V,,,,,,M,,,,,,,,S,,,,,,,
 8k46h,fr,Jean-Marc,GERMAIN,jean-marc.germain@europarl.europa.eu,1966-06-12,M,S&D,Parti socialiste,003222845479,11G201,BUDG,"INTA|TRAN","D-MX|DLAT",,256901,2024-07-16,,,,,,,M,,,,,,,,,,,,,,S,,,,,,,,,,S
-bk46g,lu,Fernand,KARTHEISER,fernand.kartheiser@europarl.europa.eu,1959-09-30,M,ECR,Alternativ Demokratesch Reformpartei,003222845636,01U032,ITRE,"ECON|FISC",D-RU,,256900,2024-07-16,,,,,,,,,,,,,S,,,,S,,,,,M,,,,,,,,,
+bk46g,lu,Fernand,KARTHEISER,fernand.kartheiser@europarl.europa.eu,1959-09-30,M,NA,Alternativ Demokratesch Reformpartei,003222845636,01U032,,,,,256900,2024-07-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 dk46f,fr,Murielle,LAURENT,murielle.laurent@europarl.europa.eu,1977-09-21,F,S&D,Parti socialiste,003222845626,11G153,"LIBE|DEVE|PETI",,"DMAS|DCAB|OACPS",,256899,2024-07-16,,,,,,,,,,,M,,,,,,,,,,,,,M,,,M,,,,
 gk46d,fr,Pierre,JOUVET,pierre.jouvet@europarl.europa.eu,1986-10-06,M,S&D,Parti socialiste,003222845607,11G202,IMCO,"ENVI|SANT","D-IL|DPAL|DMAG",,256898,2024-07-16,,,,,,,,,,,,,,,S,,,M,,,,,,,,,,,S,,
 lk46b,fr,Angéline,FURET,angeline.furet@europarl.europa.eu,1981-07-24,F,Patriots,Rassemblement national,003222845759,05M035,BUDG,EMPL,"D-CN|DEPA",,256896,2024-07-16,,,,,,,M,,,,,,,S,,,,,,,,,,,,,,,,,
@@ -572,7 +572,7 @@ zf4dm,at,Harald,VILIMSKY,harald.vilimsky@europarl.europa.eu,1966-07-22,M,Patriot
 zf4c3,ie,Luke Ming,FLANAGAN,lukeming.flanagan@europarl.europa.eu,1972-01-22,M,GUE/NGL,Independent,003222845238,01H246,AGRI,"PECH|IMCO","D-UK|DMER",lukeming,124985,2014-07-01,,,M,,,,,,,,,,,,,,,S,,,,,,,S,,,,,,
 0f4c2,ie,Lynn,BOYLAN,lynn.boylan@europarl.europa.eu,1976-11-29,F,GUE/NGL,Sinn Féin,003222845651,08H247,"INTA|ENVI",,DPAL,lnbdublin,124984,2014-07-01,,,,,,,,,,,,,,,M,,,,,,M,,,,,,,,,,
 rf4cr,be,Gerolf,ANNEMANS,gerolf.annemans@europarl.europa.eu,1958-11-08,M,Patriots,Vlaams Belang,003222845700,07M061,"AFCO|CULT",,"DSCA|DEPA",gannemans,124973,2014-07-01,M,,,,,,,,,M,,,,,,,,,,,,,,,,,,,,,
-rf389,pl,Krzysztof,HETMAN,krzysztof.hetman@europarl.europa.eu,1974-06-27,M,EPP,Polskie Stronnictwo Ludowe,003222845512,13E201,"AGRI|REGI",ITRE,DCAS,hetman_k,124895,2014-07-01,,,M,,,,,,,,,,,,,,,,,,,S,,,,,,M,,,
+rf389,pl,Krzysztof,HETMAN,krzysztof.hetman@europarl.europa.eu,1974-06-27,M,EPP,Polskie Stronnictwo Ludowe,003222845512,13E201,"REGI|AGRI",ITRE,DCAS,hetman_k,124895,2014-07-01,,,V,,,,,,,,,,,,,,,,,,,S,,,,,,M,,,
 wf387,pl,Bogdan Andrzej,ZDROJEWSKI,bogdan.zdrojewski@europarl.europa.eu,1957-05-18,M,EPP,Platforma Obywatelska,003222845860,13E140,"INTA|CULT",,"DAFR|OACPS",bzdrojewski,124893,2014-07-01,,,,,,,,,,V,,,,,,,,,,,M,,,,,,,,,,
 ff38z,pl,Kosma,ZŁOTOWSKI,kosma.zlotowski@europarl.europa.eu,1964-01-14,M,ECR,Prawo i Sprawiedliwość,003222845775,06U045,TRAN,"JURI|PETI|IMCO|EMPL",,kosmazlotowski,124884,2014-07-01,,,,,,,,,,,,,,S,,,,S,,,,,S,,,,S,,,,M
 xf38r,pl,Jadwiga,WIŚNIEWSKA,jadwiga.wisniewska@europarl.europa.eu,1963-07-02,F,ECR,Prawo i Sprawiedliwość,003222845471,02U038,LIBE,"FEMM|ENVI",D-UK,j_wisniewska,124877,2014-07-01,,,,,,,,,,,,,,,S,S,,,,,,,,M,,,,,,,
