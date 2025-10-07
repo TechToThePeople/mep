@@ -418,7 +418,7 @@
 	{
 		"id": 58766,
 		"firstName": "Nicolae",
-		"lastName": "ŞTEFĂNUȚĂ",
+		"lastName": "ȘTEFĂNUȚĂ",
 		"group": "Greens/EFA",
 		"country": "ro",
 		"seat": null
@@ -869,14 +869,6 @@
 		"lastName": "METSOLA",
 		"group": "EPP",
 		"country": "mt",
-		"seat": null
-	},
-	{
-		"id": 118949,
-		"firstName": "Ondřej",
-		"lastName": "KOVAŘÍK",
-		"group": "Patriots",
-		"country": "cz",
 		"seat": null
 	},
 	{
@@ -3360,14 +3352,6 @@
 		"seat": null
 	},
 	{
-		"id": 256850,
-		"firstName": "Filip",
-		"lastName": "TUREK",
-		"group": "Patriots",
-		"country": "cz",
-		"seat": null
-	},
-	{
 		"id": 256851,
 		"firstName": "Ondřej",
 		"lastName": "DOSTÁL",
@@ -3900,14 +3884,6 @@
 		"firstName": "Marie-Agnes",
 		"lastName": "STRACK-ZIMMERMANN",
 		"group": "Renew",
-		"country": "de",
-		"seat": null
-	},
-	{
-		"id": 256927,
-		"firstName": "Carola",
-		"lastName": "RACKETE",
-		"group": "GUE/NGL",
 		"country": "de",
 		"seat": null
 	},
@@ -5748,6 +5724,22 @@
 		"firstName": "Volker",
 		"lastName": "SCHNURRBUSCH",
 		"group": "ESN",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 270261,
+		"firstName": "Jaroslav",
+		"lastName": "KNOT",
+		"group": "Patriots",
+		"country": "cz",
+		"seat": null
+	},
+	{
+		"id": 270719,
+		"firstName": "Martin",
+		"lastName": "GÜNTHER",
+		"group": "GUE/NGL",
 		"country": "de",
 		"seat": null
 	}

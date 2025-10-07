@@ -15,6 +15,7 @@
 	"DLAT": "Delegation to the Euro-Latin American Parliamentary Assembly",
 	"TRAN": "Committee on Transport and Tourism",
 	"EUDS": "Special committee on the European Democracy Shield",
+	"CONT": "Committee on Budgetary Control",
 	"D-IN": "Delegation for relations with India",
 	"DPAC": "Delegation to the Pacific-EU Parliamentary Assembly",
 	"PECH": "Committee on Fisheries",
@@ -45,7 +46,6 @@
 	"DMAS": "Delegation for relations with the Mashreq countries",
 	"D-UA": "Delegation to the EU-Ukraine Parliamentary Association Committee",
 	"DEPA": "Delegation to the Euronest Parliamentary Assembly",
-	"CONT": "Committee on Budgetary Control",
 	"DARP": "Delegation for relations with the Arab Peninsula",
 	"D-CN": "Delegation for relations with the People's Republic of China",
 	"D-RS": "Delegation to the EU-Serbia Stabilisation and Association Parliamentary Committee",
@@ -72,11 +72,11 @@
 	"DROI": "Subcommittee on Human Rights",
 	"DPAP": "Delegation for relations with the Pan-African Parliament",
 	"D-MX": "Delegation to the EU-Mexico Joint Parliamentary Committee",
+	"DMER": "Delegation for relations with Mercosur",
 	"DEEA": "Delegation for Northern cooperation and for relations with Switzerland and Norway and to the EU-Iceland Joint Parliamentary Committee and the European Economic Area (EEA) Joint Parliamentary Committee",
 	"PETI": "Committee on Petitions",
 	"DSAS": "Delegation for relations with the countries of South Asia",
 	"D-RU": "Delegation to the EU-Russia Parliamentary Cooperation Committee",
 	"DCAB": "Delegation to the Caribbean-EU Parliamentary Assembly",
-	"DMER": "Delegation for relations with Mercosur",
 	"D-IL": "Delegation for relations with Israel"
 }
