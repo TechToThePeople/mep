@@ -1920,18 +1920,18 @@
 		"seat": null
 	},
 	{
-		"id": 197502,
-		"firstName": "Marie-Pierre",
-		"lastName": "VEDRENNE",
-		"group": "Renew",
-		"country": "fr",
-		"seat": null
-	},
-	{
 		"id": 197503,
 		"firstName": "David",
 		"lastName": "CORMAND",
 		"group": "Greens/EFA",
+		"country": "fr",
+		"seat": null
+	},
+	{
+		"id": 197504,
+		"firstName": "Jérémy",
+		"lastName": "DECERLE",
+		"group": "Renew",
 		"country": "fr",
 		"seat": null
 	},
@@ -5741,6 +5741,14 @@
 		"lastName": "GÜNTHER",
 		"group": "GUE/NGL",
 		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 272024,
+		"firstName": "Antonín",
+		"lastName": "STANĚK",
+		"group": "Patriots",
+		"country": "cz",
 		"seat": null
 	}
 ]

@@ -4077,7 +4077,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 197810,Nils,UŠAKOVS,true,2019-07-02,2024-07-16,,1976-06-08,lv,M,S&D,"Saskaņa" sociāldemokrātiskā partija,nils.usakovs@europarl.europa.eu,,10,,2019-07-02
 185771,Tom,VANDENDRIESSCHE,true,2019-07-02,2024-07-16,,1978-10-27,be,M,Patriots for Europe Group,Vlaams Belang,tom.vandendriessche@europarl.europa.eu,,10,,2019-07-02
 197870,Kim,VAN SPARRENTAK,true,2019-07-02,2024-07-16,,1989-10-16,nl,F,Verts/ALE,GroenLinks-PvdA,kim.vansparrentak@europarl.europa.eu,kimvsparrentak,10,,2019-07-02
-197502,Marie-Pierre,VEDRENNE,true,2019-07-02,2024-07-16,,1982-12-13,fr,F,RE,Mouvement Démocrate,marie-pierre.vedrenne@europarl.europa.eu,mariepierrev,10,,2019-07-02
+197502,Marie-Pierre,VEDRENNE,false,2019-07-02,2024-07-16,2025-10-11,1982-12-13,fr,F,RE,Mouvement Démocrate,marie-pierre.vedrenne@europarl.europa.eu,mariepierrev,10,,2019-07-02
 197747,Kyriakos,VELOPOULOS,false,2019-07-02,,2019-07-06,1965-10-24,gr,M,ECR,Elliniki Lusi-Greek Solution,,,9,,2019-07-02
 197827,Idoia,VILLANUEVA RUIZ,false,2019-07-02,,2024-07-15,1980-07-17,es,F,GUE/NGL,PODEMOS,idoia.villanueva@europarl.europa.eu,idoiavr,9,,2019-07-02
 197571,Nikolaj,VILLUMSEN,false,2019-07-02,,2024-07-15,1983-02-28,dk,M,GUE/NGL,Enhedslisten,nikolaj.villumsen@europarl.europa.eu,nvillumsen,9,,2019-07-02
@@ -4551,7 +4551,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257133,Pasquale,TRIDICO,true,2024-07-16,2024-07-16,,1975-09-21,it,M,GUE/NGL,Movimento 5 Stelle,pasquale.tridico@europarl.europa.eu,,10,,
 256925,Laurence,TROCHU,true,2024-07-16,2024-07-16,,1973-07-04,fr,F,ECR,Identité Libertés,laurence.trochu@europarl.europa.eu,,10,,
 256950,Dimitris,TSIODRAS,true,2024-07-16,2024-07-16,,1959-10-26,gr,M,PPE,Nea Demokratia,dimitrios.tsiodras@europarl.europa.eu,,10,,
-256850,Filip,TUREK,true,2024-07-16,2024-07-16,,1985-10-15,cz,M,Patriots for Europe Group,Motoristé sobě,filip.turek@europarl.europa.eu,,10,,
+256850,Filip,TUREK,false,2024-07-16,2024-07-16,2025-10-03,1985-10-15,cz,M,Patriots for Europe Group,Motoristé sobě,filip.turek@europarl.europa.eu,,10,,
 256806,Sebastian,TYNKKYNEN,true,2024-07-16,2024-07-16,,1989-03-08,fi,M,ECR,Perussuomalaiset,sebastian.tynkkynen@europarl.europa.eu,,10,,
 257062,Stanisław,TYSZKA,true,2024-07-16,2024-07-16,,1979-04-11,pl,M,Europe of Sovereign Nations Group,Konfederacja Wolność i Niepodległość,stanislaw.tyszka@europarl.europa.eu,,10,,
 257258,Ivaylo,VALCHEV,true,2024-07-16,2024-07-16,,1972-01-09,bg,M,ECR,There Is Such a People,ivaylo.valchev@europarl.europa.eu,,10,,
@@ -4592,3 +4592,4 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 267485,Volker,SCHNURRBUSCH,true,2025-04-04,2025-04-04,,,de,,Europe of Sovereign Nations Group,Alternative für Deutschland,volker.schnurrbusch@europarl.europa.eu,,10,,
 270261,Jaroslav,KNOT,true,2025-07-31,2025-07-31,,,cz,,Patriots for Europe Group,ANO 2011,jaroslav.knot@europarl.europa.eu,,10,,
 270719,Martin,GÜNTHER,true,2025-09-16,2025-09-16,,,de,,GUE/NGL,DIE LINKE.,martin.guenther@europarl.europa.eu,,10,,
+272024,Antonín,STANĚK,true,2025-10-04,2025-10-04,,1966-03-02,cz,,Patriots for Europe Group,Přísaha,antonin.stanek@europarl.europa.eu,,10,,
