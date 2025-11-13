@@ -3784,7 +3784,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 197608,Gianantonio,DA RE,false,2019-07-02,,2024-07-15,1953-09-06,it,M,ID,Lega,gianantonio.dare@europarl.europa.eu,,9,,2019-07-02
 197760,Martin Edward,DAUBNEY,false,2019-07-02,,2020-01-31,1970-06-22,uk,M,NA,The Brexit Party,martin.daubney@europarl.europa.eu,,9,,2019-07-02
 197556,Ivan,DAVID,true,2019-07-02,2024-07-16,,1952-09-24,cz,M,Europe of Sovereign Nations Group,Svoboda a přímá demokracie,ivan.david@europarl.europa.eu,,10,,2019-07-02
-197504,Jérémy,DECERLE,false,2019-07-02,,2024-07-15,1984-07-01,fr,M,RE,Liste L'Europe Ensemble,jeremy.decerle@europarl.europa.eu,jdecerle,9,,2019-07-02
+197504,Jérémy,DECERLE,true,2019-07-02,2025-10-12,,1984-07-01,fr,M,RE,Renaissance,jeremy.decerle@europarl.europa.eu,jdecerle,10,,2019-07-02
 197531,Gwendoline,DELBOS-CORFIELD,false,2019-07-02,,2024-07-15,1977-03-08,fr,F,Verts/ALE,Europe Écologie,gwendoline.delbos-corfield@europarl.europa.eu,gdelboscorfield,9,,2019-07-02
 197736,Belinda,DE LUCY,false,2019-07-02,,2020-01-31,1976-10-15,uk,F,NA,The Brexit Party,belinda.delucy@europarl.europa.eu,,9,,2019-07-02
 197472,Filip,DE MAN,false,2019-07-02,,2024-07-15,1955-11-11,be,M,ID,Vlaams Belang,filip.deman@europarl.europa.eu,,9,,2019-07-02
@@ -4518,7 +4518,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256916,Mārtiņš,STAĶIS,true,2024-07-16,2024-07-16,,1979-07-04,lv,M,Verts/ALE,Progresīvie,martins.stakis@europarl.europa.eu,,10,,
 220897,Petra,STEGER,true,2024-07-16,2024-07-16,,1987-10-04,at,F,Patriots for Europe Group,Freiheitliche Partei Österreichs,petra.steger@europarl.europa.eu,,10,,
 257025,Kristoffer,STORM,true,2024-07-16,2024-07-16,,1989-01-26,dk,M,ECR,Danmarksdemokraterne,kristoffer.storm@europarl.europa.eu,,10,,
-256991,Sebastiaan,STÖTELER,true,2024-07-16,2024-07-16,,1983-11-18,nl,M,Patriots for Europe Group,Partij voor de Vrijheid,sebastiaan.stoteler@europarl.europa.eu,,10,,
+256991,Sebastiaan,STÖTELER,false,2024-07-16,2024-07-16,2025-11-11,1983-11-18,nl,M,Patriots for Europe Group,Partij voor de Vrijheid,sebastiaan.stoteler@europarl.europa.eu,,10,,
 257255,Stanislav,STOYANOV,true,2024-07-16,2024-07-16,,1981-04-05,bg,M,Europe of Sovereign Nations Group,Revival,stanislav.stoyanov@europarl.europa.eu,,10,,
 256926,Marie-Agnes,STRACK-ZIMMERMANN,true,2024-07-16,2024-07-16,,1958-03-10,de,F,RE,Freie Demokratische Partei,marie-agnes.strack-zimmermann@europarl.europa.eu,,10,,
 257101,Cecilia,STRADA,true,2024-07-16,2024-07-16,,1979-03-12,it,F,S&D,Partito Democratico,cecilia.strada@europarl.europa.eu,,10,,
