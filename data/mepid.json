@@ -216,14 +216,6 @@
 		"seat": null
 	},
 	{
-		"id": 28219,
-		"firstName": "Daniel",
-		"lastName": "CASPARY",
-		"group": "EPP",
-		"country": "de",
-		"seat": null
-	},
-	{
 		"id": 28223,
 		"firstName": "Andreas",
 		"lastName": "SCHWAB",
@@ -1291,7 +1283,7 @@
 		"id": 125325,
 		"firstName": "Sander",
 		"lastName": "SMIT",
-		"group": "EPP",
+		"group": "ECR",
 		"country": "nl",
 		"seat": null
 	},
@@ -2187,7 +2179,7 @@
 		"id": 197618,
 		"firstName": "Elisabetta",
 		"lastName": "GUALMINI",
-		"group": "S&D",
+		"group": "Renew",
 		"country": "it",
 		"seat": null
 	},
@@ -2516,14 +2508,6 @@
 		"firstName": "Bert-Jan",
 		"lastName": "RUISSEN",
 		"group": "ECR",
-		"country": "nl",
-		"seat": null
-	},
-	{
-		"id": 197778,
-		"firstName": "Tom",
-		"lastName": "BERENDSEN",
-		"group": "EPP",
 		"country": "nl",
 		"seat": null
 	},
@@ -3371,7 +3355,7 @@
 		"id": 256852,
 		"firstName": "Nikola",
 		"lastName": "BARTŮŠEK",
-		"group": "Patriots",
+		"group": "NA",
 		"country": "cz",
 		"seat": null
 	},
@@ -3859,7 +3843,7 @@
 		"id": 256921,
 		"firstName": "Laurent",
 		"lastName": "CASTILLO",
-		"group": "EPP",
+		"group": "Patriots",
 		"country": "fr",
 		"seat": null
 	},
@@ -4179,7 +4163,7 @@
 		"id": 256971,
 		"firstName": "Lukas",
 		"lastName": "SIEPER",
-		"group": "NA",
+		"group": "Renew",
 		"country": "de",
 		"seat": null
 	},
@@ -4251,7 +4235,7 @@
 		"id": 256983,
 		"firstName": "Jessika",
 		"lastName": "VAN LEEUWEN",
-		"group": "EPP",
+		"group": "ECR",
 		"country": "nl",
 		"seat": null
 	},
@@ -4842,7 +4826,7 @@
 	{
 		"id": 257066,
 		"firstName": "André",
-		"lastName": "RODRIGUES",
+		"lastName": "FRANQUEIRA RODRIGUES",
 		"group": "S&D",
 		"country": "pt",
 		"seat": null
@@ -4867,7 +4851,7 @@
 		"id": 257069,
 		"firstName": "Ewa",
 		"lastName": "ZAJĄCZKOWSKA-HERNIK",
-		"group": "ESN",
+		"group": "Patriots",
 		"country": "pl",
 		"seat": null
 	},
@@ -5272,14 +5256,6 @@
 		"seat": null
 	},
 	{
-		"id": 257122,
-		"firstName": "Antonio",
-		"lastName": "DECARO",
-		"group": "S&D",
-		"country": "it",
-		"seat": null
-	},
-	{
 		"id": 257123,
 		"firstName": "Lucia",
 		"lastName": "ANNUNZIATA",
@@ -5299,7 +5275,7 @@
 		"id": 257125,
 		"firstName": "Roberto",
 		"lastName": "VANNACCI",
-		"group": "Patriots",
+		"group": "ESN",
 		"country": "it",
 		"seat": null
 	},
@@ -5749,6 +5725,22 @@
 		"lastName": "STANĚK",
 		"group": "Patriots",
 		"country": "cz",
+		"seat": null
+	},
+	{
+		"id": 275087,
+		"firstName": "Georgia",
+		"lastName": "TRAMACERE",
+		"group": "S&D",
+		"country": "it",
+		"seat": null
+	},
+	{
+		"id": 276060,
+		"firstName": "Willemien",
+		"lastName": "KONING",
+		"group": "EPP",
+		"country": "nl",
 		"seat": null
 	}
 ]
