@@ -1,4 +1,5 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Anders VISTISEN,DK,124875,10,2024-07-16,2026-04-13,outgoing,PfE,Dansk Folkeparti
 Daniel CASPARY,DE,28219,10,2024-07-16,2026-02-28,outgoing,EPP,Christlich Demokratische Union Deutschlands
 Tom BERENDSEN,NL,197778,10,2024-07-16,2026-02-22,outgoing,EPP,Christen Democratisch Appèl
 Antonio DECARO,IT,257122,10,2024-07-16,2026-02-01,outgoing,S&D,Partito Democratico
@@ -23,7 +24,7 @@ Marko VEŠLIGAJ,HR,260035,10,2024-09-05,,incoming,S&D,Socijaldemokratska partija
 Csaba DÖMÖTÖR,HU,260724,10,2024-09-22,,incoming,PfE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
 Christophe BAY,FR,261797,10,2024-09-27,,incoming,PfE,Rassemblement national
 Séverine WERBROUCK,FR,261796,10,2024-09-27,,incoming,PfE,Rassemblement national
-Hanna GRONKIEWICZ-WALTZ,PL,262021,10,2024-10-10,,incoming,EPP,Platforma Obywatelska
+Hanna GRONKIEWICZ-WALTZ,PL,262021,10,2024-10-10,,incoming,EPP,Koalicja Obywatelska
 Sirpa PIETIKÄINEN,FI,40599,10,2024-12-01,,incoming,EPP,Kansallinen Kokoomus
 Andi CRISTEA,RO,40224,10,2024-12-02,,incoming,S&D,Partidul Social Democrat
 Martine KEMP,LU,249603,10,2024-12-03,,incoming,EPP,Parti chrétien social luxembourgeois
@@ -36,3 +37,5 @@ Jérémy DECERLE,FR,197504,10,2025-10-12,,incoming,Renew,Renaissance
 Mieke ANDRIESE,NL,130881,10,2025-11-20,,incoming,PfE,Partij voor de Vrijheid
 Georgia TRAMACERE,IT,275087,10,2026-02-11,,incoming,S&D,Partito Democratico
 Willemien KONING,NL,276060,10,2026-03-03,,incoming,EPP,Christen Democratisch Appèl
+Marie-Sophie LANIG,DE,277057,10,2026-03-27,,incoming,EPP,Christlich Demokratische Union Deutschlands
+Majbritt BIRKHOLM,DK,277178,10,2026-04-16,,incoming,PfE,Dansk Folkeparti

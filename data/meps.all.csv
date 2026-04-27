@@ -2896,7 +2896,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 124764,Giovanni,TOTI,false,2014-07-01,,2015-07-09,1968-09-07,it,M,PPE,Forza Italia,,,8,2014-07-01,
 124729,Renaud,MUSELIER,false,2014-07-01,,2019-07-01,1959-05-06,fr,M,PPE,Les Républicains,renaud.muselier@europarl.europa.eu,renaudmuselier,8,2014-07-01,
 125019,Cora,van NIEUWENHUIZEN,false,2014-07-01,,2017-10-25,1963-06-12,nl,F,ALDE,Volkspartij voor Vrijheid en Democratie,,,8,2014-07-01,
-96791,Elżbieta Katarzyna,ŁUKACIJEWSKA,true,2009-07-14,2024-07-16,,1966-11-25,pl,F,PPE,Platforma Obywatelska,elzbieta.lukacijewska@europarl.europa.eu,elukacijewska,10,2014-07-01,2019-07-02
+96791,Elżbieta Katarzyna,ŁUKACIJEWSKA,true,2009-07-14,2024-07-16,,1966-11-25,pl,F,PPE,Koalicja Obywatelska,elzbieta.lukacijewska@europarl.europa.eu,elukacijewska,10,2014-07-01,2019-07-02
 23784,Janusz,WOJCIECHOWSKI,false,2003-04-23,,2016-05-07,1954-12-06,pl,M,ECR,Prawo i Sprawiedliwość,,,8,2014-07-01,
 124899,Andrzej,DUDA,false,2014-07-01,,2015-05-25,1972-05-16,pl,M,ECR,Prawo i Sprawiedliwość,,,8,2014-07-01,
 96876,Frank,ENGEL,false,2009-07-14,,2019-07-01,1975-05-10,lu,M,PPE,Parti chrétien social luxembourgeois,frank.engel@europarl.europa.eu,,8,2014-07-01,
@@ -2984,7 +2984,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 28240,Helga,TRÜPEL,false,2004-07-20,,2019-07-01,1958-07-21,de,F,Verts/ALE,Bündnis 90/Die Grünen,helga.truepel@europarl.europa.eu,helgatruepel,8,2014-07-01,
 125020,Paul,TANG,false,2014-07-01,,2024-07-15,1967-04-23,nl,M,S&D,Partij van de Arbeid,paul.tang@europarl.europa.eu,paultang,9,2014-07-01,2019-07-02
 124737,Maria João,RODRIGUES,false,2014-07-01,,2019-07-01,1955-09-25,pt,F,S&D,Partido Socialista,mariajoao.rodrigues@europarl.europa.eu,mjr_eu,8,2014-07-01,
-124875,Anders,VISTISEN,true,2014-07-01,2024-07-16,,1987-11-12,dk,M,Patriots for Europe Group,Dansk Folkeparti,anders.vistisen@europarl.europa.eu,andersvistisen,10,2014-07-01,2022-11-22
+124875,Anders,VISTISEN,false,2014-07-01,2024-07-16,2026-04-13,1987-11-12,dk,M,Patriots for Europe Group,Dansk Folkeparti,anders.vistisen@europarl.europa.eu,andersvistisen,10,2014-07-01,2022-11-22
 28301,Tadeusz,ZWIEFKA,false,2004-07-20,,2019-07-01,1954-12-28,pl,M,PPE,Platforma Obywatelska,tadeusz.zwiefka@europarl.europa.eu,tadeuszzwiefka,8,2014-07-01,
 124937,Peter,ERIKSSON,false,2014-07-01,,2016-05-24,1958-08-03,se,M,Verts/ALE,Miljöpartiet de gröna,,,8,2014-07-01,
 96919,Emma,McCLARKIN,false,2009-07-14,,2019-07-01,1978-10-09,uk,F,ECR,Conservative Party,emma.mcclarkin@europarl.europa.eu,emmamcclarkin,8,2014-07-01,
@@ -3163,7 +3163,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 96958,William ,DARTMOUTH,false,2009-07-14,,2019-07-01,1949-09-23,uk,M,EFDD,Independent,william.dartmouth@europarl.europa.eu,,8,2014-07-01,
 96840,Knut,FLECKENSTEIN,false,2009-07-14,,2019-07-01,1953-12-20,de,M,S&D,Sozialdemokratische Partei Deutschlands,knut.fleckenstein@europarl.europa.eu,knufleckenstein,8,2014-07-01,
 2338,Ian,HUDGHTON,false,1998-11-30,,2019-07-01,1951-09-19,uk,M,Verts/ALE,Scottish National Party,ian.hudghton@europarl.europa.eu,hudghtonmepsnp,8,2014-07-01,
-23781,Janusz,LEWANDOWSKI,true,2003-04-23,2024-07-16,,1951-06-13,pl,M,PPE,Platforma Obywatelska,janusz.lewandowski@europarl.europa.eu,j_lewandowski,10,2014-07-01,2019-07-02
+23781,Janusz,LEWANDOWSKI,true,2003-04-23,2024-07-16,,1951-06-13,pl,M,PPE,Koalicja Obywatelska,janusz.lewandowski@europarl.europa.eu,j_lewandowski,10,2014-07-01,2019-07-02
 111024,Jens,NILSSON,false,2011-12-01,,2018-03-12,1948-09-25,se,M,S&D,Arbetarepartiet- Socialdemokraterna,,,8,2014-07-01,
 23693,Alojz,PETERLE,false,2003-04-18,,2019-07-01,1948-07-05,si,M,PPE,Nova Slovenija – Krščanski demokrati,alojz.peterle@europarl.europa.eu,lojzepeterle,8,2014-07-01,
 124966,Steven,WOOLFE,false,2014-07-01,,2019-07-01,1967-10-06,uk,M,NA,Independent,steven.woolfe@europarl.europa.eu,steven_woolfe,8,2014-07-01,
@@ -3695,7 +3695,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 197691,Mathilde,ANDROUËT,true,2019-07-02,2024-07-16,,1984-07-03,fr,F,Patriots for Europe Group,Rassemblement national,mathilde.androuet@europarl.europa.eu,,10,,2019-07-02
 197587,Attila,ARA-KOVÁCS,false,2019-07-02,,2024-07-15,1953-01-14,hu,M,S&D,Demokratikus Koalíció,attila.ara-kovacs@europarl.europa.eu,,9,,2019-07-02
 197664,Clotilde,ARMAND,false,2019-07-02,,2020-11-03,1973-06-28,ro,F,RE,Uniunea Salvați România,clotilde.armand@europarl.europa.eu,clotilde_armand,9,,2019-07-02
-197492,Bartosz,ARŁUKOWICZ,true,2019-07-02,2024-07-16,,1971-12-30,pl,M,PPE,Platforma Obywatelska,bartosz.arlukowicz@europarl.europa.eu,arlukowicz,10,,2019-07-02
+197492,Bartosz,ARŁUKOWICZ,true,2019-07-02,2024-07-16,,1971-12-30,pl,M,PPE,Koalicja Obywatelska,bartosz.arlukowicz@europarl.europa.eu,arlukowicz,10,,2019-07-02
 197701,Konstantinos,ARVANITIS,true,2019-07-02,2024-07-16,,1964-06-09,gr,M,GUE/NGL,Coalition of the Radical Left,konstantinos.arvanitis@europarl.europa.eu,,10,,2019-07-02
 197695,Anna-Michelle,ASIMAKOPOULOU,false,2019-07-02,,2024-07-15,1967-03-27,gr,F,PPE,Nea Demokratia,anna-misel.asimakopoulou@europarl.europa.eu,annaasimakopoul,9,,2019-07-02
 197533,Manon,AUBRY,true,2019-07-02,2024-07-16,,1989-12-22,fr,F,GUE/NGL,La France Insoumise,manon.aubry@europarl.europa.eu,manonaubryfr,10,,2019-07-02
@@ -3857,7 +3857,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 197457,Henrike,HAHN,false,2019-07-02,,2024-07-15,1970-09-04,de,F,Verts/ALE,Bündnis 90/Die Grünen,henrike.hahn@europarl.europa.eu,henrikehahn,9,,2019-07-02
 197444,Svenja,HAHN,true,2019-07-02,2024-07-16,,1989-07-25,de,F,RE,Freie Demokratische Partei,svenja.hahn@europarl.europa.eu,svenja_hahn,10,,2019-07-02
 198176,Roman,HAIDER,true,2019-07-02,2024-07-16,,1967-04-13,at,M,Patriots for Europe Group,Freiheitliche Partei Österreichs,roman.haider@europarl.europa.eu,,10,,2019-07-02
-197514,Andrzej,HALICKI,true,2019-07-02,2024-07-16,,1961-11-26,pl,M,PPE,Platforma Obywatelska,andrzej.halicki@europarl.europa.eu,andrzejhalicki,10,,2019-07-02
+197514,Andrzej,HALICKI,true,2019-07-02,2024-07-16,,1961-11-26,pl,M,PPE,Koalicja Obywatelska,andrzej.halicki@europarl.europa.eu,andrzejhalicki,10,,2019-07-02
 197596,Teuvo,HAKKARAINEN,false,2019-07-02,,2024-07-15,1960-04-12,fi,M,ECR,Independent,teuvo.hakkarainen@europarl.europa.eu,,9,,2019-07-02
 197809,Lucy Elizabeth,HARRIS,false,2019-07-02,,2020-01-31,1990-10-19,uk,F,ECR,The Brexit Party,lucy.harris@thebrexitparty.org,,9,,2019-07-02
 197646,Mircea-Gheorghe,HAVA,true,2019-07-02,2024-07-16,,1956-12-26,ro,M,PPE,Partidul Naţional Liberal,mircea.hava@europarl.europa.eu,,10,,2019-07-02
@@ -3905,7 +3905,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 197743,Petros,KOKKALIS,false,2019-07-02,,2024-07-15,1970-02-26,gr,M,Verts/ALE,KOSMOS,petros.kokkalis@europarl.europa.eu,petroskokkalis,9,,2019-07-02
 197438,Mislav,KOLAKUŠIĆ,false,2019-07-02,,2024-07-15,1969-09-15,hr,M,NA,PRAVO I PRAVDA,mislav.kolakusic@europarl.europa.eu,,9,,2019-07-02
 197740,Athanasios,KONSTANTINOU,false,2019-07-02,,2024-07-15,1959-07-18,gr,M,NA,Independent,athanasios.konstantinou@europarl.europa.eu,,9,,2019-07-02
-197525,Ewa,KOPACZ,true,2019-07-02,2024-07-16,,1956-12-03,pl,F,PPE,Platforma Obywatelska,ewabozena.kopacz@europarl.europa.eu,ewakopacz,10,,2019-07-02
+197525,Ewa,KOPACZ,true,2019-07-02,2024-07-16,,1956-12-03,pl,F,PPE,Koalicja Obywatelska,ewabozena.kopacz@europarl.europa.eu,ewakopacz,10,,2019-07-02
 197530,Joanna,KOPCIŃSKA,false,2019-07-02,,2024-07-15,1967-01-02,pl,F,ECR,Prawo i Sprawiedliwość,joannamaria.kopcinska@europarl.europa.eu,,9,,2019-07-02
 197445,Moritz,KÖRNER,true,2019-07-02,2024-07-16,,1990-08-03,de,M,RE,Freie Demokratische Partei,moritz.koerner@europarl.europa.eu,moritzkoerner,10,,2019-07-02
 197699,Elena,KOUNTOURA,true,2019-07-02,2024-07-16,,1962-11-02,gr,F,GUE/NGL,Coalition of the Radical Left,elena.kountoura@europarl.europa.eu,elenakountoura,10,,2019-07-02
@@ -4208,7 +4208,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 250918,François,THIOLLET,false,2023-11-30,,2024-07-15,1975-10-21,fr,M,Verts/ALE,Europe Écologie,francois.thiollet@europarl.europa.eu,,9,,2023-11-30
 251249,Esther,SANZ SELVA,false,2023-12-21,,2024-07-15,1985-07-02,es,,GUE/NGL,PODEMOS,esther.sanzselva@europarl.europa.eu,,9,,2023-12-21
 251268,Michael,KAUCH,false,2024-01-01,,2024-07-15,1967-05-04,de,,RE,Freie Demokratische Partei,michael.kauch@europarl.europa.eu,,9,,2024-01-01
-251324,Krzysztof,BREJZA,true,2024-01-03,2024-07-16,,1983-05-16,pl,M,PPE,Platforma Obywatelska,krzysztof.brejza@europarl.europa.eu,,10,,2024-01-03
+251324,Krzysztof,BREJZA,true,2024-01-03,2024-07-16,,1983-05-16,pl,M,PPE,Koalicja Obywatelska,krzysztof.brejza@europarl.europa.eu,,10,,2024-01-03
 251859,Guy,LAVOCAT,false,2024-01-12,,2024-07-15,1963-02-14,fr,,RE,Renaissance,guy.lavocat@europarl.europa.eu,guy_lvt,9,,2024-01-12
 251874,Niels,GEUKING,true,2024-02-05,2024-07-16,,1992-11-17,de,M,PPE,Familien-Partei Deutschlands,niels.geuking@europarl.europa.eu,,10,,2024-02-05
 253008,Linus,GLANZELIUS,false,2024-02-27,,2024-07-15,1990-12-28,se,,S&D,Arbetarepartiet- Socialdemokraterna,linus.glanzelius@europarl.europa.eu,,9,,2024-02-27
@@ -4246,7 +4246,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256948,Arno,BAUSEMER,true,2024-07-16,2024-07-16,,1982-12-02,de,M,Europe of Sovereign Nations Group,Alternative für Deutschland,arno.bausemer@europarl.europa.eu,,10,,
 256887,Wouter,BEKE,true,2024-07-16,2024-07-16,,1974-08-09,be,M,PPE,Christen-Democratisch & Vlaams,wouter.beke@europarl.europa.eu,,10,,
 256947,Fredis,BELERIS,true,2024-07-16,2024-07-16,,1972-08-09,gr,M,PPE,Nea Demokratia,fredis.beleris@europarl.europa.eu,,10,,
-256852,Nikola,BARTŮŠEK,true,2024-07-16,2024-07-16,,1985-05-11,cz,F,NA,Přísaha,nikola.bartusek@europarl.europa.eu,,10,,
+256852,Nikola,BARTŮŠEK,true,2024-07-16,2024-07-16,,1985-05-11,cz,F,NA,Independent,nikola.bartusek@europarl.europa.eu,,10,,
 256960,Sibylle,BERG,true,2024-07-16,2024-07-16,,,de,F,NA,Die PARTEI,sibylle.berg@europarl.europa.eu,,10,,
 257005,Ľuboš,BLAHA,true,2024-07-16,2024-07-16,,1979-12-07,sk,M,NA,SMER-Sociálna demokracia,lubos.blaha@europarl.europa.eu,,10,,
 256998,Rachel,BLOM,true,2024-07-16,2024-07-16,,1987-10-07,nl,F,Patriots for Europe Group,Partij voor de Vrijheid,rachel.blom@europarl.europa.eu,,10,,
@@ -4265,9 +4265,9 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257072,Tomasz,BUCZEK,true,2024-07-16,2024-07-16,,1986-04-24,pl,M,Patriots for Europe Group,Konfederacja Wolność i Niepodległość,tomasz.buczek@europarl.europa.eu,,10,,
 204129,Nikolina,BRNJAC,true,2024-07-16,2024-07-16,,1978-07-11,hr,F,PPE,Hrvatska demokratska zajednica,nikolina.brnjac@europarl.europa.eu,,10,,
 99878,Waldemar,BUDA,true,2024-07-16,2024-07-16,,1982-09-21,pl,M,ECR,Prawo i Sprawiedliwość,waldemar.buda@europarl.europa.eu,,10,,
-257047,Borys,BUDKA,true,2024-07-16,2024-07-16,,1978-03-11,pl,M,PPE,Platforma Obywatelska,borys.budka@europarl.europa.eu,,10,,
+257047,Borys,BUDKA,true,2024-07-16,2024-07-16,,1978-03-11,pl,M,PPE,Koalicja Obywatelska,borys.budka@europarl.europa.eu,,10,,
 257081,Sebastião,BUGALHO,true,2024-07-16,2024-07-16,,,pt,M,PPE,Partido Social Democrata,sebastiao.bugalho@europarl.europa.eu,,10,,
-257051,Andrzej,BUŁA,true,2024-07-16,2024-07-16,,1965-08-28,pl,M,PPE,Platforma Obywatelska,andrzej.bula@europarl.europa.eu,,10,,
+257051,Andrzej,BUŁA,true,2024-07-16,2024-07-16,,1965-08-28,pl,M,PPE,Koalicja Obywatelska,andrzej.bula@europarl.europa.eu,,10,,
 256928,Petr,BYSTRON,true,2024-07-16,2024-07-16,,1972-11-30,de,M,Europe of Sovereign Nations Group,Alternative für Deutschland,petr.bystron@europarl.europa.eu,,10,,
 256915,Mélissa,CAMARA,true,2024-07-16,2024-07-16,,1991-11-27,fr,F,Verts/ALE,Les Écologistes,melissa.camara@europarl.europa.eu,,10,,
 220840,Jaroslav,BŽOCH,true,2024-07-16,2024-07-16,,1983-11-30,cz,M,Patriots for Europe Group,ANO 2011,jaroslav.bzoch@europarl.europa.eu,,10,,
@@ -4330,7 +4330,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257299,Kathleen,FUNCHION,true,2024-07-16,2024-07-16,,1981-04-22,ie,F,GUE/NGL,Sinn Féin,kathleen.funchion@europarl.europa.eu,,10,,
 257012,Estrella,GALÁN,true,2024-07-16,2024-07-16,,1971-04-24,es,F,GUE/NGL,Movimiento Sumar,estrella.galan@europarl.europa.eu,,10,,
 257097,Alberico,GAMBINO,true,2024-07-16,2024-07-16,,1967-12-07,it,M,ECR,FRATELLI D' ITALIA,alberico.gambino@europarl.europa.eu,,10,,
-257032,Kamila,GASIUK-PIHOWICZ,true,2024-07-16,2024-07-16,,1983-05-08,pl,F,PPE,Platforma Obywatelska,kamila.gasiuk-pihowicz@europarl.europa.eu,,10,,
+257032,Kamila,GASIUK-PIHOWICZ,true,2024-07-16,2024-07-16,,1983-05-08,pl,F,PPE,Koalicja Obywatelska,kamila.gasiuk-pihowicz@europarl.europa.eu,,10,,
 256986,Geadis,GEADI,true,2024-07-16,2024-07-16,,1984-08-30,cy,M,ECR,Εθνικό Λαϊκό Μέτωπο,geadis.geadi@europarl.europa.eu,,10,,
 256970,Raquel,GARCÍA HERMIDA-VAN DER WALLE,true,2024-07-16,2024-07-16,,1983-05-28,nl,F,RE,Democraten 66,raquel.garciahermida-vanderwalle@europarl.europa.eu,,10,,
 257092,Hanna,GEDIN,true,2024-07-16,2024-07-16,,1978-03-11,se,F,GUE/NGL,Vänsterpartiet,hanna.gedin@europarl.europa.eu,,10,,
@@ -4409,7 +4409,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257077,Marlena,MALĄG,true,2024-07-16,2024-07-16,,1964-11-02,pl,F,ECR,Prawo i Sprawiedliwość,marlena.malag@europarl.europa.eu,,10,,
 256824,Yannis,MANIATIS,true,2024-07-16,2024-07-16,,1956-10-11,gr,M,S&D,PASOK-KINAL,ioannis.maniatis@europarl.europa.eu,,10,,
 257727,Pierfrancesco,MARAN,true,2024-07-16,2024-07-16,,1980-05-27,it,M,S&D,Partito Democratico,pierfrancesco.maran@europarl.europa.eu,,10,,
-257082,Jagna,MARCZUŁAJTIS-WALCZAK,true,2024-07-16,2024-07-16,,1978-12-15,pl,F,PPE,Platforma Obywatelska,jagna.marczulajtis-walczak@europarl.europa.eu,,10,,
+257082,Jagna,MARCZUŁAJTIS-WALCZAK,true,2024-07-16,2024-07-16,,1978-12-15,pl,F,PPE,Koalicja Obywatelska,jagna.marczulajtis-walczak@europarl.europa.eu,,10,,
 256922,Marion,MARÉCHAL,true,2024-07-16,2024-07-16,,1989-12-10,fr,F,ECR,Identité Libertés,marion.marechal@europarl.europa.eu,,10,,
 257132,Ignazio Roberto,MARINO,true,2024-07-16,2024-07-16,,1955-03-10,it,M,Verts/ALE,Independent,ignazio.marino@europarl.europa.eu,,10,,
 257029,Jorge,MARTÍN FRÍAS,true,2024-07-16,2024-07-16,,1980-04-08,es,M,Patriots for Europe Group,VOX,jorge.martinfrias@europarl.europa.eu,,10,,
@@ -4441,7 +4441,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256883,Aleksandar,NIKOLIC,true,2024-07-16,2024-07-16,,1986-10-04,fr,M,Patriots for Europe Group,Rassemblement national,aleksandar.nikolic@europarl.europa.eu,,10,,
 257301,Cynthia,NÍ MHURCHÚ,true,2024-07-16,2024-07-16,,,ie,F,RE,Fianna Fáil Party,cynthia.nimhurchu@europarl.europa.eu,,10,,
 257044,Rasmus,NORDQVIST,true,2024-07-16,2024-07-16,,1975-07-18,dk,M,Verts/ALE,Socialistisk Folkeparti,rasmus.nordqvist@europarl.europa.eu,,10,,
-257049,Mirosława,NYKIEL,true,2024-07-16,2024-07-16,,1953-09-23,pl,F,PPE,Platforma Obywatelska,miroslawa.nykiel@europarl.europa.eu,,10,,
+257049,Mirosława,NYKIEL,true,2024-07-16,2024-07-16,,1953-09-23,pl,F,PPE,Koalicja Obywatelska,miroslawa.nykiel@europarl.europa.eu,,10,,
 257058,Daniel,OBAJTEK,true,2024-07-16,2024-07-16,,1976-01-02,pl,M,ECR,Prawo i Sprawiedliwość,daniel.obajtek@europarl.europa.eu,,10,,
 257010,Ľudovít,ÓDOR,true,2024-07-16,2024-07-16,,1976-07-02,sk,M,RE,Progresívne Slovensko,ludovit.odor@europarl.europa.eu,,10,,
 198076,Maria,OHISALO,true,2024-07-16,2024-07-16,,1985-03-08,fi,F,Verts/ALE,Vihreä liitto,maria.ohisalo@europarl.europa.eu,,10,,
@@ -4471,7 +4471,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256907,Reinis,POZŅAKS,true,2024-07-16,2024-07-16,,1977-12-09,lv,M,ECR,"Apvienotais saraksts — Latvijas Zaļā partija, Latvijas Reģionu Apvienība, Liepājas partija",reinis.poznaks@europarl.europa.eu,,10,,
 256813,Vladimir,PREBILIČ,true,2024-07-16,2024-07-16,,1974-05-21,si,M,Verts/ALE,Prerod – Stranka Vladimirja Prebiliča,vladimir.prebilic@europarl.europa.eu,,10,,
 257128,Giusi,PRINCI,true,2024-07-16,2024-07-16,,1972-09-27,it,F,PPE,Forza Italia,giusi.princi@europarl.europa.eu,,10,,
-257041,Jacek,PROTAS,true,2024-07-16,2024-07-16,,1964-01-15,pl,M,PPE,Platforma Obywatelska,jacek.protas@europarl.europa.eu,,10,,
+257041,Jacek,PROTAS,true,2024-07-16,2024-07-16,,1964-01-15,pl,M,PPE,Koalicja Obywatelska,jacek.protas@europarl.europa.eu,,10,,
 256969,Friedrich,PÜRNER,true,2024-07-16,2024-07-16,,1967-04-24,de,M,NA,Independent,friedrich.puerner@europarl.europa.eu,,10,,
 256927,Carola,RACKETE,false,2024-07-16,2024-07-16,2025-09-15,1988-05-08,de,F,GUE/NGL,Independent,carola.rackete@europarl.europa.eu,,10,,
 256902,Emma,RAFOWICZ,true,2024-07-16,2024-07-16,,1995-06-24,fr,F,S&D,Parti socialiste,emma.rafowicz@europarl.europa.eu,,10,,
@@ -4502,7 +4502,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256959,Alexander,SELL,true,2024-07-16,2024-07-16,,1980-11-25,de,M,Europe of Sovereign Nations Group,Alternative für Deutschland,alexander.sell@europarl.europa.eu,,10,,
 256999,Rosa,SERRANO SIERRA,true,2024-07-16,2024-07-16,,1969-11-11,es,F,S&D,Partido Socialista Obrero Español,rosa.serranosierra@europarl.europa.eu,,10,,
 257009,Isabel,SERRA SÁNCHEZ,true,2024-07-16,2024-07-16,,1989-08-15,es,F,GUE/NGL,PODEMOS,isabel.serrasanchez@europarl.europa.eu,,10,,
-86057,Bartłomiej,SIENKIEWICZ,true,2024-07-16,2024-07-16,,1961-07-29,pl,M,PPE,Platforma Obywatelska,bartlomiej.sienkiewicz@europarl.europa.eu,,10,,
+86057,Bartłomiej,SIENKIEWICZ,true,2024-07-16,2024-07-16,,1961-07-29,pl,M,PPE,Koalicja Obywatelska,bartlomiej.sienkiewicz@europarl.europa.eu,,10,,
 256971,Lukas,SIEPER,true,2024-07-16,2024-07-16,,1997-03-22,de,M,RE,Partei des Fortschritts,lukas.sieper@europarl.europa.eu,,10,,
 256946,Christine,SINGER,true,2024-07-16,2024-07-16,,1965-07-24,de,F,RE,Freie Wähler,christine.singer@europarl.europa.eu,,10,,
 201945,Virginijus,SINKEVIČIUS,true,2024-07-16,2024-07-16,,1990-11-04,lt,M,Verts/ALE,Demokratų sąjunga „Vardan Lietuvos“,virginijus.sinkevicius@europarl.europa.eu,,10,,
@@ -4527,7 +4527,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257119,Şerban Dimitrie,STURDZA,true,2024-07-16,2024-07-16,,1967-03-30,ro,M,ECR,Partidul Acțiunea Conservatoare,serban.dimitrie.sturdza@europarl.europa.eu,,10,,
 256839,Anna,STÜRGKH,true,2024-07-16,2024-07-16,,1994-04-02,at,F,RE,NEOS – Das Neue Österreich,anna.sturgkh@europarl.europa.eu,,10,,
 257070,Marcin,SYPNIEWSKI,true,2024-07-16,2024-07-16,,1979-01-30,pl,M,Europe of Sovereign Nations Group,Konfederacja Wolność i Niepodległość,marcin.sypniewski@europarl.europa.eu,,10,,
-257026,Michał,SZCZERBA,true,2024-07-16,2024-07-16,,1977-12-14,pl,M,PPE,Platforma Obywatelska,michal.szczerba@europarl.europa.eu,,10,,
+257026,Michał,SZCZERBA,true,2024-07-16,2024-07-16,,1977-12-14,pl,M,PPE,Koalicja Obywatelska,michal.szczerba@europarl.europa.eu,,10,,
 256855,Pál,SZEKERES,true,2024-07-16,2024-07-16,,1964-09-22,hu,M,Patriots for Europe Group,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt,pal.szekeres@europarl.europa.eu,,10,,
 257050,António,TÂNGER CORRÊA,true,2024-07-16,2024-07-16,,1952-04-24,pt,M,Patriots for Europe Group,Chega,antonio.tangercorrea@europarl.europa.eu,,10,,
 256863,Zoltán,TARR,true,2024-07-16,2024-07-16,,1972-02-12,hu,M,PPE,Tisztelet és Szabadság Párt,zoltan.tarr@europarl.europa.eu,,10,,
@@ -4562,7 +4562,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256978,Reinier,VAN LANSCHOT,true,2024-07-16,2024-07-16,,1989-09-07,nl,M,Verts/ALE,Volt,reinier.vanlanschot@europarl.europa.eu,,10,,
 256983,Jessika,VAN LEEUWEN,true,2024-07-16,2024-07-16,,1981-09-10,nl,F,ECR,BoerBurgerBeweging,jessika.vanleeuwen@europarl.europa.eu,,10,,
 257125,Roberto,VANNACCI,true,2024-07-16,2024-07-16,,1968-10-20,it,M,Europe of Sovereign Nations Group,Futuro Nazionale,roberto.vannacci@europarl.europa.eu,,10,,
-257061,Ana,VASCONCELOS,true,2024-07-16,2024-07-16,,1985-03-14,pt,F,RE,Iniciativa Liberal,ana.vasconcelosmartins@europarl.europa.eu,,10,,
+257061,Ana,VASCONCELOS,true,2024-07-16,2024-07-16,,1985-03-14,pt,F,RE,Iniciativa Liberal,ana.vasconcelos@europarl.europa.eu,,10,,
 257112,Vlad,VASILE-VOICULESCU,true,2024-07-16,2024-07-16,,1983-09-06,ro,M,RE,Uniunea Salvați România,vlad.voiculescu@europarl.europa.eu,,10,,
 257099,Francesco,VENTOLA,true,2024-07-16,2024-07-16,,1971-05-12,it,M,ECR,FRATELLI D' ITALIA,francesco.ventola@europarl.europa.eu,,10,,
 256879,Yvan,VEROUGSTRAETE,true,2024-07-16,2024-07-16,,1975-10-06,be,M,RE,Les Engagés,yvan.verougstraete@europarl.europa.eu,,10,,
@@ -4575,7 +4575,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 256967,Jan-Peter,WARNKE,true,2024-07-16,2024-07-16,,,de,M,NA,Bündnis Sahra Wagenknecht – Vernunft und Gerechtigkeit,jan-peter.warnke@europarl.europa.eu,,10,,
 257052,Maciej,WĄSIK,true,2024-07-16,2024-07-16,,1969-10-16,pl,M,ECR,Prawo i Sprawiedliwość,maciej.wasik@europarl.europa.eu,,10,,
 257045,Michał,WAWRYKIEWICZ,true,2024-07-16,2024-07-16,,1971-05-11,pl,M,PPE,Independent,michal.wawrykiewicz@europarl.europa.eu,,10,,
-257046,Marta,WCISŁO,true,2024-07-16,2024-07-16,,1969-02-26,pl,F,PPE,Platforma Obywatelska,marta.wcislo@europarl.europa.eu,,10,,
+257046,Marta,WCISŁO,true,2024-07-16,2024-07-16,,1969-02-26,pl,F,PPE,Koalicja Obywatelska,marta.wcislo@europarl.europa.eu,,10,,
 256977,Andrea,WECHSLER,true,2024-07-16,2024-07-16,,1977-06-19,de,F,PPE,Christlich Demokratische Union Deutschlands,andrea.wechsler@europarl.europa.eu,,10,,
 220801,Sophie,WILMÈS,true,2024-07-16,2024-07-16,,1975-01-15,be,F,RE,Mouvement Réformateur,sophie.wilmes@europarl.europa.eu,,10,,
 257011,Lucia,YAR,true,2024-07-16,2024-07-16,,1987-05-15,sk,F,RE,Progresívne Slovensko,lucia.yar@europarl.europa.eu,,10,,
@@ -4588,7 +4588,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 261038,Tomáš,KUBÍN,true,2024-08-01,2024-08-01,,1962-07-24,cz,,Patriots for Europe Group,ANO 2011,tomas.kubin@europarl.europa.eu,,10,,
 261796,Séverine,WERBROUCK,true,2024-09-27,2024-09-27,,1978-10-31,fr,,Patriots for Europe Group,Rassemblement national,severine.werbrouck@europarl.europa.eu,,10,,
 261797,Christophe,BAY,true,2024-09-27,2024-09-27,,1962-09-06,fr,,Patriots for Europe Group,Rassemblement national,christophe.bay@europarl.europa.eu,,10,,
-262021,Hanna,GRONKIEWICZ-WALTZ,true,2024-10-10,2024-10-10,,1952-11-04,pl,,PPE,Platforma Obywatelska,hanna.gronkiewicz-waltz@europarl.europa.eu,,10,,
+262021,Hanna,GRONKIEWICZ-WALTZ,true,2024-10-10,2024-10-10,,1952-11-04,pl,,PPE,Koalicja Obywatelska,hanna.gronkiewicz-waltz@europarl.europa.eu,,10,,
 267485,Volker,SCHNURRBUSCH,true,2025-04-04,2025-04-04,,,de,,Europe of Sovereign Nations Group,Alternative für Deutschland,volker.schnurrbusch@europarl.europa.eu,,10,,
 270261,Jaroslav,KNOT,true,2025-07-31,2025-07-31,,,cz,,Patriots for Europe Group,ANO 2011,jaroslav.knot@europarl.europa.eu,,10,,
 270719,Martin,GÜNTHER,true,2025-09-16,2025-09-16,,,de,,GUE/NGL,DIE LINKE.,martin.guenther@europarl.europa.eu,,10,,
@@ -4596,3 +4596,5 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 130881,Mieke,ANDRIESE,true,2025-11-20,2025-11-20,,,nl,,Patriots for Europe Group,Partij voor de Vrijheid,mieke.andriese@europarl.europa.eu,,10,,
 275087,Georgia,TRAMACERE,true,2026-02-11,2026-02-11,,1987-01-12,it,,S&D,Partito Democratico,georgia.tramacere@europarl.europa.eu,,10,,
 276060,Willemien,KONING,true,2026-03-03,2026-03-03,,,nl,,PPE,Christen Democratisch Appèl,willemien.koning@europarl.europa.eu,,10,,
+277057,Marie-Sophie,LANIG,true,2026-03-27,2026-03-27,,1995-03-09,de,,PPE,Christlich Demokratische Union Deutschlands,marie-sophie.lanig@europarl.europa.eu,,10,,
+277178,Majbritt,BIRKHOLM,true,2026-04-16,2026-04-16,,1981-05-10,dk,,Patriots for Europe Group,Dansk Folkeparti,majbritt.birkholm@europarl.europa.eu,,10,,

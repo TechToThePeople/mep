@@ -1112,14 +1112,6 @@
 		"seat": null
 	},
 	{
-		"id": 124875,
-		"firstName": "Anders",
-		"lastName": "VISTISEN",
-		"group": "Patriots",
-		"country": "dk",
-		"seat": null
-	},
-	{
 		"id": 124877,
 		"firstName": "Jadwiga",
 		"lastName": "WIŚNIEWSKA",
@@ -5741,6 +5733,22 @@
 		"lastName": "KONING",
 		"group": "EPP",
 		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 277057,
+		"firstName": "Marie-Sophie",
+		"lastName": "LANIG",
+		"group": "EPP",
+		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 277178,
+		"firstName": "Majbritt",
+		"lastName": "BIRKHOLM",
+		"group": "Patriots",
+		"country": "dk",
 		"seat": null
 	}
 ]
