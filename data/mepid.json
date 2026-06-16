@@ -1624,14 +1624,6 @@
 		"seat": null
 	},
 	{
-		"id": 197422,
-		"firstName": "Christine",
-		"lastName": "SCHNEIDER",
-		"group": "EPP",
-		"country": "de",
-		"seat": null
-	},
-	{
 		"id": 197425,
 		"firstName": "Ralf",
 		"lastName": "SEEKATZ",
@@ -3211,7 +3203,7 @@
 		"id": 256823,
 		"firstName": "Nikolas",
 		"lastName": "FARANTOURIS",
-		"group": "GUE/NGL",
+		"group": "S&D",
 		"country": "gr",
 		"seat": null
 	},
@@ -3416,14 +3408,6 @@
 		"seat": null
 	},
 	{
-		"id": 256863,
-		"firstName": "Zoltán",
-		"lastName": "TARR",
-		"group": "EPP",
-		"country": "hu",
-		"seat": null
-	},
-	{
 		"id": 256864,
 		"firstName": "András Tivadar",
 		"lastName": "KULJA",
@@ -3443,14 +3427,6 @@
 		"id": 256866,
 		"firstName": "Gabriella",
 		"lastName": "GERZSENYI",
-		"group": "EPP",
-		"country": "hu",
-		"seat": null
-	},
-	{
-		"id": 256868,
-		"firstName": "Péter",
-		"lastName": "MAGYAR",
 		"group": "EPP",
 		"country": "hu",
 		"seat": null
@@ -5648,6 +5624,14 @@
 		"seat": null
 	},
 	{
+		"id": 260695,
+		"firstName": "Viktor",
+		"lastName": "WEISZ",
+		"group": "EPP",
+		"country": "hu",
+		"seat": null
+	},
+	{
 		"id": 260724,
 		"firstName": "Csaba",
 		"lastName": "DÖMÖTÖR",
@@ -5749,6 +5733,14 @@
 		"lastName": "BIRKHOLM",
 		"group": "Patriots",
 		"country": "dk",
+		"seat": null
+	},
+	{
+		"id": 277777,
+		"firstName": "Csaba",
+		"lastName": "BOGDÁN",
+		"group": "EPP",
+		"country": "hu",
 		"seat": null
 	}
 ]
