@@ -1067,7 +1067,7 @@
 		"id": 124846,
 		"firstName": "Pina",
 		"lastName": "PICIERNO",
-		"group": "S&D",
+		"group": "Renew",
 		"country": "it",
 		"seat": null
 	},
@@ -3339,7 +3339,7 @@
 		"id": 256852,
 		"firstName": "Nikola",
 		"lastName": "BARTŮŠEK",
-		"group": "NA",
+		"group": "ECR",
 		"country": "cz",
 		"seat": null
 	},
@@ -5741,6 +5741,14 @@
 		"lastName": "BOGDÁN",
 		"group": "EPP",
 		"country": "hu",
+		"seat": null
+	},
+	{
+		"id": 278406,
+		"firstName": "Norbert",
+		"lastName": "HERHAMMER",
+		"group": "EPP",
+		"country": "de",
 		"seat": null
 	}
 ]
