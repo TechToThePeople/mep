@@ -536,14 +536,6 @@
 		"seat": null
 	},
 	{
-		"id": 96725,
-		"firstName": "Bas",
-		"lastName": "EICKHOUT",
-		"group": "Greens/EFA",
-		"country": "nl",
-		"seat": null
-	},
-	{
 		"id": 96752,
 		"firstName": "Martin",
 		"lastName": "HÄUSLING",
@@ -3178,7 +3170,7 @@
 	{
 		"id": 256814,
 		"firstName": "Zala",
-		"lastName": "TOMAŠIČ",
+		"lastName": "ČERNILEC TOMAŠIČ",
 		"group": "EPP",
 		"country": "si",
 		"seat": null
@@ -5749,6 +5741,14 @@
 		"lastName": "HERHAMMER",
 		"group": "EPP",
 		"country": "de",
+		"seat": null
+	},
+	{
+		"id": 278815,
+		"firstName": "Ufuk",
+		"lastName": "KÂHYA",
+		"group": "Greens/EFA",
+		"country": "nl",
 		"seat": null
 	}
 ]

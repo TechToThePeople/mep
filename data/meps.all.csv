@@ -3528,7 +3528,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 2073,Richard,HOWITT,false,1994-07-19,,2016-11-01,1961-04-05,uk,M,S&D,Labour Party,,,8,2014-07-01,
 96661,Krisztina,MORVAI,false,2009-07-14,,2019-07-01,1963-06-22,hu,F,NA,-,krisztina.morvai@europarl.europa.eu,,8,2014-07-01,
 4751,Bart,STAES,false,1999-07-20,,2019-07-01,1958-08-07,be,M,Verts/ALE,Groen,bart.staes@europarl.europa.eu,bartstaes,8,2014-07-01,
-124846,Pina,PICIERNO,true,2014-07-01,2024-07-16,,1981-05-10,it,F,RE,Partito Democratico,giuseppina.picierno@europarl.europa.eu,pinapic,10,2014-07-01,2019-07-02
+124846,Pina,PICIERNO,true,2014-07-01,2024-07-16,,1981-05-10,it,F,RE,Spazio Pubblico,giuseppina.picierno@europarl.europa.eu,pinapic,10,2014-07-01,2019-07-02
 124742,António,MARINHO E PINTO,false,2014-07-01,,2019-07-01,1950-09-10,pt,M,ALDE,Partido Democrático Republicano,antonio.marinhoepinto@europarl.europa.eu,,8,2014-07-01,
 96880,Andrea,COZZOLINO,false,2009-07-14,,2024-07-15,1962-08-03,it,M,NA,Partito Democratico,andrea.cozzolino@europarl.europa.eu,cozzolino62,9,2014-07-01,2019-07-02
 96677,Cecilia,WIKSTRÖM,false,2009-07-14,,2019-07-01,1965-10-17,se,F,ALDE,Liberalerna,cecilia.wikstrom@europarl.europa.eu,ceciliawikstrom,8,2014-07-01,
@@ -3655,7 +3655,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 124930,Pál,CSÁKY,false,2014-07-01,,2019-07-01,1956-03-21,sk,M,PPE,Strana mad'arskej komunity- Magyar Közösség Pártja,pal.csaky@europarl.europa.eu,csakypal,8,2014-07-01,
 97296,Michel,DANTIN,false,2009-07-14,,2019-07-01,1960-01-15,fr,M,PPE,Les Républicains,michel.dantin@europarl.europa.eu,micheldantin,8,2014-07-01,
 124750,Mireille,D'ORNANO,false,2014-07-01,,2019-07-01,1951-06-29,fr,F,EFDD,Les Patriotes,mireille.dornano@europarl.europa.eu,,8,2014-07-01,
-96725,Bas,EICKHOUT,true,2009-07-14,2024-07-16,,1976-10-08,nl,M,Verts/ALE,GroenLinks-PvdA,bas.eickhout@europarl.europa.eu,baseickhout,10,2014-07-01,2019-07-02
+96725,Bas,EICKHOUT,false,2009-07-14,2024-07-16,2026-06-20,1976-10-08,nl,M,Verts/ALE,GroenLinks-PvdA,bas.eickhout@europarl.europa.eu,baseickhout,10,2014-07-01,2019-07-02
 124807,Jens,GIESEKE,true,2014-07-01,2024-07-16,,1971-05-18,de,M,PPE,Christlich Demokratische Union Deutschlands,jens.gieseke@europarl.europa.eu,,10,2014-07-01,2019-07-02
 127330,Tania,GONZÁLEZ PEÑAS,false,2014-09-11,,2019-07-01,1982-10-18,es,F,GUE/NGL,PODEMOS,tania.gonzalezpenas@europarl.europa.eu,taniagonzalezps,8,2014-09-11,
 124727,Jussi,HALLA-AHO,false,2014-07-01,,2019-07-01,1971-04-27,fi,M,ECR,Perussuomalaiset,jussi.halla-aho@europarl.europa.eu,,8,2014-07-01,
@@ -4543,7 +4543,7 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 257090,Beatrice,TIMGREN,true,2024-07-16,2024-07-16,,1989-05-12,se,F,ECR,Sverigedemokraterna,beatrice.timgren@europarl.europa.eu,,10,,
 256885,Bruno,TOBBACK,true,2024-07-16,2024-07-16,,1969-08-22,be,M,S&D,Vooruit,bruno.tobback@europarl.europa.eu,,10,,
 256888,Rody,TOLASSY,true,2024-07-16,2024-07-16,,1987-09-21,fr,M,Patriots for Europe Group,Rassemblement national,rody.tolassy@europarl.europa.eu,,10,,
-256814,Zala,TOMAŠIČ,true,2024-07-16,2024-07-16,,1995-09-29,si,F,PPE,Slovenska demokratska stranka,zala.tomasic@europarl.europa.eu,,10,,
+256814,Zala,ČERNILEC TOMAŠIČ,true,2024-07-16,2024-07-16,,1995-09-29,si,F,PPE,Slovenska demokratska stranka,zala.tomasic@europarl.europa.eu,,10,,
 219652,Matej,TONIN,true,2024-07-16,2024-07-16,,1983-07-30,si,M,PPE,Nova Slovenija – Krščanski demokrati,matej.tonin@europarl.europa.eu,,10,,
 257163,Francesco,TORSELLI,true,2024-07-16,2024-07-16,,1976-03-09,it,M,ECR,FRATELLI D' ITALIA,francesco.torselli@europarl.europa.eu,,10,,
 257148,Raffaele,TOPO,true,2024-07-16,2024-07-16,,1965-03-02,it,M,S&D,Partito Democratico,raffaele.topo@europarl.europa.eu,,10,,
@@ -4600,4 +4600,5 @@ epid,firstname,lastname,active,start,start10,end,birthdate,country,gender,eugrou
 277178,Majbritt,BIRKHOLM,true,2026-04-16,2026-04-16,,1981-05-10,dk,,Patriots for Europe Group,Dansk Folkeparti,majbritt.birkholm@europarl.europa.eu,,10,,
 277777,Csaba,BOGDÁN,true,2026-05-22,2026-05-22,,,hu,,PPE,Tisztelet és Szabadság Párt,csaba.bogdan@europarl.europa.eu,,10,,
 260695,Viktor,WEISZ,true,2026-05-22,2026-05-22,,1999-07-05,hu,,PPE,Tisztelet és Szabadság Párt,viktor.weisz@europarl.europa.eu,,10,,
-278406,Norbert,HERHAMMER,true,2026-06-11,2026-06-11,,1975-04-08,de,,PPE,Christlich Demokratische Union Deutschlands,,,10,,
+278406,Norbert,HERHAMMER,true,2026-06-11,2026-06-11,,1975-04-08,de,,PPE,Christlich Demokratische Union Deutschlands,norbert.herhammer@europarl.europa.eu,,10,,
+278815,Ufuk,KÂHYA,true,2026-06-30,2026-06-30,,1988-01-19,nl,,Verts/ALE,Progressief Nederland,ufuk.kahya@europarl.europa.eu,,10,,
