@@ -2651,7 +2651,7 @@
 		"id": 197842,
 		"firstName": "Elena",
 		"lastName": "YONCHEVA",
-		"group": "NA",
+		"group": "ECR",
 		"country": "bg",
 		"seat": null
 	},
@@ -2963,7 +2963,7 @@
 		"id": 220908,
 		"firstName": "Branko",
 		"lastName": "GRIMS",
-		"group": "EPP",
+		"group": "NA",
 		"country": "si",
 		"seat": null
 	},
@@ -3341,14 +3341,6 @@
 		"lastName": "DOSTALOVA",
 		"group": "Patriots",
 		"country": "cz",
-		"seat": null
-	},
-	{
-		"id": 256855,
-		"firstName": "Pál",
-		"lastName": "SZEKERES",
-		"group": "Patriots",
-		"country": "hu",
 		"seat": null
 	},
 	{
@@ -4044,14 +4036,6 @@
 		"firstName": "Sibylle",
 		"lastName": "BERG",
 		"group": "NA",
-		"country": "de",
-		"seat": null
-	},
-	{
-		"id": 256961,
-		"firstName": "Sebastian",
-		"lastName": "EVERDING",
-		"group": "GUE/NGL",
 		"country": "de",
 		"seat": null
 	},
@@ -5475,7 +5459,7 @@
 		"id": 257256,
 		"firstName": "Taner",
 		"lastName": "KABILOV",
-		"group": "NA",
+		"group": "ECR",
 		"country": "bg",
 		"seat": null
 	},
@@ -5714,7 +5698,7 @@
 	{
 		"id": 277057,
 		"firstName": "Marie-Sophie",
-		"lastName": "LANIG",
+		"lastName": "CHRIST",
 		"group": "EPP",
 		"country": "de",
 		"seat": null

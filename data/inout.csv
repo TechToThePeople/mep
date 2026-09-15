@@ -1,4 +1,6 @@
 fullName,country,id,leg,start,end,file,eugroup,party
+Pál SZEKERES,HU,256855,10,2024-07-16,2026-09-13,outgoing,PfE,Fidesz-Magyar Polgári Szövetség-Kereszténydemokrata Néppárt
+Sebastian EVERDING,DE,256961,10,2024-07-16,2026-09-12,outgoing,The Left,PARTEI MENSCH KLIMA TIERSCHUTZ
 Bas EICKHOUT,NL,96725,10,2024-07-16,2026-06-20,outgoing,Greens/EFA,GroenLinks-PvdA
 Christine SCHNEIDER,DE,197422,10,2024-07-16,2026-05-25,outgoing,EPP,Christlich Demokratische Union Deutschlands
 Péter MAGYAR,HU,256868,10,2024-07-16,2026-05-08,outgoing,EPP,Tisztelet és Szabadság Párt
@@ -36,12 +38,12 @@ Liudas MAŽYLIS,LT,197841,10,2024-12-05,,incoming,EPP,Tėvynės sąjunga-Lietuvo
 Volker SCHNURRBUSCH,DE,267485,10,2025-04-04,,incoming,ESN,Alternative für Deutschland
 Jaroslav KNOT,CZ,270261,10,2025-07-31,,incoming,PfE,ANO 2011
 Martin GÜNTHER,DE,270719,10,2025-09-16,,incoming,The Left,DIE LINKE.
-Antonín STANĚK,CZ,272024,10,2025-10-04,,incoming,PfE,Přísaha
+Antonín STANĚK,CZ,272024,10,2025-10-04,,incoming,PfE,Motoristé sobě
 Jérémy DECERLE,FR,197504,10,2025-10-12,,incoming,Renew,Renaissance
 Mieke ANDRIESE,NL,130881,10,2025-11-20,,incoming,PfE,Partij voor de Vrijheid
 Georgia TRAMACERE,IT,275087,10,2026-02-11,,incoming,S&D,Partito Democratico
 Willemien KONING,NL,276060,10,2026-03-03,,incoming,EPP,Christen Democratisch Appèl
-Marie-Sophie LANIG,DE,277057,10,2026-03-27,,incoming,EPP,Christlich Demokratische Union Deutschlands
+Marie-Sophie CHRIST,DE,277057,10,2026-03-27,,incoming,EPP,Christlich Demokratische Union Deutschlands
 Majbritt BIRKHOLM,DK,277178,10,2026-04-16,,incoming,PfE,Dansk Folkeparti
 Csaba BOGDÁN,HU,277777,10,2026-05-22,,incoming,EPP,Tisztelet és Szabadság Párt
 Viktor WEISZ,HU,260695,10,2026-05-22,,incoming,EPP,Tisztelet és Szabadság Párt
