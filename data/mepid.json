@@ -2728,6 +2728,14 @@
 		"seat": null
 	},
 	{
+		"id": 198471,
+		"firstName": "Robert",
+		"lastName": "GABEL",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": null
+	},
+	{
 		"id": 198490,
 		"firstName": "Emmanouil",
 		"lastName": "FRAGKOS",
@@ -5733,6 +5741,14 @@
 		"lastName": "KÂHYA",
 		"group": "Greens/EFA",
 		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 280663,
+		"firstName": "Balázs",
+		"lastName": "ORBÁN",
+		"group": "Patriots",
+		"country": "hu",
 		"seat": null
 	}
 ]
