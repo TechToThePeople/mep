@@ -104,6 +104,14 @@
 		"seat": null
 	},
 	{
+		"id": 5565,
+		"firstName": "Brice",
+		"lastName": "HORTEFEUX",
+		"group": "EPP",
+		"country": "fr",
+		"seat": null
+	},
+	{
 		"id": 5729,
 		"firstName": "Kathleen",
 		"lastName": "VAN BREMPT",
@@ -139,7 +147,7 @@
 		"id": 23699,
 		"firstName": "Kateřina",
 		"lastName": "KONEČNÁ",
-		"group": "NA",
+		"group": "Patriots",
 		"country": "cz",
 		"seat": null
 	},
@@ -2728,6 +2736,14 @@
 		"seat": null
 	},
 	{
+		"id": 198471,
+		"firstName": "Robert",
+		"lastName": "GABEL",
+		"group": "GUE/NGL",
+		"country": "de",
+		"seat": null
+	},
+	{
 		"id": 198490,
 		"firstName": "Emmanouil",
 		"lastName": "FRAGKOS",
@@ -2898,7 +2914,7 @@
 	{
 		"id": 214839,
 		"firstName": "Emma",
-		"lastName": "WIESNER",
+		"lastName": "YTTERELL",
 		"group": "Renew",
 		"country": "se",
 		"seat": null
@@ -3788,14 +3804,6 @@
 		"firstName": "Isabelle",
 		"lastName": "LE CALLENNEC",
 		"group": "EPP",
-		"country": "fr",
-		"seat": null
-	},
-	{
-		"id": 256921,
-		"firstName": "Laurent",
-		"lastName": "CASTILLO",
-		"group": "Patriots",
 		"country": "fr",
 		"seat": null
 	},
@@ -5733,6 +5741,14 @@
 		"lastName": "KÂHYA",
 		"group": "Greens/EFA",
 		"country": "nl",
+		"seat": null
+	},
+	{
+		"id": 280663,
+		"firstName": "Balázs",
+		"lastName": "ORBÁN",
+		"group": "Patriots",
+		"country": "hu",
 		"seat": null
 	}
 ]

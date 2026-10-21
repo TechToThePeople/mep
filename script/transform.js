@@ -57,6 +57,49 @@ const eugroups = Object.values(require("../data/eugroups.json")).reduce(function
 	return g[r.name]=r.accronym,g;
 },{});
 
+const group_names = Object.entries(eugroups).reduce(function(g,v){
+	return g[v[1]]=v[0],g; // acronym -> full name
+},{});
+
+const iso2country = Object.entries(country2iso).reduce(function(g,v){
+	if (!g[v[1]]) g[v[1]]=v[0];
+	return g;
+},{});
+
+const mepid_by_id = mepid.reduce(function(g,r){
+	return g[r.id]=r,g;
+},{});
+
+const incoming = Object.values(inout).reduce(function(g,r){
+	return (r.file === "incoming") ? (g[r.id]=r,g) : g;
+},{});
+
+// EP inout is the source of truth: an incoming MEP is active whatever parltrack says
+const with_inout = function(r, io, mep) {
+	r = r || {};
+	const ended = function(v) { return v.end?.[0] !== "9"; };
+	return {
+		...r,
+		active: true,
+		UserID: io.id,
+		Name: r.Name || { sur: mep.firstName, family: mep.lastName, full: io.fullName },
+		Groups: [...(r.Groups || []).filter(ended), {
+			role: "Member",
+			Organization: group_names[mep.group] || "??",
+			start: io.start,
+			end: "9",
+		}],
+		Constituencies: [...(r.Constituencies || []).filter(ended), {
+			start: io.start,
+			end: "9",
+			party: io.party,
+			country: iso2country[mep.country] || mep.country,
+			term: io.leg,
+		}],
+		Committees: r.Committees || [],
+	};
+};
+
 /*
 const eugroupaliases = {
        "ECR": "ECR",
@@ -137,7 +180,13 @@ process.exit(1);
 	// load wikidata for twitter (and gender and mastodon?)
 	q.push(function(next){
     const wikidata = path.resolve(__dirname,"../data/wikidata.json");
-    const meps = JSON.parse(fs.readFileSync(wikidata));
+    const meps = (function(){
+      try {
+        return JSON.parse(fs.readFileSync(wikidata));
+      } catch (err) {
+        throw new Error("invalid " + wikidata + ": " + err.message);
+      }
+    })();
     meps.forEach ( d => {
 //  'Mastodon address': 'violavoncramon@respublicae.eu',
 //  'languages spoken, written or signed': 'German',
@@ -186,16 +235,42 @@ process.exit(1);
 	
 	// transform
 	q.push(function(next){
-		fs.createReadStream(src).pipe(jsonstream.parse(".*")).pipe(new stream.Transform({
+		const parsed = fs.createReadStream(src).pipe(jsonstream.parse(".*"));
+		const records = (async function*() {
+			const seen = {};
+			for await (const r of new stream.Readable({ objectMode: true }).wrap(parsed)) {
+				seen[r.UserID] = true;
+				yield r;
+			}
+			// incoming MEPs the parltrack dump does not know (yet)
+			for (const io of Object.values(incoming)) {
+				if (seen[io.id]) continue;
+				const mep = mepid_by_id[io.id];
+				if (!mep) {
+					console.log("[transform] incoming missing from parltrack and mepid, skipped %d %o", io.id, io.fullName);
+					continue;
+				}
+				console.log("[transform] not in parltrack, using EP inout (incoming) %d %o", io.id, io.fullName);
+				yield with_inout(null, io, mep);
+			}
+		})();
+
+		stream.Readable.from(records).pipe(new stream.Transform({
 			objectMode: true,
-			transform: function(r, encoding, done) {
+			transform: function(r, _encoding, done) {
 
 				// very fancy spinner
 				total++;
 				if (process.stdout.isTTY) process.stdout.write("[transform] "+spinner[total%spinner.length]+"\r");
+				if (!r.active && incoming[r.UserID]) {
+					const mep = mepid_by_id[r.UserID];
+					if (!mep) return console.log("[transform] parltrack inactive and no mepid for incoming %d %o", r.UserID, r.Name.full), done();
+					console.log("[transform] parltrack inactive, using EP inout (incoming) %d %o", r.UserID, r.Name.full);
+					r = with_inout(r, incoming[r.UserID], mep);
+				}
 				if (!r.active) return done();
 
-				if (inout.hasOwnProperty(r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
+				if (Object.hasOwn(inout, r.UserID) && inout[r.UserID].file === "outgoing") return console.log("[transform] filter outgoing %d %o", r.UserID, r.Name.full), done();
 
 				if (!mepids.includes(r.UserID)) return console.log("[transform] not in mepids %d %o", r.UserID, r.Name.full), done();
           if (!r.Committees)
@@ -204,7 +279,7 @@ process.exit(1);
             r.Constituencies=[{start:"9999-99-99",end:"9",party:"?",country:"?"}];
 
 				// check object
-				if (!r || typeof r !== "object" || !r.hasOwnProperty("Name")) return console.log("[transform] invalid chunk"), done();
+				if (!r || typeof r !== "object" || !Object.hasOwn(r, "Name")) return console.log("[transform] invalid chunk"), done();
 					twitterQA (             r.UserID.toString(),
 					((r.Twitter && r.Twitter[0]) ? r.Twitter[0].replace(/^(https?:\/\/)?((mobile\.|www\.|www-)?twitter\.com\/)?(@|%40)?([A-Za-z0-9_]+)([\/\?]+.*)?/,"$5") : "").toLowerCase(),"europarl");
 
@@ -254,7 +329,7 @@ process.exit(1);
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 
 //						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
-//						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
+//						if (v.name === null && !v.abbr && !abbr[v.Organization] && !Object.hasOwn(abbreviations, v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
 						abbreviations[v.Organization] = (v.abbr || v.name || abbr[v.Organization]);
 						return {
 							start: v.start.substr(0,10),
@@ -268,7 +343,7 @@ process.exit(1);
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(delegations.find(function(delegation){ return (v.Organization.indexOf(delegation[1]) >= 0); }) || [ null ]).shift();
-						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
+						if (v.name === null && !v.abbr && !abbr[v.Organization] && !Object.hasOwn(abbreviations, v.Organization)) console.log("[transform] no abbreviation for delegation '%s'", v.Organization);
 						abbreviations[v.Organization] = v.name;
 						return {
 							start: v.start.substr(0,10),
@@ -282,7 +357,7 @@ process.exit(1);
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){ // find abbrevation first so we can save it in an extra json
 						v.name = (!v.Organization) ? null : Array.from(committees.find(function(committee){ return (v.Organization.indexOf(committee[1]) >= 0); }) || [ null ]).shift();
-						if (v.name === null && !v.abbr && !abbr[v.Organization] && !abbreviations.hasOwnProperty(v.Organization)) console.log("[transform] no abbreviation for committee '%s'", v.Organization);
+						if (v.name === null && !v.abbr && !abbr[v.Organization] && !Object.hasOwn(abbreviations, v.Organization)) console.log("[transform] no abbreviation for committee '%s'", v.Organization);
 						abbreviations[v.Organization] = (v.abbr || v.name || abbr[v.Organization]);
 						return {
 							start: v.start.substr(0,10),
@@ -295,7 +370,7 @@ process.exit(1);
 					constituency: r.Constituencies.filter(function(v){
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){
-						if (!country2iso.hasOwnProperty(v.country)) console.log("[transform] missing country: '%s'", v.country);
+						if (!Object.hasOwn(country2iso, v.country)) console.log("[transform] missing country: '%s'", v.country);
 						return {
 							start: v.start.substr(0,10),
 							party: v.party,
@@ -308,7 +383,7 @@ process.exit(1);
 					eugroup: r.Groups.filter(function(v){
 						return (v.end[0] === "9"); // if end is ^9999 its active
 					}).map(function(v){
-						if (!eugroups.hasOwnProperty(v.Organization)) {
+						if (!Object.hasOwn(eugroups, v.Organization)) {
 //Organization
               console.log("[transform] missing group: '%s'", v.groupid);
 console.log(v);
@@ -464,5 +539,7 @@ console.log("missing",d);
 	});
 
 };
+
+main.with_inout = with_inout;
 
 if (require.main === module) main();

@@ -19,13 +19,33 @@ const out = Object.keys(Object.values(require("../data/inout.json")).filter(func
 const src_xml = path.resolve(__dirname,"../data/mirror/mepid.xml");
 const dest = path.resolve(__dirname,"../data/mepid.json");
 
+// the full-list endpoint now serves JSON, sometimes still XML
+const parse_mepid = function(data, cb) {
+	const txt = data.toString();
+	if (txt.trimStart().charAt(0) === "<") return xml2js(data, cb);
+	let j;
+	try {
+		j = JSON.parse(txt);
+	} catch (err) {
+		return cb(err);
+	}
+	cb(null, { meps: { mep: j.list.map(function(r){
+		return {
+			id: [r.persId],
+			fullName: [r.fullName],
+			country: [r.countryLabel],
+			politicalGroup: [r.politicalGroupLabel],
+		};
+	}) } });
+};
+
 const import_xml = function(fn) {
 	if (typeof fn !== "function") fn = function(err){ if (err) throw err; }; // callback substitute
 		
 	fs.readFile(src_xml, function(err, data){
 		if (err) return fn(err);
 
-		xml2js(data, function (err, data) {
+		parse_mepid(data, function (err, data) {
 			if (err) return fn(err);
 
 			data = data.meps.mep.map(function(r){
@@ -38,11 +58,11 @@ const import_xml = function(fn) {
 					lastName: [],
 				});
 
-				if (!groups.hasOwnProperty(r.politicalGroup[0])) {
+				if (!Object.hasOwn(groups, r.politicalGroup[0])) {
 console.log(r.politicalGroup);
           throw new Error("Unknown Group: "+r.politicalGroup[0]);
         }
-				if (!countries.hasOwnProperty(r.country[0])) throw new Error("Unknown Country: "+r.country[0]);
+				if (!Object.hasOwn(countries, r.country[0])) throw new Error("Unknown Country: "+r.country[0]);
 
 				return {
 					id: r.id[0].toString(),
@@ -151,5 +171,7 @@ const main = module.exports = async function main(fn) {
 	});
 
 };
+
+main.parse_mepid = parse_mepid;
 
 if (require.main === module) main();
